@@ -82,6 +82,12 @@
           "visibility": "public",
           "authority": "Authored local change fragment",
           "observedOn": "2026-10-22"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.2-CANONICAL.json",
+          "visibility": "public",
+          "authority": "Authored canonical delivery change fragment",
+          "observedOn": "2026-10-22"
         }
       ],
       "previousSourceFile": "sources/standard/canonical-setup-0.2.json",

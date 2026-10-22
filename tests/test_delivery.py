@@ -74,6 +74,7 @@ class DeliveryTests(unittest.TestCase):
 
     def test_publication_is_component_and_channel_specific_without_fake_deployment(self):
         record=copy.deepcopy(self.record)
+        record['deployments']=[]
         record['changes']=[{'id':'C1','component':'cli','type':'feature','summary':'A change.'},{'id':'C2','component':'web','type':'fix','summary':'A second change.'}]
         release={'component':'cli','channel':'github','version':'1.0','revision':'a'*40,'url':'https://example.invalid/release','publishedAt':None,'observedAt':'2026-10-22T12:00:00Z','changeIds':['C1']}
         record['releases']=[release,{**release,'channel':'registry'}]
@@ -210,6 +211,18 @@ class DeliveryTests(unittest.TestCase):
             config.write_text(json.dumps(value))
             with self.assertRaises(RecordError):
                 load_config(config)
+
+    def test_action_refuses_existing_output_before_unrelated_files_can_be_uploaded(self):
+        with tempfile.TemporaryDirectory() as folder:
+            destination=Path(folder)/'existing'
+            destination.mkdir()
+            sentinel=destination/'unrelated-private.txt'
+            sentinel.write_text('must remain outside the generated artifact')
+            env={**os.environ,'PROJECT_RECORD_CONFIG':str(ROOT/'examples/projects.json'),'PROJECT_RECORD_OUTPUT':str(destination),'PROJECT_RECORD_ONLY':'standard','PROJECT_RECORD_AUDIENCE':'owner'}
+            result=subprocess.run([sys.executable,str(ROOT/'tools/run_action.py')],env=env,capture_output=True,text=True)
+            self.assertNotEqual(result.returncode,0)
+            self.assertEqual(list(destination.iterdir()),[sentinel])
+            self.assertEqual(sentinel.read_text(),'must remain outside the generated artifact')
 
 
 if __name__ == '__main__':

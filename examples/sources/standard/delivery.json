@@ -1,12 +1,12 @@
 {
-  "deliveryCoverage": "Authored local standard changes and candidate gates only. No channel publication, hosted CI run or deployment has been observed.",
+  "deliveryCoverage": "Canonical source and GitHub Pages deployment have been observed. Hosted composite/reusable jobs and native keyboard checks passed for the stated revision. Actual screen-reader output and owner acceptance remain pending. No tagged release or package-registry publication has been observed.",
   "releasePlans": [
     {
-      "id": "REL-0.2-REVIEW",
+      "id": "REL-0.2-CANONICAL-REVIEW",
       "component": "standard",
-      "channel": "source-archive",
-      "version": "0.2.0-review",
-      "revision": "sha256:0da56a00b5287df3bb6081788298c833b1b7adc22016367b1ff52653514c09c5",
+      "channel": "github-source",
+      "version": "0.2.0-canonical-review",
+      "revision": "8ca75f2fdcf8da51d554fd9c3a0ca1ef551cd976",
       "workItemIds": [
         "STD-01",
         "STD-02",
@@ -15,12 +15,15 @@
         "STD-05",
         "STD-06",
         "STD-07",
-        "STD-08"
+        "STD-08",
+        "STD-10",
+        "STD-11",
+        "STD-12"
       ],
       "gates": [
         {
           "id": "G-AUTO",
-          "label": "Relevant automated checks recorded",
+          "label": "Hosted composite action and reusable workflow pass",
           "policy": {
             "allOf": [
               "test"
@@ -31,32 +34,43 @@
             {
               "kind": "test",
               "subject": "G-AUTO",
-              "revision": "sha256:0da56a00b5287df3bb6081788298c833b1b7adc22016367b1ff52653514c09c5",
+              "revision": "8ca75f2fdcf8da51d554fd9c3a0ca1ef551cd976",
               "result": "passed",
-              "source": "VERIFICATION-public.md",
+              "source": "https://github.com/interzettel/project-record-standard/actions/runs/39802018009",
               "observedOn": "2026-10-22"
             }
           ]
         },
         {
-          "id": "G-UI",
-          "label": "Scoped browser/accessibility review and remaining limits recorded",
+          "id": "G-KEYBOARD",
+          "label": "Native keyboard navigation and focus checks pass",
           "policy": {
             "allOf": [
-              "ui-review"
+              "keyboard-review"
             ],
             "anyOf": []
           },
           "receipts": [
             {
-              "kind": "ui-review",
-              "subject": "G-UI",
-              "revision": "sha256:0da56a00b5287df3bb6081788298c833b1b7adc22016367b1ff52653514c09c5",
+              "kind": "keyboard-review",
+              "subject": "G-KEYBOARD",
+              "revision": "8ca75f2fdcf8da51d554fd9c3a0ca1ef551cd976",
               "result": "passed",
-              "source": "standards/ACCESSIBILITY.md",
+              "source": "Native Edge interaction review of the stated revision; recorded in standards/ACCESSIBILITY.md",
               "observedOn": "2026-10-22"
             }
           ]
+        },
+        {
+          "id": "G-SCREENREADER",
+          "label": "Actual screen-reader output is verified",
+          "policy": {
+            "allOf": [
+              "screen-reader-review"
+            ],
+            "anyOf": []
+          },
+          "receipts": []
         },
         {
           "id": "G-OWNER",
@@ -73,5 +87,17 @@
     }
   ],
   "releases": [],
-  "deployments": []
+  "deployments": [
+    {
+      "id": "GH-PAGES-39802018009",
+      "component": "standard-website",
+      "environment": "github-pages",
+      "revision": "8ca75f2fdcf8da51d554fd9c3a0ca1ef551cd976",
+      "url": "https://interzettel.github.io/project-record-standard/",
+      "deployedAt": "2026-10-22T15:09:16Z",
+      "observedAt": "2026-10-22T15:12:32+00:00",
+      "health": "healthy",
+      "source": "https://github.com/interzettel/project-record-standard/actions/runs/39802018009/job/119905124539"
+    }
+  ]
 }

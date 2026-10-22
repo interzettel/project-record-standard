@@ -67,7 +67,7 @@
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
       "unscopedWork": [],
-      "nextAction": "Retest the deployed focus fix and complete actual screen-reader verification. Owner acceptance remains a separate milestone."
+      "nextAction": "Complete actual screen-reader verification. Native keyboard checks passed; owner acceptance remains a separate milestone."
     }
   ],
   "items": [
@@ -366,7 +366,7 @@
       "unmappedDependencies": [],
       "evidence": [
         {
-          "kind": "partial-keyboard-review",
+          "kind": "keyboard-review",
           "source": "standards/ACCESSIBILITY.md"
         }
       ],
@@ -376,7 +376,7 @@
       "priority": "P1",
       "issueUrl": null,
       "criterion": "Record keyboard activation, traversal, focus restoration and actual screen-reader output, including remaining limitations.",
-      "note": "Native Edge keyboard checks found a milestone focus handoff defect; the source fix awaits deployed retest. Actual screen-reader audio is unavailable through browser-only controls and remains unverified.",
+      "note": "Native Edge keyboard checks passed after the milestone focus handoff fix, including the standard and Prehnite cards at narrow width. Actual screen-reader output cannot be observed through browser-only controls and remains unverified.",
       "deferReason": null
     }
   ],

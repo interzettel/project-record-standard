@@ -12,7 +12,7 @@ Do not vendor the owner-review bundle or private source fixtures into a public r
 PROJECT_RECORD_CONFIG=examples/projects.json PROJECT_RECORD_OUTPUT=/tmp/record-check PROJECT_RECORD_ONLY=prehnite PROJECT_RECORD_AUDIENCE=public python3 tools/run_action.py
 ```
 
-Use a new or empty output directory for public builds. Audience and render-preparation checks run before any generated output is written. A private supplement makes the projection private even when the repository is public. Input observation dates remain unchanged by regeneration.
+The action requires a new or empty dedicated output directory for either audience, so an artifact upload cannot collect unrelated pre-existing files. Public CLI builds also require a new or empty output directory. Audience and render-preparation checks run before any generated output is written. A private supplement makes the projection private even when the repository is public. Input observation dates remain unchanged by regeneration.
 
 ## Authored change fragments
 

@@ -19,6 +19,10 @@ def run() -> int:
     if not config:
         print("PROJECT_RECORD_CONFIG is required", file=sys.stderr)
         return 1
+    destination = Path(output)
+    if destination.exists() and (not destination.is_dir() or any(destination.iterdir())):
+        print("The action requires a new or empty dedicated output directory", file=sys.stderr)
+        return 1
     arguments = ["pipeline", "--config", config, "--output", output, "--audience", audience]
     only = os.environ.get("PROJECT_RECORD_ONLY")
     if only:
