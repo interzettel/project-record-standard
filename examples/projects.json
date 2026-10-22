@@ -38,8 +38,8 @@
         "kind": "file-snapshot",
         "path": "examples/sources/standard/ledger.json",
         "commit": null,
-        "observedOn": "2026-10-22",
-        "updatedOn": "2026-10-22",
+        "observedOn": "2026-10-23",
+        "updatedOn": "2026-10-23",
         "authority": "Authored canonical implementation and delivery ledger; owner acceptance remains pending"
       },
       "presentation": {
@@ -88,16 +88,22 @@
           "visibility": "public",
           "authority": "Authored canonical delivery change fragment",
           "observedOn": "2026-10-22"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.3-AGENTS.json",
+          "visibility": "public",
+          "authority": "Authored standard-agent workflow change fragment",
+          "observedOn": "2026-10-22"
         }
       ],
-      "previousSourceFile": "sources/standard/canonical-setup-0.2.json",
+      "previousSourceFile": "sources/standard/pre-agent-workflows-0.3.json",
       "previousSource": {
         "kind": "file-snapshot",
-        "path": "examples/sources/standard/canonical-setup-0.2.json",
+        "path": "examples/sources/standard/pre-agent-workflows-0.3.json",
         "commit": null,
         "observedOn": "2026-10-22",
         "updatedOn": "2026-10-22",
-        "authority": "Preserved initial canonical setup scope before hosted completion evidence"
+        "authority": "Preserved 11/13 canonical observation before agent workflow scope expansion"
       },
       "snapshots": [
         {
@@ -109,6 +115,17 @@
             "observedOn": "2026-10-22",
             "updatedOn": "2026-10-22",
             "authority": "Preserved local 0.2.0 implementation snapshot before canonical delivery scope"
+          }
+        },
+        {
+          "sourceFile": "sources/standard/canonical-setup-0.2.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/canonical-setup-0.2.json",
+            "commit": null,
+            "observedOn": "2026-10-22",
+            "updatedOn": "2026-10-22",
+            "authority": "Preserved initial canonical setup scope before hosted completion evidence"
           }
         }
       ]

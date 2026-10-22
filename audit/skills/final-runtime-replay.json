@@ -1,0 +1,94 @@
+{
+  "observedOn": "2026-10-23",
+  "runtimeVersion": "0.3.0",
+  "contractVersion": "0.2.0",
+  "sourceIdentity": "Authored working-tree bytes; hosted candidate identity is recorded separately.",
+  "results": [
+    {
+      "fixture": "application",
+      "metrics": {
+        "work": {
+          "done": 0,
+          "total": 7,
+          "percent": 0.0,
+          "active": 1,
+          "review": 0,
+          "blocked": 7,
+          "unknown": 0,
+          "excluded": 0,
+          "method": "completed-leaves / required-leaves"
+        },
+        "ledger": {
+          "done": 0,
+          "total": 7,
+          "percent": 0.0,
+          "active": 1,
+          "review": 0,
+          "blocked": 7,
+          "unknown": 0,
+          "excluded": 0,
+          "method": "completed-leaves / retained-ledger-leaves"
+        },
+        "milestones": {
+          "done": 0,
+          "total": 3,
+          "known": 3,
+          "percent": 0.0,
+          "method": "accepted-milestones / declared-milestones"
+        },
+        "roadmapMean": {
+          "percent": 0.0,
+          "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+          "milestoneCount": 3
+        }
+      },
+      "originalInputs": "unchanged",
+      "finalRuntimeReplay": "passed",
+      "completeSuiteInstallation": "10 skills; original instructions preserved; repeat has no changes",
+      "suiteDigest": "8ec53735381e7ed6b231525b594fa6e9d99e5947ac7ee49e537590ab2f6e25ed"
+    },
+    {
+      "fixture": "hot-application",
+      "metrics": {
+        "work": {
+          "done": 4,
+          "total": 6,
+          "percent": 66.7,
+          "active": 1,
+          "review": 0,
+          "blocked": 0,
+          "unknown": 0,
+          "excluded": 2,
+          "method": "completed-leaves / required-leaves"
+        },
+        "ledger": {
+          "done": 5,
+          "total": 8,
+          "percent": 62.5,
+          "active": 1,
+          "review": 0,
+          "blocked": 0,
+          "unknown": 0,
+          "excluded": 0,
+          "method": "completed-leaves / retained-ledger-leaves"
+        },
+        "milestones": {
+          "done": 1,
+          "total": 3,
+          "known": 3,
+          "percent": 33.3,
+          "method": "accepted-milestones / declared-milestones"
+        },
+        "roadmapMean": {
+          "percent": null,
+          "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+          "milestoneCount": 3
+        }
+      },
+      "originalInputs": "unchanged",
+      "finalRuntimeReplay": "passed",
+      "completeSuiteInstallation": "10 skills; original instructions preserved; repeat has no changes",
+      "suiteDigest": "8ec53735381e7ed6b231525b594fa6e9d99e5947ac7ee49e537590ab2f6e25ed"
+    }
+  ]
+}

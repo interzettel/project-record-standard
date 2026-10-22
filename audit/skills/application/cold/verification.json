@@ -1,0 +1,204 @@
+{
+  "observedOn": "2026-10-22",
+  "status": "passed-for-local-tracking",
+  "environment": {
+    "PROJECT_RECORD_TOOLKIT": "/workspace/scratch/712507315946/canonical-standard/project-record-standard",
+    "PYTHONPATH": "/workspace/scratch/712507315946/canonical-standard/project-record-standard/src",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "toolkitContentIdentity": "4416aabd24d8c59e49c61c4506926e410ef11f34ccbc99fb1152f707b9cde48a",
+  "preparation": {
+    "stage": "Initialized an empty temporary directory inside target, checked its 0/0 scaffold, copied only absent progress files, retained empty snapshots and removed the owned temporary stage.",
+    "recovery": "Identity capture resumed after the Skills service moved the already-read skill to its stable ID; no project reinitialization or source loss occurred."
+  },
+  "commands": [
+    {
+      "command": "python3 -m project_record validate progress/history/2026-10-22-empty-record.json",
+      "expectedExitCode": 0,
+      "exitCode": 0,
+      "stdout": "{\n  \"work\": {\n    \"done\": 0,\n    \"total\": 0,\n    \"percent\": null,\n    \"active\": 0,\n    \"review\": 0,\n    \"blocked\": 0,\n    \"unknown\": 0,\n    \"excluded\": 0,\n    \"method\": \"completed-leaves / required-leaves\"\n  },\n  \"ledger\": {\n    \"done\": 0,\n    \"total\": 0,\n    \"percent\": null,\n    \"active\": 0,\n    \"review\": 0,\n    \"blocked\": 0,\n    \"unknown\": 0,\n    \"excluded\": 0,\n    \"method\": \"completed-leaves / retained-ledger-leaves\"\n  },\n  \"milestones\": {\n    \"done\": 0,\n    \"total\": 0,\n    \"known\": 0,\n    \"percent\": null,\n    \"method\": \"accepted-milestones / declared-milestones\"\n  },\n  \"roadmapMean\": {\n    \"percent\": null,\n    \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n    \"milestoneCount\": 0\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 -m project_record check --config progress/project-record.json",
+      "expectedExitCode": 0,
+      "exitCode": 0,
+      "stdout": "[\n  {\n    \"project\": \"loomglass\",\n    \"metrics\": {\n      \"work\": {\n        \"done\": 0,\n        \"total\": 7,\n        \"percent\": 0.0,\n        \"active\": 1,\n        \"review\": 0,\n        \"blocked\": 7,\n        \"unknown\": 0,\n        \"excluded\": 0,\n        \"method\": \"completed-leaves / required-leaves\"\n      },\n      \"ledger\": {\n        \"done\": 0,\n        \"total\": 7,\n        \"percent\": 0.0,\n        \"active\": 1,\n        \"review\": 0,\n        \"blocked\": 7,\n        \"unknown\": 0,\n        \"excluded\": 0,\n        \"method\": \"completed-leaves / retained-ledger-leaves\"\n      },\n      \"milestones\": {\n        \"done\": 0,\n        \"total\": 3,\n        \"known\": 3,\n        \"percent\": 0.0,\n        \"method\": \"accepted-milestones / declared-milestones\"\n      },\n      \"roadmapMean\": {\n        \"percent\": 0.0,\n        \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n        \"milestoneCount\": 3\n      }\n    }\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 -m project_record pipeline --config progress/project-record.json --output progress/generated --audience owner",
+      "expectedExitCode": 0,
+      "exitCode": 0,
+      "stdout": "[\n  {\n    \"project\": \"loomglass\",\n    \"audience\": \"owner\",\n    \"source\": {\n      \"kind\": \"file-snapshot\",\n      \"path\": \"progress/ledger.json\",\n      \"commit\": null,\n      \"observedOn\": \"2026-10-22\",\n      \"updatedOn\": \"2026-10-22\",\n      \"authority\": \"Authored private local ledger proposal; Sam owns scope, completion evidence and acceptance. No approved baseline.\",\n      \"sha256\": \"0828cfeedac90ef34bad44ee4bc6e5c9d4f873938a1c5cd798afc2dd1335a10c\"\n    },\n    \"metrics\": {\n      \"work\": {\n        \"done\": 0,\n        \"total\": 7,\n        \"percent\": 0.0,\n        \"active\": 1,\n        \"review\": 0,\n        \"blocked\": 7,\n        \"unknown\": 0,\n        \"excluded\": 0,\n        \"method\": \"completed-leaves / required-leaves\"\n      },\n      \"ledger\": {\n        \"done\": 0,\n        \"total\": 7,\n        \"percent\": 0.0,\n        \"active\": 1,\n        \"review\": 0,\n        \"blocked\": 7,\n        \"unknown\": 0,\n        \"excluded\": 0,\n        \"method\": \"completed-leaves / retained-ledger-leaves\"\n      },\n      \"milestones\": {\n        \"done\": 0,\n        \"total\": 3,\n        \"known\": 3,\n        \"percent\": 0.0,\n        \"method\": \"accepted-milestones / declared-milestones\"\n      },\n      \"roadmapMean\": {\n        \"percent\": 0.0,\n        \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n        \"milestoneCount\": 3\n      }\n    },\n    \"files\": [\n      \"loomglass/record.json\",\n      \"loomglass/history.json\",\n      \"loomglass/delivery.json\",\n      \"loomglass/CHANGELOG-generated.md\",\n      \"loomglass/progress.svg\",\n      \"loomglass/README-module.md\"\n    ],\n    \"sha256\": {\n      \"loomglass/record.json\": \"b482f0db1b077b8ddcd81dfb05603beb35a302d4610c9c87e62d9fd852ff8877\",\n      \"loomglass/history.json\": \"c9dbbb7bcf016a17af18eff7d0a3db6895e45152ec4ba7c40b49305d0e9fc19f\",\n      \"loomglass/delivery.json\": \"59f8438ff2730f49fc9dcb8134d67c34ff142eb986a71c2fa77f2ca3892b21e4\",\n      \"loomglass/CHANGELOG-generated.md\": \"bb620a52432c2f4aed1b8378760353885b57b5ecb7f31f20876c89b2c1fdd516\",\n      \"loomglass/progress.svg\": \"a821c08ec52d87cc4f8baa6bf0aa73382babf88c1bcd867274e2fe3289228940\",\n      \"loomglass/README-module.md\": \"e101d35d778455f2067075563f0a5fd9be0287bea209b1b5e88eb85220b5f3a8\"\n    }\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 -m project_record validate progress/generated/loomglass/record.json",
+      "expectedExitCode": 0,
+      "exitCode": 0,
+      "stdout": "{\n  \"work\": {\n    \"done\": 0,\n    \"total\": 7,\n    \"percent\": 0.0,\n    \"active\": 1,\n    \"review\": 0,\n    \"blocked\": 7,\n    \"unknown\": 0,\n    \"excluded\": 0,\n    \"method\": \"completed-leaves / required-leaves\"\n  },\n  \"ledger\": {\n    \"done\": 0,\n    \"total\": 7,\n    \"percent\": 0.0,\n    \"active\": 1,\n    \"review\": 0,\n    \"blocked\": 7,\n    \"unknown\": 0,\n    \"excluded\": 0,\n    \"method\": \"completed-leaves / retained-ledger-leaves\"\n  },\n  \"milestones\": {\n    \"done\": 0,\n    \"total\": 3,\n    \"known\": 3,\n    \"percent\": 0.0,\n    \"method\": \"accepted-milestones / declared-milestones\"\n  },\n  \"roadmapMean\": {\n    \"percent\": 0.0,\n    \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n    \"milestoneCount\": 3\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 -m project_record compare progress/history/2026-10-22-empty-record.json progress/generated/loomglass/record.json",
+      "expectedExitCode": 0,
+      "exitCode": 0,
+      "stdout": "{\n  \"added\": [\n    \"LG-001\",\n    \"LG-002\",\n    \"LG-003\",\n    \"LG-004\",\n    \"LG-005\",\n    \"LG-006\",\n    \"LG-007\"\n  ],\n  \"removed\": [],\n  \"stateChanges\": [],\n  \"scopeChanges\": [],\n  \"before\": {\n    \"work\": {\n      \"done\": 0,\n      \"total\": 0,\n      \"percent\": null,\n      \"active\": 0,\n      \"review\": 0,\n      \"blocked\": 0,\n      \"unknown\": 0,\n      \"excluded\": 0,\n      \"method\": \"completed-leaves / required-leaves\"\n    },\n    \"ledger\": {\n      \"done\": 0,\n      \"total\": 0,\n      \"percent\": null,\n      \"active\": 0,\n      \"review\": 0,\n      \"blocked\": 0,\n      \"unknown\": 0,\n      \"excluded\": 0,\n      \"method\": \"completed-leaves / retained-ledger-leaves\"\n    },\n    \"milestones\": {\n      \"done\": 0,\n      \"total\": 0,\n      \"known\": 0,\n      \"percent\": null,\n      \"method\": \"accepted-milestones / declared-milestones\"\n    },\n    \"roadmapMean\": {\n      \"percent\": null,\n      \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n      \"milestoneCount\": 0\n    }\n  },\n  \"after\": {\n    \"work\": {\n      \"done\": 0,\n      \"total\": 7,\n      \"percent\": 0.0,\n      \"active\": 1,\n      \"review\": 0,\n      \"blocked\": 7,\n      \"unknown\": 0,\n      \"excluded\": 0,\n      \"method\": \"completed-leaves / required-leaves\"\n    },\n    \"ledger\": {\n      \"done\": 0,\n      \"total\": 7,\n      \"percent\": 0.0,\n      \"active\": 1,\n      \"review\": 0,\n      \"blocked\": 7,\n      \"unknown\": 0,\n      \"excluded\": 0,\n      \"method\": \"completed-leaves / retained-ledger-leaves\"\n    },\n    \"milestones\": {\n      \"done\": 0,\n      \"total\": 3,\n      \"known\": 3,\n      \"percent\": 0.0,\n      \"method\": \"accepted-milestones / declared-milestones\"\n    },\n    \"roadmapMean\": {\n      \"percent\": 0.0,\n      \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n      \"milestoneCount\": 3\n    }\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 -m project_record status --config progress/project-record.json --as-of 2026-10-22",
+      "expectedExitCode": 0,
+      "exitCode": 0,
+      "stdout": "[\n  {\n    \"project\": {\n      \"id\": \"loomglass\",\n      \"name\": \"Loomglass\",\n      \"repository\": null,\n      \"visibility\": \"private\"\n    },\n    \"source\": {\n      \"kind\": \"file-snapshot\",\n      \"path\": \"progress/ledger.json\",\n      \"commit\": null,\n      \"observedOn\": \"2026-10-22\",\n      \"updatedOn\": \"2026-10-22\",\n      \"authority\": \"Authored private local ledger proposal; Sam owns scope, completion evidence and acceptance. No approved baseline.\",\n      \"sha256\": \"0828cfeedac90ef34bad44ee4bc6e5c9d4f873938a1c5cd798afc2dd1335a10c\"\n    },\n    \"asOf\": \"2026-10-22\",\n    \"metrics\": {\n      \"work\": {\n        \"done\": 0,\n        \"total\": 7,\n        \"percent\": 0.0,\n        \"active\": 1,\n        \"review\": 0,\n        \"blocked\": 7,\n        \"unknown\": 0,\n        \"excluded\": 0,\n        \"method\": \"completed-leaves / required-leaves\"\n      },\n      \"ledger\": {\n        \"done\": 0,\n        \"total\": 7,\n        \"percent\": 0.0,\n        \"active\": 1,\n        \"review\": 0,\n        \"blocked\": 7,\n        \"unknown\": 0,\n        \"excluded\": 0,\n        \"method\": \"completed-leaves / retained-ledger-leaves\"\n      },\n      \"milestones\": {\n        \"done\": 0,\n        \"total\": 3,\n        \"known\": 3,\n        \"percent\": 0.0,\n        \"method\": \"accepted-milestones / declared-milestones\"\n      },\n      \"roadmapMean\": {\n        \"percent\": 0.0,\n        \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n        \"milestoneCount\": 3\n      }\n    },\n    \"freshness\": {\n      \"status\": \"within-threshold\",\n      \"ageDays\": 0,\n      \"thresholdDays\": 7,\n      \"ageStatus\": \"within-threshold\"\n    },\n    \"collection\": {\n      \"status\": \"not-reconciled\",\n      \"complete\": null,\n      \"note\": \"No external collection receipt supplied; file age does not establish service health.\"\n    },\n    \"blockers\": [\n      {\n        \"id\": \"LG-001\",\n        \"title\": \"Agree the workflow fixture and proof criteria\",\n        \"reason\": \"Scope is proposed; no recorded acceptance or budget decision. Sam supplies the decision, not the setup agent.\",\n        \"dependsOn\": [],\n        \"owner\": \"Sam\"\n      },\n      {\n        \"id\": \"LG-002\",\n        \"title\": \"Verify the reported local import\",\n        \"reason\": \"Brief says local file import works, but no executable importer is present in either inspected branch. Sam must locate the actual code/runtime.\",\n        \"dependsOn\": [\n          \"LG-001\"\n        ],\n        \"owner\": \"Sam\"\n      },\n      {\n        \"id\": \"LG-003\",\n        \"title\": \"Complete the printable proof exporter\",\n        \"reason\": \"Only two-line NotImplementedError stub exists on the retained proof-export branch; active denotes source-reported started work, not usable output or current capacity.\",\n        \"dependsOn\": [\n          \"LG-001\",\n          \"LG-002\"\n        ],\n        \"owner\": \"Sam\"\n      },\n      {\n        \"id\": \"LG-004\",\n        \"title\": \"Connect the offline import-to-proof sequence\",\n        \"reason\": \"New proposed integration criterion; no integration was executed during tracking setup.\",\n        \"dependsOn\": [\n          \"LG-002\",\n          \"LG-003\"\n        ],\n        \"owner\": \"Sam\"\n      },\n      {\n        \"id\": \"LG-005\",\n        \"title\": \"Record repeatability and safe-file checks\",\n        \"reason\": \"New proposed assurance work; no product test harness or fixture was supplied.\",\n        \"dependsOn\": [\n          \"LG-004\"\n        ],\n        \"owner\": \"Sam\"\n      },\n      {\n        \"id\": \"LG-006\",\n        \"title\": \"Record Sam's physical proof inspection\",\n        \"reason\": \"Physical inspection cannot be performed by a record validator; Sam remains the acceptor.\",\n        \"dependsOn\": [\n          \"LG-005\"\n        ],\n        \"owner\": \"Sam\"\n      },\n      {\n        \"id\": \"LG-007\",\n        \"title\": \"Document and review the local handoff\",\n        \"reason\": \"New proposed bounded handoff; continuing operations ownership/resources need Sam's decision.\",\n        \"dependsOn\": [\n          \"LG-005\",\n          \"LG-006\"\n        ],\n        \"owner\": \"Sam\"\n      }\n    ],\n    \"nextActions\": [\n      {\n        \"milestoneId\": \"LG-M1\",\n        \"action\": \"Sam decides LG-001 and supplies/runs the LG-002 importer.\"\n      },\n      {\n        \"milestoneId\": \"LG-M2\",\n        \"action\": \"Resume LG-003 after LG-M1; record integrated and repeated runs.\"\n      },\n      {\n        \"milestoneId\": \"LG-M3\",\n        \"action\": \"After LG-M2, Sam inspects the physical print and reviews the handoff.\"\n      }\n    ],\n    \"history\": {\n      \"coverage\": \"Only the listed pinned observations; intervening events are unknown.\",\n      \"snapshots\": [\n        {\n          \"observedOn\": \"2026-10-22\",\n          \"source\": {\n            \"kind\": \"file-snapshot\",\n            \"path\": \"progress/history/2026-10-22-empty-ledger.json\",\n            \"commit\": null,\n            \"observedOn\": \"2026-10-22\",\n            \"updatedOn\": \"2026-10-22\",\n            \"authority\": \"Private empty scaffold observation; no approval\",\n            \"sha256\": \"1b18178f9c47cc70cfa321b5f7b8f738b6aa54739806c4d9382e844b3014df09\"\n          },\n          \"metrics\": {\n            \"work\": {\n              \"done\": 0,\n              \"total\": 0,\n              \"percent\": null,\n              \"active\": 0,\n              \"review\": 0,\n              \"blocked\": 0,\n              \"unknown\": 0,\n              \"excluded\": 0,\n              \"method\": \"completed-leaves / required-leaves\"\n            },\n            \"ledger\": {\n              \"done\": 0,\n              \"total\": 0,\n              \"percent\": null,\n              \"active\": 0,\n              \"review\": 0,\n              \"blocked\": 0,\n              \"unknown\": 0,\n              \"excluded\": 0,\n              \"method\": \"completed-leaves / retained-ledger-leaves\"\n            },\n            \"milestones\": {\n              \"done\": 0,\n              \"total\": 0,\n              \"known\": 0,\n              \"percent\": null,\n              \"method\": \"accepted-milestones / declared-milestones\"\n            },\n            \"roadmapMean\": {\n              \"percent\": null,\n              \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n              \"milestoneCount\": 0\n            }\n          }\n        },\n        {\n          \"observedOn\": \"2026-10-22\",\n          \"source\": {\n            \"kind\": \"file-snapshot\",\n            \"path\": \"progress/ledger.json\",\n            \"commit\": null,\n            \"observedOn\": \"2026-10-22\",\n            \"updatedOn\": \"2026-10-22\",\n            \"authority\": \"Authored private local ledger proposal; Sam owns scope, completion evidence and acceptance. No approved baseline.\",\n            \"sha256\": \"0828cfeedac90ef34bad44ee4bc6e5c9d4f873938a1c5cd798afc2dd1335a10c\"\n          },\n          \"metrics\": {\n            \"work\": {\n              \"done\": 0,\n              \"total\": 7,\n              \"percent\": 0.0,\n              \"active\": 1,\n              \"review\": 0,\n              \"blocked\": 7,\n              \"unknown\": 0,\n              \"excluded\": 0,\n              \"method\": \"completed-leaves / required-leaves\"\n            },\n            \"ledger\": {\n              \"done\": 0,\n              \"total\": 7,\n              \"percent\": 0.0,\n              \"active\": 1,\n              \"review\": 0,\n              \"blocked\": 7,\n              \"unknown\": 0,\n              \"excluded\": 0,\n              \"method\": \"completed-leaves / retained-ledger-leaves\"\n            },\n            \"milestones\": {\n              \"done\": 0,\n              \"total\": 3,\n              \"known\": 3,\n              \"percent\": 0.0,\n              \"method\": \"accepted-milestones / declared-milestones\"\n            },\n            \"roadmapMean\": {\n              \"percent\": 0.0,\n              \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n              \"milestoneCount\": 3\n            }\n          }\n        }\n      ],\n      \"comparisons\": [\n        {\n          \"added\": [\n            \"LG-001\",\n            \"LG-002\",\n            \"LG-003\",\n            \"LG-004\",\n            \"LG-005\",\n            \"LG-006\",\n            \"LG-007\"\n          ],\n          \"removed\": [],\n          \"stateChanges\": [],\n          \"scopeChanges\": [],\n          \"before\": {\n            \"work\": {\n              \"done\": 0,\n              \"total\": 0,\n              \"percent\": null,\n              \"active\": 0,\n              \"review\": 0,\n              \"blocked\": 0,\n              \"unknown\": 0,\n              \"excluded\": 0,\n              \"method\": \"completed-leaves / required-leaves\"\n            },\n            \"ledger\": {\n              \"done\": 0,\n              \"total\": 0,\n              \"percent\": null,\n              \"active\": 0,\n              \"review\": 0,\n              \"blocked\": 0,\n              \"unknown\": 0,\n              \"excluded\": 0,\n              \"method\": \"completed-leaves / retained-ledger-leaves\"\n            },\n            \"milestones\": {\n              \"done\": 0,\n              \"total\": 0,\n              \"known\": 0,\n              \"percent\": null,\n              \"method\": \"accepted-milestones / declared-milestones\"\n            },\n            \"roadmapMean\": {\n              \"percent\": null,\n              \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n              \"milestoneCount\": 0\n            }\n          },\n          \"after\": {\n            \"work\": {\n              \"done\": 0,\n              \"total\": 7,\n              \"percent\": 0.0,\n              \"active\": 1,\n              \"review\": 0,\n              \"blocked\": 7,\n              \"unknown\": 0,\n              \"excluded\": 0,\n              \"method\": \"completed-leaves / required-leaves\"\n            },\n            \"ledger\": {\n              \"done\": 0,\n              \"total\": 7,\n              \"percent\": 0.0,\n              \"active\": 1,\n              \"review\": 0,\n              \"blocked\": 7,\n              \"unknown\": 0,\n              \"excluded\": 0,\n              \"method\": \"completed-leaves / retained-ledger-leaves\"\n            },\n            \"milestones\": {\n              \"done\": 0,\n              \"total\": 3,\n              \"known\": 3,\n              \"percent\": 0.0,\n              \"method\": \"accepted-milestones / declared-milestones\"\n            },\n            \"roadmapMean\": {\n              \"percent\": 0.0,\n              \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n              \"milestoneCount\": 3\n            }\n          },\n          \"bridges\": {\n            \"work\": {\n              \"before\": {\n                \"done\": 0,\n                \"total\": 0,\n                \"percent\": null,\n                \"active\": 0,\n                \"review\": 0,\n                \"blocked\": 0,\n                \"unknown\": 0,\n                \"excluded\": 0,\n                \"method\": \"completed-leaves / required-leaves\"\n              },\n              \"afterStateChanges\": {\n                \"done\": 0,\n                \"total\": 0\n              },\n              \"after\": {\n                \"done\": 0,\n                \"total\": 7,\n                \"percent\": 0.0,\n                \"active\": 1,\n                \"review\": 0,\n                \"blocked\": 7,\n                \"unknown\": 0,\n                \"excluded\": 0,\n                \"method\": \"completed-leaves / required-leaves\"\n              },\n              \"stateEffectPP\": null,\n              \"scopeEffectPP\": null,\n              \"totalChangePP\": null,\n              \"method\": \"Apply retained-item state changes on the previous denominator; then change membership. Removed items keep their earlier state in the intermediate step. This is an accounting explanation, not earned value.\"\n            },\n            \"ledger\": {\n              \"before\": {\n                \"done\": 0,\n                \"total\": 0,\n                \"percent\": null,\n                \"active\": 0,\n                \"review\": 0,\n                \"blocked\": 0,\n                \"unknown\": 0,\n                \"excluded\": 0,\n                \"method\": \"completed-leaves / retained-ledger-leaves\"\n              },\n              \"afterStateChanges\": {\n                \"done\": 0,\n                \"total\": 0\n              },\n              \"after\": {\n                \"done\": 0,\n                \"total\": 7,\n                \"percent\": 0.0,\n                \"active\": 1,\n                \"review\": 0,\n                \"blocked\": 7,\n                \"unknown\": 0,\n                \"excluded\": 0,\n                \"method\": \"completed-leaves / retained-ledger-leaves\"\n              },\n              \"stateEffectPP\": null,\n              \"scopeEffectPP\": null,\n              \"totalChangePP\": null,\n              \"method\": \"Apply retained-item state changes on the previous denominator; then change membership. Removed items keep their earlier state in the intermediate step. This is an accounting explanation, not earned value.\"\n            }\n          },\n          \"moved\": [],\n          \"regressions\": [],\n          \"sourceRevisions\": {\n            \"before\": \"1b18178f9c47cc70cfa321b5f7b8f738b6aa54739806c4d9382e844b3014df09\",\n            \"after\": \"0828cfeedac90ef34bad44ee4bc6e5c9d4f873938a1c5cd798afc2dd1335a10c\"\n          }\n        }\n      ]\n    },\n    \"delivery\": {\n      \"coverage\": \"Local tags: none observed. Hosted issues, PRs, releases and deployment channels are inaccessible because no remote/repository identity is configured; totals are unknown. No publication or deployment is claimed.\",\n      \"unreleased\": [],\n      \"plans\": [],\n      \"releases\": [],\n      \"deployments\": []\n    },\n    \"warnings\": [\n      \"All seven required leaves and three checkpoints are proposed for Sam, not an approved baseline.\",\n      \"Local import works is a brief claim; no runnable importer or independent product check was supplied.\",\n      \"The exporter branch is a stub; active receives no fractional completion credit.\",\n      \"Hosted sources are inaccessible with unknown totals; no publication or deployment is claimed.\",\n      \"No physical acceptance, budget decision or public projection approval is recorded.\"\n    ],\n    \"limits\": [\n      \"Completed-leaf ratios do not measure effort, cost or business value.\",\n      \"Collection receipts are supplied observations; this command performs no network reconciliation.\",\n      \"Rebuilding this report does not refresh source dates or certify acceptance.\"\n    ]\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 -m project_record install-skills --toolkit /workspace/scratch/712507315946/canonical-standard/project-record-standard --target /workspace/scratch/712507315946/skill-evaluation/application/loomglass",
+      "expectedExitCode": 0,
+      "exitCode": 0,
+      "stdout": "{\n  \"suiteVersion\": \"0.3.0\",\n  \"suiteDigest\": \"9c58b29709ca468f52edbd29911641af911074bdf654355fb8febe694db629b9\",\n  \"changes\": [\n    \".agents/skills/establish-project-tracking/SKILL.md\",\n    \".agents/skills/establish-project-tracking/agents/openai.yaml\",\n    \".agents/skills/adapt-project-tracking/SKILL.md\",\n    \".agents/skills/adapt-project-tracking/agents/openai.yaml\",\n    \".agents/skills/update-project-progress/SKILL.md\",\n    \".agents/skills/update-project-progress/agents/openai.yaml\",\n    \"AGENTS.md\",\n    \".project-record/agent-installation.json\"\n  ],\n  \"written\": false,\n  \"externalWrites\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 -m project_record export --config progress/project-record.json --output progress/.public-refusal-check --audience public",
+      "expectedExitCode": 1,
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Private source requires an explicit reviewed public projection\n"
+    },
+    {
+      "command": "python3 -m project_record pipeline --config progress/project-record.json --output progress/.verification-rebuild --audience owner",
+      "expectedExitCode": 0,
+      "exitCode": 0,
+      "stdout": "[\n  {\n    \"project\": \"loomglass\",\n    \"audience\": \"owner\",\n    \"source\": {\n      \"kind\": \"file-snapshot\",\n      \"path\": \"progress/ledger.json\",\n      \"commit\": null,\n      \"observedOn\": \"2026-10-22\",\n      \"updatedOn\": \"2026-10-22\",\n      \"authority\": \"Authored private local ledger proposal; Sam owns scope, completion evidence and acceptance. No approved baseline.\",\n      \"sha256\": \"0828cfeedac90ef34bad44ee4bc6e5c9d4f873938a1c5cd798afc2dd1335a10c\"\n    },\n    \"metrics\": {\n      \"work\": {\n        \"done\": 0,\n        \"total\": 7,\n        \"percent\": 0.0,\n        \"active\": 1,\n        \"review\": 0,\n        \"blocked\": 7,\n        \"unknown\": 0,\n        \"excluded\": 0,\n        \"method\": \"completed-leaves / required-leaves\"\n      },\n      \"ledger\": {\n        \"done\": 0,\n        \"total\": 7,\n        \"percent\": 0.0,\n        \"active\": 1,\n        \"review\": 0,\n        \"blocked\": 7,\n        \"unknown\": 0,\n        \"excluded\": 0,\n        \"method\": \"completed-leaves / retained-ledger-leaves\"\n      },\n      \"milestones\": {\n        \"done\": 0,\n        \"total\": 3,\n        \"known\": 3,\n        \"percent\": 0.0,\n        \"method\": \"accepted-milestones / declared-milestones\"\n      },\n      \"roadmapMean\": {\n        \"percent\": 0.0,\n        \"method\": \"arithmetic-mean-of-required-work-percentages-per-milestone\",\n        \"milestoneCount\": 3\n      }\n    },\n    \"files\": [\n      \"loomglass/record.json\",\n      \"loomglass/history.json\",\n      \"loomglass/delivery.json\",\n      \"loomglass/CHANGELOG-generated.md\",\n      \"loomglass/progress.svg\",\n      \"loomglass/README-module.md\"\n    ],\n    \"sha256\": {\n      \"loomglass/record.json\": \"b482f0db1b077b8ddcd81dfb05603beb35a302d4610c9c87e62d9fd852ff8877\",\n      \"loomglass/history.json\": \"c9dbbb7bcf016a17af18eff7d0a3db6895e45152ec4ba7c40b49305d0e9fc19f\",\n      \"loomglass/delivery.json\": \"59f8438ff2730f49fc9dcb8134d67c34ff142eb986a71c2fa77f2ca3892b21e4\",\n      \"loomglass/CHANGELOG-generated.md\": \"bb620a52432c2f4aed1b8378760353885b57b5ecb7f31f20876c89b2c1fdd516\",\n      \"loomglass/progress.svg\": \"a821c08ec52d87cc4f8baa6bf0aa73382babf88c1bcd867274e2fe3289228940\",\n      \"loomglass/README-module.md\": \"e101d35d778455f2067075563f0a5fd9be0287bea209b1b5e88eb85220b5f3a8\"\n    }\n  }\n]\n",
+      "stderr": ""
+    }
+  ],
+  "beforeMetrics": {
+    "work": {
+      "done": 0,
+      "total": 0,
+      "percent": null,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 0,
+      "total": 0,
+      "percent": null,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 0,
+      "total": 0,
+      "known": 0,
+      "percent": null,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 0
+    }
+  },
+  "afterMetrics": {
+    "work": {
+      "done": 0,
+      "total": 7,
+      "percent": 0.0,
+      "active": 1,
+      "review": 0,
+      "blocked": 7,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 0,
+      "total": 7,
+      "percent": 0.0,
+      "active": 1,
+      "review": 0,
+      "blocked": 7,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 0,
+      "total": 3,
+      "known": 3,
+      "percent": 0.0,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": 0.0,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 3
+    }
+  },
+  "preservation": {
+    "AGENTS.md": {
+      "expected": "296eeae0c952d3b2654cd5617d02206efefd8f30a5e242a7cf263f893b78567b",
+      "actual": "296eeae0c952d3b2654cd5617d02206efefd8f30a5e242a7cf263f893b78567b"
+    },
+    "README.md": {
+      "expected": "63b1549d13c7ce79a06d1d08acccb3e7ad8ee455fd4d0149419859a38fcf21fd",
+      "actual": "63b1549d13c7ce79a06d1d08acccb3e7ad8ee455fd4d0149419859a38fcf21fd"
+    },
+    "docs/brief.md": {
+      "expected": "a4eb600c0341efc3a09ef0ff8bd80d5a66f5ce15197d79e7714362d79f36936f",
+      "actual": "a4eb600c0341efc3a09ef0ff8bd80d5a66f5ce15197d79e7714362d79f36936f"
+    },
+    "site/index.html": {
+      "expected": "7cf68d68d597a6b34ef41211a16f9194c6eb8031eceadc88396fc63c43046048",
+      "actual": "7cf68d68d597a6b34ef41211a16f9194c6eb8031eceadc88396fc63c43046048"
+    },
+    "hosted-coverage.json": {
+      "expected": "b5220163a1edc45ba8c0cb37029455287099f92ae2deb691d480f0c5c564e8d4",
+      "actual": "b5220163a1edc45ba8c0cb37029455287099f92ae2deb691d480f0c5c564e8d4"
+    }
+  },
+  "branchRefsUnchanged": {
+    "main": "03782b5739f26041dbe109f3d9426412dcf77fba",
+    "proof-export": "c1a49a97af2c514ecae099ad3255beef6276225e"
+  },
+  "additionalChecks": [
+    "Seven unique leaves map exactly once to four WBS packages and one primary milestone each.",
+    "All leaves have Sam as owner/accounting owner and concrete criteria.",
+    "Zero done leaves and zero accepted checkpoints; no approved baseline or acceptance receipt fabricated.",
+    "Source, normalized record, pipeline and status have identical metrics.",
+    "No tracked or staged changes; pre-existing untracked hosted-coverage.json unchanged.",
+    "No remote, workflow, issue, branch deletion, commit, merge, deployment, README edit or website edit.",
+    "Host renderer emits no progress.html.",
+    "Second owner build byte-for-byte deterministic; source observation remains 2026-10-22.",
+    "Public export refused private source before writing output.",
+    "Used toolkit file hashes stable throughout checks."
+  ],
+  "pendingGates": [
+    "Sam scope/fixture/print acceptance requirements and budget/resource decisions.",
+    "Runnable importer/runtime, implemented exporter and real product checks.",
+    "Physical inspection and attributed Sam acceptance.",
+    "Hosted collection/integration, public projection/privacy review and branded interactive UI acceptance, if later selected."
+  ],
+  "handoffChecks": {
+    "allJSONParse": true,
+    "authoredManifestPathsExist": true,
+    "reportAndAdoptionLinksResolve": true,
+    "temporaryDirectoriesRemoved": true,
+    "originalFileHashesStillMatch": true,
+    "trackedAndStagedDiffsEmpty": true,
+    "finalGitStatus": "## main\n?? hosted-coverage.json\n?? progress/\n"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "method": "Independent count of native tasks; done receives one whole-leaf credit; later excludes only from required scope. No new product verification.",
+  "sourceRevision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+  "sourceSha256": "77dfd50ba719b8ec64e018444aeb2211f1364bd97118f5b8b9c04f179f3659ca",
+  "observedOn": "2026-10-22",
+  "retained": {
+    "done": 5,
+    "total": 8,
+    "fraction": "5/8",
+    "percent": 62.5
+  },
+  "required": {
+    "done": 4,
+    "total": 6,
+    "fraction": "4/6",
+    "percent": 66.7,
+    "excluded": [
+      "LG-7",
+      "LG-8"
+    ]
+  },
+  "nativeGateCheckpoints": {
+    "passed": 1,
+    "total": 3,
+    "fraction": "1/3",
+    "percent": 33.3,
+    "rule": "All declared native gate task states are done; not Sam acceptance."
+  },
+  "ownerAcceptance": {
+    "known": 0,
+    "total": 3,
+    "fraction": null,
+    "status": "unknown; no attributed acceptance evidence"
+  },
+  "baselineApproval": "not supplied"
+}

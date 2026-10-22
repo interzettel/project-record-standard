@@ -1,0 +1,21 @@
+{
+  "observedOn": "2026-10-22",
+  "applied": false,
+  "reason": "Preview only; existing local skill is available and preserving project instructions requires no installation for this setup.",
+  "result": {
+    "suiteVersion": "0.3.0",
+    "suiteDigest": "9c58b29709ca468f52edbd29911641af911074bdf654355fb8febe694db629b9",
+    "changes": [
+      ".agents/skills/establish-project-tracking/SKILL.md",
+      ".agents/skills/establish-project-tracking/agents/openai.yaml",
+      ".agents/skills/adapt-project-tracking/SKILL.md",
+      ".agents/skills/adapt-project-tracking/agents/openai.yaml",
+      ".agents/skills/update-project-progress/SKILL.md",
+      ".agents/skills/update-project-progress/agents/openai.yaml",
+      "AGENTS.md",
+      ".project-record/agent-installation.json"
+    ],
+    "written": false,
+    "externalWrites": false
+  }
+}

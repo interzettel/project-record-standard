@@ -1,0 +1,287 @@
+{
+  "projectId": "loomglass",
+  "status": "local preparation verified; hosted and acceptance cutover incomplete",
+  "observedOn": "2026-10-22",
+  "owner": "Sam",
+  "gitRevision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+  "defaultBranchObservation": "Only main exists locally; no hosted default branch was inferred.",
+  "sourceFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "2ed0ac7589487c153bd6695ba2c2c61d0fe309a44288abf79685994a158459aa",
+      "gitBlob": "e440d54ca3a88e72bbe22454baff87a589da571e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "51fefbb491e04ef1cda917642b9d757a1862aa9be3e44d9b3f79d670fb11990e",
+      "gitBlob": "d2d42d577978d129a7db9a54cf3841d5584483c8"
+    },
+    {
+      "path": "docs/brief.md",
+      "sha256": "2f0e5d45786a5affd6e6da2fe6f561be81adeeaba0eaac96ef59a5f860d6bcb2",
+      "gitBlob": "8368e2a551b84466036566d3c2122d63c864c18d"
+    },
+    {
+      "path": "legacy/plan.json",
+      "sha256": "77dfd50ba719b8ec64e018444aeb2211f1364bd97118f5b8b9c04f179f3659ca",
+      "gitBlob": "3f5a36fda3a2eaabb1ec8dd05d5ed290b599e123"
+    },
+    {
+      "path": "site/index.html",
+      "sha256": "ecc3378433f56e8f6122529f41868c1d9a9234b15df6df20473a636b672da3f1",
+      "gitBlob": "0bbacc657566569253e10cb4b577d9fc3cfb9a76"
+    }
+  ],
+  "sources": [
+    {
+      "kind": "repository-instructions",
+      "source": "AGENTS.md",
+      "revision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+      "observedAt": "2026-10-22",
+      "coverage": "complete local file",
+      "pagesRead": null,
+      "pagesExpected": null,
+      "findings": [
+        "Preserve source tracker, README, site and branch histories. All writes local."
+      ],
+      "gap": null
+    },
+    {
+      "kind": "product-documents",
+      "source": [
+        "README.md",
+        "docs/brief.md"
+      ],
+      "revision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+      "observedAt": "2026-10-22",
+      "coverage": "all supplied local product documents",
+      "findings": [
+        "Offline print-design notebook; selected outcome reproducible import-to-proof workflow.",
+        "Sam owns acceptance; no baseline approval. Historical Done is not newly inspected."
+      ],
+      "gap": "Detailed leaf criteria, confirmed user groups, dependency order, runtime and product evidence absent."
+    },
+    {
+      "kind": "tracker",
+      "source": "legacy/plan.json",
+      "revision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+      "observedAt": "2026-10-22",
+      "coverage": "all panels, groups, tasks and native roadmap gates; eight leaves, three groups, three milestones",
+      "findings": [
+        "Native completion authority retained.",
+        "All existing stable IDs and Later reasons preserved.",
+        "Required 4/6; retained 5/8; native gate checkpoint 1/3."
+      ],
+      "gap": "No typed completion evidence, source update date, owner acceptance, budget or per-leaf owners declared."
+    },
+    {
+      "kind": "git-local",
+      "source": "Local repository, git ls-tree/log/show-ref/branch/tag/remote",
+      "revision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+      "observedAt": "2026-10-22",
+      "coverage": "all locally present refs, one reachable commit and all five tracked files; no fetch performed",
+      "branches": [
+        {
+          "name": "main",
+          "revision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+          "inspected": true,
+          "contents": "five authored files; no product implementation beyond static site and plan"
+        }
+      ],
+      "remoteBranches": [],
+      "localTags": [],
+      "remotes": [],
+      "findings": [
+        "One local main branch, one commit, no remote, no local tags.",
+        "No leftover local implementation branch or decisions beyond the supplied brief and plan.",
+        "Rollback bundle preserves all current refs."
+      ],
+      "gap": "Local coverage proves only locally available history. Deleted/unfetched branches, hosted PRs and releases remain unavailable."
+    },
+    {
+      "kind": "hosted-issues-prs-projects-labels-discussions",
+      "source": null,
+      "revision": null,
+      "observedAt": null,
+      "attemptedOn": "2026-10-22",
+      "coverage": "unavailable; no remote or hosted identity",
+      "pagesRead": 0,
+      "pagesExpected": null,
+      "complete": null,
+      "lastSuccessfulObservation": null,
+      "findings": [],
+      "gap": "Do not interpret uncollected data as zero or complete. Sam must provide a real repository identity/access; then collect with stable IDs and exhaustive pagination. No hosted calls or writes attempted."
+    },
+    {
+      "kind": "releases-ci-deployments",
+      "source": "Local tree and git tags",
+      "revision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+      "observedAt": "2026-10-22",
+      "coverage": "local tags and all tracked files inspected; no CI configuration or local release tags present",
+      "localTagsCount": 0,
+      "hostedCoverage": "unavailable",
+      "findings": [
+        "No local workflow, product build, test harness or publication/deployment receipts."
+      ],
+      "gap": "Hosted releases, CI results, deployed site and their current health unknown."
+    },
+    {
+      "kind": "website",
+      "source": "site/index.html",
+      "revision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+      "observedAt": "2026-10-22",
+      "coverage": "complete static local source; no hosted deployment observation",
+      "routes": [
+        {
+          "file": "site/index.html",
+          "existingRoute": "/ if served with site as document root; no actual host URL supplied"
+        }
+      ],
+      "brand": {
+        "font": "Georgia, serif",
+        "text": "#6f1430",
+        "background": "#faf6f0",
+        "title": "Loomglass",
+        "imagery": "none present",
+        "navigation": "none present",
+        "interactiveScripts": "none present"
+      },
+      "findings": [
+        "README and static site state the same required and retained counts.",
+        "Authored site and route preserved byte for byte."
+      ],
+      "gap": "No browser, screen-reader, zoom, keyboard, deployed-route or public accessibility acceptance performed."
+    },
+    {
+      "kind": "generated-output-ownership",
+      "source": "Local file inventory before preparation",
+      "revision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+      "observedAt": "2026-10-22",
+      "coverage": "all five pre-existing files inspected; no manifest, installation receipt or generator markers existed",
+      "findings": [
+        "AGENTS.md, README.md, docs/brief.md, legacy/plan.json and site/index.html are authored and remain untouched.",
+        "Only progress/derived/** is derived by the Project Record pipeline; authored progress mapping and rollback snapshots are not regeneration targets."
+      ],
+      "gap": null
+    }
+  ],
+  "historyCoverage": {
+    "lastSuccessfulLocalObservation": "2026-10-22",
+    "pinnedObservations": 1,
+    "reachableLocalCommits": 1,
+    "remoteFetched": false,
+    "lastSuccessfulHostedObservation": null,
+    "retrievalOwner": "Sam",
+    "retrievalAction": "Provide hosted identity/access, exhaust pagination and preserve partial/failure receipts without refreshing local source observations."
+  },
+  "generatedOwnership": {
+    "authored": [
+      "AGENTS.md",
+      "README.md",
+      "docs/brief.md",
+      "legacy/plan.json",
+      "site/index.html",
+      "progress/project-record.json",
+      "progress/governance.json",
+      "progress/theme.json",
+      "progress/overview.md",
+      "progress/discovery.json",
+      "progress/adoption.md",
+      "progress/HANDOFF.md",
+      "progress/toolkit-pin.json",
+      "progress/verify.py"
+    ],
+    "derived": [
+      "progress/derived/**"
+    ],
+    "immutableRecovery": [
+      "progress/rollback/**",
+      "tools/project-record-standard/**"
+    ],
+    "evidence": [
+      "progress/evidence/**"
+    ],
+    "externalEffects": [],
+    "installationReceipts": "None before this adaptation; no agent-suite install applied."
+  },
+  "cleanupQueue": [
+    {
+      "priority": 1,
+      "type": "outcome blocker",
+      "outcome": "Reproducible import-to-proof workflow, LG-5 and LG-6",
+      "reason": "The active and planned generic task titles contain no testable product criteria; dependencies are not declared.",
+      "evidence": [
+        "docs/brief.md",
+        "legacy/plan.json#LG-5",
+        "legacy/plan.json#LG-6"
+      ],
+      "owner": "Sam",
+      "nextAction": "Clarify distinct criteria, inputs/output, actual execution owner and dependency order without renaming IDs or altering historic completion.",
+      "status": "pending owner decision; independent local preparation completed"
+    },
+    {
+      "priority": 2,
+      "type": "claim/authority conflict",
+      "outcome": "Milestone reporting and cutover",
+      "reason": "portfolio-v3 reports accepted from native all-gate-items completion; Sam acceptance has no receipts. These meanings cannot be collapsed.",
+      "evidence": [
+        "progress/derived/loomglass/record.json",
+        "docs/brief.md"
+      ],
+      "owner": "Sam",
+      "nextAction": "Keep gate completion 1/3 separate from unknown Sam acceptance. Define explicit acceptance semantics before displaying an accepted-milestones measure in the host.",
+      "status": "mapping documented; acceptance cutover unresolved"
+    },
+    {
+      "priority": 3,
+      "type": "collection dependency",
+      "outcome": "Any hosted parity or integration",
+      "reason": "No remote or hosted identity; issues/PRs/Projects/releases cannot be enumerated. This does not block work-count parity or offline builds.",
+      "evidence": [
+        "progress/rollback/before-state.json"
+      ],
+      "owner": "Sam",
+      "nextAction": "Supply hosted identity/access only if hosted tracking is desired, then inventory all pages and inspect unfinished work before mapping or cleanup.",
+      "status": "unavailable; no external writes"
+    },
+    {
+      "priority": 4,
+      "type": "assurance and handover",
+      "outcome": "Incremental host integration",
+      "reason": "Existing source/README/site counts agree; local output is private preview only. Public projection and site interaction evidence are still missing.",
+      "evidence": [
+        "progress/evidence/verification.json",
+        "site/index.html"
+      ],
+      "owner": "Sam",
+      "nextAction": "Review criteria and privacy; then connect reviewed data additively under the current site shell and check screen reader, keyboard, 390px/desktop and 200% zoom.",
+      "status": "prepared; no site or README cutover applied"
+    },
+    {
+      "priority": 5,
+      "type": "optional housekeeping",
+      "outcome": "Discovery retained history",
+      "reason": "LG-7/LG-8 were deliberately excluded from selected required scope; no contradictory sources or duplicate local branches were found.",
+      "evidence": [
+        "legacy/plan.json#G3"
+      ],
+      "owner": "Sam",
+      "nextAction": "Retain Later work and its history; reconsider only through an explicit scope change. Do not close/delete unavailable hosted work.",
+      "status": "retained outside required scope"
+    }
+  ],
+  "unresolvedDecisions": [
+    {
+      "owner": "Sam",
+      "decision": "Confirm users, distinct LG-5/LG-6 exit criteria and dependencies; review proposed WBS and adaptive tailoring."
+    },
+    {
+      "owner": "Sam",
+      "decision": "Define milestone acceptance semantics and provide attributed evidence when accepted; no approved baseline exists."
+    },
+    {
+      "owner": "Sam",
+      "decision": "Choose whether any future public host/remote integration is needed; review privacy and accessibility before cutover."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Loomglass project overview
+
+Loomglass is an offline print-design notebook. The selected outcome is a reproducible import-to-proof workflow (`README.md`, `docs/brief.md`). Sam owns the project, acceptance and scope changes. Print designers are an inferred audience; Sam has not confirmed user groups or a detailed success criterion.
+
+The inspected project contains its brief, native plan and a static branded page. The page displays the historical counts. There is no application implementation, executable import-to-proof example, product test harness or product-run evidence in the five supplied files. The five native Done claims remain historical source reports; this adaptation does not re-certify them.
+
+The required scope is LG-1–LG-6 in Import and Proof. LG-7 and LG-8 remain retained Discovery work, explicitly outside the selected required outcome. Progress is required **4/6 (66.7%)** and retained **5/8 (62.5%)**, observed 2026-10-22 at local revision `17a9314a06e339c87b247db805be30b6d84f1c9c`. No leaf, historical state or denominator changed. Source update time and historical completion times are unknown.
+
+The proposed acceptance criterion is that Sam can repeat a specified offline import-to-proof example and inspect the resulting proof. Before new execution, Sam should define the exact inputs, outputs, LG-5 and LG-6 criteria, dependency order and execution owners. A future verification must identify the artifact/revision, environment, steps and result. Sam's attributed acceptance remains separate. No approved baseline or milestone acceptance has been supplied.
+
+The source plan remains the only writer for leaf identities, completion, exclusions, groups and native gates. `progress/project-record.json` selects the matching existing `portfolio-v3` adapter; `progress/governance.json` adds a proposed planning/authority mapping without overriding completion. Each native leaf appears once in one WBS package. Package labels are planning references and earn no extra progress. Structural coverage is eight of eight leaves; substantive WBS completeness remains partial because leaf criteria and wider product obligations are not established.
+
+The roadmap preserves M1/Now (Import), M2/Next (Proof) and M3/Later (Discovery). M1's four native gate tasks are Done; M2 has zero of two gate tasks Done and M3 zero of one. The runtime's 1/3 milestone result follows these native checklist gates. It is **not evidence that Sam accepted M1**. Sam-accepted milestones remain unknown. M3 has zero required leaves, so an equal-milestone required-work mean is Not measured rather than a fabricated 0% or 100%.
+
+Local preparation includes independent count checks, host-renderer data, a private owner preview, exact toolkit pins, a repeated build check and a reversible recovery handoff. The original README, site, source tracker, instructions and Git history remain byte-identical. The existing Georgia type, burgundy `#6f1430`, cream `#faf6f0`, Loomglass name and site file remain the presentation authority.
+
+No remote exists. Hosted issues, PRs, Projects, labels, CI, releases and deployment observations are unavailable, with unknown totals and no successful hosted collection. This blocks hosted parity and cutover, while local work-count parity is verified. There is no public export approval, browser/accessibility acceptance, baseline approval or deployment claim. The prepared output is owner-only. Sam's next actions and recovery commands are in `progress/HANDOFF.md`; the field mapping and cutover limits are in `progress/adoption.md`.

@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "projectId": "loomglass",
+  "observedOn": "2026-10-22",
+  "localObservationOnly": true,
+  "initialGit": {
+    "branch": "main",
+    "head": "03782b5739f26041dbe109f3d9426412dcf77fba",
+    "branches": {
+      "main": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "proof-export": "c1a49a97af2c514ecae099ad3255beef6276225e"
+    },
+    "remotes": [],
+    "remoteTrackingRefs": [],
+    "localTags": [],
+    "trackedChanges": [],
+    "untracked": [
+      "hosted-coverage.json"
+    ],
+    "fetched": false
+  },
+  "originalFiles": {
+    "AGENTS.md": {
+      "sha256": "296eeae0c952d3b2654cd5617d02206efefd8f30a5e242a7cf263f893b78567b",
+      "gitTracked": true
+    },
+    "README.md": {
+      "sha256": "63b1549d13c7ce79a06d1d08acccb3e7ad8ee455fd4d0149419859a38fcf21fd",
+      "gitTracked": true
+    },
+    "docs/brief.md": {
+      "sha256": "a4eb600c0341efc3a09ef0ff8bd80d5a66f5ce15197d79e7714362d79f36936f",
+      "gitTracked": true
+    },
+    "site/index.html": {
+      "sha256": "7cf68d68d597a6b34ef41211a16f9194c6eb8031eceadc88396fc63c43046048",
+      "gitTracked": true
+    },
+    "hosted-coverage.json": {
+      "sha256": "b5220163a1edc45ba8c0cb37029455287099f92ae2deb691d480f0c5c564e8d4",
+      "gitTracked": false
+    }
+  },
+  "inventory": [
+    {
+      "id": "DOCS",
+      "category": "documentation",
+      "source": "AGENTS.md; README.md; docs/brief.md",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "complete",
+      "observation": "All three authored local documents were read at main.",
+      "findings": [
+        "Local-only tracking; preserve README and site.",
+        "Brief names the import-to-proof outcome, Sam and absence of acceptance/budget decisions."
+      ],
+      "retrievalGaps": []
+    },
+    {
+      "id": "TRACKING",
+      "category": "existing-trackers",
+      "source": "Tracked/untracked file inventory and local tree",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "complete",
+      "observation": "No progress directory, ledger, roadmap, tracker manifest or generated tracking exists in the supplied main tree.",
+      "findings": [
+        "Cold establishment applies despite the existing branded site."
+      ],
+      "retrievalGaps": [
+        "Unknown external trackers cannot be ruled out without a remote."
+      ]
+    },
+    {
+      "id": "GIT-STATE",
+      "category": "local-git",
+      "source": "git status --porcelain=v2 --branch; git ls-files --stage; git worktree list --porcelain",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "complete",
+      "observation": "Main was clean for tracked files; hosted-coverage.json was already untracked. One local worktree, no staged edits.",
+      "findings": [
+        "Preserve the pre-existing untracked coverage receipt and both branches."
+      ],
+      "retrievalGaps": []
+    },
+    {
+      "id": "MAIN",
+      "category": "local-branch",
+      "source": "git log --all --name-status; git rev-parse HEAD",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "complete",
+      "observation": "Inspected all four files in main.",
+      "findings": [
+        "Main has authored instructions, product brief, README and site; no executable importer."
+      ],
+      "retrievalGaps": []
+    },
+    {
+      "id": "PROOF",
+      "category": "local-branch",
+      "source": "git show proof-export:proof.py; git diff main...proof-export --stat",
+      "revision": "c1a49a97af2c514ecae099ad3255beef6276225e",
+      "observedOn": "2026-10-22",
+      "coverage": "complete",
+      "observation": "Inspected the only extra file on the one-commit-ahead unmerged branch.",
+      "findings": [
+        "export_proof raises NotImplementedError; retain and review/resume it under LG-003.",
+        "Source author recorded as Fixture author; Sam is the accountable review owner, not inferred branch author."
+      ],
+      "retrievalGaps": []
+    },
+    {
+      "id": "REMOTE-REFS",
+      "category": "remote-branches",
+      "source": "git remote -v; git branch -avv",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "complete",
+      "observation": "No remote configuration or remote-tracking refs exist locally.",
+      "findings": [
+        "No fetch was attempted because there is no remote target."
+      ],
+      "retrievalGaps": [
+        "Local absence cannot establish hosted branch coverage or deleted branch history."
+      ]
+    },
+    {
+      "id": "ISSUES",
+      "category": "hosted-issues",
+      "source": "hosted-coverage.json; git remote -v",
+      "revision": null,
+      "observedOn": "2026-10-22",
+      "coverage": "inaccessible",
+      "observation": "No repository identity or remote is available.",
+      "findings": [
+        "Issue count, discussion and state are unknown; no issue IDs assigned."
+      ],
+      "retrievalGaps": [
+        "Connected GitHub pagination cannot start without a repository identity."
+      ]
+    },
+    {
+      "id": "PRS",
+      "category": "hosted-pull-requests",
+      "source": "hosted-coverage.json; git remote -v",
+      "revision": null,
+      "observedOn": "2026-10-22",
+      "coverage": "inaccessible",
+      "observation": "No repository identity or remote is available.",
+      "findings": [
+        "Open/closed/stale PR coverage is unknown; the local proof-export branch does not prove a PR exists."
+      ],
+      "retrievalGaps": [
+        "No PR pages retrieved; no PR URL fabricated."
+      ]
+    },
+    {
+      "id": "PROJECTS",
+      "category": "hosted-projects",
+      "source": "git remote -v",
+      "revision": null,
+      "observedOn": "2026-10-22",
+      "coverage": "inaccessible",
+      "observation": "No hosted repository/Project identity is supplied.",
+      "findings": [
+        "No hosted Project or workflow fields are inventoried or written."
+      ],
+      "retrievalGaps": [
+        "No pagination possible without a target."
+      ]
+    },
+    {
+      "id": "HOSTED-BRANCHES",
+      "category": "hosted-branches",
+      "source": "git remote -v; git branch -avv",
+      "revision": null,
+      "observedOn": "2026-10-22",
+      "coverage": "inaccessible",
+      "observation": "Only local refs can be inspected.",
+      "findings": [
+        "Hosted branch totals and default-branch settings remain unknown."
+      ],
+      "retrievalGaps": [
+        "No remote fetch or connected hosted pages possible."
+      ]
+    },
+    {
+      "id": "TAGS",
+      "category": "local-tags",
+      "source": "git tag -n99",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "complete",
+      "observation": "No local tags exist.",
+      "findings": [
+        "No local tag-based publication evidence."
+      ],
+      "retrievalGaps": [
+        "This does not prove there are no hosted releases."
+      ]
+    },
+    {
+      "id": "RELEASES",
+      "category": "hosted-releases",
+      "source": "hosted-coverage.json; git remote -v",
+      "revision": null,
+      "observedOn": "2026-10-22",
+      "coverage": "inaccessible",
+      "observation": "Hosted release collection cannot be identified.",
+      "findings": [
+        "Publication and release totals remain unknown."
+      ],
+      "retrievalGaps": [
+        "No release pages retrieved; no deployment evidence supplied."
+      ]
+    },
+    {
+      "id": "SITE",
+      "category": "website",
+      "source": "site/index.html; README.md",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "partial",
+      "observation": "All supplied local site source was read.",
+      "findings": [
+        "Single static page; burgundy, cream and Georgia/serif; source route site/index.html, host route unspecified.",
+        "No tracking navigation or generated owner marker. Site remains untouched."
+      ],
+      "retrievalGaps": [
+        "No running deployment, host URL or browser behavior supplied."
+      ]
+    },
+    {
+      "id": "CI",
+      "category": "continuous-integration",
+      "source": "Main/proof-export file trees; git remote -v",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "partial",
+      "observation": "Neither inspected local branch has a workflow, build system or test harness.",
+      "findings": [
+        "No project test command can be run from the supplied code."
+      ],
+      "retrievalGaps": [
+        "Hosted CI/runs inaccessible without repository identity."
+      ]
+    },
+    {
+      "id": "GENERATED",
+      "category": "generated-file-ownership",
+      "source": "Local file tree and site/index.html",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "complete",
+      "observation": "No generated tracking files or generator ownership contract pre-existed.",
+      "findings": [
+        "All original files remain project-owned; new generated output is isolated under progress/generated/.",
+        "New authored progress sources and immutable observations have explicit ownership in adoption.md."
+      ],
+      "retrievalGaps": []
+    },
+    {
+      "id": "APPROVALS",
+      "category": "decisions",
+      "source": "docs/brief.md and setup request",
+      "revision": "03782b5739f26041dbe109f3d9426412dcf77fba",
+      "observedOn": "2026-10-22",
+      "coverage": "complete",
+      "observation": "No acceptance or budget decision has been recorded; the request authorizes local preparation.",
+      "findings": [
+        "Scope decomposition is proposed. No approved baseline, physical acceptance or public review is inferred."
+      ],
+      "retrievalGaps": []
+    }
+  ],
+  "hostedCoverage": {
+    "state": "inaccessible",
+    "reason": "No remote or repository identity supplied.",
+    "collections": {
+      "issues": {
+        "total": null,
+        "pagesRetrieved": 0
+      },
+      "pullRequests": {
+        "total": null,
+        "pagesRetrieved": 0
+      },
+      "projects": {
+        "total": null,
+        "pagesRetrieved": 0
+      },
+      "branches": {
+        "total": null,
+        "pagesRetrieved": 0
+      },
+      "releases": {
+        "total": null,
+        "pagesRetrieved": 0
+      }
+    },
+    "paginationComplete": false
+  },
+  "coverageLimits": [
+    "Complete local inventory refers only to the supplied two-commit repository and current working tree.",
+    "Brief-reported import works is not independently verified.",
+    "No product runtime, fixture, physical print or acceptance receipt was supplied.",
+    "No hosted collection is interpreted as zero."
+  ],
+  "proposedStableMapping": [
+    {
+      "source": "docs/brief.md: next outcome",
+      "target": "LG-O1",
+      "mapping": "Proposed one repeatable import-to-proof workflow"
+    },
+    {
+      "source": "proof-export@c1a49a97af2c514ecae099ad3255beef6276225e:proof.py",
+      "target": "LG-003",
+      "mapping": "Unfinished exporter retained for review/resume"
+    }
+  ]
+}

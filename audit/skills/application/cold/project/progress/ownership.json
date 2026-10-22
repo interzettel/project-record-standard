@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "projectId": "loomglass",
+  "observedOn": "2026-10-22",
+  "scope": "Only newly created progress/ tree belongs to this setup. Original files and Git refs are project-owned and preserved.",
+  "originalFiles": {
+    "AGENTS.md": {
+      "sha256": "296eeae0c952d3b2654cd5617d02206efefd8f30a5e242a7cf263f893b78567b",
+      "gitTracked": true
+    },
+    "README.md": {
+      "sha256": "63b1549d13c7ce79a06d1d08acccb3e7ad8ee455fd4d0149419859a38fcf21fd",
+      "gitTracked": true
+    },
+    "docs/brief.md": {
+      "sha256": "a4eb600c0341efc3a09ef0ff8bd80d5a66f5ce15197d79e7714362d79f36936f",
+      "gitTracked": true
+    },
+    "site/index.html": {
+      "sha256": "7cf68d68d597a6b34ef41211a16f9194c6eb8031eceadc88396fc63c43046048",
+      "gitTracked": true
+    },
+    "hosted-coverage.json": {
+      "sha256": "b5220163a1edc45ba8c0cb37029455287099f92ae2deb691d480f0c5c564e8d4",
+      "gitTracked": false
+    }
+  },
+  "authoredFiles": [
+    "progress/adoption.md",
+    "progress/discovery.json",
+    "progress/evidence/proof-export-review.md",
+    "progress/history/2026-10-22-empty-ledger.json",
+    "progress/history/2026-10-22-empty-record.json",
+    "progress/installation-preview.json",
+    "progress/ledger.json",
+    "progress/overview.md",
+    "progress/project-record.json",
+    "progress/scope-comparison.json",
+    "progress/theme.json",
+    "progress/toolkit-lock.json",
+    "progress/verification.json",
+    "progress/ownership.json"
+  ],
+  "immutableObservations": [
+    "progress/history/2026-10-22-empty-ledger.json",
+    "progress/history/2026-10-22-empty-record.json",
+    "progress/discovery.json"
+  ],
+  "generatedRoot": "progress/generated/",
+  "generatedFileManifest": "progress/generated/build-manifest.json",
+  "generatedOwner": "project_record pipeline, owner audience, host renderer",
+  "rebuildRule": "Preserve authored files and old snapshots; rebuild only reviewed generated paths. Compare generated hashes before removing or replacing output.",
+  "rollbackRule": "Review/preserve later edits, then remove only new setup-owned progress files. No original source or Git ref needs restoration.",
+  "integrationState": {
+    "site": "unchanged",
+    "README": "unchanged",
+    "AGENTS": "unchanged; installer preview unapplied",
+    "hosted": "preparation only; no remote",
+    "public": "not approved; private export guard verified"
+  }
+}

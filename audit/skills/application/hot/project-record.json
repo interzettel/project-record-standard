@@ -1,0 +1,48 @@
+{
+  "projects": [
+    {
+      "adapter": "portfolio-v3",
+      "sourceFile": "../legacy/plan.json",
+      "project": {
+        "id": "loomglass",
+        "name": "Loomglass",
+        "repository": null,
+        "visibility": "private"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "legacy/plan.json",
+        "commit": null,
+        "observedOn": "2026-10-22",
+        "updatedOn": null,
+        "authority": "Native legacy/plan.json owns scope, stable IDs, completion, Later exclusions and native roadmap gates. Legacy Done remains historical.",
+        "originGit": {
+          "kind": "local-git",
+          "repository": "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass",
+          "revision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+          "branch": "main",
+          "blob": "3f5a36fda3a2eaabb1ec8dd05d5ed290b599e123",
+          "sha256": "77dfd50ba719b8ec64e018444aeb2211f1364bd97118f5b8b9c04f179f3659ca"
+        },
+        "identityBoundary": "The runtime requires hosted owner/repository syntax for its Git source mode. This local content-addressed projection keeps the known Git revision and blob in originGit and the rollback bundle; no remote or GitHub URL is invented. verify.py requires HEAD, refs and source bytes to match these pins."
+      },
+      "presentation": {
+        "renderer": "host",
+        "theme": "theme.json",
+        "hostFont": "Georgia, serif",
+        "readmeMetric": "work",
+        "existingSite": "../site/index.html",
+        "progressUrl": null,
+        "readmeImageUrl": "./progress/derived/loomglass/progress.svg"
+      },
+      "supplements": [
+        {
+          "path": "governance.json",
+          "visibility": "private",
+          "authority": "Proposed planning/authority mapping derived from docs/brief.md and owner instruction; no completion or acceptance override",
+          "observedOn": "2026-10-22"
+        }
+      ]
+    }
+  ]
+}

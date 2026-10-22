@@ -1,0 +1,171 @@
+{
+  "contractVersion": "0.2.0",
+  "project": {
+    "id": "loomglass",
+    "name": "Loomglass",
+    "repository": null,
+    "visibility": "private"
+  },
+  "source": {
+    "kind": "file-snapshot",
+    "path": "progress/ledger.json",
+    "commit": null,
+    "observedOn": "2026-10-22",
+    "updatedOn": "2026-10-22",
+    "authority": "Authored local ledger; no approved baseline yet",
+    "sha256": "1b18178f9c47cc70cfa321b5f7b8f738b6aa54739806c4d9382e844b3014df09"
+  },
+  "groups": [],
+  "milestones": [],
+  "items": [],
+  "warnings": [
+    "Scope has not been defined or approved. Empty progress is not measured."
+  ],
+  "governance": {
+    "purpose": "Define the intended value with the owner before approving scope.",
+    "owner": "Sam",
+    "acceptanceAuthority": "Sam",
+    "changeAuthority": "Sam",
+    "approach": "adaptive",
+    "successCriteria": [],
+    "wbsCoverage": "not-assessed",
+    "workPackages": [],
+    "baselines": [],
+    "changeRequests": [],
+    "risks": [],
+    "tailoring": {
+      "governance": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "scope": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "schedule": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "finance": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "stakeholders": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "resources": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "risk": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      }
+    },
+    "operations": {
+      "status": "not-assessed",
+      "reason": "Define service ownership, support and rollback before operation."
+    }
+  },
+  "presentation": {
+    "renderer": "host",
+    "theme": "theme.json",
+    "readmeMetric": "work",
+    "progressUrl": null
+  },
+  "inputVisibility": [
+    "private"
+  ],
+  "supplementSources": [],
+  "history": {
+    "coverage": "Only the listed pinned observations; intervening events are unknown.",
+    "snapshots": [
+      {
+        "observedOn": "2026-10-22",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "progress/ledger.json",
+          "commit": null,
+          "observedOn": "2026-10-22",
+          "updatedOn": "2026-10-22",
+          "authority": "Authored local ledger; no approved baseline yet",
+          "sha256": "1b18178f9c47cc70cfa321b5f7b8f738b6aa54739806c4d9382e844b3014df09"
+        },
+        "metrics": {
+          "work": {
+            "done": 0,
+            "total": 0,
+            "percent": null,
+            "active": 0,
+            "review": 0,
+            "blocked": 0,
+            "unknown": 0,
+            "excluded": 0,
+            "method": "completed-leaves / required-leaves"
+          },
+          "ledger": {
+            "done": 0,
+            "total": 0,
+            "percent": null,
+            "active": 0,
+            "review": 0,
+            "blocked": 0,
+            "unknown": 0,
+            "excluded": 0,
+            "method": "completed-leaves / retained-ledger-leaves"
+          },
+          "milestones": {
+            "done": 0,
+            "total": 0,
+            "known": 0,
+            "percent": null,
+            "method": "accepted-milestones / declared-milestones"
+          },
+          "roadmapMean": {
+            "percent": null,
+            "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+            "milestoneCount": 0
+          }
+        }
+      }
+    ],
+    "comparisons": []
+  },
+  "metrics": {
+    "work": {
+      "done": 0,
+      "total": 0,
+      "percent": null,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 0,
+      "total": 0,
+      "percent": null,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 0,
+      "total": 0,
+      "known": 0,
+      "percent": null,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 0
+    }
+  }
+}

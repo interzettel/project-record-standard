@@ -3,8 +3,8 @@
 from collections import Counter
 from copy import deepcopy
 from datetime import date
+from fractions import Fraction
 import re
-from statistics import mean
 
 from .history import history_errors
 from .governance import governance_errors
@@ -15,10 +15,13 @@ class RecordError(ValueError):
 
 
 def percentage(numerator: int, denominator: int) -> float | None:
-    """Returns a percentage, or None when there is no defined denominator."""
+    """Rounds a ratio to tenths with upward ties, or returns None for empty scope."""
     if denominator < 0 or numerator < 0 or numerator > denominator:
         raise RecordError("Percentage requires 0 <= numerator <= denominator")
-    return round(100 * numerator / denominator, 1) if denominator else None
+    if not denominator:
+        return None
+    tenths, remainder = divmod(1000 * numerator, denominator)
+    return (tenths + int(2 * remainder >= denominator)) / 10
 
 
 def progress(items: list[dict], mode: str = "required") -> dict:
@@ -229,8 +232,9 @@ def summarize(record: dict) -> dict:
             milestone["accepted"] = None
     milestones = result["milestones"]
     known = [m for m in milestones if m["accepted"] is not None]
-    values = [100 * m["progress"]["done"] / m["progress"]["total"]
+    values = [Fraction(m["progress"]["done"], m["progress"]["total"])
               if m["progress"]["total"] else None for m in milestones]
+    average = sum(values, Fraction(0)) / len(values) if values and all(v is not None for v in values) else None
     result["metrics"] = {
         "work": progress(result["items"]),
         "ledger": progress(result["items"], "ledger"),
@@ -241,7 +245,7 @@ def summarize(record: dict) -> dict:
             "method": "accepted-milestones / declared-milestones",
         },
         "roadmapMean": {
-            "percent": round(mean(values), 1) if values and all(v is not None for v in values) else None,
+            "percent": percentage(average.numerator, average.denominator) if average is not None else None,
             "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
             "milestoneCount": len(milestones),
         },

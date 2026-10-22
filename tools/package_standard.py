@@ -17,13 +17,15 @@ ROOT = Path(__file__).resolve().parents[1]
 def package(destination: Path) -> dict:
     """Writes a public-input-only source kit with reproducible ZIP metadata."""
     files = {}
-    for folder in ['src', 'web', 'schemas', 'templates', '.github/workflows', 'assets']:
+    for folder in ['src', 'web', 'schemas', 'templates', 'skills', 'progress', '.github/workflows', 'assets']:
         for path in sorted((ROOT / folder).rglob('*')):
             if path.is_file() and '__pycache__' not in path.parts and not any(p.endswith('.egg-info') for p in path.parts) and path.suffix != '.pyc':
                 files[path.relative_to(ROOT).as_posix()] = path.read_bytes()
-    for relative in ['pyproject.toml', 'action.yml', 'MANIFEST.in', 'VERIFICATION-public.md', 'tools/run_action.py', 'tools/build_schemas.py', 'tools/check_palette.py', 'tools/package_standard.py', 'tests/test_delivery.py', 'tests/test_packaging.py', 'tests/test_site.py', 'tests/metrics.test.mjs', 'tools/build_site.py', 'tools/check_readme.py', 'requirements-site.txt']:
+    for relative in ['pyproject.toml', 'action.yml', 'MANIFEST.in', 'VERIFICATION-public.md', 'tools/run_action.py', 'tools/build_schemas.py', 'tools/check_palette.py', 'tools/package_standard.py', 'tests/test_delivery.py', 'tests/test_packaging.py', 'tests/test_site.py', 'tests/test_agents.py', 'tests/test_status.py', 'tests/metrics.test.mjs', 'tools/build_site.py', 'tools/check_readme.py', 'requirements-site.txt']:
         files[relative] = (ROOT / relative).read_bytes()
-    for name in ['STANDARD', 'PRESENTATION', 'GITHUB', 'PMI-ALIGNMENT', 'ADAPTATION-PROFILES', 'AUTOMATION', 'UPGRADING', 'ACCESSIBILITY', 'START-HERE', 'DELIVERY']:
+    files['tools/check_skills.py'] = (ROOT / 'tools/check_skills.py').read_bytes()
+    files['tests/test_percentages.py'] = (ROOT / 'tests/test_percentages.py').read_bytes()
+    for name in ['STANDARD', 'PRESENTATION', 'GITHUB', 'PMI-ALIGNMENT', 'ADAPTATION-PROFILES', 'AUTOMATION', 'UPGRADING', 'ACCESSIBILITY', 'START-HERE', 'DELIVERY', 'AGENT-WORKFLOWS']:
         text = (ROOT / 'standards' / (name + '.md')).read_text()
         if name == 'STANDARD' and 'The last formula matches' in text:
             start = text.index('The last formula matches')
@@ -47,7 +49,7 @@ def package(destination: Path) -> dict:
         for relative in selected:
             path = ROOT / 'examples' / relative
             files['examples/' + relative] = path.read_bytes()
-    files['AGENTS.md'] = b'# Working on the standard\n\nPreserve project-owned branding, source identities and acceptance boundaries. Run PYTHONPATH=src python3 -m unittest discover -s tests -v. The examples use public inputs, but an agent must still review actual public projections. Do not deploy, create credentials or change GitHub as an incidental tracker update.\n'
+    files['AGENTS.md'] = (ROOT / 'AGENTS.md').read_bytes()
     checksums = ''.join(sha256(content).hexdigest() + '  ' + name + '\n' for name, content in sorted(files.items()))
     files['checksums.sha256'] = checksums.encode()
     destination.parent.mkdir(parents=True, exist_ok=True)

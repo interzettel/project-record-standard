@@ -26,6 +26,7 @@ DOCUMENTS = [
     ('GITHUB', 'Issues and GitHub Projects'),
     ('AUTOMATION', 'Automation'),
     ('ADAPTATION-PROFILES', 'New and existing projects'),
+    ('AGENT-WORKFLOWS', 'Agent skills and planning'),
     ('PMI-ALIGNMENT', 'PMI alignment'),
     ('PRESENTATION', 'Brand and interaction'),
     ('ACCESSIBILITY', 'Accessibility evidence'),

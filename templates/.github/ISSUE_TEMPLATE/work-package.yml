@@ -1,4 +1,4 @@
-name: Work package
+name: Delivery package
 description: A bounded change with a stable ID, acceptance and evidence.
 title: "[ID] Verb + concrete outcome"
 body:

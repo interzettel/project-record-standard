@@ -1,0 +1,659 @@
+{
+  "contractVersion": "0.2.0",
+  "scopeStatus": "proposed",
+  "outcomes": [
+    {
+      "id": "LG-O1",
+      "title": "One repeatable offline import-to-proof workflow",
+      "scopeStatus": "proposed",
+      "owner": "Sam",
+      "deliverableIds": [
+        "LG-D1",
+        "LG-D2",
+        "LG-D3",
+        "LG-D4"
+      ],
+      "acceptanceAuthority": "Sam"
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "LG-D1",
+      "title": "Agreed input and import record",
+      "outcomeId": "LG-O1",
+      "workPackageIds": [
+        "LG-WP1"
+      ],
+      "scopeStatus": "proposed"
+    },
+    {
+      "id": "LG-D2",
+      "title": "Printable offline workflow",
+      "outcomeId": "LG-O1",
+      "workPackageIds": [
+        "LG-WP2"
+      ],
+      "scopeStatus": "proposed"
+    },
+    {
+      "id": "LG-D3",
+      "title": "Repeatability evidence",
+      "outcomeId": "LG-O1",
+      "workPackageIds": [
+        "LG-WP3"
+      ],
+      "scopeStatus": "proposed"
+    },
+    {
+      "id": "LG-D4",
+      "title": "Physical inspection and handoff",
+      "outcomeId": "LG-O1",
+      "workPackageIds": [
+        "LG-WP4"
+      ],
+      "scopeStatus": "proposed"
+    }
+  ],
+  "groups": [
+    {
+      "id": "LG-G1",
+      "title": "Input and criteria",
+      "panel": "Import-to-proof workflow"
+    },
+    {
+      "id": "LG-G2",
+      "title": "Printable proof and assurance",
+      "panel": "Import-to-proof workflow"
+    },
+    {
+      "id": "LG-G3",
+      "title": "Physical review and handoff",
+      "panel": "Import-to-proof workflow"
+    }
+  ],
+  "items": [
+    {
+      "id": "LG-001",
+      "title": "Agree the workflow fixture and proof criteria",
+      "groupId": "LG-G1",
+      "milestoneId": "LG-M1",
+      "state": "backlog",
+      "sourceState": "proposed work, not performed",
+      "required": true,
+      "blocked": true,
+      "blocker": "Sam must decide LG-001 scope and criteria.",
+      "nextAction": "Sam reviews the proposal and records fixture, print criteria and scope decision.",
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "planning-source",
+          "source": "docs/brief.md@03782b5739f26041dbe109f3d9426412dcf77fba",
+          "result": "observed",
+          "subject": "LG-001",
+          "revision": "03782b5739f26041dbe109f3d9426412dcf77fba"
+        }
+      ],
+      "completionBasis": "not-complete",
+      "kind": "decision",
+      "owner": "Sam",
+      "accountingOwner": "Sam",
+      "accountingWorkPackageId": "LG-WP1",
+      "scopeStatus": "proposed",
+      "criterion": "Sam records the representative local input identity, supported format, proof output format/size/layout/scale, print conditions and pass/fail criteria, and explicitly approves or amends the proposed workflow scope.",
+      "priority": "P0",
+      "issueUrl": null,
+      "deferReason": null,
+      "note": "Scope is proposed; no recorded acceptance or budget decision. Sam supplies the decision, not the setup agent.",
+      "evidencePolicy": {
+        "allOf": [
+          "owner-decision"
+        ]
+      }
+    },
+    {
+      "id": "LG-002",
+      "title": "Verify the reported local import",
+      "groupId": "LG-G1",
+      "milestoneId": "LG-M1",
+      "state": "backlog",
+      "sourceState": "proposed work, not performed",
+      "required": true,
+      "blocked": true,
+      "blocker": "Importer/runtime not supplied; Sam must locate it after choosing fixture.",
+      "nextAction": "Sam supplies importer/runtime and runs the selected fixture.",
+      "dependsOn": [
+        "LG-001"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "planning-source",
+          "source": "docs/brief.md@03782b5739f26041dbe109f3d9426412dcf77fba",
+          "result": "observed",
+          "subject": "LG-002",
+          "revision": "03782b5739f26041dbe109f3d9426412dcf77fba"
+        }
+      ],
+      "completionBasis": "not-complete",
+      "kind": "verification",
+      "owner": "Sam",
+      "accountingOwner": "Sam",
+      "accountingWorkPackageId": "LG-WP1",
+      "scopeStatus": "proposed",
+      "criterion": "Locate the runnable importer and runtime; at an identified implementation revision, import the LG-001 fixture offline and record commands, input identity and observed result. A brief claim alone cannot pass this criterion.",
+      "priority": "P0",
+      "issueUrl": null,
+      "deferReason": null,
+      "note": "Brief says local file import works, but no executable importer is present in either inspected branch. Sam must locate the actual code/runtime.",
+      "evidencePolicy": {
+        "allOf": [
+          "local-check"
+        ]
+      }
+    },
+    {
+      "id": "LG-003",
+      "title": "Complete the printable proof exporter",
+      "groupId": "LG-G2",
+      "milestoneId": "LG-M2",
+      "state": "active",
+      "sourceState": "brief-reported exporter started; unmerged stub observed",
+      "required": true,
+      "blocked": true,
+      "blocker": "Pending prerequisites: LG-001, LG-002",
+      "nextAction": "Sam reviews the retained branch and resumes implementation after prerequisites.",
+      "dependsOn": [
+        "LG-001",
+        "LG-002"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "planning-source",
+          "source": "docs/brief.md@03782b5739f26041dbe109f3d9426412dcf77fba",
+          "result": "observed",
+          "subject": "LG-003",
+          "revision": "03782b5739f26041dbe109f3d9426412dcf77fba"
+        },
+        {
+          "kind": "unfinished-implementation",
+          "source": "git:refs/heads/proof-export@c1a49a97af2c514ecae099ad3255beef6276225e:proof.py",
+          "result": "incomplete",
+          "subject": "LG-003",
+          "revision": "c1a49a97af2c514ecae099ad3255beef6276225e"
+        }
+      ],
+      "completionBasis": "not-complete",
+      "kind": "implementation",
+      "owner": "Sam",
+      "accountingOwner": "Sam",
+      "accountingWorkPackageId": "LG-WP2",
+      "scopeStatus": "proposed",
+      "criterion": "Review/resume proof-export at its pinned revision and implement export_proof to produce the LG-001 agreed printable layout from an imported study; record implementation revision and a passed fixture-based export check.",
+      "priority": "P1",
+      "issueUrl": null,
+      "deferReason": null,
+      "note": "Only two-line NotImplementedError stub exists on the retained proof-export branch; active denotes source-reported started work, not usable output or current capacity.",
+      "evidencePolicy": {
+        "allOf": [
+          "local-check"
+        ]
+      }
+    },
+    {
+      "id": "LG-004",
+      "title": "Connect the offline import-to-proof sequence",
+      "groupId": "LG-G2",
+      "milestoneId": "LG-M2",
+      "state": "backlog",
+      "sourceState": "proposed work, not performed",
+      "required": true,
+      "blocked": true,
+      "blocker": "Pending prerequisites: LG-002, LG-003",
+      "nextAction": "Sam completes and records the declared prerequisites, then the criterion.",
+      "dependsOn": [
+        "LG-002",
+        "LG-003"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "planning-source",
+          "source": "docs/brief.md@03782b5739f26041dbe109f3d9426412dcf77fba",
+          "result": "observed",
+          "subject": "LG-004",
+          "revision": "03782b5739f26041dbe109f3d9426412dcf77fba"
+        }
+      ],
+      "completionBasis": "not-complete",
+      "kind": "implementation",
+      "owner": "Sam",
+      "accountingOwner": "Sam",
+      "accountingWorkPackageId": "LG-WP2",
+      "scopeStatus": "proposed",
+      "criterion": "A documented local sequence connects the verified importer to proof export, preserves the input study and handles existing output without silent data loss; record the implementation revision and a passed end-to-end run.",
+      "priority": "P1",
+      "issueUrl": null,
+      "deferReason": null,
+      "note": "New proposed integration criterion; no integration was executed during tracking setup.",
+      "evidencePolicy": {
+        "allOf": [
+          "local-check"
+        ]
+      }
+    },
+    {
+      "id": "LG-005",
+      "title": "Record repeatability and safe-file checks",
+      "groupId": "LG-G2",
+      "milestoneId": "LG-M2",
+      "state": "backlog",
+      "sourceState": "proposed work, not performed",
+      "required": true,
+      "blocked": true,
+      "blocker": "Pending prerequisites: LG-004",
+      "nextAction": "Sam completes and records the declared prerequisites, then the criterion.",
+      "dependsOn": [
+        "LG-004"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "planning-source",
+          "source": "docs/brief.md@03782b5739f26041dbe109f3d9426412dcf77fba",
+          "result": "observed",
+          "subject": "LG-005",
+          "revision": "03782b5739f26041dbe109f3d9426412dcf77fba"
+        }
+      ],
+      "completionBasis": "not-complete",
+      "kind": "verification",
+      "owner": "Sam",
+      "accountingOwner": "Sam",
+      "accountingWorkPackageId": "LG-WP3",
+      "scopeStatus": "proposed",
+      "criterion": "At the LG-004 revision, repeat the agreed fixture-to-proof sequence twice and record equivalent intended content/layout, output identities and passed checks for invalid input and existing-output behavior; state remaining limits.",
+      "priority": "P1",
+      "issueUrl": null,
+      "deferReason": null,
+      "note": "New proposed assurance work; no product test harness or fixture was supplied.",
+      "evidencePolicy": {
+        "allOf": [
+          "local-check"
+        ]
+      }
+    },
+    {
+      "id": "LG-006",
+      "title": "Record Sam's physical proof inspection",
+      "groupId": "LG-G3",
+      "milestoneId": "LG-M3",
+      "state": "backlog",
+      "sourceState": "proposed work, not performed",
+      "required": true,
+      "blocked": true,
+      "blocker": "Pending prerequisites: LG-005",
+      "nextAction": "Sam completes and records the declared prerequisites, then the criterion.",
+      "dependsOn": [
+        "LG-005"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "planning-source",
+          "source": "docs/brief.md@03782b5739f26041dbe109f3d9426412dcf77fba",
+          "result": "observed",
+          "subject": "LG-006",
+          "revision": "03782b5739f26041dbe109f3d9426412dcf77fba"
+        }
+      ],
+      "completionBasis": "not-complete",
+      "kind": "verification",
+      "owner": "Sam",
+      "accountingOwner": "Sam",
+      "accountingWorkPackageId": "LG-WP4",
+      "scopeStatus": "proposed",
+      "criterion": "Sam physically prints and inspects the identified LG-005 proof under the LG-001 conditions; retain a dated, attributed acceptance or rejection with findings. Done requires the agreed physical criteria to pass; an honest rejection remains evidence and blocks acceptance.",
+      "priority": "P2",
+      "issueUrl": null,
+      "deferReason": null,
+      "note": "Physical inspection cannot be performed by a record validator; Sam remains the acceptor.",
+      "evidencePolicy": {
+        "allOf": [
+          "physical-acceptance"
+        ]
+      }
+    },
+    {
+      "id": "LG-007",
+      "title": "Document and review the local handoff",
+      "groupId": "LG-G3",
+      "milestoneId": "LG-M3",
+      "state": "backlog",
+      "sourceState": "proposed work, not performed",
+      "required": true,
+      "blocked": true,
+      "blocker": "Pending prerequisites: LG-005, LG-006",
+      "nextAction": "Sam completes and records the declared prerequisites, then the criterion.",
+      "dependsOn": [
+        "LG-005",
+        "LG-006"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "planning-source",
+          "source": "docs/brief.md@03782b5739f26041dbe109f3d9426412dcf77fba",
+          "result": "observed",
+          "subject": "LG-007",
+          "revision": "03782b5739f26041dbe109f3d9426412dcf77fba"
+        }
+      ],
+      "completionBasis": "not-complete",
+      "kind": "documentation",
+      "owner": "Sam",
+      "accountingOwner": "Sam",
+      "accountingWorkPackageId": "LG-WP4",
+      "scopeStatus": "proposed",
+      "criterion": "Provide local import/export/inspection instructions, prerequisites, output location, backup/recovery steps and known limitations; record Sam's review of a repeatable handoff against the demonstrated workflow. This does not infer continuing service commitments.",
+      "priority": "P2",
+      "issueUrl": null,
+      "deferReason": null,
+      "note": "New proposed bounded handoff; continuing operations ownership/resources need Sam's decision.",
+      "evidencePolicy": {
+        "allOf": [
+          "handoff-review"
+        ]
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "id": "LG-M1",
+      "title": "Fixture and import ready",
+      "goal": "Sam-defined print fixture and criteria with an independently observed offline import.",
+      "horizon": "Now",
+      "groupIds": [
+        "LG-G1"
+      ],
+      "gateItemIds": [
+        "LG-001",
+        "LG-002"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "acceptanceAuthority": "Sam",
+      "acceptanceStatus": "pending",
+      "scopeStatus": "proposed",
+      "dependsOn": [],
+      "nextAction": "Sam decides LG-001 and supplies/runs the LG-002 importer.",
+      "unscopedWork": [],
+      "sourceState": "proposed; owner acceptance pending",
+      "evidence": [],
+      "targetDate": null,
+      "forecastDate": null
+    },
+    {
+      "id": "LG-M2",
+      "title": "Repeatable printable proof available",
+      "goal": "A verified offline sequence produces the agreed printable proof with repeatability and safe-file evidence.",
+      "horizon": "Next",
+      "groupIds": [
+        "LG-G2"
+      ],
+      "gateItemIds": [
+        "LG-003",
+        "LG-004",
+        "LG-005"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "acceptanceAuthority": "Sam",
+      "acceptanceStatus": "pending",
+      "scopeStatus": "proposed",
+      "dependsOn": [
+        "LG-M1"
+      ],
+      "nextAction": "Resume LG-003 after LG-M1; record integrated and repeated runs.",
+      "unscopedWork": [],
+      "sourceState": "proposed; owner acceptance pending",
+      "evidence": [],
+      "targetDate": null,
+      "forecastDate": null
+    },
+    {
+      "id": "LG-M3",
+      "title": "Physical proof and handoff accepted",
+      "goal": "Sam accepts the identified physical proof and a documented repeatable local handoff.",
+      "horizon": "Later",
+      "groupIds": [
+        "LG-G3"
+      ],
+      "gateItemIds": [
+        "LG-006",
+        "LG-007"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "acceptanceAuthority": "Sam",
+      "acceptanceStatus": "pending",
+      "scopeStatus": "proposed",
+      "dependsOn": [
+        "LG-M2"
+      ],
+      "nextAction": "After LG-M2, Sam inspects the physical print and reviews the handoff.",
+      "unscopedWork": [],
+      "sourceState": "proposed; owner acceptance pending",
+      "evidence": [],
+      "targetDate": null,
+      "forecastDate": null
+    }
+  ],
+  "governance": {
+    "purpose": "One repeatable offline import-to-proof workflow with physical inspection and usable local handoff; proposed decomposition of the product brief.",
+    "owner": "Sam",
+    "acceptanceAuthority": "Sam",
+    "changeAuthority": "Sam",
+    "approach": "adaptive",
+    "approachStatus": "proposed",
+    "successCriteria": [
+      "Sam records the representative local input identity, supported format, proof output format/size/layout/scale, print conditions and pass/fail criteria, and explicitly approves or amends the proposed workflow scope.",
+      "A documented local sequence connects the verified importer to proof export, preserves the input study and handles existing output without silent data loss; record the implementation revision and a passed end-to-end run.",
+      "At the LG-004 revision, repeat the agreed fixture-to-proof sequence twice and record equivalent intended content/layout, output identities and passed checks for invalid input and existing-output behavior; state remaining limits.",
+      "Sam physically prints and inspects the identified LG-005 proof under the LG-001 conditions; retain a dated, attributed acceptance or rejection with findings. Done requires the agreed physical criteria to pass; an honest rejection remains evidence and blocks acceptance.",
+      "Provide local import/export/inspection instructions, prerequisites, output location, backup/recovery steps and known limitations; record Sam's review of a repeatable handoff against the demonstrated workflow. This does not infer continuing service commitments."
+    ],
+    "wbsCoverage": "complete",
+    "wbsCoverageLimit": "Every declared proposed leaf maps once; real-world completeness and omissions await Sam's review.",
+    "workPackages": [
+      {
+        "id": "LG-WP1",
+        "outcomeId": "LG-O1",
+        "deliverableId": "LG-D1",
+        "deliverable": "Agreed input and import record",
+        "owner": "Sam",
+        "acceptance": "All listed leaves meet their criteria with applicable evidence; Sam separately accepts the associated checkpoint.",
+        "workItemIds": [
+          "LG-001",
+          "LG-002"
+        ],
+        "scopeStatus": "proposed"
+      },
+      {
+        "id": "LG-WP2",
+        "outcomeId": "LG-O1",
+        "deliverableId": "LG-D2",
+        "deliverable": "Printable offline workflow",
+        "owner": "Sam",
+        "acceptance": "All listed leaves meet their criteria with applicable evidence; Sam separately accepts the associated checkpoint.",
+        "workItemIds": [
+          "LG-003",
+          "LG-004"
+        ],
+        "scopeStatus": "proposed"
+      },
+      {
+        "id": "LG-WP3",
+        "outcomeId": "LG-O1",
+        "deliverableId": "LG-D3",
+        "deliverable": "Repeatability evidence",
+        "owner": "Sam",
+        "acceptance": "All listed leaves meet their criteria with applicable evidence; Sam separately accepts the associated checkpoint.",
+        "workItemIds": [
+          "LG-005"
+        ],
+        "scopeStatus": "proposed"
+      },
+      {
+        "id": "LG-WP4",
+        "outcomeId": "LG-O1",
+        "deliverableId": "LG-D4",
+        "deliverable": "Physical inspection and handoff",
+        "owner": "Sam",
+        "acceptance": "All listed leaves meet their criteria with applicable evidence; Sam separately accepts the associated checkpoint.",
+        "workItemIds": [
+          "LG-006",
+          "LG-007"
+        ],
+        "scopeStatus": "proposed"
+      }
+    ],
+    "baselines": [
+      {
+        "id": "LG-B0",
+        "status": "observed",
+        "observedOn": "2026-10-22",
+        "source": "history/2026-10-22-empty-ledger.json",
+        "note": "Empty private scaffold observation; no approved baseline."
+      },
+      {
+        "id": "LG-B1",
+        "status": "proposed",
+        "observedOn": "2026-10-22",
+        "source": "ledger.json",
+        "note": "Seven required leaves and three checkpoints proposed from the brief; Sam approval pending."
+      }
+    ],
+    "changeRequests": [
+      {
+        "id": "LG-CR1",
+        "reason": "Decompose the brief's next import-to-proof outcome into reviewable deliverables and evidence-bearing leaves.",
+        "impact": {
+          "requiredWork": "0/0 Not measured \u2192 0/7, 0.0% proposed",
+          "retainedWork": "0/0 Not measured \u2192 0/7, 0.0% proposed",
+          "milestones": "0/0 Not measured \u2192 0/3 accepted",
+          "schedule": "No commitments or estimates supplied.",
+          "resources": "Sam owns review and physical inspection; runtime/printer availability pending.",
+          "risk": "Missing importer and print acceptance parameters remain visible.",
+          "acceptance": "No baseline or checkpoint is approved."
+        },
+        "status": "proposed",
+        "decisionAuthority": "Sam"
+      }
+    ],
+    "risks": [
+      {
+        "id": "LG-R1",
+        "event": "The importer reported in the brief may not be recoverable or runnable from available sources.",
+        "owner": "Sam",
+        "response": "Locate the actual importer/runtime before planning exporter integration; amend scope explicitly if unavailable.",
+        "trigger": "LG-002 cannot identify or reproduce import.",
+        "status": "open"
+      },
+      {
+        "id": "LG-R2",
+        "event": "Digital proof checks may pass while physical output fails the designer's needs.",
+        "owner": "Sam",
+        "response": "Agree physical pass/fail and print conditions in LG-001; require Sam's LG-006 inspection before acceptance.",
+        "trigger": "Physical proof differs from agreed layout/scale or cannot be inspected.",
+        "status": "open"
+      },
+      {
+        "id": "LG-R3",
+        "event": "A repeat export could overwrite source or prior proof if file handling is unspecified.",
+        "owner": "Sam",
+        "response": "Specify safe outputs in LG-004 and demonstrate existing-output behavior in LG-005.",
+        "trigger": "Proposed export path collides with input or existing output.",
+        "status": "open"
+      }
+    ],
+    "issues": [
+      {
+        "id": "LG-I1",
+        "condition": "Runnable importer/runtime absent from supplied branches.",
+        "owner": "Sam",
+        "nextAction": "Locate source/runtime for LG-002.",
+        "status": "open"
+      },
+      {
+        "id": "LG-I2",
+        "condition": "Proof exporter raises NotImplementedError.",
+        "owner": "Sam",
+        "nextAction": "Review/resume pinned proof-export branch for LG-003.",
+        "status": "open"
+      }
+    ],
+    "acceptedDebt": [],
+    "tailoring": {
+      "governance": {
+        "status": "applied",
+        "reason": "Sam is named owner, acceptance and change authority. Local setup is authorized; no product/baseline/public approval recorded."
+      },
+      "scope": {
+        "status": "applied",
+        "reason": "Proposed bounded outcome, deliverables, unique WBS ownership and criteria; Sam reviews completeness before approval."
+      },
+      "schedule": {
+        "status": "applied",
+        "reason": "Use dependency-based Now/Next/Later checkpoints. Dates/capacity remain unestimated; no committed schedule inferred."
+      },
+      "finance": {
+        "status": "not-assessed",
+        "reason": "Brief explicitly says no budget decision. Sam must decide resource/cost constraints; no zero budget or cost metric invented."
+      },
+      "stakeholders": {
+        "status": "applied",
+        "reason": "Solo print designer is intended user; Sam owns local scope and physical review. No external communication is sent."
+      },
+      "resources": {
+        "status": "applied",
+        "reason": "Sam is accountable for each leaf. Import runtime, print resources and capacity remain unresolved. Agent authorization covers local tracking only."
+      },
+      "risk": {
+        "status": "applied",
+        "reason": "Three owned risks include response/trigger/state; existing missing importer and exporter stub are separately recorded as issues."
+      }
+    },
+    "operations": {
+      "status": "partial",
+      "owner": "Sam (proposed for local handoff)",
+      "reason": "Offline local product; bounded handoff/recovery is LG-007. No ongoing hosted service or SLA is proposed.",
+      "supportRoute": "Sam local review; formal continuing support/incident route undecided.",
+      "observability": "Repeatable commands and output identities proposed in LG-005; no live health claim.",
+      "backupRollback": "Preserve source studies and earlier proofs; LG-007 documents recovery. Tracking rollback is additive removal of new progress files after review.",
+      "dataPrivacy": "Keep local studies and private tracking local; no public projection approved.",
+      "maintenanceResponsibility": "Ongoing resources and service ownership require Sam's decision."
+    }
+  },
+  "warnings": [
+    "All seven required leaves and three checkpoints are proposed for Sam, not an approved baseline.",
+    "Local import works is a brief claim; no runnable importer or independent product check was supplied.",
+    "The exporter branch is a stub; active receives no fractional completion credit.",
+    "Hosted sources are inaccessible with unknown totals; no publication or deployment is claimed.",
+    "No physical acceptance, budget decision or public projection approval is recorded."
+  ],
+  "discoveryIdeas": [
+    {
+      "idea": "Cloud sync, accounts, collaboration, batch export and extra print formats",
+      "status": "unselected",
+      "reason": "Outside the brief's bounded next workflow; not accounting leaves."
+    },
+    {
+      "idea": "Public tracker/hosted automation/site presentation",
+      "status": "unselected",
+      "reason": "No remote, host or public approval. Prepare only."
+    }
+  ],
+  "deliveryCoverage": "Local tags: none observed. Hosted issues, PRs, releases and deployment channels are inaccessible because no remote/repository identity is configured; totals are unknown. No publication or deployment is claimed."
+}

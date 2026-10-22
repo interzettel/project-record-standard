@@ -1,6 +1,12 @@
 # Public-source distribution verification
 
-Version 0.2.0, 22 October 2026.
+Implementation 0.3.0, contract 0.2.0. Latest local checks: 23 October 2026.
+
+The ten saved workflow skill bodies match the canonical distribution. Five preparation samples per workflow and executable cold/hot fixture applications are documented in [the evaluation record](https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md), including limitations, the corrected alias-direction failure and capacity interruptions. Final runtime replay preserved both fixture inputs, installed all ten skills additively and repeated with no changes.
+
+The expanded local suite passed 35 Python tests, seven browser calculation/filter tests and 20 colour-role checks (minimum tested contrast 5.31). Public pipeline, 11-page guide/site build and README graphic/text parity passed. New checks cover installer collisions/interruption/upgrades, operational collection receipts, distributed skill installation and shared upward-tie percentage rounding. The extracted 106-file source distribution passed six check/build/test commands. A 0.3.0 wheel was built, installed separately and its status command verified. These local observations do not imply hosted delivery, actual screen-reader output or owner acceptance.
+
+## Earlier 0.2.0 verification
 
 The source kit has an explicit file selection and per-file SHA-256 checksums. Its examples use public inputs. Owner-review output, private fixtures, browser screenshots and generated Python metadata are excluded.
 
@@ -10,7 +16,7 @@ The source archive is extracted and its included Python tests, pipeline and repa
 
 The browser review checks real-data history/drill-down, candidate gates, changelog/coverage states, narrow layouts, appearance and doubled-text reflow. See `standards/ACCESSIBILITY.md` for exact scope and remaining keyboard/assistive-technology checks. Review evidence does not award owner acceptance.
 
-No native project fields, issues, labels, target websites, remote repositories, releases, schedules or deployments are changed by these checks. The adaptation skill has not been authored or installed. PMI alignment is a documented tailoring map based on the cited public sources; it is not an endorsement or full-standard compliance assessment.
+No native project fields, issues, labels, target websites, releases or schedules were changed by those checks. The adaptation skills were authored and saved in the subsequent 0.3.0 work; individual repository migrations remain separate. PMI alignment is a documented tailoring map based on the cited public sources; it is not an endorsement or full-standard compliance assessment.
 
 
 ## Canonical hosted observation

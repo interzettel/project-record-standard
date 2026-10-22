@@ -31,3 +31,7 @@ test('all-required evidence cannot be satisfied by one matching kind',()=>{
   assert.equal(policySatisfied(policy,[receipt,{...receipt,kind:'review'}],'WP1','r1'),true);
   assert.equal(policySatisfied(policy,[receipt,{...receipt,kind:'review',result:'failed'}],'WP1','r1'),false);
 });
+test('half-tenth leaf percentage uses the shared upward tie rule',()=>{
+  const items=Array.from({length:16},(_,i)=>({id:String(i),state:i<13?'done':'backlog',required:true,blocked:false}));
+  assert.equal(progress(items).percent,81.3);
+});

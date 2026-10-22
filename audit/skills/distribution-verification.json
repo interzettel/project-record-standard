@@ -1,0 +1,83 @@
+{
+  "observedOn": "2026-10-23",
+  "sourceArchive": {
+    "path": "/tmp/standard-0.3-check-a9kzvk4i/standard.zip",
+    "files": 106,
+    "sha256": "0427fa623c397794e3fa17b530822e3d9f520d7450b1df3c60dfe1bb1d7e3503",
+    "audience": "public-input-only source distribution",
+    "published": false
+  },
+  "extractedChecks": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "project_record",
+        "pipeline",
+        "--config",
+        "examples/projects.json",
+        "--output",
+        ".record-build",
+        "--audience",
+        "public"
+      ],
+      "exitCode": 0,
+      "logSha256": "6bc562aa5096020ab8a0c7639379d65818b82eeb2cc1e2e01769a03cee0ec64c"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_skills.py"
+      ],
+      "exitCode": 0,
+      "logSha256": "7c87a5ce474e3a74ad631e8b130e80e5ba5e8a21f9522e6256032fa3287ae45e"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exitCode": 0,
+      "logSha256": "3ccc8a353b0fc3cbf476079a5ac7746e7575b2f3093148b9b746d35bbc4d3f74"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/metrics.test.mjs"
+      ],
+      "exitCode": 0,
+      "logSha256": "ed1f540ed91e2f8e4ef16543b66c450d070418d92007c6c22c6c313530966358"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/build_site.py",
+        "--records",
+        ".record-build",
+        "--output",
+        ".site"
+      ],
+      "exitCode": 0,
+      "logSha256": "39afae015321d0713cd00cdb638a9a5c456739f091d300659de7aa09197d28c6"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_readme.py",
+        "--records",
+        ".record-build"
+      ],
+      "exitCode": 0,
+      "logSha256": "06e56f6ba90b1d20d59722616e5009a0ced4e8b706b0e444ac65eff68d011d45"
+    }
+  ],
+  "wheel": "0.3.0 built, installed separately, status command passed with 13/16 = 81.3%",
+  "temporaryEvidenceDirectory": "/tmp/standard-0.3-check-a9kzvk4i",
+  "limits": "Local package verification; no publication or owner approval inferred."
+}

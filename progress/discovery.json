@@ -1,0 +1,70 @@
+{
+  "projectId": "standard",
+  "observedOn": "2026-10-22",
+  "sources": [
+    {
+      "kind": "issues",
+      "source": "https://api.github.com/repos/interzettel/project-record-standard/issues?state=all&per_page=100",
+      "observedAt": "2026-10-22T18:03:27.650033+00:00",
+      "coverage": "complete for the selected collection: fewer than 100 entries on first page",
+      "total": 0,
+      "revision": null
+    },
+    {
+      "kind": "pulls",
+      "source": "https://api.github.com/repos/interzettel/project-record-standard/pulls?state=all&per_page=100",
+      "observedAt": "2026-10-22T18:03:27.650047+00:00",
+      "coverage": "complete for the selected collection: fewer than 100 entries on first page",
+      "total": 0,
+      "revision": null
+    },
+    {
+      "kind": "branches",
+      "source": "https://api.github.com/repos/interzettel/project-record-standard/branches?per_page=100",
+      "observedAt": "2026-10-22T18:03:27.650050+00:00",
+      "coverage": "complete for the selected collection: fewer than 100 entries on first page",
+      "total": 1,
+      "revision": "59396a891fbc740ffe0be095f02934dfae270d38"
+    },
+    {
+      "kind": "releases",
+      "source": "https://api.github.com/repos/interzettel/project-record-standard/releases?per_page=100",
+      "observedAt": "2026-10-22T18:03:27.650052+00:00",
+      "coverage": "complete for the selected collection: fewer than 100 entries on first page",
+      "total": 0,
+      "revision": null
+    },
+    {
+      "kind": "local docs, source, tracking and branding",
+      "source": "AGENTS.md; README.md; standards/; src/; web/; examples/projects.json; progress/",
+      "coverage": "complete for named local package paths; authored feature changes are uncommitted observations",
+      "findings": [
+        "Own ledger and public references have declared writers.",
+        "Original history and existing website brands remain intact.",
+        "No individual repository migration is included."
+      ]
+    },
+    {
+      "kind": "native GitHub Projects",
+      "coverage": "not-assessed",
+      "source": "No native Project enumeration or creation was performed.",
+      "findings": [
+        "The standard defines mappings and native views without claiming an existing Project has been reconciled."
+      ]
+    },
+    {
+      "kind": "CI and website",
+      "source": "standards/DELIVERY.md; .github/workflows/ci.yml; .github/workflows/record-build.yml",
+      "coverage": "scoped observed hosted runs and existing workflow source",
+      "findings": [
+        "Existing hosted implementation/keyboard evidence is dated and revision scoped.",
+        "The expanded agent package needs its own hosted verification."
+      ]
+    }
+  ],
+  "unresolved": [
+    "Actual screen-reader output",
+    "Owner acceptance",
+    "Final hosted observation of the expanded package"
+  ]
+}

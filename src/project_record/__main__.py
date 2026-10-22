@@ -1,7 +1,8 @@
 """Runs offline record validation, builds, comparisons and issue checks.
 
-Run python -m project_record with --help. Commands read the declared sources
-and write only the selected build destination. No command changes GitHub.
+Run python -m project_record with --help. Commands read declared sources and
+write only explicit local build, setup or instruction targets. No command
+changes GitHub or performs network reconciliation.
 """
 
 import argparse
@@ -47,6 +48,17 @@ def main(argv: list[str] | None = None) -> int:
     command.add_argument("--observed-on", required=True)
     command = subs.add_parser("adoption-plan")
     command.add_argument("--config", type=Path, required=True)
+    command = subs.add_parser("status")
+    command.add_argument("--config", type=Path, required=True)
+    command.add_argument("--only", help="Comma-separated project IDs")
+    command.add_argument("--as-of", required=True, help="Explicit ISO reporting date")
+    command.add_argument("--freshness-days", type=int, default=7)
+    command.add_argument("--observation", type=Path, help="Sourced collection-attempt JSON for one project")
+    command = subs.add_parser("install-skills")
+    command.add_argument("--toolkit", type=Path, required=True)
+    command.add_argument("--target", type=Path, required=True)
+    command.add_argument("--apply", action="store_true")
+    command.add_argument("--upgrade", action="store_true")
     args = parser.parse_args(argv)
     try:
         if args.command in {"check", "build", "pipeline", "export"}:
@@ -76,6 +88,16 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command == "adoption-plan":
             from .scaffold import adoption_plan
             result = adoption_plan(args.config)
+        elif args.command == "install-skills":
+            from .agents import install_skills
+            result = install_skills(args.toolkit, args.target, args.apply, args.upgrade)
+        elif args.command == "status":
+            from .status import project_status
+            records = load_config(args.config.resolve(), set(args.only.split(",")) if args.only else None)
+            if args.observation and len(records) != 1:
+                raise RecordError("A collection receipt requires selecting exactly one project")
+            observation = json.loads(args.observation.read_text()) if args.observation else None
+            result = [project_status(r, args.as_of, args.freshness_days, observation) for r in records]
         elif args.command == "validate":
             result = summarize(json.loads(args.record.read_text()))["metrics"]
         elif args.command == "compare":

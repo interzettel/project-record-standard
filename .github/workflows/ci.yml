@@ -34,6 +34,8 @@ jobs:
           audience: public
       - name: Test the Python runtime and site boundaries
         run: PYTHONPATH=src python3 -m unittest discover -s tests -v
+      - name: Check the versioned agent skill suite
+        run: PYTHONPATH=src python3 tools/check_skills.py
       - name: Compare browser calculations with the public records
         run: node --test tests/metrics.test.mjs
       - name: Check the brand colour roles

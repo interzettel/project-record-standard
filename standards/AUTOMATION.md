@@ -16,7 +16,7 @@ The action requires a new or empty dedicated output directory for either audienc
 
 ## Authored change fragments
 
-List individual JSON fragment files under a manifest entry's `changeFiles`, with each file's visibility, authority and observation date. Each fragment uses the shape in `templates/change.example.json`. The pipeline collects them deterministically and rejects duplicate IDs or a competing `changes` writer. Publication records refer to those IDs; unshipped fragments remain in Unreleased. The standard example uses four authored fragments.
+List individual JSON fragment files under a manifest entry's `changeFiles`, with each file's visibility, authority and observation date. Each fragment uses the shape in `templates/change.example.json`. The pipeline collects them deterministically and rejects duplicate IDs or a competing `changes` writer. Publication records refer to those IDs; unshipped fragments remain in Unreleased. The standard example lists its authored fragments explicitly in the manifest.
 
 ## Host website and README
 

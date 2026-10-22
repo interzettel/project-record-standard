@@ -2,6 +2,9 @@
 
 Read `standards/ADAPTATION.md` and the target repository's AGENTS.md before changing it.
 
+- Project overview, included/excluded scope and success/acceptance:
+- Discovery inventory, observation/coverage and unavailable sources:
+- Useful unfinished issues, PRs and branches; ranked cleanup reasons:
 - Source revision and canonical files:
 - Existing brand/font/site sources:
 - Stable-ID and field mapping:
@@ -13,6 +16,8 @@ Read `standards/ADAPTATION.md` and the target repository's AGENTS.md before chan
 - Public projection review:
 - Relevant tests and exact revision:
 - Change/release/deployment effect:
+- Added/removed/split/deferred scope and preserved prior observation:
+- Installation/output ownership, completed/pending steps and replay/rollback:
 - Remaining gaps and next action:
 
 Preserve the website. Fit the normalized record into the existing presentation. A missing receipt stays missing; a historical status is not re-certified. Keep scope changes and aliases reviewable. Install no schedules, credentials or external write loops as an incidental tracker migration.

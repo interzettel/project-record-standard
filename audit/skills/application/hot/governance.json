@@ -1,0 +1,129 @@
+{
+  "governance": {
+    "purpose": "An offline print-design notebook pursuing a reproducible import-to-proof workflow.",
+    "owner": "Sam",
+    "acceptanceAuthority": "Sam",
+    "changeAuthority": "Sam",
+    "approach": "adaptive",
+    "approachStatus": "Proposed tailoring, not a retroactive project decision",
+    "successCriteria": [
+      {
+        "status": "proposed",
+        "criterion": "Sam can repeat an explicitly specified import-to-proof example offline and inspect its result.",
+        "evidence": "Future artifact/revision, inputs, execution steps, output and attributed Sam review."
+      }
+    ],
+    "wbsCoverage": "partial",
+    "workPackages": [
+      {
+        "id": "WBS-G1",
+        "deliverable": "Import work recorded under native group G1",
+        "owner": "Sam",
+        "acceptance": "Proposed: Sam clarifies reproducible import inputs and output criteria before new evidence claims; existing LG-1\u2013LG-4 Done claims remain historical.",
+        "workItemIds": [
+          "LG-1",
+          "LG-2",
+          "LG-3",
+          "LG-4"
+        ],
+        "status": "proposed mapping",
+        "milestoneId": "M1"
+      },
+      {
+        "id": "WBS-G2",
+        "deliverable": "Proof work recorded under native group G2",
+        "owner": "Sam",
+        "acceptance": "Proposed: Sam defines a repeatable import-to-proof demonstration and the separate LG-5 and LG-6 exit criteria. No product run has been observed.",
+        "workItemIds": [
+          "LG-5",
+          "LG-6"
+        ],
+        "status": "proposed mapping",
+        "milestoneId": "M2"
+      },
+      {
+        "id": "WBS-G3",
+        "deliverable": "Retained Discovery work outside the selected required outcome",
+        "owner": "Sam",
+        "acceptance": "Preserve LG-7 history and LG-8 planned state with their Later reason; promotion into required scope needs an explicit scope change.",
+        "workItemIds": [
+          "LG-7",
+          "LG-8"
+        ],
+        "status": "retained mapping",
+        "milestoneId": "M3"
+      }
+    ],
+    "baselines": [
+      {
+        "id": "OBS-2026-10-22",
+        "status": "observed",
+        "sourceRevision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+        "sourceSha256": "77dfd50ba719b8ec64e018444aeb2211f1364bd97118f5b8b9c04f179f3659ca",
+        "required": "4/6",
+        "retained": "5/8",
+        "note": "One local source observation; not an approved baseline."
+      }
+    ],
+    "changeRequests": [],
+    "risks": [
+      {
+        "id": "R-HISTORICAL",
+        "event": "Historical Done fields may be mistaken for newly verified product behavior.",
+        "owner": "Sam",
+        "response": "Keep source-reported completion basis; require new evidence for any new verification or acceptance.",
+        "trigger": "New release or acceptance claim",
+        "status": "open"
+      },
+      {
+        "id": "R-CRITERIA",
+        "event": "Generic Legacy scope titles do not define checkable product acceptance or dependencies.",
+        "owner": "Sam",
+        "response": "Clarify bounded LG-5/LG-6 criteria and dependency order before execution; retain IDs and denominator.",
+        "trigger": "Beginning new implementation or approving scope",
+        "status": "open"
+      }
+    ],
+    "tailoring": {
+      "governance": {
+        "status": "applied",
+        "reason": "Sam owns project, acceptance and changes. No attributed baseline or product acceptance was supplied; this is local preparation."
+      },
+      "scope": {
+        "status": "applied",
+        "reason": "Native eight leaves and six required leaves retained exactly; three provisional WBS packages reference each leaf once without extra accounting."
+      },
+      "schedule": {
+        "status": "applied",
+        "reason": "Preserve Now/Next/Later horizons. No dates, capacities or dependency declarations exist; none inferred."
+      },
+      "finance": {
+        "status": "not-assessed",
+        "reason": "No budget, spend, funding constraint or cost source is present; Sam must assess if relevant."
+      },
+      "stakeholders": {
+        "status": "not-assessed",
+        "reason": "Offline print-design notebook suggests designers as intended users; only Sam is explicitly identified. Sam must confirm users/reviewers."
+      },
+      "resources": {
+        "status": "not-assessed",
+        "reason": "No product runtime, personnel capacity or platform requirements supplied. Sam is accountable; per-leaf delivery assignees are unknown."
+      },
+      "risk": {
+        "status": "applied",
+        "reason": "Track historical Done evidence, unclear criteria and unavailable hosted collection as separate review limits."
+      }
+    },
+    "operations": {
+      "status": "proposed",
+      "owner": "Sam",
+      "collectionOwner": "Sam",
+      "recoveryOwner": "Sam",
+      "handoff": "progress/HANDOFF.md",
+      "support": "Local handoff to Sam; no hosted support route supplied.",
+      "backup": "progress/rollback/pre-adoption.bundle and progress/rollback/original/",
+      "recovery": "Verify exact source/runtime pins and rebuild owned output into a new empty directory. Never reset legacy/plan.json to repair derived output.",
+      "privacy": "Owner-only; public projection review and site accessibility evidence remain pending."
+    }
+  }
+}

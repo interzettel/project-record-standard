@@ -9,12 +9,12 @@ Shared work terminology, explicit percentages and traceable delivery. Each proje
 
 | Measure | Completion | Meaning |
 | --- | ---: | --- |
-| Required work | 11/13 · 84.6% | Completed leaf items in the named required scope. |
-| Accepted milestones | 1/3 · 33.3% | Milestones whose declared outcome gates passed. |
+| Required work | 13/16 · 81.3% | Completed leaf items in the named required scope. |
+| Accepted milestones | 1/4 · 25.0% | Milestones whose declared outcome gates passed. |
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-10-22 against `df85d187`.
+Observed 2026-10-23 against `75257041`.
 <!-- project-record:end -->
 
 ## What this repository supplies
@@ -23,7 +23,7 @@ Observed 2026-10-22 against `df85d187`.
 - Calculation rules with named denominators, exact fractions and explanations for scope changes.
 - Optional browser explorers, a brand-owned reference page and a generated README graphic.
 - A Python CLI, composite action, reusable workflow, issue template and label vocabulary.
-- Cold setup and hot adaptation profiles for a future agent skill.
+- Ten agent skills for scouting/setup, adaptation, scope, progress, status, GitHub, delivery, presentation and operations, with an additive rules installer.
 - A tailored mapping to public PMI guidance, with stated evidence and compliance limits.
 
 The standard's own tracker includes canonical delivery and pending acceptance. The Prehnite example uses its stated pinned public source; it does not replace Prehnite's website or claim to be a live feed.
@@ -54,4 +54,4 @@ Use `presentation.renderer: host` to produce data and README output for the exis
 
 Read [terminology and calculations](standards/STANDARD.md), [GitHub integration](standards/GITHUB.md), [automation](standards/AUTOMATION.md), [adaptation profiles](standards/ADAPTATION-PROFILES.md), [PMI alignment](standards/PMI-ALIGNMENT.md), and [upgrade notes](standards/UPGRADING.md).
 
-The installed adaptation skill and individual repository migrations remain later phases. Runtime checks cannot authenticate a human approval. Repository creation and successful CI do not award owner acceptance. [Delivery evidence](standards/DELIVERY.md) and [accessibility evidence](standards/ACCESSIBILITY.md) distinguish observed results from pending verification.
+The agent suite is versioned under `skills/`; [Agent workflows](standards/AGENT-WORKFLOWS.md) explains setup, scouting, growing scope and installation. Individual repository migrations remain a separate phase. Runtime checks cannot authenticate a human approval. Repository creation and successful CI do not award owner acceptance. [Delivery evidence](standards/DELIVERY.md) and [accessibility evidence](standards/ACCESSIBILITY.md) distinguish observed results from pending verification.

@@ -1,4 +1,4 @@
-"""Checks work-package issue conventions without changing GitHub."""
+"""Checks delivery-package issue conventions without changing GitHub."""
 
 import re
 

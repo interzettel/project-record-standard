@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "observedOn": "2026-10-22",
+  "sourceRevision": "17a9314a06e339c87b247db805be30b6d84f1c9c",
+  "sourceSha256": "77dfd50ba719b8ec64e018444aeb2211f1364bd97118f5b8b9c04f179f3659ca",
+  "toolkitGitRevision": "59396a891fbc740ffe0be095f02934dfae270d38",
+  "toolkitIdentity": "Exact effective runtime digests in progress/toolkit-pin.json; checkout was not pristine.",
+  "checks": {
+    "authoredFilesUnchanged": 5,
+    "gitRefsAndHistoryPreserved": true,
+    "rollbackBundleVerified": true,
+    "stableLeafIdsPreserved": 8,
+    "requiredBeforeAfter": "4/6 = 66.7%",
+    "retainedBeforeAfter": "5/8 = 62.5%",
+    "nativeGateCheckpointsBeforeAfter": "1/3 = 33.3%; all native gate tasks done; not Sam acceptance",
+    "samAcceptedMilestones": "unknown; no attributed acceptance evidence",
+    "allEightLeavesInOneWbsPackageEach": true,
+    "newAccountingLeaves": 0,
+    "dependencyMeaning": "Not declared; not proof of no real dependencies",
+    "freshEmptyDestinationBuilds": 3,
+    "canonicalRepeatByteIdentical": true,
+    "vendoredRecoveryByteIdentical": true,
+    "hostRendererProducedNoReplacementPage": true,
+    "privatePublicExportRefused": true,
+    "externalCollection": "not-reconciled; no remote supplied",
+    "sourceHistoryObservations": 1,
+    "ownerApprovalInvented": false
+  },
+  "derivedSha256": {
+    "build-manifest.json": "565e310dd175b2e70c0eb7c8a7e20ae5cecbe24c7a4995350030945ee2920aff",
+    "loomglass/CHANGELOG-generated.md": "dd9a3912b7597c171dc9a1bd27df8d0c045b595ba0fd2bceb7da1474213e7854",
+    "loomglass/README-module.md": "3e280930bf0143bc868133fb584e0cfe0497d43a2e7db332bdcff7a14102043c",
+    "loomglass/delivery.json": "ec6a6723a4719132a4e554cd6bce5f74b583d50e0b8a05afed8ecd207521a880",
+    "loomglass/history.json": "9fdfc205cf474ff1c4d2a7fb1bb0cb2118cdf3ebf77569aecf6adf5d39d3ea8f",
+    "loomglass/progress.svg": "b8be64451fe2cf18d6c04ee34c35ad04743dd3aafd586752672ae2e1151041c4",
+    "loomglass/record.json": "d73ede2570a93a4d109ad77f420f16dfbee5157af7b569eb96d3a16993eeb770"
+  },
+  "commands": [
+    {
+      "toolkit": "/workspace/scratch/712507315946/canonical-standard/project-record-standard",
+      "arguments": [
+        "adoption-plan",
+        "--config",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/project-record.json"
+      ],
+      "exitCode": 0
+    },
+    {
+      "toolkit": "/workspace/scratch/712507315946/canonical-standard/project-record-standard",
+      "arguments": [
+        "check",
+        "--config",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/project-record.json"
+      ],
+      "exitCode": 0
+    },
+    {
+      "toolkit": "/workspace/scratch/712507315946/canonical-standard/project-record-standard",
+      "arguments": [
+        "status",
+        "--config",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/project-record.json",
+        "--as-of",
+        "2026-10-22"
+      ],
+      "exitCode": 0
+    },
+    {
+      "toolkit": "/workspace/scratch/712507315946/canonical-standard/project-record-standard",
+      "arguments": [
+        "pipeline",
+        "--config",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/project-record.json",
+        "--output",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/evidence/local-replay-<temporary>/first",
+        "--audience",
+        "owner"
+      ],
+      "exitCode": 0
+    },
+    {
+      "toolkit": "/workspace/scratch/712507315946/canonical-standard/project-record-standard",
+      "arguments": [
+        "pipeline",
+        "--config",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/project-record.json",
+        "--output",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/evidence/local-replay-<temporary>/repeat",
+        "--audience",
+        "owner"
+      ],
+      "exitCode": 0
+    },
+    {
+      "toolkit": "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/tools/project-record-standard",
+      "arguments": [
+        "pipeline",
+        "--config",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/project-record.json",
+        "--output",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/evidence/local-replay-<temporary>/recovery",
+        "--audience",
+        "owner"
+      ],
+      "exitCode": 0
+    },
+    {
+      "toolkit": "/workspace/scratch/712507315946/canonical-standard/project-record-standard",
+      "arguments": [
+        "export",
+        "--config",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/project-record.json",
+        "--output",
+        "/workspace/scratch/712507315946/skill-evaluation/hot-application/loomglass/progress/evidence/local-replay-<temporary>/public",
+        "--audience",
+        "public"
+      ],
+      "exitCode": 1
+    }
+  ]
+}

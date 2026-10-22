@@ -14,15 +14,15 @@ An empty scope displays **Not measured**. Active work earns no partial completio
 
 ## Use it in a new project
 
-Run `project-record init` with the project name, owner and observation date. It creates an empty private local scaffold. The cold profile in [New and existing projects](ADAPTATION-PROFILES.md) defines the inventory, decisions and acceptance needed before public integration.
+Use `establish-project-tracking` to write the project overview, scout repository evidence and propose scoped work. Run `project-record init` with the project name, owner and observation date in an empty staging directory when the project already has files. It creates an empty private local scaffold. The cold profile in [New and existing projects](ADAPTATION-PROFILES.md) defines the inventory, decisions and acceptance needed before public integration.
 
 Define purpose, deliverables, owners and acceptance criteria before filling a roadmap. Choose source authorities and the project brand. Do not add arbitrary tasks to produce an impressive percentage.
 
 ## Use it in an existing project
 
-Begin with `project-record adoption-plan` and the hot profile. Inventory the existing tracker, issues, milestone criteria, labels, website routes and generated files. Preserve IDs and prove before/after count parity.
+Use `adapt-project-tracking` and the hot profile. Run `project-record adoption-plan` after the manifest maps the actual sources. Inventory the existing tracker, issues, milestone criteria, labels, website routes and generated files. Preserve IDs and prove before/after count parity.
 
-Use the host renderer to add data to the existing website. Replace a source only after review and a recoverable cutover. The agent adaptation skill and individual repository migrations are later work; this repository supplies the contract and executable tooling.
+Use the host renderer to add data to the existing website. Replace a source only after review and a recoverable cutover. The [agent workflow guide](AGENT-WORKFLOWS.md) covers setup, adaptation, scope growth, skills installation, status questions and recovery. Individual repository migrations are separate work.
 
 ## Connect GitHub
 

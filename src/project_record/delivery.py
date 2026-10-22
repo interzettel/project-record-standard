@@ -2,7 +2,7 @@
 
 from copy import deepcopy
 
-from .core import RecordError, policy_satisfied
+from .core import RecordError, percentage, policy_satisfied
 
 
 def release_readiness(record: dict, plan: dict) -> dict:
@@ -37,7 +37,7 @@ def release_readiness(record: dict, plan: dict) -> dict:
     return {"id": plan["id"], "component": plan["component"], "channel": plan["channel"],
             "version": plan.get("version"), "revision": plan.get("revision"),
             "gates": gates, "passed": passed_count, "total": len(gates),
-            "percent": round(100 * passed_count / len(gates), 1) if gates else None,
+            "percent": percentage(passed_count, len(gates)),
             "status": "ready-for-publication-review" if gates and passed_count == len(gates) else "not-ready" if gates else "not-assessed",
             "published": False}
 

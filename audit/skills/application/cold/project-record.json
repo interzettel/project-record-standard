@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "adapter": "normalized-v1",
+      "sourceFile": "ledger.json",
+      "project": {
+        "id": "loomglass",
+        "name": "Loomglass",
+        "repository": null,
+        "visibility": "private"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "progress/ledger.json",
+        "commit": null,
+        "observedOn": "2026-10-22",
+        "updatedOn": "2026-10-22",
+        "authority": "Authored private local ledger proposal; Sam owns scope, completion evidence and acceptance. No approved baseline."
+      },
+      "presentation": {
+        "renderer": "host",
+        "theme": "theme.json",
+        "readmeMetric": "work",
+        "progressUrl": null
+      },
+      "snapshots": [
+        {
+          "sourceFile": "history/2026-10-22-empty-ledger.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "progress/history/2026-10-22-empty-ledger.json",
+            "commit": null,
+            "observedOn": "2026-10-22",
+            "updatedOn": "2026-10-22",
+            "authority": "Private empty scaffold observation; no approval"
+          }
+        }
+      ]
+    }
+  ],
+  "fieldAuthority": {
+    "scope": "progress/ledger.json; Sam decision authority",
+    "completion": "progress/ledger.json; evidence-backed updates",
+    "acceptance": "progress/ledger.json; attributed Sam record",
+    "discussionAssignment": "hosted sources inaccessible; future mapping only",
+    "workflow": "local ledger until reviewed hosted cutover",
+    "presentation": "site/index.html and authored README; no integration applied",
+    "publicationDeployment": "future separately observed channel records, inaccessible now"
+  }
+}

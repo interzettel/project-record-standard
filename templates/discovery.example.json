@@ -1,0 +1,19 @@
+{
+  "projectId": "example",
+  "status": "proposed",
+  "sources": [
+    {
+      "kind": "issues",
+      "source": "Repository and collection endpoint or local snapshot path",
+      "revision": null,
+      "observedAt": null,
+      "coverage": "not-assessed",
+      "pagesRead": 0,
+      "pagesExpected": null,
+      "findings": [],
+      "gap": "Collect the actual repository issues before claiming completeness"
+    }
+  ],
+  "cleanupQueue": [],
+  "unresolvedDecisions": []
+}

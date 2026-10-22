@@ -1,0 +1,16 @@
+{
+  "font": "Georgia, serif",
+  "light": {
+    "background": "#faf6f0",
+    "surface": "#faf6f0",
+    "text": "#6f1430",
+    "muted": "#6f1430",
+    "border": "#c0aaa9",
+    "accent": "#6f1430",
+    "accentText": "#faf6f0",
+    "signal": "#6f1430",
+    "signalText": "#6f1430"
+  },
+  "source": "site/index.html@03782b5739f26041dbe109f3d9426412dcf77fba",
+  "notes": "Preserves source background/text/font in private generated fallback. Border is a proposed derived role. No dark palette or website redesign is invented; renderer host creates no replacement page."
+}

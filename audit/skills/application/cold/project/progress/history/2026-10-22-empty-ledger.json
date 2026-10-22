@@ -1,0 +1,56 @@
+{
+  "contractVersion": "0.2.0",
+  "items": [],
+  "groups": [],
+  "milestones": [],
+  "warnings": [
+    "Scope has not been defined or approved. Empty progress is not measured."
+  ],
+  "governance": {
+    "purpose": "Define the intended value with the owner before approving scope.",
+    "owner": "Sam",
+    "acceptanceAuthority": "Sam",
+    "changeAuthority": "Sam",
+    "approach": "adaptive",
+    "successCriteria": [],
+    "wbsCoverage": "not-assessed",
+    "workPackages": [],
+    "baselines": [],
+    "changeRequests": [],
+    "risks": [],
+    "tailoring": {
+      "governance": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "scope": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "schedule": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "finance": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "stakeholders": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "resources": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      },
+      "risk": {
+        "status": "not-assessed",
+        "reason": "Owner setup decision remains open."
+      }
+    },
+    "operations": {
+      "status": "not-assessed",
+      "reason": "Define service ownership, support and rollback before operation."
+    }
+  }
+}

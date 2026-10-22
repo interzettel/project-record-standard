@@ -1,0 +1,12 @@
+{
+  "id": "CH-0.3-AGENTS",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Add project scouting, growing-scope planning, ten agent workflows, additive instruction installation, sourced status telemetry and consistent percentage rounding.",
+  "workItemIds": [
+    "STD-14",
+    "STD-15",
+    "STD-16"
+  ],
+  "compatibility": "Implementation 0.3.0 retains contract 0.2.0; upward half-tenth rounding aligns Python with browser counts. Existing project sites and source writers remain owned by their projects."
+}

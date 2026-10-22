@@ -15,6 +15,11 @@
       "id": "G3",
       "title": "Canonical repository and hosted verification",
       "panel": "Deliver"
+    },
+    {
+      "id": "G4",
+      "title": "Agent workflows and operations",
+      "panel": "Shared standard"
     }
   ],
   "milestones": [
@@ -68,6 +73,27 @@
       "sourceAccepted": null,
       "unscopedWork": [],
       "nextAction": "Complete actual screen-reader verification. Native keyboard checks passed; owner acceptance remains a separate milestone."
+    },
+    {
+      "id": "M4",
+      "title": "Agents can establish and operate the tracking system",
+      "goal": "Scout, plan, adapt, update, report, present and recover tracking while preserving brand, scope history and authority.",
+      "horizon": "Now",
+      "groupIds": [
+        "G4"
+      ],
+      "gateItemIds": [
+        "STD-14",
+        "STD-15",
+        "STD-16"
+      ],
+      "acceptanceRule": "all-gate-items",
+      "sourceAccepted": null,
+      "nextAction": "Observe passing hosted verification and Pages for the complete agent package.",
+      "unscopedWork": [],
+      "priority": "P1",
+      "sourceState": "active",
+      "evidence": []
     }
   ],
   "items": [
@@ -378,17 +404,105 @@
       "criterion": "Record keyboard activation, traversal, focus restoration and actual screen-reader output, including remaining limitations.",
       "note": "Native Edge keyboard checks passed after the milestone focus handoff fix, including the standard and Prehnite cards at narrow width. Actual screen-reader output cannot be observed through browser-only controls and remains unverified.",
       "deferReason": null
+    },
+    {
+      "id": "STD-14",
+      "title": "Create and save the complete agent workflow suite",
+      "groupId": "G4",
+      "milestoneId": "M4",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-05"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "agent-evaluation",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md"
+        },
+        {
+          "kind": "runtime-replay",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/final-runtime-replay.json"
+        }
+      ],
+      "completionBasis": "Observed saved suite and reproducible local checks; see evaluation and verification records.",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "All ten skills are validated, independently exercised, saved and distributed with repository rules.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-15",
+      "title": "Verify agent installation, scouting, adaptation and recovery",
+      "groupId": "G4",
+      "milestoneId": "M4",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-14"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "agent-evaluation",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md"
+        },
+        {
+          "kind": "runtime-replay",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/final-runtime-replay.json"
+        }
+      ],
+      "completionBasis": "Observed saved suite and reproducible local checks; see evaluation and verification records.",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Disposable cold/hot applications preserve source/brand, reconcile named counts and exercise privacy, replay, failure and repeated runs; package/runtime checks pass.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-16",
+      "title": "Verify and deploy the complete standards package",
+      "groupId": "G4",
+      "milestoneId": "M4",
+      "state": "active",
+      "sourceState": "active",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-14",
+        "STD-15"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Local package complete; expanded hosted observation pending.",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Hosted checks pass the packaged suite and Pages serves the matching guide/example; actual run and deployment evidence are recorded.",
+      "note": null,
+      "deferReason": null
     }
   ],
   "warnings": [
-    "The original 8/9 local implementation snapshot is retained. Four explicit canonical delivery checks expand the scope to 13 required items.",
-    "Repository creation and successful automation do not imply owner acceptance. Individual repository migrations and the installed adaptation skill remain later work."
+    "The original local and canonical observations remain retained. Agent workflow work expands the required scope from 13 to 16 leaves; this is scope growth, not a regression.",
+    "Repository/CI delivery does not imply owner acceptance. Individual repository migrations remain separate work. Actual screen-reader output remains unverified."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
-    "owner": "Yiğit",
-    "acceptanceAuthority": "Yiğit; no owner acceptance has been recorded for this standard.",
-    "changeAuthority": "Yiğit",
+    "owner": "Yi\u011fit",
+    "acceptanceAuthority": "Yi\u011fit; no owner acceptance has been recorded for this standard.",
+    "changeAuthority": "Yi\u011fit",
     "approach": "adaptive",
     "successCriteria": [
       "Preserve real source counts and project brands.",
@@ -441,6 +555,17 @@
           "STD-12",
           "STD-13"
         ]
+      },
+      {
+        "id": "WP-5",
+        "deliverable": "Agentic planning and operations package",
+        "owner": "Implementing agent; owner reviews adoption",
+        "acceptance": "Saved skill suite, disposable applications, installation/package checks and hosted delivery are evidenced; manual acceptance boundaries remain visible.",
+        "workItemIds": [
+          "STD-14",
+          "STD-15",
+          "STD-16"
+        ]
       }
     ],
     "baselines": [
@@ -450,7 +575,14 @@
         "note": "Authored implementation scope; no approved baseline is inferred."
       }
     ],
-    "changeRequests": [],
+    "changeRequests": [
+      {
+        "id": "CR-0.3-AGENTS",
+        "reason": "The owner requested a complete agentic tracking lifecycle before individual migrations.",
+        "impact": "Adds STD-14 through STD-16, WP-5 and M4/G4; required denominator expands from 13 to 16. Authored implementation proceeds under the task request; baseline/owner acceptance remains unapproved.",
+        "status": "proposed"
+      }
+    ],
     "risks": [
       {
         "id": "R-1",

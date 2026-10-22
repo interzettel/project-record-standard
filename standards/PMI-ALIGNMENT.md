@@ -45,6 +45,6 @@ Project work has a bounded outcome and acceptance. Continuing operations need se
 
 An operational incident is an existing condition to resolve, while a risk concerns an uncertain event or condition. Use separate types or mapped fields. A repeated maintenance action may create a bounded delivery package with its own scope and evidence. Closing that package does not establish permanent service health.
 
-## Tailoring rule for the future skill
+## Tailoring rule for the skills
 
 Both cold and hot adaptation record the chosen development approach and, for each domain, `applied`, `not-assessed` or `tailored-out` with a reason. Small projects can keep this in one local JSON file. Larger projects link their accepted governance documents. The skill must preserve accepted local policy, identify conflicts and produce a reviewable mapping rather than claiming that installing a tracker makes the project compliant.

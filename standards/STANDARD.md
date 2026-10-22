@@ -1,6 +1,6 @@
 # Shared meaning
 
-Implementation and contract: 0.2.0 for review. Existing 0.1.0 records remain readable. This extends the intent of Personal Agent Stack ADR-008. An adapting agent must reconcile repository-local policies before adoption. See `PMI-ALIGNMENT.md` for the tailored PMI mapping.
+Implementation: 0.3.0; contract: 0.2.0. Existing 0.1.0 records remain readable. This extends the intent of Personal Agent Stack ADR-008. An adapting agent must reconcile repository-local policies before adoption. See `PMI-ALIGNMENT.md` for the tailored PMI mapping.
 
 ## Vocabulary
 
@@ -29,7 +29,7 @@ The usual planning view is **roadmap → milestone → epic → work item**. It 
 
 Execution states are Planned, Ready, In progress, In review, Done, Cancelled and Unknown. Blocked is a flag with a reason and next responsible action. Risk and accepted debt are attributes, not extra completion states. Existing labels can map to these terms through an explicit alias table.
 
-Done means the work item's own criterion is complete. Verification, milestone acceptance, publication and deployment are separate claims. A closed issue that was cancelled, rejected or superseded is not completed work. A specified capability is not automatically implemented. A failed experiment remains evidence and earns no success credit.
+Done means the work item's own criterion is complete. Verification, milestone acceptance, publication and deployment are separate claims. A closed issue that was cancelled, rejected or superseded is not completed work. A specified capability is not automatically implemented. An experiment earns completion only against its own declared criterion. A useful negative result can complete a measurement task; a failed or unfinished acceptance check cannot become a pass.
 
 ## Percentages
 
@@ -64,3 +64,7 @@ Migration preserves historical source claims and identifies incomplete mappings.
 Public Pages consumes an explicitly approved public projection. Private source material, private URLs and revealing private totals are excluded by policy. Public export refuses private inputs. A later adapting agent must author and review its public projection; changing a visibility flag is not evidence of a privacy review.
 
 The public page is read-only. Source and issue links lead to the authoritative editing surface. No visitor token, background model call, remote write, drag-to-change status or live GitHub request is required to view the latest successful build.
+
+## Percentage rounding
+
+Display percentages to one decimal place with upward ties: 13/16 is 81.3%. Compute from exact counts; average unrounded milestone shares before rounding. Empty scope is Not measured. Python, browser calculations and release readiness use this rule. Four-decimal history effects are explanatory percentage points, not a second completion metric.

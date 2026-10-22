@@ -2,3 +2,6 @@ include README.md action.yml
 recursive-include web *.mjs *.css
 recursive-include schemas *.json
 recursive-include standards *.md
+recursive-include skills *.md *.yaml *.json *.svg
+include AGENTS.md
+recursive-include progress *.md *.json
