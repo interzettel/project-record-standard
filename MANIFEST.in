@@ -1,0 +1,4 @@
+include README.md action.yml
+recursive-include web *.mjs *.css
+recursive-include schemas *.json
+recursive-include standards *.md

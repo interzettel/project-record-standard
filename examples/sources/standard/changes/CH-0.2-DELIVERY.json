@@ -1,0 +1,6 @@
+{
+  "id": "CH-0.2-DELIVERY",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Generate authored changelogs and inspect candidate readiness independently of publication."
+}

@@ -1,0 +1,57 @@
+name: Reusable project record build
+on:
+  workflow_call:
+    inputs:
+      config:
+        required: true
+        type: string
+      output:
+        default: .project-record-build
+        type: string
+      only:
+        default: ''
+        type: string
+      audience:
+        default: owner
+        type: string
+      toolkit-path:
+        description: Repository-relative directory containing the vendored toolkit
+        default: tools/project-record-standard
+        type: string
+permissions:
+  contents: read
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12'
+      - name: Build from the toolkit in the calling repository
+        env:
+          PROJECT_RECORD_TOOLKIT: ${{ inputs.toolkit-path }}
+          PROJECT_RECORD_CONFIG: ${{ inputs.config }}
+          PROJECT_RECORD_OUTPUT: ${{ inputs.output }}
+          PROJECT_RECORD_AUDIENCE: ${{ inputs.audience }}
+          PROJECT_RECORD_ONLY: ${{ inputs.only }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          import subprocess
+          import sys
+          workspace = Path.cwd().resolve()
+          toolkit = (workspace / os.environ['PROJECT_RECORD_TOOLKIT']).resolve()
+          if not toolkit.is_relative_to(workspace):
+              raise SystemExit('The toolkit must be inside the checkout')
+          subprocess.run([sys.executable, str(toolkit / 'tools/run_action.py')], check=True)
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: project-record
+          path: ${{ inputs.output }}
+          if-no-files-found: error
+          retention-days: 14

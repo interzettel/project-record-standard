@@ -1,0 +1,51 @@
+name: Work package
+description: A bounded change with a stable ID, acceptance and evidence.
+title: "[ID] Verb + concrete outcome"
+body:
+  - type: input
+    id: ids
+    attributes:
+      label: Work-item and milestone IDs
+      description: Preserve the repository's existing stable identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What will a user or operator be able to do?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Included work, exclusions and the one bounded delivery.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: Observable criteria and who or what can accept them.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Required proof types, tested revision/environment and material limits.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Prerequisites, decisions and unmapped dependencies; write None only when reviewed.
+    validations:
+      required: true
+  - type: textarea
+    id: update
+    attributes:
+      label: Record updates and next action
+      description: Canonical ledger IDs, change fragment, affected views and remaining action.

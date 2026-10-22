@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.site/
+.record-build/
+.reusable-build/
+review-output/
+build/
+dist/

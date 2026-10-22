@@ -1,0 +1,31 @@
+name: Project record pipeline
+description: Validate local sources and build progress data without changing GitHub
+inputs:
+  config:
+    description: Repository-relative project manifest
+    required: true
+  output:
+    description: Dedicated generated-output directory
+    default: .project-record-build
+  audience:
+    description: owner or public
+    default: owner
+  only:
+    description: Optional comma-separated project IDs
+    default: ''
+outputs:
+  manifest:
+    description: Absolute generated build-manifest path
+    value: ${{ steps.build.outputs.manifest }}
+runs:
+  using: composite
+  steps:
+    - id: build
+      shell: bash
+      env:
+        PROJECT_RECORD_TOOLKIT: ${{ github.action_path }}
+        PROJECT_RECORD_CONFIG: ${{ inputs.config }}
+        PROJECT_RECORD_OUTPUT: ${{ inputs.output }}
+        PROJECT_RECORD_AUDIENCE: ${{ inputs.audience }}
+        PROJECT_RECORD_ONLY: ${{ inputs.only }}
+      run: python3 "$PROJECT_RECORD_TOOLKIT/tools/run_action.py"

@@ -1,0 +1,11 @@
+{
+  "contractVersion": "0.1.0",
+  "projectId": "existing-stable-project-id",
+  "displayName": "The existing product name",
+  "adapter": "repository-owned-adapter",
+  "sources": {"plan":"progress/progress.json","changes":"changes/","version":"native-package-manifest"},
+  "authority": {"completion":"existing-ledger","assignment":"github-issues","workflow":"github-project","acceptance":"attributed-outcome-records","publication":"observed-channel-records","deployment":"observed-runtime-records"},
+  "presentation": {"mode":"existing-site-component","font":"inherit","brandTokens":"existing-project-owned-brand-source","route":"existing-site-progress-route","readmeMetrics":["named-work-percentage","accepted-milestones"]},
+  "publication": {"defaultAudience":"owner","publicProjection":null},
+  "migration": {"preserveIds":true,"preserveWebsite":true,"preserveBrand":true,"recordDenominatorChanges":true}
+}

@@ -1,0 +1,28 @@
+{
+  "font": "system-ui, -apple-system, sans-serif",
+  "light": {
+    "background": "#F5F6FA",
+    "surface": "#FFFFFF",
+    "text": "#202331",
+    "muted": "#515B70",
+    "border": "#B7BECD",
+    "accent": "#28439C",
+    "accentText": "#FFFFFF",
+    "signal": "#28439C",
+    "signalText": "#28439C",
+    "blocked": "#9A302A"
+  },
+  "dark": {
+    "background": "#131721",
+    "surface": "#202735",
+    "text": "#EEF1F8",
+    "muted": "#B5BED1",
+    "border": "#58657B",
+    "accent": "#ABC0FF",
+    "accentText": "#131721",
+    "signal": "#ABC0FF",
+    "signalText": "#ABC0FF",
+    "blocked": "#F6ADA6"
+  },
+  "notes": "The standard reference has its own identity. It is not a mandatory skin for consuming projects."
+}

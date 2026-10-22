@@ -1,0 +1,98 @@
+{
+  "projects": [
+    {
+      "adapter": "prehnite-v2",
+      "sourceFile": "sources/prehnite/plan.json",
+      "project": {
+        "id": "prehnite",
+        "name": "Prehnite",
+        "repository": "interzettel/prehnite",
+        "visibility": "public"
+      },
+      "source": {
+        "path": "progress/roadmap.json",
+        "commit": "37812c071542e6509add4ab8dff4a35e006146c7",
+        "observedOn": "2026-10-22",
+        "updatedOn": "2026-10-19",
+        "authority": "Canonical repository roadmap"
+      },
+      "presentation": {
+        "renderer": "prehnite",
+        "theme": "themes/prehnite.json",
+        "readmeMetric": "work",
+        "hostFont": "Arial, Helvetica, sans-serif",
+        "existingSite": "https://github.com/interzettel/prehnite",
+        "projectUrl": null
+      }
+    },
+    {
+      "adapter": "normalized-v1",
+      "sourceFile": "sources/standard/ledger.json",
+      "project": {
+        "id": "standard",
+        "name": "Project record standard",
+        "repository": "interzettel/project-record-standard",
+        "visibility": "public"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "examples/sources/standard/ledger.json",
+        "commit": null,
+        "observedOn": "2026-10-22",
+        "updatedOn": "2026-10-22",
+        "authority": "Authored canonical implementation and delivery ledger; owner acceptance remains pending"
+      },
+      "presentation": {
+        "renderer": "standard",
+        "theme": "themes/standard.json",
+        "readmeMetric": "work",
+        "hostFont": "system-ui, sans-serif",
+        "progressUrl": "https://interzettel.github.io/project-record-standard/",
+        "readmeImageUrl": "./assets/progress.svg"
+      },
+      "supplements": [
+        {
+          "path": "sources/standard/delivery.json",
+          "visibility": "public",
+          "authority": "Authored local change and candidate records",
+          "observedOn": "2026-10-22"
+        }
+      ],
+      "changeFiles": [
+        {
+          "path": "sources/standard/changes/CH-0.2-HISTORY.json",
+          "visibility": "public",
+          "authority": "Authored local change fragment",
+          "observedOn": "2026-10-22"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.2-DELIVERY.json",
+          "visibility": "public",
+          "authority": "Authored local change fragment",
+          "observedOn": "2026-10-22"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.2-AUTOMATION.json",
+          "visibility": "public",
+          "authority": "Authored local change fragment",
+          "observedOn": "2026-10-22"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.2-ADOPTION.json",
+          "visibility": "public",
+          "authority": "Authored local change fragment",
+          "observedOn": "2026-10-22"
+        }
+      ],
+      "previousSourceFile": "sources/standard/previous-local-0.2.json",
+      "previousSource": {
+        "kind": "file-snapshot",
+        "path": "examples/sources/standard/previous-local-0.2.json",
+        "commit": null,
+        "observedOn": "2026-10-22",
+        "updatedOn": "2026-10-22",
+        "authority": "Preserved local 0.2.0 implementation snapshot before canonical delivery scope"
+      }
+    }
+  ]
+}

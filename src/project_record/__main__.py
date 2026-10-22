@@ -1,0 +1,97 @@
+"""Runs offline record validation, builds, comparisons and issue checks.
+
+Run python -m project_record with --help. Commands read the declared sources
+and write only the selected build destination. No command changes GitHub.
+"""
+
+import argparse
+import json
+from pathlib import Path
+import sys
+
+from .adapters import load_config
+from .build import build
+from .core import RecordError, compare, export_record, summarize
+from .issues import lint_issue
+from .readme import update_readme
+
+
+def main(argv: list[str] | None = None) -> int:
+    """Runs the selected command and returns a process exit status."""
+    parser = argparse.ArgumentParser(description=__doc__)
+    subs = parser.add_subparsers(dest="command", required=True)
+    for name in ["check", "build", "pipeline", "export"]:
+        command = subs.add_parser(name)
+        command.add_argument("--config", type=Path, required=True)
+        command.add_argument("--only", help="Comma-separated project IDs")
+        if name in {"build", "pipeline", "export"}:
+            command.add_argument("--output", type=Path, required=True)
+            command.add_argument("--audience", choices=["owner", "public"], default="owner")
+    command = subs.add_parser("validate")
+    command.add_argument("record", type=Path)
+    command = subs.add_parser("compare")
+    command.add_argument("before", type=Path)
+    command.add_argument("after", type=Path)
+    command = subs.add_parser("lint-issue")
+    command.add_argument("issue", type=Path)
+    command.add_argument("--aliases", type=Path, help="Existing-label to shared-meaning JSON map")
+    command = subs.add_parser("readme")
+    command.add_argument("--file", type=Path, required=True)
+    command.add_argument("--module", type=Path, required=True)
+    command.add_argument("--write", action="store_true", help="Apply the previewed marked-region update")
+    command = subs.add_parser("init")
+    command.add_argument("--directory", type=Path, required=True)
+    command.add_argument("--name", required=True)
+    command.add_argument("--id", required=True)
+    command.add_argument("--owner", required=True)
+    command.add_argument("--observed-on", required=True)
+    command = subs.add_parser("adoption-plan")
+    command.add_argument("--config", type=Path, required=True)
+    args = parser.parse_args(argv)
+    try:
+        if args.command in {"check", "build", "pipeline", "export"}:
+            records = load_config(args.config.resolve(), set(args.only.split(",")) if args.only else None)
+            if args.command == "check":
+                result = [{"project": r["project"]["id"], "metrics": summarize(r)["metrics"]} for r in records]
+            elif args.command == "export":
+                prepared = [export_record(r, args.audience) for r in records]
+                if args.audience == "public" and args.output.exists() and any(args.output.iterdir()):
+                    raise RecordError("Public export needs a new or empty destination")
+                args.output.mkdir(parents=True, exist_ok=True)
+                result = []
+                for record in prepared:
+                    destination = args.output / (record["project"]["id"] + ".json")
+                    destination.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n")
+                    result.append({"project": record["project"]["id"], "output": str(destination)})
+            else:
+                toolkit_root = Path(__file__).resolve().parents[2]
+                if not (toolkit_root / "web/components.mjs").is_file():
+                    toolkit_root = Path(sys.prefix) / "share/project-record-standard"
+                result = build(records, args.config.resolve(), args.output, args.audience, toolkit_root)
+        elif args.command == "readme":
+            result = update_readme(args.file, args.module.read_text(), args.write)
+        elif args.command == "init":
+            from .scaffold import initialize
+            result = initialize(args.directory, args.id, args.name, args.owner, args.observed_on)
+        elif args.command == "adoption-plan":
+            from .scaffold import adoption_plan
+            result = adoption_plan(args.config)
+        elif args.command == "validate":
+            result = summarize(json.loads(args.record.read_text()))["metrics"]
+        elif args.command == "compare":
+            result = compare(json.loads(args.before.read_text()), json.loads(args.after.read_text()))
+        else:
+            aliases = json.loads(args.aliases.read_text()) if args.aliases else None
+            result = lint_issue(json.loads(args.issue.read_text()), aliases)
+            if result:
+                print(json.dumps(result, indent=2))
+                return 1
+        print(json.dumps(result, indent=2))
+        return 0
+    except (RecordError, OSError, KeyError, TypeError, ValueError) as error:
+        print(str(error), file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

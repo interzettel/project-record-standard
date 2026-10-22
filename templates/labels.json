@@ -1,0 +1,15 @@
+[
+  {"name":"type:feature","color":"2563A8","description":"A product or operator capability change."},
+  {"name":"type:bug","color":"B4473D","description":"Incorrect existing behaviour."},
+  {"name":"type:documentation","color":"53675A","description":"An explanation, guide or reference change."},
+  {"name":"type:research","color":"72528A","description":"A source-grounded investigation and recorded conclusion."},
+  {"name":"type:experiment","color":"53675A","description":"A measured run with a declared configuration and criterion."},
+  {"name":"type:decision","color":"72528A","description":"A bounded choice with attribution and consequences."},
+  {"name":"type:maintenance","color":"6B6E75","description":"Repository or operational upkeep."},
+  {"name":"type:release","color":"2563A8","description":"A planned or observed publication through a named channel."},
+  {"name":"priority:P0","color":"B4473D","description":"Blocks the agreed active outcome or is a serious defect."},
+  {"name":"priority:P1","color":"A15C35","description":"Next required work within the agreed scope."},
+  {"name":"priority:P2","color":"53675A","description":"Subsequent scoped work."},
+  {"name":"priority:P3","color":"6B6E75","description":"Deferred or discovery work."},
+  {"name":"blocked","color":"B4473D","description":"Needs a stated prerequisite or decision before proceeding."}
+]

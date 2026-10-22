@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-record-standard"
+version = "0.2.0"
+description = "Shared progress semantics with project-owned branding and presentation"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+project-record = "project_record.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.data-files]
+"share/project-record-standard/web" = ["web/metrics.mjs", "web/components.mjs", "web/components.css", "web/delivery.mjs", "web/delivery.css"]
+
+[tool.ruff.lint]
+extend-select = ["D"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D"]

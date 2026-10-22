@@ -1,0 +1,77 @@
+{
+  "deliveryCoverage": "Authored local standard changes and candidate gates only. No channel publication, hosted CI run or deployment has been observed.",
+  "releasePlans": [
+    {
+      "id": "REL-0.2-REVIEW",
+      "component": "standard",
+      "channel": "source-archive",
+      "version": "0.2.0-review",
+      "revision": "sha256:0da56a00b5287df3bb6081788298c833b1b7adc22016367b1ff52653514c09c5",
+      "workItemIds": [
+        "STD-01",
+        "STD-02",
+        "STD-03",
+        "STD-04",
+        "STD-05",
+        "STD-06",
+        "STD-07",
+        "STD-08"
+      ],
+      "gates": [
+        {
+          "id": "G-AUTO",
+          "label": "Relevant automated checks recorded",
+          "policy": {
+            "allOf": [
+              "test"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "test",
+              "subject": "G-AUTO",
+              "revision": "sha256:0da56a00b5287df3bb6081788298c833b1b7adc22016367b1ff52653514c09c5",
+              "result": "passed",
+              "source": "VERIFICATION-public.md",
+              "observedOn": "2026-10-22"
+            }
+          ]
+        },
+        {
+          "id": "G-UI",
+          "label": "Scoped browser/accessibility review and remaining limits recorded",
+          "policy": {
+            "allOf": [
+              "ui-review"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "ui-review",
+              "subject": "G-UI",
+              "revision": "sha256:0da56a00b5287df3bb6081788298c833b1b7adc22016367b1ff52653514c09c5",
+              "result": "passed",
+              "source": "standards/ACCESSIBILITY.md",
+              "observedOn": "2026-10-22"
+            }
+          ]
+        },
+        {
+          "id": "G-OWNER",
+          "label": "Owner approves adoption readiness",
+          "policy": {
+            "allOf": [
+              "owner-review"
+            ],
+            "anyOf": []
+          },
+          "receipts": []
+        }
+      ]
+    }
+  ],
+  "releases": [],
+  "deployments": []
+}

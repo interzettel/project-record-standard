@@ -1,0 +1,6 @@
+{
+  "id": "CH-0.2-HISTORY",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Explain state and scope effects on progress between pinned snapshots."
+}

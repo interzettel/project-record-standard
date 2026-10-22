@@ -1,0 +1,13 @@
+{
+  "id": "CHANGE-001",
+  "component": "example-component",
+  "type": "changed",
+  "summary": "State what a user or operator can do after this change.",
+  "workItemIds": ["EXISTING-ID"],
+  "milestoneIds": ["EXISTING-MILESTONE"],
+  "pullRequests": [],
+  "stage": "unreleased",
+  "compatibility": null,
+  "limitations": [],
+  "publication": null
+}

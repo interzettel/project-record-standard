@@ -1,0 +1,355 @@
+{
+  "contractVersion": "0.2.0",
+  "groups": [
+    {
+      "id": "G1",
+      "title": "Implementation and technical verification",
+      "panel": "Build"
+    },
+    {
+      "id": "G2",
+      "title": "Owner review",
+      "panel": "Review"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "title": "Technical package verified",
+      "goal": "Record the implementation checks and their limits.",
+      "horizon": "Now",
+      "groupIds": [
+        "G1"
+      ],
+      "gateItemIds": [
+        "STD-08"
+      ],
+      "acceptanceRule": "all-gate-items",
+      "sourceAccepted": null,
+      "unscopedWork": [],
+      "nextAction": "Technical checks recorded; owner review is a separate remaining gate."
+    },
+    {
+      "id": "M2",
+      "title": "Shared standard accepted for adaptation",
+      "goal": "The owner reviews terminology, behavior and adaptation boundaries.",
+      "horizon": "Next",
+      "groupIds": [
+        "G2"
+      ],
+      "gateItemIds": [
+        "STD-09"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "unscopedWork": [],
+      "nextAction": "Owner review after the verified package is available."
+    }
+  ],
+  "items": [
+    {
+      "id": "STD-01",
+      "title": "Define shared terminology and calculation rules",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Define shared terminology and calculation rules. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-02",
+      "title": "Preserve source identity through adapters",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Preserve source identity through adapters. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-03",
+      "title": "Explain progress and scope changes",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Explain progress and scope changes. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-04",
+      "title": "Generate changelogs and release readiness",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Generate changelogs and release readiness. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-05",
+      "title": "Run a reusable offline build action",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Run a reusable offline build action. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-06",
+      "title": "Define cold setup and hot adaptation",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Define cold setup and hot adaptation. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-07",
+      "title": "Map the implementation to PMI guidance",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Map the implementation to PMI guidance. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-08",
+      "title": "Verify the implementation and reference views",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "test",
+          "source": "VERIFICATION-public.md"
+        },
+        {
+          "kind": "ui-review",
+          "source": "standards/ACCESSIBILITY.md"
+        }
+      ],
+      "completionBasis": "Recorded local verification; see VERIFICATION-public.md",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Verify the implementation and reference views. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-09",
+      "title": "Review the shared standard with the owner",
+      "groupId": "G2",
+      "milestoneId": "M2",
+      "state": "backlog",
+      "sourceState": "backlog",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "acceptance",
+      "owner": "Owner",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Review the shared standard with the owner. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    }
+  ],
+  "warnings": [
+    "This ledger records the local standard implementation. No repository rollout, publication, deployment or owner acceptance is inferred."
+  ],
+  "governance": {
+    "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
+    "owner": "Yi\u011fit",
+    "acceptanceAuthority": "Yi\u011fit; no owner acceptance has been recorded for this standard.",
+    "changeAuthority": "Yi\u011fit",
+    "approach": "adaptive",
+    "successCriteria": [
+      "Preserve real source counts and project brands.",
+      "Explain percentage changes and publication claims.",
+      "Provide reproducible automation and a bounded adaptation handoff."
+    ],
+    "wbsCoverage": "complete",
+    "workPackages": [
+      {
+        "id": "WP-1",
+        "deliverable": "Shared accounting contract",
+        "owner": "Implementing agent",
+        "acceptance": "Source-count parity and semantic tests pass.",
+        "workItemIds": [
+          "STD-01",
+          "STD-02"
+        ]
+      },
+      {
+        "id": "WP-2",
+        "deliverable": "History and delivery tooling",
+        "owner": "Implementing agent",
+        "acceptance": "Scope bridges, release gates and pipeline fixtures pass.",
+        "workItemIds": [
+          "STD-03",
+          "STD-04",
+          "STD-05"
+        ]
+      },
+      {
+        "id": "WP-3",
+        "deliverable": "Verified adoption package",
+        "owner": "Implementing agent; owner reviews adoption",
+        "acceptance": "Profiles, PMI mapping, verification record and owner review are recorded.",
+        "workItemIds": [
+          "STD-06",
+          "STD-07",
+          "STD-08",
+          "STD-09"
+        ]
+      }
+    ],
+    "baselines": [
+      {
+        "id": "STD-scope-0.2",
+        "status": "observed",
+        "note": "Authored implementation scope; no approved baseline is inferred."
+      }
+    ],
+    "changeRequests": [],
+    "risks": [
+      {
+        "id": "R-1",
+        "event": "A migration could blend denominators or overwrite a project brand.",
+        "owner": "Adapting agent; owner reviews",
+        "response": "Require before/after counts, additive integration and rollback.",
+        "trigger": "Any count difference or replacement of the host shell.",
+        "status": "open"
+      }
+    ],
+    "operations": {
+      "status": "planned",
+      "owner": "Repository maintainer",
+      "supportRoute": "Owning repository issue or accepted coordination board",
+      "boundaries": "Offline read-only projection; no inference or external write loop.",
+      "recovery": "Replay pinned sources into owned output and restore the previous renderer if cutover fails."
+    },
+    "tailoring": {
+      "governance": {
+        "status": "applied",
+        "reason": "Record owner, authorities, source limits and decisions."
+      },
+      "scope": {
+        "status": "applied",
+        "reason": "Map deliverables to accounting leaves without duplicate credit."
+      },
+      "schedule": {
+        "status": "applied",
+        "reason": "Use dependencies and horizons; committed dates are not estimated in this local review."
+      },
+      "finance": {
+        "status": "tailored-out",
+        "reason": "No project cost baseline is defined for this review; paid services require a separate budget decision."
+      },
+      "stakeholders": {
+        "status": "applied",
+        "reason": "Owner review and public/private audiences are explicit."
+      },
+      "resources": {
+        "status": "applied",
+        "reason": "Offline tools have no inference or autonomous external writes."
+      },
+      "risk": {
+        "status": "applied",
+        "reason": "Record brand, source and privacy risks with intervention triggers."
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "id": "CH-0.2-AUTOMATION",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Provide a vendored composite action, reusable workflow and guarded README updates."
+}

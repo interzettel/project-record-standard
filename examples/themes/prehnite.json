@@ -1,0 +1,8 @@
+{
+  "source": "docs/BRAND_PALETTE.md at 37812c0",
+  "font": "Arial, Helvetica, sans-serif",
+  "light": {"background": "#F6EFE2", "surface": "#FFF9EC", "text": "#075231", "muted": "#53675A", "border": "#D8CBB8", "accent": "#075231", "accentText": "#FFF9EC", "signal": "#F7655B", "signalText": "#A63D35"},
+  "dark": {"background": "#132820", "surface": "#203A2E", "text": "#F6EFE2", "muted": "#CED4C2", "border": "#465C4E", "accent": "#FD8276", "accentText": "#132820", "signal": "#FD8276", "signalText": "#FD8276"},
+  "geometry": "Milestone cards in source phases; printed section labels; compact counts.",
+  "hostIntegration": "Reuse prehnite.brand tokens. No required change to logo, hero artwork or site navigation."
+}
