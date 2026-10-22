@@ -84,15 +84,28 @@
           "observedOn": "2026-10-22"
         }
       ],
-      "previousSourceFile": "sources/standard/previous-local-0.2.json",
+      "previousSourceFile": "sources/standard/canonical-setup-0.2.json",
       "previousSource": {
         "kind": "file-snapshot",
-        "path": "examples/sources/standard/previous-local-0.2.json",
+        "path": "examples/sources/standard/canonical-setup-0.2.json",
         "commit": null,
         "observedOn": "2026-10-22",
         "updatedOn": "2026-10-22",
-        "authority": "Preserved local 0.2.0 implementation snapshot before canonical delivery scope"
-      }
+        "authority": "Preserved initial canonical setup scope before hosted completion evidence"
+      },
+      "snapshots": [
+        {
+          "sourceFile": "sources/standard/previous-local-0.2.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/previous-local-0.2.json",
+            "commit": null,
+            "observedOn": "2026-10-22",
+            "updatedOn": "2026-10-22",
+            "authority": "Preserved local 0.2.0 implementation snapshot before canonical delivery scope"
+          }
+        }
+      ]
     }
   ]
 }

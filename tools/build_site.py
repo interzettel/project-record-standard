@@ -9,6 +9,7 @@ import argparse
 from hashlib import sha256
 from html import escape
 import json
+import os
 from pathlib import Path
 import re
 from urllib.parse import urlsplit
@@ -135,7 +136,6 @@ def build_site(records: Path, output: Path) -> dict:
     (output / 'index.html').write_text(homepage)
     (output / '.nojekyll').touch()
     (output / 'record-build-manifest.json').write_bytes((records / 'build-manifest.json').read_bytes())
-    (output / 'website-build.json').write_text(json.dumps({'projects':projects, 'recordInputs':entries, 'presentation':'Website navigation is added to the hash-verified reference pages.'}, indent=2) + '\n')
     guide = output / 'guide'
     guide.mkdir()
     for name, title in DOCUMENTS:
@@ -143,6 +143,15 @@ def build_site(records: Path, output: Path) -> dict:
         menu = ''.join(f'<a href="{other}.html"' + (' aria-current="page"' if other == name else '') + f'>{escape(label)}</a>' for other, label in DOCUMENTS)
         html = f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} · Project record standard</title><style>{SITE_CSS}</style></head><body class="guide"><a class="skip-link" href="#content">Skip to guide</a>{navigation("../")}<div class="layout"><aside><nav aria-label="Standard guide">{menu}</nav></aside><main id="content" tabindex="-1"><article>{body}<p class="doc-source"><a href="{REPOSITORY}/blob/main/standards/{name}.md">View this document on GitHub</a></p></article></main></div></body></html>'
         (guide / (name + '.html')).write_text(html)
+    identity = {
+        'projects': projects,
+        'sourceCommit': os.environ.get('GITHUB_SHA'),
+        'recordInputs': entries,
+        'presentation': 'Website navigation is added to the hash-verified reference pages.',
+        'sha256': {path.relative_to(output).as_posix(): sha256(path.read_bytes()).hexdigest()
+                   for path in sorted(output.rglob('*')) if path.is_file()},
+    }
+    (output / 'website-build.json').write_text(json.dumps(identity, indent=2) + '\n')
     return {'projects':projects, 'documents':len(DOCUMENTS), 'audience':'public'}
 
 

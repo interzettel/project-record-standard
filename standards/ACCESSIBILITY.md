@@ -16,3 +16,18 @@ Review scope: the three local reference presentations and their shared explorers
 The adapting agent must test the integrated site with real keyboard navigation, the host's screen-reader/browser combinations, text/viewport zoom, high-contrast settings, long project text, light/dark variants and reduced motion. It must inspect computed host styles; inheriting a brand does not automatically preserve contrast.
 
 References: [WCAG 2.2](https://www.w3.org/TR/WCAG22/) and [W3C's explanation of text resizing](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html). The role checker is `tools/check_palette.py`; the internal text-resize fixture is `tests/qa.html` in the owner-review source. Browser screenshots are not included.
+
+
+## Native Edge verification of the canonical Pages site
+
+On 22 October 2026, the deployed tracker and guide were tested in the connected Edge browser. A native Tab press reached the skip link; Enter moved focus to the main landmark. Tab reached Appearance, and Enter changed its mode while retaining focus. Tab traversal and Space activated Release readiness. A native End key on the milestone selector chose the final milestone, updated the URL and retained selector focus.
+
+Enter on a work tile opened its inspector and moved focus to Close. Space closed it and restored focus to the original tile. Enter switched to the readable list while retaining its view-control focus. The guide skip link also moved focus to its main content. The guide and Prehnite reference had 375 px content/scroll widths in a 390 px viewport.
+
+A native Enter on a Prehnite milestone card exposed an off-screen focus defect: the page scrolled to the workbench while focus stayed on the original card. The source fix focuses the selected milestone heading. Its deployed retest is pending in this observation.
+
+These checks exercise real browser keyboard behavior. They do not verify a screen reader's spoken output. Browser controls expose the page's semantic structure, but do not provide audio or control of a native assistive-technology application. STD-13 remains open for that verification.
+
+## Complete the screen-reader check
+
+Use the deployed revision with a named browser and screen reader, and record both versions. Confirm that the skip link reaches the main landmark, headings describe the selected milestone, filters announce names and values, item buttons announce IDs and states, and result changes announce only the short count. Open and close an item to confirm reading order and focus restoration. Inspect the history chart through its adjacent exact-count table and expand candidate evidence. Record failures and the source revision tested before marking STD-13 complete.

@@ -67,7 +67,7 @@
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
       "unscopedWork": [],
-      "nextAction": "Run hosted CI, inspect the deployed site and complete native accessibility verification."
+      "nextAction": "Retest the deployed focus fix and complete actual screen-reader verification. Owner acceptance remains a separate milestone."
     }
   ],
   "items": [
@@ -274,14 +274,19 @@
       "title": "Establish the canonical public standards repository",
       "groupId": "G3",
       "milestoneId": "M3",
-      "state": "active",
-      "sourceState": "active",
+      "state": "done",
+      "sourceState": "done",
       "required": true,
       "blocked": false,
       "dependsOn": [],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Pending explicit delivery evidence",
+      "evidence": [
+        {
+          "kind": "repository",
+          "source": "https://github.com/interzettel/project-record-standard/tree/10a9e6501a9ed64f57ad139a56e3fc9fdd8b99ef"
+        }
+      ],
+      "completionBasis": "Observed canonical repository or hosted run; see linked evidence",
       "kind": "implementation",
       "owner": "Implementing agent",
       "priority": "P1",
@@ -295,16 +300,21 @@
       "title": "Verify the action and reusable workflow on GitHub",
       "groupId": "G3",
       "milestoneId": "M3",
-      "state": "backlog",
-      "sourceState": "backlog",
+      "state": "done",
+      "sourceState": "done",
       "required": true,
       "blocked": false,
       "dependsOn": [
         "STD-10"
       ],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Pending explicit delivery evidence",
+      "evidence": [
+        {
+          "kind": "hosted-ci",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39800961253"
+        }
+      ],
+      "completionBasis": "Observed canonical repository or hosted run; see linked evidence",
       "kind": "implementation",
       "owner": "Implementing agent",
       "priority": "P1",
@@ -318,16 +328,21 @@
       "title": "Deploy and inspect the public example website",
       "groupId": "G3",
       "milestoneId": "M3",
-      "state": "backlog",
-      "sourceState": "backlog",
+      "state": "done",
+      "sourceState": "done",
       "required": true,
       "blocked": false,
       "dependsOn": [
         "STD-10"
       ],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Pending explicit delivery evidence",
+      "evidence": [
+        {
+          "kind": "deployment",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39800961253/job/119901281252"
+        }
+      ],
+      "completionBasis": "Observed canonical repository or hosted run; see linked evidence",
       "kind": "implementation",
       "owner": "Implementing agent",
       "priority": "P1",
@@ -341,22 +356,27 @@
       "title": "Verify native keyboard and screen-reader interaction",
       "groupId": "G3",
       "milestoneId": "M3",
-      "state": "backlog",
-      "sourceState": "backlog",
+      "state": "active",
+      "sourceState": "active",
       "required": true,
-      "blocked": false,
+      "blocked": true,
       "dependsOn": [
         "STD-10"
       ],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Pending explicit delivery evidence",
+      "evidence": [
+        {
+          "kind": "partial-keyboard-review",
+          "source": "standards/ACCESSIBILITY.md"
+        }
+      ],
+      "completionBasis": "Partial native keyboard evidence; actual screen-reader verification pending",
       "kind": "implementation",
       "owner": "Implementing agent",
       "priority": "P1",
       "issueUrl": null,
       "criterion": "Record keyboard activation, traversal, focus restoration and actual screen-reader output, including remaining limitations.",
-      "note": null,
+      "note": "Native Edge keyboard checks found a milestone focus handoff defect; the source fix awaits deployed retest. Actual screen-reader audio is unavailable through browser-only controls and remains unverified.",
       "deferReason": null
     }
   ],
