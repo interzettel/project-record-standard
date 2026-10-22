@@ -28,6 +28,14 @@ A native Enter on a Prehnite milestone card exposed an off-screen focus defect: 
 
 These checks exercise real browser keyboard behavior. They do not verify a screen reader's spoken output. Browser controls expose the page's semantic structure, but do not provide audio or control of a native assistive-technology application. STD-13 remains open for that verification.
 
+## Agent-package native keyboard check
+
+On 23 October 2026 (Europe/Berlin; receipts retain UTC), the connected Edge browser exercised deployed candidate `9b02b4380da76d16cabfe801fc368302d5ae5297` from [run 39866474910](https://github.com/interzettel/project-record-standard/actions/runs/39866474910). Native Tab reached the tracker skip link; Enter focused its main landmark. Tab reached Appearance and the four milestone cards. Enter on M4 selected the milestone and focused its heading; after the scroll settled, the heading and next criterion were visible in the viewport.
+
+The next Tab reached the remaining STD-16 criterion. Enter opened its inspector and focused Close. Native Space closed the inspector and returned focus to the STD-16 work tile. Enter activated Readable list and retained its control focus. On the guide, native Tab/Enter activated the skip link and focused main content. The new agent workflow guide was opened and its ten-skill table, scouting and scope-growth instructions, installer and telemetry documentation were inspected.
+
+This is a scoped interaction check in the connected Edge browser; its version was unavailable through the control surface. It does not replace the earlier narrow-layout evidence or establish screen-reader announcements. The underlying observations are retained in `audit/skills/hosted-observation.json`. STD-13 remains open.
+
 ## Complete the screen-reader check
 
 Use the deployed revision with a named browser and screen reader, and record both versions. Confirm that the skip link reaches the main landmark, headings describe the selected milestone, filters announce names and values, item buttons announce IDs and states, and result changes announce only the short count. Open and close an item to confirm reading order and focus restoration. Inspect the history chart through its adjacent exact-count table and expand candidate evidence. Record failures and the source revision tested before marking STD-13 complete.

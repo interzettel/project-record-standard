@@ -12,6 +12,16 @@ The canonical repository is [interzettel/project-record-standard](https://github
 | Screen-reader verification | Actual spoken output has not been verified. Accessibility names and landmarks have been inspected. |
 | Owner acceptance | Pending. Repository creation does not imply approval of the standard. |
 
+## Complete agent package
+
+Implementation 0.3.0 keeps contract 0.2.0 and supplies ten saved/distributed skills, additive installation, source-backed status and collection telemetry, scope-growth history, and the agent planning guide. The [evaluation record](https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md) includes preparation controls, cold/hot executable applications and limitations. Individual project migrations remain outside this delivery.
+
+[Run 39866474910](https://github.com/interzettel/project-record-standard/actions/runs/39866474910) passed verification, the composite action, the reusable record workflow and deployment for candidate `9b02b4380da76d16cabfe801fc368302d5ae5297`. The expanded checks include 35 Python tests, seven browser-calculation tests, the ten-skill suite, 20 colour-role pairs, the site build and README parity. [Pages reported success](https://github.com/interzettel/project-record-standard/actions/runs/39866474910/job/120129913901) at 2026-10-22T22:39:27.6365785Z. Its tracker and agent guide were opened in Edge; the scoped native keyboard checks passed.
+
+The authored 0.3.0 review plan retains that exact candidate revision. Five of seven declared readiness gates passed: STD-14 through STD-16, hosted verification and native keyboard review. Actual screen-reader and owner reviews are missing, so readiness is 71.4%, not approval to claim those outcomes. Earlier candidate/deployment observations remain historical. There is no observed tagged release or registry publication.
+
+The evidence update closes STD-16 and preserves the published 13/16 source before generating 14/16 (87.5%) required progress. It adds no work or behavior, so it uses the existing CH-0.3-AGENTS fragment. STD-09 and STD-13 stay pending. `VERIFICATION-public.md` and `audit/skills/hosted-observation.json` record the checks and boundaries.
+
 ## Reproduce and deploy
 
 The `Verify and publish the standard` workflow tests the Python runtime, compares browser calculations with the public records, exercises the root composite action and calls the reusable workflow. The Pages deployment depends on both verification jobs.

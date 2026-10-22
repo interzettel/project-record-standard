@@ -37,12 +37,13 @@
     {
       "kind": "local docs, source, tracking and branding",
       "source": "AGENTS.md; README.md; standards/; src/; web/; examples/projects.json; progress/",
-      "coverage": "complete for named local package paths; authored feature changes are uncommitted observations",
+      "coverage": "complete for named local package paths at the published 0.3.0 candidate; subsequent evidence-only update is recorded separately",
       "findings": [
         "Own ledger and public references have declared writers.",
         "Original history and existing website brands remain intact.",
         "No individual repository migration is included."
-      ]
+      ],
+      "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297"
     },
     {
       "kind": "native GitHub Projects",
@@ -54,17 +55,19 @@
     },
     {
       "kind": "CI and website",
-      "source": "standards/DELIVERY.md; .github/workflows/ci.yml; .github/workflows/record-build.yml",
-      "coverage": "scoped observed hosted runs and existing workflow source",
+      "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910",
+      "coverage": "complete for the three jobs in the selected run; tracker, guide and native keyboard behavior inspected on its deployed Pages artifact",
       "findings": [
-        "Existing hosted implementation/keyboard evidence is dated and revision scoped.",
-        "The expanded agent package needs its own hosted verification."
-      ]
+        "Verify, reusable / record and deploy jobs all completed successfully.",
+        "Pages reported success at 2026-10-22T22:39:27.6365785Z.",
+        "Live tracker showed 13/16 = 81.3%; the ten-skill agent guide was served. Keyboard checks passed within the recorded scope; actual screen-reader output and owner acceptance remain pending."
+      ],
+      "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+      "observedAt": "2026-10-22T22:44:54.607837+00:00"
     }
   ],
   "unresolved": [
     "Actual screen-reader output",
-    "Owner acceptance",
-    "Final hosted observation of the expanded package"
+    "Owner acceptance"
   ]
 }

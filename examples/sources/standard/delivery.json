@@ -1,6 +1,82 @@
 {
-  "deliveryCoverage": "Canonical source and GitHub Pages deployment have been observed. Hosted composite/reusable jobs and native keyboard checks passed for the stated revision. Actual screen-reader output and owner acceptance remain pending. No tagged release or package-registry publication has been observed.",
+  "deliveryCoverage": "The 0.3.0 agent-package candidate passed hosted verification, composite/reusable workflows and Pages; its tracker and agent guide were inspected in Edge. Receipts are revision scoped and earlier observations are retained. Actual screen-reader output and owner acceptance remain pending. No tagged release or package-registry publication has been observed.",
   "releasePlans": [
+    {
+      "id": "REL-0.3-AGENTS-REVIEW",
+      "component": "standard",
+      "channel": "github-source",
+      "version": "0.3.0-review",
+      "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+      "workItemIds": [
+        "STD-14",
+        "STD-15",
+        "STD-16"
+      ],
+      "gates": [
+        {
+          "id": "G-AUTO-AGENTS",
+          "label": "Hosted composite action and reusable workflow pass",
+          "policy": {
+            "allOf": [
+              "test"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "test",
+              "subject": "G-AUTO-AGENTS",
+              "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+              "result": "passed",
+              "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910",
+              "observedOn": "2026-10-23"
+            }
+          ]
+        },
+        {
+          "id": "G-KEYBOARD-AGENTS",
+          "label": "Native keyboard navigation and focus checks pass",
+          "policy": {
+            "allOf": [
+              "keyboard-review"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "keyboard-review",
+              "subject": "G-KEYBOARD-AGENTS",
+              "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+              "result": "passed",
+              "source": "Native Edge checks of the candidate tracker and agent guide; standards/ACCESSIBILITY.md and audit/skills/hosted-observation.json",
+              "observedOn": "2026-10-23"
+            }
+          ]
+        },
+        {
+          "id": "G-SCREENREADER-AGENTS",
+          "label": "Actual screen-reader output is verified",
+          "policy": {
+            "allOf": [
+              "screen-reader-review"
+            ],
+            "anyOf": []
+          },
+          "receipts": []
+        },
+        {
+          "id": "G-OWNER-AGENTS",
+          "label": "Owner approves adoption readiness",
+          "policy": {
+            "allOf": [
+              "owner-review"
+            ],
+            "anyOf": []
+          },
+          "receipts": []
+        }
+      ]
+    },
     {
       "id": "REL-0.2-CANONICAL-REVIEW",
       "component": "standard",
@@ -88,6 +164,17 @@
   ],
   "releases": [],
   "deployments": [
+    {
+      "id": "GH-PAGES-39866474910",
+      "component": "standard-website",
+      "environment": "github-pages",
+      "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+      "url": "https://interzettel.github.io/project-record-standard/",
+      "deployedAt": "2026-10-22T22:39:27.6365785Z",
+      "observedAt": "2026-10-22T22:44:54.607837+00:00",
+      "health": "healthy",
+      "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910/job/120129913901"
+    },
     {
       "id": "GH-PAGES-39802018009",
       "component": "standard-website",

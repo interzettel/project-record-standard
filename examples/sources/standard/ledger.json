@@ -89,10 +89,10 @@
       ],
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
-      "nextAction": "Observe passing hosted verification and Pages for the complete agent package.",
+      "nextAction": "Agent package delivered and hosted evidence recorded. Complete STD-13 screen-reader verification and STD-09 owner acceptance before individual repository migrations.",
       "unscopedWork": [],
       "priority": "P1",
-      "sourceState": "active",
+      "sourceState": "done",
       "evidence": []
     }
   ],
@@ -474,8 +474,8 @@
       "title": "Verify and deploy the complete standards package",
       "groupId": "G4",
       "milestoneId": "M4",
-      "state": "active",
-      "sourceState": "active",
+      "state": "done",
+      "sourceState": "done",
       "required": true,
       "blocked": false,
       "dependsOn": [
@@ -483,8 +483,33 @@
         "STD-15"
       ],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Local package complete; expanded hosted observation pending.",
+      "evidence": [
+        {
+          "kind": "hosted-ci",
+          "subject": "STD-16",
+          "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+          "result": "passed",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "deployment",
+          "subject": "STD-16",
+          "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+          "result": "passed",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910/job/120129913901",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "ui-review",
+          "subject": "STD-16",
+          "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+          "result": "passed",
+          "source": "standards/ACCESSIBILITY.md; audit/skills/hosted-observation.json",
+          "observedOn": "2026-10-23"
+        }
+      ],
+      "completionBasis": "Hosted verification, reusable workflow and Pages passed for the identified candidate; live tracker and agent guide inspected in Edge.",
       "kind": "implementation",
       "owner": "Implementing agent",
       "priority": "P1",

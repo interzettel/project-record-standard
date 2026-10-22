@@ -55,7 +55,7 @@
           "path": "sources/standard/delivery.json",
           "visibility": "public",
           "authority": "Authored local change and candidate records",
-          "observedOn": "2026-10-22"
+          "observedOn": "2026-10-23"
         }
       ],
       "changeFiles": [
@@ -96,14 +96,14 @@
           "observedOn": "2026-10-22"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-agent-workflows-0.3.json",
+      "previousSourceFile": "sources/standard/agent-package-local-0.3.json",
       "previousSource": {
         "kind": "file-snapshot",
-        "path": "examples/sources/standard/pre-agent-workflows-0.3.json",
+        "path": "examples/sources/standard/agent-package-local-0.3.json",
         "commit": null,
-        "observedOn": "2026-10-22",
-        "updatedOn": "2026-10-22",
-        "authority": "Preserved 11/13 canonical observation before agent workflow scope expansion"
+        "observedOn": "2026-10-23",
+        "updatedOn": "2026-10-23",
+        "authority": "Preserved published 13/16 observation before recording hosted agent-package verification"
       },
       "snapshots": [
         {
@@ -126,6 +126,17 @@
             "observedOn": "2026-10-22",
             "updatedOn": "2026-10-22",
             "authority": "Preserved initial canonical setup scope before hosted completion evidence"
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-agent-workflows-0.3.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/pre-agent-workflows-0.3.json",
+            "commit": null,
+            "observedOn": "2026-10-22",
+            "updatedOn": "2026-10-22",
+            "authority": "Preserved 11/13 canonical observation before agent workflow scope expansion"
           }
         }
       ]

@@ -1,0 +1,74 @@
+{
+  "observedAt": "2026-10-22T22:44:54.607837+00:00",
+  "reportingDate": "2026-10-23",
+  "candidateRevision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+  "workflow": {
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 120129814258,
+        "name": "verify",
+        "conclusion": "success"
+      },
+      {
+        "id": 120129814628,
+        "name": "reusable / record",
+        "conclusion": "success"
+      },
+      {
+        "id": 120129913901,
+        "name": "deploy",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "deployment": {
+    "id": "GH-PAGES-39866474910",
+    "component": "standard-website",
+    "environment": "github-pages",
+    "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+    "url": "https://interzettel.github.io/project-record-standard/",
+    "deployedAt": "2026-10-22T22:39:27.6365785Z",
+    "observedAt": "2026-10-22T22:44:54.607837+00:00",
+    "health": "healthy",
+    "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910/job/120129913901"
+  },
+  "browserReview": {
+    "browser": "Connected Edge; browser version unavailable through this control surface",
+    "pages": [
+      "https://interzettel.github.io/project-record-standard/",
+      "https://interzettel.github.io/project-record-standard/guide/START-HERE.html",
+      "https://interzettel.github.io/project-record-standard/guide/AGENT-WORKFLOWS.html"
+    ],
+    "checks": [
+      "Native Tab reaches tracker skip link; Enter focuses main.",
+      "Native Tab reaches Appearance and milestone cards; Enter on M4 focuses its heading, visible after scrolling settles.",
+      "Next Tab reaches the remaining STD-16 criterion; Enter opens its inspector and focuses Close.",
+      "Native Space closes inspector; focus returns to the STD-16 work tile.",
+      "Readable list activates with Enter and retains control focus.",
+      "Guide skip link activates with native Tab/Enter and focuses main.",
+      "Agent workflow guide renders all ten skills, scouting, scope growth, installation and operational telemetry."
+    ],
+    "limits": [
+      "Actual screen-reader output not observed.",
+      "No owner acceptance inferred.",
+      "No individual project repository migrated."
+    ]
+  },
+  "progressUpdate": {
+    "item": "STD-16",
+    "beforeSourceSha256": "75257041c8acab67659b8fcdcdb15781d2b5e184b3f68d7794a91ce1247d7fe4",
+    "afterSourceSha256": "ac63312d4d81a631f99c691fd1b3c730b9ac2bba06deb23d91c820cf364386c9",
+    "requiredBefore": {
+      "done": 13,
+      "total": 16
+    },
+    "requiredAfter": {
+      "done": 14,
+      "total": 16
+    },
+    "scopeChanges": [],
+    "fragmentOmissionReason": "This update records verification and delivery evidence for existing CH-0.3-AGENTS and STD-16; it adds no product behavior or selected scope."
+  }
+}
