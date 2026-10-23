@@ -29,6 +29,8 @@ PYTHONPATH=src python3 -m project_record readme --file /path/to/project/README.m
 
 Apply with `--write` only under the project’s writer policy; a generator-owned README changes through its generator. Keep real progress/image URLs and meaningful graphic alternative text. Preserve outside-region bytes.
 
+Use **verify-project-accessibility** for a WCAG audit or accessibility remediation.
+
 Review the actual public projection before integrating into the existing deployment workflow. Test branded contrast, desktop/390px reflow, 200% text zoom, themes, touch selection, keyboard traversal/activation, focus, readable-list equivalence and linked state. Record tested revision/environment and screenshots. Actual screen-reader output is a separate observed test: semantic inspection or keyboard success leaves it pending.
 
 Handoff integration paths, brand sources, named metrics, public review, interaction results, unresolved gates, source identity, rollback and next owner/action. Publish only under task authorization; a local preview establishes no deployment.

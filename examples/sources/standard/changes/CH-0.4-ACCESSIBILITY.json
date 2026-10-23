@@ -1,0 +1,12 @@
+{
+  "id": "CH-0.4-ACCESSIBILITY",
+  "component": "standard",
+  "type": "fix",
+  "summary": "Repair tracker focus and live-region continuity, readable-list selection and reusable colour defaults; add a WCAG 2.2 accessibility skill and rendered review fixture.",
+  "workItemIds": [
+    "STD-09",
+    "STD-13",
+    "STD-14"
+  ],
+  "compatibility": "Implementation 0.4.0 retains contract 0.2.0 and project-owned branding. Owner acceptance and any scoped criterion amendment are attributed separately from unperformed assistive-technology tests."
+}

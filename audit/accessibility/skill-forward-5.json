@@ -1,0 +1,804 @@
+{
+  "standard": "WCAG 2.2",
+  "target": "AA (including A)",
+  "normativeSource": "https://www.w3.org/TR/WCAG22/",
+  "revision": "bbb31f97afb4b0b494222be34972add6ad71260e",
+  "observedAt": "2026-10-23T07:26:58.266364+00:00",
+  "pages": [
+    "Shared explorer source and fixture: web/components.mjs, web/components.css, tests/accessibility.test.mjs",
+    "Guide generation source: tools/build_site.py",
+    "Accessibility evidence guide: standards/ACCESSIBILITY.md",
+    "Authority: examples/sources/standard/ledger.json"
+  ],
+  "states": [
+    "Map/list selected and unselected items",
+    "Search including no matches",
+    "Status-filter hides inspector origin then close",
+    "Ordinary inspector open/close",
+    "Unbranded default state-colour pairs",
+    "Branded palette roles (checker only)",
+    "Guide light/dark source cascade"
+  ],
+  "environments": [
+    {
+      "type": "source-only and jsdom",
+      "browser": null,
+      "screenReader": null,
+      "node": "v24.19.0",
+      "constraints": "No browser or external writes. Repository writes owned by parent; report only."
+    }
+  ],
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.2.3",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.2.4",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.2.5",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Explorer uses native buttons, labels/selects, headings, dl/dt/dd and named progressbar with exact fractions. Guide generator emits nav/main landmarks.",
+      "evidence": [
+        "web/components.mjs:10-44;69-72; tools/build_site.py:144-145"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.3.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.3.3",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.3.4",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.3.5",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.4.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "States have textual names and map state symbols; progress has exact counts. Source supports alternatives to colour.",
+      "evidence": [
+        "web/components.mjs:5-6;10-14;58-63"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.4.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.4.3",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Palette checker passed 20 role pairs with minimum 5.31:1; unbranded accent/active/blocked text pairs passed jsdom CSS-token regression. This does not measure every computed host/hover state.",
+      "evidence": [
+        "tools/check_palette.py; tests/accessibility.test.mjs:73-93"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.4.4",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.4.5",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.4.10",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.4.11",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.4.12",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "1.4.13",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.1.4",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.4.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Guide generator includes skip link to focusable main landmark; actual skip activation untested here.",
+      "evidence": [
+        "tools/build_site.py:145"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.4.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Guide generator emits document-specific title. Generated pages not built in this run.",
+      "evidence": [
+        "tools/build_site.py:145"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.4.3",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "jsdom regressions passed ordinary close-to-origin and hidden-origin close-to-search fallback; search focus and node identity retained. Native next-Tab order and viewport visibility remain untested.",
+      "evidence": [
+        "web/components.mjs:90-105; tests/accessibility.test.mjs:41-71"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.4.4",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.4.5",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.4.6",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.4.7",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Final CSS explicitly outlines button/input/select/link focus-visible states; rendered visibility and contrast untested.",
+      "evidence": [
+        "web/components.css:7; tools/build_site.py:41,49"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.4.11",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.5.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.5.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.5.3",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.5.4",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.5.7",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "2.5.8",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Final cascade gives close/input/select and work tiles 44 px minimum height, inline dependency controls 32 px minimums. Complete target geometry/spacing not measured.",
+      "evidence": [
+        "web/components.css:2,8-10"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Guide generator emits html lang=en; source fixture is English. Generated and consumed page language not fully checked.",
+      "evidence": [
+        "tools/build_site.py:145"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.2.3",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.2.4",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.2.6",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.3.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Explorer filters/search have visible wrapping labels; source has matching labels and native controls.",
+      "evidence": [
+        "web/components.mjs:69-72"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.3.3",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.3.4",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.3.7",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "3.3.8",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Insufficient evidence to establish a complete criterion result",
+      "evidence": [],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "4.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Source has accessible names, roles, selected aria-pressed state, progressbar min/max/value text. Readable-list selected-state regression passed. Accessibility tree not inspected.",
+      "evidence": [
+        "web/components.mjs:10-14,58-72; tests/accessibility.test.mjs:49-55"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    },
+    {
+      "id": "4.1.3",
+      "result": "not-tested",
+      "scope": [
+        "Source-only review; complete rendered pages are excluded"
+      ],
+      "method": "Static source inspection; targeted jsdom regressions where available",
+      "expected": "WCAG 2.2 A/AA requirement demonstrated in complete integrated page and applicable states",
+      "actual": "Mounted status/live node survives search/status filter updates, concise count text changes; jsdom MutationObserver regression passed. Spoken announcements not observed.",
+      "evidence": [
+        "web/components.mjs:30,55-58; tests/accessibility.test.mjs:19-39"
+      ],
+      "reason": "No browser, rendered layout or actual assistive-technology observation in this bounded audit"
+    }
+  ],
+  "findings": [
+    {
+      "id": "COVERAGE-01",
+      "type": "verification-gap",
+      "result": "not-tested",
+      "actual": "No reproducible new source defect found in inspected explorer, cascade and guide builder. Integrated browser rendering and native interaction remain unknown.",
+      "nextAction": "Parent to exercise complete pages and host styles with 320 CSS-pixel reflow, native 200% zoom, text spacing, both themes, reduced motion/forced colours, pointer targets, focus visibility and deep links."
+    },
+    {
+      "id": "ENV-01",
+      "type": "test-environment",
+      "result": "failed",
+      "actual": "Python suite could not import test_site because markdown is absent.",
+      "nextAction": "Use pinned requirements-site.txt dependency environment, then run site build and regression tests."
+    },
+    {
+      "id": "ACCEPTANCE-01",
+      "type": "authority-boundary",
+      "result": "not-tested",
+      "actual": "Ledger still defines STD-13 as actual native keyboard and screen-reader output; STD-09 owner review remains backlog. No actual screen-reader evidence produced here.",
+      "nextAction": "Parent records any explicitly authorized exit-criterion amendment with previous meaning, scoped audit outcome and unresolved AT checks; do not relabel source inspection as a passed screen-reader test."
+    }
+  ],
+  "assistiveTechnology": {
+    "result": "not-tested",
+    "browserVersion": null,
+    "screenReaderVersion": null,
+    "observedOutput": null
+  },
+  "acceptance": {
+    "authorization": "Owner instruction relayed by parent: perform review/fixes, add skill, then STD-09/13 may be done.",
+    "conditions": [
+      "Review outcome and corrections evidenced",
+      "Skill added to distributable package",
+      "Existing STD-13 actual screen-reader requirement met OR explicitly amended with preserved prior meaning and remaining limits"
+    ],
+    "actual": "Report review completed; no repository changes by this reviewer. Package/ledger/site regeneration owned by parent. Conditions not evidenced by this report alone.",
+    "ledgerBefore": {
+      "STD-09": "backlog",
+      "STD-13": "active, blocked; native keyboard evidence only"
+    },
+    "ledgerChanged": false
+  },
+  "conformanceClaim": false,
+  "limits": [
+    "All 55 A/AA criteria retain not-tested for complete page evaluation; source observations and jsdom successes are separately recorded.",
+    "No native browser, screen reader, computed rendered cascade, screenshots, 320 px viewport, native zoom, text spacing, forced-colour or OS reduced-motion tests.",
+    "Existing historical guide statements were inspected as documentation, not replayed or counted as new passed tests.",
+    "No external writes, publication or deployment. No other agent output read."
+  ],
+  "sourceChecks": [
+    {
+      "command": "node --test tests/accessibility.test.mjs tests/metrics.test.mjs",
+      "result": "passed",
+      "actual": "13 tests passed: 6 accessibility and 7 metrics. No native keyboard or screen reader used."
+    },
+    {
+      "command": "python3 tools/check_palette.py",
+      "result": "passed",
+      "actual": "20 pairs; minimum 5.31; zero failures."
+    },
+    {
+      "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+      "result": "failed",
+      "actual": "34 discovered test entries; 33 passed, test_site import failed: ModuleNotFoundError: markdown. Site build and site regression not established."
+    }
+  ],
+  "sourceIdentity": {
+    "web/components.mjs": "e20efcca6461054a73d8f647e505f4cfe0b9e2fc07cacde3ed4da25f8bc06ab3",
+    "web/components.css": "8a9facd773ee12971c74fbe70df028daeec2fc33a63f94c814fb000e89d87552",
+    "tools/build_site.py": "a2bfe56d0752bfece6aaf45241087ba11ac3dcc010f0d881a3a469f3c52cf528",
+    "standards/ACCESSIBILITY.md": "3081d803bea80caafa68949eae79bce24cac07d18ef8037bb5b943e63293b9b5",
+    "examples/sources/standard/ledger.json": "ac63312d4d81a631f99c691fd1b3c730b9ac2bba06deb23d91c820cf364386c9"
+  },
+  "normativeVerification": {
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "observed": "W3C Recommendation 12 December 2024 retrieved 2026-10-23; criterion list matches template; 4.1.1 obsolete and removed.",
+    "method": "Read-only web retrieval"
+  },
+  "closureHandoff": {
+    "outcome": "Source-only review and targeted regressions completed; no new confirmed defect. No WCAG conformance claim.",
+    "fixedFindings": [],
+    "packageSkill": "Parent owns canonical skill inclusion, manifest/routing updates and distribution checks.",
+    "nextOwner": "Parent agent",
+    "nextAction": "Integrate this evidence, perform authorized fixes/package work, resolve environment and browser coverage, amend acceptance boundary if authorized, update source ledger once and regenerate README/Pages.",
+    "scopeEffect": "No work added, removed or reclassified; no ledger mutation; no fraction changes in this report."
+  }
+}

@@ -46,7 +46,7 @@ SITE_CSS = """
 .guide table{display:block;overflow:auto;border-collapse:collapse;width:100%;font-size:14px}.guide td,.guide th{padding:12px;text-align:left;border:1px solid #c4ceda;vertical-align:top}.guide th{background:#e7ecf2}.guide blockquote{border-left:3px solid #244f9b;padding-left:20px;margin-left:0;color:#48596c}
 .guide .doc-source{margin-top:50px;border-top:1px solid #c4ceda;padding-top:20px;font-size:13px}.guide .skip-link{position:absolute;top:-100px;background:#fff;padding:12px}.guide .skip-link:focus{top:0;z-index:10}
 @media(max-width:750px){.guide .layout{grid-template-columns:minmax(0,1fr);gap:28px;padding:28px 18px 60px}.guide aside nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 20px}.site-nav{padding-inline:18px;gap:4px 16px}.guide article{max-width:100%}}
-@media(prefers-color-scheme:dark){.guide{background:#101923;color:#edf2f7}.guide a{color:#a8c8ff}.guide [aria-current=page]{color:#edf2f7}.guide pre,.guide :not(pre)>code,.guide th{background:#202e3e}.guide td,.guide th,.guide pre,.guide .doc-source{border-color:#506176}.guide blockquote{color:#b0bfd0}.guide .skip-link{background:#101923}.guide a:focus-visible{outline-color:#a8c8ff}}
+@media(prefers-color-scheme:dark){.guide{background:#101923;color:#edf2f7}.guide a{color:#a8c8ff}.guide [aria-current=page]{color:#edf2f7}.guide pre,.guide :not(pre)>code,.guide th{background:#202e3e}.guide td,.guide th,.guide pre,.guide .doc-source{border-color:#506176}.guide blockquote{color:#b0bfd0}.guide .skip-link{background:#101923}.guide a:focus-visible,.guide summary:focus-visible{outline-color:#a8c8ff}}
 """
 
 
@@ -144,6 +144,9 @@ def build_site(records: Path, output: Path) -> dict:
         menu = ''.join(f'<a href="{other}.html"' + (' aria-current="page"' if other == name else '') + f'>{escape(label)}</a>' for other, label in DOCUMENTS)
         html = f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} · Project record standard</title><style>{SITE_CSS}</style></head><body class="guide"><a class="skip-link" href="#content">Skip to guide</a>{navigation("../")}<div class="layout"><aside><nav aria-label="Standard guide">{menu}</nav></aside><main id="content" tabindex="-1"><article>{body}<p class="doc-source"><a href="{REPOSITORY}/blob/main/standards/{name}.md">View this document on GitHub</a></p></article></main></div></body></html>'
         (guide / (name + '.html')).write_text(html)
+    review = output / 'qa'
+    review.mkdir()
+    (review / 'accessibility.html').write_bytes((ROOT / 'tools/accessibility_review.html').read_bytes())
     identity = {
         'projects': projects,
         'sourceCommit': os.environ.get('GITHUB_SHA'),

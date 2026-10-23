@@ -1,0 +1,800 @@
+{
+  "standard": "WCAG 2.2",
+  "target": "AA (including A)",
+  "normativeSource": "https://www.w3.org/TR/WCAG22/",
+  "revision": {
+    "baseCommit": "bbb31f97afb4b0b494222be34972add6ad71260e",
+    "worktree": "dirty; exact reviewed source hashes below",
+    "sha256": {
+      "web/components.mjs": "4807851a854f14b9253c162e8c31e9145f24f26cd7809553f0bad290c8942e88",
+      "web/components.css": "8a9facd773ee12971c74fbe70df028daeec2fc33a63f94c814fb000e89d87552",
+      "tools/build_site.py": "a2bfe56d0752bfece6aaf45241087ba11ac3dcc010f0d881a3a469f3c52cf528",
+      "standards/ACCESSIBILITY.md": "3081d803bea80caafa68949eae79bce24cac07d18ef8037bb5b943e63293b9b5"
+    }
+  },
+  "observedAt": "2026-10-23T07:26:15.355595+00:00",
+  "pages": [
+    "Shared explorer source (web/components.mjs, web/components.css)",
+    "Guide page generation (tools/build_site.py); generated pages not opened"
+  ],
+  "states": [
+    "Work map/list source",
+    "Open inspector; ordinary close and close after filter removes origin (JSDOM)",
+    "Query/status filter updates and zero results (JSDOM)",
+    "Default reusable component palette (JSDOM computed custom properties)"
+  ],
+  "environments": [
+    {
+      "name": "Linux container",
+      "node": "v24.19.0",
+      "python": "3.12.14",
+      "browser": null,
+      "screenReader": null,
+      "method": "Read-only source review; node:test/JSDOM regressions; no browser interaction"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.2.3",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.2.4",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.2.5",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.3.2",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.3.3",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.3.4",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.3.5",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.4.1",
+      "result": "passed",
+      "scope": [
+        "Explorer work-state communication only"
+      ],
+      "method": "Source inspection",
+      "expected": "State meaning available without color",
+      "actual": "Map buttons include state words in accessible names and visible state symbols; list and legend include state words.",
+      "evidence": [
+        "web/components.mjs:5-6,58-64,73"
+      ],
+      "reason": null
+    },
+    {
+      "id": "1.4.2",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.4.3",
+      "result": "not-tested",
+      "scope": [
+        "Reusable default accent/active/blocked token pairs; complete host themes unknown"
+      ],
+      "method": "JSDOM custom-property contrast regression",
+      "expected": "All rendered normal text has 4.5:1 contrast",
+      "actual": "Default explicit state pairs passed test; branded computed cascade, hover, link and all guide/theme states not rendered.",
+      "evidence": [
+        "web/components.css:1-11",
+        "tests/accessibility.test.mjs:unbranded component state colours provide readable text contrast"
+      ],
+      "reason": "Token calculation does not establish rendered complete-page contrast."
+    },
+    {
+      "id": "1.4.4",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Historical instrumented resize report is explicitly not native zoom and is not current-worktree evidence.",
+      "evidence": [
+        "standards/ACCESSIBILITY.md:Text enlargement"
+      ],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.4.5",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.4.10",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Responsive source rules exist; 320 CSS-pixel layout not measured.",
+      "evidence": [
+        "web/components.css:3-4",
+        "tools/build_site.py:48"
+      ],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.4.11",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.4.12",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "1.4.13",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.1.4",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.4.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.4.2",
+      "result": "passed",
+      "scope": [
+        "Guide generator title output only"
+      ],
+      "method": "Source inspection",
+      "expected": "Generated guide pages have descriptive titles",
+      "actual": "Each guide gets document-specific title plus Project record standard.",
+      "evidence": [
+        "tools/build_site.py:23-35,145"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.4.3",
+      "result": "not-tested",
+      "scope": [
+        "Explorer open, close, filter-hidden origin and query retention"
+      ],
+      "method": "Source inspection and node --test tests/accessibility.test.mjs",
+      "expected": "Logical focus persists or moves to visible control after updates",
+      "actual": "JSDOM passes ordinary origin restoration, fallback to Find work when filtered out, search focus retention; native sequential Tab order and viewport visibility unknown.",
+      "evidence": [
+        "web/components.mjs:89-104",
+        "tests/accessibility.test.mjs; 6/6 suite passed"
+      ],
+      "reason": "DOM focus behavior verified only; no native keyboard or visibility check on reviewed worktree."
+    },
+    {
+      "id": "2.4.4",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.4.5",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.4.6",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.4.7",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Final rules provide focus outlines and forced-colors outline override; rendered visibility/contrast not measured.",
+      "evidence": [
+        "web/components.css:7,11",
+        "tools/build_site.py:41,49"
+      ],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.4.11",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Inspector focus and scroll logic exists; obscuration after scrolling not tested.",
+      "evidence": [
+        "web/components.mjs:90-94"
+      ],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.5.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.5.2",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.5.3",
+      "result": "passed",
+      "scope": [
+        "Shared explorer visible control labels only"
+      ],
+      "method": "Source inspection",
+      "expected": "Accessible names contain visible labels",
+      "actual": "Native labels contain controls; explicit Milestone/Status/Denominator names match visible labels; map names contain visible item IDs; native button text provides other names.",
+      "evidence": [
+        "web/components.mjs:58-73"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.5.4",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.5.7",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "2.5.8",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Final cascade gives dependency controls >=32px, close/input/select >=44px and tiles >=44px height; complete rendered target dimensions and spacing unknown.",
+      "evidence": [
+        "web/components.css:2,8-10",
+        "tools/build_site.py:39,43"
+      ],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.1.1",
+      "result": "passed",
+      "scope": [
+        "Guide generator document language only"
+      ],
+      "method": "Source inspection",
+      "expected": "Primary language programmatically declared",
+      "actual": "Guide document template declares lang=en.",
+      "evidence": [
+        "tools/build_site.py:145"
+      ],
+      "reason": null
+    },
+    {
+      "id": "3.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.2.3",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.2.4",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.2.6",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.3.2",
+      "result": "passed",
+      "scope": [
+        "Shared explorer search and filter inputs only"
+      ],
+      "method": "Source inspection",
+      "expected": "Input controls have labels",
+      "actual": "Find work wraps search input; Milestone, Status and Denominator wrap selects.",
+      "evidence": [
+        "web/components.mjs:69-72"
+      ],
+      "reason": null
+    },
+    {
+      "id": "3.3.3",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.3.4",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.3.7",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "3.3.8",
+      "result": "not-tested",
+      "scope": [
+        "Current full integrated page not exercised"
+      ],
+      "method": "Bounded source review only",
+      "expected": "Criterion satisfied for complete integrated page and interactions",
+      "actual": "Insufficient current rendered/interaction evidence",
+      "evidence": [],
+      "reason": "Not exercised in a browser or assistive technology during this review; source review cannot establish the complete criterion."
+    },
+    {
+      "id": "4.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Explorer filters/map/list/meter source and list selection regression"
+      ],
+      "method": "Source inspection and JSDOM",
+      "expected": "Controls expose appropriate names, roles, states and values in accessibility tree",
+      "actual": "Native controls, meter progressbar attributes and list/map aria-pressed supplied; selected-state regression passed; browser accessibility tree not inspected.",
+      "evidence": [
+        "web/components.mjs:10-13,58-73",
+        "tests/accessibility.test.mjs:readable-list items expose the same selected state as work-map items"
+      ],
+      "reason": "No integrated browser accessibility tree or screen-reader verification."
+    },
+    {
+      "id": "4.1.3",
+      "result": "not-tested",
+      "scope": [
+        "Result count updates and zero results"
+      ],
+      "method": "JSDOM node-identity and mutation assertions",
+      "expected": "Persistent concise status communicated without focus move",
+      "actual": "One mounted role=status node survives query and status filter updates and contains concise count; regression passed. Spoken announcements remain unknown.",
+      "evidence": [
+        "web/components.mjs:30,55-57",
+        "tests/accessibility.test.mjs:filter updates preserve one mounted result announcement node"
+      ],
+      "reason": "Semantic persistence is verified; actual announcement output unavailable."
+    }
+  ],
+  "findings": [
+    {
+      "id": "SRC-01",
+      "status": "verified-in-JSDOM",
+      "description": "Result announcement stays mounted across result updates.",
+      "evidence": [
+        "web/components.mjs:30,55-57",
+        "6/6 accessibility regressions passed"
+      ],
+      "remaining": "Actual assistive-technology output not tested."
+    },
+    {
+      "id": "SRC-02",
+      "status": "verified-in-JSDOM",
+      "description": "Closing an inspector whose originating item is filtered out focuses Find work; ordinary close restores origin.",
+      "evidence": [
+        "web/components.mjs:91-94",
+        "6/6 accessibility regressions passed"
+      ],
+      "remaining": "Native next-Tab sequence and visible unobscured focus require browser check."
+    },
+    {
+      "id": "GATE-01",
+      "status": "acceptance-amendment-required",
+      "description": "Ledger STD-13 currently requires actual screen-reader output; current source tests do not satisfy that original criterion. Owner authorization supplied to parent permits bounded closure after audit/fixes and skill packaging, provided previous criterion and amendment are recorded.",
+      "evidence": [
+        "examples/sources/standard/ledger.json:STD-13",
+        "standards/ACCESSIBILITY.md:Complete the screen-reader check"
+      ],
+      "remaining": "Parent to verify complete audit, fixes and packaged skill; preserve untested actual AT as explicit future verification."
+    }
+  ],
+  "assistiveTechnology": {
+    "result": "not-tested",
+    "browserVersion": null,
+    "screenReaderVersion": null,
+    "observedOutput": null
+  },
+  "acceptance": {
+    "decision": "No full WCAG conformance claim; source audit handoff complete",
+    "ownerAuthorization": "Parent supplied conditional owner authorization: audit/fix tracker and package accessibility skill, then STD-09 and STD-13 may be done.",
+    "closureConditions": [
+      "Complete integrated audit/fixes using evidence from other authorized work",
+      "Verify packaged accessibility skill and relevant checks",
+      "Record owner amendment preserving STD-13 original meaning and unavailable AT; do not relabel AT as passed",
+      "Update authoritative ledger once and regenerate projections"
+    ],
+    "ledgerObserved": "14/16 done; STD-09 backlog; STD-13 active/blocked. No ledger mutation performed by this reviewer."
+  },
+  "conformanceClaim": false,
+  "limits": [
+    "No browser access or external writes in this delegated review.",
+    "No screen reader or spoken output; browser/screen-reader versions unknown.",
+    "No current rendered reflow at 320 CSS px, native 200% resize/zoom, text-spacing, computed theme/hover contrast, forced-colors or reduced-motion behavior.",
+    "Guide document content, tracker shell and history SVG/table generator are outside this four-file source-review scope.",
+    "Historical Edge observations in ACCESSIBILITY.md are attributed prior evidence, not retests of current dirty worktree.",
+    "W3C recommendation retrieved read-only on observation date; 4.1.1 obsolete/removed and excluded.",
+    "Passed criterion rows apply only to the explicit source-level scopes; no full-page or process conformance inferred."
+  ],
+  "testRun": {
+    "command": "node --test tests/accessibility.test.mjs",
+    "result": "passed",
+    "tests": 6,
+    "failures": 0,
+    "durationMs": 722.257732
+  },
+  "nextAction": "Merge this source evidence with actual current integrated browser checks, preserve remaining unknowns, verify packaged skill, then apply the owner conditional acceptance with an explicit recorded criterion amendment."
+}

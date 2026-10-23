@@ -45,3 +45,21 @@ The tracking runtime has no third-party dependencies. The documentation website 
 The public Prehnite example is pinned to its stated source revision. It does not claim to show the latest repository state or replace the real Prehnite site. The standard's own tracker records the canonical delivery work and pending owner review.
 
 Read [Repository and delivery evidence](DELIVERY.md) for actual hosted runs and deployment observations. [Accessibility evidence](ACCESSIBILITY.md) records tested interactions and remaining manual checks. [PMI alignment](PMI-ALIGNMENT.md) explains the tailored mapping to public PMI guidance; it does not claim certification.
+
+## Site index
+
+Use this index as another route to the pages in the guide:
+
+- [Example tracker](../index.html)
+- [Prehnite reference](../prehnite/progress.html)
+- [Terminology and percentages](STANDARD.md)
+- [Issues and GitHub Projects](GITHUB.md)
+- [Automation](AUTOMATION.md)
+- [New and existing projects](ADAPTATION-PROFILES.md)
+- [Agent skills and planning](AGENT-WORKFLOWS.md)
+- [PMI alignment](PMI-ALIGNMENT.md)
+- [Brand and interaction](PRESENTATION.md)
+- [Accessibility evidence](ACCESSIBILITY.md)
+- [Upgrades and recovery](UPGRADING.md)
+- [Repository and delivery evidence](DELIVERY.md)
+- [Accessibility review fixture](../qa/accessibility.html)

@@ -1,0 +1,801 @@
+{
+  "standard": "WCAG 2.2",
+  "target": "AA (including A)",
+  "normativeSource": "https://www.w3.org/TR/WCAG22/",
+  "revision": {
+    "commit": "bbb31f97afb4b0b494222be34972add6ad71260e",
+    "worktree": "Uncommitted changes present; hashes below identify reviewed files. No claim these match hosted output.",
+    "files": {
+      "web/components.mjs": "e20efcca6461054a73d8f647e505f4cfe0b9e2fc07cacde3ed4da25f8bc06ab3",
+      "web/components.css": "8a9facd773ee12971c74fbe70df028daeec2fc33a63f94c814fb000e89d87552",
+      "tools/build_site.py": "a2bfe56d0752bfece6aaf45241087ba11ac3dcc010f0d881a3a469f3c52cf528",
+      "standards/ACCESSIBILITY.md": "3081d803bea80caafa68949eae79bce24cac07d18ef8037bb5b943e63293b9b5",
+      "examples/sources/standard/ledger.json": "ac63312d4d81a631f99c691fd1b3c730b9ac2bba06deb23d91c820cf364386c9"
+    }
+  },
+  "observedAt": "2026-10-23T07:26:25.271710+00:00",
+  "pages": [
+    "Source only: shared explorer map/list and inspector",
+    "Source only: canonical guide HTML template; no generated or deployed page opened"
+  ],
+  "states": [
+    "Reviewed source paths for filters, empty results, map/list, item open/close, hidden origin fallback, cross-milestone dependency",
+    "Reviewed source CSS for default styling, narrow breakpoints, focus, reduced motion and forced colours"
+  ],
+  "environments": [
+    {
+      "type": "source review and command-line",
+      "browser": null,
+      "screenReader": null,
+      "browserAvailable": false,
+      "externalWritesAvailable": false
+    }
+  ],
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.2.3",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.2.4",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.2.5",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Progressbar name/value and exact fraction, labels, headings and definition list exist in source; integrated accessibility tree untested.",
+      "evidence": [
+        "web/components.mjs:11-13,38-46,62,69-73; tools/build_site.py:145"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.3.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.3.3",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.3.4",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.3.5",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.4.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Textual state and icon supplement colour in map/list and legend.",
+      "evidence": [
+        "web/components.mjs:5-6,39,58,63,73"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.4.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.4.3",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "20 authored theme role/mode pairs passed 4.5:1, minimum 5.31:1. This excludes computed cascade, reusable defaults, hover and arbitrary consuming sites.",
+      "evidence": [
+        "tools/check_palette.py; command python3 tools/check_palette.py"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.4.4",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Responsive grid and wrapping appear in source; prior instrumented doubling is recorded in documentation, not independently rerun or native zoom.",
+      "evidence": [
+        "web/components.css:2-4; standards/ACCESSIBILITY.md"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.4.5",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.4.10",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Narrow breakpoints exist; 320 CSS-pixel reflow was not rendered or tested.",
+      "evidence": [
+        "web/components.css:3-4; tools/build_site.py:48"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.4.11",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Final cascade supplies focus outline and control border override plus forced-colour handling; rendered contrast not measured.",
+      "evidence": [
+        "web/components.css:7,10-11"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.4.12",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "1.4.13",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Native controls and click/change handlers present. Existing Edge keyboard observations are documentary evidence only, with browser version unavailable.",
+      "evidence": [
+        "web/components.mjs:69-73,77-112; standards/ACCESSIBILITY.md"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.1.4",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.4.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Guide template has skip link and focusable main target; native activation not rerun.",
+      "evidence": [
+        "tools/build_site.py:145; standards/ACCESSIBILITY.md"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.4.2",
+      "result": "passed",
+      "scope": [
+        "Guide HTML template only"
+      ],
+      "method": "Direct inspection of literal generated HTML template",
+      "expected": "Guide document template supplies a descriptive title.",
+      "actual": "Guide title is derived from the named document title plus Project record standard.",
+      "evidence": [
+        "tools/build_site.py:145"
+      ],
+      "reason": "Pass is limited to the inspected template, not an opened page or the full site."
+    },
+    {
+      "id": "2.4.3",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Close restores origin when present, otherwise search; view and select controls regain focus. Filter-out-origin behavior is supported by source, not exercised in browser.",
+      "evidence": [
+        "web/components.mjs:89-95,99-104"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.4.4",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.4.5",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.4.6",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.4.7",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Final rules add 3px focus outlines for reusable controls and guide links/summary, including dark guide focus. Visibility not rendered.",
+      "evidence": [
+        "web/components.css:7; tools/build_site.py:41,49"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.4.11",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Inspector scroll and focus outline exist; actual unobscured focus and scroll positioning untested.",
+      "evidence": [
+        "web/components.mjs:90; web/components.css:7"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.5.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.5.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.5.3",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Tile accessible name includes visible ID; native filter labels agree with aria-label. Full page label-in-name audit not performed.",
+      "evidence": [
+        "web/components.mjs:63,69-73"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.5.4",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.5.7",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "2.5.8",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Final cascade provides 44px tiles/close/inputs/selects, 32px dependency controls and 44px navigation. All targets and spacing not measured in browser.",
+      "evidence": [
+        "web/components.css:2,8-10; tools/build_site.py:39,43"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.1.1",
+      "result": "passed",
+      "scope": [
+        "Guide HTML template only"
+      ],
+      "method": "Direct inspection of literal generated HTML template",
+      "expected": "Guide document template declares the primary language.",
+      "actual": "Guide template declares html lang=\"en\".",
+      "evidence": [
+        "tools/build_site.py:145"
+      ],
+      "reason": "Pass is limited to the inspected template, not an opened page or the full site."
+    },
+    {
+      "id": "3.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.2.3",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.2.4",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.2.6",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.3.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.3.3",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.3.4",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.3.7",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "3.3.8",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "No direct runtime observation for this criterion.",
+      "evidence": [],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "4.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Named progressbar and native controls with pressed state appear in source. Runtime tree and assistive-technology interpretation untested.",
+      "evidence": [
+        "web/components.mjs:11-13,58,63,69-73"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    },
+    {
+      "id": "4.1.3",
+      "result": "not-tested",
+      "scope": [
+        "Only named source surfaces; no integrated page conformance conclusion"
+      ],
+      "method": "Read-only source inspection; no browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA criterion requires verification in its actual integrated context.",
+      "actual": "Status node is mounted outside replaced results; updates change only concise count text. Source supports persistence; spoken announcements were not observed.",
+      "evidence": [
+        "web/components.mjs:30,54-57,74,110"
+      ],
+      "reason": "Browser and assistive technology unavailable; no fresh normative applicability review was possible. Unknowns remain not-tested."
+    }
+  ],
+  "findings": [
+    {
+      "id": "A11Y-FWD-2-01",
+      "severity": "coverage gap",
+      "status": "not-tested",
+      "description": "Actual screen-reader output remains unverified. Prior Edge keyboard observations do not establish spoken announcements.",
+      "evidence": [
+        "standards/ACCESSIBILITY.md: Native Edge verification, Agent-package native keyboard check, Complete the screen-reader check",
+        "examples/sources/standard/ledger.json: STD-13"
+      ],
+      "requiredAction": "Retain as a verification limit even if owner authorizes scoped acceptance."
+    }
+  ],
+  "assistiveTechnology": {
+    "result": "not-tested",
+    "browserVersion": null,
+    "screenReaderVersion": null,
+    "observedOutput": null
+  },
+  "acceptance": {
+    "authority": "Owner authorization relayed in task instruction",
+    "authorization": "Owner authorizes considering STD-09/13 done after accessibility review/fixes and skill packaging.",
+    "status": "Conditional acceptance basis recorded; source ledger unchanged under this read-only task.",
+    "amendment": {
+      "previousMeaning": "STD-13 requires keyboard activation, traversal, focus restoration and actual screen-reader output, including remaining limitations.",
+      "scopedMeaning": "Owner may accept the completed scoped accessibility review/fixes and skill packaging while retaining actual screen-reader output as not-tested.",
+      "doesNotMean": "No screen-reader pass or universal WCAG conformance is implied."
+    },
+    "remainingCondition": "Parent must evidence skill packaging and relevant fix/regression completion before applying this conditional acceptance."
+  },
+  "conformanceClaim": false,
+  "limits": [
+    "Read-only source review; no source edits, authoritative ledger write, projection regeneration, deployment or external writes.",
+    "No browser/manual operation, screenshots, computed cascade, 320px reflow, native zoom, text-spacing override, high-contrast OS setting or reduced-motion OS setting was exercised.",
+    "No browser or screen-reader version available; no spoken output observed.",
+    "Current W3C recommendation could not be retrieved in this constrained task; criterion applicability remains provisional and unreviewed criteria are not-tested.",
+    "Historical accessibility documentation was read as attributed prior evidence, not a fresh passing test; its 32-pair palette claim differs from the current 20-pair checker result.",
+    "Source hashes identify local modified files; HEAD alone does not identify this candidate.",
+    "No new defect was reproduced; apparent source fixes were inspected but not dynamically retested."
+  ],
+  "automatedChecks": [
+    {
+      "command": "python3 tools/check_palette.py",
+      "result": "passed",
+      "actual": "20 authored theme role/mode pairs; minimum 5.31; zero failures",
+      "scopeLimit": "Opaque palette roles only; no computed page or arbitrary defaults."
+    },
+    {
+      "command": "node --test tests/metrics.test.mjs",
+      "result": "passed",
+      "actual": "7 tests passed, zero failures",
+      "scopeLimit": "Calculation/filter semantics only; does not verify accessibility interaction."
+    }
+  ],
+  "closureHandoff": {
+    "outcome": "Source review complete; two guide-template checks passed, remaining criterion results retain runtime/applicability limits. Source shows persistent concise status, focus fallback and final-cascade focus/target/forced-colour improvements.",
+    "affectedIds": [
+      "STD-09",
+      "STD-13"
+    ],
+    "authoritativeSource": "examples/sources/standard/ledger.json",
+    "sourceState": "STD-09 backlog; STD-13 active/blocked; preserved during read-only audit.",
+    "namedFractions": {
+      "before": "14/16 required leaves done (87.5%)",
+      "conditionalAfter": "16/16 required leaves done (100%) if owner acceptance conditions are evidenced and applied",
+      "scopeEffect": "No added/removed leaves or denominator change."
+    },
+    "fixedFindings": "No changes made by this reviewer; reviewed current source defenses without claiming independent browser retest.",
+    "nextAction": "Parent evidence packaging/fix checks; preserve original STD-13 criterion plus acceptance amendment and unresolved AT coverage; apply designated source writer once, regenerate README/Pages, and record actual checks. No new owner permission is required for the supplied conditional authorization.",
+    "changeFragment": "Not created; parent owns consolidated delivery and source writes."
+  }
+}

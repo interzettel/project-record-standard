@@ -1,6 +1,6 @@
 # Shared meaning
 
-Implementation: 0.3.0; contract: 0.2.0. Existing 0.1.0 records remain readable. This extends the intent of Personal Agent Stack ADR-008. An adapting agent must reconcile repository-local policies before adoption. See `PMI-ALIGNMENT.md` for the tailored PMI mapping.
+Implementation: 0.4.0; contract: 0.2.0. Existing 0.1.0 records remain readable. This extends the intent of Personal Agent Stack ADR-008. An adapting agent must reconcile repository-local policies before adoption. See `PMI-ALIGNMENT.md` for the tailored PMI mapping.
 
 ## Vocabulary
 

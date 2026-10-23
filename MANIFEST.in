@@ -5,3 +5,5 @@ recursive-include standards *.md
 recursive-include skills *.md *.yaml *.json *.svg
 include AGENTS.md
 recursive-include progress *.md *.json
+include package.json package-lock.json
+include tests/accessibility.test.mjs tools/accessibility_review.html

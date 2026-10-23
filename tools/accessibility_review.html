@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Accessibility review fixture · Project record standard</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;background:#f6f7f9;color:#172638;margin:24px;overflow-wrap:anywhere}h1{font-size:28px}form{display:flex;gap:16px;flex-wrap:wrap}label{display:grid;gap:4px}select,button{min-height:44px;font:inherit;padding:8px;max-width:100%}:focus-visible{outline:3px solid #244f9b;outline-offset:4px}.frame-wrap{overflow:auto;border:1px solid #65758a;margin-top:20px}iframe{display:block;height:844px;border:0;background:white}pre{white-space:pre-wrap}table{border-collapse:collapse;width:100%}td,th{text-align:left;border-bottom:1px solid #65758a;padding:8px}summary{min-height:44px;cursor:pointer}a{color:#244f9b}</style>
+<main><h1>Accessibility review fixture</h1><p>Inspect the actual published reference pages at controlled CSS widths. This fixture applies documented text stress; it does not simulate native browser zoom, a screen reader or an operating-system contrast mode.</p>
+<form id="review"><label>Page<select id="page"><option value="../index.html">Standard tracker</option><option value="../prehnite/progress.html">Prehnite reference</option><option value="../guide/START-HERE.html">Guide start</option><option value="../guide/AGENT-WORKFLOWS.html">Agent guide</option><option value="../guide/ACCESSIBILITY.html">Accessibility guide</option></select></label><label>Viewport width<select id="width"><option>320</option><option>390</option><option>1280</option></select></label><label>Text stress<select id="stress"><option value="none">Authored text</option><option value="spacing">WCAG text spacing</option><option value="double">200% computed text</option></select></label><label>Reference appearance<select id="mode"><option value="light">Light</option><option value="dark">Dark</option></select></label><button type="submit">Run review</button></form>
+<p>Appearance applies to tracker reference tokens; guides follow the browser's system preference. Keep native zoom and operating-system tests separate.</p><div class="frame-wrap"><iframe id="target" title="Reference page under accessibility review"></iframe></div>
+<h2>Rendered observations</h2><p id="result" role="status" aria-live="polite">Select a page and run the review.</p><details><summary>Current controls below 24 CSS pixels</summary><pre id="targets"></pre></details><details><summary>Browser and measurement identity</summary><pre id="identity"></pre></details><p><a href="../guide/ACCESSIBILITY.html">Read the scoped audit and its limits</a></p></main>
+<script>
+const form=document.getElementById('review'),frame=document.getElementById('target');
+function measure(){
+ const doc=frame.contentDocument,win=frame.contentWindow;
+ if(!doc?.body)return;
+ const visible=e=>{const r=e.getBoundingClientRect(),s=win.getComputedStyle(e);return r.width>0&&r.height>0&&s.display!=='none'&&s.visibility!=='hidden';};
+ const small=[...doc.querySelectorAll('button,input,select,summary')].filter(visible).map(e=>({name:(e.getAttribute('aria-label')||e.textContent||e.getAttribute('type')||e.tagName).trim().slice(0,100),width:e.getBoundingClientRect().width,height:e.getBoundingClientRect().height})).filter(r=>r.width<23.5||r.height<23.5);
+ document.getElementById('result').textContent=`Viewport ${win.innerWidth} CSS px; content ${doc.documentElement.clientWidth}px; scroll width ${doc.documentElement.scrollWidth}px; ${small.length} controls below 24px. These observations require inspection of all interactive states.`;
+ document.getElementById('targets').textContent=JSON.stringify(small,null,2);
+ document.getElementById('identity').textContent=JSON.stringify({page:doc.location.href,stress:document.getElementById('stress').value,appearance:document.getElementById('mode').value,userAgent:navigator.userAgent,observedAt:new Date().toISOString()},null,2);
+}
+frame.addEventListener('load',()=>{
+ const doc=frame.contentDocument,win=frame.contentWindow;
+ doc.documentElement.dataset.appearance=document.getElementById('mode').value;
+ const stress=document.getElementById('stress').value;
+ if(stress==='spacing'){
+  const style=doc.createElement('style');style.textContent='*{line-height:1.5!important;letter-spacing:.12em!important;word-spacing:.16em!important}p{margin-bottom:2em!important}';doc.head.append(style);
+ }
+ if(stress==='double'){
+  const sizes=[...doc.querySelectorAll('body,body *')].map(e=>[e,parseFloat(win.getComputedStyle(e).fontSize)]);
+  for(const [element,size] of sizes)element.style.setProperty('font-size',size*2+'px','important');
+ }
+ doc.addEventListener('click',()=>requestAnimationFrame(measure));doc.addEventListener('input',()=>requestAnimationFrame(measure));
+ requestAnimationFrame(measure);
+});
+form.addEventListener('submit',event=>{event.preventDefault();frame.style.width=document.getElementById('width').value+'px';frame.src=document.getElementById('page').value;});
+form.requestSubmit();
+</script></html>

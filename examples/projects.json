@@ -94,6 +94,12 @@
           "visibility": "public",
           "authority": "Authored standard-agent workflow change fragment",
           "observedOn": "2026-10-22"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.4-ACCESSIBILITY.json",
+          "visibility": "public",
+          "authority": "Authored accessibility remediation and agent workflow change fragment",
+          "observedOn": "2026-10-23"
         }
       ],
       "previousSourceFile": "sources/standard/agent-package-local-0.3.json",

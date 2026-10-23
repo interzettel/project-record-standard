@@ -41,3 +41,7 @@ On failed source reconciliation, preserve the last successful snapshot with its 
 Official GitHub action refs resolved on 22 October 2026: checkout v6 at `d23441a48e516b6c34aea4fa41551a30e30af803`, setup-python v6 at `ece7cb06caefa5fff74198d8649806c4678c61a1`, upload-artifact v4 at `ea165f8d65b6e75b540449e92b4886f43607fa02`. Updates require review.
 
 Primary references: [composite actions](https://docs.github.com/en/actions/tutorials/create-actions/create-a-composite-action), [workflow metadata](https://github.com/github/docs/blob/main/content/actions/reference/workflows-and-actions/metadata-syntax.md), and [custom Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). The executable local action path can be verified without hosted execution; a GitHub run and deployment remain distinct observations.
+
+## Accessibility regression checks
+
+Run `npm ci --ignore-scripts --no-audit --no-fund`, then `npm test`. The locked development-only DOM environment checks mounted announcements, search/focus continuity, filtered-item closure, map/list state parity and default colour contrast. These tests do not render layout or exercise screen-reader speech. The generated `/qa/accessibility.html` fixture loads the real public pages at selected CSS widths and applies explicitly labelled text stress for browser review.

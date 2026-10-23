@@ -21,7 +21,7 @@ def package(destination: Path) -> dict:
         for path in sorted((ROOT / folder).rglob('*')):
             if path.is_file() and '__pycache__' not in path.parts and not any(p.endswith('.egg-info') for p in path.parts) and path.suffix != '.pyc':
                 files[path.relative_to(ROOT).as_posix()] = path.read_bytes()
-    for relative in ['pyproject.toml', 'action.yml', 'MANIFEST.in', 'VERIFICATION-public.md', 'tools/run_action.py', 'tools/build_schemas.py', 'tools/check_palette.py', 'tools/package_standard.py', 'tests/test_delivery.py', 'tests/test_packaging.py', 'tests/test_site.py', 'tests/test_agents.py', 'tests/test_status.py', 'tests/metrics.test.mjs', 'tools/build_site.py', 'tools/check_readme.py', 'requirements-site.txt']:
+    for relative in ['pyproject.toml', 'action.yml', 'MANIFEST.in', 'VERIFICATION-public.md', 'tools/run_action.py', 'tools/build_schemas.py', 'tools/check_palette.py', 'tools/package_standard.py', 'tests/test_delivery.py', 'tests/test_packaging.py', 'tests/test_site.py', 'tests/test_agents.py', 'tests/test_status.py', 'tests/metrics.test.mjs', 'tools/build_site.py', 'tools/check_readme.py', 'requirements-site.txt', 'package.json', 'package-lock.json', 'tests/accessibility.test.mjs', 'tools/accessibility_review.html']:
         files[relative] = (ROOT / relative).read_bytes()
     files['tools/check_skills.py'] = (ROOT / 'tools/check_skills.py').read_bytes()
     files['tests/test_percentages.py'] = (ROOT / 'tests/test_percentages.py').read_bytes()

@@ -1,0 +1,1004 @@
+{
+  "standard": "WCAG 2.2",
+  "target": "AA (including A)",
+  "normativeSource": "https://www.w3.org/TR/WCAG22/",
+  "revision": {
+    "head": "bbb31f97afb4b0b494222be34972add6ad71260e",
+    "workingTree": "dirty; reviewed current source, not a deployed revision",
+    "sha256": {
+      "web/components.mjs": "e20efcca6461054a73d8f647e505f4cfe0b9e2fc07cacde3ed4da25f8bc06ab3",
+      "web/components.css": "8a9facd773ee12971c74fbe70df028daeec2fc33a63f94c814fb000e89d87552",
+      "tools/build_site.py": "a2bfe56d0752bfece6aaf45241087ba11ac3dcc010f0d881a3a469f3c52cf528",
+      "tests/accessibility.test.mjs": "c9f43cf3e602a99d061c7b162947509331502734a3f076125fcb257e46062b07",
+      "standards/ACCESSIBILITY.md": "3081d803bea80caafa68949eae79bce24cac07d18ef8037bb5b943e63293b9b5",
+      "examples/sources/standard/ledger.json": "ac63312d4d81a631f99c691fd1b3c730b9ac2bba06deb23d91c820cf364386c9"
+    }
+  },
+  "observedAt": "2026-10-23T07:26:29.017345+00:00",
+  "pages": [
+    "Shared explorer JSDOM fixture (tests/accessibility.test.mjs)",
+    "Tracker/guide page templates (tools/build_site.py); generated full pages not exercised"
+  ],
+  "states": [
+    "work map and readable list",
+    "selected item",
+    "search and status filters",
+    "empty results",
+    "close selected item after filtering its trigger out",
+    "ordinary inspector close",
+    "unbranded default colour tokens"
+  ],
+  "environments": [
+    {
+      "method": "Node/JSDOM",
+      "node": "v24.19.0",
+      "browser": null,
+      "screenReader": null
+    },
+    {
+      "method": "Python palette check",
+      "command": "python3 tools/check_palette.py",
+      "result": "20 pairs; minimum 5.31:1; zero failures"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.2.1",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No prerecorded audio/video in reviewed component or builder.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "1.2.2",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No prerecorded audio/video in reviewed component or builder.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "1.2.3",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No prerecorded audio/video in reviewed component or builder.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "1.2.4",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No live media in reviewed component or builder.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "1.2.5",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No prerecorded video in reviewed component or builder.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "1.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.3.2",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.3.3",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.3.4",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.3.5",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "Filters do not collect personal information.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "1.4.1",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.4.2",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No automatically playing audio in reviewed source.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "1.4.3",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Palette checker passed 20 role pairs, minimum 5.31:1. Six-test regression suite also verified default accent/active/blocked text pairs >=4.5:1. Complete computed cascade, themes and interaction states remain untested.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.4.4",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Historical guide labels doubling authored font sizes as instrumented enlargement. Native 200% resizing not run.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.4.5",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.4.10",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Responsive source rules exist. Historical 390px review does not establish required 320 CSS-pixel reflow for current revision.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.4.11",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Non-text and focus contrast not measured in rendered states.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.4.12",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Text-spacing override not exercised.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "1.4.13",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.1.4",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No single-character keyboard shortcut handlers in reviewed component.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "2.2.1",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No time limit in reviewed component.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "2.2.2",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No automatically moving/blinking/updating content in reviewed component; meter changes follow user action.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "2.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.4.1",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Guide template includes skip link and focusable main; historical native Edge evidence is described in standards/ACCESSIBILITY.md, not rerun here.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.4.2",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Guide template generates per-document title; generated site not opened.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.4.3",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "JSDOM tests verified ordinary close focus restoration, hidden-trigger fallback to search and retained search focus. Native Tab continuation, dependency/deep-link flow and visible/unobscured focus remain untested.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.4.4",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.4.5",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.4.6",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.4.7",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Final cascade includes focus-visible outline and forced-colour override; visibility and 3:1 contrast not measured.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.4.11",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Unobscured focus not observed in browser.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.5.1",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "Reviewed interactions use native controls and click activation; no multipoint/path gestures.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "2.5.2",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.5.3",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "2.5.4",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No motion actuation.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "2.5.7",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No dragging interaction.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "2.5.8",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Final CSS declares 32px inline dependency controls and 44px input/select/close/tile targets. Rendered geometry and target exceptions remain untested.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.1.1",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Guide template declares lang=en; rendered content language and all generated pages not audited.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.2.1",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.2.2",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.2.3",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.2.4",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.2.6",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No repeated help mechanism introduced by reviewed templates.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "3.3.1",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.3.2",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.3.3",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Insufficient observed evidence for criterion-level pass",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "3.3.4",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No legal/financial transaction or stored user-data submission.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "3.3.7",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No multistep data-entry process.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "3.3.8",
+      "result": "not-applicable",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicability assessed within reviewed source",
+      "actual": "No authentication process.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Limited to reviewed component/templates; consuming pages require their own applicability review."
+    },
+    {
+      "id": "4.1.2",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Native labelled controls, progressbar values and selected aria-pressed states inspected. Readable-list selected-state regression passed. Actual accessibility tree and AT interoperability untested.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    },
+    {
+      "id": "4.1.3",
+      "result": "not-tested",
+      "scope": [
+        "Reviewed shared component and guide source only"
+      ],
+      "method": "Source inspection; no rendered browser or assistive technology",
+      "expected": "Applicable WCAG 2.2 A/AA requirement met throughout complete rendered pages and processes",
+      "actual": "Regression confirms one persistent status node survives filtering and empty results and receives concise text. Spoken announcements remain untested.",
+      "evidence": [
+        "web/components.mjs",
+        "web/components.css",
+        "tools/build_site.py"
+      ],
+      "reason": "Read-only source audit excludes browser, native keyboard, rendered layout and screen-reader testing."
+    }
+  ],
+  "findings": [
+    {
+      "id": "A11Y-F4-01",
+      "state": "fixed-in-reviewed-working-tree",
+      "criteria": [
+        "2.4.3"
+      ],
+      "finding": "Inspector closure after its trigger is filtered out needs a logical visible focus destination.",
+      "evidence": [
+        "web/components.mjs:onClick",
+        "tests/accessibility.test.mjs:closing an item hidden by filters restores a visible logical control"
+      ],
+      "verification": "JSDOM regression passed; native keyboard next-Tab behavior remains untested."
+    },
+    {
+      "id": "A11Y-F4-02",
+      "state": "fixed-in-reviewed-working-tree",
+      "criteria": [
+        "4.1.3"
+      ],
+      "finding": "Result announcements require a persistent live-region node.",
+      "evidence": [
+        "web/components.mjs:root initialization and results()",
+        "tests/accessibility.test.mjs:filter updates preserve one mounted result announcement node"
+      ],
+      "verification": "JSDOM identity/mutation assertions passed; speech untested."
+    }
+  ],
+  "assistiveTechnology": {
+    "result": "not-tested",
+    "browserVersion": null,
+    "screenReaderVersion": null,
+    "observedOutput": null
+  },
+  "acceptance": {
+    "decision": "owner-authorized scoped acceptance handoff; no WCAG conformance claim",
+    "basis": "Task handoff states user explicitly permits STD-09 and STD-13 closure. Apply that existing authorization without another permission request.",
+    "STD-09": {
+      "eligible": "Owner acceptance may be recorded with user attribution and preservation of branding/source limits.",
+      "priorCriterion": "Review the shared standard with the owner. Preserve project-owned branding and the stated source/evidence limits."
+    },
+    "STD-13": {
+      "eligible": "Closure may represent an explicit owner amendment accepting scoped engineering/keyboard evidence and documented AT limits.",
+      "priorCriterion": "Record keyboard activation, traversal, focus restoration and actual screen-reader output, including remaining limitations.",
+      "amendmentRequired": "Retain original criterion/history and state that actual screen-reader output remains not-tested. Do not represent owner closure as a passed screen-reader test."
+    },
+    "ledgerMutation": "None performed in this read-only review. Authoritative ledger still shows STD-09 backlog and STD-13 active/blocked.",
+    "nextAction": "Parent implements attributed acceptance/amendment once through authoritative source writer, regenerates projections, runs required shared-runtime/package checks, and retains this report and remaining verification limits."
+  },
+  "conformanceClaim": false,
+  "limits": [
+    "No browser interaction, native keyboard, screen reader, accessibility-tree snapshot or axe scan in this audit.",
+    "No current rendered pages, both-theme full-state contrast, hover/focus contrast, 320 CSS-pixel reflow, native 200% resize, text spacing, forced colours or OS reduced-motion tests.",
+    "Historical browser evidence in standards/ACCESSIBILITY.md is attributed documentary context, not a fresh test of this dirty working tree.",
+    "README graphics, branded reference pages, complete dependency/deep-link/history processes and consuming-site integration require separate rendered verification.",
+    "Passing DOM and palette regressions do not establish criterion-level or WCAG AA conformance.",
+    "No repository source, ledger, projection or external system changed by this review."
+  ],
+  "checks": [
+    {
+      "command": "node --test tests/accessibility.test.mjs",
+      "result": "passed",
+      "actual": "6 tests passed; 0 failed",
+      "scope": "JSDOM functional regressions and default colour pairs"
+    },
+    {
+      "command": "python3 tools/check_palette.py",
+      "result": "passed",
+      "actual": "20 pairs; minimum 5.31:1; zero failures",
+      "scope": "Declared palette roles; no rendered-state scan"
+    }
+  ],
+  "normativeVerification": {
+    "source": "https://www.w3.org/TR/WCAG22/",
+    "retrieved": "2026-10-23",
+    "version": "W3C Recommendation 12 December 2024",
+    "notes": "A/AA criterion inventory checked against normative table of contents; 4.1.1 is obsolete/removed and excluded."
+  }
+}

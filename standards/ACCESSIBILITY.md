@@ -39,3 +39,9 @@ This is a scoped interaction check in the connected Edge browser; its version wa
 ## Complete the screen-reader check
 
 Use the deployed revision with a named browser and screen reader, and record both versions. Confirm that the skip link reaches the main landmark, headings describe the selected milestone, filters announce names and values, item buttons announce IDs and states, and result changes announce only the short count. Open and close an item to confirm reading order and focus restoration. Inspect the history chart through its adjacent exact-count table and expand candidate evidence. Record failures and the source revision tested before marking STD-13 complete.
+
+## WCAG 2.2 remediation package
+
+The 0.4.0 package adds `verify-project-accessibility` and a 55-criterion A/AA report template. It repairs persistent result announcements, focus fallback after filtered-item closure, search commit focus, readable-list selection and reusable default contrast. The generated [review fixture](../qa/accessibility.html) loads the real pages at controlled CSS widths and labels computed text enlargement separately from native zoom.
+
+New regression checks exercise the real component in a locked development-only DOM environment. The published references retain each project’s brand. Default styles and the final cascade are reviewed separately: superseded declarations in the reference builder do not establish rendered failures. This package does not claim that semantic inspection establishes spoken screen-reader output. The final scoped audit and owner-authorized acceptance amendment are recorded after browser retesting.

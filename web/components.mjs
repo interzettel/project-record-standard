@@ -27,6 +27,7 @@ export function mountExplorer(root, record, options = {}) {
   const items = new Map(record.items.map(i => [i.id,i]));
   const label = name => escapeHTML(name);
   const navOption = (value,text,current) => `<option value="${label(value)}"${value===current?' selected':''}>${label(text)}</option>`;
+  root.innerHTML = '<div data-pr-controls></div><div class="pr-selection-summary"><div data-pr-meter></div><p role="status" aria-live="polite" aria-atomic="true"></p></div><div data-pr-results></div>';
 
   function detail(item) {
     const linked = id => `<button type="button" class="pr-inline" data-pr-item="${label(id)}">${label(id)}</button>`;
@@ -50,25 +51,27 @@ export function mountExplorer(root, record, options = {}) {
     const scopeItems = record.items.filter(i => !state.milestone || i.milestoneId === state.milestone);
     const metric = progress(scopeItems,state.mode);
     const milestone = milestones.get(state.milestone);
-    const summary = `<div class="pr-selection-summary"><div>${meterHTML({...metric,method:state.mode==='ledger'?'completed / retained ledger items':'completed / required scope items'},milestone?milestone.id+' · '+milestone.title:'Selected denominator')}</div>
-      <p role="status" aria-live="polite" aria-atomic="true">${selected.length} matching items · ${metric.blocked} blocked · ${metric.excluded} outside this denominator</p></div>`;
-    const block = state.view==='list' ? `<div class="pr-list">${selected.map(i=>`<button type="button" class="pr-list-item" data-pr-item="${label(i.id)}"><span class="pr-id">${label(i.id)}</span><span>${label(i.title)}</span><span class="pr-state ${i.blocked?'is-blocked':i.state==='done'?'is-done':''}">${label(stateName(i))}</span></button>`).join('')}</div>` : [...groups.values()].filter(g=>selected.some(i=>i.groupId===g.id)).map(g=>{
+    root.querySelector('[data-pr-meter]').innerHTML = meterHTML({...metric,method:state.mode==='ledger'?'completed / retained ledger items':'completed / required scope items'},milestone?milestone.id+' · '+milestone.title:'Selected denominator');
+    const status = root.querySelector('[role="status"]');
+    const announcement = `${selected.length} matching items · ${metric.blocked} blocked · ${metric.excluded} outside this denominator`;
+    if(status.textContent!==announcement)status.textContent=announcement;
+    const block = state.view==='list' ? `<div class="pr-list">${selected.map(i=>`<button type="button" class="pr-list-item" data-pr-item="${label(i.id)}" aria-pressed="${state.selected===i.id}"><span class="pr-id">${label(i.id)}</span><span>${label(i.title)}</span><span class="pr-state ${i.blocked?'is-blocked':i.state==='done'?'is-done':''}">${label(stateName(i))}</span></button>`).join('')}</div>` : [...groups.values()].filter(g=>selected.some(i=>i.groupId===g.id)).map(g=>{
       const own = selected.filter(i=>i.groupId===g.id);
       const all = scopeItems.filter(i=>i.groupId===g.id);
       const metric = progress(all,state.mode);
       return `<section class="pr-work-group"><div class="pr-group-head"><h3>${label(g.id)} · ${label(g.title)}</h3><span>${pct(metric.percent)} · ${metric.done}/${metric.total}</span></div>
         <div class="pr-tiles">${own.map(i=>`<button type="button" class="pr-tile ${i.blocked?'is-blocked':i.state==='done'?'is-done':i.state==='active'?'is-active':''}" data-pr-item="${label(i.id)}" aria-label="${label(i.id+' · '+i.title+' · '+stateName(i))}" aria-pressed="${state.selected===i.id}"><span aria-hidden="true">${stateMark(i)} </span>${label(i.id)}</button>`).join('')}</div></section>`;
     }).join('');
-    return summary + (state.selected && items.has(state.selected)?detail(items.get(state.selected)):'') + (selected.length?block:'<p class="pr-empty">No work matches these filters.</p>');
+    return (state.selected && items.has(state.selected)?detail(items.get(state.selected)):'') + (selected.length?block:'<p class="pr-empty">No work matches these filters.</p>');
   }
 
   function render() {
-    root.innerHTML = `<div class="pr-controls"><label>Milestone<select data-pr-milestone aria-label="Milestone">${navOption('','All milestones',state.milestone)}${record.milestones.map(m=>navOption(m.id,m.id+' · '+m.title,state.milestone)).join('')}</select></label>
+    root.querySelector('[data-pr-controls]').innerHTML = `<div class="pr-controls"><label>Milestone<select data-pr-milestone aria-label="Milestone">${navOption('','All milestones',state.milestone)}${record.milestones.map(m=>navOption(m.id,m.id+' · '+m.title,state.milestone)).join('')}</select></label>
       <label>Status<select data-pr-state aria-label="Status">${[['all','All states'],['done','Done'],['active','In progress'],['review','In review'],['ready','Ready'],['blocked','Blocked'],['backlog','Planned'],['deferred','Deferred'],['cancelled','Cancelled'],['unknown','Unknown']].map(([v,t])=>navOption(v,t,state.state)).join('')}</select></label>
       <label>Denominator<select data-pr-mode aria-label="Denominator">${navOption('required','Required scope',state.mode)}${navOption('ledger','Retained ledger',state.mode)}</select></label>
       <label class="pr-search">Find work<input type="search" data-pr-search value="${label(state.query)}" placeholder="ID, title, owner, kind…"></label></div>
-      <div class="pr-view-row"><div><button type="button" data-pr-view="map" aria-pressed="${state.view==='map'}">Work map</button><button type="button" data-pr-view="list" aria-pressed="${state.view==='list'}">Readable list</button></div><span class="pr-legend"><span class="is-done">✓ Done</span><span class="is-active">→ In progress</span><span class="is-blocked">! Blocked</span><span>· Planned</span></span></div>
-      <div data-pr-results>${results()}</div>`;
+      <div class="pr-view-row"><div><button type="button" data-pr-view="map" aria-pressed="${state.view==='map'}">Work map</button><button type="button" data-pr-view="list" aria-pressed="${state.view==='list'}">Readable list</button></div><span class="pr-legend"><span class="is-done">✓ Done</span><span class="is-active">→ In progress</span><span class="is-blocked">! Blocked</span><span>· Planned</span></span></div>`;
+    root.querySelector('[data-pr-results]').innerHTML=results();
   }
 
   const onClick = event => {
@@ -85,12 +88,16 @@ export function mountExplorer(root, record, options = {}) {
     if ('prClose' in button.dataset) state.selected=null;
     render();
     if ('prItem' in button.dataset) {root.querySelector('[data-pr-close]')?.focus();root.querySelector('.pr-detail')?.scrollIntoView({block:'nearest'});}
-    if ('prClose' in button.dataset && priorItem) root.querySelectorAll('[data-pr-item]').forEach(b=>{if(b.dataset.prItem===priorItem)b.focus();});
+    if ('prClose' in button.dataset) {
+      const origin = [...root.querySelectorAll('[data-pr-item]')].find(b=>b.dataset.prItem===priorItem);
+      (origin || root.querySelector('[data-pr-search]'))?.focus();
+    }
     if ('prView' in button.dataset) root.querySelectorAll('[data-pr-view]').forEach(b=>{if(b.dataset.prView===state.view)b.focus();});
     options.onSelection?.({milestone:state.milestone,item:state.selected});
   };
   const onChange = event => {
     const focusSelector = ['[data-pr-milestone]','[data-pr-state]','[data-pr-mode]'].find(selector=>event.target.matches(selector));
+    if(!focusSelector)return;
     if (event.target.matches('[data-pr-milestone]')) {state.milestone=event.target.value;state.selected=null;}
     if (event.target.matches('[data-pr-state]')) {state.state=event.target.value;if(state.state==='deferred')state.mode='ledger';}
     if (event.target.matches('[data-pr-mode]')) state.mode=event.target.value;

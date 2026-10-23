@@ -53,6 +53,7 @@ Reprioritization follows the project’s authority model. Use the approval alrea
 | `prepare-project-delivery` | Prepare changes, candidate gates and separately observed publication/deployment. |
 | `present-project-tracking` | Integrate interactive tracking into the project’s own README and website. |
 | `operate-project-tracking` | Recover generated output, verify CI, manage collection health and upgrade safely. |
+| `verify-project-accessibility` | Audit WCAG 2.2 A/AA criteria, remediate tracker interactions and preserve actual test/acceptance limits. |
 
 Repository instructions select these skills before relevant work. Deterministic constraints stay in the runtime: unique accounting, reference/cycle checks, approval attribution fields, candidate revision matching, private-input export refusal and generated-output ownership. Skills handle discovery, meaning, priorities and judgment. Instructions do not technically constrain an agent’s credentials or authenticate a person.
 
@@ -88,3 +89,5 @@ Build/run time, source observation time, collection attempts, publication time a
 The skills are authored with the [Superpowers writing-skills process](https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/writing-skills/SKILL.md). The [versioned evaluation record](https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md) describes actual controls, application cases and limitations. Synthetic setup/adaptation runs use disposable fixtures; no individual project migration is implied.
 
 Owner acceptance and actual screen-reader output require their own evidence. A successful skill test, local suite or hosted CI run establishes only its tested boundary.
+
+The 0.4.0 suite adds the accessibility skill and its 55-criterion report template. Its source-only forward applications and live audit are recorded separately from the original ten-skill evaluation. `npm ci --ignore-scripts` installs locked DOM test dependencies for development checks; the tracking runtime and published pages keep no runtime dependency on those packages.

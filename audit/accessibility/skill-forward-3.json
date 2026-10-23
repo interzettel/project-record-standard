@@ -1,0 +1,816 @@
+{
+  "standard": "WCAG 2.2",
+  "target": "AA (including A)",
+  "normativeSource": "https://www.w3.org/TR/WCAG22/",
+  "revision": "bbb31f97afb4b0b494222be34972add6ad71260e",
+  "observedAt": "2026-10-23T07:26:45.228250+00:00",
+  "pages": [
+    "web/components.mjs reusable explorer source",
+    "web/components.css reusable explorer stylesheet",
+    "tools/build_site.py generated guide shell source",
+    "standards/ACCESSIBILITY.md retained prior evidence",
+    "examples/sources/standard/ledger.json acceptance boundaries"
+  ],
+  "states": [
+    "source inspection of map/list, selection, dependency inspector, empty results, filters, meter and concise status region",
+    "JSDOM: search input update; result filter; ordinary inspector close; close after selected item excluded; map/list selection state",
+    "JSDOM supplemental: search input receives input and committed change while focused"
+  ],
+  "environments": [
+    {
+      "name": "Node.js/JSDOM automated DOM checks",
+      "browser": false,
+      "screenReader": false
+    },
+    {
+      "name": "Python palette role checker",
+      "renderedCSS": false
+    },
+    {
+      "name": "static source review",
+      "themes": "light/dark source rules inspected; no rendered theme test",
+      "normativeMaterial": "https://www.w3.org/TR/WCAG22/ read via web retrieval; 12 December 2024 Recommendation"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.2.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.2.2",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.2.3",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.2.4",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.2.5",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.3.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.3.2",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.3.3",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.3.4",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.3.5",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.4.1",
+      "result": "passed",
+      "scope": [
+        "explorer state encoding in map/list/legend source"
+      ],
+      "method": "Static markup review",
+      "expected": "Work states understandable without colour",
+      "actual": "State words and symbols accompany state colours; tile accessible names contain state words",
+      "evidence": [
+        "web/components.mjs:5-6",
+        "web/components.mjs:58-73"
+      ],
+      "reason": "Bounded source result only; complete chart/page colour encoding outside this review."
+    },
+    {
+      "id": "1.4.2",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.4.3",
+      "result": "not-tested",
+      "scope": [
+        "default accent/active/blocked pairs",
+        "palette role pairs"
+      ],
+      "method": "Existing Node default-pair test and Python palette role checker",
+      "expected": "Normal text contrast at least 4.5:1 in all rendered states",
+      "actual": "Default pair test passed; palette checker passed 20 pairs, minimum 5.31:1; complete rendered states not measured",
+      "evidence": [
+        "tests/accessibility.test.mjs:unbranded component state colours",
+        "python3 tools/check_palette.py: exit 0, tested 20, minimum 5.31, failures []"
+      ],
+      "reason": "Role-level calculations cannot establish computed host, hover, selection or all-theme contrast."
+    },
+    {
+      "id": "1.4.4",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.4.5",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.4.10",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.4.11",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.4.12",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "1.4.13",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.1.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.1.2",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.1.4",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.2.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.2.2",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.3.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.4.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.4.2",
+      "result": "passed",
+      "scope": [
+        "guide shell generated by build_site.py"
+      ],
+      "method": "Static template review",
+      "expected": "Each guide page has descriptive title",
+      "actual": "Template combines guide document title and Project record standard",
+      "evidence": [
+        "tools/build_site.py:145"
+      ],
+      "reason": "Source-only result; generated complete site not opened."
+    },
+    {
+      "id": "2.4.3",
+      "result": "failed",
+      "scope": [
+        "JSDOM search committed change while input focused"
+      ],
+      "method": "Supplemental executed DOM interaction",
+      "expected": "Search remains a stable logical focus position when committing its value",
+      "actual": "After input then bubbling change, search DOM node replaced; activeElement becomes BODY; inputRetained=false and focusRetained=false",
+      "evidence": [
+        "web/components.mjs:98-105",
+        "Supplemental JSDOM execution on reviewed source: inputRetained false; focusRetained false; activeElement BODY"
+      ],
+      "reason": "Synthetic DOM reproduction; native blur/click consequences require browser verification. Existing normal input-only and close-path regressions pass."
+    },
+    {
+      "id": "2.4.4",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.4.5",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.4.6",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.4.7",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.4.11",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.5.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.5.2",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.5.3",
+      "result": "passed",
+      "scope": [
+        "explorer named filter and item controls"
+      ],
+      "method": "Static markup review",
+      "expected": "Accessible names include visible labels",
+      "actual": "Milestone/Status/Denominator aria labels match visible text; map item names include visible ID; list/close/view/search controls retain native text/label names",
+      "evidence": [
+        "web/components.mjs:63",
+        "web/components.mjs:69-73"
+      ],
+      "reason": "Bounded source result; host controls excluded."
+    },
+    {
+      "id": "2.5.4",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.5.7",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "2.5.8",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.1.1",
+      "result": "passed",
+      "scope": [
+        "generated guide shell"
+      ],
+      "method": "Static template review",
+      "expected": "Page language programmatically specified",
+      "actual": "Guide html declares lang=en",
+      "evidence": [
+        "tools/build_site.py:145"
+      ],
+      "reason": "Generated guide shell only; all source content languages not audited."
+    },
+    {
+      "id": "3.1.2",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.2.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.2.2",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.2.3",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.2.4",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.2.6",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.3.1",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.3.2",
+      "result": "passed",
+      "scope": [
+        "explorer filter/search inputs"
+      ],
+      "method": "Static markup review",
+      "expected": "Inputs have visible labels",
+      "actual": "Native select/input controls are enclosed in Milestone, Status, Denominator and Find work labels",
+      "evidence": [
+        "web/components.mjs:69-72"
+      ],
+      "reason": "Bounded source result."
+    },
+    {
+      "id": "3.3.3",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.3.4",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.3.7",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "3.3.8",
+      "result": "not-tested",
+      "scope": [
+        "bounded source review; complete rendered pages not assessed"
+      ],
+      "method": "Static source review only unless specified",
+      "expected": "Applicable WCAG 2.2 A/AA requirement satisfied across integrated pages and interactions",
+      "actual": "No complete criterion-level test performed",
+      "evidence": [],
+      "reason": "Browser, assistive technology and complete rendered-page checks excluded from delegated task; unknowns retained."
+    },
+    {
+      "id": "4.1.2",
+      "result": "not-tested",
+      "scope": [
+        "map/list selection semantics and meter source"
+      ],
+      "method": "Static markup plus existing JSDOM selection-state regression",
+      "expected": "Control names, roles, values and states exposed correctly in supported accessibility APIs",
+      "actual": "Native controls, aria-pressed selection, and labelled numeric/empty-denominator meter found; map/list aria-pressed regression passes",
+      "evidence": [
+        "web/components.mjs:10-13",
+        "web/components.mjs:58-73",
+        "tests/accessibility.test.mjs:readable-list items expose the same selected state"
+      ],
+      "reason": "DOM semantics support implementation evidence but do not verify browser accessibility API or spoken output."
+    },
+    {
+      "id": "4.1.3",
+      "result": "not-tested",
+      "scope": [
+        "result-count live region"
+      ],
+      "method": "Existing executed JSDOM persistent-node regression and source review",
+      "expected": "Concise result changes conveyed without focus movement",
+      "actual": "One mounted polite atomic status region survives filter updates; text contains matching/blocked/excluded counts; regression passes",
+      "evidence": [
+        "web/components.mjs:30",
+        "web/components.mjs:55-57",
+        "tests/accessibility.test.mjs:filter updates preserve one mounted result announcement node"
+      ],
+      "reason": "Actual assistive-technology announcement remains unobserved."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-01",
+      "criterion": "2.4.3",
+      "status": "open",
+      "severity": "moderate",
+      "description": "Unconditional onChange render replaces focused search on committed search change.",
+      "reproduction": [
+        "Focus search",
+        "Set query and dispatch input",
+        "Dispatch bubbling change",
+        "Observe replacement search and BODY focus"
+      ],
+      "expected": "Retain existing search/control DOM on search change or deliberately restore logical focus.",
+      "actual": {
+        "inputRetained": false,
+        "focusRetained": false,
+        "activeElement": "BODY"
+      },
+      "proposedFix": "Return early from onChange when focusSelector is absent; search changes are already handled by onInput.",
+      "regression": "Dispatch input and committed change on focused search; assert identity and activeElement remain the existing search. Retest existing six DOM checks.",
+      "limits": "Native pointer target loss is a plausible consequence, not a browser-tested finding."
+    }
+  ],
+  "assistiveTechnology": {
+    "result": "not-tested",
+    "browserVersion": null,
+    "screenReaderVersion": null,
+    "observedOutput": null
+  },
+  "acceptance": {
+    "result": "not-determined",
+    "basis": "Parent task states owner conditional acceptance after fast review/fixes and packaged skill. This bounded reviewer does not independently amend ledger criteria or acceptance.",
+    "previousSTD13Meaning": "Native keyboard interaction and actual screen-reader output with remaining limits.",
+    "sourceLedgerAtReview": {
+      "STD-09": "backlog",
+      "STD-13": "active, blocked",
+      "requiredDone": "14/16"
+    },
+    "handoff": "Resolve F-01 and retest; package accessibility skill/report. If owner explicitly amended STD-13 exit criterion to scoped engineering review, retain original screen-reader requirement/history and make amendment and residual AT gap explicit. Otherwise STD-13 cannot be closed by this source review. STD-09 acceptance belongs to owner or evidenced standing conditional authorization."
+  },
+  "conformanceClaim": false,
+  "limits": [
+    "No browser used; no native keyboard, pointer or accessibility-tree inspection performed.",
+    "No screen reader run or spoken output; browser and screen-reader versions unavailable because neither was used.",
+    "No 320 CSS px reflow, native browser zoom, 200% resize, text-spacing, rendered hover/selection/focus contrast, forced-colours or OS reduced-motion test.",
+    "No generated guide content, history chart/table, complete tracker shell, delivery disclosures or deep-link/history process checked.",
+    "Prior Edge observations in ACCESSIBILITY.md were read as historical claims, not repeated or converted into new passes.",
+    "No automated full-page accessibility scanner run. Six unit regressions and a role palette checker do not establish WCAG conformance.",
+    "Review made no repository edits, ledger update, external write, publication or deployment. Report written only to delegated scratch output.",
+    "Criterion not-applicable was not assigned merely from absence in the bounded files; complete page applicability remains to be assessed."
+  ],
+  "sourceIdentity": {
+    "baseCommit": "bbb31f97afb4b0b494222be34972add6ad71260e",
+    "note": "Working-tree source identity pinned by SHA-256; base commit alone does not identify reviewed changes.",
+    "sha256": {
+      "web/components.mjs": "e20efcca6461054a73d8f647e505f4cfe0b9e2fc07cacde3ed4da25f8bc06ab3",
+      "web/components.css": "8a9facd773ee12971c74fbe70df028daeec2fc33a63f94c814fb000e89d87552",
+      "tools/build_site.py": "a2bfe56d0752bfece6aaf45241087ba11ac3dcc010f0d881a3a469f3c52cf528",
+      "standards/ACCESSIBILITY.md": "3081d803bea80caafa68949eae79bce24cac07d18ef8037bb5b943e63293b9b5",
+      "examples/sources/standard/ledger.json": "ac63312d4d81a631f99c691fd1b3c730b9ac2bba06deb23d91c820cf364386c9",
+      "tests/accessibility.test.mjs": "c9f43cf3e602a99d061c7b162947509331502734a3f076125fcb257e46062b07",
+      "tools/check_palette.py": "ae7fb18b7ce71743c589170d84f860a67263b1511be016b91708ebeecc010431"
+    }
+  },
+  "automatedChecks": [
+    {
+      "command": "node --test tests/accessibility.test.mjs",
+      "result": "passed",
+      "actual": "6 tests passed, 0 failures",
+      "scope": "JSDOM behavior and explicit default palette pairs; not browser keyboard or screen reader"
+    },
+    {
+      "command": "python3 tools/check_palette.py",
+      "result": "passed",
+      "actual": {
+        "tested": 20,
+        "minimum": 5.31,
+        "failures": []
+      },
+      "scope": "Authored role pairs only"
+    },
+    {
+      "command": "Supplemental inline JSDOM search commit reproduction",
+      "result": "failed",
+      "actual": {
+        "inputRetained": false,
+        "focusRetained": false,
+        "activeElement": "BODY"
+      }
+    }
+  ]
+}

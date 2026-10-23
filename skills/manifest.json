@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "suiteVersion": "0.3.0",
+  "suiteVersion": "0.4.0",
   "contractVersion": "0.2.0",
   "skills": [
     "establish-project-tracking",
@@ -12,6 +12,7 @@
     "prepare-project-delivery",
     "present-project-tracking",
     "operate-project-tracking",
-    "use-project-records"
+    "use-project-records",
+    "verify-project-accessibility"
   ]
 }
