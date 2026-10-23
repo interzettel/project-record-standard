@@ -1,0 +1,79 @@
+{
+  "component": "standard",
+  "channel": "github-release",
+  "version": "0.4.1",
+  "releaseId": 422178464,
+  "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+  "tag": "v0.4.1",
+  "tagRevision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+  "url": "https://github.com/interzettel/project-record-standard/releases/tag/v0.4.1",
+  "publishedAt": "2026-10-23T18:28:27Z",
+  "observedAt": "2026-10-23T18:28:58.507Z",
+  "verificationRun": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737",
+  "jobs": [
+    {
+      "id": 120585279450,
+      "name": "verify",
+      "result": "success",
+      "completedAt": "2026-10-23T18:28:01Z",
+      "url": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737/job/120585279450"
+    },
+    {
+      "id": 120585280187,
+      "name": "reusable / record",
+      "result": "success",
+      "completedAt": "2026-10-23T18:27:53Z",
+      "url": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737/job/120585280187"
+    },
+    {
+      "id": 120585428854,
+      "name": "deploy",
+      "result": "success",
+      "completedAt": "2026-10-23T18:28:16Z",
+      "url": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737/job/120585428854"
+    },
+    {
+      "id": 120585544187,
+      "name": "release",
+      "result": "success",
+      "completedAt": "2026-10-23T18:28:30Z",
+      "url": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737/job/120585544187"
+    }
+  ],
+  "assets": [
+    {
+      "name": "CHANGELOG.md",
+      "size": 2194,
+      "artifactDigest": "sha256:77d825940ae6c9e4e8585a5ee5640d2595eac29926ae893e979051e4a89fa682",
+      "url": "https://github.com/interzettel/project-record-standard/releases/download/v0.4.1/CHANGELOG.md"
+    },
+    {
+      "name": "INSTALL.md",
+      "size": 4021,
+      "artifactDigest": "sha256:7a7b4ad596324e19473ec66b73aabb73c22c3c4bb5f4a8da820f505c6040e9b6",
+      "url": "https://github.com/interzettel/project-record-standard/releases/download/v0.4.1/INSTALL.md"
+    },
+    {
+      "name": "project-record-standard-0.4.1.zip",
+      "size": 335956,
+      "artifactDigest": "sha256:a46cdcea938eb987b936497a22db8eab07106aad7dd12a8cfe10b4ad41f74607",
+      "url": "https://github.com/interzettel/project-record-standard/releases/download/v0.4.1/project-record-standard-0.4.1.zip"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 256,
+      "artifactDigest": "sha256:b444a94ac013df79b05d18d7947fc95d6a002c5aca298aa3e9e7de718328fd2b",
+      "url": "https://github.com/interzettel/project-record-standard/releases/download/v0.4.1/SHA256SUMS"
+    }
+  ],
+  "readBack": {
+    "draft": false,
+    "tagMatchesCandidate": true,
+    "assetDigestsMatchLocalBuild": true
+  },
+  "limitations": [
+    "Narrator is owner-confirmed; the agent did not capture speech, software versions or a transcript.",
+    "Native 400% zoom produced 638 CSS px; separate 320px fixture evidence is retained.",
+    "No full WCAG conformance claim or repository migration is included."
+  ]
+}

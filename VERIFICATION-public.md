@@ -2,7 +2,7 @@
 
 ## Current scope — 0.4.1, 23 October 2026
 
-The canonical implementation contains 18/18 completed required items and 4/4 completed milestone gates, with eleven skills and record contract 0.2.0. [Run 39995158064](https://github.com/interzettel/project-record-standard/actions/runs/39995158064) verified and deployed revision `641ba6102b1b04d31c565cae962b9941a817eeab`. Its checks cover 35 Python tests, 14 JavaScript tests, skill distribution, 20 palette pairs, public site generation and README parity. A later release candidate must pass its own hosted checks; this observation is not retargeted.
+The canonical implementation contains 18/18 completed required items and 4/4 completed milestone gates, with eleven skills and record contract 0.2.0. [Run 40003462737](https://github.com/interzettel/project-record-standard/actions/runs/40003462737) verified, deployed and published revision `ebc6afb0b977ff3d7605893c73ac63021775c4d3`. All four hosted gates passed, including 35 Python tests, 14 JavaScript tests, skill distribution, 20 palette pairs, public site generation, README parity and extracted-package checks. The v0.4.1 tag and all four uploaded asset digests were read back and match the local verified build. [The receipt](progress/releases/v0.4.1.json) preserves exact identities and times.
 
 The public source kit excludes private inputs and audit fixtures. Its deterministic archive contains per-file SHA-256 checksums. Release publication adds an archive checksum, changelog and installation instructions. The publishing job verifies a fresh extraction, its public pipeline and additive/repeated skill installation before publication.
 

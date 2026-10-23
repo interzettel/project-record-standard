@@ -24,6 +24,6 @@ Public inputs are explicitly selected and hash checked. Private assessments and 
 
 Replay pinned authored inputs into a new empty output directory, verify hashes/counts, then replace only generated artifacts. For a skill upgrade, verify the previous ownership receipt and reconcile edited files. Keep the prior toolkit and rendered output for rollback; do not reset completion history.
 
-Finish release publication and read-back before selecting one pilot repository. The pilot should use the released skills, preserve IDs, counts and branding, and return installation friction to this standard before wider migration.
+Release v0.4.1 and its four assets are published and read back; the exact revision, digests and four passed hosted gates are in `progress/releases/v0.4.1.json`. The package is ready for selecting one pilot repository. The pilot should use the released skills, preserve IDs, counts and branding, and return installation friction to this standard before wider migration.
 
 See [verification](../VERIFICATION-public.md) for scoped evidence and limits. Superseded scouting, intermediate counts and blocked attempts are preserved in [dated history](history/2026-10-23-before-release/progress--adoption.md).

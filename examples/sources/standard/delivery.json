@@ -1,6 +1,101 @@
 {
-  "deliveryCoverage": "Implementation and scoped acceptance complete: 18/18 work items, 4/4 milestones. Native zoom observed and Narrator owner-confirmed; versions/transcript unavailable. Runtime/suite 0.4.1 release preparation underway; no GitHub release observed at this pre-publication observation. Historical candidate receipts remain unchanged.",
+  "deliveryCoverage": "GitHub v0.4.1 published 2026-10-23T18:28:27Z from ebc6afb0b977ff3d7605893c73ac63021775c4d3. Four hosted gates passed; tag and all four asset digests read back and matched. Implementation remains 18/18 items and 4/4 milestones. Native zoom observed and Narrator owner-confirmed; versions/transcript unavailable. Pages job succeeded; this receipt does not infer a new runtime health probe. Historical candidates remain unchanged.",
   "releasePlans": [
+    {
+      "id": "REL-0.4.1-SOURCE",
+      "component": "standard",
+      "channel": "github-release",
+      "version": "0.4.1",
+      "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "workItemIds": [
+        "STD-15",
+        "STD-16",
+        "STD-17",
+        "STD-18"
+      ],
+      "gates": [
+        {
+          "id": "G-0.4.1-VERIFY",
+          "label": "Hosted verification",
+          "policy": {
+            "allOf": [
+              "test"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "test",
+              "subject": "G-0.4.1-VERIFY",
+              "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+              "result": "passed",
+              "source": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737/job/120585279450",
+              "observedOn": "2026-10-23"
+            }
+          ]
+        },
+        {
+          "id": "G-0.4.1-REUSABLE",
+          "label": "Reusable public build",
+          "policy": {
+            "allOf": [
+              "test"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "test",
+              "subject": "G-0.4.1-REUSABLE",
+              "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+              "result": "passed",
+              "source": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737/job/120585280187",
+              "observedOn": "2026-10-23"
+            }
+          ]
+        },
+        {
+          "id": "G-0.4.1-DEPLOY",
+          "label": "Pages deployment",
+          "policy": {
+            "allOf": [
+              "deployment-review"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "deployment-review",
+              "subject": "G-0.4.1-DEPLOY",
+              "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+              "result": "passed",
+              "source": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737/job/120585428854",
+              "observedOn": "2026-10-23"
+            }
+          ]
+        },
+        {
+          "id": "G-0.4.1-RELEASE",
+          "label": "Fresh source-package extraction, installation and publication",
+          "policy": {
+            "allOf": [
+              "test"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "test",
+              "subject": "G-0.4.1-RELEASE",
+              "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+              "result": "passed",
+              "source": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737/job/120585544187",
+              "observedOn": "2026-10-23"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "REL-0.4-SCOPED-ACCEPTANCE",
       "component": "standard",
@@ -236,8 +331,43 @@
       ]
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "component": "standard",
+      "channel": "github-release",
+      "version": "0.4.1",
+      "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "url": "https://github.com/interzettel/project-record-standard/releases/tag/v0.4.1",
+      "publishedAt": "2026-10-23T18:28:27Z",
+      "observedAt": "2026-10-23T18:28:58.507Z",
+      "artifactDigest": "sha256:a46cdcea938eb987b936497a22db8eab07106aad7dd12a8cfe10b4ad41f74607",
+      "changeIds": [
+        "CH-0.2-HISTORY",
+        "CH-0.2-DELIVERY",
+        "CH-0.2-AUTOMATION",
+        "CH-0.2-ADOPTION",
+        "CH-0.2-CANONICAL",
+        "CH-0.3-AGENTS",
+        "CH-0.4-ACCESSIBILITY",
+        "CH-0.4.1-READINESS",
+        "CH-0.4.1-NATIVE-FOLLOWUP",
+        "CH-0.4.1-NATIVE-COMPLETION",
+        "CH-0.4.1-RELEASE"
+      ]
+    }
+  ],
   "deployments": [
+    {
+      "id": "GH-PAGES-40003462737",
+      "component": "standard-website",
+      "environment": "github-pages",
+      "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "url": "https://interzettel.github.io/project-record-standard/",
+      "deployedAt": null,
+      "observedAt": "2026-10-23T18:28:58.507Z",
+      "health": "unknown",
+      "source": "https://github.com/interzettel/project-record-standard/actions/runs/40003462737/job/120585428854"
+    },
     {
       "id": "GH-PAGES-39918534195",
       "component": "standard-website",
