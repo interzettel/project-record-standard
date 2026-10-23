@@ -1,5 +1,16 @@
 # Public-source distribution verification
 
+## Native zoom verified; Narrator confirmed by owner
+
+On 23 October 2026, the owner set local Edge to 200% and 400%. The agent observed device-pixel ratios 2 and 4 and viewport widths 1276 and 638 CSS px, respectively, from a 2552px-wide baseline. At 200%, root content/scroll width stayed 1268/1268; at 400%, 634/634. The standard tracker, guide start and Prehnite reference had no horizontal page overflow in the inspected states.
+
+Checks covered tracker skip navigation, filtered-out inspector closure to Find work, search commit to Work map, readable-list selection/inspector, release and changelog views, guide skip navigation and the Prehnite inspector. At 400%, settled Close bounds were y47–91 in a 358px-high viewport. The Prehnite 200% settled bounds were y362–406 in 717px. An earlier immediate measurement during smooth scrolling was outside the viewport; it was not treated as a settled focus failure.
+
+The owner reported: “done. narrotor works dont worry”. Narrator is therefore recorded as **owner-reported working**, alongside the directly observed native zoom checks. The agent did not hear or record speech; browser/screen-reader versions and a speech transcript remain unavailable. This is scoped acceptance, not a full WCAG conformance claim. Native 400% produced 638 CSS px; earlier 320px fixture checks remain separate evidence.
+
+The [completion receipt](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/native-completion.json) preserves the original STD-18 criterion and accepted scope. Detailed [200%](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/native-200-observation.json) and [400%](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/native-400-observation.json) observations are retained. Required work moves 17/18→18/18 (100%); milestone gates 3/4→4/4. Earlier blocked attempts below remain historical. The personal accessibility skill save was already verified.
+
+
 ## Personal save resolved; native checks awaiting direct evidence
 
 The accessibility skill was saved successfully to the personal Skills collection on 23 October 2026. A subsequent remote fetch verified the persisted skill and matching report-template hash. The earlier HTTP422 save failure below is historical. The receipt is in [native check follow-up](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/native-check-followup.json).

@@ -1,0 +1,10 @@
+{
+  "id": "CH-0.4.1-NATIVE-COMPLETION",
+  "component": "standard",
+  "type": "fix",
+  "summary": "Record owner-set native200%/400% reflow and focus checks, plus owner-confirmed Narrator operation; close the scoped follow-up with explicit version/transcript limits.",
+  "workItemIds": [
+    "STD-18"
+  ],
+  "compatibility": "No runtime/contract change. Native checks and owner report are attributed separately; historical failed/unavailable attempts remain retained."
+}

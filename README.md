@@ -129,7 +129,7 @@ Serve `.site/` as a static website. Markdown is a documentation build dependency
 
 [Terminology and percentages](standards/STANDARD.md) · [GitHub integration](standards/GITHUB.md) · [New and existing projects](standards/ADAPTATION-PROFILES.md) · [Agent workflows](standards/AGENT-WORKFLOWS.md) · [Upgrades](standards/UPGRADING.md)
 
-[PMI alignment](standards/PMI-ALIGNMENT.md) describes the tailored use of public project-management guidance. [Accessibility evidence](standards/ACCESSIBILITY.md) records the scoped WCAG 2.2 review and untested screen-reader speech/native zoom. [Delivery evidence](standards/DELIVERY.md) links observed hosted runs and deployments.
+[PMI alignment](standards/PMI-ALIGNMENT.md) describes the tailored use of public project-management guidance. [Accessibility evidence](standards/ACCESSIBILITY.md) records the scoped WCAG 2.2 review, native zoom checks and owner-reported Narrator confirmation, with version/transcript limits. [Delivery evidence](standards/DELIVERY.md) links observed hosted runs and deployments.
 
 The Prehnite reference uses a pinned public source and retains its own brand. Individual repository migrations are separate work.
 
@@ -140,10 +140,10 @@ The Prehnite reference uses a pinned public source and retains its own brand. In
 
 | Measure | Completion | Meaning |
 | --- | ---: | --- |
-| Required work | 17/18 · 94.4% | Completed leaf items in the named required scope. |
-| Accepted milestones | 3/4 · 75.0% | Milestones whose declared outcome gates passed. |
+| Required work | 18/18 · 100.0% | Completed leaf items in the named required scope. |
+| Accepted milestones | 4/4 · 100.0% | Milestones whose declared outcome gates passed. |
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-10-23 against `182b6a89`.
+Observed 2026-10-23 against `ae63d00e`.
 <!-- project-record:end -->

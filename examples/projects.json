@@ -40,7 +40,7 @@
         "commit": null,
         "observedOn": "2026-10-23",
         "updatedOn": "2026-10-23",
-        "authority": "Authored canonical ledger with attributed scoped owner acceptance; actual AT/native zoom limits explicit."
+        "authority": "Authored canonical ledger with scoped owner acceptance, observed native zoom and attributed Narrator confirmation; version/transcript limits explicit."
       },
       "presentation": {
         "renderer": "standard",
@@ -112,16 +112,22 @@
           "visibility": "public",
           "authority": "Authored personal save recovery and native verification attempt",
           "observedOn": "2026-10-23"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.4.1-NATIVE-COMPLETION.json",
+          "visibility": "public",
+          "authority": "Authored owner-assisted native accessibility completion record",
+          "observedOn": "2026-10-23"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-native-followup-0.4.1.json",
+      "previousSourceFile": "sources/standard/pre-native-completion-0.4.1.json",
       "previousSource": {
         "kind": "file-snapshot",
-        "path": "examples/sources/standard/pre-native-followup-0.4.1.json",
-        "commit": "60590b06bb8475b3d19235f36a6fb9cd8420b245",
+        "path": "examples/sources/standard/pre-native-completion-0.4.1.json",
+        "commit": "8063b65a9832143551dc021a9c00026b4c4f04f3",
         "observedOn": "2026-10-23",
         "updatedOn": "2026-10-23",
-        "authority": "Exact17/17 scoped package before newly requested native verification."
+        "authority": "Exact17/18 native follow-up before owner-assisted native zoom and Narrator confirmation."
       },
       "snapshots": [
         {
@@ -188,6 +194,17 @@
             "observedOn": "2026-10-23",
             "updatedOn": "2026-10-23",
             "authority": "Exact16/16 accepted scoped package before the owner-requested readiness setup extension."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-native-followup-0.4.1.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/pre-native-followup-0.4.1.json",
+            "commit": "60590b06bb8475b3d19235f36a6fb9cd8420b245",
+            "observedOn": "2026-10-23",
+            "updatedOn": "2026-10-23",
+            "authority": "Exact17/17 scoped package before newly requested native verification."
           }
         }
       ]

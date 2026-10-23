@@ -1,0 +1,91 @@
+{
+  "revision": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+  "zoom": "200% set by owner; DPR2 and width1276 versus baseline2552",
+  "observations": [
+    {
+      "check": "skip",
+      "client": 1268,
+      "focused": "MAIN",
+      "id": "top",
+      "scroll": 1268
+    },
+    {
+      "check": "open-inspector",
+      "client": 1268,
+      "focused": true,
+      "height": 717,
+      "rect": {
+        "bottom": 385.1640625,
+        "top": 341.1640625
+      },
+      "scroll": 1268
+    },
+    {
+      "check": "filtered-close",
+      "client": 1268,
+      "focus": "ID, title, owner, kind…",
+      "scroll": 1268
+    },
+    {
+      "check": "search-commit",
+      "client": 1268,
+      "focus": "Work map",
+      "scroll": 1268,
+      "status": "1 matching items · 1 blocked in scope · 0 outside this denominator"
+    },
+    {
+      "bottom": 341.6640625,
+      "check": "list-inspector",
+      "client": 1268,
+      "focus": true,
+      "height": 717,
+      "scroll": 1268,
+      "top": 297.6640625
+    },
+    {
+      "check": "release-readiness",
+      "client": 1268,
+      "scroll": 1268
+    },
+    {
+      "check": "changelog",
+      "client": 1268,
+      "scroll": 1268
+    },
+    {
+      "check": "guide-skip",
+      "client": 1268,
+      "dpr": 2,
+      "focus": "MAIN",
+      "id": "content",
+      "scroll": 1268,
+      "width": 1276
+    },
+    {
+      "check": "prehnite",
+      "client": 1268,
+      "dpr": 2,
+      "scroll": 1268,
+      "width": 1276
+    },
+    {
+      "bottom": 1211.6640625,
+      "check": "prehnite-inspector",
+      "client": 1268,
+      "focus": true,
+      "height": 717,
+      "scroll": 1268,
+      "top": 1167.6640625
+    },
+    {
+      "bottom": 406.1640625,
+      "check": "prehnite-inspector-settled",
+      "client": 1268,
+      "focus": true,
+      "height": 717,
+      "scroll": 1268,
+      "top": 362.1640625
+    }
+  ],
+  "screenReader": "Actual spoken output awaiting owner report"
+}

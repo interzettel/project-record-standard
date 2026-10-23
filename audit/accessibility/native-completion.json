@@ -1,0 +1,38 @@
+{
+  "recordedOn": "2026-10-23",
+  "authority": "Yiğit",
+  "source": "Task conversation",
+  "statements": [
+    "done",
+    "done. narrotor works dont worry"
+  ],
+  "nativeZoom": {
+    "200Percent": "Observed DPR2; viewport1276×717 CSS px; content/scroll1268/1268.",
+    "400Percent": "Observed DPR4; viewport638×358 CSS px; content/scroll634/634.",
+    "method": "Owner set native Edge zoom; agent inspected rendered layout and keyboard interactions.",
+    "reports": [
+      "audit/accessibility/native-200-observation.json",
+      "audit/accessibility/native-400-observation.json"
+    ]
+  },
+  "screenReader": {
+    "name": "Windows Narrator",
+    "result": "owner-reported working",
+    "version": null,
+    "speechTranscript": null,
+    "independentAgentSpeechVerification": false
+  },
+  "closureBasis": "Owner confirmed Narrator works and requested no further concern. Treat that as scoped owner acceptance alongside directly inspected native zoom. Do not convert the confirmation into versioned or criterion-wide independently observed speech.",
+  "criterionTreatment": {
+    "subject": "STD-18",
+    "before": "Record real browser200% text-resize and400% reflow behavior with visible focus and complete interactions, plus named/versioned screen-reader spoken output for landmarks, controls, result updates and inspector focus. Preserve observed failures and limitations.",
+    "after": "Record owner-set native200% and400% zoom checks on the standard, guide and Prehnite reference with reflow, tested controls and visible settled focus; record the owner’s Narrator confirmation and disclose unavailable version/transcript evidence.",
+    "interpretation": "Owner confirmation supplies the accepted human observation; versioned transcript capture remains a disclosed coverage limit."
+  },
+  "conformanceClaim": false,
+  "limits": [
+    "Actual spoken phrases and Narrator/Edge versions were not recorded.",
+    "Native400% used the owner’s2552px-wide browser, producing638 CSS px; earlier320 CSS px fixture reflow evidence is separate.",
+    "The first immediate Prehnite focus measurement during smooth scrolling was outside the viewport; settled focus was then verified visible."
+  ]
+}

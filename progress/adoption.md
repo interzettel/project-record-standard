@@ -1,5 +1,8 @@
 # Standard package planning and handoff
 
+Current result: 18/18 required leaves and 4/4 milestone gates complete. Native 200%/400% checks were inspected; Narrator operation is owner-confirmed, without agent-captured versions/transcript. Personal skill save verified. Individual migrations remain separate. Earlier context below is historical. See `audit/accessibility/native-completion.json`.
+
+
 Current follow-up: personal accessibility skill save verified. Owner-requested native zoom and actual screen-reader checks are blocked in STD-18: 17/18 required work (94.4%), 3/4 milestone gates. Prior completed-scope observations below remain historical. See `audit/accessibility/native-check-followup.json`.
 
 

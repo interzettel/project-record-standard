@@ -1,0 +1,81 @@
+{
+  "revision": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+  "zoom": "400% set by owner; DPR4 and width638 versus baseline2552",
+  "observations": [
+    {
+      "bottom": 91.015625,
+      "check": "inspector-settled",
+      "client": 634,
+      "dpr": 4,
+      "focus": true,
+      "height": 358,
+      "scroll": 634,
+      "top": 47.015625,
+      "width": 638
+    },
+    {
+      "check": "filtered-close",
+      "client": 634,
+      "focus": true,
+      "scroll": 634
+    },
+    {
+      "check": "search-commit",
+      "client": 634,
+      "focus": "Work map",
+      "scroll": 634
+    },
+    {
+      "bottom": 91.015625,
+      "check": "list-inspector-settled",
+      "client": 634,
+      "focus": true,
+      "height": 358,
+      "scroll": 634,
+      "top": 47.015625
+    },
+    {
+      "check": "release-readiness",
+      "client": 634,
+      "scroll": 634
+    },
+    {
+      "check": "changelog",
+      "client": 634,
+      "scroll": 634
+    },
+    {
+      "check": "guide",
+      "client": 634,
+      "dpr": 4,
+      "focus": "MAIN",
+      "id": "content",
+      "scroll": 634,
+      "width": 638
+    },
+    {
+      "check": "prehnite",
+      "client": 634,
+      "dpr": 4,
+      "scroll": 634,
+      "width": 638
+    },
+    {
+      "bottom": 91.015625,
+      "check": "prehnite-inspector-settled",
+      "client": 634,
+      "focus": true,
+      "height": 358,
+      "scroll": 634,
+      "top": 47.015625
+    }
+  ],
+  "narrator": {
+    "source": "Owner report in task conversation",
+    "quote": "done. narrotor works dont worry",
+    "result": "owner-reported working",
+    "version": null,
+    "observedSpeech": null,
+    "limit": "Agent did not hear or record screen-reader speech; no versioned transcript or criterion-wide conformance inferred."
+  }
+}

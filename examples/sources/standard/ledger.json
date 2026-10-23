@@ -37,7 +37,7 @@
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
       "unscopedWork": [],
-      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits."
+      "nextAction": "Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits."
     },
     {
       "id": "M2",
@@ -53,7 +53,7 @@
       "acceptanceRule": "source-state",
       "sourceAccepted": true,
       "unscopedWork": [],
-      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits."
+      "nextAction": "Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits."
     },
     {
       "id": "M3",
@@ -73,7 +73,7 @@
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
       "unscopedWork": [],
-      "nextAction": "Owner sets native zoom and supplies screen-reader listening/version evidence; agent verifies layout and records actual outputs for STD-18."
+      "nextAction": "Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits."
     },
     {
       "id": "M4",
@@ -91,7 +91,7 @@
       ],
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
-      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits.",
+      "nextAction": "Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits.",
       "unscopedWork": [],
       "priority": "P1",
       "sourceState": "done",
@@ -610,10 +610,10 @@
       "title": "Complete native zoom and actual screen-reader verification",
       "groupId": "G3",
       "milestoneId": "M3",
-      "state": "active",
-      "sourceState": "active",
+      "state": "done",
+      "sourceState": "done",
       "required": true,
-      "blocked": true,
+      "blocked": false,
       "dependsOn": [
         "STD-13"
       ],
@@ -622,7 +622,7 @@
       "owner": "Implementing agent; owner supplies native control and listening evidence",
       "priority": "P1",
       "issueUrl": null,
-      "criterion": "Record real browser200% text-resize and400% reflow behavior with visible focus and complete interactions, plus named/versioned screen-reader spoken output for landmarks, controls, result updates and inspector focus. Preserve observed failures and limitations.",
+      "criterion": "Record owner-set native200% and400% zoom checks on the standard, guide and Prehnite reference with reflow, tested controls and visible settled focus; record the owner’s Narrator confirmation and disclose unavailable version/transcript evidence.",
       "evidence": [
         {
           "kind": "verification-attempt",
@@ -630,17 +630,40 @@
           "result": "blocked",
           "source": "audit/accessibility/native-check-followup.json",
           "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "ui-review",
+          "subject": "STD-18",
+          "revision": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+          "result": "passed",
+          "source": "audit/accessibility/native-200-observation.json",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "ui-review",
+          "subject": "STD-18",
+          "revision": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+          "result": "passed",
+          "source": "audit/accessibility/native-400-observation.json",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "owner-review",
+          "subject": "STD-18",
+          "revision": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+          "result": "passed",
+          "source": "audit/accessibility/native-completion.json",
+          "observedOn": "2026-10-23"
         }
       ],
-      "completionBasis": "Blocked: browser shortcuts produced no observable native zoom; actual screen-reader speech cannot be captured through available controls.",
-      "note": "Original STD-13 scoped acceptance is retained. This newly requested follow-up adds the previously excluded native checks without retroactively claiming they passed.",
+      "completionBasis": "Owner-set native200%/400% zoom checks directly observed; owner confirmed Narrator works. Versions/transcript are unavailable and no full conformance claim is made.",
+      "note": "Owner-reported screen-reader result is separate from agent-observed zoom/focus evidence. Original versioned-transcript criterion and scoped acceptance treatment retained in audit/accessibility/native-completion.json.",
       "deferReason": null
     }
   ],
   "warnings": [
     "Historical observations and all16 required IDs retained; scoped owner acceptance closes STD-09/13 under CR-0.4-ACCESSIBILITY.",
-    "Actual screen-reader speech and native browser zoom remain not-tested; this is not a full WCAG conformance claim. Individual migrations remain separate.",
-    "Personal accessibility skill save now verified. Newly requested native checks remain blocked in STD-18;17/18 (94.4%) is completion of the expanded scope, separate from L0–L5 readiness."
+    "Native200%/400% checks observed and owner confirmed Narrator works. Versions and actual speech transcript unavailable; no independently observed or universal WCAG conformance claim. All18 required leaves complete; readiness grade remains separate."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
@@ -754,6 +777,15 @@
         "approvedBy": "Yiğit",
         "approvedAt": "2026-10-23",
         "approvalSource": "Task conversation: selected remaining native checks and personal save limits; request do these as well."
+      },
+      {
+        "id": "CR-NATIVE-COMPLETION",
+        "status": "implemented",
+        "reason": "Owner set native zoom and confirmed Narrator works; accept that human report while retaining unavailable versioned speech evidence.",
+        "impact": "STD-18 closes after observed native200%/400% checks and owner-reported Narrator acceptance. Its original criterion is preserved and the scoped treatment recorded. Required scope unchanged:17/18→18/18; milestone gates3/4→4/4. No independent speech/full-conformance claim.",
+        "approvedBy": "Yiğit",
+        "approvedAt": "2026-10-23",
+        "approvalSource": "audit/accessibility/native-completion.json; task message done. narrotor works dont worry"
       }
     ],
     "risks": [
