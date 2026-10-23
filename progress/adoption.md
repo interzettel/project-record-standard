@@ -1,33 +1,29 @@
-# Standard package planning and handoff
+# Package adoption handoff
 
-Current result: 18/18 required leaves and 4/4 milestone gates complete. Native 200%/400% checks were inspected; Narrator operation is owner-confirmed, without agent-captured versions/transcript. Personal skill save verified. Individual migrations remain separate. Earlier context below is historical. See `audit/accessibility/native-completion.json`.
+## Current package — 23 October 2026
 
+Runtime and skill suite 0.4.1 use record contract 0.2.0 and distribute eleven workflows. Implementation completion is 18/18 required items and 4/4 milestone gates. Publication, installation, verification, acceptance and deployment have separate records. Use [delivery](../standards/DELIVERY.md) for the release channel and [INSTALL.md](../INSTALL.md) for the pinned package procedure.
 
-Current follow-up: personal accessibility skill save verified. Owner-requested native zoom and actual screen-reader checks are blocked in STD-18: 17/18 required work (94.4%), 3/4 milestone gates. Prior completed-scope observations below remain historical. See `audit/accessibility/native-check-followup.json`.
+## Source ownership
 
+`examples/projects.json` selects the canonical ledger, delivery supplement, individual change fragments and snapshots. STD-* work IDs, G*/M* planning views and WP-* work packages keep their existing meaning. GitHub owns hosted run and release observations. Yiğit owns acceptance. README, SVG and Pages are projections.
 
-Current outcome complete: 17/17 required leaves and 4/4 milestones. Owner-requested readiness integration adds STD-17 after the accepted 16/16 package; prior snapshots remain. Readiness itself is unassessed here. All eleven skills ship with suite 0.4.1. Individual migrations remain separate. Earlier context below is historical.
+Historical source snapshots explain denominator changes separately from completed work. Preserve those snapshots and original criteria when adding scope or recording an authorized amendment. Do not attach later approvals to earlier candidates.
 
+The earlier issue/PR/branch scouting is a dated observation, not a current inventory or a GitHub Project assessment. A future pilot must collect its own docs, trackers, issues, PRs, branches and delivery evidence, with coverage and inaccessible channels explicit. No issue or branch cleanup is implied here.
 
-Current outcome complete: 16/16 required leaves and 4/4 milestones under the owner’s scoped acceptance. See `audit/accessibility/owner-acceptance.json` and `wcag22-audit.json`. All eleven skills ship in the repository; personal accessibility-skill save failed HTTP422. Actual speech/native zoom remain untested. Individual migrations are separate future work. The prior planning context below is retained as history.
+## Installation and fit
 
+Use the release’s exact source revision and archive digest. Preview the additive installer before applying it; retain existing AGENTS instructions and project-owned branding. An agent then reads the router and chooses new establishment or existing adaptation. It inspects sources before asking focused questions, proposes cleanup around the intended outcome and records the configured central readiness assessment.
 
-The canonical manifest is `examples/projects.json`. Its `standard` entry uses the authored ledger as completion/scope authority, delivery supplement and individual change fragments as their named writers. Snapshots retain prior observations. GitHub owns hosted workflow results and source delivery; Yiğit owns acceptance. README/SVG/Pages are derived views.
+All eleven skills are in the source distribution, including accessibility and the readiness references. The personal accessibility skill save is separately verified. A personal service may materialize a stable skill ID; that does not replace the canonical suite manifest and file hashes.
 
-The completed implementation was published as `9b02b4380da76d16cabfe801fc368302d5ae5297`; its hosted verification, reusable workflow and Pages jobs passed in run 39866474910. Scouting at the earlier recorded observation found no hosted issues, PRs or releases and one hosted main branch at `59396a891fbc740ffe0be095f02934dfae270d38`. These are collection-specific observations, not permanent claims or a native Project inventory. Existing CI and Pages delivery are retained.
+Public inputs are explicitly selected and hash checked. Private assessments and owner-only output stay outside Pages. The standard example and Prehnite reference retain independent presentation. Individual repository adaptation has not begun.
 
-The cleanup queue is complete within this implementation scope: saved/distributed workflow skills (STD-14), executable setup/adaptation, installation, telemetry, rounding and reproducible packaging (STD-15), and recorded hosted package/Pages evidence (STD-16). No stale branch or issue deletion is needed. Native screen-reader evidence (STD-13) and owner acceptance (STD-09) stay open. Other project migrations remain excluded.
+## Recovery and next action
 
-Source/ID mapping is unchanged: STD-* work IDs, G*/M* planning views and WP-* WBS work packages retain their meaning. The new WP-5/G4/M4 scope adds three required leaves. Preserve the preceding 11/13 snapshot before expanding to 16 leaves; the history explains the denominator movement separately from completed work. No approval is retroactively attached to that snapshot.
+Replay pinned authored inputs into a new empty output directory, verify hashes/counts, then replace only generated artifacts. For a skill upgrade, verify the previous ownership receipt and reconcile edited files. Keep the prior toolkit and rendered output for rollback; do not reset completion history.
 
-The published 13/16 (81.3%) observation is also retained before recording STD-16 as complete. The evidence update produces 14/16 (87.5%), with no added/removed scope, and M4's three technical gates are met. Overall completed milestone gates are 2/4 (50%). The exact candidate review plan remains at 5/7 (71.4%) because owner and actual screen-reader gates are still missing. The owner reviews the terminology and behavior; a person with a named screen-reader/browser setup supplies the remaining interaction evidence.
+Finish release publication and read-back before selecting one pilot repository. The pilot should use the released skills, preserve IDs, counts and branding, and return installation friction to this standard before wider migration.
 
-The ten workflow skills cover routing, new setup, existing adaptation, progress/evidence updates, status questions, scope/governance, GitHub mappings, delivery, presentation and operations. Repository AGENTS rules point to the relevant skill bodies. The additive installer prepares consuming repositories without replacing existing instructions or project content.
-
-Use the source kit's exact version, suite manifest and file hashes. A Skills-service directory materialization may replace a personal slug with a stable ID; the skill name/body and canonical distribution remain identifiable. Updates to the suite are committed and pushed; distribution copies are checked and packaged. Do not create parallel sources when resuming.
-
-The standard website preserves its own palette and independent Prehnite reference. The agent guide is an additional route. Public build inputs are explicitly selected and hash verified. No private source or synthetic owner-audience output is copied into Pages.
-
-Recovery replays pinned authored inputs into a new empty output, verifies hashes/counts, then replaces only generated artifacts. An agent-installation upgrade verifies the previous ownership receipt; local edits require reconciliation. Keep the preceding toolkit/source/artifact identity for rollback. Rollback restores the prior renderer/build, not a reset completion ledger.
-
-Verification evidence is recorded in `audit/skills/EVALUATION.md`, `VERIFICATION-public.md`, delivery and accessibility guides, and linked hosted runs. Complete authorized local work before handing over a missing manual decision. A CI pass does not close acceptance or screen-reader gates.
+See [verification](../VERIFICATION-public.md) for scoped evidence and limits. Superseded scouting, intermediate counts and blocked attempts are preserved in [dated history](history/2026-10-23-before-release/progress--adoption.md).

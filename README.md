@@ -4,7 +4,7 @@ Give your AI agent a shared way to plan a project, track its progress and explai
 
 The agent inspects what already exists, asks you about the decisions it cannot infer, and fits the tracking system to your project. The result connects an overview, scoped work, milestones, a roadmap, GitHub issues, progress percentages and delivery history.
 
-[Explore the interactive example](https://interzettel.github.io/project-record-standard/) · [Read the guide](standards/START-HERE.md)
+[Explore the interactive example](https://interzettel.github.io/project-record-standard/) · [Read the guide](standards/START-HERE.md) · [Install v0.4.1](INSTALL.md)
 
 [![Example tracker showing 16 of 16 required work items complete and 4 of 4 milestones accepted.](assets/tracker-preview.jpg)](https://interzettel.github.io/project-record-standard/)
 
@@ -19,9 +19,9 @@ Set up Project Record Standard in this project:
 https://github.com/interzettel/project-record-standard
 
 Read the repository instructions and the toolkit’s
-skills/use-project-records/SKILL.md. Use a reviewed toolkit checkout
-and record its commit. Preview and apply the included skill installer
-for this project, preserving existing agent instructions.
+skills/use-project-records/SKILL.md. Use the verified v0.4.1 source kit
+and record its exact commit and archive checksum. Preview and apply
+the included skill installer, preserving existing agent instructions.
 
 Then start the setup conversation. Inspect the project before asking
 me questions: read the docs, existing trackers, GitHub issues, open PRs,

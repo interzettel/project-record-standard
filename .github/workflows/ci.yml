@@ -71,3 +71,93 @@ jobs:
       - name: Deploy the verified public artifact
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
+  release:
+    # An explicit release commit is required; normal pushes never publish.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.event.head_commit.message == 'Release project record standard v0.4.1'
+    needs: [verify, reusable, deploy]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12'
+      - name: Build and verify the source release
+        run: |
+          python3 - <<'PY'
+          from hashlib import sha256
+          import json
+          import os
+          from pathlib import Path
+          import shutil
+          import subprocess
+          import sys
+          import tempfile
+          import tomllib
+          from zipfile import ZipFile
+          from tools.package_standard import package
+
+          version = tomllib.loads(Path('pyproject.toml').read_text())['project']['version']
+          assert version == '0.4.1', 'Release request must match the native version'
+          assert json.loads(Path('skills/manifest.json').read_text())['suiteVersion'] == version
+          assets = Path('dist/release')
+          assets.mkdir(parents=True)
+          archive = assets / f'project-record-standard-{version}.zip'
+          result = package(archive)
+          with tempfile.TemporaryDirectory() as temporary:
+              scratch = Path(temporary)
+              second = scratch / 'repeat.zip'
+              package(second)
+              assert archive.read_bytes() == second.read_bytes(), 'Archive must be reproducible'
+              with ZipFile(archive) as source:
+                  source.extractall(scratch)
+              toolkit = scratch / 'project-record-standard'
+              for line in (toolkit / 'checksums.sha256').read_text().splitlines():
+                  digest, name = line.split('  ', 1)
+                  assert sha256((toolkit / name).read_bytes()).hexdigest() == digest, name
+              env = dict(os.environ, PYTHONPATH=str(toolkit / 'src'))
+              def cli(*arguments):
+                  output = subprocess.check_output([sys.executable, '-m', 'project_record', *arguments], cwd=toolkit, env=env, text=True)
+                  return json.loads(output)
+              cli('check', '--config', 'examples/projects.json')
+              cli('pipeline', '--config', 'examples/projects.json', '--output', str(scratch / 'records'), '--audience', 'public')
+              target = scratch / 'project'
+              target.mkdir()
+              original = '# Project rules\n\nKeep the existing brand and site.\n'
+              (target / 'AGENTS.md').write_text(original)
+              args = ('install-skills', '--toolkit', str(toolkit), '--target', str(target))
+              cli(*args)
+              assert (target / 'AGENTS.md').read_text() == original, 'Preview must not write'
+              cli(*args, '--apply')
+              assert original in (target / 'AGENTS.md').read_text(), 'Existing instructions must survive'
+              assert cli(*args, '--apply')['changes'] == [], 'Repeated installation must be idempotent'
+              suite = json.loads((toolkit / 'skills/manifest.json').read_text())
+              for name in suite['skills']:
+                  assert (target / '.agents/skills' / name / 'SKILL.md').read_bytes() == (toolkit / 'skills' / name / 'SKILL.md').read_bytes()
+              assert (target / '.agents/skills/use-project-records/references/readiness-contract.md').is_file()
+          for name in ['CHANGELOG.md', 'INSTALL.md']:
+              shutil.copyfile(name, assets / name)
+          checksums = ''.join(sha256(path.read_bytes()).hexdigest() + '  ' + path.name + '\n' for path in sorted(assets.iterdir()))
+          (assets / 'SHA256SUMS').write_text(checksums)
+          notes = Path('dist/release-notes.md')
+          notes.write_text(Path('CHANGELOG.md').read_text() + '\n## Release verification\n\n'
+              + 'Source revision: `' + os.environ['GITHUB_SHA'] + '`.\n\n'
+              + 'Verification, reusable build and Pages gates passed for this exact revision: '
+              + os.environ['GITHUB_SERVER_URL'] + '/' + os.environ['GITHUB_REPOSITORY'] + '/actions/runs/' + os.environ['GITHUB_RUN_ID'] + '.\n\n'
+              + 'Fresh extraction, all per-file hashes, the extracted CLI/public pipeline, preserved instructions and repeated installation passed before publication.\n\n'
+              + 'Archive SHA-256: `' + result['sha256'] + '`. Download all four assets and follow INSTALL.md.\n')
+          print(json.dumps(result, indent=2))
+          PY
+          cd dist/release
+          sha256sum -c SHA256SUMS
+      - name: Publish v0.4.1 with verified assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method POST "repos/$GITHUB_REPOSITORY/git/refs" -f ref=refs/tags/v0.4.1 -f sha="$GITHUB_SHA" --silent
+          gh release create v0.4.1 dist/release/project-record-standard-0.4.1.zip dist/release/CHANGELOG.md dist/release/INSTALL.md dist/release/SHA256SUMS --repo "$GITHUB_REPOSITORY" --verify-tag --target "$GITHUB_SHA" --title 'Project Record Standard v0.4.1' --notes-file dist/release-notes.md --draft
+          gh release edit v0.4.1 --repo "$GITHUB_REPOSITORY" --draft=false --latest
+          gh release view v0.4.1 --repo "$GITHUB_REPOSITORY" --json url,tagName,targetCommitish,publishedAt,assets

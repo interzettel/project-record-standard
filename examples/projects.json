@@ -118,6 +118,12 @@
           "visibility": "public",
           "authority": "Authored owner-assisted native accessibility completion record",
           "observedOn": "2026-10-23"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.4.1-RELEASE.json",
+          "visibility": "public",
+          "authority": "Authored release packaging and documentation change",
+          "observedOn": "2026-10-23"
         }
       ],
       "previousSourceFile": "sources/standard/pre-native-completion-0.4.1.json",

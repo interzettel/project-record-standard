@@ -1,0 +1,20 @@
+{
+  "id": "CH-0.4.1-RELEASE",
+  "component": "standard",
+  "type": "changed",
+  "summary": "Consolidate current guidance and package a pinned source release with checksums and verified extraction/installation.",
+  "workItemIds": [
+    "STD-15",
+    "STD-16"
+  ],
+  "milestoneIds": [
+    "M4"
+  ],
+  "pullRequests": [],
+  "stage": "unreleased",
+  "compatibility": "Runtime and suite 0.4.1 retain record contract 0.2.0; no source ID or branding migration.",
+  "limitations": [
+    "Individual repository migrations are a later phase."
+  ],
+  "publication": null
+}

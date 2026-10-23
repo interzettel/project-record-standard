@@ -1,25 +1,27 @@
 # Project record standard
 
-Current result: 18/18 required leaves and 4/4 milestone gates complete. Native 200%/400% checks were inspected; Narrator operation is owner-confirmed, without agent-captured versions/transcript. Personal skill save verified. Individual migrations remain separate. Earlier context below is historical. See `audit/accessibility/native-completion.json`.
+## Current result — 23 October 2026
 
+The implementation scope is complete: **18/18 required work items (100%) and 4/4 milestone gates (100%)**. Runtime and skill suite version 0.4.1 retain record contract 0.2.0. Release publication is recorded separately in the delivery supplement; repository migrations belong to the next phase.
 
-Current follow-up: personal accessibility skill save verified. Owner-requested native zoom and actual screen-reader checks are blocked in STD-18: 17/18 required work (94.4%), 3/4 milestone gates. Prior completed-scope observations below remain historical. See `audit/accessibility/native-check-followup.json`.
+Native Edge zoom at 200% and 400% was directly inspected. Narrator operation is owner-confirmed; the agent did not capture speech, software versions or a transcript. The personal accessibility skill save is verified. These are scoped acceptance results, not a full WCAG conformance claim or a project readiness grade.
 
+## Purpose and users
 
-Current outcome complete: 17/17 required leaves and 4/4 milestones. Owner-requested readiness integration adds STD-17 after the accepted 16/16 package; prior snapshots remain. Readiness itself is unassessed here. All eleven skills ship with suite 0.4.1. Individual migrations remain separate. Earlier context below is historical.
+Give independently branded projects shared words for scope, progress, evidence and delivery. Maintainers and agents should be able to explain what works, what remains, why a percentage changed and what proof is missing. Outsiders enter through a readable README and the project’s own interactive website.
 
+The toolkit supplies a versioned JSON contract, adapters, exact-count calculators, history bridges, change/release/deployment records, optional browser components, an offline CLI/action/workflow, eleven agent skills and an additive instructions installer. Projects keep their fonts, palette, routes and technology. The standard’s navy/lavender example and the independently branded Prehnite reference demonstrate that separation.
 
-Current outcome complete: 16/16 required leaves and 4/4 milestones under the owner’s scoped acceptance. See `audit/accessibility/owner-acceptance.json` and `wcag22-audit.json`. All eleven skills ship in the repository; personal accessibility-skill save failed HTTP422. Actual speech/native zoom remain untested. Individual migrations are separate future work. The prior planning context below is retained as history.
+## Scope and authority
 
+The completed package covers purpose/scope-first scouting, cleanup priorities, work breakdown, milestone exit criteria, scope expansion, agent installation, status and collection telemetry, recovery, delivery and accessibility review. Setup includes the portable L0–L5 readiness contract, ten evidence dimensions and separate R0–R4 task-risk limits. A readiness assessment does not grant authority.
 
-Give independently branded projects shared words for scope, progress, evidence and delivery. Maintainers and agents should be able to explain what works, what remains, why a percentage changed and what proof is missing. Outsiders enter through a readable README and the project's own interactive website.
+`examples/projects.json` declares the sources. `examples/sources/standard/ledger.json` owns completion and scope; its registered supplements own delivery and changes. README, SVG and Pages are derived views. Yiğit owns scope and acceptance. Progress documents supply context rather than a second ledger.
 
-The standard supplies a versioned JSON contract, adapters, exact-count calculators, history bridges, change/release/deployment records, optional browser components, offline CLI/action/workflow, agent skills and an additive instructions installer. Its own example uses navy/lavender; Prehnite retains a distinct composition. Other projects keep their fonts, palette, routes and technology.
+Individual repository migrations, live feeds from reference projects, private operational assessments, paid services, new credentials and recurring schedules are outside this package. Prehnite remains a pinned reference.
 
-Current outcome: complete the canonical agent workflow package and demonstrate setup, adaptation, updates/reporting and recovery with evidence. Work includes purpose/scope-first scouting, cleanup priorities, WBS and milestone planning, visible scope expansion, rules installation, status telemetry, verification and hosted delivery.
+## Evidence and next phase
 
-Individual repository migrations are excluded from this outcome. Reference fixtures are dated observations rather than live repository feeds. Private user sources are excluded; the agent evaluation projects are synthetic fixtures. Installing tracking cannot authenticate approval or prove a physical inspection.
+Success means preserved source IDs and brands, named fractions, explicit unknowns, reproducible tooling, usable saved skills, repeatable installation/recovery, matching README/Pages calculations and observable CI/deployment. See [verification](../VERIFICATION-public.md), [delivery](../standards/DELIVERY.md) and [adoption handoff](adoption.md).
 
-Yiğit owns acceptance and scope/change authority. The implementation agent can complete authorized package work and record its evidence; owner acceptance remains separate. Actual screen-reader output is still unverified. No paid service, credential, recurring schedule or inference job is created by the offline runtime.
-
-Success means preserved source identities/brands, coherent terminology and named fractions, explicit unknowns and coverage, reproducible tooling, saved usable skills, safe repeat/recovery behavior, matching README/Pages calculations and observable CI/deployment. The authoritative scope and pending gates live in `examples/sources/standard/ledger.json`, through `examples/projects.json`.
+Previous 13-, 16-, 17- and 18-item observations remain in source snapshots. Superseded planning text is preserved in [dated history](history/2026-10-23-before-release/progress--overview.md). It must not be read as a current blocker list.

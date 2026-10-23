@@ -1,5 +1,5 @@
 {
-  "deliveryCoverage": "0.4.0 accessibility candidate passed all three hosted jobs and Pages; scoped Chrome keyboard/layout review recorded. Owner-authorized STD-09/13 acceptance is separate from unperformed actual speech/native zoom checks. No tagged release or registry publication observed.",
+  "deliveryCoverage": "Implementation and scoped acceptance complete: 18/18 work items, 4/4 milestones. Native zoom observed and Narrator owner-confirmed; versions/transcript unavailable. Runtime/suite 0.4.1 release preparation underway; no GitHub release observed at this pre-publication observation. Historical candidate receipts remain unchanged.",
   "releasePlans": [
     {
       "id": "REL-0.4-SCOPED-ACCEPTANCE",
