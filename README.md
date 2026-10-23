@@ -26,7 +26,7 @@ Observed 2026-10-23 against `446c9917`.
 - Ten agent skills for scouting/setup, adaptation, scope, progress, status, GitHub, delivery, presentation and operations, with an additive rules installer.
 - A tailored mapping to public PMI guidance, with stated evidence and compliance limits.
 
-The standard's own tracker includes canonical delivery and pending acceptance. The Prehnite example uses its stated pinned public source; it does not replace Prehnite's website or claim to be a live feed.
+The standard's own tracker records completed delivery and owner-authorized scoped acceptance; disclosed accessibility test limits remain visible. The Prehnite example uses its stated pinned public source; it does not replace Prehnite's website or claim to be a live feed.
 
 ## Run the public example
 

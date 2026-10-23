@@ -42,7 +42,7 @@ The tracking runtime has no third-party dependencies. The documentation website 
 
 ## Know the evidence limits
 
-The public Prehnite example is pinned to its stated source revision. It does not claim to show the latest repository state or replace the real Prehnite site. The standard's own tracker records the canonical delivery work and pending owner review.
+The public Prehnite example is pinned to its stated source revision. It does not claim to show the latest repository state or replace the real Prehnite site. The standard's own tracker records completed canonical delivery and owner-authorized scoped acceptance, with accessibility test limits disclosed.
 
 Read [Repository and delivery evidence](DELIVERY.md) for actual hosted runs and deployment observations. [Accessibility evidence](ACCESSIBILITY.md) records tested interactions and remaining manual checks. [PMI alignment](PMI-ALIGNMENT.md) explains the tailored mapping to public PMI guidance; it does not claim certification.
 
