@@ -53,7 +53,7 @@ export function mountExplorer(root, record, options = {}) {
     const milestone = milestones.get(state.milestone);
     root.querySelector('[data-pr-meter]').innerHTML = meterHTML({...metric,method:state.mode==='ledger'?'completed / retained ledger items':'completed / required scope items'},milestone?milestone.id+' · '+milestone.title:'Selected denominator');
     const status = root.querySelector('[role="status"]');
-    const announcement = `${selected.length} matching items · ${metric.blocked} blocked · ${metric.excluded} outside this denominator`;
+    const announcement = `${selected.length} matching items · ${metric.blocked} blocked in scope · ${metric.excluded} outside this denominator`;
     if(status.textContent!==announcement)status.textContent=announcement;
     const block = state.view==='list' ? `<div class="pr-list">${selected.map(i=>`<button type="button" class="pr-list-item" data-pr-item="${label(i.id)}" aria-pressed="${state.selected===i.id}"><span class="pr-id">${label(i.id)}</span><span>${label(i.title)}</span><span class="pr-state ${i.blocked?'is-blocked':i.state==='done'?'is-done':''}">${label(stateName(i))}</span></button>`).join('')}</div>` : [...groups.values()].filter(g=>selected.some(i=>i.groupId===g.id)).map(g=>{
       const own = selected.filter(i=>i.groupId===g.id);

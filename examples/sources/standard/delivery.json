@@ -1,6 +1,80 @@
 {
-  "deliveryCoverage": "The 0.3.0 agent-package candidate passed hosted verification, composite/reusable workflows and Pages; its tracker and agent guide were inspected in Edge. Receipts are revision scoped and earlier observations are retained. Actual screen-reader output and owner acceptance remain pending. No tagged release or package-registry publication has been observed.",
+  "deliveryCoverage": "0.4.0 accessibility candidate passed all three hosted jobs and Pages; scoped Chrome keyboard/layout review recorded. Owner-authorized STD-09/13 acceptance is separate from unperformed actual speech/native zoom checks. No tagged release or registry publication observed.",
   "releasePlans": [
+    {
+      "id": "REL-0.4-SCOPED-ACCEPTANCE",
+      "component": "standard",
+      "channel": "github-source",
+      "version": "0.4.0-scoped-review",
+      "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+      "workItemIds": [
+        "STD-09",
+        "STD-13",
+        "STD-14"
+      ],
+      "gates": [
+        {
+          "id": "G-0.4-CI",
+          "label": "Hosted automated checks pass",
+          "policy": {
+            "allOf": [
+              "test"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "test",
+              "subject": "G-0.4-CI",
+              "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+              "result": "passed",
+              "source": "https://github.com/interzettel/project-record-standard/actions/runs/39918534195",
+              "observedOn": "2026-10-23"
+            }
+          ]
+        },
+        {
+          "id": "G-0.4-AUDIT",
+          "label": "Scoped audit and remediation complete",
+          "policy": {
+            "allOf": [
+              "ui-review"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "ui-review",
+              "subject": "G-0.4-AUDIT",
+              "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+              "result": "passed",
+              "source": "audit/accessibility/wcag22-audit.json",
+              "observedOn": "2026-10-23"
+            }
+          ]
+        },
+        {
+          "id": "G-0.4-OWNER",
+          "label": "Owner conditional scoped acceptance",
+          "policy": {
+            "allOf": [
+              "owner-review"
+            ],
+            "anyOf": []
+          },
+          "receipts": [
+            {
+              "kind": "owner-review",
+              "subject": "G-0.4-OWNER",
+              "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+              "result": "passed",
+              "source": "audit/accessibility/owner-acceptance.json",
+              "observedOn": "2026-10-23"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "REL-0.3-AGENTS-REVIEW",
       "component": "standard",
@@ -164,6 +238,17 @@
   ],
   "releases": [],
   "deployments": [
+    {
+      "id": "GH-PAGES-39918534195",
+      "component": "standard-website",
+      "environment": "github-pages",
+      "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+      "url": "https://interzettel.github.io/project-record-standard/",
+      "deployedAt": "2026-10-23T07:33:55.2831426Z",
+      "observedAt": "2026-10-23T07:40:35.830Z",
+      "health": "healthy",
+      "source": "https://github.com/interzettel/project-record-standard/actions/runs/39918534195/job/120297964051"
+    },
     {
       "id": "GH-PAGES-39866474910",
       "component": "standard-website",

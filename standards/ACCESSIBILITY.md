@@ -1,5 +1,18 @@
 # Reference-view accessibility review
 
+## Completed scoped accessibility review — 0.4.0
+
+Candidate `a8e7b07c3d3a4e4a1d6b15d3720507996be00b36` passed [hosted verification, reusable workflow and Pages](https://github.com/interzettel/project-record-standard/actions/runs/39918534195). Pages reported success at 2026-10-23T07:33:55.2831426Z. The audit covers all 55 WCAG 2.2 A/AA criteria with scoped results and explicit unknowns: [audit record](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/wcag22-audit.json).
+
+Cloud Chrome 155 on Linux exercised 26 rendered scenarios: both branded references in light/dark with authored, spaced and doubled text at 320 CSS px; three guides with those text settings; and all five pages at 1280 px. Every scenario had equal client/scroll width and no measured button, input, select or summary target below 24 px. All eleven guides passed DOM structure checks. The [review fixture](../qa/accessibility.html) makes these measurements repeatable.
+
+Keyboard retesting confirmed skip links, filtered Close → Find work → Tab to Work map, search commit without focus loss, readable-list selected state, and filtered dependency closure. The earlier filtered Close failure focused BODY. The repaired status node survives result updates; seven component regression tests supplement seven calculation tests. The Python suite contains 35 tests. Default component contrast is checked separately from the 20 reference palette pairs.
+
+Yiğit explicitly authorized STD-09 and STD-13 closure after audit, fixes and skill integration. The [acceptance receipt](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/owner-acceptance.json) preserves the original STD-13 criterion and its authorized scoped amendment. The same 16 required IDs move from 14/16 (87.5%) to 16/16 (100%); milestones from 2/4 (50%) to 4/4 (100%). This is bounded package completion, not a full WCAG conformance certification.
+
+Actual screen-reader speech, native browser zoom and OS forced-colour/reduced-motion settings were not exercised. Computed doubled fonts are only a text stress check. Earlier open-gate observations below remain historical. All eleven skills, including accessibility, are packaged in the canonical repository; the additional personal Skills save was rejected HTTP422. Individual repository migrations remain separate.
+
+
 Review scope: the three local reference presentations and their shared explorers, 22 October 2026. This is a scoped engineering review against selected WCAG 2.2 concerns, not a conformance certification for the reference pages or the existing project websites.
 
 | Concern | Result and evidence |
@@ -38,10 +51,10 @@ This is a scoped interaction check in the connected Edge browser; its version wa
 
 ## Complete the screen-reader check
 
-Use the deployed revision with a named browser and screen reader, and record both versions. Confirm that the skip link reaches the main landmark, headings describe the selected milestone, filters announce names and values, item buttons announce IDs and states, and result changes announce only the short count. Open and close an item to confirm reading order and focus restoration. Inspect the history chart through its adjacent exact-count table and expand candidate evidence. Record failures and the source revision tested before marking STD-13 complete.
+Use the deployed revision with a named browser and screen reader, and record both versions. Confirm that the skip link reaches the main landmark, headings describe the selected milestone, filters announce names and values, item buttons announce IDs and states, and result changes announce only the short count. Open and close an item to confirm reading order and focus restoration. Inspect the history chart through its adjacent exact-count table and expand candidate evidence. Record failures and the source revision tested. This is a remaining test procedure; STD-13 is now closed under the scoped owner amendment recorded above.
 
 ## WCAG 2.2 remediation package
 
 The 0.4.0 package adds `verify-project-accessibility` and a 55-criterion A/AA report template. It repairs persistent result announcements, focus fallback after filtered-item closure, search commit focus, readable-list selection and reusable default contrast. The generated [review fixture](../qa/accessibility.html) loads the real pages at controlled CSS widths and labels computed text enlargement separately from native zoom.
 
-New regression checks exercise the real component in a locked development-only DOM environment. The published references retain each project’s brand. Default styles and the final cascade are reviewed separately: superseded declarations in the reference builder do not establish rendered failures. This package does not claim that semantic inspection establishes spoken screen-reader output. The final scoped audit and owner-authorized acceptance amendment are recorded after browser retesting.
+New regression checks exercise the real component in a locked development-only DOM environment. The published references retain each project’s brand. Default styles and the final cascade are reviewed separately: superseded declarations in the reference builder do not establish rendered failures. This package does not claim that semantic inspection establishes spoken screen-reader output. The final scoped audit and owner-authorized acceptance amendment are recorded above after browser retesting.

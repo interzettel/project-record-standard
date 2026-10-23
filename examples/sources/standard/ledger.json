@@ -37,7 +37,7 @@
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
       "unscopedWork": [],
-      "nextAction": "Technical checks recorded; owner review is a separate remaining gate."
+      "nextAction": "Bounded standards package complete. Individual repository adaptations are a separate future task; retain disclosed accessibility test limits."
     },
     {
       "id": "M2",
@@ -51,9 +51,9 @@
         "STD-09"
       ],
       "acceptanceRule": "source-state",
-      "sourceAccepted": false,
+      "sourceAccepted": true,
       "unscopedWork": [],
-      "nextAction": "Owner review after the verified package is available."
+      "nextAction": "Bounded standards package complete. Individual repository adaptations are a separate future task; retain disclosed accessibility test limits."
     },
     {
       "id": "M3",
@@ -72,7 +72,7 @@
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
       "unscopedWork": [],
-      "nextAction": "Complete actual screen-reader verification. Native keyboard checks passed; owner acceptance remains a separate milestone."
+      "nextAction": "Bounded standards package complete. Individual repository adaptations are a separate future task; retain disclosed accessibility test limits."
     },
     {
       "id": "M4",
@@ -89,7 +89,7 @@
       ],
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
-      "nextAction": "Agent package delivered and hosted evidence recorded. Complete STD-13 screen-reader verification and STD-09 owner acceptance before individual repository migrations.",
+      "nextAction": "Bounded standards package complete. Individual repository adaptations are a separate future task; retain disclosed accessibility test limits.",
       "unscopedWork": [],
       "priority": "P1",
       "sourceState": "done",
@@ -279,20 +279,37 @@
       "title": "Review the shared standard with the owner",
       "groupId": "G2",
       "milestoneId": "M2",
-      "state": "backlog",
-      "sourceState": "backlog",
+      "state": "done",
+      "sourceState": "done",
       "required": true,
       "blocked": false,
       "dependsOn": [],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "local implementation record; verification tracked separately",
+      "evidence": [
+        {
+          "kind": "owner-review",
+          "subject": "STD-09",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed",
+          "source": "audit/accessibility/owner-acceptance.json",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "ui-review",
+          "subject": "STD-09",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed",
+          "source": "audit/accessibility/wcag22-audit.json",
+          "observedOn": "2026-10-23"
+        }
+      ],
+      "completionBasis": "Owner-authorized scoped acceptance after audit, remediation and skill package verification.",
       "kind": "acceptance",
       "owner": "Owner",
       "priority": "P1",
       "issueUrl": null,
       "criterion": "Review the shared standard with the owner. Preserve project-owned branding and the stated source/evidence limits.",
-      "note": null,
+      "note": "Actual screen-reader speech and native browser zoom remain not-tested; see owner criterion amendment and scoped audit.",
       "deferReason": null
     },
     {
@@ -379,13 +396,13 @@
     },
     {
       "id": "STD-13",
-      "title": "Verify native keyboard and screen-reader interaction",
+      "title": "Verify scoped WCAG 2.2 accessibility and agent guidance",
       "groupId": "G3",
       "milestoneId": "M3",
-      "state": "active",
-      "sourceState": "active",
+      "state": "done",
+      "sourceState": "done",
       "required": true,
-      "blocked": true,
+      "blocked": false,
       "dependsOn": [
         "STD-10"
       ],
@@ -394,15 +411,31 @@
         {
           "kind": "keyboard-review",
           "source": "standards/ACCESSIBILITY.md"
+        },
+        {
+          "kind": "owner-review",
+          "subject": "STD-13",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed",
+          "source": "audit/accessibility/owner-acceptance.json",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "ui-review",
+          "subject": "STD-13",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed",
+          "source": "audit/accessibility/wcag22-audit.json",
+          "observedOn": "2026-10-23"
         }
       ],
-      "completionBasis": "Partial native keyboard evidence; actual screen-reader verification pending",
+      "completionBasis": "Owner-authorized scoped acceptance after audit, remediation and skill package verification.",
       "kind": "implementation",
       "owner": "Implementing agent",
       "priority": "P1",
       "issueUrl": null,
-      "criterion": "Record keyboard activation, traversal, focus restoration and actual screen-reader output, including remaining limitations.",
-      "note": "Native Edge keyboard checks passed after the milestone focus handoff fix, including the standard and Prehnite cards at narrow width. Actual screen-reader output cannot be observed through browser-only controls and remains unverified.",
+      "criterion": "Record scoped WCAG 2.2 A/AA review, repair discovered issues, verify keyboard/semantic/reflow behavior and distribute the accessibility skill; disclose unperformed actual assistive-technology and native zoom checks.",
+      "note": "Actual screen-reader speech and native browser zoom remain not-tested; see owner criterion amendment and scoped audit.",
       "deferReason": null
     },
     {
@@ -426,6 +459,12 @@
         {
           "kind": "runtime-replay",
           "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/final-runtime-replay.json"
+        },
+        {
+          "kind": "agent-evaluation",
+          "source": "audit/accessibility/skill-evaluation.md",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed"
         }
       ],
       "completionBasis": "Observed saved suite and reproducible local checks; see evaluation and verification records.",
@@ -433,8 +472,8 @@
       "owner": "Implementing agent",
       "priority": "P1",
       "issueUrl": null,
-      "criterion": "All ten skills are validated, independently exercised, saved and distributed with repository rules.",
-      "note": null,
+      "criterion": "All eleven skills are validated, independently exercised, saved in the canonical repository and distributed with repository rules.",
+      "note": "Additional personal save of accessibility skill rejected HTTP422; repository package and installer include it.",
       "deferReason": null
     },
     {
@@ -520,14 +559,15 @@
     }
   ],
   "warnings": [
-    "The original local and canonical observations remain retained. Agent workflow work expands the required scope from 13 to 16 leaves; this is scope growth, not a regression.",
-    "Repository/CI delivery does not imply owner acceptance. Individual repository migrations remain separate work. Actual screen-reader output remains unverified."
+    "Historical observations and all16 required IDs retained; scoped owner acceptance closes STD-09/13 under CR-0.4-ACCESSIBILITY.",
+    "Actual screen-reader speech and native browser zoom remain not-tested; this is not a full WCAG conformance claim. Individual migrations remain separate.",
+    "All eleven skills are distributed in the repository; additional personal collection save of the accessibility skill was rejected HTTP422."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
-    "owner": "Yi\u011fit",
-    "acceptanceAuthority": "Yi\u011fit; no owner acceptance has been recorded for this standard.",
-    "changeAuthority": "Yi\u011fit",
+    "owner": "Yiğit",
+    "acceptanceAuthority": "Yiğit; conditional scoped STD-09/13 acceptance recorded in audit/accessibility/owner-acceptance.json.",
+    "changeAuthority": "Yiğit",
     "approach": "adaptive",
     "successCriteria": [
       "Preserve real source counts and project brands.",
@@ -606,6 +646,15 @@
         "reason": "The owner requested a complete agentic tracking lifecycle before individual migrations.",
         "impact": "Adds STD-14 through STD-16, WP-5 and M4/G4; required denominator expands from 13 to 16. Authored implementation proceeds under the task request; baseline/owner acceptance remains unapproved.",
         "status": "proposed"
+      },
+      {
+        "id": "CR-0.4-ACCESSIBILITY",
+        "status": "implemented",
+        "reason": "Owner requested WCAG review, fixes and accessibility skill and explicitly permitted STD-09/13 completion afterward.",
+        "impact": "No added or removed IDs;16 required leaves retained. STD-13 original speech criterion amended to scoped review with explicit unknowns. Work14/16→16/16;milestones2/4→4/4. Personal skill collection save failed; canonical distribution complete.",
+        "approvedBy": "Yiğit",
+        "approvedAt": "2026-10-23",
+        "approvalSource": "audit/accessibility/owner-acceptance.json"
       }
     ],
     "risks": [

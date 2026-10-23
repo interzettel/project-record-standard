@@ -9,12 +9,12 @@ Shared work terminology, explicit percentages and traceable delivery. Each proje
 
 | Measure | Completion | Meaning |
 | --- | ---: | --- |
-| Required work | 14/16 · 87.5% | Completed leaf items in the named required scope. |
-| Accepted milestones | 2/4 · 50.0% | Milestones whose declared outcome gates passed. |
+| Required work | 16/16 · 100.0% | Completed leaf items in the named required scope. |
+| Accepted milestones | 4/4 · 100.0% | Milestones whose declared outcome gates passed. |
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-10-23 against `ac63312d`.
+Observed 2026-10-23 against `446c9917`.
 <!-- project-record:end -->
 
 ## What this repository supplies

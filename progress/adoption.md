@@ -1,5 +1,8 @@
 # Standard package planning and handoff
 
+Current outcome complete: 16/16 required leaves and 4/4 milestones under the owner’s scoped acceptance. See `audit/accessibility/owner-acceptance.json` and `wcag22-audit.json`. All eleven skills ship in the repository; personal accessibility-skill save failed HTTP422. Actual speech/native zoom remain untested. Individual migrations are separate future work. The prior planning context below is retained as history.
+
+
 The canonical manifest is `examples/projects.json`. Its `standard` entry uses the authored ledger as completion/scope authority, delivery supplement and individual change fragments as their named writers. Snapshots retain prior observations. GitHub owns hosted workflow results and source delivery; Yiğit owns acceptance. README/SVG/Pages are derived views.
 
 The completed implementation was published as `9b02b4380da76d16cabfe801fc368302d5ae5297`; its hosted verification, reusable workflow and Pages jobs passed in run 39866474910. Scouting at the earlier recorded observation found no hosted issues, PRs or releases and one hosted main branch at `59396a891fbc740ffe0be095f02934dfae270d38`. These are collection-specific observations, not permanent claims or a native Project inventory. Existing CI and Pages delivery are retained.

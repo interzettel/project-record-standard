@@ -1,0 +1,1098 @@
+{
+  "standard": "WCAG 2.2",
+  "target": "AA (including A)",
+  "normativeSource": "https://www.w3.org/TR/WCAG22/",
+  "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+  "observedAt": "2026-10-23T07:40:35.830Z",
+  "pages": [
+    "index.html",
+    "prehnite/progress.html",
+    "guide/START-HERE.html",
+    "guide/AGENT-WORKFLOWS.html",
+    "guide/ACCESSIBILITY.html"
+  ],
+  "states": [
+    "light",
+    "dark",
+    "map",
+    "readable list",
+    "filtered results",
+    "open inspector",
+    "dependency navigation",
+    "closed inspector"
+  ],
+  "environments": [
+    {
+      "browser": "Chrome 155.0.0.0",
+      "platform": "Linux x86_64, cloud browser",
+      "viewport": [
+        1363,
+        936
+      ],
+      "screenReader": null
+    }
+  ],
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "result": "not-tested",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not independently exercised to establish this criterion; no pass inferred."
+    },
+    {
+      "id": "1.2.1",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No audio/video content in scoped pages.",
+      "evidence": [],
+      "reason": "No audio/video content in scoped pages."
+    },
+    {
+      "id": "1.2.2",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No audio/video content in scoped pages.",
+      "evidence": [],
+      "reason": "No audio/video content in scoped pages."
+    },
+    {
+      "id": "1.2.3",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No audio/video content in scoped pages.",
+      "evidence": [],
+      "reason": "No audio/video content in scoped pages."
+    },
+    {
+      "id": "1.2.4",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No audio/video content in scoped pages.",
+      "evidence": [],
+      "reason": "No audio/video content in scoped pages."
+    },
+    {
+      "id": "1.2.5",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No audio/video content in scoped pages.",
+      "evidence": [],
+      "reason": "No audio/video content in scoped pages."
+    },
+    {
+      "id": "1.3.1",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source and DOM structure",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Native controls, headings, main landmarks and table headers; all eleven guides passed structure inspection.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "1.3.2",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source and keyboard traversal",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "DOM order follows controls, results and inspector; readable-list alternative supplied.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "1.3.3",
+      "result": "not-tested",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not independently exercised to establish this criterion; no pass inferred."
+    },
+    {
+      "id": "1.3.4",
+      "result": "not-tested",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not independently exercised to establish this criterion; no pass inferred."
+    },
+    {
+      "id": "1.3.5",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No personal-data input fields.",
+      "evidence": [],
+      "reason": "No personal-data input fields."
+    },
+    {
+      "id": "1.4.1",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source and rendered states",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "States include text labels and percentages, not colour alone.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "1.4.2",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No audio.",
+      "evidence": [],
+      "reason": "No audio."
+    },
+    {
+      "id": "1.4.3",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Computed colours and palette calculation",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "20 reference role pairs passed (minimum 5.31); generic default pairs separately pass ≥4.5 in regression tests.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "1.4.4",
+      "result": "not-tested",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Instrumented computed font enlargement",
+      "expected": null,
+      "actual": "16→32px tracker;17→34px guides; no root overflow.",
+      "evidence": [],
+      "reason": "Computed 2× font stress passed; native browser zoom was unavailable and remains untested."
+    },
+    {
+      "id": "1.4.5",
+      "result": "not-tested",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not independently exercised to establish this criterion; no pass inferred."
+    },
+    {
+      "id": "1.4.10",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Rendered 320 CSS px review",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "No root horizontal overflow in all 21 narrow scenarios.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "1.4.11",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source and computed focus inspection",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Explicit focus outlines and selected states supplied; inspected Close outline is 3px.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "1.4.12",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Rendered text-spacing fixture",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "All selected pages retain root reflow with specified spacing; no sub-24px controls.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "1.4.13",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No extra content triggered only by hover or focus.",
+      "evidence": [],
+      "reason": "No extra content triggered only by hover or focus."
+    },
+    {
+      "id": "2.1.1",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Actual browser keyboard",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Skip, filter, map/list, item/dependency open and Close paths exercised.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.1.2",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Actual browser keyboard",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Inspected paths permit traversal and Close returns focus; no focus trap.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.1.4",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No character-key shortcuts.",
+      "evidence": [],
+      "reason": "No character-key shortcuts."
+    },
+    {
+      "id": "2.2.1",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No time limits.",
+      "evidence": [],
+      "reason": "No time limits."
+    },
+    {
+      "id": "2.2.2",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No automatically updating or moving content.",
+      "evidence": [],
+      "reason": "No automatically updating or moving content."
+    },
+    {
+      "id": "2.3.1",
+      "result": "not-tested",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not independently exercised to establish this criterion; no pass inferred."
+    },
+    {
+      "id": "2.4.1",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Actual browser keyboard",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Skip links focus main on tracker and guide.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.4.2",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "DOM inspection",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Scoped pages and eleven generated guides have page titles.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.4.3",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Keyboard and DOM regression",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Filtered Close fallback and search commit corrected and retested.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.4.4",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source and DOM inspection",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Named guide, evidence and dependency links identify destinations in context.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.4.5",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source and browser navigation",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Site index supplies an additional route to every guide/reference/QA page; Agent workflows route exercised.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.4.6",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source and DOM inspection",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Controls use descriptive names; guides have one H1 and structured headings.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.4.7",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Computed focus and keyboard",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Explicit visible focus on inspected controls; Close outline observed.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.4.11",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Rendered keyboard observation",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Work map focus settles within viewport after filtered Close; selected milestone focus retained in prior attributed checks.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.5.1",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No multipoint/path gestures.",
+      "evidence": [],
+      "reason": "No multipoint/path gestures."
+    },
+    {
+      "id": "2.5.2",
+      "result": "not-tested",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not independently exercised to establish this criterion; no pass inferred."
+    },
+    {
+      "id": "2.5.3",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "DOM inspection",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Visible text labels are present in native control names.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "2.5.4",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No device-motion activation.",
+      "evidence": [],
+      "reason": "No device-motion activation."
+    },
+    {
+      "id": "2.5.7",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No dragging interactions.",
+      "evidence": [],
+      "reason": "No dragging interactions."
+    },
+    {
+      "id": "2.5.8",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Rendered measurement and CSS",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "No button/input/select/summary target below24px in26scenarios; dependency62.875×32px.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "3.1.1",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "DOM inspection",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Pages declare lang=en.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "3.1.2",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No extended passages in another language; names are proper names.",
+      "evidence": [],
+      "reason": "No extended passages in another language; names are proper names."
+    },
+    {
+      "id": "3.2.1",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Keyboard observation and source",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Focus alone does not navigate or submit.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "3.2.2",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source and browser filtering",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Filters update local results without navigating; explicit actions open details.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "3.2.3",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Generated guides share stable navigation order.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "3.2.4",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Repeated controls retain consistent names and roles.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "3.2.6",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No repeated help mechanism supplied.",
+      "evidence": [],
+      "reason": "No repeated help mechanism supplied."
+    },
+    {
+      "id": "3.3.1",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No submitted forms or input validation errors.",
+      "evidence": [],
+      "reason": "No submitted forms or input validation errors."
+    },
+    {
+      "id": "3.3.2",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "DOM inspection",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Search and selects have explicit labels.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "3.3.3",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No validation errors.",
+      "evidence": [],
+      "reason": "No validation errors."
+    },
+    {
+      "id": "3.3.4",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No legal/financial/data deletion submissions.",
+      "evidence": [],
+      "reason": "No legal/financial/data deletion submissions."
+    },
+    {
+      "id": "3.3.7",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No repeated required entry.",
+      "evidence": [],
+      "reason": "No repeated required entry."
+    },
+    {
+      "id": "3.3.8",
+      "result": "not-applicable",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "Source inspection of scoped pages",
+      "expected": null,
+      "actual": "No authentication.",
+      "evidence": [],
+      "reason": "No authentication."
+    },
+    {
+      "id": "4.1.2",
+      "result": "pass",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "DOM and regression tests",
+      "expected": "Meet criterion within the explicitly inspected scope.",
+      "actual": "Native buttons/inputs/selects, named controls and selected list/map aria-pressed states; screen-reader speech not verified.",
+      "evidence": [
+        "tests/accessibility.test.mjs",
+        "standards/ACCESSIBILITY.md"
+      ],
+      "reason": null
+    },
+    {
+      "id": "4.1.3",
+      "result": "not-tested",
+      "scope": [
+        "index.html",
+        "prehnite/progress.html",
+        "guide/START-HERE.html",
+        "guide/AGENT-WORKFLOWS.html",
+        "guide/ACCESSIBILITY.html"
+      ],
+      "method": "DOM identity/MutationObserver regression",
+      "expected": null,
+      "actual": "Persistent status node remains connected across updates; speech not tested.",
+      "evidence": [],
+      "reason": "Actual screen-reader announcement output unavailable."
+    }
+  ],
+  "findings": [
+    {
+      "id": "live-region replacement",
+      "result": "fixed",
+      "evidence": "tests/accessibility.test.mjs; https://github.com/interzettel/project-record-standard/actions/runs/39918534195"
+    },
+    {
+      "id": "filtered-close focus loss",
+      "result": "fixed",
+      "evidence": "tests/accessibility.test.mjs; https://github.com/interzettel/project-record-standard/actions/runs/39918534195"
+    },
+    {
+      "id": "search-change focus loss",
+      "result": "fixed",
+      "evidence": "tests/accessibility.test.mjs; https://github.com/interzettel/project-record-standard/actions/runs/39918534195"
+    },
+    {
+      "id": "readable-list selected semantics",
+      "result": "fixed",
+      "evidence": "tests/accessibility.test.mjs; https://github.com/interzettel/project-record-standard/actions/runs/39918534195"
+    },
+    {
+      "id": "generic default contrast",
+      "result": "fixed",
+      "evidence": "tests/accessibility.test.mjs; https://github.com/interzettel/project-record-standard/actions/runs/39918534195"
+    },
+    {
+      "id": "small dependency targets",
+      "result": "fixed",
+      "evidence": "tests/accessibility.test.mjs; https://github.com/interzettel/project-record-standard/actions/runs/39918534195"
+    }
+  ],
+  "assistiveTechnology": {
+    "result": "not-tested",
+    "browserVersion": "Chrome 155.0.0.0",
+    "screenReaderVersion": null,
+    "observedOutput": null
+  },
+  "acceptance": {
+    "authority": "Yiğit",
+    "source": "Owner instruction in this task conversation",
+    "instruction": "do the accessiblity check wgha 2.2 standard and after fixing issues and adding that skill to the package you may consider std 09 and 13 done",
+    "recordedOn": "2026-10-23",
+    "scope": "Conditional STD-09/13 acceptance after scoped audit, fixes and package skill integration; actual speech and native zoom remain not-tested."
+  },
+  "conformanceClaim": false,
+  "limits": [
+    "Scoped review, not a WCAG conformance certification.",
+    "Actual screen-reader speech, native browser zoom, OS forced colours and reduced-motion preferences were not exercised.",
+    "26 rendered scenarios cover the two branded reference trackers and three selected guides; source structure was checked across all eleven guides.",
+    "Five skill applications are source-only reviews; source evolved between baseline and guided applications, so no controlled causal comparison is claimed."
+  ],
+  "renderedMeasurements": {
+    "narrow": {
+      "width": 320,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "cases": 21,
+      "window": [
+        "2026-10-23T07:37:40.341Z",
+        "2026-10-23T07:39:03.020Z"
+      ],
+      "matrix": "Two references × light/dark × authored/spacing/double text; three guides × authored/spacing/double text (guides use OS light preference)."
+    },
+    "wide": {
+      "width": 1280,
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "cases": 5,
+      "window": [
+        "2026-10-23T07:40:25.669Z",
+        "2026-10-23T07:40:35.830Z"
+      ],
+      "matrix": "Two references and three guides, authored text, light."
+    },
+    "targetsBelow24": 0,
+    "spacing": {
+      "lineHeight": 1.5,
+      "letterSpacingEm": 0.12,
+      "wordSpacingEm": 0.16,
+      "paragraphMarginEm": 2
+    },
+    "computedFontDoubling": {
+      "trackers": [
+        16,
+        32
+      ],
+      "guides": [
+        17,
+        34
+      ]
+    },
+    "fixture": "qa/accessibility.html"
+  },
+  "keyboardObservations": [
+    "Skip link Enter focuses main landmark on tracker and guide.",
+    "Opening STD-13, filtering Status Done and closing with Space restores Find work; next Tab reaches Work map, bounds y460.8125–499.875 within 936px viewport.",
+    "Search STD-14 then Tab commits without losing input or disrupting traversal.",
+    "Readable list Enter and STD-14 Enter focus Close; selected list button has aria-pressed=true.",
+    "Dependency STD-05 measures 62.875×32px; opening a filtered-out dependency and closing restores Find work.",
+    "Close focus outline is 3px rgb(32,35,49).",
+    "Guide index link opens Agent workflows through a second navigation route."
+  ]
+}

@@ -1,5 +1,18 @@
 # Public-source distribution verification
 
+## Completed scoped accessibility review — 0.4.0
+
+Candidate `a8e7b07c3d3a4e4a1d6b15d3720507996be00b36` passed [hosted verification, reusable workflow and Pages](https://github.com/interzettel/project-record-standard/actions/runs/39918534195). Pages reported success at 2026-10-23T07:33:55.2831426Z. The audit covers all 55 WCAG 2.2 A/AA criteria with scoped results and explicit unknowns: [audit record](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/wcag22-audit.json).
+
+Cloud Chrome 155 on Linux exercised 26 rendered scenarios: both branded references in light/dark with authored, spaced and doubled text at 320 CSS px; three guides with those text settings; and all five pages at 1280 px. Every scenario had equal client/scroll width and no measured button, input, select or summary target below 24 px. All eleven guides passed DOM structure checks. The [review fixture](../qa/accessibility.html) makes these measurements repeatable.
+
+Keyboard retesting confirmed skip links, filtered Close → Find work → Tab to Work map, search commit without focus loss, readable-list selected state, and filtered dependency closure. The earlier filtered Close failure focused BODY. The repaired status node survives result updates; seven component regression tests supplement seven calculation tests. The Python suite contains 35 tests. Default component contrast is checked separately from the 20 reference palette pairs.
+
+Yiğit explicitly authorized STD-09 and STD-13 closure after audit, fixes and skill integration. The [acceptance receipt](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/owner-acceptance.json) preserves the original STD-13 criterion and its authorized scoped amendment. The same 16 required IDs move from 14/16 (87.5%) to 16/16 (100%); milestones from 2/4 (50%) to 4/4 (100%). This is bounded package completion, not a full WCAG conformance certification.
+
+Actual screen-reader speech, native browser zoom and OS forced-colour/reduced-motion settings were not exercised. Computed doubled fonts are only a text stress check. Earlier open-gate observations below remain historical. All eleven skills, including accessibility, are packaged in the canonical repository; the additional personal Skills save was rejected HTTP422. Individual repository migrations remain separate.
+
+
 Implementation 0.3.0, contract 0.2.0. Latest local checks: 23 October 2026.
 
 The ten saved workflow skill bodies match the canonical distribution. Five preparation samples per workflow and executable cold/hot fixture applications are documented in [the evaluation record](https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md), including limitations, the corrected alias-direction failure and capacity interruptions. Final runtime replay preserved both fixture inputs, installed all ten skills additively and repeated with no changes.

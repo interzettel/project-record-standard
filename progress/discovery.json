@@ -67,7 +67,19 @@
     }
   ],
   "unresolved": [
-    "Actual screen-reader output",
-    "Owner acceptance"
-  ]
+    "Actual screen-reader speech and native browser zoom (disclosed test limitations)",
+    "Additional personal Skills save rejected HTTP422; repository package complete"
+  ],
+  "completionObservation": {
+    "observedOn": "2026-10-23",
+    "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+    "coverage": "Selected hosted run and scoped accessibility audit only; earlier issue/PR/branch collection dates are unchanged.",
+    "result": "Bounded package accepted; no individual migration selected.",
+    "limits": [
+      "Scoped review, not a WCAG conformance certification.",
+      "Actual screen-reader speech, native browser zoom, OS forced colours and reduced-motion preferences were not exercised.",
+      "26 rendered scenarios cover the two branded reference trackers and three selected guides; source structure was checked across all eleven guides.",
+      "Five skill applications are source-only reviews; source evolved between baseline and guided applications, so no controlled causal comparison is claimed."
+    ]
+  }
 }

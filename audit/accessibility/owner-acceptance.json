@@ -1,0 +1,25 @@
+{
+  "authority": "Yiğit",
+  "recordedOn": "2026-10-23",
+  "instruction": "do the accessiblity check wgha 2.2 standard and after fixing issues and adding that skill to the package you may consider std 09 and 13 done",
+  "source": "Owner instruction in task conversation",
+  "conditionsSatisfiedBy": {
+    "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+    "hostedRun": "https://github.com/interzettel/project-record-standard/actions/runs/39918534195",
+    "audit": "audit/accessibility/wcag22-audit.json",
+    "skill": "skills/verify-project-accessibility/SKILL.md"
+  },
+  "criterionAmendment": {
+    "subject": "STD-13",
+    "before": "Record keyboard activation, traversal, focus restoration and actual screen-reader output, including remaining limitations.",
+    "after": "Record scoped WCAG 2.2 A/AA review, repair discovered issues, verify keyboard/semantic/reflow behavior and distribute the accessibility skill; disclose unperformed actual assistive-technology and native zoom checks."
+  },
+  "interpretation": "Owner explicitly permits closing STD-09 and STD-13 after the stated conditions. This amends the original actual-speech gate for this bounded package, without asserting that speech was tested or claiming full WCAG conformance.",
+  "workBefore": "14/16 (87.5%)",
+  "workAfter": "16/16 (100%)",
+  "milestonesBefore": "2/4 (50%)",
+  "milestonesAfter": "4/4 (100%)",
+  "addedIds": [],
+  "removedIds": [],
+  "personalSkillsSave": "Additional personal Skills collection push rejected HTTP422; canonical repository distribution contains all eleven skills."
+}

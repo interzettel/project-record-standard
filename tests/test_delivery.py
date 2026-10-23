@@ -29,8 +29,10 @@ class DeliveryTests(unittest.TestCase):
         before = copy.deepcopy(self.record)
         before.pop('governance')
         before.pop('releasePlans')
+        # Make the scope-change scenario independent of live project completion.
+        before['items'][0].update(state='backlog', sourceState='backlog', blocked=False)
         after = copy.deepcopy(before)
-        pending = next(i for i in after['items'] if i['state'] != 'done')
+        pending = after['items'][0]
         pending['state'] = 'done'
         added = copy.deepcopy(after['items'][0])
         added.update(id='ADDED', state='backlog')

@@ -1,5 +1,8 @@
 # Project record standard
 
+Current outcome complete: 16/16 required leaves and 4/4 milestones under the owner’s scoped acceptance. See `audit/accessibility/owner-acceptance.json` and `wcag22-audit.json`. All eleven skills ship in the repository; personal accessibility-skill save failed HTTP422. Actual speech/native zoom remain untested. Individual migrations are separate future work. The prior planning context below is retained as history.
+
+
 Give independently branded projects shared words for scope, progress, evidence and delivery. Maintainers and agents should be able to explain what works, what remains, why a percentage changed and what proof is missing. Outsiders enter through a readable README and the project's own interactive website.
 
 The standard supplies a versioned JSON contract, adapters, exact-count calculators, history bridges, change/release/deployment records, optional browser components, offline CLI/action/workflow, agent skills and an additive instructions installer. Its own example uses navy/lavender; Prehnite retains a distinct composition. Other projects keep their fonts, palette, routes and technology.

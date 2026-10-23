@@ -30,3 +30,5 @@ The source files evolved between controls and forward applications. This was a p
 - [x] Discipline rationalization tables are inapplicable: this is a technique/reference workflow; concrete artifact and authority gaps use structural fields and conditional guidance.
 
 The reusable skill is distributed with the standard. Installation copies it and its report template alongside the other ten workflows, preserving existing repository instructions and branding.
+
+The additional personal Skills collection save was rejected with HTTP422. No successful personal save is claimed. The eleven-skill canonical repository package and installer include the new workflow.
