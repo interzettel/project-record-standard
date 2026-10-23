@@ -67,12 +67,13 @@
         "STD-10",
         "STD-11",
         "STD-12",
-        "STD-13"
+        "STD-13",
+        "STD-18"
       ],
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
       "unscopedWork": [],
-      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits."
+      "nextAction": "Owner sets native zoom and supplies screen-reader listening/version evidence; agent verifies layout and records actual outputs for STD-18."
     },
     {
       "id": "M4",
@@ -466,6 +467,13 @@
           "source": "audit/accessibility/skill-evaluation.md",
           "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
           "result": "passed"
+        },
+        {
+          "kind": "save-verification",
+          "subject": "STD-14",
+          "result": "passed",
+          "source": "audit/accessibility/native-check-followup.json",
+          "observedOn": "2026-10-23"
         }
       ],
       "completionBasis": "Observed saved suite and reproducible local checks; see evaluation and verification records.",
@@ -474,7 +482,7 @@
       "priority": "P1",
       "issueUrl": null,
       "criterion": "All eleven skills are validated, independently exercised, saved in the canonical repository and distributed with repository rules.",
-      "note": "Additional personal save of accessibility skill rejected HTTP422; repository package and installer include it.",
+      "note": "Accessibility skill additionally saved to personal Skills; retained remote materialization and report-template hash match verified.",
       "deferReason": null
     },
     {
@@ -596,13 +604,43 @@
       "completionBasis": "Observed scenario applications and local full-suite/source-distribution/site checks; this adds setup guidance, not autonomous permissions.",
       "note": "No readiness grade assigned to this repository. Actual screen-reader/native zoom limits from the earlier audit remain unchanged.",
       "deferReason": null
+    },
+    {
+      "id": "STD-18",
+      "title": "Complete native zoom and actual screen-reader verification",
+      "groupId": "G3",
+      "milestoneId": "M3",
+      "state": "active",
+      "sourceState": "active",
+      "required": true,
+      "blocked": true,
+      "dependsOn": [
+        "STD-13"
+      ],
+      "unmappedDependencies": [],
+      "kind": "verification",
+      "owner": "Implementing agent; owner supplies native control and listening evidence",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Record real browser200% text-resize and400% reflow behavior with visible focus and complete interactions, plus named/versioned screen-reader spoken output for landmarks, controls, result updates and inspector focus. Preserve observed failures and limitations.",
+      "evidence": [
+        {
+          "kind": "verification-attempt",
+          "subject": "STD-18",
+          "result": "blocked",
+          "source": "audit/accessibility/native-check-followup.json",
+          "observedOn": "2026-10-23"
+        }
+      ],
+      "completionBasis": "Blocked: browser shortcuts produced no observable native zoom; actual screen-reader speech cannot be captured through available controls.",
+      "note": "Original STD-13 scoped acceptance is retained. This newly requested follow-up adds the previously excluded native checks without retroactively claiming they passed.",
+      "deferReason": null
     }
   ],
   "warnings": [
     "Historical observations and all16 required IDs retained; scoped owner acceptance closes STD-09/13 under CR-0.4-ACCESSIBILITY.",
     "Actual screen-reader speech and native browser zoom remain not-tested; this is not a full WCAG conformance claim. Individual migrations remain separate.",
-    "All eleven skills are distributed in the repository; additional personal collection save of the accessibility skill was rejected HTTP422.",
-    "Readiness integration adds STD-17:17/17 required leaves. L0–L5 readiness, R0–R4 task risk and work percentages are distinct; no grade or permissions inferred from this tracker."
+    "Personal accessibility skill save now verified. Newly requested native checks remain blocked in STD-18;17/18 (94.4%) is completion of the expanded scope, separate from L0–L5 readiness."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
@@ -659,7 +697,8 @@
           "STD-10",
           "STD-11",
           "STD-12",
-          "STD-13"
+          "STD-13",
+          "STD-18"
         ]
       },
       {
@@ -706,6 +745,15 @@
         "approvedBy": "Yiğit",
         "approvedAt": "2026-10-23",
         "approvalSource": "Task conversation: go to the personal agent stack repository and understand L1 L2 L3 L4 L5 and make that part of repository setting process."
+      },
+      {
+        "id": "CR-NATIVE-FOLLOWUP",
+        "status": "implemented",
+        "reason": "Owner asked to complete the previously disclosed native zoom/screen-reader and personal Skills save limits.",
+        "impact": "Personal skill save resolved. Adds required STD-18 for native verification beyond original scoped acceptance:17/17→17/18 (94.4%); milestone gates4/4→3/4. No existing ID removed or acceptance rewritten.",
+        "approvedBy": "Yiğit",
+        "approvedAt": "2026-10-23",
+        "approvalSource": "Task conversation: selected remaining native checks and personal save limits; request do these as well."
       }
     ],
     "risks": [

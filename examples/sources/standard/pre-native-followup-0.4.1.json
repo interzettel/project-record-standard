@@ -1,0 +1,759 @@
+{
+  "contractVersion": "0.2.0",
+  "groups": [
+    {
+      "id": "G1",
+      "title": "Implementation and technical verification",
+      "panel": "Build"
+    },
+    {
+      "id": "G2",
+      "title": "Owner review",
+      "panel": "Review"
+    },
+    {
+      "id": "G3",
+      "title": "Canonical repository and hosted verification",
+      "panel": "Deliver"
+    },
+    {
+      "id": "G4",
+      "title": "Agent workflows and operations",
+      "panel": "Shared standard"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "title": "Technical package verified",
+      "goal": "Record the implementation checks and their limits.",
+      "horizon": "Now",
+      "groupIds": [
+        "G1"
+      ],
+      "gateItemIds": [
+        "STD-08"
+      ],
+      "acceptanceRule": "all-gate-items",
+      "sourceAccepted": null,
+      "unscopedWork": [],
+      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits."
+    },
+    {
+      "id": "M2",
+      "title": "Shared standard accepted for adaptation",
+      "goal": "The owner reviews terminology, behavior and adaptation boundaries.",
+      "horizon": "Next",
+      "groupIds": [
+        "G2"
+      ],
+      "gateItemIds": [
+        "STD-09"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": true,
+      "unscopedWork": [],
+      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits."
+    },
+    {
+      "id": "M3",
+      "title": "Canonical example delivered and interactions verified",
+      "goal": "Publish the public toolkit, observe hosted checks and Pages, and record native interaction evidence.",
+      "horizon": "Now",
+      "groupIds": [
+        "G3"
+      ],
+      "gateItemIds": [
+        "STD-10",
+        "STD-11",
+        "STD-12",
+        "STD-13"
+      ],
+      "acceptanceRule": "all-gate-items",
+      "sourceAccepted": null,
+      "unscopedWork": [],
+      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits."
+    },
+    {
+      "id": "M4",
+      "title": "Agents can establish and operate the tracking system",
+      "goal": "Scout, plan, adapt, update, report, present and recover tracking while preserving brand, scope history and authority.",
+      "horizon": "Now",
+      "groupIds": [
+        "G4"
+      ],
+      "gateItemIds": [
+        "STD-14",
+        "STD-15",
+        "STD-16",
+        "STD-17"
+      ],
+      "acceptanceRule": "all-gate-items",
+      "sourceAccepted": null,
+      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits.",
+      "unscopedWork": [],
+      "priority": "P1",
+      "sourceState": "done",
+      "evidence": []
+    }
+  ],
+  "items": [
+    {
+      "id": "STD-01",
+      "title": "Define shared terminology and calculation rules",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Define shared terminology and calculation rules. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-02",
+      "title": "Preserve source identity through adapters",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Preserve source identity through adapters. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-03",
+      "title": "Explain progress and scope changes",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Explain progress and scope changes. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-04",
+      "title": "Generate changelogs and release readiness",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Generate changelogs and release readiness. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-05",
+      "title": "Run a reusable offline build action",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Run a reusable offline build action. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-06",
+      "title": "Define cold setup and hot adaptation",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Define cold setup and hot adaptation. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-07",
+      "title": "Map the implementation to PMI guidance",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "local implementation record; verification tracked separately",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Map the implementation to PMI guidance. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-08",
+      "title": "Verify the implementation and reference views",
+      "groupId": "G1",
+      "milestoneId": "M1",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "test",
+          "source": "VERIFICATION-public.md"
+        },
+        {
+          "kind": "ui-review",
+          "source": "standards/ACCESSIBILITY.md"
+        }
+      ],
+      "completionBasis": "Recorded local verification; see VERIFICATION-public.md",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Verify the implementation and reference views. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-09",
+      "title": "Review the shared standard with the owner",
+      "groupId": "G2",
+      "milestoneId": "M2",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "owner-review",
+          "subject": "STD-09",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed",
+          "source": "audit/accessibility/owner-acceptance.json",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "ui-review",
+          "subject": "STD-09",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed",
+          "source": "audit/accessibility/wcag22-audit.json",
+          "observedOn": "2026-10-23"
+        }
+      ],
+      "completionBasis": "Owner-authorized scoped acceptance after audit, remediation and skill package verification.",
+      "kind": "acceptance",
+      "owner": "Owner",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Review the shared standard with the owner. Preserve project-owned branding and the stated source/evidence limits.",
+      "note": "Actual screen-reader speech and native browser zoom remain not-tested; see owner criterion amendment and scoped audit.",
+      "deferReason": null
+    },
+    {
+      "id": "STD-10",
+      "title": "Establish the canonical public standards repository",
+      "groupId": "G3",
+      "milestoneId": "M3",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "repository",
+          "source": "https://github.com/interzettel/project-record-standard/tree/10a9e6501a9ed64f57ad139a56e3fc9fdd8b99ef"
+        }
+      ],
+      "completionBasis": "Observed canonical repository or hosted run; see linked evidence",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Public source package installed at interzettel/project-record-standard, excluding private owner fixtures.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-11",
+      "title": "Verify the action and reusable workflow on GitHub",
+      "groupId": "G3",
+      "milestoneId": "M3",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-10"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "hosted-ci",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39800961253"
+        }
+      ],
+      "completionBasis": "Observed canonical repository or hosted run; see linked evidence",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "An attributed hosted run passes the composite action, reusable workflow and relevant checks.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-12",
+      "title": "Deploy and inspect the public example website",
+      "groupId": "G3",
+      "milestoneId": "M3",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-10"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "deployment",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39800961253/job/119901281252"
+        }
+      ],
+      "completionBasis": "Observed canonical repository or hosted run; see linked evidence",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Pages serves the example tracker, guide and independently branded Prehnite reference from a passing run.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-13",
+      "title": "Verify scoped WCAG 2.2 accessibility and agent guidance",
+      "groupId": "G3",
+      "milestoneId": "M3",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-10"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "keyboard-review",
+          "source": "standards/ACCESSIBILITY.md"
+        },
+        {
+          "kind": "owner-review",
+          "subject": "STD-13",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed",
+          "source": "audit/accessibility/owner-acceptance.json",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "ui-review",
+          "subject": "STD-13",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed",
+          "source": "audit/accessibility/wcag22-audit.json",
+          "observedOn": "2026-10-23"
+        }
+      ],
+      "completionBasis": "Owner-authorized scoped acceptance after audit, remediation and skill package verification.",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Record scoped WCAG 2.2 A/AA review, repair discovered issues, verify keyboard/semantic/reflow behavior and distribute the accessibility skill; disclose unperformed actual assistive-technology and native zoom checks.",
+      "note": "Actual screen-reader speech and native browser zoom remain not-tested; see owner criterion amendment and scoped audit.",
+      "deferReason": null
+    },
+    {
+      "id": "STD-14",
+      "title": "Create and save the complete agent workflow suite",
+      "groupId": "G4",
+      "milestoneId": "M4",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-05"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "agent-evaluation",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md"
+        },
+        {
+          "kind": "runtime-replay",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/final-runtime-replay.json"
+        },
+        {
+          "kind": "agent-evaluation",
+          "source": "audit/accessibility/skill-evaluation.md",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "result": "passed"
+        }
+      ],
+      "completionBasis": "Observed saved suite and reproducible local checks; see evaluation and verification records.",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "All eleven skills are validated, independently exercised, saved in the canonical repository and distributed with repository rules.",
+      "note": "Additional personal save of accessibility skill rejected HTTP422; repository package and installer include it.",
+      "deferReason": null
+    },
+    {
+      "id": "STD-15",
+      "title": "Verify agent installation, scouting, adaptation and recovery",
+      "groupId": "G4",
+      "milestoneId": "M4",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-14"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "agent-evaluation",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md"
+        },
+        {
+          "kind": "runtime-replay",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/final-runtime-replay.json"
+        }
+      ],
+      "completionBasis": "Observed saved suite and reproducible local checks; see evaluation and verification records.",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Disposable cold/hot applications preserve source/brand, reconcile named counts and exercise privacy, replay, failure and repeated runs; package/runtime checks pass.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-16",
+      "title": "Verify and deploy the complete standards package",
+      "groupId": "G4",
+      "milestoneId": "M4",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-14",
+        "STD-15"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "hosted-ci",
+          "subject": "STD-16",
+          "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+          "result": "passed",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "deployment",
+          "subject": "STD-16",
+          "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+          "result": "passed",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910/job/120129913901",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "ui-review",
+          "subject": "STD-16",
+          "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+          "result": "passed",
+          "source": "standards/ACCESSIBILITY.md; audit/skills/hosted-observation.json",
+          "observedOn": "2026-10-23"
+        }
+      ],
+      "completionBasis": "Hosted verification, reusable workflow and Pages passed for the identified candidate; live tracker and agent guide inspected in Edge.",
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Hosted checks pass the packaged suite and Pages serves the matching guide/example; actual run and deployment evidence are recorded.",
+      "note": null,
+      "deferReason": null
+    },
+    {
+      "id": "STD-17",
+      "title": "Include evidence-based L0–L5 readiness in project setup",
+      "groupId": "G4",
+      "milestoneId": "M4",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-14",
+        "STD-15"
+      ],
+      "unmappedDependencies": [],
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Cold and hot setup require the ten-dimension L0–L5 assessment, separate current/target grade and R0–R4 authority, central assessment references, environment tailoring, selected remediation and re-audit triggers; bundled installation and guide build checks plus five guided applications pass.",
+      "evidence": [
+        {
+          "kind": "agent-evaluation",
+          "subject": "STD-17",
+          "result": "passed",
+          "source": "audit/readiness/EVALUATION.md",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "test",
+          "subject": "STD-17",
+          "result": "passed",
+          "source": "tests/test_packaging.py; tests/test_site.py; VERIFICATION-public.md",
+          "observedOn": "2026-10-23"
+        }
+      ],
+      "completionBasis": "Observed scenario applications and local full-suite/source-distribution/site checks; this adds setup guidance, not autonomous permissions.",
+      "note": "No readiness grade assigned to this repository. Actual screen-reader/native zoom limits from the earlier audit remain unchanged.",
+      "deferReason": null
+    }
+  ],
+  "warnings": [
+    "Historical observations and all16 required IDs retained; scoped owner acceptance closes STD-09/13 under CR-0.4-ACCESSIBILITY.",
+    "Actual screen-reader speech and native browser zoom remain not-tested; this is not a full WCAG conformance claim. Individual migrations remain separate.",
+    "All eleven skills are distributed in the repository; additional personal collection save of the accessibility skill was rejected HTTP422.",
+    "Readiness integration adds STD-17:17/17 required leaves. L0–L5 readiness, R0–R4 task risk and work percentages are distinct; no grade or permissions inferred from this tracker."
+  ],
+  "governance": {
+    "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
+    "owner": "Yiğit",
+    "acceptanceAuthority": "Yiğit; conditional scoped STD-09/13 acceptance recorded in audit/accessibility/owner-acceptance.json.",
+    "changeAuthority": "Yiğit",
+    "approach": "adaptive",
+    "successCriteria": [
+      "Preserve real source counts and project brands.",
+      "Explain percentage changes and publication claims.",
+      "Provide reproducible automation and a bounded adaptation handoff."
+    ],
+    "wbsCoverage": "complete",
+    "workPackages": [
+      {
+        "id": "WP-1",
+        "deliverable": "Shared accounting contract",
+        "owner": "Implementing agent",
+        "acceptance": "Source-count parity and semantic tests pass.",
+        "workItemIds": [
+          "STD-01",
+          "STD-02"
+        ]
+      },
+      {
+        "id": "WP-2",
+        "deliverable": "History and delivery tooling",
+        "owner": "Implementing agent",
+        "acceptance": "Scope bridges, release gates and pipeline fixtures pass.",
+        "workItemIds": [
+          "STD-03",
+          "STD-04",
+          "STD-05"
+        ]
+      },
+      {
+        "id": "WP-3",
+        "deliverable": "Verified adoption package",
+        "owner": "Implementing agent; owner reviews adoption",
+        "acceptance": "Profiles, PMI mapping, verification record and owner review are recorded.",
+        "workItemIds": [
+          "STD-06",
+          "STD-07",
+          "STD-08",
+          "STD-09"
+        ]
+      },
+      {
+        "id": "WP-4",
+        "deliverable": "Canonical repository, hosted workflow and accessible example site",
+        "owner": "Implementing agent; owner supplies any unavailable assistive-technology verification",
+        "acceptance": "Public source installation, passing hosted jobs, observed Pages deployment and native interaction evidence are recorded.",
+        "workItemIds": [
+          "STD-10",
+          "STD-11",
+          "STD-12",
+          "STD-13"
+        ]
+      },
+      {
+        "id": "WP-5",
+        "deliverable": "Agentic planning and operations package",
+        "owner": "Implementing agent; owner reviews adoption",
+        "acceptance": "Saved skill suite, disposable applications, installation/package checks and hosted delivery are evidenced; manual acceptance boundaries remain visible.",
+        "workItemIds": [
+          "STD-14",
+          "STD-15",
+          "STD-16",
+          "STD-17"
+        ]
+      }
+    ],
+    "baselines": [
+      {
+        "id": "STD-scope-0.2",
+        "status": "observed",
+        "note": "Authored implementation scope; no approved baseline is inferred."
+      }
+    ],
+    "changeRequests": [
+      {
+        "id": "CR-0.3-AGENTS",
+        "reason": "The owner requested a complete agentic tracking lifecycle before individual migrations.",
+        "impact": "Adds STD-14 through STD-16, WP-5 and M4/G4; required denominator expands from 13 to 16. Authored implementation proceeds under the task request; baseline/owner acceptance remains unapproved.",
+        "status": "proposed"
+      },
+      {
+        "id": "CR-0.4-ACCESSIBILITY",
+        "status": "implemented",
+        "reason": "Owner requested WCAG review, fixes and accessibility skill and explicitly permitted STD-09/13 completion afterward.",
+        "impact": "No added or removed IDs;16 required leaves retained. STD-13 original speech criterion amended to scoped review with explicit unknowns. Work14/16→16/16;milestones2/4→4/4. Personal skill collection save failed; canonical distribution complete.",
+        "approvedBy": "Yiğit",
+        "approvedAt": "2026-10-23",
+        "approvalSource": "audit/accessibility/owner-acceptance.json"
+      },
+      {
+        "id": "CR-0.4.1-READINESS",
+        "status": "implemented",
+        "reason": "Owner requested understanding Personal Agent Stack L1–L5 and making it part of repository setup.",
+        "impact": "Adds STD-17 to WP-5/M4; required scope16→17. Prior16/16 observation retained. New leaf is implementation verification, not an autonomy promotion or new owner acceptance claim.",
+        "approvedBy": "Yiğit",
+        "approvedAt": "2026-10-23",
+        "approvalSource": "Task conversation: go to the personal agent stack repository and understand L1 L2 L3 L4 L5 and make that part of repository setting process."
+      }
+    ],
+    "risks": [
+      {
+        "id": "R-1",
+        "event": "A migration could blend denominators or overwrite a project brand.",
+        "owner": "Adapting agent; owner reviews",
+        "response": "Require before/after counts, additive integration and rollback.",
+        "trigger": "Any count difference or replacement of the host shell.",
+        "status": "open"
+      }
+    ],
+    "operations": {
+      "status": "planned",
+      "owner": "Repository maintainer",
+      "supportRoute": "Owning repository issue or accepted coordination board",
+      "boundaries": "Offline read-only projection; no inference or external write loop.",
+      "recovery": "Replay pinned sources into owned output and restore the previous renderer if cutover fails."
+    },
+    "tailoring": {
+      "governance": {
+        "status": "applied",
+        "reason": "Record owner, authorities, source limits and decisions."
+      },
+      "scope": {
+        "status": "applied",
+        "reason": "Map deliverables to accounting leaves without duplicate credit."
+      },
+      "schedule": {
+        "status": "applied",
+        "reason": "Use dependencies and horizons; committed dates are not estimated in this local review."
+      },
+      "finance": {
+        "status": "tailored-out",
+        "reason": "No project cost baseline is defined for this review; paid services require a separate budget decision."
+      },
+      "stakeholders": {
+        "status": "applied",
+        "reason": "Owner review and public/private audiences are explicit."
+      },
+      "resources": {
+        "status": "applied",
+        "reason": "Offline tools have no inference or autonomous external writes."
+      },
+      "risk": {
+        "status": "applied",
+        "reason": "Record brand, source and privacy risks with intervention triggers."
+      }
+    }
+  }
+}

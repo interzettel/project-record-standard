@@ -1,5 +1,22 @@
 # Reference-view accessibility review
 
+## Personal save resolved; native checks awaiting direct evidence
+
+The accessibility skill was saved successfully to the personal Skills collection on 23 October 2026. A subsequent remote fetch verified the persisted skill and matching report-template hash. The earlier HTTP422 save failure below is historical. The receipt is in [native check follow-up](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/native-check-followup.json).
+
+Native zoom was attempted in the connected local Edge browser using zoom/reset shortcuts and Ctrl+wheel. The observed viewport width and device-pixel ratio did not change, so neither 200% nor 400% was established. This is an unavailable native-control test, not a passing resize check. No screen-reader speech or version can be observed through the available browser controls.
+
+The owner requested these checks after the scoped package acceptance. STD-18 records that expanded scope: 17/17 becomes 17/18 (94.4%), with 3/4 milestone gates accepted. Original STD-13 acceptance is retained. Completing the remaining check requires actual native zoom plus versioned Narrator/NVDA speech observations.
+
+### Direct check sequence
+
+1. In the live tracker, use Edge’s native menu to set zoom to 200%. Inspect all controls and the item inspector; repeat at 400% for reflow. Keep the zoom percentage visible and retain any clipping, overlap or lost controls. Reset to 100% afterward.
+2. Start a real screen reader, record its name/version and the Edge version. On Windows, Narrator starts/stops with Windows+Ctrl+Enter. Record what it actually says as you use the skip link, reach the main content, traverse milestone/filter controls and open/close a work item.
+3. Change Find work and Status. Confirm a short result update is announced, control names and selected states are understandable, and focus returns to the matching item or Find work after closure. Also check the guide navigation and the history table. Report failures and exact observed phrases; semantic inspection alone does not pass this check.
+
+Native control and listening evidence must come from the actual browser/screen reader. There is no requirement for exact identical spoken phrasing across screen readers.
+
+
 ## Completed scoped accessibility review — 0.4.0
 
 Candidate `a8e7b07c3d3a4e4a1d6b15d3720507996be00b36` passed [hosted verification, reusable workflow and Pages](https://github.com/interzettel/project-record-standard/actions/runs/39918534195). Pages reported success at 2026-10-23T07:33:55.2831426Z. The audit covers all 55 WCAG 2.2 A/AA criteria with scoped results and explicit unknowns: [audit record](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/wcag22-audit.json).

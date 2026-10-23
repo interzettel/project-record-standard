@@ -106,16 +106,22 @@
           "visibility": "public",
           "authority": "Authored readiness setup integration change",
           "observedOn": "2026-10-23"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.4.1-NATIVE-FOLLOWUP.json",
+          "visibility": "public",
+          "authority": "Authored personal save recovery and native verification attempt",
+          "observedOn": "2026-10-23"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-readiness-0.4.1.json",
+      "previousSourceFile": "sources/standard/pre-native-followup-0.4.1.json",
       "previousSource": {
         "kind": "file-snapshot",
-        "path": "examples/sources/standard/pre-readiness-0.4.1.json",
-        "commit": "34acc83b56621bc41ad08f6a28e9dddc09e5999f",
+        "path": "examples/sources/standard/pre-native-followup-0.4.1.json",
+        "commit": "60590b06bb8475b3d19235f36a6fb9cd8420b245",
         "observedOn": "2026-10-23",
         "updatedOn": "2026-10-23",
-        "authority": "Exact16/16 accepted scoped package before the owner-requested readiness setup extension."
+        "authority": "Exact17/17 scoped package before newly requested native verification."
       },
       "snapshots": [
         {
@@ -171,6 +177,17 @@
             "observedOn": "2026-10-23",
             "updatedOn": "2026-10-23",
             "authority": "Exact retained14/16 source before owner-authorized accessibility closure."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-readiness-0.4.1.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/pre-readiness-0.4.1.json",
+            "commit": "34acc83b56621bc41ad08f6a28e9dddc09e5999f",
+            "observedOn": "2026-10-23",
+            "updatedOn": "2026-10-23",
+            "authority": "Exact16/16 accepted scoped package before the owner-requested readiness setup extension."
           }
         }
       ]

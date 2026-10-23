@@ -1,0 +1,11 @@
+{
+  "id": "CH-0.4.1-NATIVE-FOLLOWUP",
+  "component": "standard",
+  "type": "fix",
+  "summary": "Verify retained personal accessibility skill save; record actual native-control limitations and newly requested pending native accessibility verification.",
+  "workItemIds": [
+    "STD-14",
+    "STD-18"
+  ],
+  "compatibility": "No runtime/contract change. Prior acceptance/history retained; actual native zoom and screen-reader speech remain untested."
+}

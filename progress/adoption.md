@@ -1,5 +1,8 @@
 # Standard package planning and handoff
 
+Current follow-up: personal accessibility skill save verified. Owner-requested native zoom and actual screen-reader checks are blocked in STD-18: 17/18 required work (94.4%), 3/4 milestone gates. Prior completed-scope observations below remain historical. See `audit/accessibility/native-check-followup.json`.
+
+
 Current outcome complete: 17/17 required leaves and 4/4 milestones. Owner-requested readiness integration adds STD-17 after the accepted 16/16 package; prior snapshots remain. Readiness itself is unassessed here. All eleven skills ship with suite 0.4.1. Individual migrations remain separate. Earlier context below is historical.
 
 

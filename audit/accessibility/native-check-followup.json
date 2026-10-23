@@ -1,0 +1,49 @@
+{
+  "observedOn": "2026-10-23",
+  "revision": "60590b06bb8475b3d19235f36a6fb9cd8420b245",
+  "personalSkillSave": {
+    "result": "passed",
+    "localCommit": "bfc301f",
+    "remoteRetainedCommit": "6708cb6e25fe013568c9d88c5721d362ad1e9f53",
+    "skillId": "skill-6adb9304254881918bcbb1305c50dff0",
+    "method": "Git push succeeded; fetched remote materialization contains SKILL.md, interface metadata and report template under persisted skill ID.",
+    "templateSha256": "242521fd3cd356c9d53769581b3745dffe776ec9ac6804ce0fbd667383b92cd6",
+    "canonicalTemplateMatch": true,
+    "discoveryLimit": "Current-turn skill catalog has not refreshed; remote retention, not current-turn invocation, was verified."
+  },
+  "nativeZoom": {
+    "result": "not-tested",
+    "environment": "Connected local Microsoft Edge",
+    "attempts": [
+      "Control + plus",
+      "Control + equals",
+      "Control + 0",
+      "Control + wheel up"
+    ],
+    "initialViewport": {
+      "innerWidth": 2552,
+      "innerHeight": 1434,
+      "devicePixelRatio": 1,
+      "clientWidth": 2537,
+      "scrollWidth": 2537
+    },
+    "afterShortcutAttempts": {
+      "innerWidth": 2552,
+      "innerHeight": 1387,
+      "devicePixelRatio": 1,
+      "clientWidth": 2537,
+      "scrollWidth": 2537
+    },
+    "actual": "No observable zoom change; neither200% nor400% was established. Height changed, but zoom indicators did not. No CSS enlargement or device emulation was substituted.",
+    "blocker": "Browser control surface does not expose native browser zoom settings; dispatched shortcuts did not change observed scale. Manual browser zoom is needed."
+  },
+  "screenReader": {
+    "result": "not-tested",
+    "screenReader": null,
+    "screenReaderVersion": null,
+    "observedOutput": null,
+    "blocker": "No OS screen-reader control or speech capture capability is exposed; DOM semantics cannot prove actual spoken output. A named screen reader and human listening/recorded speech are needed."
+  },
+  "authority": "Owner requested completing the previously disclosed native-check and personal-save limits. No claimed native pass is inferred from the prior scoped acceptance.",
+  "nextAction": "Owner sets Edge zoom to200%, then400%, while the agent inspects layout; owner listens to Narrator/NVDA during the published test sequence and reports actual output and versions."
+}

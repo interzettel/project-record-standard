@@ -140,10 +140,10 @@ The Prehnite reference uses a pinned public source and retains its own brand. In
 
 | Measure | Completion | Meaning |
 | --- | ---: | --- |
-| Required work | 17/17 · 100.0% | Completed leaf items in the named required scope. |
-| Accepted milestones | 4/4 · 100.0% | Milestones whose declared outcome gates passed. |
+| Required work | 17/18 · 94.4% | Completed leaf items in the named required scope. |
+| Accepted milestones | 3/4 · 75.0% | Milestones whose declared outcome gates passed. |
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-10-23 against `a809371c`.
+Observed 2026-10-23 against `182b6a89`.
 <!-- project-record:end -->
