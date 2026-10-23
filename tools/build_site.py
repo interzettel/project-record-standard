@@ -27,6 +27,7 @@ DOCUMENTS = [
     ('AUTOMATION', 'Automation'),
     ('ADAPTATION-PROFILES', 'New and existing projects'),
     ('AGENT-WORKFLOWS', 'Agent skills and planning'),
+    ('READINESS', 'L0–L5 agent readiness'),
     ('PMI-ALIGNMENT', 'PMI alignment'),
     ('PRESENTATION', 'Brand and interaction'),
     ('ACCESSIBILITY', 'Accessibility evidence'),

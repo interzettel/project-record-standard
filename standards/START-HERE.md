@@ -63,3 +63,7 @@ Use this index as another route to the pages in the guide:
 - [Upgrades and recovery](UPGRADING.md)
 - [Repository and delivery evidence](DELIVERY.md)
 - [Accessibility review fixture](../qa/accessibility.html)
+
+## Readiness during setup
+
+New setup and existing adaptation include [L0–L5 agent readiness](READINESS.md): inspect evidence, ask about the target and delegation boundaries, record the central assessment reference, and select useful remediation. Readiness and work-completion percentages are separate.

@@ -8,7 +8,7 @@ The agent inspects what already exists, asks you about the decisions it cannot i
 
 [![Example tracker showing 16 of 16 required work items complete and 4 of 4 milestones accepted.](assets/tracker-preview.jpg)](https://interzettel.github.io/project-record-standard/)
 
-*The standard’s own tracker, captured on 23 October 2026. This is one example brand; your project keeps its own design.*
+*The standard’s own tracker, captured on 23 October 2026 before the readiness setup extension. The live tracker and progress figures below use the current scope. Your project keeps its own design.*
 
 ## Start with your agent
 
@@ -33,6 +33,13 @@ or adapt-project-tracking if tracking already exists.
 Ask a few focused questions at a time about the intended outcome,
 scope, priorities, acceptance and any unresolved source conflicts.
 Use what the repository already answers.
+
+Assess L0–L5 agent readiness using the installed router’s readiness
+contract. Keep the current evidenced level separate from the target
+and from completion percentages. Ask what work I want to delegate;
+record R0–R4 task-risk limits and the central assessment reference.
+Turn selected readiness gaps into bounded work, without granting
+additional merge/deploy authority.
 
 Prepare the project overview and scoped plan. Divide selected work
 into work packages and tasks, define milestone exit criteria, and
@@ -64,6 +71,10 @@ PYTHONPATH=src python3 -m project_record install-skills --toolkit . --target /pa
 ```
 
 This installs all 11 skills, adds a marked section to `AGENTS.md` and records an installation receipt. It preserves existing instructions and refuses conflicting files. Then give your agent the setup request above. Installation does not itself create a plan, run an AI, change GitHub or deploy a website.
+
+## Readiness is part of setup
+
+The agent also assesses how reliably it can work in the repository: **L1 Reproducible → L2 Legible → L3 Verifiable → L4 Constrained → L5 Measured**. L0 means L1 has not been demonstrated. It checks evidence, asks about the target and delegation boundaries, and plans selected improvements. A 100% work tracker does not imply L5 readiness. See [the readiness guide](standards/READINESS.md).
 
 ## What your project gets
 
@@ -129,10 +140,10 @@ The Prehnite reference uses a pinned public source and retains its own brand. In
 
 | Measure | Completion | Meaning |
 | --- | ---: | --- |
-| Required work | 16/16 · 100.0% | Completed leaf items in the named required scope. |
+| Required work | 17/17 · 100.0% | Completed leaf items in the named required scope. |
 | Accepted milestones | 4/4 · 100.0% | Milestones whose declared outcome gates passed. |
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-10-23 against `446c9917`.
+Observed 2026-10-23 against `a809371c`.
 <!-- project-record:end -->

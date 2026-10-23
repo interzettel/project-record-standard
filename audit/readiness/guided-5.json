@@ -1,0 +1,59 @@
+{
+  "currentGrade": "L4",
+  "targetGrade": "L5",
+  "basis": "Scenario evidence demonstrates cumulative L1–L4 gates. Dimensions 9–10 remain unproven; installation grants no autonomy.",
+  "dimensions": {
+    "1_work_definition": "pass",
+    "2_repository_knowledge": "pass",
+    "3_reproducible_environment": "pass",
+    "4_verification_loop": "pass",
+    "5_architectural_constraints": "pass",
+    "6_machine_usable_tooling": "pass",
+    "7_security_boundaries": "pass",
+    "8_small_batch_reviewability": "pass",
+    "9_observability_runtime_verification": "unknown",
+    "10_evaluation_governance": "unknown"
+  },
+  "authority": {
+    "R0": "Only existing explicitly authorized information/docs work; no new unattended delivery authority.",
+    "R1": "Only existing bounded authorization; unattended merge/deploy requires explicit risk-specific delegation.",
+    "R2": "No new delegation; prepare implementation/verified PR only within existing authorization and policy.",
+    "R3": "No new delegation; stronger approval required by default.",
+    "R4": "Planning/simulation only absent narrowly supervised explicit authority.",
+    "autoDeploy": false,
+    "promotionAuthorized": false,
+    "decision": "Apply the narrowest readiness, risk, operational-health and actual policy boundary."
+  },
+  "centralRecord": {
+    "destination": null,
+    "repository": null,
+    "revision": null,
+    "assessmentDate": null,
+    "required": "Configured private central store keyed by repository, with latest.json, latest.md and dated history.",
+    "links": "overview/adoption reference date, revision, current/target grade, authority limits, blockers and next review.",
+    "persistence": "Not performed; read-only application test."
+  },
+  "questions": [
+    "Which repository, revision and configured central destination identify this assessment?",
+    "What task classes and risk levels are explicitly delegated, and who accepts, merges and deploys?",
+    "What health, success and intervention thresholds, observation window and promotion/downgrade rules apply?"
+  ],
+  "remediation": [
+    "Demonstrate queryable health/logs/metrics and deployment identity for dimension 9.",
+    "Run held-out evaluations and collect real-task success/intervention metrics against declared thresholds over a defined window.",
+    "Demonstrate active promotion, downgrade and drift-review rules.",
+    "Record any selected remediation as bounded leaves with owner, acceptance evidence and milestone; preserve prior observations and explain denominator changes.",
+    "Before any unattended delivery, obtain explicit risk-class delegation and verify active branch protection, independent checks/review, proven rollback, healthy recent metrics and absence of relevant blockers."
+  ],
+  "reAudit": {
+    "next": "Before any autonomy increase and after remediation evidence exists.",
+    "date": "Unresolved; record an explicit next-review date.",
+    "triggers": [
+      "Major runtime/build/security change",
+      "Incident or undocumented rescue",
+      "Control failure or rising intervention burden"
+    ],
+    "activeAutonomyCadence": "Weekly lightweight drift checks and at least monthly full reviews; no scheduling authorized by installation."
+  },
+  "unclearInstruction": "Dimension 9 is explicitly stated unproven, although reliable runtime checks are supplied. Runtime checks alone do not establish its observability requirements. Missing held-out and real-task metrics specifically block dimension 10; they do not independently prove dimension 9 absent."
+}

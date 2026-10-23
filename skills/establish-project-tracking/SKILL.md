@@ -9,6 +9,8 @@ Start from the project's intended outcome. Tracking records the discovered work;
 
 Locate repository instructions and a pinned Project Record Standard checkout (`src/project_record`, `standards/`). Set `PROJECT_RECORD_TOOLKIT` to that checkout. Read `standards/START-HERE.md` and `standards/PMI-ALIGNMENT.md` there.
 
+Read the installed sibling `use-project-records/references/readiness-contract.md`. During scouting, produce the evidence-backed L0–L5 assessment and task-risk R0–R4 authority record using its template. Keep the detailed assessment in the configured central store; link it from overview/adoption with date, revision, current/target level, blockers and next review. Ask about unresolved target/delegation/environment decisions after inspection. Select bounded readiness remediation alongside product work; grade and completion percentages remain separate. Installation grants no autonomy.
+
 Produce these artifacts in order:
 
 | Artifact | Required contents |

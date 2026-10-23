@@ -7,6 +7,8 @@ description: Use when starting project tracking work, choosing between new setup
 
 Read local AGENTS instructions. Locate the declared manifest, pinned toolkit, source/field authority, overview, discovery coverage and installation/operation receipts.
 
+For new setup, existing adaptation or readiness reassessment, read [the readiness contract](references/readiness-contract.md) and use [its empty assessment record](references/readiness-assessment.json). Record evidence-backed L0–L5 readiness separately from completion and R0–R4 task risk. Link the configured central assessment; preserve existing authorization and mark proposed autonomy changes separately.
+
 Read the matching skill body:
 
 | Request | Skill |

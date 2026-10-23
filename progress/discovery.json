@@ -81,5 +81,12 @@
       "26 rendered scenarios cover the two branded reference trackers and three selected guides; source structure was checked across all eleven guides.",
       "Five skill applications are source-only reviews; source evolved between baseline and guided applications, so no controlled causal comparison is claimed."
     ]
+  },
+  "readinessIntegration": {
+    "observedOn": "2026-10-23",
+    "sourceRepository": "interzettel/personal-agent-stack",
+    "revision": "d53545f4274fac8c32203be63e070d0e3ab3534a",
+    "coverage": "Read seven named readiness/ADR source documents plus auditor skill. No upstream deployment/assessment records imported, no hosted source collection refreshed.",
+    "result": "Integrated into standard setup/adaptation; detailed central assessments are separate from public tracking and this repository remains ungraded."
   }
 }

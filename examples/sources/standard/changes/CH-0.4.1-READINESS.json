@@ -1,0 +1,10 @@
+{
+  "id": "CH-0.4.1-READINESS",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Integrate cumulative L0–L5 readiness, ten evidence dimensions, risk-bounded authority and central assessment references into cold and hot repository setup.",
+  "workItemIds": [
+    "STD-17"
+  ],
+  "compatibility": "Suite/runtime0.4.1 retains contract0.2.0 and all eleven skill names. No autonomous permissions, scheduler or runtime grader is introduced."
+}

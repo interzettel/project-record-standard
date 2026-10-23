@@ -1,0 +1,90 @@
+{
+  "recordKind": "repository-readiness-assessment",
+  "repository": null,
+  "revision": null,
+  "assessedAt": "2026-10-23",
+  "evidenceBoundary": "Scenario facts only; application repository, environments and controls were not inspected.",
+  "readinessLevel": "L0",
+  "levelBasis": "L1 is not demonstrated because clean bootstrap and a canonical verification baseline are unobserved. AGENTS, a lockfile and a CI badge prove file presence only. The deployed billing app's L5-ready claim is unsupported.",
+  "targetLevel": null,
+  "targetDecision": "Resolve intended delegation first; L5 is not mandatory. Establishing L1 evidence is the proposed first checkpoint, not an approved target.",
+  "dimensions": {
+    "work_definition": {"status": "unknown", "evidence": [], "gaps": ["Task criteria, dependencies and non-goals unobserved"], "owner": null, "nextAction": "Inspect bounded task records"},
+    "repository_knowledge": {"status": "unknown", "evidence": ["AGENTS reportedly exists"], "gaps": ["Contents, currency, architecture and ownership unobserved"], "owner": null, "nextAction": "Inspect instructions and project records"},
+    "reproducible_environment": {"status": "unknown", "evidence": ["Lockfile reportedly exists"], "gaps": ["Clean bootstrap, dependency resolution, fixtures and isolated services untested"], "owner": null, "nextAction": "Prepare a clean nonproduction bootstrap check"},
+    "verification_loop": {"status": "unknown", "evidence": ["CI badge reportedly exists"], "gaps": ["Actual CI, baseline commands, billing integration coverage and flakes unobserved"], "owner": null, "nextAction": "Inspect revision-matched CI and verification evidence"},
+    "architectural_constraints": {"status": "unknown", "evidence": [], "gaps": ["Enforced boundaries and analysis unobserved"], "owner": null, "nextAction": "Inspect enforced schemas, ownership and dependency rules"},
+    "machine_usable_tooling": {"status": "unknown", "evidence": [], "gaps": ["Tool behavior and scoped permissions unobserved"], "owner": null, "nextAction": "Inventory interfaces, access scopes and fallbacks"},
+    "security_boundaries": {"status": "unknown", "evidence": [], "gaps": ["Sandbox, network, credential and delivery enforcement unobserved"], "owner": null, "nextAction": "Inspect controls without accessing production secrets"},
+    "small_batch_reviewability": {"status": "unknown", "evidence": [], "gaps": ["Independent review, reversible delivery and proven rollback unobserved"], "owner": null, "nextAction": "Inspect delivery policy and rollback evidence"},
+    "observability_runtime_verification": {"status": "unknown", "evidence": ["Application reportedly deployed"], "gaps": ["Deployment identity, health, logs, metrics and runtime checks unobserved"], "owner": null, "nextAction": "Inspect deployment-linked runtime evidence"},
+    "evaluation_governance": {"status": "unknown", "evidence": [], "gaps": ["Held-out results, real-task metrics, thresholds, observation window and active autonomy rules unobserved"], "owner": null, "nextAction": "Inspect governance and evaluation records"}
+  },
+  "taskRisk": {
+    "assessment": "R0",
+    "billingBehaviorChanges": "R3",
+    "privilegedOrDestructiveOperations": "R4",
+    "basis": "Risk follows the proposed task's consequences and privileges; billing functionality does not make this read-only assessment R3."
+  },
+  "autonomy": {
+    "R0": "Read-only assessment authorized; future scope limited to exploration and proposals",
+    "R1": "No new implementation authority granted",
+    "R2": "No new implementation authority granted",
+    "R3": "No billing-change or delivery authority granted; stronger approval required by default",
+    "R4": "Planning/simulation only absent narrowly supervised explicit authority",
+    "operationalHealth": "unknown",
+    "promotionAuthorized": false,
+    "decision": "Use the narrowest readiness, task-risk, operational-health and actual-policy boundary. Installation and target levels grant no autonomy. No unattended merge or deployment."
+  },
+  "environment": {
+    "applicability": "important application",
+    "reason": "Deployed billing application",
+    "tiers": {"development": "unknown", "test_ci": "unknown", "staging_preview": "unknown", "production": "reported deployed; identity and health unknown"},
+    "requiredChecks": [
+      "Identify environments and relevant staging needs",
+      "Verify secrets/data separation and reachable networks",
+      "Verify coding/test environments cannot use production credentials or routes",
+      "Inspect immutable artifact promotion and protected production delivery",
+      "Inspect billing integration checks, migration rehearsal, proven rollback and post-deploy health"
+    ],
+    "limitation": "Checks are unperformed. Untested isolation remains unknown; demonstrated sharing of production credentials or routes by coding/test environments would block L4. Never use production secrets to prove readiness."
+  },
+  "assessmentStore": null,
+  "centralRecord": {
+    "destination": "Configured central assessment repository/store; unresolved",
+    "conventionIfPersonalAgentStackManaged": "assessments/owner__repo/",
+    "requiredArtifacts": ["latest.json", "latest.md", "dated history"],
+    "targetReferences": ["progress/overview.md", "progress/adoption.md"],
+    "referenceContents": ["central reference", "date/revision", "current/target level", "authority limits", "blockers", "next action/review"],
+    "persistence": "pending; this read-only exercise writes nothing",
+    "fallback": "If inaccessible during implementation, prepare private staging artifacts and retain pending status. Confirm configured destination before external writes; do not publish private evidence to README/Pages."
+  },
+  "questions": [
+    "Which repository/revision, existing assessment and authoritative policies apply?",
+    "What work should agents handle, and which target level serves that goal?",
+    "Who accepts, merges, deploys and approves promotion; what risk-specific delegation already exists?",
+    "Which environments exist, and where is separation/control evidence?",
+    "What central assessment destination is configured?",
+    "What success/intervention thresholds, observation window and next review owner/date apply?"
+  ],
+  "selectedRemediation": [
+    {"action": "Resolve policy, repository identity and central destination", "status": "proposed", "verification": "Pinned sources, authority limits and configured destination recorded"},
+    {"action": "Establish reproducibility and verification evidence", "status": "proposed", "verification": "Clean nonproduction bootstrap and canonical baseline demonstrated at a named revision"},
+    {"action": "Inspect billing environment and delivery boundaries", "status": "proposed", "verification": "Evidence-backed separation, delivery and rollback findings recorded"}
+  ],
+  "scopeEffect": "No ledger or denominator changed. Turn accepted remediation into bounded leaves with owners, criteria and milestone links; preserve prior observations and named completion percentages.",
+  "nextAssessment": {
+    "onOrBefore": null,
+    "triggers": ["onboarding", "before autonomy increase", "major runtime/build/security change", "incident or undocumented human rescue"],
+    "downgradeTriggers": ["broken bootstrap", "CI flakes above threshold", "missing controls/runtime evidence", "stale instructions", "repeated incidents/reverts", "rising intervention burden"],
+    "cadence": "If actively autonomous: weekly lightweight drift checks and at least monthly full reviews. No schedule authorized or created.",
+    "promotionApprover": null
+  },
+  "instructionIssues": [
+    "No contradiction found in the supplied contract.",
+    "Repository identity, configured central destination, intended target, actual authority policy and existing tracking state are unresolved; establishment versus adaptation cannot yet be selected.",
+    "L0 describes missing evidence here, not demonstrated application failure."
+  ],
+  "visibility": "private",
+  "centralPersistence": "pending"
+}

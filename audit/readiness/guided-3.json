@@ -1,0 +1,138 @@
+{
+  "path": "adapt-project-tracking",
+  "assessment": {
+    "type": "scenario-only; no repository checks performed",
+    "repository": null,
+    "revision": null,
+    "assessedAt": "2026-10-23",
+    "reportedCompletion": "80%; numerator, denominator, scope and observation date unverified",
+    "currentLevel": "L0",
+    "basis": "L1 is not demonstrated: no direct clean-bootstrap evidence. Levels are cumulative, not averaged or inferred from completion.",
+    "targetLevel": null,
+    "proposedTarget": "L4, only if confirmed as appropriate for intended delegation",
+    "targetReached": false
+  },
+  "dimensions": {
+    "work_definition": {
+      "status": "unknown",
+      "limit": "80% proves neither bounded tasks nor acceptance criteria."
+    },
+    "repository_knowledge": {
+      "status": "unknown",
+      "limit": "Existing tracking alone does not demonstrate current architecture, ownership or truthful status."
+    },
+    "reproducible_environment": {
+      "status": "unknown",
+      "limit": "Clean bootstrap untested; blocks L1."
+    },
+    "verification_loop": {
+      "status": "partial",
+      "limit": "Reported flaky CI; commands, critical runtime coverage and flake control remain unverified. Blocks L3."
+    },
+    "architectural_constraints": {
+      "status": "unknown",
+      "limit": "No demonstrated enforcement."
+    },
+    "machine_usable_tooling": {
+      "status": "unknown",
+      "limit": "No demonstrated structured tools, scoped access or fallbacks."
+    },
+    "security_boundaries": {
+      "status": "unknown",
+      "limit": "Sandbox undocumented; enforcement and environment separation unverified. Blocks L4."
+    },
+    "small_batch_reviewability": {
+      "status": "unknown",
+      "limit": "Rollback undocumented and unproven; independent review unverified. Blocks L4."
+    },
+    "observability_runtime_verification": {
+      "status": "unknown",
+      "limit": "No deployment identity, health or runtime evidence supplied."
+    },
+    "evaluation_governance": {
+      "status": "unknown",
+      "limit": "No held-out results, real-task metrics, thresholds or active delegation policy supplied."
+    }
+  },
+  "authority": {
+    "rule": "Apply the narrowest boundary from current readiness, task risk, operational health and actual policy. Existing explicit bounded remediation authorization remains valid.",
+    "taskRisk": "Unassigned; classify each proposed task.",
+    "R0": "Explore and propose; no new write or delivery authority inferred.",
+    "R1": "Explore and propose; bounded edits require existing explicit authorization.",
+    "R2": "Explore and propose; no implementation or delivery delegation inferred.",
+    "R3": "Explore and propose; stronger approval required for consequential changes.",
+    "R4": "Planning/simulation only absent narrowly supervised explicit authority.",
+    "unattendedMergeDeploy": false,
+    "promotionAuthorized": false,
+    "operationalHealth": "Degraded verification confidence; flake threshold and recent health unknown."
+  },
+  "centralRecord": {
+    "destination": "Confirm configured central assessment store before any external write.",
+    "layout": "Repository-keyed latest.json, latest.md and dated history; assessments/owner__repo/ for Personal Agent Stack-managed projects.",
+    "projectReferences": [
+      "progress/overview.md",
+      "progress/adoption.md"
+    ],
+    "referenceContents": "Central link, date/revision, current/target level, authority limits, blockers and next action/review.",
+    "fallback": "Private staging artifact with central persistence pending if store inaccessible.",
+    "visibility": "Private evidence; no private assessment dump to README/Pages.",
+    "persistence": "Not performed; read-only application test."
+  },
+  "remediation": {
+    "selection": "Proposed bounded leaves; select under existing scope authority before adding required work.",
+    "leaves": [
+      {
+        "id": "readiness-boundaries",
+        "owner": "Repository/security owner, to confirm",
+        "criterion": "Demonstrate enforced workspace, network, credential, resource and delivery boundaries; verify applicable environment separation."
+      },
+      {
+        "id": "readiness-bootstrap",
+        "owner": "Build owner, to confirm",
+        "criterion": "Canonical clean bootstrap succeeds at pinned revision/environment without undocumented rescue; safe fixtures and verification baseline recorded."
+      },
+      {
+        "id": "readiness-ci",
+        "owner": "CI/test owner, to confirm",
+        "criterion": "Reproduce and control flakes against declared threshold; verify critical integration/runtime behavior and stable commands."
+      },
+      {
+        "id": "readiness-rollback",
+        "owner": "Delivery owner, to confirm",
+        "criterion": "Rehearse rollback safely; record tested revision, environment, recovery result and independent review path."
+      }
+    ],
+    "priority": "Broken safety boundaries and active blockers first, then reproducibility, verification and dependencies.",
+    "denominatorHistory": "Preserve original observation, stable IDs and named fractions. Do not invent 80/100. Record actual before/after fractions, selected additions/exclusions, rationale, acceptance/dependency effects and milestone links. Keep unselected maturity ambitions outside required scope."
+  },
+  "unresolvedQuestions": [
+    "Which task classes should agents handle, and is L4 the appropriate target?",
+    "Who accepts work, merges and deploys; what R0–R4 delegation is already explicit?",
+    "Which development, CI/test, preview/staging and production environments exist, and what isolation is enforced?",
+    "Where is the configured central assessment store?",
+    "What CI flake, success and intervention thresholds and observation window apply?",
+    "Who owns remediation, approves promotion and sets the next review date?"
+  ],
+  "downgradeAndReaudit": {
+    "immediate": "Correct the unsupported L4 claim to evidence-limited L0; record missing evidence separately from failed checks. Contain unsupported unattended operations and continue independently authorized work.",
+    "restore": "Reassess cumulative gates after demonstrated remediation; restore authority only when evidence and policy permit.",
+    "triggers": [
+      "Before increasing autonomy",
+      "Major runtime/build/security change",
+      "Incident or undocumented human rescue",
+      "Broken bootstrap, uncontrolled CI flakes, missing controls/runtime evidence, stale instructions or rising intervention burden"
+    ],
+    "cadence": "If actively autonomous: weekly drift checks and at least monthly full reviews; no scheduling authorization inferred.",
+    "nextReviewDate": "Unresolved; assign owner/date."
+  },
+  "guidanceContradictions": [
+    {
+      "type": "Scenario contradicts guidance",
+      "finding": "Inferring L4 from 80% completion conflicts with explicit separation of readiness, completion and task risk."
+    },
+    {
+      "type": "Routing ambiguity",
+      "finding": "AGENT-WORKFLOWS routes existing plans, IDs, claims or generated tracking to adaptation; adapt-project-tracking routes absent authored tracking to establishment. Existing authored tracker resolves this scenario to adaptation."
+    }
+  ]
+}

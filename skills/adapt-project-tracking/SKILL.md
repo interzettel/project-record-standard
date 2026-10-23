@@ -9,6 +9,8 @@ Reconstruct the project's intended outcome and observed state before changing it
 
 Locate repository instructions, the manifest and a pinned Project Record Standard checkout. Read its `standards/ADAPTATION-PROFILES.md`, `standards/AGENT-WORKFLOWS.md` and `standards/UPGRADING.md`. If authored tracking is absent, use **establish-project-tracking**. If only derived output is broken, use **operate-project-tracking**.
 
+Read the installed sibling `use-project-records/references/readiness-contract.md`. During scouting, produce the evidence-backed L0–L5 assessment and task-risk R0–R4 authority record using its template. Keep the detailed assessment in the configured central store; link it from overview/adoption with date, revision, current/target level, blockers and next review. Ask about unresolved target/delegation/environment decisions after inspection. Select bounded readiness remediation alongside product work; grade and completion percentages remain separate. Installation grants no autonomy.
+
 Create or refresh these required artifacts:
 
 | Artifact | Contents |

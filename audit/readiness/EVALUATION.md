@@ -1,0 +1,19 @@
+# Readiness integration evaluation
+
+Five fresh-context baseline applications used the existing cold/hot skills and agent workflow guide before the readiness changes. Five independent fresh-context applications then followed the changed skills and their bundled reference/template. These are scenario applications, not audits of real repositories and not proof of an agent's future autonomy.
+
+| Scenario | Baseline gap observed | Guided outcome |
+| --- | --- | --- |
+| Billing app, files/badge claimed L5 | “The three inspected files do not require or define an evidence-backed L0–L5 assessment, ten readiness dimensions, R0–R4 authority levels, or development/staging/production readiness separation.” | L0 because clean bootstrap is unobserved; all ten dimensions retain gaps; billing changes classified separately from read-only assessment; important environment checks and private central persistence recorded. |
+| Small new CLI; central store inaccessible | “no bootstrap, validation, installation, CI or runtime success can be claimed.” Baseline explicitly found no grade/authority/re-audit contract. | Cold setup, L0 evidence limits, proposed L1 target, explicit bounded authorization retained, private staging and central-persistence pending. Neither L5 nor full staging topology forced. |
+| 80% complete claimed L4; flaky CI | “80% completion cannot substantiate that readiness claim.” Baseline found no defined level scheme. | Hot adaptation; L0 with missing bootstrap, flaky verification partial, no invented80/100 counts; selected remediation preserves denominator history. |
+| Historical L4; credential boundary broken | “These files do not, however, explicitly require suspending or changing permissions after such a failure.” | Historical grade preserved, current missing bootstrap recorded separately from failed security; affected execution contained; safe independent authorized work continues. |
+| Dimensions1–8 proven,9–10 unknown; wants L5/auto-deploy | “They do not supply the proposed readiness/authority taxonomy.” | L4 current, L5 target not achieved, no auto-deploy inferred; held-out and real-task metric/observability gaps explicit. |
+
+Full guided outputs are retained in `guided-1.json` through `guided-5.json`. Their different schemas reflect natural agent output rather than a claim of runtime schema validation. All five were manually read for cumulative gates, source uncertainty, current/target distinction, task risk, central storage, environment proportionality and authority limits.
+
+The baseline and guided task briefs use the same five substantive situations, with additional output fields requested in the guided briefs. This is a practical regression/application check, not a blinded controlled comparison or statistical estimate of efficacy. One guided reviewer noted an existing cold/hot routing ambiguity for generated-only tracking; the supplied existing-authored-tracker scenario resolves it. No readiness level has been awarded to the standard or Personal Agent Stack by these exercises.
+
+Distribution/site regressions were run red before integration: the guide lacked `READINESS.html` and the extracted installer lacked the portable contract. After integration, the complete 35-test Python suite passes, including the extracted source-package installation and idempotent reinstallation checks. The installed record defaults to ten unknown dimensions, no promotion authorization and L0 due to absent evidence. The public guide is built and linked from navigation. Metadata validation confirms eleven skills in suite 0.4.1, contract 0.2.0.
+
+No scheduler, autonomous loop, permission grant, remote assessment write, environment creation or individual repository migration was performed. Runtime readiness computation/policy enforcement is outside this documentation/skill integration. Original private upstream assessments and operational records were not copied into the public package.

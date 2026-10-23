@@ -25,7 +25,7 @@ def package(destination: Path) -> dict:
         files[relative] = (ROOT / relative).read_bytes()
     files['tools/check_skills.py'] = (ROOT / 'tools/check_skills.py').read_bytes()
     files['tests/test_percentages.py'] = (ROOT / 'tests/test_percentages.py').read_bytes()
-    for name in ['STANDARD', 'PRESENTATION', 'GITHUB', 'PMI-ALIGNMENT', 'ADAPTATION-PROFILES', 'AUTOMATION', 'UPGRADING', 'ACCESSIBILITY', 'START-HERE', 'DELIVERY', 'AGENT-WORKFLOWS']:
+    for name in ['STANDARD', 'PRESENTATION', 'GITHUB', 'PMI-ALIGNMENT', 'ADAPTATION-PROFILES', 'AUTOMATION', 'UPGRADING', 'ACCESSIBILITY', 'START-HERE', 'DELIVERY', 'AGENT-WORKFLOWS', 'READINESS']:
         text = (ROOT / 'standards' / (name + '.md')).read_text()
         if name == 'STANDARD' and 'The last formula matches' in text:
             start = text.index('The last formula matches')

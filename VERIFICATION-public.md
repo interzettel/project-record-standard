@@ -1,5 +1,12 @@
 # Public-source distribution verification
 
+## Readiness setup integration — 0.4.1
+
+Both cold/hot workflow skills now require the portable L0–L5 assessment contract and empty JSON record. The record keeps all ten dimensions unknown until inspected, current/target grades separate, R0–R4 task authority explicit, central assessment/history references and reassessment triggers. Five fresh guided scenario applications, all 35 Python tests, installer/source-package checks and the twelve-page guide build verify the integration; see [evaluation](https://github.com/interzettel/project-record-standard/blob/main/audit/readiness/EVALUATION.md). All eleven skills retain their names; contract 0.2.0 is unchanged.
+
+Scope grows from 16/16 to 17/17 through completed STD-17; no old ID is removed. This evidence awards no readiness grade or autonomous authority. No individual repository migration or private upstream assessment publication occurred. Earlier accessibility limits remain explicit.
+
+
 ## Completed scoped accessibility review — 0.4.0
 
 Candidate `a8e7b07c3d3a4e4a1d6b15d3720507996be00b36` passed [hosted verification, reusable workflow and Pages](https://github.com/interzettel/project-record-standard/actions/runs/39918534195). Pages reported success at 2026-10-23T07:33:55.2831426Z. The audit covers all 55 WCAG 2.2 A/AA criteria with scoped results and explicit unknowns: [audit record](https://github.com/interzettel/project-record-standard/blob/main/audit/accessibility/wcag22-audit.json).

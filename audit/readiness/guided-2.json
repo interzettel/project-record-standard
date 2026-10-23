@@ -1,0 +1,147 @@
+{
+  "setupPath": {
+    "skill": "establish-project-tracking",
+    "reason": "README and lockfile do not establish authored tracking authority.",
+    "execution": "Prepare overview/discovery, initialize scaffold in an empty temporary directory, merge only absent tracking files, then validate. Do not cold-init over the repository.",
+    "performed": "Read-only application test; no edits or checks executed."
+  },
+  "assessment": {
+    "repository": null,
+    "revision": null,
+    "date": "2026-10-23",
+    "currentLevel": "L0",
+    "basis": "L1 is not demonstrated: no clean bootstrap or canonical verification baseline evidence. Missing evidence does not establish a failed check.",
+    "targetLevel": "L1 proposed, pending owner decision",
+    "targetReason": "Reproducibility supports guided bounded edits; L2 can follow if implementation-to-PR delegation is desired.",
+    "completion": "Readiness is separate from product completion. Empty authored scope is 0/0, Not measured, private and unapproved."
+  },
+  "dimensions": {
+    "work_definition": {
+      "status": "partial",
+      "evidence": ["Owner requests guided setup with safe bounded edits."],
+      "gap": "Task acceptance criteria, dependencies and non-goals are unspecified.",
+      "nextAction": "Define bounded setup leaves and acceptance criteria with owner."
+    },
+    "repository_knowledge": {
+      "status": "unknown",
+      "evidence": ["README exists by scenario."],
+      "gap": "README accuracy, entrypoint, ownership and architecture are unverified.",
+      "nextAction": "Inspect and reconcile repository documentation."
+    },
+    "reproducible_environment": {
+      "status": "unknown",
+      "evidence": ["Lockfile exists by scenario."],
+      "gap": "No demonstrated clean bootstrap or isolated fixtures.",
+      "nextAction": "Run canonical bootstrap in a clean safe environment; retain revision, commands and results."
+    },
+    "verification_loop": {
+      "status": "unknown",
+      "evidence": [],
+      "gap": "No actual check baseline, critical CLI behavior or flake evidence.",
+      "nextAction": "Identify and execute appropriate canonical CLI checks."
+    },
+    "architectural_constraints": {
+      "status": "unknown",
+      "evidence": [],
+      "gap": "Enforced boundaries and analysis are unverified.",
+      "nextAction": "Inspect applicable constraints; demonstrate relevant enforcement."
+    },
+    "machine_usable_tooling": {
+      "status": "unknown",
+      "evidence": ["Product is described as a CLI."],
+      "gap": "CLI description does not prove repeatable structured tools or scoped access.",
+      "nextAction": "Exercise relevant commands and document safe fallbacks."
+    },
+    "security_boundaries": {
+      "status": "unknown",
+      "evidence": [],
+      "gap": "Workspace, network, credentials and delivery controls are unverified.",
+      "nextAction": "Inspect actual controls without using production secrets."
+    },
+    "small_batch_reviewability": {
+      "status": "partial",
+      "evidence": ["Owner explicitly requests safe bounded edits."],
+      "gap": "Independent review, reversibility and rollback are not demonstrated.",
+      "nextAction": "Prepare a bounded reviewable diff and verify its reversal path."
+    },
+    "observability_runtime_verification": {
+      "status": "unknown",
+      "evidence": [],
+      "gap": "Relevant runtime checks and diagnostic evidence are absent.",
+      "nextAction": "Identify CLI-specific runtime evidence and any deployment applicability."
+    },
+    "evaluation_governance": {
+      "status": "partial",
+      "evidence": ["Owner has limited this task to guided safe bounded setup."],
+      "gap": "Future delegation policy, evaluation thresholds and observation window are unspecified.",
+      "nextAction": "Record current limits; resolve additional governance only for desired delegation."
+    }
+  },
+  "authority": {
+    "taskRisk": "R0 assessment; R1 only for localized reversible setup edits",
+    "readinessDefault": "L0: explore and propose future delegated work.",
+    "actualAuthorization": "Existing explicit authorization permits guided bounded setup/remediation despite the L0 default; no additional permission is inferred.",
+    "R0": "Read-only discovery and setup proposals authorized.",
+    "R1": "Safe bounded reversible setup edits authorized with close owner review.",
+    "R2": "Ordinary behavior changes not authorized by this setup request.",
+    "R3": "Authentication, billing, migrations, critical paths and dependency-policy changes require separate scoped authority.",
+    "R4": "Planning/simulation only; no privileged or destructive action authorized.",
+    "mergeDeploy": "No unattended merge or deployment authorization.",
+    "operationalHealth": "Unknown; no autonomous operational authority established.",
+    "promotionAuthorized": false
+  },
+  "sourcesAndPersistence": {
+    "coverage": "Scenario facts only; target repository, CI, hosted sources and runtime were not inspected.",
+    "hostedInventory": "Use connected GitHub tools and exhaust pagination before claiming complete hosted coverage; local Git proves only fetched state.",
+    "requiredPlanningArtifacts": [
+      "progress/overview.md",
+      "progress/discovery.json",
+      "progress/adoption.md",
+      "authored ledger and manifest"
+    ],
+    "centralPersistence": "Pending: configured central store is inaccessible.",
+    "fallback": "Prepare a private staging assessment using the portable template; retain unknown repository/revision fields until observed.",
+    "centralLayout": "Configured repository key with latest.json, latest.md and dated history; Personal Agent Stack convention is assessments/owner__repo/.",
+    "destination": "Confirm and record configured destination before any external write.",
+    "projectReferences": "Overview/adoption link assessment reference, date/revision, current/target level, authority limits, blockers and next action; they are not a second assessment authority.",
+    "visibility": "Do not publish private assessment evidence to README or Pages."
+  },
+  "unresolvedQuestions": [
+    "Does guided setup plus close-reviewed bounded edits meet the owner's goal, or is implementation-to-PR delegation desired?",
+    "Who accepts setup results, merges changes and authorizes delivery?",
+    "What canonical bootstrap/check commands and safe CLI fixtures apply?",
+    "Does the CLI touch real users, persistent data, credentials, infrastructure or other consequential systems?",
+    "What is the configured central assessment destination and who restores access?"
+  ],
+  "selectedRemediation": [
+    "Define bounded setup scope, owner, acceptance criteria and non-goals.",
+    "Demonstrate clean bootstrap and canonical verification baseline.",
+    "Inspect applicable safety controls and establish a reversible review path.",
+    "Create the planning artifacts additively and run toolkit validation.",
+    "Persist the private assessment centrally when access returns."
+  ],
+  "scopeEffect": "Selected remediation becomes explicit milestone-linked leaves with verification criteria. Keep optional maturity ambitions outside required scope and preserve before/after named fractions.",
+  "reassessment": {
+    "next": "After bootstrap/check evidence and selected remediation, before any authority increase.",
+    "date": "Unresolved; assign during guided setup.",
+    "triggers": [
+      "Major runtime/build/security changes",
+      "Incident or undocumented human rescue",
+      "Broken bootstrap, excessive flakes, stale instructions or increasing intervention"
+    ],
+    "activeAutonomyCadence": "Weekly lightweight drift checks and at least monthly full review; no job is scheduled by assessment or skill installation.",
+    "promotion": "Requires cumulative evidence and actual owner/repository policy; proposed target is not active authority."
+  },
+  "mandatoryMaturity": {
+    "L5": false,
+    "fullStagingTopology": false,
+    "reason": "A small CLI may use a reduced topology with a recorded applicability rationale. Inspect consequential use first; staging/preview is required where risk warrants it. Untested isolation remains unknown, and shared production credentials/routes block L4.",
+    "L4L5": "Not prerequisites for this guided bounded setup."
+  },
+  "gaps": [
+    "Repository identity, tested revision, actual source dates and policy sources are unavailable.",
+    "No executed bootstrap, verification, control or rollback evidence.",
+    "Hosted inventory and environment applicability remain unresolved.",
+    "Central assessment persistence and exact next-review date remain pending."
+  ]
+}

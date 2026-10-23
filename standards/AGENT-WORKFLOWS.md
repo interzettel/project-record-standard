@@ -6,6 +6,8 @@ An agent starts with the project’s purpose and scope, scouts its actual state,
 
 Use `establish-project-tracking` when tracking authority has not been established, even if the repository already has a README and website. Use `adapt-project-tracking` when plans, IDs, claims or generated tracking already exist. An interrupted installation resumes from its recorded state. Damaged generated output uses `operate-project-tracking`; it does not justify resetting the ledger.
 
+Both setup paths include an [L0–L5 readiness assessment](READINESS.md) before planning autonomous operation. Inspect current evidence first, then ask about unresolved target level, task-risk R0–R4 delegation, environments and acceptance decisions. The installed router carries the portable assessment contract and empty JSON record. Detailed assessments stay in the configured central store; overview/adoption link their current/target level, date/revision, authority limits, blockers and next review. Selected readiness gaps become bounded work; readiness never substitutes for completion percentages or actual authority.
+
 Both setup paths produce the same planning artifacts:
 
 | Artifact | What the next agent needs |

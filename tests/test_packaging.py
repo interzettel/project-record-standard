@@ -44,6 +44,14 @@ class DistributionTests(unittest.TestCase):
             manifest = json.loads((toolkit / 'skills/manifest.json').read_text())
             for name in manifest['skills']:
                 self.assertEqual((toolkit / 'skills' / name / 'SKILL.md').read_bytes(), (project / '.agents/skills' / name / 'SKILL.md').read_bytes())
+            readiness = project / '.agents/skills/use-project-records/references/readiness-contract.md'
+            self.assertTrue(readiness.is_file())
+            template = json.loads((project / '.agents/skills/use-project-records/references/readiness-assessment.json').read_text())
+            self.assertEqual(template['readinessLevel'], 'L0')
+            self.assertEqual(len(template['dimensions']), 10)
+            self.assertTrue(all(d['status'] == 'unknown' for d in template['dimensions'].values()))
+            self.assertFalse(template['autonomy']['promotionAuthorized'])
+            self.assertTrue((toolkit / 'standards/READINESS.md').is_file())
             self.assertEqual(install_skills(toolkit, project, apply=True)['changes'], [])
 
 

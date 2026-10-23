@@ -37,7 +37,7 @@
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
       "unscopedWork": [],
-      "nextAction": "Bounded standards package complete. Individual repository adaptations are a separate future task; retain disclosed accessibility test limits."
+      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits."
     },
     {
       "id": "M2",
@@ -53,7 +53,7 @@
       "acceptanceRule": "source-state",
       "sourceAccepted": true,
       "unscopedWork": [],
-      "nextAction": "Bounded standards package complete. Individual repository adaptations are a separate future task; retain disclosed accessibility test limits."
+      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits."
     },
     {
       "id": "M3",
@@ -72,7 +72,7 @@
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
       "unscopedWork": [],
-      "nextAction": "Bounded standards package complete. Individual repository adaptations are a separate future task; retain disclosed accessibility test limits."
+      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits."
     },
     {
       "id": "M4",
@@ -85,11 +85,12 @@
       "gateItemIds": [
         "STD-14",
         "STD-15",
-        "STD-16"
+        "STD-16",
+        "STD-17"
       ],
       "acceptanceRule": "all-gate-items",
       "sourceAccepted": null,
-      "nextAction": "Bounded standards package complete. Individual repository adaptations are a separate future task; retain disclosed accessibility test limits.",
+      "nextAction": "Bounded standards package and readiness setup integration complete. Individual adaptations remain separate future work; preserve disclosed test limits.",
       "unscopedWork": [],
       "priority": "P1",
       "sourceState": "done",
@@ -556,12 +557,52 @@
       "criterion": "Hosted checks pass the packaged suite and Pages serves the matching guide/example; actual run and deployment evidence are recorded.",
       "note": null,
       "deferReason": null
+    },
+    {
+      "id": "STD-17",
+      "title": "Include evidence-based L0–L5 readiness in project setup",
+      "groupId": "G4",
+      "milestoneId": "M4",
+      "state": "done",
+      "sourceState": "done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "STD-14",
+        "STD-15"
+      ],
+      "unmappedDependencies": [],
+      "kind": "implementation",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "issueUrl": null,
+      "criterion": "Cold and hot setup require the ten-dimension L0–L5 assessment, separate current/target grade and R0–R4 authority, central assessment references, environment tailoring, selected remediation and re-audit triggers; bundled installation and guide build checks plus five guided applications pass.",
+      "evidence": [
+        {
+          "kind": "agent-evaluation",
+          "subject": "STD-17",
+          "result": "passed",
+          "source": "audit/readiness/EVALUATION.md",
+          "observedOn": "2026-10-23"
+        },
+        {
+          "kind": "test",
+          "subject": "STD-17",
+          "result": "passed",
+          "source": "tests/test_packaging.py; tests/test_site.py; VERIFICATION-public.md",
+          "observedOn": "2026-10-23"
+        }
+      ],
+      "completionBasis": "Observed scenario applications and local full-suite/source-distribution/site checks; this adds setup guidance, not autonomous permissions.",
+      "note": "No readiness grade assigned to this repository. Actual screen-reader/native zoom limits from the earlier audit remain unchanged.",
+      "deferReason": null
     }
   ],
   "warnings": [
     "Historical observations and all16 required IDs retained; scoped owner acceptance closes STD-09/13 under CR-0.4-ACCESSIBILITY.",
     "Actual screen-reader speech and native browser zoom remain not-tested; this is not a full WCAG conformance claim. Individual migrations remain separate.",
-    "All eleven skills are distributed in the repository; additional personal collection save of the accessibility skill was rejected HTTP422."
+    "All eleven skills are distributed in the repository; additional personal collection save of the accessibility skill was rejected HTTP422.",
+    "Readiness integration adds STD-17:17/17 required leaves. L0–L5 readiness, R0–R4 task risk and work percentages are distinct; no grade or permissions inferred from this tracker."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
@@ -629,7 +670,8 @@
         "workItemIds": [
           "STD-14",
           "STD-15",
-          "STD-16"
+          "STD-16",
+          "STD-17"
         ]
       }
     ],
@@ -655,6 +697,15 @@
         "approvedBy": "Yiğit",
         "approvedAt": "2026-10-23",
         "approvalSource": "audit/accessibility/owner-acceptance.json"
+      },
+      {
+        "id": "CR-0.4.1-READINESS",
+        "status": "implemented",
+        "reason": "Owner requested understanding Personal Agent Stack L1–L5 and making it part of repository setup.",
+        "impact": "Adds STD-17 to WP-5/M4; required scope16→17. Prior16/16 observation retained. New leaf is implementation verification, not an autonomy promotion or new owner acceptance claim.",
+        "approvedBy": "Yiğit",
+        "approvedAt": "2026-10-23",
+        "approvalSource": "Task conversation: go to the personal agent stack repository and understand L1 L2 L3 L4 L5 and make that part of repository setting process."
       }
     ],
     "risks": [

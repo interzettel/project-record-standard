@@ -100,16 +100,22 @@
           "visibility": "public",
           "authority": "Authored accessibility remediation and agent workflow change fragment",
           "observedOn": "2026-10-23"
+        },
+        {
+          "path": "sources/standard/changes/CH-0.4.1-READINESS.json",
+          "visibility": "public",
+          "authority": "Authored readiness setup integration change",
+          "observedOn": "2026-10-23"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-accessibility-0.4.json",
+      "previousSourceFile": "sources/standard/pre-readiness-0.4.1.json",
       "previousSource": {
         "kind": "file-snapshot",
-        "path": "examples/sources/standard/pre-accessibility-0.4.json",
-        "commit": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+        "path": "examples/sources/standard/pre-readiness-0.4.1.json",
+        "commit": "34acc83b56621bc41ad08f6a28e9dddc09e5999f",
         "observedOn": "2026-10-23",
         "updatedOn": "2026-10-23",
-        "authority": "Exact retained14/16 source before owner-authorized accessibility closure."
+        "authority": "Exact16/16 accepted scoped package before the owner-requested readiness setup extension."
       },
       "snapshots": [
         {
@@ -154,6 +160,17 @@
             "observedOn": "2026-10-23",
             "updatedOn": "2026-10-23",
             "authority": "Preserved published 13/16 observation before recording hosted agent-package verification"
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-accessibility-0.4.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/pre-accessibility-0.4.json",
+            "commit": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+            "observedOn": "2026-10-23",
+            "updatedOn": "2026-10-23",
+            "authority": "Exact retained14/16 source before owner-authorized accessibility closure."
           }
         }
       ]

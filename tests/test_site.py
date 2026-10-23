@@ -20,6 +20,8 @@ class SiteTests(unittest.TestCase):
             result = build_site(records, site)
             self.assertEqual(result['audience'], 'public')
             self.assertTrue((site/'guide/STANDARD.html').exists())
+            self.assertTrue((site/'guide/READINESS.html').exists())
+            self.assertIn('READINESS.html', (site/'guide/START-HERE.html').read_text())
             self.assertFalse((site/'unlisted-private.txt').exists())
             self.assertIn('Prehnite', (site/'prehnite/progress.html').read_text())
             self.assertIn('Standard website', (site/'index.html').read_text())
