@@ -1,4 +1,4 @@
-include README.md action.yml
+include README.md LICENSE action.yml
 recursive-include web *.mjs *.css
 recursive-include schemas *.json
 recursive-include standards *.md
