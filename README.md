@@ -125,6 +125,10 @@ Serve `.site/` as a static website. Markdown is a documentation build dependency
 
 </details>
 
+## License
+
+Project Record Standard's original, rights-controlled source is released under the [MIT License](LICENSE), with the source-owner's explicit 26 October 2026 approval covering original material in the historical `v0.4.1` source revision. [Read the licensing scope and attribution decision](standards/LICENSING-DECISION.md). The old tag/archive is unchanged; third-party works, if present, retain their separate terms.
+
 ## Guides and evidence
 
 [Terminology and percentages](standards/STANDARD.md) · [GitHub integration](standards/GITHUB.md) · [New and existing projects](standards/ADAPTATION-PROFILES.md) · [Agent workflows](standards/AGENT-WORKFLOWS.md) · [Upgrades](standards/UPGRADING.md)
