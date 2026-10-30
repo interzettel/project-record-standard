@@ -40,7 +40,7 @@
         "commit": null,
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Canonical ledger: preserved historical claims and owner-requested planning expansion; detailed designs and new milestone outcomes are not accepted."
+        "authority": "Canonical ledger: preserved historical claims, requested infrastructure scope and bounded records-research completion; new milestone outcomes remain unaccepted."
       },
       "presentation": {
         "renderer": "standard",
@@ -142,16 +142,22 @@
           "visibility": "public",
           "authority": "Authored architecture/planning and public adoption change",
           "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-RECORDS-RESEARCH.json",
+          "visibility": "public",
+          "authority": "Authored records/memory research change; no backend or release",
+          "observedOn": "2026-10-30"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-infrastructure-2026-10-30.json",
+      "previousSourceFile": "sources/standard/pre-records-2026-10-30.json",
       "previousSource": {
         "kind": "file-snapshot",
-        "path": "sources/standard/pre-infrastructure-2026-10-30.json",
-        "commit": "e91ad8e26392020dee232a35dd9f6d07e26a5d95",
+        "path": "examples/sources/standard/ledger.json",
+        "commit": "ceb6c35954a309d014cba97c4416562cfc1b464b",
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Exact18/29 required,18/36 retained,4/9 milestones before owner-requested infrastructure expansion."
+        "authority": "Exact18/42 required,18/52 retained,4/13 accepted milestones before PRS-RECORDS-01 research completion; raw bytes and normalized observation retained."
       },
       "snapshots": [
         {
@@ -251,6 +257,17 @@
             "observedOn": "2026-10-23",
             "updatedOn": "2026-10-23",
             "authority": "Exact preserved 18/18, four-milestone ledger before post-release scope expansion."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-infrastructure-2026-10-30.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "sources/standard/pre-infrastructure-2026-10-30.json",
+            "commit": "e91ad8e26392020dee232a35dd9f6d07e26a5d95",
+            "observedOn": "2026-10-30",
+            "updatedOn": "2026-10-30",
+            "authority": "Exact18/29 required,18/36 retained,4/9 milestones before owner-requested infrastructure expansion."
           }
         }
       ]

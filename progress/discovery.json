@@ -21,7 +21,7 @@
     {
       "kind": "native parent links",
       "source": "Earlier bounded readback and attempted completion",
-      "coverage": "7/12 previously confirmed. Remaining #22\u2192#10,#23/#24\u2192#11,#25/#26\u2192#12 are preserved in issue bodies/canonical plan. Edge automation is blocked by another extension UI; no completed relationship or screenshot is fabricated."
+      "coverage": "7/12 previously confirmed. Remaining #22→#10,#23/#24→#11,#25/#26→#12 are preserved in issue bodies/canonical plan. Edge automation is blocked by another extension UI; no completed relationship or screenshot is fabricated."
     },
     {
       "kind": "current standards and upstream dependencies",
@@ -34,5 +34,20 @@
       "coverage": "New public adopter homepage and17 guides separate recorded release from future automation. Hosted publication and deployment are verified separately after integration; actual browser layout/speech remain untested in this pass."
     }
   ],
-  "nextAction": "After reviewed consolidation, begin PRS-RECORDS-01/#27 with the scoped comparison, not service provisioning."
+  "nextAction": "Execute PRS-POLICY-01/#28/M10 using the records map, then #29 defines optional naming/layout profiles. No services or consumer migration authorized by this research.",
+  "reconciliations": [
+    {
+      "package": "PRS-RECORDS-01",
+      "observedOn": "2026-10-30",
+      "prsInputRevision": "ceb6c35954a309d014cba97c4416562cfc1b464b",
+      "researchRevision": "ce34c0190ecbf603980f89ee04dc9ed97843a064",
+      "coverage": "Read #27 and complete open-PR page at start: no open overlapping PR. Reviewed selected PRS sources and four public Diakrisis files at402f26f86f3a6e278940d6294f3c4612f30758b3, without following private/downstream links. Source comparison and scoped limits: audit/records/2026-10-30/. PR43 carries this research; previous source entries retain their original observation scope.",
+      "notInspected": [
+        "private memory",
+        "consumer runtime behavior",
+        "unrelated portfolio repositories"
+      ],
+      "result": "bounded research criterion met; no scope or acceptance expansion"
+    }
+  ]
 }

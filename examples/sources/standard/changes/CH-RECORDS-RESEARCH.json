@@ -1,0 +1,11 @@
+{
+  "id": "CH-RECORDS-RESEARCH",
+  "component": "standard",
+  "type": "documentation",
+  "summary": "Distinguish personal memory, instructions, shared knowledge and authoritative project records through a sourced lifecycle map and five routing counterexamples.",
+  "workItemIds": [
+    "PRS-RECORDS-01"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/43",
+  "compatibility": "Documentation/research only. Existing host paths, runtime/contract/skill versions and immutable v0.4.1 release remain unchanged. No new memory backend, layout schema, consumer migration or automatic-tracking capability."
+}

@@ -1,0 +1,119 @@
+{
+  "package": "PRS-RECORDS-01",
+  "observedOn": "2026-10-30",
+  "researchRevision": "ce34c0190ecbf603980f89ee04dc9ed97843a064",
+  "pullRequest": "https://github.com/interzettel/project-record-standard/pull/43",
+  "criterionResult": "met for the bounded sourced research, not a backend or behavioral effectiveness claim",
+  "authorWalkthroughs": {
+    "method": "document-level source routing; R1 synthetic, R2-R5 selected public sources; no live memory writes",
+    "cases": [
+      "R1 personal-only preference",
+      "R2 shared convention",
+      "R3 changed decision",
+      "R4 failed experiment",
+      "R5 generated status"
+    ],
+    "result": "5/5 intended routes identified and tempting incorrect routes rejected by author; see investigation.md"
+  },
+  "review": {
+    "producer": "Codex fresh-context reviewer /root/records_review",
+    "revision": "ce34c0190ecbf603980f89ee04dc9ed97843a064",
+    "mode": "read-only",
+    "result": "ready for bounded research handoff; no critical, important or minor findings",
+    "checked": [
+      "15 PRS input SHA-256 identities",
+      "raw and normalized before-observation digests",
+      "raw ledger byte identity against input commit",
+      "primary upstream documentation and pinned interfaces/template",
+      "scoped public host declarations and supersession",
+      "ten classes and five routing cases against criterion"
+    ],
+    "didNotRerun": "Python/JavaScript suites and builds; these have separate receipts",
+    "provenanceLimit": "Same-family fresh-context review; not independent human or cross-model proof.",
+    "declined": [
+      {
+        "behavior": "private-memory or downstream private-source inspection",
+        "reason": "not needed for scoped public example"
+      },
+      {
+        "behavior": "backend/runtime effectiveness experiments",
+        "reason": "research makes no effectiveness claim"
+      },
+      {
+        "behavior": "layout schema, adapters or migrations",
+        "reason": "later packages"
+      },
+      {
+        "behavior": "Done/acceptance/merge/publication writes",
+        "reason": "review task is read-only"
+      }
+    ]
+  },
+  "hostedChecks": {
+    "revision": "ce34c0190ecbf603980f89ee04dc9ed97843a064",
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41027247677",
+    "result": "success",
+    "scope": "existing verify and reusable record jobs; no release/deployment on the PR"
+  },
+  "localChecksAtReviewedTree": [
+    "14 JavaScript tests passed",
+    "11-skill metadata/distribution check passed; no new behavioral claim",
+    "15 source hashes, raw and normalized snapshots and prior manifest metadata verified",
+    "20 palette contrast pairs passed"
+  ],
+  "progress": {
+    "requiredBefore": {
+      "done": 18,
+      "total": 42
+    },
+    "requiredAfter": {
+      "done": 19,
+      "total": 42
+    },
+    "retainedBefore": {
+      "done": 18,
+      "total": 52
+    },
+    "retainedAfter": {
+      "done": 19,
+      "total": 52
+    },
+    "milestoneAcceptanceBefore": {
+      "done": 4,
+      "total": 13
+    },
+    "milestoneAcceptanceAfter": {
+      "done": 4,
+      "total": 13
+    },
+    "scopeChanges": []
+  },
+  "limits": [
+    "No personal-memory store inspected or copied.",
+    "No installed Claude runtime, LangGraph backend, effectiveness or cross-model experiment.",
+    "No new layout schema, host migration, adapter or automated enforcement.",
+    "M13 remains unaccepted; #29 still required.",
+    "Final reconciliation edits require their own exact-head CI; this receipt covers the unchanged research at researchRevision."
+  ],
+  "next": {
+    "id": "PRS-POLICY-01",
+    "issue": 28,
+    "milestone": "M10",
+    "action": "Define rule/control ownership and actual enforcement boundaries using this records map."
+  },
+  "localEnvironmentAttempt": {
+    "result": "site/Python rerun blocked before site tests by missing Markdown after environment interruption",
+    "error": "ModuleNotFoundError: markdown",
+    "recovery": "Install the existing hash-pinned requirements-site.txt, then rerun the affected checks; do not count the import failure as a pass.",
+    "recoveryResult": "Hash-pinned Markdown3.11.2 installed; subsequent 35-test Python suite and 17-guide site build passed."
+  },
+  "finalReconciliationChecks": [
+    "35 Python tests passed after pinned dependency recovery",
+    "14 JavaScript tests passed",
+    "17-guide public site build passed",
+    "README/SVG parity passed",
+    "Before/after compare: only PRS-RECORDS-01 backlog→done; no added/removed/scope IDs",
+    "All 52 item criteria/scope/dependencies and 13 milestone acceptance records preserved",
+    "Rendered records guide contains routing/conflict guidance; generated record has #27 Done and M13 unaccepted"
+  ]
+}
