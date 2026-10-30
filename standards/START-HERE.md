@@ -53,6 +53,7 @@ Use this index as another route to the pages in the guide:
 - [Example tracker](../index.html)
 - [Prehnite reference](../prehnite/progress.html)
 - [Terminology and percentages](STANDARD.md)
+- [Work language and open contribution](WORK-MODEL.md)
 - [Issues and GitHub Projects](GITHUB.md)
 - [Automation](AUTOMATION.md)
 - [New and existing projects](ADAPTATION-PROFILES.md)

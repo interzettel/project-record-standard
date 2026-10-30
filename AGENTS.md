@@ -4,9 +4,13 @@
 
 Read `skills/use-project-records/SKILL.md`, then the applicable repository skill body. `standards/AGENT-WORKFLOWS.md` defines the planning/operations contract. Use the local suite; a skill description is only discovery metadata.
 
-Read `progress/overview.md` and `progress/execution-plan.md`, then inspect the selected issue, relevant open PRs and affected source records. Refresh stale or missing coverage for that package; avoid unrelated repeated scans. Select the earliest authorized, unfinished required leaf whose execution prerequisites are complete. Name its stable ID, issue, milestone, deliverable, criterion and actual blockers before editing. Parent requests earn no completion credit.
+Read `progress/overview.md` and `progress/execution-plan.md`, then inspect the selected issue, relevant open PRs and affected source records. Refresh stale or missing coverage for that package; avoid unrelated repeated scans. Select the earliest authorized, unfinished required leaf (counted work item) whose execution prerequisites are complete. Name its stable ID, issue, milestone, deliverable, criterion and actual blockers before editing. Parent requests earn no completion credit.
 
 Use one primary implementation package. If it is blocked, state the missing evidence and next responsible action, then continue eligible independent work. Apply existing authorization without asking for it again. A proposed owner/release gate is separate from an execution prerequisite; never silently rewrite dependency meaning or criteria.
+
+## Open contribution
+
+Read [work language and open contribution](standards/WORK-MODEL.md). Any human or model may contribute across disciplines. A skill or review lens selects questions and procedures, not a permanent job identity. Name the current responsible contributor for the bounded package; keep accounting ownership, acceptance authority and execution permissions explicit. Record actual review producers and supported dissent. Several lenses from one model do not establish independent agreement. Existing authorization applies; this guidance grants no new permissions or budget.
 
 ## Sources and routing
 

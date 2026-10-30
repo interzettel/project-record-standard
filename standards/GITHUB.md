@@ -12,7 +12,7 @@ Good examples:
 
 Avoid titles such as “Phase III fixes”, “Improve everything”, “Tracker stuff” and unexplained acronyms. Questions and discussions can use a question title; the delivery-package convention applies when a bounded delivery is assigned.
 
-Core label families are `type:*`, `area:*` and `priority:P0` through `priority:P3`. Use one type and one priority. Areas are project-owned and may have aliases to existing labels. `blocked` is an optional attention label with a reason. Workflow status lives in the Project rather than being independently maintained in another family of status labels.
+Core label families are `type:*`, `area:*` and `priority:P0` through `priority:P3`. Use one type and one priority. Areas are project-owned and may have aliases to existing labels. `blocked` is an optional attention label with a reason. Declare one writer for workflow status. When a Project owns it, other status displays are projections; a host without a Project can retain its existing authoritative workflow source.
 
 Suggested types: feature, bug, documentation, research, experiment, decision, maintenance, release. Define P0 as a current blocker to the agreed active outcome or a serious defect; P1 as the next required work; P2 as subsequent scoped work; P3 as deferred/discovery. Priority is local to the project and is not a portfolio-wide urgency score.
 
@@ -20,9 +20,9 @@ Do not turn every milestone ID into a label. Put the IDs in structured issue fie
 
 ## Relationships and Project views
 
-Use native parent/sub-issue and blocking relationships when they fit the work. A delivery package names the affected ledger IDs. Each accounting leaf has one primary milestone; shared prerequisites link other scopes without duplicate credit. Accepted decision links can inform work without becoming blocking dependencies.
+Use native parent/sub-issue and blocking relationships when they fit the work. A delivery package names the affected ledger IDs. Each accounting leaf has one primary milestone; shared prerequisites link other scopes without duplicate credit. Accepted decision links can inform work without becoming blocking dependencies. Parent/sub-issue grouping does not imply a blocking relationship. Preserve typed links for support, origin, resolution, supersession and duplication in the host mapping rather than converting every link to `dependsOn`. The [work model](WORK-MODEL.md) distinguishes optional origin and effect vocabulary from workflow status.
 
-Reuse the existing Project. Start with the views a maintainer uses: active work, milestone roadmap, blockers and release readiness. Status, Priority, Area, Assignee, milestone and parent issue are sufficient initially. Add scope/capability IDs when needed for joins. Completion and acceptance fields are read-only projections if present.
+Reuse the existing Project when present; creating one is optional. Start with the views a maintainer uses: active work, milestone roadmap, blockers and release readiness. Status, Priority, Area, Assignee, milestone and parent issue are sufficient initially. Add scope/capability IDs when needed for joins. Completion and acceptance fields are read-only projections if present.
 
 The manifest records field ownership. A repository-local ledger can own completion while GitHub owns discussion and assignment. An adapting agent must preserve that model or propose an explicit cutover. No repeated two-way sync overwrites human edits from an older snapshot.
 

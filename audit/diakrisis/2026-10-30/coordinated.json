@@ -1,0 +1,277 @@
+{
+  "schema_version": 2,
+  "coordination_id": "PRS-2026-10-30-manual-lenses",
+  "report": {
+    "schema_version": 2,
+    "review_id": "PRS-2026-10-30-manual-lenses",
+    "status": "issues-identified",
+    "coverage": {
+      "examined": [
+        {
+          "source": "standards/AGENT-WORKFLOWS.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Checkpoint, grouping and prerequisite relations"
+        },
+        {
+          "source": "standards/STANDARD.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Checkpoint, grouping and prerequisite relations"
+        },
+        {
+          "source": "AGENTS.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Entry-point vocabulary"
+        },
+        {
+          "source": "standards/STANDARD.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Entry-point vocabulary"
+        },
+        {
+          "source": "standards/AGENT-WORKFLOWS.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Limits on transferring fixture checks to live agent effectiveness"
+        },
+        {
+          "source": "AGENTS.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Negative control: no unsupported inference of owner acceptance from CI, implementation or prior completion. The explicit bounds are retained."
+        },
+        {
+          "source": "progress/overview.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Negative control: no unsupported inference of owner acceptance from CI, implementation or prior completion. The explicit bounds are retained."
+        },
+        {
+          "source": "standards/STANDARD.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Negative control: no unsupported inference of owner acceptance from CI, implementation or prior completion. The explicit bounds are retained."
+        },
+        {
+          "source": "standards/STANDARD.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Vocabulary and completion policy"
+        },
+        {
+          "source": "standards/GITHUB.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Workflow field authority"
+        },
+        {
+          "source": "standards/STANDARD.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "scope": "Workflow field authority"
+        }
+      ],
+      "not_examined": [
+        "Complete live multi-agent outcomes, independent human/model replication and consumer-specific policies."
+      ]
+    },
+    "findings": [
+      {
+        "schema_version": 2,
+        "id": "PRS-DIA-C1",
+        "reviewer": "conceptual-model-review",
+        "artifact": {
+          "path": "standards/STANDARD.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "span": "The usual planning view is **roadmap → milestone → epic → work item**."
+        },
+        "category": "relation-misuse",
+        "claim": "The arrow presentation can suggest a containment chain even though the following sentences distinguish a checkpoint from a work hierarchy. It is ambiguous, not a demonstrated formal contradiction.",
+        "basis": [
+          {
+            "source": "standards/AGENT-WORKFLOWS.md",
+            "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+            "span": "Milestones are outcome checkpoints; the roadmap places them into horizons, dependencies and any sourced dates.",
+            "reason": "The existing local model already distinguishes these concepts.",
+            "verification": "inspected",
+            "applicability": "applicable"
+          }
+        ],
+        "evidence_status": "inferred",
+        "disposition": "suggestion",
+        "severity": "minor",
+        "confidence_reason": "Exact source wording is inspected; the predicted reader consequence is a review judgment, not an observed user test.",
+        "suggestion": "Describe roadmap presentation, optional grouping and milestone support separately; keep prerequisites distinct.",
+        "requires_owner_decision": false
+      },
+      {
+        "schema_version": 2,
+        "id": "PRS-DIA-M1",
+        "reviewer": "method-review",
+        "artifact": {
+          "path": "standards/AGENT-WORKFLOWS.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "span": "Synthetic setup/adaptation runs use disposable fixtures; no individual project migration is implied."
+        },
+        "category": "external-validity-threat",
+        "claim": "This bounded review cannot establish that multiple models, more review lenses or these skills improve live delivery outcomes. Existing fixture qualifications are appropriate; no defect in the experiments is established.",
+        "basis": [
+          {
+            "source": "standards/AGENT-WORKFLOWS.md",
+            "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+            "span": "A successful skill test, local suite or hosted CI run establishes only its tested boundary.",
+            "reason": "The source correctly limits its evidence.",
+            "verification": "inspected",
+            "applicability": "applicable"
+          }
+        ],
+        "evidence_status": "unknown",
+        "disposition": "abstain",
+        "severity": "informational",
+        "confidence_reason": "The cited qualification does not supply a controlled comparison of agent delivery outcomes.",
+        "suggestion": null,
+        "requires_owner_decision": false
+      },
+      {
+        "schema_version": 2,
+        "id": "PRS-DIA-S1",
+        "reviewer": "consistency-review",
+        "artifact": {
+          "path": "standards/GITHUB.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "span": "Workflow status lives in the Project rather than being independently maintained in another family of status labels."
+        },
+        "category": "authority-unresolved",
+        "claim": "The unconditional Project wording leaves hosts without a Project unclear about their workflow writer. The field-ownership principle supports a conditional policy; this is an interoperability clarification, not a proven conflicting status value.",
+        "basis": [
+          {
+            "source": "standards/GITHUB.md",
+            "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+            "span": "The manifest records field ownership.",
+            "reason": "Ownership is declared per host.",
+            "verification": "inspected",
+            "applicability": "applicable"
+          },
+          {
+            "source": "standards/STANDARD.md",
+            "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+            "span": "Each fact has one authoritative writer.",
+            "reason": "One writer does not require one universal tool.",
+            "verification": "inspected",
+            "applicability": "applicable"
+          }
+        ],
+        "evidence_status": "inferred",
+        "disposition": "suggestion",
+        "severity": "minor",
+        "confidence_reason": "Exact source wording is inspected; the predicted reader consequence is a review judgment, not an observed user test.",
+        "suggestion": "Make Project ownership conditional on the host authority map and explicitly allow existing workflow sources.",
+        "requires_owner_decision": false
+      },
+      {
+        "schema_version": 2,
+        "id": "PRS-DIA-T1",
+        "reviewer": "terminology-review",
+        "artifact": {
+          "path": "standards/STANDARD.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "span": "| Task | An execution step or a repository's legacy name for a work item. |"
+        },
+        "category": "unexplained-term",
+        "claim": "The glossary distinguishes tasks but gives readers no place for optional feature/user-story vocabulary or a shared artifact quality policy. Readers importing Agile terminology must currently invent that mapping.",
+        "basis": [
+          {
+            "source": "standards/STANDARD.md",
+            "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+            "span": "Done means the work item's own criterion is complete.",
+            "reason": "The completion definition is the place to state applicable shared quality policy.",
+            "verification": "inspected",
+            "applicability": "applicable"
+          }
+        ],
+        "evidence_status": "inferred",
+        "disposition": "suggestion",
+        "severity": "minor",
+        "confidence_reason": "Exact source wording is inspected; the predicted reader consequence is a review judgment, not an observed user test.",
+        "suggestion": "Add an optional vocabulary mapping and explain item criteria plus applicable Definition of Done without requiring a hierarchy.",
+        "requires_owner_decision": false
+      },
+      {
+        "schema_version": 2,
+        "id": "PRS-DIA-U1",
+        "reviewer": "communication-review",
+        "artifact": {
+          "path": "AGENTS.md",
+          "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+          "span": "Select the earliest authorized, unfinished required leaf whose execution prerequisites are complete."
+        },
+        "category": "understandability",
+        "claim": "The root instruction uses leaf before giving a short explanation, which can slow a contributor entering through AGENTS alone.",
+        "basis": [
+          {
+            "source": "standards/STANDARD.md",
+            "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+            "span": "| Work item | A stable, independently checkable leaf in the ledger. |",
+            "reason": "The glossary supplies the intended local meaning.",
+            "verification": "inspected",
+            "applicability": "applicable"
+          }
+        ],
+        "evidence_status": "inferred",
+        "disposition": "suggestion",
+        "severity": "minor",
+        "confidence_reason": "Exact source wording is inspected; the predicted reader consequence is a review judgment, not an observed user test.",
+        "suggestion": "Gloss the first use as a counted work item and link the work-language guide.",
+        "requires_owner_decision": false
+      }
+    ],
+    "limitations": [
+      "This report is deterministic assembly of submitted reviewer claims, not a second independent review or approval.",
+      "manual-argument-review: One Codex session applies this lens manually; no independent specialist/model invocation is claimed.",
+      "manual-argument-review: Suggestions are advisory. Maintainer disposition is separate from this unchanged source report.",
+      "manual-communication-review: One Codex session applies this lens manually; no independent specialist/model invocation is claimed.",
+      "manual-communication-review: Suggestions are advisory. Maintainer disposition is separate from this unchanged source report.",
+      "manual-conceptual-model-review: One Codex session applies this lens manually; no independent specialist/model invocation is claimed.",
+      "manual-conceptual-model-review: Suggestions are advisory. Maintainer disposition is separate from this unchanged source report.",
+      "manual-consistency-review: One Codex session applies this lens manually; no independent specialist/model invocation is claimed.",
+      "manual-consistency-review: Suggestions are advisory. Maintainer disposition is separate from this unchanged source report.",
+      "manual-method-review: One Codex session applies this lens manually; no independent specialist/model invocation is claimed.",
+      "manual-method-review: Suggestions are advisory. Maintainer disposition is separate from this unchanged source report.",
+      "manual-terminology-review: One Codex session applies this lens manually; no independent specialist/model invocation is claimed.",
+      "manual-terminology-review: Suggestions are advisory. Maintainer disposition is separate from this unchanged source report."
+    ]
+  },
+  "sources": [
+    {
+      "input_id": "manual-argument-review",
+      "review_id": "PRS-2026-10-30-argument-review",
+      "review_status": "no-issues-detected",
+      "sha256": "17536a70ceb61dfcc53236e6e988d1c298f4bb210d36b0cdd6e4ee67c23452cd"
+    },
+    {
+      "input_id": "manual-communication-review",
+      "review_id": "PRS-2026-10-30-communication-review",
+      "review_status": "issues-identified",
+      "sha256": "3b2804549569ceb250e1387e95fbf795aa19f85ac04f13c61818eb595355aaf1"
+    },
+    {
+      "input_id": "manual-conceptual-model-review",
+      "review_id": "PRS-2026-10-30-conceptual-model-review",
+      "review_status": "issues-identified",
+      "sha256": "8596f62a7d757c7e408b90f8f48a2ee63d5a466c316297f90c75fb6d90654dde"
+    },
+    {
+      "input_id": "manual-consistency-review",
+      "review_id": "PRS-2026-10-30-consistency-review",
+      "review_status": "issues-identified",
+      "sha256": "6ee137eb86fadc72f80602498a94d4c3a80c82e017b522de86af7ff677bc15b8"
+    },
+    {
+      "input_id": "manual-method-review",
+      "review_id": "PRS-2026-10-30-method-review",
+      "review_status": "insufficient-evidence",
+      "sha256": "deadae876340538a9018570ba7715b5b0c10dd6888c0940e55263b77fa307480"
+    },
+    {
+      "input_id": "manual-terminology-review",
+      "review_id": "PRS-2026-10-30-terminology-review",
+      "review_status": "issues-identified",
+      "sha256": "464912e15b5178a50f850a3e610d2c4fc69136293fe8c4ceafe85ce3b0bfddef"
+    }
+  ],
+  "groups": [],
+  "disagreements": [],
+  "relationship_policy": "declared-links-only-not-independent-adjudication"
+}

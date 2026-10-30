@@ -79,3 +79,21 @@ Runtime/suite v0.4.1, contract 0.2.0, old tags/assets, consumer repositories and
 The repository validator checks source identities, unique leaves, WBS coverage, references and cycles. Validate new issue drafts with `project-record lint-issue`. Run the Python suite, skill check, public pipeline, JavaScript tests, palette check, site build and README parity before integrating this shared-source change. Compare the preserved normalized observation against the new export and inspect actual public output. Checks prove their tested boundaries, not live interoperability or owner acceptance.
 
 Resume from #15 unless fresh issue/PR evidence or owner direction changes the eligible queue. Read only the relevant workflow and sources; full portfolio rescans, schema redesign, paper/printer work and native runtime deployment are outside this first package.
+
+## Open contribution and work-language refinement · 30 October 2026
+
+The owner requested an assessment using Diakrisis, official Scrum/Agile terminology and the supplied *Unified Work Management Model*. The [bounded review and decisions](diakrisis-review-2026-10-30.md) explain the adopted and declined parts. [WORK-MODEL](../standards/WORK-MODEL.md) is the shared terminology home. This delivery package contributes documentation to existing leaves; it completes none of their full criteria.
+
+The eleven required leaves and seven deferred leaves keep their identities, order and prerequisites. The first eligible product package remains `PRS-HANDOFF-01` (#15). Any contributor may participate across disciplines; temporary responsibility and actual authority govern execution. The rows below refine the existing interfaces, not a second backlog or new schema commitment.
+
+| Existing package | Guidance for its implementation and review |
+| --- | --- |
+| #6 · `PRS-EVIDENCE-STAGES` | Keep implementation, integration, verification, Done, acceptance and availability inspectable; test a built but unmerged artifact and deployment without acceptance. Specify artifact-appropriate quality policy and preserve historical meanings. |
+| #3 · `PRS-AGENT-EXECUTION` | Select by outcome, prerequisites, holds, authority and capacity; retain unknown evidence. Permit cross-disciplinary contributions and handoffs. Do not infer independence from several review lenses. |
+| #1 · `PRS-AGENT-AUTHORITY` (deferred) | Separate task responsibility, capability, risk, accounting ownership and permission. Review scope never locks an agent to a profession. |
+| #17/#18 · `PRS-INSPECT-01/02` | Map each field's authoritative writer; distinguish findings from resulting action and decisions from observations. Show containment and prerequisites separately with source freshness. |
+| #23 · `PRS-CONTROL-01` (deferred) | Define readiness inputs and unknowns before formulas. Keep structural/remaining depth distinct from duration, critical-path scheduling or permission to execute. |
+| #20 · `PRS-UPGRADE-01` | Inventory sources and historical claims before proposing migration. Preserve IDs and authority; preview changes in waves without silently rewriting accepted history. |
+| #25 · `PRS-CONVENTIONS-01` (deferred) | Map optional epic/feature/story/task and typed origin/effect/relationship vocabulary. A milestone is a checkpoint; a parent does not imply a prerequisite. Keep the delivery plan separate from an operations runbook. |
+
+The documentation and distribution correction changes no leaf state, acceptance, required/deferred scope or runtime contract. Before and after: new required work 0/11; expanded required work 18/29 (62.1%); retained work 18/36 (50.0%); declared milestone outcomes 4/9. No model roster, fixed cadence, new required tracker, global merge-first rule or permanent agent roles are introduced. Remaining product behavior belongs to the linked packages and their existing gates.

@@ -23,6 +23,7 @@ REPOSITORY = 'https://github.com/interzettel/project-record-standard'
 DOCUMENTS = [
     ('START-HERE', 'Start here'),
     ('STANDARD', 'Terminology and percentages'),
+    ('WORK-MODEL', 'Work language and contribution'),
     ('GITHUB', 'Issues and GitHub Projects'),
     ('AUTOMATION', 'Automation'),
     ('ADAPTATION-PROFILES', 'New and existing projects'),

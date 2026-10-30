@@ -130,6 +130,12 @@
           "visibility": "public",
           "authority": "Authored planning and repository-operation change; no product implementation claimed.",
           "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-OPEN-CONTRIBUTION-TERMINOLOGY.json",
+          "visibility": "public",
+          "authority": "Authored local change fragment",
+          "observedOn": "2026-10-30"
         }
       ],
       "previousSourceFile": "sources/standard/pre-post-release-2026-10-30.json",

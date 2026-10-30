@@ -22,6 +22,7 @@ class DistributionTests(unittest.TestCase):
                 root='project-record-standard/'
                 self.assertIn(root + 'CHANGELOG.md', names)
                 self.assertIn(root + 'INSTALL.md', names)
+                self.assertIn(root + 'standards/WORK-MODEL.md', names)
                 config=json.loads(archive.read(root+'examples/projects.json'))
                 self.assertTrue(all(e['project']['visibility']=='public' for e in config['projects']))
                 checksums=archive.read(root+'checksums.sha256').decode().splitlines()
