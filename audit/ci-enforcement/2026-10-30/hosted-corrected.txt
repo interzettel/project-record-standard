@@ -1,0 +1,236 @@
+2026-10-30T20:59:22.7046870Z   ref: ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:23.4127221Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:23.9096205Z  * branch            ae2764e36f8c79503e9df23bb0f07786a2544fd0 -> FETCH_HEAD
+2026-10-30T20:59:23.9106279Z [command]/usr/bin/git rev-parse --verify --quiet ae2764e36f8c79503e9df23bb0f07786a2544fd0^{object}
+2026-10-30T20:59:23.9145001Z ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:23.9273463Z [command]/usr/bin/git checkout --progress --force ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:23.9677631Z Note: switching to 'ae2764e36f8c79503e9df23bb0f07786a2544fd0'.
+2026-10-30T20:59:23.9789798Z ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:24.1348911Z   ref: ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:24.3792514Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:24.7970034Z  * branch            ae2764e36f8c79503e9df23bb0f07786a2544fd0 -> FETCH_HEAD
+2026-10-30T20:59:24.7977967Z [command]/usr/bin/git rev-parse --verify --quiet ae2764e36f8c79503e9df23bb0f07786a2544fd0^{object}
+2026-10-30T20:59:24.8015901Z ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:24.8130869Z [command]/usr/bin/git checkout --progress --force ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:24.8503993Z Note: switching to 'ae2764e36f8c79503e9df23bb0f07786a2544fd0'.
+2026-10-30T20:59:24.8604219Z ae2764e36f8c79503e9df23bb0f07786a2544fd0
+2026-10-30T20:59:25.0086770Z   ref: 0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b
+2026-10-30T20:59:25.2923809Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b
+2026-10-30T20:59:25.7618364Z  * branch            0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b -> FETCH_HEAD
+2026-10-30T20:59:25.7628365Z [command]/usr/bin/git rev-parse --verify --quiet 0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b^{object}
+2026-10-30T20:59:25.7670786Z 0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b
+2026-10-30T20:59:25.7790758Z [command]/usr/bin/git checkout --progress --force 0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b
+2026-10-30T20:59:25.8187476Z Note: switching to '0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b'.
+2026-10-30T20:59:25.8289937Z 0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b
+
+Run python3 trusted/tools/run_policy_ci.py --base base --candidate candidate --profile trusted/.github/prs-policy.json
+2026-10-30T20:59:34.2344516Z [36;1mpython3 trusted/tools/run_policy_ci.py --base base --candidate candidate --profile trusted/.github/prs-policy.json[0m
+2026-10-30T20:59:34.2370949Z shell: /usr/bin/bash -e {0}
+2026-10-30T20:59:34.2371209Z env:
+2026-10-30T20:59:34.2371486Z   pythonLocation: /opt/hostedtoolcache/Python/3.15.2/x64
+2026-10-30T20:59:34.2371939Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.15.2/x64/lib/pkgconfig
+2026-10-30T20:59:34.2372392Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.15.2/x64
+2026-10-30T20:59:34.2372764Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.15.2/x64
+2026-10-30T20:59:34.2373128Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.15.2/x64
+2026-10-30T20:59:34.2373508Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.15.2/x64/lib
+2026-10-30T20:59:34.2373821Z ##[endgroup]
+2026-10-30T20:59:34.6439884Z {
+2026-10-30T20:59:34.6440526Z   "policyCIResultVersion": 1,
+2026-10-30T20:59:34.6441095Z   "exitCode": 0,
+2026-10-30T20:59:34.6441563Z   "overall": "pass",
+2026-10-30T20:59:34.6442080Z   "hostEnforcement": "not-assessed",
+2026-10-30T20:59:34.6442672Z   "written": false,
+2026-10-30T20:59:34.6443159Z   "protectedChanges": [],
+2026-10-30T20:59:34.6444108Z   "protectedChangeMeaning": "Review notices, not authorization or a tamper-proof future-workflow guarantee",
+2026-10-30T20:59:34.6445403Z   "policy": {
+2026-10-30T20:59:34.6445791Z     "policyResultVersion": 1,
+2026-10-30T20:59:34.6446276Z     "catalogueRevision": 1,
+2026-10-30T20:59:34.6446712Z     "overall": "pass",
+2026-10-30T20:59:34.6447074Z     "exitCode": 0,
+2026-10-30T20:59:34.6447423Z     "inputDigests": {
+2026-10-30T20:59:34.6448198Z       "requestCanonicalSha256": "68406a8e6ba067b0bed8d8faedae8b7c536696f64583ed72d3e4eed2d5a30cbf",
+2026-10-30T20:59:34.6449454Z       "recordCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13",
+2026-10-30T20:59:34.6450685Z       "beforeCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13",
+2026-10-30T20:59:34.6451551Z       "declaredSource": {
+2026-10-30T20:59:34.6451950Z         "commit": null,
+2026-10-30T20:59:34.6452587Z         "sha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768",
+2026-10-30T20:59:34.6453354Z         "observedOn": "2026-10-30"
+2026-10-30T20:59:34.6453781Z       },
+2026-10-30T20:59:34.6454460Z       "observedSourceSha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768"
+2026-10-30T20:59:34.6455882Z     },
+2026-10-30T20:59:34.6456173Z     "checks": [
+2026-10-30T20:59:34.6456488Z       {
+2026-10-30T20:59:34.6456802Z         "ruleId": "PRS-ACCOUNT-01",
+2026-10-30T20:59:34.6457230Z         "required": true,
+2026-10-30T20:59:34.6457608Z         "status": "pass",
+2026-10-30T20:59:34.6458182Z         "scope": "Existing record validator/accounting/reference structure",
+2026-10-30T20:59:34.6458863Z         "reasons": [
+2026-10-30T20:59:34.6459461Z           "Current and any supplied prior record satisfy existing structural checks"
+2026-10-30T20:59:34.6460156Z         ]
+2026-10-30T20:59:34.6460458Z       },
+2026-10-30T20:59:34.6460759Z       {
+2026-10-30T20:59:34.6461101Z         "ruleId": "PRS-EVIDENCE-01",
+2026-10-30T20:59:34.6461567Z         "required": false,
+2026-10-30T20:59:34.6461962Z         "status": "unknown",
+2026-10-30T20:59:34.6462506Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6463122Z         "reasons": [
+2026-10-30T20:59:34.6463572Z           "Supply the required predicate context"
+2026-10-30T20:59:34.6464064Z         ]
+2026-10-30T20:59:34.6464356Z       },
+2026-10-30T20:59:34.6464648Z       {
+2026-10-30T20:59:34.6465219Z         "ruleId": "PRS-ACCEPT-01",
+2026-10-30T20:59:34.6465691Z         "required": false,
+2026-10-30T20:59:34.6466100Z         "status": "not-applicable",
+2026-10-30T20:59:34.6466997Z         "scope": "No new acceptance decision in supplied comparison",
+2026-10-30T20:59:34.6467649Z         "reasons": [
+2026-10-30T20:59:34.6468248Z           "Historical acceptance remains unchanged and is not recertified"
+2026-10-30T20:59:34.6468936Z         ]
+2026-10-30T20:59:34.6469239Z       },
+2026-10-30T20:59:34.6469525Z       {
+2026-10-30T20:59:34.6469852Z         "ruleId": "PRS-SOURCE-01",
+2026-10-30T20:59:34.6470289Z         "required": true,
+2026-10-30T20:59:34.6470687Z         "status": "pass",
+2026-10-30T20:59:34.6471294Z         "scope": "Actual source bytes against before/current expected identity",
+2026-10-30T20:59:34.6472000Z         "reasons": [
+2026-10-30T20:59:34.6472722Z           "Source bytes match the declared precondition; no lock/CAS/write is performed"
+2026-10-30T20:59:34.6473453Z         ]
+2026-10-30T20:59:34.6473745Z       },
+2026-10-30T20:59:34.6474026Z       {
+2026-10-30T20:59:34.6474351Z         "ruleId": "PRS-SCOPE-01",
+2026-10-30T20:59:34.6474865Z         "required": false,
+2026-10-30T20:59:34.6475705Z         "status": "pass",
+2026-10-30T20:59:34.6476407Z         "scope": "No scope/criteria/dependency/governance change in supplied comparison",
+2026-10-30T20:59:34.6477189Z         "reasons": [
+2026-10-30T20:59:34.6478172Z           "No new scope admission is claimed; routine unchanged-scope updates need no new approval here"
+2026-10-30T20:59:34.6479027Z         ]
+2026-10-30T20:59:34.6479346Z       },
+2026-10-30T20:59:34.6479649Z       {
+2026-10-30T20:59:34.6479991Z         "ruleId": "PRS-PRIVACY-01",
+2026-10-30T20:59:34.6480477Z         "required": true,
+2026-10-30T20:59:34.6480873Z         "status": "pass",
+2026-10-30T20:59:34.6481435Z         "scope": "Existing declared visibility/input selection guard",
+2026-10-30T20:59:34.6482070Z         "reasons": [
+2026-10-30T20:59:34.6482940Z           "Public export guard accepts declared input visibility; no content classification or publication performed"
+2026-10-30T20:59:34.6483918Z         ]
+2026-10-30T20:59:34.6484240Z       },
+2026-10-30T20:59:34.6484549Z       {
+2026-10-30T20:59:34.6484904Z         "ruleId": "PRS-OWNED-01",
+2026-10-30T20:59:34.6485625Z         "required": false,
+2026-10-30T20:59:34.6486066Z         "status": "unknown",
+2026-10-30T20:59:34.6486649Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6487268Z         "reasons": [
+2026-10-30T20:59:34.6487896Z           "Supply an explicit output path for the shared dedicated-directory guard"
+2026-10-30T20:59:34.6488625Z         ]
+2026-10-30T20:59:34.6488921Z       },
+2026-10-30T20:59:34.6489213Z       {
+2026-10-30T20:59:34.6489554Z         "ruleId": "PRS-HISTORY-01",
+2026-10-30T20:59:34.6490291Z         "required": true,
+2026-10-30T20:59:34.6490676Z         "status": "pass",
+2026-10-30T20:59:34.6491322Z         "scope": "Supplied before/after comparison and declared scope explanations",
+2026-10-30T20:59:34.6492035Z         "reasons": [
+2026-10-30T20:59:34.6492759Z           "Supplied prior observation/order and explicit scope explanations cover this comparison"
+2026-10-30T20:59:34.6493584Z         ],
+2026-10-30T20:59:34.6493893Z         "changes": [],
+2026-10-30T20:59:34.6494278Z         "missingExplanations": []
+2026-10-30T20:59:34.6494694Z       },
+2026-10-30T20:59:34.6495255Z       {
+2026-10-30T20:59:34.6495592Z         "ruleId": "PRS-PINS-01",
+2026-10-30T20:59:34.6496020Z         "required": false,
+2026-10-30T20:59:34.6496421Z         "status": "unknown",
+2026-10-30T20:59:34.6496992Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6497618Z         "reasons": [
+2026-10-30T20:59:34.6498570Z           "Use pins.verify_installation with expected/observed installation inputs; this request does not evaluate installation pins"
+2026-10-30T20:59:34.6499611Z         ]
+2026-10-30T20:59:34.6499913Z       },
+2026-10-30T20:59:34.6500231Z       {
+2026-10-30T20:59:34.6500566Z         "ruleId": "PRS-ELIGIBLE-01",
+2026-10-30T20:59:34.6501019Z         "required": false,
+2026-10-30T20:59:34.6501411Z         "status": "unknown",
+2026-10-30T20:59:34.6502232Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6502894Z         "reasons": [
+2026-10-30T20:59:34.6503750Z           "Use execution.select_work with an explicit source/queue/conditions profile; this request does not select work"
+2026-10-30T20:59:34.6504743Z         ]
+2026-10-30T20:59:34.6505324Z       },
+2026-10-30T20:59:34.6505648Z       {
+2026-10-30T20:59:34.6506010Z         "ruleId": "PRS-DELIVERY-01",
+2026-10-30T20:59:34.6506510Z         "required": false,
+2026-10-30T20:59:34.6506919Z         "status": "unknown",
+2026-10-30T20:59:34.6507503Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6508129Z         "reasons": [
+2026-10-30T20:59:34.6509041Z           "Use declared delivery/channel/environment observations; this request does not certify publication or deployment"
+2026-10-30T20:59:34.6510028Z         ]
+2026-10-30T20:59:34.6510339Z       },
+2026-10-30T20:59:34.6510641Z       {
+2026-10-30T20:59:34.6510996Z         "ruleId": "PRS-HOST-01",
+2026-10-30T20:59:34.6511505Z         "required": false,
+2026-10-30T20:59:34.6511954Z         "status": "unknown",
+2026-10-30T20:59:34.6512545Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6513187Z         "reasons": [
+2026-10-30T20:59:34.6514037Z           "Verify actual required-check settings and permitted bypass through #33; no host enforcement is tested here"
+2026-10-30T20:59:34.6515243Z         ]
+2026-10-30T20:59:34.6515567Z       },
+2026-10-30T20:59:34.6515927Z       {
+2026-10-30T20:59:34.6516265Z         "ruleId": "PRS-EVENT-01",
+2026-10-30T20:59:34.6516754Z         "required": false,
+2026-10-30T20:59:34.6517173Z         "status": "unknown",
+2026-10-30T20:59:34.6517748Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6518374Z         "reasons": [
+2026-10-30T20:59:34.6519194Z           "Retain and test event replay/recovery through #32/#34; no journal or lifecycle adapter is evaluated here"
+2026-10-30T20:59:34.6520123Z         ]
+2026-10-30T20:59:34.6520431Z       },
+2026-10-30T20:59:34.6520735Z       {
+2026-10-30T20:59:34.6521084Z         "ruleId": "PRS-FRESH-01",
+2026-10-30T20:59:34.6521553Z         "required": false,
+2026-10-30T20:59:34.6521964Z         "status": "unknown",
+2026-10-30T20:59:34.6522532Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6523142Z         "reasons": [
+2026-10-30T20:59:34.6524046Z           "Use status.project_status with a dated collection receipt; this request performs no collection/freshness assessment"
+2026-10-30T20:59:34.6525609Z         ]
+2026-10-30T20:59:34.6525919Z       },
+2026-10-30T20:59:34.6526197Z       {
+2026-10-30T20:59:34.6526524Z         "ruleId": "PRS-TRANSPORT-01",
+2026-10-30T20:59:34.6526974Z         "required": false,
+2026-10-30T20:59:34.6527392Z         "status": "unknown",
+2026-10-30T20:59:34.6527988Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6528659Z         "reasons": [
+2026-10-30T20:59:34.6529433Z           "Test the actual optional client/protocol transport in #40; no MCP transport is evaluated here"
+2026-10-30T20:59:34.6530306Z         ]
+2026-10-30T20:59:34.6530615Z       },
+2026-10-30T20:59:34.6530925Z       {
+2026-10-30T20:59:34.6531279Z         "ruleId": "PRS-FEEDBACK-01",
+2026-10-30T20:59:34.6531765Z         "required": false,
+2026-10-30T20:59:34.6532186Z         "status": "unknown",
+2026-10-30T20:59:34.6532755Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6533399Z         "reasons": [
+2026-10-30T20:59:34.6534317Z           "Assess the encountered gap, privacy and duplicates through #36; no feedback relevance judgment is performed here"
+2026-10-30T20:59:34.6535588Z         ]
+2026-10-30T20:59:34.6535909Z       },
+2026-10-30T20:59:34.6536317Z       {
+2026-10-30T20:59:34.6536859Z         "ruleId": "PRS-OVERHEAD-01",
+2026-10-30T20:59:34.6537744Z         "required": false,
+2026-10-30T20:59:34.6538496Z         "status": "unknown",
+2026-10-30T20:59:34.6539293Z         "scope": "Predicate or context not evaluated by this request",
+2026-10-30T20:59:34.6540107Z         "reasons": [
+2026-10-30T20:59:34.6541280Z           "Measure actual sessions, interventions and model/runtime coverage in #35/#37; synthetic validity cannot certify overhead reduction"
+2026-10-30T20:59:34.6542527Z         ]
+2026-10-30T20:59:34.6542964Z       }
+2026-10-30T20:59:34.6543367Z     ],
+2026-10-30T20:59:34.6544004Z     "operationAuthorized": false,
+2026-10-30T20:59:34.6544641Z     "written": false,
+2026-10-30T20:59:34.6545483Z     "limits": [
+2026-10-30T20:59:34.6560472Z       "Pass concerns only required predicates and their reported scope, not all catalogue rules.",
+2026-10-30T20:59:34.6561991Z       "Requests, evidence, policy and authority metadata must come from reviewed host inputs; this interface authenticates none of them.",
+2026-10-30T20:59:34.6563644Z       "No repair, source lock/CAS, test execution, public content review, publication, host enforcement or permission grant occurs.",
+2026-10-30T20:59:34.6565239Z       "Reports are local diagnostics and can contain private identifiers; they are not approved public projections."
+2026-10-30T20:59:34.6566144Z     ]
+2026-10-30T20:59:34.6566430Z   },
+2026-10-30T20:59:34.6566724Z   "inputs": {
+2026-10-30T20:59:34.6567407Z     "beforeSourceSha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768",
+2026-10-30T20:59:34.6568544Z     "afterSourceSha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768",
+2026-10-30T20:59:34.6569700Z     "beforeCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13",
+2026-10-30T20:59:34.6570918Z     "afterCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13"
+2026-10-30T20:59:34.6571735Z   },
+2026-10-30T20:59:34.6572048Z   "hostDecisions": [],
+2026-10-30T20:59:34.6572962Z   "reason": "Verdict covers selected data predicates and separately adopted exact-input authority decisions only"
+2026-10-30T20:59:34.6573890Z }
+2026-10-30T20:59:34.6665506Z 
