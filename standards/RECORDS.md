@@ -2,7 +2,9 @@
 
 PRS should help an agent find the right information without turning every remembered detail into a repository record. The host declares the home, writer, privacy, retention and retrieval rule for each class. Existing paths and terminology map into that profile; adoption does not require renaming an established repository.
 
-This is the researched direction for #27/#29. It is not a new enforced layout schema or an implemented memory backend. Investigation and three-host fixtures remain part of their acceptance.
+The [#27 investigation](https://github.com/interzettel/project-record-standard/blob/main/audit/records/2026-10-30/investigation.md) compares selected primary implementations, inventories PRS and a scoped public host, and works through five routing counterexamples. Its [source identities](https://github.com/interzettel/project-record-standard/blob/main/audit/records/2026-10-30/sources.json) and verification limits are explicit. This guidance is a proposed routing contract, not an enforced layout schema or an implemented memory backend. #29 still owns the portable mapping and three-host fixtures.
+
+Route a fact by purpose, audience, declared writer and lifecycle before selecting a filename. Memory may point to current sources; persistence, a namespace, search rank or an authoritative-sounding filename cannot establish approval, accuracy or permission. A record can be durable without being public, and a public document can be explanatory without owning a work field.
 
 ## Classes and ownership
 
@@ -15,7 +17,7 @@ This is the researched direction for #27/#29. It is not a new enforced layout sc
 | Overview and delivery plan | Purpose, scope, sequence and package interfaces. Link authoritative work; avoid a parallel status checklist. |
 | Work records | Stable IDs, current criteria/state/dependencies, evidence links and scope history in the host-declared writer. |
 | Decisions | Dated choice, reasons, alternatives, authority, status and explicit supersession. A remembered preference does not rewrite a recorded decision. |
-| Findings and evidence | Observation plus source/revision/method/result/limits. Preserve failures and historical evidence; follow-up action links to work. |
+| Findings and evidence | Observation plus source/revision/method/result/limits. Preserve failures and historical evidence; follow-up action links to work. Sensitive material follows its declared retention/erasure policy, with an allowed amendment or tombstone when appropriate. |
 | Runbooks | Operating, recovery, rollback and troubleshooting procedures, separate from the delivery plan. |
 | Generated state | README modules, SVG, Pages, caches and event transport journals. Declare ownership; derived output does not become a second work source. |
 
@@ -25,7 +27,15 @@ This is the researched direction for #27/#29. It is not a new enforced layout sc
 
 [MADR](https://adr.github.io/madr/) supplies a structured decision-record approach and illustrates numbered, descriptive filenames. Adopt its rationale/status/supersession ideas with an explicit local mapping; preserve existing decision IDs and naming conventions. [Diátaxis](https://diataxis.fr/) distinguishes tutorials, how-to guidance, reference and explanation by reader need. Those document purposes are different from authority, visibility or completion status.
 
-These primary implementations were inspected on 30 October 2026. #27 must compare actual selected versions and an authorized host example, including private-source limits; this guide does not certify every memory product or prescribe one universal ontology.
+These primary implementations were inspected on 30 October 2026. The investigation identifies Claude Code's observed v2.1.314 release, LangGraph 1.2.18 interfaces, MADR 4.0.0 and dated rolling documentation without treating current docs as exact-version runtime proof. It proposes storage, writer, trust, privacy, retention, retrieval and supersession rules for all ten classes. No private memory store was inspected and no memory-quality or agent-runtime experiment was performed.
+
+## Resolve conflicting information
+
+Read the applicable source revision, field authority and any correction/supersession links. An old plan paragraph is a historical observation when a later attributed amendment says so. A remembered approval is a lead to inspect, not the approval receipt. A generated index can locate evidence but cannot make it current or change its audience.
+
+For a personal-only preference, keep the fact in its authorized private compartment. For a shared convention, update the existing repository guide under normal authority. For changed decisions, retain the prior decision and link the actual successor. For failed experiments, retain the failed observation alongside the correction. For generated status, repair the declared source or generator and rebuild; do not edit the percentage by hand.
+
+Do not scan personal memory or publish its locators to prove that this separation exists. Select only relevant authorized sources. If the source writer or audience remains unresolved, leave the authoritative field unchanged, retain a local/private proposal and name the missing decision. Routine authorized updates need no new approval ceremony.
 
 ## Proposed optional layout profile
 
