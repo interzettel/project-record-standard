@@ -15,14 +15,14 @@
     }
   ],
   "checks": [
-    "16 handoff tests pass, including6 preserved happy-path tests",
-    "16 tests pass from fresh unpublished source-kit extraction",
-    "100 full Python tests pass after pinned dependency restoration",
+    "17 handoff tests pass after mixed-receipt correction",
+    "101 full Python tests pass",
     "14 JavaScript tests pass after npm ci",
-    "11 skill metadata entries,20 palette pairs,19-guide public build and README parity pass"
+    "11 skill metadata entries,20 palette pairs,19-guide public build and README parity pass",
+    "Comment wording checker:2 files,0 warnings/notes; no new language-linter configuration"
   ],
   "review": {
-    "status": "pending"
+    "status": "pending-fixed-head-review"
   },
   "exit": {
     "offlineRecordSemantics": "pending-exact-revision-review",
@@ -35,5 +35,13 @@
     "Minimal read-only consumer test stub, not a supported API or production reconciler",
     "No network/runtime changes or canonical writes; proposals are local diagnostics",
     "No producer authentication, content classification, durable journal or transaction proof"
-  ]
+  ],
+  "initialReview": {
+    "revision": "c11492a07007a4935c716b126c65a650436c7d98",
+    "producer": "Codex /root/handoff_adversarial_review",
+    "result": "Requested changes: incompatible extra receipts admitted to proposals; privacy subcases did not independently isolate project visibility.",
+    "regression": "17 tests:4 mixed-receipt subcase failures reproduced before filtering fix",
+    "fix": "Reuse policy_satisfied per proposed receipt; isolate private-project/private-supplement refusal conditions",
+    "scope": "Fresh-context read-only same-family review, not cross-model proof"
+  }
 }

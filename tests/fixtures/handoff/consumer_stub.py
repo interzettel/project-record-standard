@@ -17,6 +17,21 @@ def assess(record, handoff, events, current_source, *, issue=None,
 
     Canonical metrics always come from record, never event status or receipt count.
     Conflicts and unknown observations withhold proposals; nothing is applied.
+
+    Args:
+        record: The loaded synthetic source, or None when never observed.
+        handoff: The pinned test envelope and identity mapping.
+        events: The well-shaped synthetic consumer events to assess.
+        current_source: The observed current source identity, or None if unknown.
+        issue: The optional supplied issue state; not a fetched observation.
+        collection: The optional sourced collection receipt for project_status.
+        as_of: The explicit reporting date. Default: 2026-10-30.
+
+    Returns:
+        The local pass/conflict/unknown diagnostic and compatible proposals.
+
+    Raises:
+        RecordError: If the loaded record or collection metadata is invalid.
     """
     result = dict(status='unknown', reasons=[], proposals=[], source=None,
                   metrics=None, collection=None, applicationAuthorized=False,
@@ -71,7 +86,9 @@ def assess(record, handoff, events, current_source, *, issue=None,
             reasons.append('work-evidence-conflict')
             continue
         for receipt in receipts:
-            if receipt.get('kind') in handoff['workPolicy']['allOf']:
+            kind = receipt.get('kind')
+            if kind in handoff['workPolicy']['allOf'] and policy_satisfied(
+                    {'allOf': [kind]}, [receipt], leaf['id'], leaf['implementationRevision']):
                 proposed[json.dumps(receipt, sort_keys=True)] = deepcopy(receipt)
     if reasons:
         result['status'] = 'conflict' if any(r.endswith('conflict') for r in reasons) else 'unknown'

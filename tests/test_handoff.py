@@ -209,7 +209,7 @@ class AdversarialHandoffTests(unittest.TestCase):
         for private_project in [True, False]:
             record = deepcopy(self.record)
             record['items'][0]['note'] = 'SYNTHETIC_PRIVATE_TASK_SENTINEL'
-            record['inputVisibility'] = ['public', 'private']
+            record['inputVisibility'] = ['public'] if private_project else ['public', 'private']
             if private_project:
                 record['project']['visibility'] = 'private'
             with self.subTest(private_project=private_project), tempfile.TemporaryDirectory() as folder:
@@ -259,3 +259,14 @@ class AdversarialHandoffTests(unittest.TestCase):
                 bridge = comparison(self.record, record)
                 self.assertEqual(bridge['removed'], [])
                 self.assertNotEqual(bridge['sourceRevisions']['before'], bridge['sourceRevisions']['after'])
+
+    def test_valid_pair_does_not_admit_incompatible_extra_receipts(self):
+        for change in [dict(subject='OTHER'), dict(revision='f' * 40),
+                       dict(result='failed'), dict(supersededBy='replacement')]:
+            with self.subTest(change=change):
+                extra = {**self.event['receipts'][1], **change}
+                event = {**self.event, 'receipts': [*self.event['receipts'], extra]}
+                result = self.check_event([event])
+                self.assertEqual(result['status'], 'pass')
+                self.assertEqual(len(result['proposals']), 2)
+                self.assertNotIn(extra, result['proposals'])
