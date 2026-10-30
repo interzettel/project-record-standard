@@ -200,6 +200,12 @@ def check_alignment(record: dict, profile: dict, issue_snapshot: dict | None, *,
                     or issue['url'] in observed or not isinstance(issue.get('artifactUrls', []), list)
                     or any(not isinstance(u, str) for u in issue.get('artifactUrls', []))):
                 raise RecordError('Issue snapshot needs distinct URLs and string artifact refs')
+            leaf_ids = issue.get('leafIds')
+            if 'leafIds' in issue and (not isinstance(leaf_ids, list)
+                    or any(not isinstance(i, str) or not i for i in leaf_ids)
+                    or len(leaf_ids) != len(set(leaf_ids))
+                    or ('leafId' in issue and issue['leafId'] not in leaf_ids)):
+                raise RecordError('Issue leafIds must be distinct and agree with scalar linkage')
             native = issue.get('nativeMilestone')
             if native is not None and (type(native) is not int or native < 1):
                 raise RecordError('Observed native milestone must be a positive number or unknown')
@@ -215,8 +221,6 @@ def check_alignment(record: dict, profile: dict, issue_snapshot: dict | None, *,
         identity, url = item['id'], item.get('issueUrl')
         if not url:
             add('canonical-issue-link-missing', identity)
-        elif url in linked:
-            add('canonical-issue-link-duplicated', identity)
         if url:
             linked.add(url)
         milestone = item.get('milestoneId')
@@ -227,7 +231,7 @@ def check_alignment(record: dict, profile: dict, issue_snapshot: dict | None, *,
             add('issue-not-observed' if not complete else 'issue-missing-from-complete-snapshot', identity,
                 'unknown' if not complete else 'mismatch')
             continue
-        if issue.get('leafId') != identity:
+        if identity not in issue.get('leafIds', [issue.get('leafId')]):
             add('issue-leaf-link-missing-or-stale', identity)
         native_expected = profile.get('nativeMilestones', {}).get(milestone)
         declared_milestone = issue.get('milestoneId')

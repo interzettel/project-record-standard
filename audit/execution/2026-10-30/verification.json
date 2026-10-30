@@ -35,13 +35,13 @@
     "scoring": "Coordinator read every full response; not keyword-only scoring. Actual copied host inputs/README remained unchanged; installer repeat had no changes."
   },
   "checks": [
-    "20 agent/selection/alignment tests pass",
+    "21 agent/selection/alignment tests pass",
     "25 pin tests pass, including previous-rule profile readback and worked old example validation",
-    "121 full Python tests pass",
+    "122 full Python tests pass",
     "14 JavaScript tests pass after npm ci",
     "11 skill metadata entries,20 palette pairs,19-guide public build and README parity pass",
     "Comment wording checker:3 files,0 warnings/notes; no new language-linter configuration",
-    "20 agent/selection and25 pin tests pass from fresh unpublished source-kit extraction"
+    "21 agent/selection and25 pin tests pass from fresh unpublished source-kit extraction"
   ],
   "limits": [
     "Synthetic preparation responses with real URL identities and invented states; no live consumer/task efficacy or remote reconciliation proof",
@@ -51,6 +51,18 @@
     "No production writer,journal,CLI enforcement,service,scheduler,credential or release was added; those retain their package gates"
   ],
   "review": {
-    "status": "pending"
+    "status": "pending-followup-review"
+  },
+  "applicationRevision": "423b168b1625cb8bcb0eae037271e986dc21f433",
+  "initialReview": {
+    "revision": "423b168b1625cb8bcb0eae037271e986dc21f433",
+    "producer": "Codex /root/execution_review",
+    "result": "No actionable findings; independently passed20 agent and25 pin tests, read all5 application reports",
+    "scope": "Same-family fresh-context review; no full-suite rerun by reviewer"
+  },
+  "coordinatorFollowup": {
+    "reason": "Standard permits one delivery issue to refer to several distinct accounting leaves; original scalar-only alignment flagged valid explicit sharing as mismatch.",
+    "beforeFix": "New multi-ID regression failed against423b168;21 tests,1failure; log retained.",
+    "fix": "Explicit distinct leafIds supported alongside scalar leafId; sharing issue URL earns no extra accounting rows; malformed/contradictory mappings rejected."
   }
 }

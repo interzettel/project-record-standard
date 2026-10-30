@@ -294,12 +294,32 @@ class ExecutionAssessmentTests(unittest.TestCase):
         issues['issues'].append(self.copy(issues['issues'][0]))
         with self.assertRaises(RecordError):
             self.alignment(issues)
+        for leaf_ids in [None, ['EX-NEXT', 'EX-NEXT'], ['OTHER']]:
+            malformed = self.copy(self.issues)
+            malformed['issues'][2]['leafIds'] = leaf_ids
+            with self.subTest(leaf_ids=leaf_ids), self.assertRaises(RecordError):
+                self.alignment(malformed)
         profile = self.copy(self.profile)
         profile['conditions']['EX-NEXT']['authorized'] = 1
         with self.assertRaises(RecordError):
             self.selection(profile)
         with self.assertRaises(RecordError):
             self.select(self.record, self.profile, current_source_sha256=None, as_of='2026-10-29')
+
+
+    def test_one_delivery_issue_can_explicitly_link_multiple_distinct_leaves(self):
+        record = self.copy(self.record)
+        record['items'][1]['issueUrl'] = record['items'][2]['issueUrl']
+        issues = self.copy(self.issues)
+        issues['issues'] = [i for i in issues['issues'] if i['leafId'] != 'STALE-LEAF']
+        issue = next(i for i in issues['issues'] if i['leafId'] == 'EX-NEXT')
+        issue.pop('leafId')
+        issue.update(leafIds=['EX-WAIT', 'EX-NEXT'], milestoneId='M5', artifactUrls=[])
+        result = self.align(record, self.profile, issues, as_of='2026-10-30')
+        wrong = [x for x in result['findings'] if x['subject'] in ['EX-WAIT','EX-NEXT']]
+        self.assertEqual(wrong, [])
+        self.assertEqual(result['metrics']['work']['total'], 5)
+        self.assertEqual(result['metrics']['work']['done'], 1)
 
 
 if __name__ == '__main__':

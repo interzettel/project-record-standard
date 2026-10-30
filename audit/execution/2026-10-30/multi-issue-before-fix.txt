@@ -1,0 +1,27 @@
+======================================================================
+FAIL: test_one_delivery_issue_can_explicitly_link_multiple_distinct_leaves (test_agents.ExecutionAssessmentTests.test_one_delivery_issue_can_explicitly_link_multiple_distinct_leaves)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_agents.py", line 315, in test_one_delivery_issue_can_explicitly_link_multiple_distinct_leaves
+    self.assertEqual(wrong, [])
+AssertionError: Lists differ: [{'code': 'issue-leaf-link-missing-or-stal[222 chars]ch'}] != []
+
+First list contains 3 additional elements.
+First extra element 0:
+{'code': 'issue-leaf-link-missing-or-stale', 'subject': 'EX-WAIT', 'status': 'mismatch'}
+
++ []
+- [{'code': 'issue-leaf-link-missing-or-stale',
+-   'status': 'mismatch',
+-   'subject': 'EX-WAIT'},
+-  {'code': 'canonical-issue-link-duplicated',
+-   'status': 'mismatch',
+-   'subject': 'EX-NEXT'},
+-  {'code': 'issue-leaf-link-missing-or-stale',
+-   'status': 'mismatch',
+-   'subject': 'EX-NEXT'}]
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.063s
+
+FAILED (failures=1)
