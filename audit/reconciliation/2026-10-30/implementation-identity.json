@@ -1,0 +1,21 @@
+{
+  "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+  "equivalentLocalCommit": "ec99861531ceefa8f4cf79a92013ceaa85e9e45c",
+  "tree": "e0426eafdec233f593a211cbc3a6cee6de9777f2",
+  "files": {
+    "src/project_record/__main__.py": "b834aed8c3f8fd1ee6b7774ff100c1f11ecee762a8a60de9db3c721517a174c3",
+    "src/project_record/reconcile.py": "0cbe6603773cfc1ea7957448dfc959d4f068fbe53f3514face0011df5818dc56",
+    "standards/ARCHITECTURE.md": "79e3203834361623f75ab8261d072e4bf468fb324504c36cf752bf20621cfe0e",
+    "standards/AUTOMATION.md": "7139884412a050f6dea8128481023325f9df6d872a6f912eb9043e473d4536f9",
+    "standards/COMPATIBILITY.md": "480c29c311bdd8b0ed3f9c2c28ab9872262cfa8d5e392b9703c71281762deda5",
+    "standards/POLICY.md": "58772a17cde2d18cd2632e231b1df011d2ade4b53ead6ec3be5a709d3b7ac55e",
+    "templates/reconciliation-profile.example.json": "0f12dcb16c40f1d40832fbb4a581ab564dee1f11a8ce0d82e878e973aedc8a27",
+    "templates/work-result.example.json": "691b17e06c30ff0665ba5a6e0bd1d3b283c59d456e39efc5390a40ecbdcbcf13",
+    "tests/fixtures/reconcile/ledger.json": "585a2450d71d28610ffd0e8743389c979e693dc044dc9a818f6cc07c065bd99d",
+    "tests/fixtures/reconcile/projects.json": "45ba739a4f6beabccc9c21df1a48c9b6e63ce884a7c1cc3a743d4c260e17f4a7",
+    "tests/fixtures/reconcile/theme.json": "b8d68b583720214e1fa896dc3da5cf5ef4f895778c89c2b12accef498485b95e",
+    "tests/test_packaging.py": "3abdb9d1341e1934cce964ce9fcdebf3c888ac77033d65f3140c218ec59c0d36",
+    "tests/test_reconcile.py": "04b8f4b5057889dd74da00fcd1b9131ce220ec21e6621baba45b8735fabf17d9",
+    "tools/package_standard.py": "f7c5bd8c3a5a9c14a38501c08933a951c80205387ce9e55b85778597c24fd016"
+  }
+}

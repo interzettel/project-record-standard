@@ -1,0 +1,23 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-reconcile-self-journal",
+  "output": "/tmp/prs-reconcile-self-views",
+  "audience": "public",
+  "authority": {
+    "source": "Owner task:go go go; AGENTS.md existing bounded implementation/reconciliation authorization",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-RECONCILE-01": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}

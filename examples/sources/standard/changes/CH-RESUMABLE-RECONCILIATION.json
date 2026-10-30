@@ -1,0 +1,11 @@
+{
+  "id": "CH-RESUMABLE-RECONCILIATION",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Apply bounded host-authorized local work results with preserved history, scoped discovery, deduplication and resumable source/view writes.",
+  "workItemIds": [
+    "PRS-RECONCILE-01"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/52",
+  "compatibility": "Unreleased opt-in eventVersion1/reconcileVersion1/resultVersion1 local normalized-v1 writer; completion contracts/native package/suite versions unchanged. Host adopts writer paths and work/admission policy. Cooperative local lock and recoverable multi-file writes do not certify arbitrary editors, Windows/network filesystems/power loss, hooks, automatic installation or supported unattended operation."
+}

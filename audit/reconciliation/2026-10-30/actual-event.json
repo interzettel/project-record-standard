@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-RECONCILE-01:0bd960c65017a24bf3c08de124fc999d1d783ead",
+  "projectId": "standard",
+  "workItemId": "PRS-RECONCILE-01",
+  "sourceSha256": "d176ce9ea89c18ce59f74b011eac28467dd818df3ae6aa89735cc84a11c6eecd",
+  "manifestSha256": "bc073f9b77e855c8c50ccbd59094b348b0d63af1bed46cbb2518d30d4622e8b4",
+  "artifactRevision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/52",
+  "observedOn": "2026-10-30",
+  "summary": "Opt-in normalized-v1 host-authorized writer passes22 reconciliation and164 full Python tests, including replay/stale/negative events, scoped discovery,7 interrupted phases, real process deaths and lock contention. Fresh-context same-family review found no confirmed issues. No live lifecycle, arbitrary-editor CAS, supported Windows/network filesystem/power-loss, owner acceptance or release claim.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-RECONCILE-01",
+      "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+      "result": "passed",
+      "source": "src/project_record/reconcile.py",
+      "producer": "Codex task session",
+      "observedOn": "2026-10-30"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-RECONCILE-01",
+      "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+      "result": "passed",
+      "source": "tests/test_reconcile.py; audit/reconciliation/2026-10-30/verification.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-10-30"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-RECONCILE-01",
+      "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+      "result": "passed",
+      "source": "audit/reconciliation/2026-10-30/verification.json",
+      "producer": "Codex /root/reconciliation_review",
+      "observedOn": "2026-10-30"
+    }
+  ],
+  "discoveries": []
+}

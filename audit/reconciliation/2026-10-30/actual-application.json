@@ -1,0 +1,276 @@
+{
+  "reconciliationResultVersion": 1,
+  "status": "applied",
+  "exitCode": 0,
+  "reason": "Canonical source and projections committed under the adopted host policy",
+  "written": true,
+  "metrics": {
+    "before": {
+      "work": {
+        "done": 27,
+        "total": 42,
+        "percent": 64.3,
+        "active": 0,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 10,
+        "method": "completed-leaves / required-leaves"
+      },
+      "ledger": {
+        "done": 27,
+        "total": 52,
+        "percent": 51.9,
+        "active": 0,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / retained-ledger-leaves"
+      },
+      "milestones": {
+        "done": 4,
+        "total": 13,
+        "known": 13,
+        "percent": 30.8,
+        "method": "accepted-milestones / declared-milestones"
+      },
+      "roadmapMean": {
+        "percent": null,
+        "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+        "milestoneCount": 13
+      }
+    },
+    "after": {
+      "work": {
+        "done": 28,
+        "total": 42,
+        "percent": 66.7,
+        "active": 0,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 10,
+        "method": "completed-leaves / required-leaves"
+      },
+      "ledger": {
+        "done": 28,
+        "total": 52,
+        "percent": 53.8,
+        "active": 0,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / retained-ledger-leaves"
+      },
+      "milestones": {
+        "done": 4,
+        "total": 13,
+        "known": 13,
+        "percent": 30.8,
+        "method": "accepted-milestones / declared-milestones"
+      },
+      "roadmapMean": {
+        "percent": null,
+        "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+        "milestoneCount": 13
+      }
+    }
+  },
+  "discoveries": [],
+  "output": "/tmp/prs-reconcile-self-views/578e0ac364485a1a0c9d328d7832ac4bf3f5e09a7926a0b33585ad65651f5489",
+  "sourceSha256": "7346a4d2ac894e9b0e777eea8f55cae21539791b01cec42d52faedad11190e77",
+  "eventSha256": "088db4bb61a9b9920e97587721df3c1b50398ca5fa6bbbebfc64ae2bfac359f8",
+  "profileSha256": "0d1dade0f498cecac5d83c51633ef5023c4c54241db44c5285defdcc4bd57e7e",
+  "policy": {
+    "policyResultVersion": 1,
+    "catalogueRevision": 1,
+    "overall": "pass",
+    "exitCode": 0,
+    "inputDigests": {
+      "requestCanonicalSha256": "f89381209b5a0ccf69f91cfbc55294c5ec537f40b57da4c48e121f810dd8a0fc",
+      "recordCanonicalSha256": "90d80fa6785a01ceb6049c1445598236823e08f199b0d4f1ec08245ba649e65d",
+      "beforeCanonicalSha256": "6817ddb0f0c6987e3ed384e5870ce0f216fd9dece7f92a4a727e6a6bf4cc6774",
+      "declaredSource": {
+        "commit": null,
+        "sha256": "7346a4d2ac894e9b0e777eea8f55cae21539791b01cec42d52faedad11190e77",
+        "observedOn": "2026-10-30"
+      },
+      "observedSourceSha256": "d176ce9ea89c18ce59f74b011eac28467dd818df3ae6aa89735cc84a11c6eecd"
+    },
+    "checks": [
+      {
+        "ruleId": "PRS-ACCOUNT-01",
+        "required": true,
+        "status": "pass",
+        "scope": "Existing record validator/accounting/reference structure",
+        "reasons": [
+          "Current and any supplied prior record satisfy existing structural checks"
+        ]
+      },
+      {
+        "ruleId": "PRS-EVIDENCE-01",
+        "required": true,
+        "status": "pass",
+        "scope": "Supplied exact-subject/revision metadata policies, not test execution or criterion interpretation",
+        "reasons": [
+          "Resolve each required gate; missing data never certifies success"
+        ],
+        "gates": [
+          {
+            "subject": "PRS-RECONCILE-01",
+            "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+            "status": "pass",
+            "reason": "Supplied metadata satisfies this exact subject/revision policy only"
+          }
+        ]
+      },
+      {
+        "ruleId": "PRS-ACCEPT-01",
+        "required": false,
+        "status": "not-applicable",
+        "scope": "No new acceptance decision in supplied comparison",
+        "reasons": [
+          "Historical acceptance remains unchanged and is not recertified"
+        ]
+      },
+      {
+        "ruleId": "PRS-SOURCE-01",
+        "required": true,
+        "status": "pass",
+        "scope": "Actual source bytes against before/current expected identity",
+        "reasons": [
+          "Source bytes match the declared precondition; no lock/CAS/write is performed"
+        ]
+      },
+      {
+        "ruleId": "PRS-SCOPE-01",
+        "required": false,
+        "status": "pass",
+        "scope": "No scope/criteria/dependency/governance change in supplied comparison",
+        "reasons": [
+          "No new scope admission is claimed; routine unchanged-scope updates need no new approval here"
+        ]
+      },
+      {
+        "ruleId": "PRS-PRIVACY-01",
+        "required": true,
+        "status": "pass",
+        "scope": "Existing declared visibility/input selection guard",
+        "reasons": [
+          "Public export guard accepts declared input visibility; no content classification or publication performed"
+        ]
+      },
+      {
+        "ruleId": "PRS-OWNED-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Supply an explicit output path for the shared dedicated-directory guard"
+        ]
+      },
+      {
+        "ruleId": "PRS-HISTORY-01",
+        "required": true,
+        "status": "pass",
+        "scope": "Supplied before/after comparison and declared scope explanations",
+        "reasons": [
+          "Supplied prior observation/order and explicit scope explanations cover this comparison"
+        ],
+        "changes": [],
+        "missingExplanations": []
+      },
+      {
+        "ruleId": "PRS-PINS-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Use pins.verify_installation with expected/observed installation inputs; this request does not evaluate installation pins"
+        ]
+      },
+      {
+        "ruleId": "PRS-ELIGIBLE-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Use execution.select_work with an explicit source/queue/conditions profile; this request does not select work"
+        ]
+      },
+      {
+        "ruleId": "PRS-DELIVERY-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Use declared delivery/channel/environment observations; this request does not certify publication or deployment"
+        ]
+      },
+      {
+        "ruleId": "PRS-HOST-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Verify actual required-check settings and permitted bypass through #33; no host enforcement is tested here"
+        ]
+      },
+      {
+        "ruleId": "PRS-EVENT-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Retain and test event replay/recovery through #32/#34; no journal or lifecycle adapter is evaluated here"
+        ]
+      },
+      {
+        "ruleId": "PRS-FRESH-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Use status.project_status with a dated collection receipt; this request performs no collection/freshness assessment"
+        ]
+      },
+      {
+        "ruleId": "PRS-TRANSPORT-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Test the actual optional client/protocol transport in #40; no MCP transport is evaluated here"
+        ]
+      },
+      {
+        "ruleId": "PRS-FEEDBACK-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Assess the encountered gap, privacy and duplicates through #36; no feedback relevance judgment is performed here"
+        ]
+      },
+      {
+        "ruleId": "PRS-OVERHEAD-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Measure actual sessions, interventions and model/runtime coverage in #35/#37; synthetic validity cannot certify overhead reduction"
+        ]
+      }
+    ],
+    "operationAuthorized": false,
+    "written": false,
+    "limits": [
+      "Pass concerns only required predicates and their reported scope, not all catalogue rules.",
+      "Requests, evidence, policy and authority metadata must come from reviewed host inputs; this interface authenticates none of them.",
+      "No repair, source lock/CAS, test execution, public content review, publication, host enforcement or permission grant occurs.",
+      "Reports are local diagnostics and can contain private identifiers; they are not approved public projections."
+    ]
+  }
+}

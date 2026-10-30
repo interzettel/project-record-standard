@@ -1,0 +1,103 @@
+======================================================================
+ERROR: test_failed_cancelled_and_blocked_results_cannot_award_done (test_reconcile.ReconciliationTests.test_failed_cancelled_and_blocked_results_cannot_award_done) (result='failed')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 88, in test_failed_cancelled_and_blocked_results_cannot_award_done
+    report = self.run_event(event, apply=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 40, in run_event
+    from project_record.reconcile import reconcile
+ModuleNotFoundError: No module named 'project_record.reconcile'
+
+======================================================================
+ERROR: test_failed_cancelled_and_blocked_results_cannot_award_done (test_reconcile.ReconciliationTests.test_failed_cancelled_and_blocked_results_cannot_award_done) (result='cancelled')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 88, in test_failed_cancelled_and_blocked_results_cannot_award_done
+    report = self.run_event(event, apply=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 40, in run_event
+    from project_record.reconcile import reconcile
+ModuleNotFoundError: No module named 'project_record.reconcile'
+
+======================================================================
+ERROR: test_failed_cancelled_and_blocked_results_cannot_award_done (test_reconcile.ReconciliationTests.test_failed_cancelled_and_blocked_results_cannot_award_done) (result='blocked')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 88, in test_failed_cancelled_and_blocked_results_cannot_award_done
+    report = self.run_event(event, apply=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 40, in run_event
+    from project_record.reconcile import reconcile
+ModuleNotFoundError: No module named 'project_record.reconcile'
+
+======================================================================
+ERROR: test_preview_then_apply_updates_one_leaf_and_views_with_no_owner_acceptance (test_reconcile.ReconciliationTests.test_preview_then_apply_updates_one_leaf_and_views_with_no_owner_acceptance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 45, in test_preview_then_apply_updates_one_leaf_and_views_with_no_owner_acceptance
+    preview = self.run_event(apply=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 40, in run_event
+    from project_record.reconcile import reconcile
+ModuleNotFoundError: No module named 'project_record.reconcile'
+
+======================================================================
+ERROR: test_replay_is_idempotent_and_same_id_with_other_payload_conflicts (test_reconcile.ReconciliationTests.test_replay_is_idempotent_and_same_id_with_other_payload_conflicts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 58, in test_replay_is_idempotent_and_same_id_with_other_payload_conflicts
+    first = self.run_event()
+            ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 40, in run_event
+    from project_record.reconcile import reconcile
+ModuleNotFoundError: No module named 'project_record.reconcile'
+
+======================================================================
+ERROR: test_unknown_authority_cannot_write_or_be_granted_by_event (test_reconcile.ReconciliationTests.test_unknown_authority_cannot_write_or_be_granted_by_event)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 94, in test_unknown_authority_cannot_write_or_be_granted_by_event
+    self.assertEqual(self.run_event()['status'], 'held')
+                     ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 40, in run_event
+    from project_record.reconcile import reconcile
+ModuleNotFoundError: No module named 'project_record.reconcile'
+
+======================================================================
+ERROR: test_wrong_revision_missing_proof_and_stale_source_never_complete (test_reconcile.ReconciliationTests.test_wrong_revision_missing_proof_and_stale_source_never_complete) (change='wrong')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 79, in test_wrong_revision_missing_proof_and_stale_source_never_complete
+    result = self.run_event(event)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 40, in run_event
+    from project_record.reconcile import reconcile
+ModuleNotFoundError: No module named 'project_record.reconcile'
+
+======================================================================
+ERROR: test_wrong_revision_missing_proof_and_stale_source_never_complete (test_reconcile.ReconciliationTests.test_wrong_revision_missing_proof_and_stale_source_never_complete) (change='missing')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 79, in test_wrong_revision_missing_proof_and_stale_source_never_complete
+    result = self.run_event(event)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 40, in run_event
+    from project_record.reconcile import reconcile
+ModuleNotFoundError: No module named 'project_record.reconcile'
+
+======================================================================
+ERROR: test_wrong_revision_missing_proof_and_stale_source_never_complete (test_reconcile.ReconciliationTests.test_wrong_revision_missing_proof_and_stale_source_never_complete) (change='stale')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 79, in test_wrong_revision_missing_proof_and_stale_source_never_complete
+    result = self.run_event(event)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_reconcile.py", line 40, in run_event
+    from project_record.reconcile import reconcile
+ModuleNotFoundError: No module named 'project_record.reconcile'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.006s
+
+FAILED (errors=9)
