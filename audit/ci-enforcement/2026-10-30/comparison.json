@@ -1,0 +1,78 @@
+{
+  "added": [],
+  "removed": [],
+  "stateChanges": [],
+  "scopeChanges": [],
+  "before": {
+    "work": {
+      "done": 28,
+      "total": 42,
+      "percent": 66.7,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 28,
+      "total": 52,
+      "percent": 53.8,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  },
+  "after": {
+    "work": {
+      "done": 28,
+      "total": 42,
+      "percent": 66.7,
+      "active": 0,
+      "review": 0,
+      "blocked": 1,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 28,
+      "total": 52,
+      "percent": 53.8,
+      "active": 0,
+      "review": 0,
+      "blocked": 1,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  }
+}

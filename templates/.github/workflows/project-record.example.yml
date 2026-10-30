@@ -1,18 +1,8 @@
 name: Project record
 on:
   pull_request:
-    paths:
-      - 'progress/**'
-      - '.repo-status/**'
-      - 'tools/project-record-standard/**'
-      - '.github/workflows/project-record.yml'
   push:
     branches: [main]
-    paths:
-      - 'progress/**'
-      - '.repo-status/**'
-      - 'tools/project-record-standard/**'
-      - '.github/workflows/project-record.yml'
 permissions:
   contents: read
 jobs:

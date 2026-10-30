@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets",
+    "observedOn": "2026-10-30",
+    "scope": "Required status checks, trusted app binding, strict mode, bypass boundary"
+  },
+  {
+    "url": "https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks",
+    "observedOn": "2026-10-30",
+    "scope": "Eligible workflow events, missing/skipped checks and merge queue triggers"
+  },
+  {
+    "url": "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs",
+    "observedOn": "2026-10-30",
+    "scope": "Commit skip instructions do not skip pull_request_target; required missing checks stay pending"
+  },
+  {
+    "url": "https://docs.github.com/en/actions/reference/security/securely-using-pull_request_target",
+    "observedOn": "2026-10-30",
+    "scope": "Trusted base context, untrusted checkout risks, unsafe-checkout opt-out; public event-policy evaluate/default enforcement2December2026"
+  },
+  {
+    "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+    "observedOn": "2026-10-30",
+    "scope": "Least privilege, full action pins and stronger dependency lockfile option; no claim all controls adopted"
+  }
+]

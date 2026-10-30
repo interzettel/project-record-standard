@@ -79,5 +79,5 @@ The historical release remains 18/18 complete. The expanded plan separates newly
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/standard/progress.html) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-10-30 against `7346a4d2`.
+Observed 2026-10-30 against `256e3b2b`.
 <!-- project-record:end -->

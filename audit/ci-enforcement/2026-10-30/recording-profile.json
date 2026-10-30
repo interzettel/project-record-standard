@@ -1,0 +1,23 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-ci-preparation-journal",
+  "output": "/tmp/prs-ci-preparation-views",
+  "audience": "public",
+  "authority": {
+    "source": "Owner task:well well well go on; AGENTS.md bounded implementation and truthful blocked-state reconciliation",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-GATE-02": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}

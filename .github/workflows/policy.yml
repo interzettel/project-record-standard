@@ -1,0 +1,47 @@
+name: PRS policy boundary
+on:
+  pull_request_target:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: prs-policy-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+jobs:
+  policy:
+    name: PRS policy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Hold fork input until a reviewed data-only transport is adopted
+        if: github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository
+        run: |
+          echo 'Fork data transport is not supported by this profile; no unsafe checkout opt-out is enabled.'
+          exit 3
+      - name: Read trusted toolkit at the immutable base or reviewed push revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.base.sha || github.sha }}
+          path: trusted
+          persist-credentials: false
+      - name: Read prior data at its exact revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.base.sha || github.event.before }}
+          path: base
+          persist-credentials: false
+      - name: Read candidate data without executing its code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          path: candidate
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version-file: trusted/.python-version
+      - name: Run the trusted read-only data policy
+        run: python3 trusted/tools/run_policy_ci.py --base base --candidate candidate --profile trusted/.github/prs-policy.json

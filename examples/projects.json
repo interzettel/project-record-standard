@@ -167,9 +167,15 @@
           "visibility": "public"
         },
         {
-          "path": "sources/standard/changes/CH-RESUMABLE-RECONCILIATION.json",
-          "visibility": "public",
           "authority": "Authored opt-in resumable local work-result writer",
+          "observedOn": "2026-10-30",
+          "path": "sources/standard/changes/CH-RESUMABLE-RECONCILIATION.json",
+          "visibility": "public"
+        },
+        {
+          "path": "sources/standard/changes/CH-CI-POLICY-PREPARATION.json",
+          "visibility": "public",
+          "authority": "Authored bounded CI data-check preparation; host enforcement incomplete",
           "observedOn": "2026-10-30"
         }
       ],
@@ -189,7 +195,7 @@
         "path": "examples/sources/standard/ledger.json",
         "updatedOn": "2026-10-30"
       },
-      "previousSourceFile": "sources/standard/reconciliation-history/d176ce9ea89c18ce59f74b011eac28467dd818df3ae6aa89735cc84a11c6eecd.json",
+      "previousSourceFile": "sources/standard/reconciliation-history/7346a4d2ac894e9b0e777eea8f55cae21539791b01cec42d52faedad11190e77.json",
       "project": {
         "id": "standard",
         "name": "Project record standard",
@@ -405,6 +411,17 @@
             "updatedOn": "2026-10-30"
           },
           "sourceFile": "sources/standard/pre-gates-2026-10-30.json"
+        },
+        {
+          "source": {
+            "authority": "Canonical ledger: preserved historical claims and reviewed bounded delivery completion; new milestone outcomes remain unaccepted.",
+            "commit": null,
+            "kind": "file-snapshot",
+            "observedOn": "2026-10-30",
+            "path": "examples/sources/standard/ledger.json",
+            "updatedOn": "2026-10-30"
+          },
+          "sourceFile": "sources/standard/reconciliation-history/d176ce9ea89c18ce59f74b011eac28467dd818df3ae6aa89735cc84a11c6eecd.json"
         }
       ],
       "source": {
