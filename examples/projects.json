@@ -172,16 +172,22 @@
           "visibility": "public",
           "authority": "Authored bounded offline handoff demonstration",
           "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-ADVERSARIAL-HANDOFF.json",
+          "visibility": "public",
+          "authority": "Authored adversarial offline handoff proof",
+          "observedOn": "2026-10-30"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-handoff-2026-10-30.json",
+      "previousSourceFile": "sources/standard/pre-handoff-adversarial-2026-10-30.json",
       "previousSource": {
         "kind": "file-snapshot",
         "path": "examples/sources/standard/ledger.json",
-        "commit": "d1d609b5fbf72b33e7b030aab18fd265b7a18e91",
+        "commit": "543ba0368e3d85c5bf270f171a8a6f3fabd611fd",
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Exact22/42 required,22/52 retained and4/13 accepted milestones before PRS-HANDOFF-01 completion."
+        "authority": "Exact23/42 required,23/52 retained and4/13 accepted milestones before PRS-HANDOFF-02 completion."
       },
       "snapshots": [
         {
@@ -336,6 +342,17 @@
             "observedOn": "2026-10-30",
             "updatedOn": "2026-10-30",
             "authority": "Exact21/42 required,21/52 retained and4/13 accepted milestones before PRS-PIN-01 completion."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-handoff-2026-10-30.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/ledger.json",
+            "commit": "d1d609b5fbf72b33e7b030aab18fd265b7a18e91",
+            "observedOn": "2026-10-30",
+            "updatedOn": "2026-10-30",
+            "authority": "Exact22/42 required,22/52 retained and4/13 accepted milestones before PRS-HANDOFF-01 completion."
           }
         }
       ]

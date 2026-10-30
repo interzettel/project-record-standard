@@ -29,3 +29,7 @@ PR46 completes #30: pinVersion1 capture/validation, selected-byte checks against
 ## Pinned offline handoff
 
 PR47 completes #15 with one synthetic PRS leaf and a distinct consumer task, contract/source/reader pins and6 offline tests. Work completion1/1 in the fixture coexists with accepted milestones0/1; matching worker/check receipts do not supply owner acceptance. Required23/42 (54.8%), retained23/52 (44.2%), newly required5/24; accepted milestones4/13. No runtime permissions or release changed. Next: #16/M5 adversarial exit proof.
+
+## Adversarial offline handoff
+
+PR48 completes #16 with17 handoff tests and a reviewed offline record-semantics PASS at 29e8fe5202d952c218ba89581063e9fc172ed916. Replay stays one credit, incompatible/mixed receipts are filtered, unknown collection retains old metrics/date, and private public-build inputs are refused before output. This is a read-only consumer test stub, not a production writer or live Qurultai/Hermes pass. Required24/42 (57.1%), retained24/52 (46.2%), newly required6/24; accepted milestones4/13. Next: #6/M5 evidence stages.

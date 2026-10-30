@@ -1,0 +1,86 @@
+{
+  "package": "PRS-HANDOFF-02",
+  "inputRevision": "543ba0368e3d85c5bf270f171a8a6f3fabd611fd",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "initialFailures": [
+    {
+      "kind": "test-authoring",
+      "result": "Two errors: history test looked for source in metric dictionaries instead of comparison.sourceRevisions; corrected assertion without runtime change"
+    },
+    {
+      "kind": "environment",
+      "result": "Full suite import failed because pinned Markdown package was absent after session restart; dependency restoration and rerun pending",
+      "resolution": "Installed hash-pinned Markdown3.11.2; full100-test rerun passed."
+    }
+  ],
+  "checks": [
+    "17 handoff tests pass after mixed-receipt correction",
+    "101 full Python tests pass",
+    "14 JavaScript tests pass after npm ci",
+    "11 skill metadata entries,20 palette pairs,19-guide public build and README parity pass",
+    "Comment wording checker:2 files,0 warnings/notes; no new language-linter configuration",
+    "17 tests pass from fresh unpublished fixed source-kit extraction"
+  ],
+  "review": {
+    "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+    "producer": "Codex /root/handoff_adversarial_review",
+    "result": "Both findings resolved; no remaining blockers; independently passed17 tests; approved bounded offline gate",
+    "scope": "Fresh-context read-only same-family review; no human or cross-model evidence"
+  },
+  "exit": {
+    "offlineRecordSemantics": "pass-at-reviewed-revision",
+    "liveQurultai": "unknown-not-tested",
+    "liveHermes": "unknown-not-tested",
+    "ownerAcceptance": "not-supplied",
+    "publication": "not-performed",
+    "nextOwnerAction": "Qurultai maintainers:real task/board/reconciliation runtime tests in #102; Hermes maintainers:real-worker Gate C in #13. Yiğit retains M5 outcome acceptance."
+  },
+  "limits": [
+    "Minimal read-only consumer test stub, not a supported API or production reconciler",
+    "No network/runtime changes or canonical writes; proposals are local diagnostics",
+    "No producer authentication, content classification, durable journal or transaction proof"
+  ],
+  "initialReview": {
+    "revision": "c11492a07007a4935c716b126c65a650436c7d98",
+    "producer": "Codex /root/handoff_adversarial_review",
+    "result": "Requested changes: incompatible extra receipts admitted to proposals; privacy subcases did not independently isolate project visibility.",
+    "regression": "17 tests:4 mixed-receipt subcase failures reproduced before filtering fix",
+    "fix": "Reuse policy_satisfied per proposed receipt; isolate private-project/private-supplement refusal conditions",
+    "scope": "Fresh-context read-only same-family review, not cross-model proof"
+  },
+  "implementationRevision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+  "progress": {
+    "requiredBefore": [
+      23,
+      42
+    ],
+    "requiredAfter": [
+      24,
+      42
+    ],
+    "retainedBefore": [
+      23,
+      52
+    ],
+    "retainedAfter": [
+      24,
+      52
+    ],
+    "acceptedMilestonesBefore": [
+      4,
+      13
+    ],
+    "acceptedMilestonesAfter": [
+      4,
+      13
+    ],
+    "scopeChanges": [],
+    "next": "PRS-EVIDENCE-STAGES/#6/M5"
+  },
+  "hostedCI": {
+    "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41067717257",
+    "result": "success"
+  }
+}

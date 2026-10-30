@@ -1,0 +1,36 @@
+======================================================================
+FAIL: test_valid_pair_does_not_admit_incompatible_extra_receipts (test_handoff.AdversarialHandoffTests.test_valid_pair_does_not_admit_incompatible_extra_receipts) (change={'subject': 'OTHER'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_handoff.py", line 271, in test_valid_pair_does_not_admit_incompatible_extra_receipts
+    self.assertEqual(len(result['proposals']), 2)
+AssertionError: 3 != 2
+
+======================================================================
+FAIL: test_valid_pair_does_not_admit_incompatible_extra_receipts (test_handoff.AdversarialHandoffTests.test_valid_pair_does_not_admit_incompatible_extra_receipts) (change={'revision': 'ffffffffffffffffffffffffffffffffffffffff'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_handoff.py", line 271, in test_valid_pair_does_not_admit_incompatible_extra_receipts
+    self.assertEqual(len(result['proposals']), 2)
+AssertionError: 3 != 2
+
+======================================================================
+FAIL: test_valid_pair_does_not_admit_incompatible_extra_receipts (test_handoff.AdversarialHandoffTests.test_valid_pair_does_not_admit_incompatible_extra_receipts) (change={'result': 'failed'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_handoff.py", line 271, in test_valid_pair_does_not_admit_incompatible_extra_receipts
+    self.assertEqual(len(result['proposals']), 2)
+AssertionError: 3 != 2
+
+======================================================================
+FAIL: test_valid_pair_does_not_admit_incompatible_extra_receipts (test_handoff.AdversarialHandoffTests.test_valid_pair_does_not_admit_incompatible_extra_receipts) (change={'supersededBy': 'replacement'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_handoff.py", line 271, in test_valid_pair_does_not_admit_incompatible_extra_receipts
+    self.assertEqual(len(result['proposals']), 2)
+AssertionError: 3 != 2
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.038s
+
+FAILED (failures=4)

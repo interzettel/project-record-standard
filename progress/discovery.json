@@ -34,7 +34,7 @@
       "coverage": "New public adopter homepage and17 guides separate recorded release from future automation. Hosted publication and deployment are verified separately after integration; actual browser layout/speech remain untested in this pass."
     }
   ],
-  "nextAction": "Execute PRS-HANDOFF-02/#16/M5 adversarial reconciliation and bounded exit verdict; next-publication minimum remains a #38 gate.",
+  "nextAction": "Execute PRS-EVIDENCE-STAGES/#6/M5. The bounded #9 offline record-semantics gate passes; live consumer gates and M5 acceptance remain separate.",
   "reconciliations": [
     {
       "package": "PRS-RECORDS-01",
@@ -77,6 +77,13 @@
       "inputRevision": "d1d609b5fbf72b33e7b030aab18fd265b7a18e91",
       "verifiedRevision": "5424ea8b132c44768fee804d97a54e63394d52ec",
       "coverage": "Read #15 and complete open-PR page at package start: no open overlap. One synthetic offline task/leaf mapping through existing record reader with exact bytes and source observation. Fresh-context same-family review independently passed6 handoff/2 packaging tests. No real consumer, protocol integration or permission changes."
+    },
+    {
+      "package": "PRS-HANDOFF-02",
+      "observedOn": "2026-10-30",
+      "inputRevision": "543ba0368e3d85c5bf270f171a8a6f3fabd611fd",
+      "verifiedRevision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+      "coverage": "Read #16/#9 and complete open-PR page at start: no overlap. Minimal offline consumer stub and17 handoff tests include replay/conflicts/missing/freshness/privacy/absence of acceptance. Fresh-context review exposed4 reproduced receipt-filter failures; fixed/re-reviewed and17 tests independently passed. Live consumer/private service behavior not inspected."
     }
   ]
 }
