@@ -1,7 +1,7 @@
 {
   "contractVersion": "0.2.0",
   "governance": {
-    "acceptanceAuthority": "Yiğit; conditional scoped STD-09/13 acceptance recorded in audit/accessibility/owner-acceptance.json.",
+    "acceptanceAuthority": "Yi\u011fit; conditional scoped STD-09/13 acceptance recorded in audit/accessibility/owner-acceptance.json.",
     "approach": "adaptive",
     "baselines": [
       {
@@ -20,7 +20,7 @@
         "status": "proposed"
       }
     ],
-    "changeAuthority": "Yiğit",
+    "changeAuthority": "Yi\u011fit",
     "changeRequests": [
       {
         "id": "CR-0.3-AGENTS",
@@ -31,48 +31,48 @@
       {
         "approvalSource": "audit/accessibility/owner-acceptance.json",
         "approvedAt": "2026-10-23",
-        "approvedBy": "Yiğit",
+        "approvedBy": "Yi\u011fit",
         "id": "CR-0.4-ACCESSIBILITY",
-        "impact": "No added or removed IDs;16 required leaves retained. STD-13 original speech criterion amended to scoped review with explicit unknowns. Work14/16→16/16;milestones2/4→4/4. Personal skill collection save failed; canonical distribution complete.",
+        "impact": "No added or removed IDs;16 required leaves retained. STD-13 original speech criterion amended to scoped review with explicit unknowns. Work14/16\u219216/16;milestones2/4\u21924/4. Personal skill collection save failed; canonical distribution complete.",
         "reason": "Owner requested WCAG review, fixes and accessibility skill and explicitly permitted STD-09/13 completion afterward.",
         "status": "implemented"
       },
       {
         "approvalSource": "Task conversation: go to the personal agent stack repository and understand L1 L2 L3 L4 L5 and make that part of repository setting process.",
         "approvedAt": "2026-10-23",
-        "approvedBy": "Yiğit",
+        "approvedBy": "Yi\u011fit",
         "id": "CR-0.4.1-READINESS",
-        "impact": "Adds STD-17 to WP-5/M4; required scope16→17. Prior16/16 observation retained. New leaf is implementation verification, not an autonomy promotion or new owner acceptance claim.",
-        "reason": "Owner requested understanding Personal Agent Stack L1–L5 and making it part of repository setup.",
+        "impact": "Adds STD-17 to WP-5/M4; required scope16\u219217. Prior16/16 observation retained. New leaf is implementation verification, not an autonomy promotion or new owner acceptance claim.",
+        "reason": "Owner requested understanding Personal Agent Stack L1\u2013L5 and making it part of repository setup.",
         "status": "implemented"
       },
       {
         "approvalSource": "Task conversation: selected remaining native checks and personal save limits; request do these as well.",
         "approvedAt": "2026-10-23",
-        "approvedBy": "Yiğit",
+        "approvedBy": "Yi\u011fit",
         "id": "CR-NATIVE-FOLLOWUP",
-        "impact": "Personal skill save resolved. Adds required STD-18 for native verification beyond original scoped acceptance:17/17→17/18 (94.4%); milestone gates4/4→3/4. No existing ID removed or acceptance rewritten.",
+        "impact": "Personal skill save resolved. Adds required STD-18 for native verification beyond original scoped acceptance:17/17\u219217/18 (94.4%); milestone gates4/4\u21923/4. No existing ID removed or acceptance rewritten.",
         "reason": "Owner asked to complete the previously disclosed native zoom/screen-reader and personal Skills save limits.",
         "status": "implemented"
       },
       {
         "approvalSource": "audit/accessibility/native-completion.json; task message done. narrotor works dont worry",
         "approvedAt": "2026-10-23",
-        "approvedBy": "Yiğit",
+        "approvedBy": "Yi\u011fit",
         "id": "CR-NATIVE-COMPLETION",
-        "impact": "STD-18 closes after observed native200%/400% checks and owner-reported Narrator acceptance. Its original criterion is preserved and the scoped treatment recorded. Required scope unchanged:17/18→18/18; milestone gates3/4→4/4. No independent speech/full-conformance claim.",
+        "impact": "STD-18 closes after observed native200%/400% checks and owner-reported Narrator acceptance. Its original criterion is preserved and the scoped treatment recorded. Required scope unchanged:17/18\u219218/18; milestone gates3/4\u21924/4. No independent speech/full-conformance claim.",
         "reason": "Owner set native zoom and confirmed Narrator works; accept that human report while retaining unavailable versioned speech evidence.",
         "status": "implemented"
       },
       {
         "id": "CR-POST-RELEASE-STRUCTURE",
-        "impact": "Preserves all 18 historical leaves and four accepted milestones; adds 18 distinct leaves in M5-M9, of which 11 are required and seven deferred. Required18/18→18/29; retained18/18→18/36; declared milestones4/4→4/9. Parent requests earn no duplicate credit. Runtime0.4.1 and contract0.2.0 remain unchanged. Detailed baseline awaits review in PR #14.",
-        "reason": "Yiğit requested use of repository skills, AGENTS optimization, granular work, new tagged issues and an executable order.",
+        "impact": "Preserves all 18 historical leaves and four accepted milestones; adds 18 distinct leaves in M5-M9, of which 11 are required and seven deferred. Required18/18\u219218/29; retained18/18\u219218/36; declared milestones4/4\u21924/9. Parent requests earn no duplicate credit. Runtime0.4.1 and contract0.2.0 remain unchanged. Detailed baseline awaits review in PR #14.",
+        "reason": "Yi\u011fit requested use of repository skills, AGENTS optimization, granular work, new tagged issues and an executable order.",
         "status": "proposed"
       },
       {
         "id": "CR-INFRASTRUCTURE-2026-10-30",
-        "impact": "Adds 16 distinct leaves: 13 required and three deferred; old leaves/criteria/acceptance preserved. Required18/29→18/42;retained18/36→18/52;declared milestones4/9→4/13. New selected required work0/24. Reorders future work around records/policy/pins before after-work automation. A proposed0.5.0 cut is not a release or accepted capability.",
+        "impact": "Adds 16 distinct leaves: 13 required and three deferred; old leaves/criteria/acceptance preserved. Required18/29\u219218/42;retained18/36\u219218/52;declared milestones4/9\u21924/13. New selected required work0/24. Reorders future work around records/policy/pins before after-work automation. A proposed0.5.0 cut is not a release or accepted capability.",
         "reason": "Owner expanded the preparation from guidance-only work to useful low-overhead infrastructure and authorized consolidation/merge/public documentation.",
         "status": "proposed"
       }
@@ -84,7 +84,7 @@
       "status": "planned",
       "supportRoute": "Owning repository issue or accepted coordination board"
     },
-    "owner": "Yiğit",
+    "owner": "Yi\u011fit",
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
     "risks": [
       {
@@ -192,7 +192,7 @@
         ]
       },
       {
-        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "acceptance": "Each leaf meets its declared check/review criterion; Yi\u011fit separately accepts the milestone outcome.",
         "deliverable": "Interoperability and agent execution",
         "id": "WP-6",
         "owner": "Repository maintainer; implementing agent",
@@ -204,7 +204,7 @@
         ]
       },
       {
-        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "acceptance": "Each leaf meets its declared check/review criterion; Yi\u011fit separately accepts the milestone outcome.",
         "deliverable": "Readable project records",
         "id": "WP-7",
         "owner": "Repository maintainer; implementing agent",
@@ -216,7 +216,7 @@
         ]
       },
       {
-        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "acceptance": "Each leaf meets its declared check/review criterion; Yi\u011fit separately accepts the milestone outcome.",
         "deliverable": "Safe upgrade adoption",
         "id": "WP-8",
         "owner": "Repository maintainer; implementing agent",
@@ -227,7 +227,7 @@
         ]
       },
       {
-        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "acceptance": "Each leaf meets its declared check/review criterion; Yi\u011fit separately accepts the milestone outcome.",
         "deliverable": "Optional execution and conventions",
         "id": "WP-9",
         "owner": "Repository maintainer; implementing agent",
@@ -241,7 +241,7 @@
         ]
       },
       {
-        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "acceptance": "Each leaf meets its declared check/review criterion; Yi\u011fit separately accepts the milestone outcome.",
         "deliverable": "Optional projections and discoverability",
         "id": "WP-10",
         "owner": "Repository maintainer; implementing agent",
@@ -251,7 +251,7 @@
         ]
       },
       {
-        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yi\u011fit separately accepts the milestone; no publication or permission is inferred.",
         "deliverable": "Portable policy and automatic reconciliation",
         "id": "WP-11",
         "owner": "Repository maintainer; selected contributor",
@@ -267,7 +267,7 @@
         ]
       },
       {
-        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yi\u011fit separately accepts the milestone; no publication or permission is inferred.",
         "deliverable": "Maintained compatibility and release operations",
         "id": "WP-12",
         "owner": "Repository maintainer; selected contributor",
@@ -278,7 +278,7 @@
         ]
       },
       {
-        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yi\u011fit separately accepts the milestone; no publication or permission is inferred.",
         "deliverable": "Conditional MCP and hosting",
         "id": "WP-13",
         "owner": "Repository maintainer; selected contributor",
@@ -288,7 +288,7 @@
         ]
       },
       {
-        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yi\u011fit separately accepts the milestone; no publication or permission is inferred.",
         "deliverable": "Records and memory boundaries",
         "id": "WP-14",
         "owner": "Repository maintainer; selected contributor",
@@ -837,7 +837,7 @@
     {
       "blocked": false,
       "completionBasis": "Observed scenario applications and local full-suite/source-distribution/site checks; this adds setup guidance, not autonomous permissions.",
-      "criterion": "Cold and hot setup require the ten-dimension L0–L5 assessment, separate current/target grade and R0–R4 authority, central assessment references, environment tailoring, selected remediation and re-audit triggers; bundled installation and guide build checks plus five guided applications pass.",
+      "criterion": "Cold and hot setup require the ten-dimension L0\u2013L5 assessment, separate current/target grade and R0\u2013R4 authority, central assessment references, environment tailoring, selected remediation and re-audit triggers; bundled installation and guide build checks plus five guided applications pass.",
       "deferReason": null,
       "dependsOn": [
         "STD-14",
@@ -870,13 +870,13 @@
       "required": true,
       "sourceState": "done",
       "state": "done",
-      "title": "Include evidence-based L0–L5 readiness in project setup",
+      "title": "Include evidence-based L0\u2013L5 readiness in project setup",
       "unmappedDependencies": []
     },
     {
       "blocked": false,
       "completionBasis": "Owner-set native200%/400% zoom checks directly observed; owner confirmed Narrator works. Versions/transcript are unavailable and no full conformance claim is made.",
-      "criterion": "Record owner-set native200% and400% zoom checks on the standard, guide and Prehnite reference with reflow, tested controls and visible settled focus; record the owner’s Narrator confirmation and disclose unavailable version/transcript evidence.",
+      "criterion": "Record owner-set native200% and400% zoom checks on the standard, guide and Prehnite reference with reflow, tested controls and visible settled focus; record the owner\u2019s Narrator confirmation and disclose unavailable version/transcript evidence.",
       "deferReason": null,
       "dependsOn": [
         "STD-13"
@@ -2021,6 +2021,27 @@
       "state": "backlog",
       "title": "Decide whether remote hosting solves a measured need",
       "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "local implementation record; verification tracked separately",
+      "criterion": "Define shared terminology and calculation rules. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G1",
+      "id": "STD-01",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M1",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Define shared terminology and calculation rules",
+      "unmappedDependencies": []
     }
   ],
   "milestones": [
@@ -2113,7 +2134,7 @@
       ],
       "horizon": "Now",
       "id": "M5",
-      "nextAction": "Yiğit reviews the bounded M5 evidence now that its four work gates are complete; source acceptance remains pending. Continue independent #31/M10 under existing authorization.",
+      "nextAction": "Yi\u011fit reviews the bounded M5 evidence now that its four work gates are complete; source acceptance remains pending. Continue independent #31/M10 under existing authorization.",
       "priority": "P1",
       "sourceAccepted": false,
       "sourceState": "planned",
@@ -2226,7 +2247,7 @@
       ],
       "horizon": "Next",
       "id": "M10",
-      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome.",
+      "nextAction": "Complete the scoped leaves with actual evidence; Yi\u011fit separately accepts this outcome.",
       "priority": "P1",
       "sourceAccepted": false,
       "sourceState": "planned",
@@ -2247,7 +2268,7 @@
       ],
       "horizon": "Next",
       "id": "M11",
-      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome.",
+      "nextAction": "Complete the scoped leaves with actual evidence; Yi\u011fit separately accepts this outcome.",
       "priority": "P1",
       "sourceAccepted": false,
       "sourceState": "planned",
@@ -2267,7 +2288,7 @@
       ],
       "horizon": "Later",
       "id": "M12",
-      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome.",
+      "nextAction": "Complete the scoped leaves with actual evidence; Yi\u011fit separately accepts this outcome.",
       "priority": "P2",
       "sourceAccepted": false,
       "sourceState": "planned",
@@ -2287,7 +2308,7 @@
       ],
       "horizon": "Now",
       "id": "M13",
-      "nextAction": "Both #27/#29 work criteria met. Yiğit separately accepts M13 outcome; next eligible implementation is #30/M10. No new memory backend or host migration claimed.",
+      "nextAction": "Both #27/#29 work criteria met. Yi\u011fit separately accepts M13 outcome; next eligible implementation is #30/M10. No new memory backend or host migration claimed.",
       "priority": "P1",
       "sourceAccepted": false,
       "sourceState": "planned",
@@ -2300,9 +2321,9 @@
     "Native200%/400% checks observed and owner confirmed Narrator works. Versions and actual speech transcript unavailable; no independently observed or universal WCAG conformance claim. All18 required leaves complete; readiness grade remains separate.",
     "Post-release planning observation 2026-10-30: adds 11 required and 7 deferred leaves; 18/29 required (62.1%), 18/36 retained (50.0%), 4/9 declared milestones. New required work is 0/11 and new required milestone outcomes are 0/3; v0.4.1 historical delivery remains 18/18 and 4/4.",
     "The 30 October infrastructure expansion adds future work, not finished automation. New required work0/24; complete the real-session and cross-model gates before claiming unattended support.",
-    "PRS-RECORDS-01 research completed after source-linked comparison and fresh-context review: required18/42→19/42; retained18/52→19/52; newly required1/24. No scope added, milestone acceptance unchanged4/13, automatic tracking remains unimplemented.",
-    "PRS-POLICY-01 completes the scoped catalogue and boundary probes: required19/42→20/42, retained19/52→20/52, newly required2/24. No added scope, authority or milestone acceptance; structural approval checks are not authentication.",
-    "PRS-RECORDS-02 completes the optional mapping/helpers after review fixes and20 layout tests: required20/42→21/42, retained20/52→21/52, newly required3/24. No scope added; M13 work gates complete but outcome unaccepted; accepted milestones remain4/13.",
-    "PRS-PIN-01 completes read-only expected-pin and compatibility assessment: required21/42→22/42, retained21/52→22/52, newly required4/24. No scope added or acceptance changed. Selected byte match is not publisher authentication or upgrade permission; v0.4.1 history/native floor preserved."
+    "PRS-RECORDS-01 research completed after source-linked comparison and fresh-context review: required18/42\u219219/42; retained18/52\u219219/52; newly required1/24. No scope added, milestone acceptance unchanged4/13, automatic tracking remains unimplemented.",
+    "PRS-POLICY-01 completes the scoped catalogue and boundary probes: required19/42\u219220/42, retained19/52\u219220/52, newly required2/24. No added scope, authority or milestone acceptance; structural approval checks are not authentication.",
+    "PRS-RECORDS-02 completes the optional mapping/helpers after review fixes and20 layout tests: required20/42\u219221/42, retained20/52\u219221/52, newly required3/24. No scope added; M13 work gates complete but outcome unaccepted; accepted milestones remain4/13.",
+    "PRS-PIN-01 completes read-only expected-pin and compatibility assessment: required21/42\u219222/42, retained21/52\u219222/52, newly required4/24. No scope added or acceptance changed. Selected byte match is not publisher authentication or upgrade permission; v0.4.1 history/native floor preserved."
   ]
 }
