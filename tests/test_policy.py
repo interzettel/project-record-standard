@@ -357,3 +357,11 @@ class SharedPolicyInterfaceTests(unittest.TestCase):
                     self.assertEqual(result.returncode, 1)
                     self.assertEqual(json.loads(result.stdout), report)
                     self.assertEqual(result.stderr, '')
+
+    def test_additional_public_fragment_does_not_invent_visibility_scope_change(self):
+        request = deepcopy(self.request)
+        request['record']['inputVisibility'].append('public')
+        report = self.evaluate(request)
+        self.assertEqual(self.result(report, 'PRS-SCOPE-01')['status'], 'pass')
+        self.assertEqual(self.result(report, 'PRS-HISTORY-01')['status'], 'pass')
+        self.assertEqual(report['exitCode'], 0)

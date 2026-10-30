@@ -83,8 +83,13 @@ def _scope_changes(before: dict, record: dict, delta: dict) -> set[tuple[str, st
         for identity in left.keys() & right.keys():
             if any(left[identity].get(k) != right[identity].get(k) for k in keys):
                 changes.add((kind, identity))
+    def classifications(value):
+        if isinstance(value, list) and all(isinstance(v, str) for v in value):
+            return set(value)
+        return value
+
     if (before['project']['visibility'] != record['project']['visibility']
-            or before.get('inputVisibility') != record.get('inputVisibility')):
+            or classifications(before.get('inputVisibility')) != classifications(record.get('inputVisibility'))):
         changes.add(('visibility', record['project']['id']))
     if before.get('governance') != record.get('governance'):
         changes.add(('governance', record['project']['id']))
