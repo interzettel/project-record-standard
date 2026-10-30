@@ -1,0 +1,11 @@
+{
+  "id": "CH-VERIFIED-PINS",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Compare expected pins with selected toolkit/suite/policy bytes and existing ownership receipts; distinguish provenance, runtime compatibility and upgrade authorization.",
+  "workItemIds": [
+    "PRS-PIN-01"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/46",
+  "compatibility": "Unreleased optional pinVersion1 API. Existing receipt shape, completion0.1/0.2 readers and frozen v0.4.1 source/archive remain intact. No runtime-floor change or upgrade application; next supported minimum remains an explicit #38 publication gate."
+}

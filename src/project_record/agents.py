@@ -42,6 +42,33 @@ def _rules(names: list[str], digest: str) -> bytes:
     return '\n'.join(rows).encode()
 
 
+def _suite_payload(toolkit: Path) -> tuple[dict, dict, dict, str]:
+    """Collects the existing installer payload and deterministic identity."""
+    manifest = json.loads(_safe_path(toolkit, 'skills/manifest.json').read_text())
+    if not isinstance(manifest, dict) or any(not isinstance(manifest.get(k), str) or not manifest[k].strip() for k in ['suiteVersion', 'contractVersion']):
+        raise RecordError('Skill manifest needs explicit suite and contract identities')
+    names = manifest.get('skills')
+    if (manifest.get('schemaVersion') != 1 or not isinstance(names, list) or not names
+            or any(not isinstance(n, str) or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', n) or len(n) > 63 for n in names)
+            or len(names) != len(set(names))):
+        raise RecordError('Skill manifest needs unique safe skill names')
+    files = {}
+    for name in names:
+        folder = _safe_path(toolkit, 'skills/' + name)
+        if not (folder / 'SKILL.md').is_file():
+            raise RecordError('Missing skill instructions: ' + name)
+        for path in sorted(folder.rglob('*')):
+            relative = path.relative_to(toolkit).as_posix()
+            _safe_path(toolkit, relative)
+            if path.is_file():
+                if path.suffix == '.pyc' or '__pycache__' in path.parts:
+                    continue
+                files['.agents/' + relative] = path.read_bytes()
+    digests = {name: _digest(content) for name, content in files.items()}
+    suite_digest = _digest(json.dumps({'manifest': manifest, 'files': digests}, sort_keys=True).encode())
+    return manifest, files, digests, suite_digest
+
+
 def install_skills(toolkit: Path, target: Path, apply: bool = False,
                    upgrade: bool = False) -> dict:
     """Previews or applies an additive, resumable agent-skill installation.
@@ -62,26 +89,8 @@ def install_skills(toolkit: Path, target: Path, apply: bool = False,
     toolkit, target = toolkit.absolute(), target.absolute()
     if target.is_symlink() or not target.is_dir():
         raise RecordError('Target must be an existing project directory')
-    manifest = json.loads((toolkit / 'skills/manifest.json').read_text())
-    names = manifest.get('skills')
-    if (manifest.get('schemaVersion') != 1 or not isinstance(names, list) or not names
-            or any(not isinstance(n, str) or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', n) or len(n) > 63 for n in names)
-            or len(names) != len(set(names))):
-        raise RecordError('Skill manifest needs unique safe skill names')
-    files = {}
-    for name in names:
-        folder = _safe_path(toolkit, 'skills/' + name)
-        if not (folder / 'SKILL.md').is_file():
-            raise RecordError('Missing skill instructions: ' + name)
-        for path in sorted(folder.rglob('*')):
-            relative = path.relative_to(toolkit).as_posix()
-            _safe_path(toolkit, relative)
-            if path.is_file():
-                if path.suffix == '.pyc' or '__pycache__' in path.parts:
-                    continue
-                files['.agents/' + relative] = path.read_bytes()
-    digests = {name: _digest(content) for name, content in files.items()}
-    suite_digest = _digest(json.dumps({'manifest': manifest, 'files': digests}, sort_keys=True).encode())
+    manifest, files, digests, suite_digest = _suite_payload(toolkit)
+    names = manifest['skills']
     section = _rules(names, suite_digest)
     receipt_path = _safe_path(target, RECEIPT)
     previous = json.loads(receipt_path.read_text()) if receipt_path.exists() else None
@@ -148,3 +157,9 @@ def install_skills(toolkit: Path, target: Path, apply: bool = False,
     return {'suiteVersion': manifest['suiteVersion'], 'suiteDigest': suite_digest,
             'changes': list(changes), 'written': apply and bool(changes),
             'externalWrites': False}
+
+
+def suite_identity(toolkit: Path) -> dict:
+    """Returns the installer's intended suite hashes without creating a receipt."""
+    manifest, _, digests, suite_digest = _suite_payload(toolkit.absolute())
+    return {'manifest': manifest, 'files': digests, 'suiteDigest': suite_digest}

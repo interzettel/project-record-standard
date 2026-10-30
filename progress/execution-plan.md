@@ -10,7 +10,7 @@ The [revised release direction](release-direction.md) proposes a foundations 0.5
 
 ## Ordered packages
 
-Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 also completed the policy catalogue; #29 has completed the optional mapping/helpers; #30 is now the earliest eligible unfinished package. #15 remains the first handoff implementation. Parallel independent preparation is allowed without creating permanent contributor roles.
+Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 also completed the policy catalogue; #29 has completed the optional mapping/helpers; #30 has completed read-only pin/compatibility checks; #15 is now the earliest eligible unfinished package. #15 remains the first handoff implementation. Parallel independent preparation is allowed without creating permanent contributor roles.
 
 | Order | Issue / stable leaf | Checkpoint | Scope | Execution prerequisites |
 | ---: | --- | --- | --- | --- |
@@ -82,3 +82,7 @@ PR44 completes #28 with17 rules,5 paired tests and explicit unenforced boundarie
 ## Optional records mapping completion
 
 PR45 completes #29 with three synthetic hosts, read-only mapping/index/preview helpers and20 layout tests. Four material review findings were reproduced and fixed;60 Python tests pass. Required20/42→21/42 (50.0%); retained20/52→21/52 (40.4%); newly required3/24; accepted milestones remain4/13. No scope or criterion/dependency changed. M13 work gates complete without inferred outcome acceptance. Next: **PRS-PIN-01 / #30 / M10**. Earlier narrative handoffs retain their dated sequence; this is the current next action.
+
+## Pin verification completion
+
+PR46 completes #30 with24 pin tests, existing-receipt preservation and explicit provenance/runtime/application limits. Required21/42→22/42 (52.4%); retained21/52→22/52 (42.3%); newly required4/24; accepted milestones remain4/13. No scope, criteria, dependencies or runtime floor changed. Four regression failures from review were reproduced and corrected. Current next action: **PRS-HANDOFF-01 / #15 / M5**. #38 must select/test the supported minimum before publication; no old release bytes are rewritten.

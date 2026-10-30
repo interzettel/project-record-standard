@@ -1427,8 +1427,8 @@
       "title": "Implement verified installation pins and compatibility assessment",
       "groupId": "G10",
       "milestoneId": "M10",
-      "state": "backlog",
-      "sourceState": "planned-not-implemented",
+      "state": "done",
+      "sourceState": "read-only-pins-and-assessment-verified",
       "required": true,
       "blocked": false,
       "dependsOn": [
@@ -1436,14 +1436,30 @@
         "PRS-RECORDS-02"
       ],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "evidence": [
+        {
+          "kind": "implementation",
+          "source": "src/project_record/pins.py",
+          "revision": "02cac0676fe57a23faa6b0eb203a0771d3df6fba"
+        },
+        {
+          "kind": "test",
+          "source": "tests/test_pins.py",
+          "revision": "02cac0676fe57a23faa6b0eb203a0771d3df6fba"
+        },
+        {
+          "kind": "review",
+          "source": "audit/pins/2026-10-30/verification.json",
+          "revision": "02cac0676fe57a23faa6b0eb203a0771d3df6fba"
+        }
+      ],
+      "completionBasis": "Expected pinVersion1 selected-byte verification reuses existing receipt;24 pin tests and84 Python tests pass after reviewed classification fixes at02cac0676fe57a23faa6b0eb203a0771d3df6fba. Provenance/support/apply authority remain separate; no publisher authentication, upgrade application or outcome acceptance inferred.",
       "kind": "implementation",
-      "owner": "Selected contributor; repository maintainer reviews",
+      "owner": "Codex contributor; fresh-context review recorded",
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/30",
       "criterion": "Exact pins verify bytes and provenance separately; mutable main/latest cannot certify an install. Mixed/locally edited installs remain conflicted. Major/minor and security-patch assessments are distinct from authorized application; ordinary patches can be deferred with a recorded reason. Tests preserve existing v0.4.1 history and old record compatibility, and make runtime-floor changes explicit.",
-      "note": "Queue 04/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+      "note": "Queue04/34 complete in PR46. No floor/contract/release change. Next PRS-HANDOFF-01/#15/M5; #38 must select/test next-publication supported minimum."
     },
     {
       "id": "PRS-GATE-01",
@@ -1737,7 +1753,8 @@
     "The 30 October infrastructure expansion adds future work, not finished automation. New required work0/24; complete the real-session and cross-model gates before claiming unattended support.",
     "PRS-RECORDS-01 research completed after source-linked comparison and fresh-context review: required18/42→19/42; retained18/52→19/52; newly required1/24. No scope added, milestone acceptance unchanged4/13, automatic tracking remains unimplemented.",
     "PRS-POLICY-01 completes the scoped catalogue and boundary probes: required19/42→20/42, retained19/52→20/52, newly required2/24. No added scope, authority or milestone acceptance; structural approval checks are not authentication.",
-    "PRS-RECORDS-02 completes the optional mapping/helpers after review fixes and20 layout tests: required20/42→21/42, retained20/52→21/52, newly required3/24. No scope added; M13 work gates complete but outcome unaccepted; accepted milestones remain4/13."
+    "PRS-RECORDS-02 completes the optional mapping/helpers after review fixes and20 layout tests: required20/42→21/42, retained20/52→21/52, newly required3/24. No scope added; M13 work gates complete but outcome unaccepted; accepted milestones remain4/13.",
+    "PRS-PIN-01 completes read-only expected-pin and compatibility assessment: required21/42→22/42, retained21/52→22/52, newly required4/24. No scope added or acceptance changed. Selected byte match is not publisher authentication or upgrade permission; v0.4.1 history/native floor preserved."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
