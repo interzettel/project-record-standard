@@ -1,0 +1,11 @@
+{
+  "id": "CH-RECORD-LAYOUT",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Map optional record homes and class-scoped identities; provide read-only validation, public indexes and migration previews with explicit privacy and history checks.",
+  "workItemIds": [
+    "PRS-RECORDS-02"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/45",
+  "compatibility": "Unreleased optional layoutVersion1 mapping and Python module; completion contract0.2.0, skill suite and immutable v0.4.1 release unchanged. No host migration, writes, auto-discovery or authority grant."
+}

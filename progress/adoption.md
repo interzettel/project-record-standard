@@ -17,3 +17,7 @@ Counts after expansion: required18/42 (42.9%), retained18/52 (34.6%), accepted m
 ## Policy catalogue handoff
 
 PR44 completes #28 as a specification and boundary-test package. Structural checks do not authenticate approval or scope permission, and no compare-and-swap writer or host enforcement was installed. Required20/42 (47.6%), retained20/52 (38.5%), newly required2/24, accepted milestones4/13. Prior source bytes/meta/normalized observation remain under pre-policy/audit/policy. Next#29; release candidates and #38 earlier-release preparation hold are in release-direction.md.
+
+## Optional records layout handoff
+
+PR45 completes #29 as optional metadata helpers and three synthetic profiles, with20 tests and a retained four-finding review/correction record. No filesystem migration, memory backend or enforcement activation. Required21/42 (50.0%), retained21/52 (40.4%), newly required3/24; accepted milestones4/13. Source/meta/normalized history retained under pre-record-layout/audit/record-layout. Current next action: #30/M10, verified installation pins and compatibility assessment. M13 work gates are complete; Yiğit separately accepts its outcome.

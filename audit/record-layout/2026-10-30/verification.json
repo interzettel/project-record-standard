@@ -1,0 +1,77 @@
+{
+  "package": "PRS-RECORDS-02",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "inputRevision": "06099cfc582cebc1ecbf9798c13c960f89cfa5cf",
+  "implementation": "optional layoutVersion1 read-only metadata helpers; independent of completion contract0.2.0",
+  "checks": [
+    "20 layout tests pass after four review regressions reproduced and fixed",
+    "60 Python tests independently rerun and passed by fresh-context reviewer",
+    "14 JavaScript tests pass after npm ci",
+    "18-guide build,11-skill metadata and20 contrast pairs pass"
+  ],
+  "limits": [
+    "No real host migration, memory effectiveness or runtime conformance experiment",
+    "No authentication of profile visibility/approval declarations",
+    "No file traversal, staging, deletion or apply migration",
+    "Lookup, Git selection, owner indexes and previews require authorized local use",
+    "M13 outcome acceptance remains with Yi\u011fit"
+  ],
+  "initialReview": {
+    "revision": "79b411bf64eb0ccca10481f6c6edaf14af4c9e6c",
+    "producer": "Codex /root/layout_review, fresh-context same-family read-only",
+    "result": "changes required",
+    "findings": [
+      "Whole-file selection ignored private sections",
+      "Repeated moves could drop old aliases",
+      "Malformed transient flags accepted; control changes absent from preview",
+      "Indirect dangling supersession raised KeyError"
+    ],
+    "regressionRun": "20 tests:3 failures and1 error on the original implementation; all4 reproduced before fixes",
+    "fixRun": "20 layout tests pass after metadata/privacy/alias/preview fixes",
+    "limits": "Not human/cross-model effectiveness evidence"
+  },
+  "researchRevision": "87bd6837ba15fc447c1b45d0d9f29792bb8888aa",
+  "initialChecks": {
+    "revision": "79b411bf64eb0ccca10481f6c6edaf14af4c9e6c",
+    "checks": [
+      "16 record-layout tests passed across three synthetic hosts",
+      "56 Python tests passed before archive-presence assertions"
+    ]
+  },
+  "review": {
+    "revision": "87bd6837ba15fc447c1b45d0d9f29792bb8888aa",
+    "producer": "Codex /root/layout_review",
+    "result": "All four findings resolved; no further material regressions; full60 tests independently rerun",
+    "boundary": "Same-family fresh-context review, not human or cross-model proof"
+  },
+  "progress": {
+    "requiredBefore": [
+      20,
+      42
+    ],
+    "requiredAfter": [
+      21,
+      42
+    ],
+    "retainedBefore": [
+      20,
+      52
+    ],
+    "retainedAfter": [
+      21,
+      52
+    ],
+    "acceptedMilestonesBefore": [
+      4,
+      13
+    ],
+    "acceptedMilestonesAfter": [
+      4,
+      13
+    ],
+    "scopeChanges": [],
+    "next": "PRS-PIN-01/#30/M10"
+  },
+  "freshExtraction": "All20 corrected layout tests passed from an unpublished source-kit extraction"
+}
