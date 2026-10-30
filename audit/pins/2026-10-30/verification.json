@@ -1,0 +1,19 @@
+{
+  "package": "PRS-PIN-01",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "inputRevision": "5892daa603a201a50b0b5745b9c70dbce5ae5e88",
+  "checks": [
+    "20 pin tests pass against disposable real installer outputs",
+    "Existing installer8tests pass after shared identity extraction",
+    "79 Python tests passed before final optional-shape test was added",
+    "19 pin tests passed from fresh unpublished source-kit extraction before final optional-shape test"
+  ],
+  "limits": [
+    "Only explicitly selected toolkit files plus complete selected suite are byte checked",
+    "No publisher authentication, live feed, upgrade apply or real consumer migration",
+    "Runtime/adapter observations and support evidence are caller supplied",
+    "Native floor>=3.10 and historical release bytes unchanged; next publication floor must be tested in #38",
+    "Fresh-context review pending"
+  ]
+}

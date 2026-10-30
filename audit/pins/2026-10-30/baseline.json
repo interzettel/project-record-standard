@@ -1,0 +1,54 @@
+{
+  "observedOn": "2026-10-30",
+  "inputRevision": "5892daa603a201a50b0b5745b9c70dbce5ae5e88",
+  "localPython": "3.12.14",
+  "localNode": "v24.22.1",
+  "developmentPins": {
+    "python": "3.15.2",
+    "node": "26.13.0"
+  },
+  "runtimeFloor": {
+    "nativeDeclaration": ">=3.10",
+    "changed": false,
+    "status": "3.10 is end-of-life; next-publication supported minimum must be selected/tested in #38",
+    "scope": "No supported-range inference from a single tested version"
+  },
+  "standards": [
+    {
+      "name": "Python",
+      "url": "https://www.python.org/downloads/",
+      "observed": "3.15.2 current;3.10 EOL2026-10-01;3.11/3.12 still security-maintained"
+    },
+    {
+      "name": "Node",
+      "url": "https://nodejs.org/en/about/previous-releases",
+      "observed": "26.13.0 latest LTS;27 Alpha, not a stable replacement"
+    },
+    {
+      "name": "Agent Skills",
+      "url": "https://agentskills.io/specification",
+      "observed": "Unversioned current published format; no universal runner or behavioral proof"
+    },
+    {
+      "name": "JSON Schema",
+      "url": "https://json-schema.org/specification",
+      "observed": "2020-12 current; PRS completion contract0.2.0 unchanged"
+    },
+    {
+      "name": "MCP",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28",
+      "observed": "Latest redirect resolved2026-07-28; no client support claimed"
+    },
+    {
+      "name": "SemVer",
+      "url": "https://semver.org/",
+      "observed": "2.0.0; PRS assessment/application policy explicitly separate"
+    }
+  ],
+  "releasePreservation": {
+    "version": "v0.4.1",
+    "sourceCommit": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+    "archiveSha256": "a46cdcea938eb987b936497a22db8eab07106aad7dd12a8cfe10b4ad41f74607",
+    "newPublication": false
+  }
+}
