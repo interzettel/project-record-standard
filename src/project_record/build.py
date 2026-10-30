@@ -197,6 +197,27 @@ Observed {record['source']['observedOn']} against `{_source_label(record)}`.
     return svg, md
 
 
+def check_output_destination(destination: Path, require_empty: bool = True) -> None:
+    """Checks the selected output directory without creating or reserving it.
+
+    Args:
+        destination: The explicit operator-selected output path.
+        require_empty: True requires a new or empty directory; false checks
+            directory type and symlink ancestors without checking contents.
+
+    Raises:
+        RecordError: If the path is a symlink, a file or a disallowed nonempty directory.
+    """
+    destination = destination.absolute()
+    for path in [destination, *destination.parents]:
+        if path.is_symlink():
+            raise RecordError('Output destination refuses symlink paths')
+        if path.exists() and not path.is_dir():
+            raise RecordError('Output destination must be a directory')
+    if require_empty and destination.exists() and any(destination.iterdir()):
+        raise RecordError('Output requires a new or empty dedicated directory')
+
+
 def build(records: list[dict], config_path: Path, destination: Path,
           audience: str, toolkit_root: Path) -> list[dict]:
     """Writes deterministic reference files after every audience check passes.
@@ -212,8 +233,7 @@ def build(records: list[dict], config_path: Path, destination: Path,
         The build manifest entries with source and output identities.
     """
     ready = [export_record(r, audience) for r in records]
-    if audience == "public" and destination.exists() and any(destination.iterdir()):
-        raise RecordError("Public build needs a new or empty destination to prevent stale private files")
+    check_output_destination(destination, require_empty=audience == "public")
     manifest = []
     files = {}
     for record in ready:
