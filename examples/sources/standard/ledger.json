@@ -1,1 +1,2308 @@
-{"contractVersion":"0.2.0","governance":{"acceptanceAuthority":"Yiğit; conditional scoped STD-09/13 acceptance recorded in audit/accessibility/owner-acceptance.json.","approach":"adaptive","baselines":[{"id":"STD-scope-0.2","note":"Authored implementation scope; no approved baseline is inferred.","status":"observed"},{"id":"STD-post-release-2026-10-30","note":"Owner requested decomposition, AGENTS optimization and GitHub organization. Detailed execution structure is maintainer-authored in PR #14; product outcomes are not accepted.","status":"proposed"},{"id":"STD-infrastructure-2026-10-30","note":"Owner requested enforcement/automation research, automatic after-work tracking, current standards/pins, memory/record separation, visuals and encountered-gap feedback. The detailed design/cut is maintainer-authored; implementation and outcome acceptance remain pending.","status":"proposed"}],"changeAuthority":"Yiğit","changeRequests":[{"id":"CR-0.3-AGENTS","impact":"Adds STD-14 through STD-16, WP-5 and M4/G4; required denominator expands from 13 to 16. Authored implementation proceeds under the task request; baseline/owner acceptance remains unapproved.","reason":"The owner requested a complete agentic tracking lifecycle before individual migrations.","status":"proposed"},{"approvalSource":"audit/accessibility/owner-acceptance.json","approvedAt":"2026-10-23","approvedBy":"Yiğit","id":"CR-0.4-ACCESSIBILITY","impact":"No added or removed IDs;16 required leaves retained. STD-13 original speech criterion amended to scoped review with explicit unknowns. Work14/16→16/16;milestones2/4→4/4. Personal skill collection save failed; canonical distribution complete.","reason":"Owner requested WCAG review, fixes and accessibility skill and explicitly permitted STD-09/13 completion afterward.","status":"implemented"},{"approvalSource":"Task conversation: go to the personal agent stack repository and understand L1 L2 L3 L4 L5 and make that part of repository setting process.","approvedAt":"2026-10-23","approvedBy":"Yiğit","id":"CR-0.4.1-READINESS","impact":"Adds STD-17 to WP-5/M4; required scope16→17. Prior16/16 observation retained. New leaf is implementation verification, not an autonomy promotion or new owner acceptance claim.","reason":"Owner requested understanding Personal Agent Stack L1–L5 and making it part of repository setup.","status":"implemented"},{"approvalSource":"Task conversation: selected remaining native checks and personal save limits; request do these as well.","approvedAt":"2026-10-23","approvedBy":"Yiğit","id":"CR-NATIVE-FOLLOWUP","impact":"Personal skill save resolved. Adds required STD-18 for native verification beyond original scoped acceptance:17/17→17/18 (94.4%); milestone gates4/4→3/4. No existing ID removed or acceptance rewritten.","reason":"Owner asked to complete the previously disclosed native zoom/screen-reader and personal Skills save limits.","status":"implemented"},{"approvalSource":"audit/accessibility/native-completion.json; task message done. narrotor works dont worry","approvedAt":"2026-10-23","approvedBy":"Yiğit","id":"CR-NATIVE-COMPLETION","impact":"STD-18 closes after observed native200%/400% checks and owner-reported Narrator acceptance. Its original criterion is preserved and the scoped treatment recorded. Required scope unchanged:17/18→18/18; milestone gates3/4→4/4. No independent speech/full-conformance claim.","reason":"Owner set native zoom and confirmed Narrator works; accept that human report while retaining unavailable versioned speech evidence.","status":"implemented"},{"id":"CR-POST-RELEASE-STRUCTURE","impact":"Preserves all 18 historical leaves and four accepted milestones; adds 18 distinct leaves in M5-M9, of which 11 are required and seven deferred. Required18/18→18/29; retained18/18→18/36; declared milestones4/4→4/9. Parent requests earn no duplicate credit. Runtime0.4.1 and contract0.2.0 remain unchanged. Detailed baseline awaits review in PR #14.","reason":"Yiğit requested use of repository skills, AGENTS optimization, granular work, new tagged issues and an executable order.","status":"proposed"},{"id":"CR-INFRASTRUCTURE-2026-10-30","impact":"Adds 16 distinct leaves: 13 required and three deferred; old leaves/criteria/acceptance preserved. Required18/29→18/42;retained18/36→18/52;declared milestones4/9→4/13. New selected required work0/24. Reorders future work around records/policy/pins before after-work automation. A proposed0.5.0 cut is not a release or accepted capability.","reason":"Owner expanded the preparation from guidance-only work to useful low-overhead infrastructure and authorized consolidation/merge/public documentation.","status":"proposed"}],"operations":{"boundaries":"Offline read-only projection; no inference or external write loop.","owner":"Repository maintainer","recovery":"Replay pinned sources into owned output and restore the previous renderer if cutover fails.","status":"planned","supportRoute":"Owning repository issue or accepted coordination board"},"owner":"Yiğit","purpose":"Make scoped work, evidence and delivery understandable across independently branded projects.","risks":[{"event":"A migration could blend denominators or overwrite a project brand.","id":"R-1","owner":"Adapting agent; owner reviews","response":"Require before/after counts, additive integration and rollback.","status":"open","trigger":"Any count difference or replacement of the host shell."}],"successCriteria":["Preserve real source counts and project brands.","Explain percentage changes and publication claims.","Provide reproducible automation and a bounded adaptation handoff."],"tailoring":{"finance":{"reason":"No project cost baseline is defined for this review; paid services require a separate budget decision.","status":"tailored-out"},"governance":{"reason":"Record owner, authorities, source limits and decisions.","status":"applied"},"resources":{"reason":"Offline tools have no inference or autonomous external writes.","status":"applied"},"risk":{"reason":"Record brand, source and privacy risks with intervention triggers.","status":"applied"},"schedule":{"reason":"Use dependencies and horizons; committed dates are not estimated in this local review.","status":"applied"},"scope":{"reason":"Map deliverables to accounting leaves without duplicate credit.","status":"applied"},"stakeholders":{"reason":"Owner review and public/private audiences are explicit.","status":"applied"}},"wbsCoverage":"complete","workPackages":[{"acceptance":"Source-count parity and semantic tests pass.","deliverable":"Shared accounting contract","id":"WP-1","owner":"Implementing agent","workItemIds":["STD-01","STD-02"]},{"acceptance":"Scope bridges, release gates and pipeline fixtures pass.","deliverable":"History and delivery tooling","id":"WP-2","owner":"Implementing agent","workItemIds":["STD-03","STD-04","STD-05"]},{"acceptance":"Profiles, PMI mapping, verification record and owner review are recorded.","deliverable":"Verified adoption package","id":"WP-3","owner":"Implementing agent; owner reviews adoption","workItemIds":["STD-06","STD-07","STD-08","STD-09"]},{"acceptance":"Public source installation, passing hosted jobs, observed Pages deployment and native interaction evidence are recorded.","deliverable":"Canonical repository, hosted workflow and accessible example site","id":"WP-4","owner":"Implementing agent; owner supplies any unavailable assistive-technology verification","workItemIds":["STD-10","STD-11","STD-12","STD-13","STD-18"]},{"acceptance":"Saved skill suite, disposable applications, installation/package checks and hosted delivery are evidenced; manual acceptance boundaries remain visible.","deliverable":"Agentic planning and operations package","id":"WP-5","owner":"Implementing agent; owner reviews adoption","workItemIds":["STD-14","STD-15","STD-16","STD-17"]},{"acceptance":"Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.","deliverable":"Interoperability and agent execution","id":"WP-6","owner":"Repository maintainer; implementing agent","workItemIds":["PRS-HANDOFF-01","PRS-HANDOFF-02","PRS-EVIDENCE-STAGES","PRS-AGENT-EXECUTION"]},{"acceptance":"Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.","deliverable":"Readable project records","id":"WP-7","owner":"Repository maintainer; implementing agent","workItemIds":["PRS-TAILOR-README","PRS-INSPECT-01","PRS-INSPECT-02","PRS-INSPECT-03"]},{"acceptance":"Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.","deliverable":"Safe upgrade adoption","id":"WP-8","owner":"Repository maintainer; implementing agent","workItemIds":["PRS-UPGRADE-01","PRS-UPGRADE-02","PRS-UPGRADE-03"]},{"acceptance":"Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.","deliverable":"Optional execution and conventions","id":"WP-9","owner":"Repository maintainer; implementing agent","workItemIds":["PRS-AGENT-AUTHORITY","PRS-CONTROL-01","PRS-CONTROL-02","PRS-CONVENTIONS-01","PRS-CONVENTIONS-02","PRS-TEMPLATE-01"]},{"acceptance":"Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.","deliverable":"Optional projections and discoverability","id":"WP-10","owner":"Repository maintainer; implementing agent","workItemIds":["PRS-PROJECTIONS","PRS-DISCOVERABILITY"]},{"acceptance":"Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.","deliverable":"Portable policy and automatic reconciliation","id":"WP-11","owner":"Repository maintainer; selected contributor","workItemIds":["PRS-POLICY-01","PRS-PIN-01","PRS-GATE-01","PRS-RECONCILE-01","PRS-GATE-02","PRS-HOOK-01","PRS-RECONCILE-02","PRS-EVAL-01"]},{"acceptance":"Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.","deliverable":"Maintained compatibility and release operations","id":"WP-12","owner":"Repository maintainer; selected contributor","workItemIds":["PRS-FEEDBACK-01","PRS-RELEASE-01","PRS-OPS-01"]},{"acceptance":"Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.","deliverable":"Conditional MCP and hosting","id":"WP-13","owner":"Repository maintainer; selected contributor","workItemIds":["PRS-MCP-01","PRS-HOST-01"]},{"acceptance":"Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.","deliverable":"Records and memory boundaries","id":"WP-14","owner":"Repository maintainer; selected contributor","workItemIds":["PRS-RECORDS-01","PRS-RECORDS-02"]}]},"groups":[{"id":"G1","panel":"Build","title":"Implementation and technical verification"},{"id":"G2","panel":"Review","title":"Owner review"},{"id":"G3","panel":"Deliver","title":"Canonical repository and hosted verification"},{"id":"G4","panel":"Shared standard","title":"Agent workflows and operations"},{"id":"G5","panel":"Post-release required","title":"Interoperability and agent execution"},{"id":"G6","panel":"Post-release required","title":"Readable project records"},{"id":"G7","panel":"Post-release required","title":"Safe upgrade adoption"},{"id":"G8","panel":"Deferred extensions","title":"Optional execution and conventions"},{"id":"G9","panel":"Deferred extensions","title":"Optional projections and discoverability"},{"id":"G10","panel":"Infrastructure preparation","title":"Portable policy and automatic reconciliation"},{"id":"G11","panel":"Infrastructure preparation","title":"Maintained compatibility and release operations"},{"id":"G12","panel":"Deferred extensions","title":"Conditional MCP and hosting"},{"id":"G13","panel":"Infrastructure preparation","title":"Records and memory boundaries"}],"items":[{"blocked":false,"completionBasis":"local implementation record; verification tracked separately","criterion":"Define shared terminology and calculation rules. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G1","id":"STD-01","issueUrl":null,"kind":"implementation","milestoneId":"M1","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Define shared terminology and calculation rules","unmappedDependencies":[]},{"blocked":false,"completionBasis":"local implementation record; verification tracked separately","criterion":"Preserve source identity through adapters. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G1","id":"STD-02","issueUrl":null,"kind":"implementation","milestoneId":"M1","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Preserve source identity through adapters","unmappedDependencies":[]},{"blocked":false,"completionBasis":"local implementation record; verification tracked separately","criterion":"Explain progress and scope changes. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G1","id":"STD-03","issueUrl":null,"kind":"implementation","milestoneId":"M1","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Explain progress and scope changes","unmappedDependencies":[]},{"blocked":false,"completionBasis":"local implementation record; verification tracked separately","criterion":"Generate changelogs and release readiness. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G1","id":"STD-04","issueUrl":null,"kind":"implementation","milestoneId":"M1","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Generate changelogs and release readiness","unmappedDependencies":[]},{"blocked":false,"completionBasis":"local implementation record; verification tracked separately","criterion":"Run a reusable offline build action. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G1","id":"STD-05","issueUrl":null,"kind":"implementation","milestoneId":"M1","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Run a reusable offline build action","unmappedDependencies":[]},{"blocked":false,"completionBasis":"local implementation record; verification tracked separately","criterion":"Define cold setup and hot adaptation. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G1","id":"STD-06","issueUrl":null,"kind":"implementation","milestoneId":"M1","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Define cold setup and hot adaptation","unmappedDependencies":[]},{"blocked":false,"completionBasis":"local implementation record; verification tracked separately","criterion":"Map the implementation to PMI guidance. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G1","id":"STD-07","issueUrl":null,"kind":"implementation","milestoneId":"M1","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Map the implementation to PMI guidance","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Recorded local verification; see VERIFICATION-public.md","criterion":"Verify the implementation and reference views. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[{"kind":"test","source":"VERIFICATION-public.md"},{"kind":"ui-review","source":"standards/ACCESSIBILITY.md"}],"groupId":"G1","id":"STD-08","issueUrl":null,"kind":"implementation","milestoneId":"M1","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Verify the implementation and reference views","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Owner-authorized scoped acceptance after audit, remediation and skill package verification.","criterion":"Review the shared standard with the owner. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[{"kind":"owner-review","observedOn":"2026-10-23","result":"passed","revision":"a8e7b07c3d3a4e4a1d6b15d3720507996be00b36","source":"audit/accessibility/owner-acceptance.json","subject":"STD-09"},{"kind":"ui-review","observedOn":"2026-10-23","result":"passed","revision":"a8e7b07c3d3a4e4a1d6b15d3720507996be00b36","source":"audit/accessibility/wcag22-audit.json","subject":"STD-09"}],"groupId":"G2","id":"STD-09","issueUrl":null,"kind":"acceptance","milestoneId":"M2","note":"Actual screen-reader speech and native browser zoom remain not-tested; see owner criterion amendment and scoped audit.","owner":"Owner","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Review the shared standard with the owner","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Observed canonical repository or hosted run; see linked evidence","criterion":"Public source package installed at interzettel/project-record-standard, excluding private owner fixtures.","deferReason":null,"dependsOn":[],"evidence":[{"kind":"repository","source":"https://github.com/interzettel/project-record-standard/tree/10a9e6501a9ed64f57ad139a56e3fc9fdd8b99ef"}],"groupId":"G3","id":"STD-10","issueUrl":null,"kind":"implementation","milestoneId":"M3","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Establish the canonical public standards repository","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Observed canonical repository or hosted run; see linked evidence","criterion":"An attributed hosted run passes the composite action, reusable workflow and relevant checks.","deferReason":null,"dependsOn":["STD-10"],"evidence":[{"kind":"hosted-ci","source":"https://github.com/interzettel/project-record-standard/actions/runs/39800961253"}],"groupId":"G3","id":"STD-11","issueUrl":null,"kind":"implementation","milestoneId":"M3","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Verify the action and reusable workflow on GitHub","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Observed canonical repository or hosted run; see linked evidence","criterion":"Pages serves the example tracker, guide and independently branded Prehnite reference from a passing run.","deferReason":null,"dependsOn":["STD-10"],"evidence":[{"kind":"deployment","source":"https://github.com/interzettel/project-record-standard/actions/runs/39800961253/job/119901281252"}],"groupId":"G3","id":"STD-12","issueUrl":null,"kind":"implementation","milestoneId":"M3","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Deploy and inspect the public example website","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Owner-authorized scoped acceptance after audit, remediation and skill package verification.","criterion":"Record scoped WCAG 2.2 A/AA review, repair discovered issues, verify keyboard/semantic/reflow behavior and distribute the accessibility skill; disclose unperformed actual assistive-technology and native zoom checks.","deferReason":null,"dependsOn":["STD-10"],"evidence":[{"kind":"keyboard-review","source":"standards/ACCESSIBILITY.md"},{"kind":"owner-review","observedOn":"2026-10-23","result":"passed","revision":"a8e7b07c3d3a4e4a1d6b15d3720507996be00b36","source":"audit/accessibility/owner-acceptance.json","subject":"STD-13"},{"kind":"ui-review","observedOn":"2026-10-23","result":"passed","revision":"a8e7b07c3d3a4e4a1d6b15d3720507996be00b36","source":"audit/accessibility/wcag22-audit.json","subject":"STD-13"}],"groupId":"G3","id":"STD-13","issueUrl":null,"kind":"implementation","milestoneId":"M3","note":"Actual screen-reader speech and native browser zoom remain not-tested; see owner criterion amendment and scoped audit.","owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Verify scoped WCAG 2.2 accessibility and agent guidance","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Observed saved suite and reproducible local checks; see evaluation and verification records.","criterion":"All eleven skills are validated, independently exercised, saved in the canonical repository and distributed with repository rules.","deferReason":null,"dependsOn":["STD-05"],"evidence":[{"kind":"agent-evaluation","source":"https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md"},{"kind":"runtime-replay","source":"https://github.com/interzettel/project-record-standard/blob/main/audit/skills/final-runtime-replay.json"},{"kind":"agent-evaluation","result":"passed","revision":"a8e7b07c3d3a4e4a1d6b15d3720507996be00b36","source":"audit/accessibility/skill-evaluation.md"},{"kind":"save-verification","observedOn":"2026-10-23","result":"passed","source":"audit/accessibility/native-check-followup.json","subject":"STD-14"}],"groupId":"G4","id":"STD-14","issueUrl":null,"kind":"implementation","milestoneId":"M4","note":"Accessibility skill additionally saved to personal Skills; retained remote materialization and report-template hash match verified.","owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Create and save the complete agent workflow suite","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Observed saved suite and reproducible local checks; see evaluation and verification records.","criterion":"Disposable cold/hot applications preserve source/brand, reconcile named counts and exercise privacy, replay, failure and repeated runs; package/runtime checks pass.","deferReason":null,"dependsOn":["STD-14"],"evidence":[{"kind":"agent-evaluation","source":"https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md"},{"kind":"runtime-replay","source":"https://github.com/interzettel/project-record-standard/blob/main/audit/skills/final-runtime-replay.json"}],"groupId":"G4","id":"STD-15","issueUrl":null,"kind":"implementation","milestoneId":"M4","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Verify agent installation, scouting, adaptation and recovery","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Hosted verification, reusable workflow and Pages passed for the identified candidate; live tracker and agent guide inspected in Edge.","criterion":"Hosted checks pass the packaged suite and Pages serves the matching guide/example; actual run and deployment evidence are recorded.","deferReason":null,"dependsOn":["STD-14","STD-15"],"evidence":[{"kind":"hosted-ci","observedOn":"2026-10-23","result":"passed","revision":"9b02b4380da76d16cabfe801fc368302d5ae5297","source":"https://github.com/interzettel/project-record-standard/actions/runs/39866474910","subject":"STD-16"},{"kind":"deployment","observedOn":"2026-10-23","result":"passed","revision":"9b02b4380da76d16cabfe801fc368302d5ae5297","source":"https://github.com/interzettel/project-record-standard/actions/runs/39866474910/job/120129913901","subject":"STD-16"},{"kind":"ui-review","observedOn":"2026-10-23","result":"passed","revision":"9b02b4380da76d16cabfe801fc368302d5ae5297","source":"standards/ACCESSIBILITY.md; audit/skills/hosted-observation.json","subject":"STD-16"}],"groupId":"G4","id":"STD-16","issueUrl":null,"kind":"implementation","milestoneId":"M4","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Verify and deploy the complete standards package","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Observed scenario applications and local full-suite/source-distribution/site checks; this adds setup guidance, not autonomous permissions.","criterion":"Cold and hot setup require the ten-dimension L0–L5 assessment, separate current/target grade and R0–R4 authority, central assessment references, environment tailoring, selected remediation and re-audit triggers; bundled installation and guide build checks plus five guided applications pass.","deferReason":null,"dependsOn":["STD-14","STD-15"],"evidence":[{"kind":"agent-evaluation","observedOn":"2026-10-23","result":"passed","source":"audit/readiness/EVALUATION.md","subject":"STD-17"},{"kind":"test","observedOn":"2026-10-23","result":"passed","source":"tests/test_packaging.py; tests/test_site.py; VERIFICATION-public.md","subject":"STD-17"}],"groupId":"G4","id":"STD-17","issueUrl":null,"kind":"implementation","milestoneId":"M4","note":"No readiness grade assigned to this repository. Actual screen-reader/native zoom limits from the earlier audit remain unchanged.","owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Include evidence-based L0–L5 readiness in project setup","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Owner-set native200%/400% zoom checks directly observed; owner confirmed Narrator works. Versions/transcript are unavailable and no full conformance claim is made.","criterion":"Record owner-set native200% and400% zoom checks on the standard, guide and Prehnite reference with reflow, tested controls and visible settled focus; record the owner’s Narrator confirmation and disclose unavailable version/transcript evidence.","deferReason":null,"dependsOn":["STD-13"],"evidence":[{"kind":"verification-attempt","observedOn":"2026-10-23","result":"blocked","source":"audit/accessibility/native-check-followup.json","subject":"STD-18"},{"kind":"ui-review","observedOn":"2026-10-23","result":"passed","revision":"8063b65a9832143551dc021a9c00026b4c4f04f3","source":"audit/accessibility/native-200-observation.json","subject":"STD-18"},{"kind":"ui-review","observedOn":"2026-10-23","result":"passed","revision":"8063b65a9832143551dc021a9c00026b4c4f04f3","source":"audit/accessibility/native-400-observation.json","subject":"STD-18"},{"kind":"owner-review","observedOn":"2026-10-23","result":"passed","revision":"8063b65a9832143551dc021a9c00026b4c4f04f3","source":"audit/accessibility/native-completion.json","subject":"STD-18"}],"groupId":"G3","id":"STD-18","issueUrl":null,"kind":"verification","milestoneId":"M3","note":"Owner-reported screen-reader result is separate from agent-observed zoom/focus evidence. Original versioned-transcript criterion and scoped acceptance treatment retained in audit/accessibility/native-completion.json.","owner":"Implementing agent; owner supplies native control and listening evidence","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Complete native zoom and actual screen-reader verification","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Pinned synthetic contract0.2 handoff through existing loader/validator/calculator at 5424ea8b132c44768fee804d97a54e63394d52ec. Six handoff tests,90 Python tests and14 JavaScript tests pass; fresh-context review independently passed handoff/packaging tests. Worker implementation/check remain distinct from absent owner acceptance.","criterion":"One synthetic leaf maps to one separate consumer task without another accounting row. A worker's implementation and passing check remain distinct from absent owner acceptance. The fixture runs offline, references exact contract/source identity, and changes no runtime permissions.","deferReason":null,"dependsOn":[],"evidence":[{"kind":"implementation","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"5424ea8b132c44768fee804d97a54e63394d52ec","source":"standards/HANDOFF.md","subject":"PRS-HANDOFF-01"},{"kind":"test","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"5424ea8b132c44768fee804d97a54e63394d52ec","source":"tests/test_handoff.py","subject":"PRS-HANDOFF-01"},{"kind":"review","observedOn":"2026-10-30","producer":"Codex /root/handoff_review","result":"passed","revision":"5424ea8b132c44768fee804d97a54e63394d52ec","source":"audit/handoff/2026-10-30/verification.json","subject":"PRS-HANDOFF-01"}],"groupId":"G5","id":"PRS-HANDOFF-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/15","kind":"implementation","milestoneId":"M5","note":"Queue05/34 complete in PR47. No runtime/contract/permission/release change. Next PRS-HANDOFF-02/#16/M5; adversarial exit and M5 owner acceptance pending.","owner":"Codex contributor; fresh-context same-family review recorded","priority":"P1","required":true,"sourceState":"verified-offline-handoff","state":"done","title":"Pin the record boundary and prove one offline handoff","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Bounded offline PRS-facing gate passes at 29e8fe5202d952c218ba89581063e9fc172ed916:17 handoff tests,101 Python tests,14 JavaScript tests; fresh-context review independently reran17 and approved after reproduced/fixed mixed-receipt defect. Test stub only: no production writer, live consumer, acceptance or release inferred.","criterion":"Retries earn one canonical credit; changed revisions cannot reuse incompatible evidence. Missing/inaccessible is distinct from zero; source freshness survives a newer render. Private payloads do not enter public output; independent review cites the tested head and bounded pass/fail/unknown.","deferReason":null,"dependsOn":["PRS-HANDOFF-01"],"evidence":[{"kind":"implementation","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"29e8fe5202d952c218ba89581063e9fc172ed916","source":"tests/fixtures/handoff/consumer_stub.py","subject":"PRS-HANDOFF-02"},{"kind":"test","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"29e8fe5202d952c218ba89581063e9fc172ed916","source":"tests/test_handoff.py","subject":"PRS-HANDOFF-02"},{"kind":"review","observedOn":"2026-10-30","producer":"Codex /root/handoff_adversarial_review","result":"passed","revision":"29e8fe5202d952c218ba89581063e9fc172ed916","source":"audit/handoff-adversarial/2026-10-30/verification.json","subject":"PRS-HANDOFF-02"}],"groupId":"G5","id":"PRS-HANDOFF-02","issueUrl":"https://github.com/interzettel/project-record-standard/issues/16","kind":"implementation","milestoneId":"M5","note":"Queue06/34 complete in PR48. Parent#9 offline boundary met without extra accounting credit; M5 owner acceptance and live Qurultai/Hermes gates remain pending. Next PRS-EVIDENCE-STAGES/#6/M5.","owner":"Codex contributor; fresh-context same-family review recorded","priority":"P1","required":true,"sourceState":"verified-adversarial-offline-handoff","state":"done","title":"Prove adversarial handoff reconciliation and record the exit gate","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Authoritative STANDARD matrix and5 worked cases at a602e90238d24ad5b87ef4025a755a27091e6c2e preserve original criteria/dependency meanings. Seven runtime-boundary tests and108 Python tests pass;5 controls/5 installed-skill applications and fresh-context review support bounded portable guidance. No skill body edit or causal effectiveness/owner acceptance claim.","criterion":"Examples preserve original Done criteria, execution states and denominators. Implemented evidence does not imply verification or acceptance; useful negative research can finish without a release. Existing contract and readiness levels remain compatible; any skill edit follows distribution and evaluation gates.","deferReason":null,"dependsOn":[],"evidence":[{"kind":"implementation","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"a602e90238d24ad5b87ef4025a755a27091e6c2e","source":"standards/STANDARD.md","subject":"PRS-EVIDENCE-STAGES"},{"kind":"test","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"a602e90238d24ad5b87ef4025a755a27091e6c2e","source":"tests/test_evidence_stages.py","subject":"PRS-EVIDENCE-STAGES"},{"kind":"application","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"a602e90238d24ad5b87ef4025a755a27091e6c2e","source":"audit/evidence-stages/2026-10-30/verification.json","subject":"PRS-EVIDENCE-STAGES"},{"kind":"review","observedOn":"2026-10-30","producer":"Codex /root/evidence_stages_review","result":"passed","revision":"a602e90238d24ad5b87ef4025a755a27091e6c2e","source":"audit/evidence-stages/2026-10-30/verification.json","subject":"PRS-EVIDENCE-STAGES"}],"groupId":"G5","id":"PRS-EVIDENCE-STAGES","issueUrl":"https://github.com/interzettel/project-record-standard/issues/6","kind":"implementation","milestoneId":"M5","note":"Queue07/34 complete in PR49. Existing installed skill already reads STANDARD; bodies/metadata/suite unchanged. No core/schema/readiness/permission/release change. Next PRS-AGENT-EXECUTION/#3/M5; M5 outcome acceptance remains pending.","owner":"Codex contributor; fresh-context same-family review recorded","priority":"P1","required":true,"sourceState":"verified-evidence-reference","state":"done","title":"Define evidence stages and dependency meanings","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Optional read-only selection/alignment and owned installed start/end protocol at 8b49fb5281bd879d7af9a846400e1b4888480c94 pass21 agent/alignment tests,25 pin tests and122 Python tests. Five actual installed-guidance applications at423b168 selected existing eligible work and preserved source/acceptance; fixed-head review approves multi-leaf issue compatibility. No live writer, native assignment or owner acceptance inferred.","criterion":"Selection names leaf, issue, milestone, criterion and dependency status. Alignment catches missing/stale mappings without inferring native milestone or owner acceptance. No off-road scope, duplicate credit, mandatory all-repo scan or repeated approval is introduced.","deferReason":null,"dependsOn":["PRS-EVIDENCE-STAGES"],"evidence":[{"kind":"implementation","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"8b49fb5281bd879d7af9a846400e1b4888480c94","source":"src/project_record/execution.py","subject":"PRS-AGENT-EXECUTION"},{"kind":"test","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"8b49fb5281bd879d7af9a846400e1b4888480c94","source":"tests/test_agents.py","subject":"PRS-AGENT-EXECUTION"},{"kind":"application","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"423b168b1625cb8bcb0eae037271e986dc21f433","source":"audit/execution/2026-10-30/verification.json","subject":"PRS-AGENT-EXECUTION"},{"kind":"review","observedOn":"2026-10-30","producer":"Codex /root/execution_review","result":"passed","revision":"8b49fb5281bd879d7af9a846400e1b4888480c94","source":"audit/execution/2026-10-30/verification.json","subject":"PRS-AGENT-EXECUTION"}],"groupId":"G5","id":"PRS-AGENT-EXECUTION","issueUrl":"https://github.com/interzettel/project-record-standard/issues/3","kind":"implementation","milestoneId":"M5","note":"Queue08/34 complete in PR50. Skill bodies/metadata unchanged; rule-only upgrades require explicit --upgrade and old pins stay readable. M5 four work gates complete without source acceptance. Next PRS-GATE-01/#31/M10; M5 owner/release gates remain separate.","owner":"Codex contributor; fresh-context same-family review recorded","priority":"P1","required":true,"sourceState":"verified-bounded-selection-alignment","state":"done","title":"Select canonical work and reconcile bounded delivery","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Fixture contains accessible granular work text and SVG with source identity. Deterministic rerun preserves authored README bytes; stale output is detected. Per-skill versions apply only to independently published modules; no mandatory website or host version rewrite.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G6","id":"PRS-TAILOR-README","issueUrl":"https://github.com/interzettel/project-record-standard/issues/2","kind":"implementation","milestoneId":"M6","note":"Queue 17/34. Existing request is one leaf. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P1","required":true,"sourceState":"selected-not-started","state":"ready","title":"Support README-only tracking and suite-level versioning","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Inventory separates real producer output from adopter inputs and hypothetical receipts. Declared files are bounded; no recursive scan or private-input publication is implied. Fixture supplies stable identities, source/render timestamps and negative cases for later packages.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G6","id":"PRS-INSPECT-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/17","kind":"research","milestoneId":"M6","note":"Queue 18/34. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P1","required":true,"sourceState":"selected-not-started","state":"ready","title":"Inventory declared JSON producers and define inspector coverage","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"All summarized claims link to their source field/path and observation. Source and projection share one work identity/credit; failed CI, merge and recommendations cannot become verified/released/accepted. Output needs no server, token, model call, client write or graph engine; missing and error states are readable.","deferReason":null,"dependsOn":["PRS-INSPECT-01","PRS-EVIDENCE-STAGES"],"evidence":[],"groupId":"G6","id":"PRS-INSPECT-02","issueUrl":"https://github.com/interzettel/project-record-standard/issues/18","kind":"implementation","milestoneId":"M6","note":"Queue 19/34. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P1","required":true,"sourceState":"selected-not-started","state":"backlog","title":"Render traceable semantic views in one offline inspector","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Public builds reject unreviewed sensitive input and resist hostile HTML/JS/URLs; no source mutation. Repeated builds are deterministic, owned-output-only, and stale generated output fails the parity check. Three profiles keep source identity, branding and no-Pages choice; browser checks and independent review name exact revision and limits.","deferReason":null,"dependsOn":["PRS-INSPECT-02","PRS-TAILOR-README"],"evidence":[],"groupId":"G6","id":"PRS-INSPECT-03","issueUrl":"https://github.com/interzettel/project-record-standard/issues/19","kind":"implementation","milestoneId":"M6","note":"Queue 20/34. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P1","required":true,"sourceState":"selected-not-started","state":"backlog","title":"Enforce inspector privacy and verify integration profiles","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Mixed/partial installs and missing release evidence remain unknown/conflicted. Major/minor trigger assessment; security patch escalates without automatic apply. README-only/custom layout and already-satisfied hosts receive no forced rewrite or extra completion.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G7","id":"PRS-UPGRADE-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/20","kind":"implementation","milestoneId":"M7","note":"Queue 21/34. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P1","required":true,"sourceState":"selected-not-started","state":"ready","title":"Compare immutable releases against real host installations","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Edited owned files or ambiguous mappings fail closed without overwrite. Replay/interruption/rollback preserves IDs, dependencies, accepted criteria, history and denominators. No permission, GitHub write, merge or deployment is inferred from upstream capabilities or release arrival.","deferReason":null,"dependsOn":["PRS-UPGRADE-01"],"evidence":[],"groupId":"G7","id":"PRS-UPGRADE-02","issueUrl":"https://github.com/interzettel/project-record-standard/issues/21","kind":"implementation","milestoneId":"M7","note":"Queue 22/34. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P1","required":true,"sourceState":"selected-not-started","state":"backlog","title":"Implement reviewed upgrade receipts and recoverable application","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Eight minimum consumer cases and SemVer trigger cases have sourced results and limits. Distribution, owned-file conflicts, repeated install and rollback are verified; no historical v0.4.1 bytes change. Exact-head independent review and a resumable migration receipt support the future upgrade gate; publication remains separate.","deferReason":null,"dependsOn":["PRS-UPGRADE-02","PRS-AGENT-EXECUTION","PRS-TAILOR-README"],"evidence":[],"groupId":"G7","id":"PRS-UPGRADE-03","issueUrl":"https://github.com/interzettel/project-record-standard/issues/22","kind":"implementation","milestoneId":"M7","note":"Queue 23/34. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P1","required":true,"sourceState":"selected-not-started","state":"backlog","title":"Distribute and evaluate the semantic upgrade workflow","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Judge/reviewer/approver/enforcement roles remain distinct. Positive escalation and confidence-to-permission attack examples preserve authorization. Repositories without delegated agents gain no setup burden or mandatory runtime.","deferReason":"P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.","dependsOn":["PRS-EVIDENCE-STAGES"],"evidence":[],"groupId":"G8","id":"PRS-AGENT-AUTHORITY","issueUrl":"https://github.com/interzettel/project-record-standard/issues/1","kind":"implementation","milestoneId":"M8","note":"Queue 25/34. Existing request is one leaf. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P2","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Distinguish agent capability from autonomy and authority","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Cancelled, unknown and optional/support cases have explicit denominator policy. all-gate-items and source-state milestone rules both work; deferred acceptance does not invalidate historical implementation. No diagnostic rewrites canonical Done and no durations/CPM are invented; genuine schema gaps require separate review.","deferReason":"P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.","dependsOn":["PRS-EVIDENCE-STAGES","PRS-AGENT-EXECUTION"],"evidence":[],"groupId":"G8","id":"PRS-CONTROL-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/23","kind":"research","milestoneId":"M8","note":"Queue 27/34. Parent request #11 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P2","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Specify dependency readiness and impact formulas with fixtures","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Graph and equivalent table expose ready/waiting/unknown with traceable formulas. Keyboard/path focus and privacy/public snapshot checks name tested limits. No game-specific schema, competing publisher, live writes or mandatory inspector dependency enters core PRS.","deferReason":"P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.","dependsOn":["PRS-CONTROL-01"],"evidence":[],"groupId":"G8","id":"PRS-CONTROL-02","issueUrl":"https://github.com/interzettel/project-record-standard/issues/24","kind":"implementation","milestoneId":"M8","note":"Queue 28/34. Parent request #11 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P2","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Build the optional dependency view and prove reuse","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"No second global-standard repository, upgrade engine or VERSION authority is created. Research, suite and website version dimensions retain their meanings. Zettlerei owns visual assets; a neutral PRS profile remains usable without an approved brand.","deferReason":"P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.","dependsOn":["PRS-TAILOR-README","PRS-UPGRADE-01"],"evidence":[],"groupId":"G8","id":"PRS-CONVENTIONS-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/25","kind":"implementation","milestoneId":"M8","note":"Queue 29/34. Parent request #12 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P2","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Specify optional repository and release convention references","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Each consumer keeps native version, source authority, identity and release channel. No private font/media binaries leak; monochrome/missing-font fallbacks remain usable. Brand-bearing claims wait for Zettlerei #88 owner approval; neutral fixture results are reported separately.","deferReason":"P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.","dependsOn":["PRS-CONVENTIONS-01"],"evidence":[],"groupId":"G8","id":"PRS-CONVENTIONS-02","issueUrl":"https://github.com/interzettel/project-record-standard/issues/26","kind":"implementation","milestoneId":"M8","note":"Queue 30/34. Parent request #12 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P2","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Verify convention profiles across three synthetic consumers","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Two copies/revisions and two cards from one source remain distinguishable without duplicate credit. Scan, print completion and physical movement cannot grant Done/Accepted or source-write authority. No printer dependency, QR secret, device execution or effectiveness claim enters PRS.","deferReason":"P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.","dependsOn":["PRS-EVIDENCE-STAGES"],"evidence":[],"groupId":"G9","id":"PRS-PROJECTIONS","issueUrl":"https://github.com/interzettel/project-record-standard/issues/8","kind":"implementation","milestoneId":"M9","note":"Queue 33/34. Existing request is one leaf. Native milestone 5; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P3","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Define optional physical projection references and freshness","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planned delivery with no implementation or acceptance receipt.","criterion":"Canonical/public status and meaningful no-JS content have direct evidence. Citations, bot requests and referred visitors remain distinct; unknown metrics stay unknown. No private inspector data, unsolicited analytics, ranking guarantees or deployment authority is introduced.","deferReason":"P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.","dependsOn":[],"evidence":[],"groupId":"G9","id":"PRS-DISCOVERABILITY","issueUrl":"https://github.com/interzettel/project-record-standard/issues/7","kind":"research","milestoneId":"M9","note":"Queue 34/34. Existing request is one leaf. Native milestone 5; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.","owner":"Implementing agent; repository maintainer reviews","priority":"P3","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Audit approved public documentation discoverability","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Bounded #27 research criterion met: version/date-linked comparison, ten class lifecycles, PRS/public host inventory and five routing counterexamples; same-family fresh-context review found no material issues at ce34c0190ecbf603980f89ee04dc9ed97843a064. No backend effectiveness, owner acceptance or release inferred.","criterion":"A source-linked comparison records implementation/version/date, storage scope, writer, trust, privacy, retention, retrieval and supersession for each class. Memory recall never silently overrides source evidence or grants acceptance. Include a personal-only fact, shared repo convention, changed decision, failed experiment and generated status example; propose an explicit routing/authority map without inventing a universal memory engine.","dependsOn":[],"evidence":[{"kind":"research","revision":"ce34c0190ecbf603980f89ee04dc9ed97843a064","source":"audit/records/2026-10-30/investigation.md"},{"kind":"review","revision":"ce34c0190ecbf603980f89ee04dc9ed97843a064","source":"audit/records/2026-10-30/verification.json"},{"kind":"test","revision":"ce34c0190ecbf603980f89ee04dc9ed97843a064","source":"https://github.com/interzettel/project-record-standard/actions/runs/41027247677"}],"groupId":"G13","id":"PRS-RECORDS-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/27","kind":"research","milestoneId":"M13","note":"Queue 01/34 research complete in PR #43. Native milestone9; M13 remains unaccepted. Next eligible package PRS-POLICY-01/#28/M10; #29 owns layouts and three-host fixtures.","owner":"Codex contributor; fresh-context Codex review recorded","priority":"P1","required":true,"sourceState":"sourced-research-reviewed","state":"done","title":"Investigate personal memory and project record lifecycles","unmappedDependencies":[]},{"blocked":false,"completionBasis":"17-rule sourced catalogue, mechanism matrix and5 paired executable boundary probes reviewed at239b4aadac5f83faa18c6500a58fb9d7e08221cf; no hard-enforcement or owner-acceptance inference.","criterion":"A rule-to-mechanism matrix distinguishes skills, CLI, local hooks, required CI, scheduler and optional MCP; positive and negative cases cover duplicate credit, mismatched evidence, unauthorized acceptance, source drift and out-of-scope work. Every hard claim identifies its actual trust boundary and bypass. No autonomous permission or mandatory service is inferred.","dependsOn":["PRS-RECORDS-01"],"evidence":[{"kind":"specification","revision":"239b4aadac5f83faa18c6500a58fb9d7e08221cf","source":"standards/POLICY.md"},{"kind":"test","revision":"239b4aadac5f83faa18c6500a58fb9d7e08221cf","source":"tests/test_policy.py"},{"kind":"review","revision":"239b4aadac5f83faa18c6500a58fb9d7e08221cf","source":"audit/policy/2026-10-30/verification.json"}],"groupId":"G10","id":"PRS-POLICY-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/28","kind":"research","milestoneId":"M10","note":"Queue02/34 complete in PR44. Next#29/M13; no host activation or scope change. Release boundaries revised as proposals, with earlier#38 preparation held.","owner":"Codex contributor; fresh-context review recorded","priority":"P1","required":true,"sourceState":"catalogue-and-boundary-probes-reviewed","state":"done","title":"Specify the rule catalogue and enforcement boundaries","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Optional layoutVersion1 metadata mapping, three synthetic hosts and20 behavioral tests verified at87bd6837ba15fc447c1b45d0d9f29792bb8888aa after four reviewed regressions were fixed. No migration, memory effectiveness, enforcement or owner acceptance inferred.","criterion":"Three synthetic hosts (README-only research, private personal agent, shared repository) resolve each class to one writer/home. Private memory and transient caches are excluded from Git/public output unless deliberately approved; links do not leak private totals/URLs. Conflicting/shared IDs, stale recall, moved documents, superseded decisions and generated files have observable handling. No second completion ledger, forced language/folder hierarchy or automatic destructive migration is introduced.","dependsOn":["PRS-RECORDS-01","PRS-POLICY-01"],"evidence":[{"kind":"implementation","revision":"87bd6837ba15fc447c1b45d0d9f29792bb8888aa","source":"src/project_record/record_layout.py"},{"kind":"test","revision":"87bd6837ba15fc447c1b45d0d9f29792bb8888aa","source":"tests/test_record_layout.py"},{"kind":"review","revision":"87bd6837ba15fc447c1b45d0d9f29792bb8888aa","source":"audit/record-layout/2026-10-30/verification.json"}],"groupId":"G13","id":"PRS-RECORDS-02","issueUrl":"https://github.com/interzettel/project-record-standard/issues/29","kind":"implementation","milestoneId":"M13","note":"Queue03/34 complete in PR45. M13 work gates complete, outcome unaccepted. Next PRS-PIN-01/#30/M10.","owner":"Codex contributor; fresh-context review recorded","priority":"P1","required":true,"sourceState":"optional-layout-helpers-verified","state":"done","title":"Define portable file layouts and record naming profiles","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Expected pinVersion1 selected-byte verification reuses existing receipt;24 pin tests and84 Python tests pass after reviewed classification fixes at02cac0676fe57a23faa6b0eb203a0771d3df6fba. Provenance/support/apply authority remain separate; no publisher authentication, upgrade application or outcome acceptance inferred.","criterion":"Exact pins verify bytes and provenance separately; mutable main/latest cannot certify an install. Mixed/locally edited installs remain conflicted. Major/minor and security-patch assessments are distinct from authorized application; ordinary patches can be deferred with a recorded reason. Tests preserve existing v0.4.1 history and old record compatibility, and make runtime-floor changes explicit.","dependsOn":["PRS-POLICY-01","PRS-RECORDS-02"],"evidence":[{"kind":"implementation","revision":"02cac0676fe57a23faa6b0eb203a0771d3df6fba","source":"src/project_record/pins.py"},{"kind":"test","revision":"02cac0676fe57a23faa6b0eb203a0771d3df6fba","source":"tests/test_pins.py"},{"kind":"review","revision":"02cac0676fe57a23faa6b0eb203a0771d3df6fba","source":"audit/pins/2026-10-30/verification.json"}],"groupId":"G10","id":"PRS-PIN-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/30","kind":"implementation","milestoneId":"M10","note":"Queue04/34 complete in PR46. No floor/contract/release change. Next PRS-HANDOFF-01/#15/M5; #38 must select/test next-publication supported minimum.","owner":"Codex contributor; fresh-context review recorded","priority":"P1","required":true,"sourceState":"read-only-pins-and-assessment-verified","state":"done","title":"Implement verified installation pins and compatibility assessment","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Read-only shared policy API/CLI/wrapper at c55d410e6bcc0a793591ff405aac41bcf9cd20e5:25 policy and142 full Python tests pass; fresh-context review resolves restored-scope and malformed-visibility findings. Exact-subject/revision evidence, duplicate accounting, unexplained scope loss, privacy/destination guards and interface equivalence exercised. Unsupported predicates remain unknown; no permission, owner acceptance or host enforcement inferred.","criterion":"CLI fixtures reject duplicate credit, wrong-revision proof, silent scope loss and unsafe public output; unknown evidence cannot certify a required gate. Unknown is not silently success. Results are equivalent through direct calls and wrappers, with explicit exit semantics and no required model/server.","deferReason":null,"dependsOn":["PRS-POLICY-01","PRS-PIN-01","PRS-EVIDENCE-STAGES"],"evidence":[{"kind":"implementation","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"c55d410e6bcc0a793591ff405aac41bcf9cd20e5","source":"src/project_record/policy.py; tools/check_policy.py","subject":"PRS-GATE-01"},{"kind":"test","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"c55d410e6bcc0a793591ff405aac41bcf9cd20e5","source":"tests/test_policy.py; audit/policy-cli/2026-10-30/verification.json","subject":"PRS-GATE-01"},{"kind":"review","observedOn":"2026-10-30","producer":"Codex /root/policy_cli_review","result":"passed","revision":"c55d410e6bcc0a793591ff405aac41bcf9cd20e5","source":"audit/policy-cli/2026-10-30/verification.json","subject":"PRS-GATE-01"}],"groupId":"G10","id":"PRS-GATE-01","implementationRevision":"c55d410e6bcc0a793591ff405aac41bcf9cd20e5","issueUrl":"https://github.com/interzettel/project-record-standard/issues/31","kind":"implementation","milestoneId":"M10","note":"Queue09/34 complete in PR51; optional policyVersion1/resultVersion1 preserve completion contracts0.1/0.2 and publishedv0.4.1. Shared output guard rejects symlink paths. Next PRS-RECONCILE-01/#32/M10; early foundations release preparation remains held pending #38 detailing.","owner":"Codex contributor; fresh-context same-family review recorded","priority":"P1","required":true,"sourceState":"verified-read-only-policy-interface","state":"done","title":"Expose deterministic policy checks through the shared CLI","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Opt-in normalized-v1 host-authorized writer passes22 reconciliation and164 full Python tests, including replay/stale/negative events, scoped discovery,7 interrupted phases, real process deaths and lock contention. Fresh-context same-family review found no confirmed issues. No live lifecycle, arbitrary-editor CAS, supported Windows/network filesystem/power-loss, owner acceptance or release claim.","criterion":"Replayed, failed, cancelled, concurrent and stale events cannot duplicate credit or overwrite newer authored work. Successful evidence updates the canonical source and derived views under the adopted policy; human-only acceptance remains pending. Newly discovered work is visible with origin/reason and denominator effect when admitted under declared scope authority. Crash/retry preserves source bytes or exposes a recoverable partial state.","dependsOn":["PRS-GATE-01","PRS-AGENT-EXECUTION","PRS-RECORDS-02"],"evidence":[{"kind":"implementation","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"0bd960c65017a24bf3c08de124fc999d1d783ead","source":"src/project_record/reconcile.py","subject":"PRS-RECONCILE-01"},{"kind":"test","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"0bd960c65017a24bf3c08de124fc999d1d783ead","source":"tests/test_reconcile.py; audit/reconciliation/2026-10-30/verification.json","subject":"PRS-RECONCILE-01"},{"kind":"review","observedOn":"2026-10-30","producer":"Codex /root/reconciliation_review","result":"passed","revision":"0bd960c65017a24bf3c08de124fc999d1d783ead","source":"audit/reconciliation/2026-10-30/verification.json","subject":"PRS-RECONCILE-01"},{"eventId":"prs:PRS-RECONCILE-01:0bd960c65017a24bf3c08de124fc999d1d783ead","kind":"work-result","observedOn":"2026-10-30","outcome":"completed","producer":"Codex task session","result":"passed","revision":"0bd960c65017a24bf3c08de124fc999d1d783ead","source":"https://github.com/interzettel/project-record-standard/pull/52","subject":"PRS-RECONCILE-01","summary":"Opt-in normalized-v1 host-authorized writer passes22 reconciliation and164 full Python tests, including replay/stale/negative events, scoped discovery,7 interrupted phases, real process deaths and lock contention. Fresh-context same-family review found no confirmed issues. No live lifecycle, arbitrary-editor CAS, supported Windows/network filesystem/power-loss, owner acceptance or release claim."}],"groupId":"G10","id":"PRS-RECONCILE-01","implementationRevision":"0bd960c65017a24bf3c08de124fc999d1d783ead","issueUrl":"https://github.com/interzettel/project-record-standard/issues/32","kind":"implementation","milestoneId":"M10","note":"Queue 10/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P1","required":true,"sourceState":"after-work-completed","state":"done","title":"Reconcile completed work automatically with a resumable journal","unmappedDependencies":[]},{"blocked":true,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"A failing fixture is rejected at the configured boundary and corrected fixture passes at the same revision. Local hook bypass still meets the CI gate. Protected workflow/pin/policy changes, forks/untrusted code, skip/path filters, unavailable checks and authorized bypass actors have explicit coverage. Do not change broad access or silently label an advisory job enforced.","dependsOn":["PRS-GATE-01","PRS-PIN-01"],"evidence":[{"kind":"implementation","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"f1c13a32bba897bc20ddbf557b4985cb12f340e3","source":"src/project_record/policy_ci.py; .github/workflows/policy.yml","subject":"PRS-GATE-02"},{"kind":"test","observedOn":"2026-10-30","producer":"Codex task session","result":"passed","revision":"f1c13a32bba897bc20ddbf557b4985cb12f340e3","source":"tests/test_policy_ci.py; audit/ci-enforcement/2026-10-30/verification.json","subject":"PRS-GATE-02"},{"kind":"review","observedOn":"2026-10-30","producer":"Codex /root/ci_boundary_review","result":"passed","revision":"f1c13a32bba897bc20ddbf557b4985cb12f340e3","source":"audit/ci-enforcement/2026-10-30/verification.json","subject":"PRS-GATE-02"},{"kind":"host-enforcement","observedOn":"2026-10-30","producer":"Codex task session","result":"unknown","revision":"f1c13a32bba897bc20ddbf557b4985cb12f340e3","source":"audit/ci-enforcement/2026-10-30/host-observation.json","subject":"PRS-GATE-02"},{"eventId":"prs:PRS-GATE-02:preparation:f1c13a32bba897bc20ddbf557b4985cb12f340e3","kind":"work-result","observedOn":"2026-10-30","outcome":"blocked","producer":"Codex task session","result":"unknown","revision":"f1c13a32bba897bc20ddbf557b4985cb12f340e3","source":"https://github.com/interzettel/project-record-standard/pull/53","subject":"PRS-GATE-02","summary":"CI data-check preparation passes13 focused/177 Python tests and fresh-context review. Fullcriterion incomplete: main is reported unprotected, detailed protection endpointintegration403 and EdgeblockedbyotherextensionUI. Native settings/event-policy review, activation/read-back and actual merge-refusal/bypass tests remain pending; hosted negative/corrected probe follows prep integration. No Done credit or enforcement claim."}],"groupId":"G10","id":"PRS-GATE-02","issueUrl":"https://github.com/interzettel/project-record-standard/issues/33","kind":"implementation","milestoneId":"M10","note":"Queue 11/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P1","required":true,"sourceState":"after-work-blocked","state":"backlog","title":"Verify the CI enforcement profile and its bypass limits","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"Actual tested runtime/version and trigger evidence distinguish native lifecycle hooks from command-wrapper/manual fallback. Duplicate stop events, missing trigger, unavailable core, timeout and hook failure keep a recoverable pending record. Two runtimes share policy results; no provider-specific second rule engine or fixed professional roles. Installation previews and rollback preserve host configuration.","dependsOn":["PRS-RECONCILE-01","PRS-GATE-02"],"evidence":[],"groupId":"G10","id":"PRS-HOOK-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/34","kind":"implementation","milestoneId":"M10","note":"Queue 12/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P1","required":true,"sourceState":"planned-not-implemented","state":"backlog","title":"Pilot after-work adapters in supported agent runtimes","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"An ordinary authorized session updates canonical progress and projections with zero manual copying/retyping or duplicate tracker edits. Record observed tracking time, intervention count and failure recovery rather than promise universal zero overhead. Scope growth, failed checks, blockers, next work and before/after counts remain visible. Disconnected, concurrent, cancelled and interrupted sessions recover without false Done, acceptance or publication.","dependsOn":["PRS-HOOK-01","PRS-GATE-02"],"evidence":[],"groupId":"G10","id":"PRS-RECONCILE-02","issueUrl":"https://github.com/interzettel/project-record-standard/issues/35","kind":"implementation","milestoneId":"M10","note":"Queue 13/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P1","required":true,"sourceState":"planned-not-implemented","state":"backlog","title":"Prove unattended tracking and recovery in real work sessions","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"A report names the actual task/impact, exact known pins/adapter, expected rule versus observed result, minimal public-safe reproduction, workaround, affected IDs and proposed check/change. Repeated root causes reuse one record, incomplete searches remain visible, private context is not exported, and a project-only bug or preference does not create an upstream ticket. Missing publication permission retains a local proposal without repeated prompts. Tests cover deduplication, denied/partial transport, redaction, no-impact suppression and no owner-acceptance inference. Track actual feedback/correction overhead; no ticket quota or required background model call.","dependsOn":["PRS-POLICY-01","PRS-RECORDS-02","PRS-AGENT-EXECUTION"],"evidence":[],"groupId":"G11","id":"PRS-FEEDBACK-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/36","kind":"implementation","milestoneId":"M11","note":"Queue 14/34. Native milestone 7. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P1","required":true,"sourceState":"planned-not-implemented","state":"backlog","title":"Route encountered standards gaps into deduplicated feedback","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"Cases include off-road work, owner acceptance, scope discovery, wrong revision, stale pin, bypassed/missing hook, failed checks and useful negative research. All claimed supported paths have observed outcomes; fixtures and same-model lenses are not independent multi-model proof. Report unsafe claims/writes, intervention burden and tracking time; a no-go/limited-support finding blocks an unsupported universal claim. No outside human expert is mandatory.","dependsOn":["PRS-RECONCILE-02","PRS-AGENT-EXECUTION","PRS-FEEDBACK-01"],"evidence":[],"groupId":"G10","id":"PRS-EVAL-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/37","kind":"research","milestoneId":"M10","note":"Queue 15/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P1","required":true,"sourceState":"planned-not-implemented","state":"backlog","title":"Challenge automatic tracking across models and runtimes","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"Candidate contents and compatibility/deprecations are explicit; immutable tag/assets/checksums and a fresh-extraction install/rollback are reproducible. Version mismatch or missing acceptance/host evidence prevents publication. README/Pages distinguish available from planned, and release change classes state who must assess/apply/defer. Old v0.4.1 tag/assets are unchanged. This task prepares release; publication needs its own observed receipt.","dependsOn":["PRS-EVAL-01","PRS-HANDOFF-02","PRS-EVIDENCE-STAGES","PRS-FEEDBACK-01"],"evidence":[],"groupId":"G11","id":"PRS-RELEASE-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/38","kind":"implementation","milestoneId":"M11","note":"Queue 16/34. Native milestone 7. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P1","required":true,"sourceState":"planned-not-implemented","state":"backlog","title":"Prepare the next versioned release and adopter handoff","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"Minor/major and security-patch triggers produce a sourced assessment without automatic install or new permissions. Ordinary fixes can be deferred with a reason. Partial pagination, dropped/delayed schedules and changed release metadata preserve prior counts and expose freshness gaps. Repeat discovery is quiet and idempotent; meaningful new security changes bypass an earlier ordinary deferral.","dependsOn":["PRS-PIN-01","PRS-UPGRADE-01"],"evidence":[],"groupId":"G11","id":"PRS-OPS-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/39","kind":"implementation","milestoneId":"M11","note":"Queue 24/34. Native milestone 7. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P1","required":true,"sourceState":"planned-not-implemented","state":"backlog","title":"Implement quiet release-drift monitoring with freshness recovery","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"At least two real client paths are assessed with exact versions and explicit unsupported results; tools return core-equivalent claims. Path scoping, untrusted input, error/cancel behavior and process permissions are tested. No second ledger, policy implementation, implicit model call or always-on server. A supported no-adapter decision can satisfy this research criterion.","deferReason":"Conditional/optional extension; retained outside required preparation until deliberately selected.","dependsOn":["PRS-GATE-01","PRS-PIN-01"],"evidence":[],"groupId":"G12","id":"PRS-MCP-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/40","kind":"research","milestoneId":"M12","note":"Queue 26/34. Native milestone 8. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P2","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Evaluate a thin local MCP adapter over the shared core","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"Icons complement visible labels and have appropriate accessible names or decorative hiding; colour is not the only status signal. Light/dark, keyboard focus, touch, 320px reflow, text enlargement and monochrome/print fallbacks retain equivalent readable content. Exact asset versions/licences and screenshot observations are recorded; no external icon/font CDN, analytics, fixed global branding or metric/state changes are required.","deferReason":"Conditional/optional extension; retained outside required preparation until deliberately selected.","dependsOn":["PRS-TAILOR-README"],"evidence":[],"groupId":"G8","id":"PRS-TEMPLATE-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/41","kind":"implementation","milestoneId":"M8","note":"Queue 31/34. Native milestone 4. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P2","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Improve tracker icons and visual templates accessibly","unmappedDependencies":[]},{"blocked":false,"completionBasis":"Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.","criterion":"A costed decision includes owner/restore/exit plan and verifies the need cannot be met more simply by local/CI operation. No-service is a valid outcome. No server, paid account, credentials, automatic migrations or broad public/private-data access are created by this investigation.","deferReason":"Conditional/optional extension; retained outside required preparation until deliberately selected.","dependsOn":["PRS-MCP-01","PRS-OPS-01"],"evidence":[],"groupId":"G12","id":"PRS-HOST-01","issueUrl":"https://github.com/interzettel/project-record-standard/issues/42","kind":"research","milestoneId":"M12","note":"Queue 32/34. Native milestone 8. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.","owner":"Selected contributor; repository maintainer reviews","priority":"P2","required":false,"sourceState":"deferred-not-selected","state":"backlog","title":"Decide whether remote hosting solves a measured need","unmappedDependencies":[]},{"blocked":false,"completionBasis":"local implementation record; verification tracked separately","criterion":"Define shared terminology and calculation rules. Preserve project-owned branding and the stated source/evidence limits.","deferReason":null,"dependsOn":[],"evidence":[],"groupId":"G1","id":"STD-01","issueUrl":null,"kind":"implementation","milestoneId":"M1","note":null,"owner":"Implementing agent","priority":"P1","required":true,"sourceState":"done","state":"done","title":"Define shared terminology and calculation rules","unmappedDependencies":[]}],"milestones":[{"acceptanceRule":"all-gate-items","gateItemIds":["STD-08"],"goal":"Record the implementation checks and their limits.","groupIds":["G1"],"horizon":"Now","id":"M1","nextAction":"Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits.","sourceAccepted":null,"title":"Technical package verified","unscopedWork":[]},{"acceptanceRule":"source-state","gateItemIds":["STD-09"],"goal":"The owner reviews terminology, behavior and adaptation boundaries.","groupIds":["G2"],"horizon":"Next","id":"M2","nextAction":"Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits.","sourceAccepted":true,"title":"Shared standard accepted for adaptation","unscopedWork":[]},{"acceptanceRule":"all-gate-items","gateItemIds":["STD-10","STD-11","STD-12","STD-13","STD-18"],"goal":"Publish the public toolkit, observe hosted checks and Pages, and record native interaction evidence.","groupIds":["G3"],"horizon":"Now","id":"M3","nextAction":"Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits.","sourceAccepted":null,"title":"Canonical example delivered and interactions verified","unscopedWork":[]},{"acceptanceRule":"all-gate-items","evidence":[],"gateItemIds":["STD-14","STD-15","STD-16","STD-17"],"goal":"Scout, plan, adapt, update, report, present and recover tracking while preserving brand, scope history and authority.","groupIds":["G4"],"horizon":"Now","id":"M4","nextAction":"Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits.","priority":"P1","sourceAccepted":null,"sourceState":"done","title":"Agents can establish and operate the tracking system","unscopedWork":[]},{"acceptanceRule":"source-state","evidence":[],"gateItemIds":["PRS-HANDOFF-01","PRS-HANDOFF-02","PRS-EVIDENCE-STAGES","PRS-AGENT-EXECUTION"],"goal":"Prove the offline record handoff and evidence-based work-selection semantics.","groupIds":["G5"],"horizon":"Now","id":"M5","nextAction":"Yiğit reviews the bounded M5 evidence now that its four work gates are complete; source acceptance remains pending. Continue independent #31/M10 under existing authorization.","priority":"P1","sourceAccepted":false,"sourceState":"planned","title":"Interoperability and agent execution","unscopedWork":[]},{"acceptanceRule":"source-state","evidence":[],"gateItemIds":["PRS-TAILOR-README","PRS-INSPECT-01","PRS-INSPECT-02","PRS-INSPECT-03"],"goal":"Let an owner inspect declared project records offline with source traceability and privacy boundaries.","groupIds":["G6"],"horizon":"Next","id":"M6","nextAction":"Select #2 after checking execution prerequisites; owner acceptance remains pending.","priority":"P1","sourceAccepted":false,"sourceState":"planned","title":"Readable project records","unscopedWork":[]},{"acceptanceRule":"source-state","evidence":[],"gateItemIds":["PRS-UPGRADE-01","PRS-UPGRADE-02","PRS-UPGRADE-03"],"goal":"Assess and apply bounded release-aware migrations with verified conflict handling and rollback.","groupIds":["G7"],"horizon":"Next","id":"M7","nextAction":"Select #20 after checking execution prerequisites; owner acceptance remains pending.","priority":"P1","sourceAccepted":false,"sourceState":"planned","title":"Safe upgrade adoption","unscopedWork":[]},{"acceptanceRule":"source-state","evidence":[],"gateItemIds":["PRS-AGENT-AUTHORITY","PRS-CONTROL-01","PRS-CONTROL-02","PRS-CONVENTIONS-01","PRS-CONVENTIONS-02","PRS-TEMPLATE-01"],"goal":"Retain optional role guidance, dependency views and convention profiles for later selection.","groupIds":["G8"],"horizon":"Later","id":"M8","nextAction":"Select #1 after checking execution prerequisites; owner acceptance remains pending.","priority":"P2","sourceAccepted":false,"sourceState":"planned","title":"Optional execution and conventions","unscopedWork":[]},{"acceptanceRule":"source-state","evidence":[],"gateItemIds":["PRS-PROJECTIONS","PRS-DISCOVERABILITY"],"goal":"Retain optional physical projection and public discoverability work without blocking core adoption.","groupIds":["G9"],"horizon":"Later","id":"M9","nextAction":"Select #8 after checking execution prerequisites; owner acceptance remains pending.","priority":"P3","sourceAccepted":false,"sourceState":"planned","title":"Optional projections and discoverability","unscopedWork":[]},{"acceptanceRule":"source-state","evidence":[],"gateItemIds":["PRS-POLICY-01","PRS-PIN-01","PRS-GATE-01","PRS-RECONCILE-01","PRS-GATE-02","PRS-HOOK-01","PRS-RECONCILE-02","PRS-EVAL-01"],"goal":"One reviewed installation leads to verified after-work reconciliation through a common policy/core across actual supported runtimes.","groupIds":["G10"],"horizon":"Next","id":"M10","nextAction":"Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome.","priority":"P1","sourceAccepted":false,"sourceState":"planned","title":"Portable policy and automatic reconciliation","unscopedWork":[]},{"acceptanceRule":"source-state","evidence":[],"gateItemIds":["PRS-FEEDBACK-01","PRS-RELEASE-01","PRS-OPS-01"],"goal":"Pinned adoption, evidence-based feedback and release/drift operations stay current without noisy manual tracking.","groupIds":["G11"],"horizon":"Next","id":"M11","nextAction":"Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome.","priority":"P1","sourceAccepted":false,"sourceState":"planned","title":"Maintained compatibility and release operations","unscopedWork":[]},{"acceptanceRule":"source-state","evidence":[],"gateItemIds":["PRS-MCP-01","PRS-HOST-01"],"goal":"Only justified MCP/hosting integrations proceed after measured needs, cost and recovery decisions.","groupIds":["G12"],"horizon":"Later","id":"M12","nextAction":"Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome.","priority":"P2","sourceAccepted":false,"sourceState":"planned","title":"Conditional MCP and hosting","unscopedWork":[]},{"acceptanceRule":"source-state","evidence":[],"gateItemIds":["PRS-RECORDS-01","PRS-RECORDS-02"],"goal":"Personal memory, shared knowledge and authoritative records have explicit homes, writers, naming and lifecycle mappings.","groupIds":["G13"],"horizon":"Now","id":"M13","nextAction":"Both #27/#29 work criteria met. Yiğit separately accepts M13 outcome; next eligible implementation is #30/M10. No new memory backend or host migration claimed.","priority":"P1","sourceAccepted":false,"sourceState":"planned","title":"Records and memory boundaries","unscopedWork":[]}],"warnings":["Historical observations and all16 required IDs retained; scoped owner acceptance closes STD-09/13 under CR-0.4-ACCESSIBILITY.","Native200%/400% checks observed and owner confirmed Narrator works. Versions and actual speech transcript unavailable; no independently observed or universal WCAG conformance claim. All18 required leaves complete; readiness grade remains separate.","Post-release planning observation 2026-10-30: adds 11 required and 7 deferred leaves; 18/29 required (62.1%), 18/36 retained (50.0%), 4/9 declared milestones. New required work is 0/11 and new required milestone outcomes are 0/3; v0.4.1 historical delivery remains 18/18 and 4/4.","The 30 October infrastructure expansion adds future work, not finished automation. New required work0/24; complete the real-session and cross-model gates before claiming unattended support.","PRS-RECORDS-01 research completed after source-linked comparison and fresh-context review: required18/42→19/42; retained18/52→19/52; newly required1/24. No scope added, milestone acceptance unchanged4/13, automatic tracking remains unimplemented.","PRS-POLICY-01 completes the scoped catalogue and boundary probes: required19/42→20/42, retained19/52→20/52, newly required2/24. No added scope, authority or milestone acceptance; structural approval checks are not authentication.","PRS-RECORDS-02 completes the optional mapping/helpers after review fixes and20 layout tests: required20/42→21/42, retained20/52→21/52, newly required3/24. No scope added; M13 work gates complete but outcome unaccepted; accepted milestones remain4/13.","PRS-PIN-01 completes read-only expected-pin and compatibility assessment: required21/42→22/42, retained21/52→22/52, newly required4/24. No scope added or acceptance changed. Selected byte match is not publisher authentication or upgrade permission; v0.4.1 history/native floor preserved."]}
+{
+  "contractVersion": "0.2.0",
+  "governance": {
+    "acceptanceAuthority": "Yiğit; conditional scoped STD-09/13 acceptance recorded in audit/accessibility/owner-acceptance.json.",
+    "approach": "adaptive",
+    "baselines": [
+      {
+        "id": "STD-scope-0.2",
+        "note": "Authored implementation scope; no approved baseline is inferred.",
+        "status": "observed"
+      },
+      {
+        "id": "STD-post-release-2026-10-30",
+        "note": "Owner requested decomposition, AGENTS optimization and GitHub organization. Detailed execution structure is maintainer-authored in PR #14; product outcomes are not accepted.",
+        "status": "proposed"
+      },
+      {
+        "id": "STD-infrastructure-2026-10-30",
+        "note": "Owner requested enforcement/automation research, automatic after-work tracking, current standards/pins, memory/record separation, visuals and encountered-gap feedback. The detailed design/cut is maintainer-authored; implementation and outcome acceptance remain pending.",
+        "status": "proposed"
+      }
+    ],
+    "changeAuthority": "Yiğit",
+    "changeRequests": [
+      {
+        "id": "CR-0.3-AGENTS",
+        "impact": "Adds STD-14 through STD-16, WP-5 and M4/G4; required denominator expands from 13 to 16. Authored implementation proceeds under the task request; baseline/owner acceptance remains unapproved.",
+        "reason": "The owner requested a complete agentic tracking lifecycle before individual migrations.",
+        "status": "proposed"
+      },
+      {
+        "approvalSource": "audit/accessibility/owner-acceptance.json",
+        "approvedAt": "2026-10-23",
+        "approvedBy": "Yiğit",
+        "id": "CR-0.4-ACCESSIBILITY",
+        "impact": "No added or removed IDs;16 required leaves retained. STD-13 original speech criterion amended to scoped review with explicit unknowns. Work14/16→16/16;milestones2/4→4/4. Personal skill collection save failed; canonical distribution complete.",
+        "reason": "Owner requested WCAG review, fixes and accessibility skill and explicitly permitted STD-09/13 completion afterward.",
+        "status": "implemented"
+      },
+      {
+        "approvalSource": "Task conversation: go to the personal agent stack repository and understand L1 L2 L3 L4 L5 and make that part of repository setting process.",
+        "approvedAt": "2026-10-23",
+        "approvedBy": "Yiğit",
+        "id": "CR-0.4.1-READINESS",
+        "impact": "Adds STD-17 to WP-5/M4; required scope16→17. Prior16/16 observation retained. New leaf is implementation verification, not an autonomy promotion or new owner acceptance claim.",
+        "reason": "Owner requested understanding Personal Agent Stack L1–L5 and making it part of repository setup.",
+        "status": "implemented"
+      },
+      {
+        "approvalSource": "Task conversation: selected remaining native checks and personal save limits; request do these as well.",
+        "approvedAt": "2026-10-23",
+        "approvedBy": "Yiğit",
+        "id": "CR-NATIVE-FOLLOWUP",
+        "impact": "Personal skill save resolved. Adds required STD-18 for native verification beyond original scoped acceptance:17/17→17/18 (94.4%); milestone gates4/4→3/4. No existing ID removed or acceptance rewritten.",
+        "reason": "Owner asked to complete the previously disclosed native zoom/screen-reader and personal Skills save limits.",
+        "status": "implemented"
+      },
+      {
+        "approvalSource": "audit/accessibility/native-completion.json; task message done. narrotor works dont worry",
+        "approvedAt": "2026-10-23",
+        "approvedBy": "Yiğit",
+        "id": "CR-NATIVE-COMPLETION",
+        "impact": "STD-18 closes after observed native200%/400% checks and owner-reported Narrator acceptance. Its original criterion is preserved and the scoped treatment recorded. Required scope unchanged:17/18→18/18; milestone gates3/4→4/4. No independent speech/full-conformance claim.",
+        "reason": "Owner set native zoom and confirmed Narrator works; accept that human report while retaining unavailable versioned speech evidence.",
+        "status": "implemented"
+      },
+      {
+        "id": "CR-POST-RELEASE-STRUCTURE",
+        "impact": "Preserves all 18 historical leaves and four accepted milestones; adds 18 distinct leaves in M5-M9, of which 11 are required and seven deferred. Required18/18→18/29; retained18/18→18/36; declared milestones4/4→4/9. Parent requests earn no duplicate credit. Runtime0.4.1 and contract0.2.0 remain unchanged. Detailed baseline awaits review in PR #14.",
+        "reason": "Yiğit requested use of repository skills, AGENTS optimization, granular work, new tagged issues and an executable order.",
+        "status": "proposed"
+      },
+      {
+        "id": "CR-INFRASTRUCTURE-2026-10-30",
+        "impact": "Adds 16 distinct leaves: 13 required and three deferred; old leaves/criteria/acceptance preserved. Required18/29→18/42;retained18/36→18/52;declared milestones4/9→4/13. New selected required work0/24. Reorders future work around records/policy/pins before after-work automation. A proposed0.5.0 cut is not a release or accepted capability.",
+        "reason": "Owner expanded the preparation from guidance-only work to useful low-overhead infrastructure and authorized consolidation/merge/public documentation.",
+        "status": "proposed"
+      }
+    ],
+    "operations": {
+      "boundaries": "Offline read-only projection; no inference or external write loop.",
+      "owner": "Repository maintainer",
+      "recovery": "Replay pinned sources into owned output and restore the previous renderer if cutover fails.",
+      "status": "planned",
+      "supportRoute": "Owning repository issue or accepted coordination board"
+    },
+    "owner": "Yiğit",
+    "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
+    "risks": [
+      {
+        "event": "A migration could blend denominators or overwrite a project brand.",
+        "id": "R-1",
+        "owner": "Adapting agent; owner reviews",
+        "response": "Require before/after counts, additive integration and rollback.",
+        "status": "open",
+        "trigger": "Any count difference or replacement of the host shell."
+      }
+    ],
+    "successCriteria": [
+      "Preserve real source counts and project brands.",
+      "Explain percentage changes and publication claims.",
+      "Provide reproducible automation and a bounded adaptation handoff."
+    ],
+    "tailoring": {
+      "finance": {
+        "reason": "No project cost baseline is defined for this review; paid services require a separate budget decision.",
+        "status": "tailored-out"
+      },
+      "governance": {
+        "reason": "Record owner, authorities, source limits and decisions.",
+        "status": "applied"
+      },
+      "resources": {
+        "reason": "Offline tools have no inference or autonomous external writes.",
+        "status": "applied"
+      },
+      "risk": {
+        "reason": "Record brand, source and privacy risks with intervention triggers.",
+        "status": "applied"
+      },
+      "schedule": {
+        "reason": "Use dependencies and horizons; committed dates are not estimated in this local review.",
+        "status": "applied"
+      },
+      "scope": {
+        "reason": "Map deliverables to accounting leaves without duplicate credit.",
+        "status": "applied"
+      },
+      "stakeholders": {
+        "reason": "Owner review and public/private audiences are explicit.",
+        "status": "applied"
+      }
+    },
+    "wbsCoverage": "complete",
+    "workPackages": [
+      {
+        "acceptance": "Source-count parity and semantic tests pass.",
+        "deliverable": "Shared accounting contract",
+        "id": "WP-1",
+        "owner": "Implementing agent",
+        "workItemIds": [
+          "STD-01",
+          "STD-02"
+        ]
+      },
+      {
+        "acceptance": "Scope bridges, release gates and pipeline fixtures pass.",
+        "deliverable": "History and delivery tooling",
+        "id": "WP-2",
+        "owner": "Implementing agent",
+        "workItemIds": [
+          "STD-03",
+          "STD-04",
+          "STD-05"
+        ]
+      },
+      {
+        "acceptance": "Profiles, PMI mapping, verification record and owner review are recorded.",
+        "deliverable": "Verified adoption package",
+        "id": "WP-3",
+        "owner": "Implementing agent; owner reviews adoption",
+        "workItemIds": [
+          "STD-06",
+          "STD-07",
+          "STD-08",
+          "STD-09"
+        ]
+      },
+      {
+        "acceptance": "Public source installation, passing hosted jobs, observed Pages deployment and native interaction evidence are recorded.",
+        "deliverable": "Canonical repository, hosted workflow and accessible example site",
+        "id": "WP-4",
+        "owner": "Implementing agent; owner supplies any unavailable assistive-technology verification",
+        "workItemIds": [
+          "STD-10",
+          "STD-11",
+          "STD-12",
+          "STD-13",
+          "STD-18"
+        ]
+      },
+      {
+        "acceptance": "Saved skill suite, disposable applications, installation/package checks and hosted delivery are evidenced; manual acceptance boundaries remain visible.",
+        "deliverable": "Agentic planning and operations package",
+        "id": "WP-5",
+        "owner": "Implementing agent; owner reviews adoption",
+        "workItemIds": [
+          "STD-14",
+          "STD-15",
+          "STD-16",
+          "STD-17"
+        ]
+      },
+      {
+        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "deliverable": "Interoperability and agent execution",
+        "id": "WP-6",
+        "owner": "Repository maintainer; implementing agent",
+        "workItemIds": [
+          "PRS-HANDOFF-01",
+          "PRS-HANDOFF-02",
+          "PRS-EVIDENCE-STAGES",
+          "PRS-AGENT-EXECUTION"
+        ]
+      },
+      {
+        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "deliverable": "Readable project records",
+        "id": "WP-7",
+        "owner": "Repository maintainer; implementing agent",
+        "workItemIds": [
+          "PRS-TAILOR-README",
+          "PRS-INSPECT-01",
+          "PRS-INSPECT-02",
+          "PRS-INSPECT-03"
+        ]
+      },
+      {
+        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "deliverable": "Safe upgrade adoption",
+        "id": "WP-8",
+        "owner": "Repository maintainer; implementing agent",
+        "workItemIds": [
+          "PRS-UPGRADE-01",
+          "PRS-UPGRADE-02",
+          "PRS-UPGRADE-03"
+        ]
+      },
+      {
+        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "deliverable": "Optional execution and conventions",
+        "id": "WP-9",
+        "owner": "Repository maintainer; implementing agent",
+        "workItemIds": [
+          "PRS-AGENT-AUTHORITY",
+          "PRS-CONTROL-01",
+          "PRS-CONTROL-02",
+          "PRS-CONVENTIONS-01",
+          "PRS-CONVENTIONS-02",
+          "PRS-TEMPLATE-01"
+        ]
+      },
+      {
+        "acceptance": "Each leaf meets its declared check/review criterion; Yiğit separately accepts the milestone outcome.",
+        "deliverable": "Optional projections and discoverability",
+        "id": "WP-10",
+        "owner": "Repository maintainer; implementing agent",
+        "workItemIds": [
+          "PRS-PROJECTIONS",
+          "PRS-DISCOVERABILITY"
+        ]
+      },
+      {
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "deliverable": "Portable policy and automatic reconciliation",
+        "id": "WP-11",
+        "owner": "Repository maintainer; selected contributor",
+        "workItemIds": [
+          "PRS-POLICY-01",
+          "PRS-PIN-01",
+          "PRS-GATE-01",
+          "PRS-RECONCILE-01",
+          "PRS-GATE-02",
+          "PRS-HOOK-01",
+          "PRS-RECONCILE-02",
+          "PRS-EVAL-01"
+        ]
+      },
+      {
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "deliverable": "Maintained compatibility and release operations",
+        "id": "WP-12",
+        "owner": "Repository maintainer; selected contributor",
+        "workItemIds": [
+          "PRS-FEEDBACK-01",
+          "PRS-RELEASE-01",
+          "PRS-OPS-01"
+        ]
+      },
+      {
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "deliverable": "Conditional MCP and hosting",
+        "id": "WP-13",
+        "owner": "Repository maintainer; selected contributor",
+        "workItemIds": [
+          "PRS-MCP-01",
+          "PRS-HOST-01"
+        ]
+      },
+      {
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "deliverable": "Records and memory boundaries",
+        "id": "WP-14",
+        "owner": "Repository maintainer; selected contributor",
+        "workItemIds": [
+          "PRS-RECORDS-01",
+          "PRS-RECORDS-02"
+        ]
+      }
+    ]
+  },
+  "groups": [
+    {
+      "id": "G1",
+      "panel": "Build",
+      "title": "Implementation and technical verification"
+    },
+    {
+      "id": "G2",
+      "panel": "Review",
+      "title": "Owner review"
+    },
+    {
+      "id": "G3",
+      "panel": "Deliver",
+      "title": "Canonical repository and hosted verification"
+    },
+    {
+      "id": "G4",
+      "panel": "Shared standard",
+      "title": "Agent workflows and operations"
+    },
+    {
+      "id": "G5",
+      "panel": "Post-release required",
+      "title": "Interoperability and agent execution"
+    },
+    {
+      "id": "G6",
+      "panel": "Post-release required",
+      "title": "Readable project records"
+    },
+    {
+      "id": "G7",
+      "panel": "Post-release required",
+      "title": "Safe upgrade adoption"
+    },
+    {
+      "id": "G8",
+      "panel": "Deferred extensions",
+      "title": "Optional execution and conventions"
+    },
+    {
+      "id": "G9",
+      "panel": "Deferred extensions",
+      "title": "Optional projections and discoverability"
+    },
+    {
+      "id": "G10",
+      "panel": "Infrastructure preparation",
+      "title": "Portable policy and automatic reconciliation"
+    },
+    {
+      "id": "G11",
+      "panel": "Infrastructure preparation",
+      "title": "Maintained compatibility and release operations"
+    },
+    {
+      "id": "G12",
+      "panel": "Deferred extensions",
+      "title": "Conditional MCP and hosting"
+    },
+    {
+      "id": "G13",
+      "panel": "Infrastructure preparation",
+      "title": "Records and memory boundaries"
+    }
+  ],
+  "items": [
+    {
+      "blocked": false,
+      "completionBasis": "local implementation record; verification tracked separately",
+      "criterion": "Define shared terminology and calculation rules. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G1",
+      "id": "STD-01",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M1",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Define shared terminology and calculation rules",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "local implementation record; verification tracked separately",
+      "criterion": "Preserve source identity through adapters. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G1",
+      "id": "STD-02",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M1",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Preserve source identity through adapters",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "local implementation record; verification tracked separately",
+      "criterion": "Explain progress and scope changes. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G1",
+      "id": "STD-03",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M1",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Explain progress and scope changes",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "local implementation record; verification tracked separately",
+      "criterion": "Generate changelogs and release readiness. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G1",
+      "id": "STD-04",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M1",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Generate changelogs and release readiness",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "local implementation record; verification tracked separately",
+      "criterion": "Run a reusable offline build action. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G1",
+      "id": "STD-05",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M1",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Run a reusable offline build action",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "local implementation record; verification tracked separately",
+      "criterion": "Define cold setup and hot adaptation. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G1",
+      "id": "STD-06",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M1",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Define cold setup and hot adaptation",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "local implementation record; verification tracked separately",
+      "criterion": "Map the implementation to PMI guidance. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G1",
+      "id": "STD-07",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M1",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Map the implementation to PMI guidance",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Recorded local verification; see VERIFICATION-public.md",
+      "criterion": "Verify the implementation and reference views. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [
+        {
+          "kind": "test",
+          "source": "VERIFICATION-public.md"
+        },
+        {
+          "kind": "ui-review",
+          "source": "standards/ACCESSIBILITY.md"
+        }
+      ],
+      "groupId": "G1",
+      "id": "STD-08",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M1",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Verify the implementation and reference views",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Owner-authorized scoped acceptance after audit, remediation and skill package verification.",
+      "criterion": "Review the shared standard with the owner. Preserve project-owned branding and the stated source/evidence limits.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [
+        {
+          "kind": "owner-review",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "source": "audit/accessibility/owner-acceptance.json",
+          "subject": "STD-09"
+        },
+        {
+          "kind": "ui-review",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "source": "audit/accessibility/wcag22-audit.json",
+          "subject": "STD-09"
+        }
+      ],
+      "groupId": "G2",
+      "id": "STD-09",
+      "issueUrl": null,
+      "kind": "acceptance",
+      "milestoneId": "M2",
+      "note": "Actual screen-reader speech and native browser zoom remain not-tested; see owner criterion amendment and scoped audit.",
+      "owner": "Owner",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Review the shared standard with the owner",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Observed canonical repository or hosted run; see linked evidence",
+      "criterion": "Public source package installed at interzettel/project-record-standard, excluding private owner fixtures.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [
+        {
+          "kind": "repository",
+          "source": "https://github.com/interzettel/project-record-standard/tree/10a9e6501a9ed64f57ad139a56e3fc9fdd8b99ef"
+        }
+      ],
+      "groupId": "G3",
+      "id": "STD-10",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M3",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Establish the canonical public standards repository",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Observed canonical repository or hosted run; see linked evidence",
+      "criterion": "An attributed hosted run passes the composite action, reusable workflow and relevant checks.",
+      "deferReason": null,
+      "dependsOn": [
+        "STD-10"
+      ],
+      "evidence": [
+        {
+          "kind": "hosted-ci",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39800961253"
+        }
+      ],
+      "groupId": "G3",
+      "id": "STD-11",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M3",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Verify the action and reusable workflow on GitHub",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Observed canonical repository or hosted run; see linked evidence",
+      "criterion": "Pages serves the example tracker, guide and independently branded Prehnite reference from a passing run.",
+      "deferReason": null,
+      "dependsOn": [
+        "STD-10"
+      ],
+      "evidence": [
+        {
+          "kind": "deployment",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39800961253/job/119901281252"
+        }
+      ],
+      "groupId": "G3",
+      "id": "STD-12",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M3",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Deploy and inspect the public example website",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Owner-authorized scoped acceptance after audit, remediation and skill package verification.",
+      "criterion": "Record scoped WCAG 2.2 A/AA review, repair discovered issues, verify keyboard/semantic/reflow behavior and distribute the accessibility skill; disclose unperformed actual assistive-technology and native zoom checks.",
+      "deferReason": null,
+      "dependsOn": [
+        "STD-10"
+      ],
+      "evidence": [
+        {
+          "kind": "keyboard-review",
+          "source": "standards/ACCESSIBILITY.md"
+        },
+        {
+          "kind": "owner-review",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "source": "audit/accessibility/owner-acceptance.json",
+          "subject": "STD-13"
+        },
+        {
+          "kind": "ui-review",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "source": "audit/accessibility/wcag22-audit.json",
+          "subject": "STD-13"
+        }
+      ],
+      "groupId": "G3",
+      "id": "STD-13",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M3",
+      "note": "Actual screen-reader speech and native browser zoom remain not-tested; see owner criterion amendment and scoped audit.",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Verify scoped WCAG 2.2 accessibility and agent guidance",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Observed saved suite and reproducible local checks; see evaluation and verification records.",
+      "criterion": "All eleven skills are validated, independently exercised, saved in the canonical repository and distributed with repository rules.",
+      "deferReason": null,
+      "dependsOn": [
+        "STD-05"
+      ],
+      "evidence": [
+        {
+          "kind": "agent-evaluation",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md"
+        },
+        {
+          "kind": "runtime-replay",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/final-runtime-replay.json"
+        },
+        {
+          "kind": "agent-evaluation",
+          "result": "passed",
+          "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "source": "audit/accessibility/skill-evaluation.md"
+        },
+        {
+          "kind": "save-verification",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "source": "audit/accessibility/native-check-followup.json",
+          "subject": "STD-14"
+        }
+      ],
+      "groupId": "G4",
+      "id": "STD-14",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M4",
+      "note": "Accessibility skill additionally saved to personal Skills; retained remote materialization and report-template hash match verified.",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Create and save the complete agent workflow suite",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Observed saved suite and reproducible local checks; see evaluation and verification records.",
+      "criterion": "Disposable cold/hot applications preserve source/brand, reconcile named counts and exercise privacy, replay, failure and repeated runs; package/runtime checks pass.",
+      "deferReason": null,
+      "dependsOn": [
+        "STD-14"
+      ],
+      "evidence": [
+        {
+          "kind": "agent-evaluation",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/EVALUATION.md"
+        },
+        {
+          "kind": "runtime-replay",
+          "source": "https://github.com/interzettel/project-record-standard/blob/main/audit/skills/final-runtime-replay.json"
+        }
+      ],
+      "groupId": "G4",
+      "id": "STD-15",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M4",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Verify agent installation, scouting, adaptation and recovery",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Hosted verification, reusable workflow and Pages passed for the identified candidate; live tracker and agent guide inspected in Edge.",
+      "criterion": "Hosted checks pass the packaged suite and Pages serves the matching guide/example; actual run and deployment evidence are recorded.",
+      "deferReason": null,
+      "dependsOn": [
+        "STD-14",
+        "STD-15"
+      ],
+      "evidence": [
+        {
+          "kind": "hosted-ci",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910",
+          "subject": "STD-16"
+        },
+        {
+          "kind": "deployment",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910/job/120129913901",
+          "subject": "STD-16"
+        },
+        {
+          "kind": "ui-review",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
+          "source": "standards/ACCESSIBILITY.md; audit/skills/hosted-observation.json",
+          "subject": "STD-16"
+        }
+      ],
+      "groupId": "G4",
+      "id": "STD-16",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M4",
+      "note": null,
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Verify and deploy the complete standards package",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Observed scenario applications and local full-suite/source-distribution/site checks; this adds setup guidance, not autonomous permissions.",
+      "criterion": "Cold and hot setup require the ten-dimension L0–L5 assessment, separate current/target grade and R0–R4 authority, central assessment references, environment tailoring, selected remediation and re-audit triggers; bundled installation and guide build checks plus five guided applications pass.",
+      "deferReason": null,
+      "dependsOn": [
+        "STD-14",
+        "STD-15"
+      ],
+      "evidence": [
+        {
+          "kind": "agent-evaluation",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "source": "audit/readiness/EVALUATION.md",
+          "subject": "STD-17"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "source": "tests/test_packaging.py; tests/test_site.py; VERIFICATION-public.md",
+          "subject": "STD-17"
+        }
+      ],
+      "groupId": "G4",
+      "id": "STD-17",
+      "issueUrl": null,
+      "kind": "implementation",
+      "milestoneId": "M4",
+      "note": "No readiness grade assigned to this repository. Actual screen-reader/native zoom limits from the earlier audit remain unchanged.",
+      "owner": "Implementing agent",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Include evidence-based L0–L5 readiness in project setup",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Owner-set native200%/400% zoom checks directly observed; owner confirmed Narrator works. Versions/transcript are unavailable and no full conformance claim is made.",
+      "criterion": "Record owner-set native200% and400% zoom checks on the standard, guide and Prehnite reference with reflow, tested controls and visible settled focus; record the owner’s Narrator confirmation and disclose unavailable version/transcript evidence.",
+      "deferReason": null,
+      "dependsOn": [
+        "STD-13"
+      ],
+      "evidence": [
+        {
+          "kind": "verification-attempt",
+          "observedOn": "2026-10-23",
+          "result": "blocked",
+          "source": "audit/accessibility/native-check-followup.json",
+          "subject": "STD-18"
+        },
+        {
+          "kind": "ui-review",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+          "source": "audit/accessibility/native-200-observation.json",
+          "subject": "STD-18"
+        },
+        {
+          "kind": "ui-review",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+          "source": "audit/accessibility/native-400-observation.json",
+          "subject": "STD-18"
+        },
+        {
+          "kind": "owner-review",
+          "observedOn": "2026-10-23",
+          "result": "passed",
+          "revision": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+          "source": "audit/accessibility/native-completion.json",
+          "subject": "STD-18"
+        }
+      ],
+      "groupId": "G3",
+      "id": "STD-18",
+      "issueUrl": null,
+      "kind": "verification",
+      "milestoneId": "M3",
+      "note": "Owner-reported screen-reader result is separate from agent-observed zoom/focus evidence. Original versioned-transcript criterion and scoped acceptance treatment retained in audit/accessibility/native-completion.json.",
+      "owner": "Implementing agent; owner supplies native control and listening evidence",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "done",
+      "state": "done",
+      "title": "Complete native zoom and actual screen-reader verification",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Pinned synthetic contract0.2 handoff through existing loader/validator/calculator at 5424ea8b132c44768fee804d97a54e63394d52ec. Six handoff tests,90 Python tests and14 JavaScript tests pass; fresh-context review independently passed handoff/packaging tests. Worker implementation/check remain distinct from absent owner acceptance.",
+      "criterion": "One synthetic leaf maps to one separate consumer task without another accounting row. A worker's implementation and passing check remain distinct from absent owner acceptance. The fixture runs offline, references exact contract/source identity, and changes no runtime permissions.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "5424ea8b132c44768fee804d97a54e63394d52ec",
+          "source": "standards/HANDOFF.md",
+          "subject": "PRS-HANDOFF-01"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "5424ea8b132c44768fee804d97a54e63394d52ec",
+          "source": "tests/test_handoff.py",
+          "subject": "PRS-HANDOFF-01"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-10-30",
+          "producer": "Codex /root/handoff_review",
+          "result": "passed",
+          "revision": "5424ea8b132c44768fee804d97a54e63394d52ec",
+          "source": "audit/handoff/2026-10-30/verification.json",
+          "subject": "PRS-HANDOFF-01"
+        }
+      ],
+      "groupId": "G5",
+      "id": "PRS-HANDOFF-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/15",
+      "kind": "implementation",
+      "milestoneId": "M5",
+      "note": "Queue05/34 complete in PR47. No runtime/contract/permission/release change. Next PRS-HANDOFF-02/#16/M5; adversarial exit and M5 owner acceptance pending.",
+      "owner": "Codex contributor; fresh-context same-family review recorded",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "verified-offline-handoff",
+      "state": "done",
+      "title": "Pin the record boundary and prove one offline handoff",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Bounded offline PRS-facing gate passes at 29e8fe5202d952c218ba89581063e9fc172ed916:17 handoff tests,101 Python tests,14 JavaScript tests; fresh-context review independently reran17 and approved after reproduced/fixed mixed-receipt defect. Test stub only: no production writer, live consumer, acceptance or release inferred.",
+      "criterion": "Retries earn one canonical credit; changed revisions cannot reuse incompatible evidence. Missing/inaccessible is distinct from zero; source freshness survives a newer render. Private payloads do not enter public output; independent review cites the tested head and bounded pass/fail/unknown.",
+      "deferReason": null,
+      "dependsOn": [
+        "PRS-HANDOFF-01"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+          "source": "tests/fixtures/handoff/consumer_stub.py",
+          "subject": "PRS-HANDOFF-02"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+          "source": "tests/test_handoff.py",
+          "subject": "PRS-HANDOFF-02"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-10-30",
+          "producer": "Codex /root/handoff_adversarial_review",
+          "result": "passed",
+          "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+          "source": "audit/handoff-adversarial/2026-10-30/verification.json",
+          "subject": "PRS-HANDOFF-02"
+        }
+      ],
+      "groupId": "G5",
+      "id": "PRS-HANDOFF-02",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/16",
+      "kind": "implementation",
+      "milestoneId": "M5",
+      "note": "Queue06/34 complete in PR48. Parent#9 offline boundary met without extra accounting credit; M5 owner acceptance and live Qurultai/Hermes gates remain pending. Next PRS-EVIDENCE-STAGES/#6/M5.",
+      "owner": "Codex contributor; fresh-context same-family review recorded",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "verified-adversarial-offline-handoff",
+      "state": "done",
+      "title": "Prove adversarial handoff reconciliation and record the exit gate",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Authoritative STANDARD matrix and5 worked cases at a602e90238d24ad5b87ef4025a755a27091e6c2e preserve original criteria/dependency meanings. Seven runtime-boundary tests and108 Python tests pass;5 controls/5 installed-skill applications and fresh-context review support bounded portable guidance. No skill body edit or causal effectiveness/owner acceptance claim.",
+      "criterion": "Examples preserve original Done criteria, execution states and denominators. Implemented evidence does not imply verification or acceptance; useful negative research can finish without a release. Existing contract and readiness levels remain compatible; any skill edit follows distribution and evaluation gates.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
+          "source": "standards/STANDARD.md",
+          "subject": "PRS-EVIDENCE-STAGES"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
+          "source": "tests/test_evidence_stages.py",
+          "subject": "PRS-EVIDENCE-STAGES"
+        },
+        {
+          "kind": "application",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
+          "source": "audit/evidence-stages/2026-10-30/verification.json",
+          "subject": "PRS-EVIDENCE-STAGES"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-10-30",
+          "producer": "Codex /root/evidence_stages_review",
+          "result": "passed",
+          "revision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
+          "source": "audit/evidence-stages/2026-10-30/verification.json",
+          "subject": "PRS-EVIDENCE-STAGES"
+        }
+      ],
+      "groupId": "G5",
+      "id": "PRS-EVIDENCE-STAGES",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/6",
+      "kind": "implementation",
+      "milestoneId": "M5",
+      "note": "Queue07/34 complete in PR49. Existing installed skill already reads STANDARD; bodies/metadata/suite unchanged. No core/schema/readiness/permission/release change. Next PRS-AGENT-EXECUTION/#3/M5; M5 outcome acceptance remains pending.",
+      "owner": "Codex contributor; fresh-context same-family review recorded",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "verified-evidence-reference",
+      "state": "done",
+      "title": "Define evidence stages and dependency meanings",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Optional read-only selection/alignment and owned installed start/end protocol at 8b49fb5281bd879d7af9a846400e1b4888480c94 pass21 agent/alignment tests,25 pin tests and122 Python tests. Five actual installed-guidance applications at423b168 selected existing eligible work and preserved source/acceptance; fixed-head review approves multi-leaf issue compatibility. No live writer, native assignment or owner acceptance inferred.",
+      "criterion": "Selection names leaf, issue, milestone, criterion and dependency status. Alignment catches missing/stale mappings without inferring native milestone or owner acceptance. No off-road scope, duplicate credit, mandatory all-repo scan or repeated approval is introduced.",
+      "deferReason": null,
+      "dependsOn": [
+        "PRS-EVIDENCE-STAGES"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+          "source": "src/project_record/execution.py",
+          "subject": "PRS-AGENT-EXECUTION"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+          "source": "tests/test_agents.py",
+          "subject": "PRS-AGENT-EXECUTION"
+        },
+        {
+          "kind": "application",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "423b168b1625cb8bcb0eae037271e986dc21f433",
+          "source": "audit/execution/2026-10-30/verification.json",
+          "subject": "PRS-AGENT-EXECUTION"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-10-30",
+          "producer": "Codex /root/execution_review",
+          "result": "passed",
+          "revision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+          "source": "audit/execution/2026-10-30/verification.json",
+          "subject": "PRS-AGENT-EXECUTION"
+        }
+      ],
+      "groupId": "G5",
+      "id": "PRS-AGENT-EXECUTION",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/3",
+      "kind": "implementation",
+      "milestoneId": "M5",
+      "note": "Queue08/34 complete in PR50. Skill bodies/metadata unchanged; rule-only upgrades require explicit --upgrade and old pins stay readable. M5 four work gates complete without source acceptance. Next PRS-GATE-01/#31/M10; M5 owner/release gates remain separate.",
+      "owner": "Codex contributor; fresh-context same-family review recorded",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "verified-bounded-selection-alignment",
+      "state": "done",
+      "title": "Select canonical work and reconcile bounded delivery",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Fixture contains accessible granular work text and SVG with source identity. Deterministic rerun preserves authored README bytes; stale output is detected. Per-skill versions apply only to independently published modules; no mandatory website or host version rewrite.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G6",
+      "id": "PRS-TAILOR-README",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/2",
+      "kind": "implementation",
+      "milestoneId": "M6",
+      "note": "Queue 17/34. Existing request is one leaf. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "selected-not-started",
+      "state": "ready",
+      "title": "Support README-only tracking and suite-level versioning",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Inventory separates real producer output from adopter inputs and hypothetical receipts. Declared files are bounded; no recursive scan or private-input publication is implied. Fixture supplies stable identities, source/render timestamps and negative cases for later packages.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G6",
+      "id": "PRS-INSPECT-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/17",
+      "kind": "research",
+      "milestoneId": "M6",
+      "note": "Queue 18/34. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "selected-not-started",
+      "state": "ready",
+      "title": "Inventory declared JSON producers and define inspector coverage",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "All summarized claims link to their source field/path and observation. Source and projection share one work identity/credit; failed CI, merge and recommendations cannot become verified/released/accepted. Output needs no server, token, model call, client write or graph engine; missing and error states are readable.",
+      "deferReason": null,
+      "dependsOn": [
+        "PRS-INSPECT-01",
+        "PRS-EVIDENCE-STAGES"
+      ],
+      "evidence": [],
+      "groupId": "G6",
+      "id": "PRS-INSPECT-02",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/18",
+      "kind": "implementation",
+      "milestoneId": "M6",
+      "note": "Queue 19/34. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "selected-not-started",
+      "state": "backlog",
+      "title": "Render traceable semantic views in one offline inspector",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Public builds reject unreviewed sensitive input and resist hostile HTML/JS/URLs; no source mutation. Repeated builds are deterministic, owned-output-only, and stale generated output fails the parity check. Three profiles keep source identity, branding and no-Pages choice; browser checks and independent review name exact revision and limits.",
+      "deferReason": null,
+      "dependsOn": [
+        "PRS-INSPECT-02",
+        "PRS-TAILOR-README"
+      ],
+      "evidence": [],
+      "groupId": "G6",
+      "id": "PRS-INSPECT-03",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/19",
+      "kind": "implementation",
+      "milestoneId": "M6",
+      "note": "Queue 20/34. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "selected-not-started",
+      "state": "backlog",
+      "title": "Enforce inspector privacy and verify integration profiles",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Mixed/partial installs and missing release evidence remain unknown/conflicted. Major/minor trigger assessment; security patch escalates without automatic apply. README-only/custom layout and already-satisfied hosts receive no forced rewrite or extra completion.",
+      "deferReason": null,
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G7",
+      "id": "PRS-UPGRADE-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/20",
+      "kind": "implementation",
+      "milestoneId": "M7",
+      "note": "Queue 21/34. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "selected-not-started",
+      "state": "ready",
+      "title": "Compare immutable releases against real host installations",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Edited owned files or ambiguous mappings fail closed without overwrite. Replay/interruption/rollback preserves IDs, dependencies, accepted criteria, history and denominators. No permission, GitHub write, merge or deployment is inferred from upstream capabilities or release arrival.",
+      "deferReason": null,
+      "dependsOn": [
+        "PRS-UPGRADE-01"
+      ],
+      "evidence": [],
+      "groupId": "G7",
+      "id": "PRS-UPGRADE-02",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/21",
+      "kind": "implementation",
+      "milestoneId": "M7",
+      "note": "Queue 22/34. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "selected-not-started",
+      "state": "backlog",
+      "title": "Implement reviewed upgrade receipts and recoverable application",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Eight minimum consumer cases and SemVer trigger cases have sourced results and limits. Distribution, owned-file conflicts, repeated install and rollback are verified; no historical v0.4.1 bytes change. Exact-head independent review and a resumable migration receipt support the future upgrade gate; publication remains separate.",
+      "deferReason": null,
+      "dependsOn": [
+        "PRS-UPGRADE-02",
+        "PRS-AGENT-EXECUTION",
+        "PRS-TAILOR-README"
+      ],
+      "evidence": [],
+      "groupId": "G7",
+      "id": "PRS-UPGRADE-03",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/22",
+      "kind": "implementation",
+      "milestoneId": "M7",
+      "note": "Queue 23/34. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "selected-not-started",
+      "state": "backlog",
+      "title": "Distribute and evaluate the semantic upgrade workflow",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Judge/reviewer/approver/enforcement roles remain distinct. Positive escalation and confidence-to-permission attack examples preserve authorization. Repositories without delegated agents gain no setup burden or mandatory runtime.",
+      "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.",
+      "dependsOn": [
+        "PRS-EVIDENCE-STAGES"
+      ],
+      "evidence": [],
+      "groupId": "G8",
+      "id": "PRS-AGENT-AUTHORITY",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/1",
+      "kind": "implementation",
+      "milestoneId": "M8",
+      "note": "Queue 25/34. Existing request is one leaf. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P2",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Distinguish agent capability from autonomy and authority",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Cancelled, unknown and optional/support cases have explicit denominator policy. all-gate-items and source-state milestone rules both work; deferred acceptance does not invalidate historical implementation. No diagnostic rewrites canonical Done and no durations/CPM are invented; genuine schema gaps require separate review.",
+      "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.",
+      "dependsOn": [
+        "PRS-EVIDENCE-STAGES",
+        "PRS-AGENT-EXECUTION"
+      ],
+      "evidence": [],
+      "groupId": "G8",
+      "id": "PRS-CONTROL-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/23",
+      "kind": "research",
+      "milestoneId": "M8",
+      "note": "Queue 27/34. Parent request #11 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P2",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Specify dependency readiness and impact formulas with fixtures",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Graph and equivalent table expose ready/waiting/unknown with traceable formulas. Keyboard/path focus and privacy/public snapshot checks name tested limits. No game-specific schema, competing publisher, live writes or mandatory inspector dependency enters core PRS.",
+      "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.",
+      "dependsOn": [
+        "PRS-CONTROL-01"
+      ],
+      "evidence": [],
+      "groupId": "G8",
+      "id": "PRS-CONTROL-02",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/24",
+      "kind": "implementation",
+      "milestoneId": "M8",
+      "note": "Queue 28/34. Parent request #11 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P2",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Build the optional dependency view and prove reuse",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "No second global-standard repository, upgrade engine or VERSION authority is created. Research, suite and website version dimensions retain their meanings. Zettlerei owns visual assets; a neutral PRS profile remains usable without an approved brand.",
+      "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.",
+      "dependsOn": [
+        "PRS-TAILOR-README",
+        "PRS-UPGRADE-01"
+      ],
+      "evidence": [],
+      "groupId": "G8",
+      "id": "PRS-CONVENTIONS-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/25",
+      "kind": "implementation",
+      "milestoneId": "M8",
+      "note": "Queue 29/34. Parent request #12 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P2",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Specify optional repository and release convention references",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Each consumer keeps native version, source authority, identity and release channel. No private font/media binaries leak; monochrome/missing-font fallbacks remain usable. Brand-bearing claims wait for Zettlerei #88 owner approval; neutral fixture results are reported separately.",
+      "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.",
+      "dependsOn": [
+        "PRS-CONVENTIONS-01"
+      ],
+      "evidence": [],
+      "groupId": "G8",
+      "id": "PRS-CONVENTIONS-02",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/26",
+      "kind": "implementation",
+      "milestoneId": "M8",
+      "note": "Queue 30/34. Parent request #12 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P2",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Verify convention profiles across three synthetic consumers",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Two copies/revisions and two cards from one source remain distinguishable without duplicate credit. Scan, print completion and physical movement cannot grant Done/Accepted or source-write authority. No printer dependency, QR secret, device execution or effectiveness claim enters PRS.",
+      "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.",
+      "dependsOn": [
+        "PRS-EVIDENCE-STAGES"
+      ],
+      "evidence": [],
+      "groupId": "G9",
+      "id": "PRS-PROJECTIONS",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/8",
+      "kind": "implementation",
+      "milestoneId": "M9",
+      "note": "Queue 33/34. Existing request is one leaf. Native milestone 5; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P3",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Define optional physical projection references and freshness",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "criterion": "Canonical/public status and meaningful no-JS content have direct evidence. Citations, bot requests and referred visitors remain distinct; unknown metrics stay unknown. No private inspector data, unsolicited analytics, ranking guarantees or deployment authority is introduced.",
+      "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution.",
+      "dependsOn": [],
+      "evidence": [],
+      "groupId": "G9",
+      "id": "PRS-DISCOVERABILITY",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/7",
+      "kind": "research",
+      "milestoneId": "M9",
+      "note": "Queue 34/34. Existing request is one leaf. Native milestone 5; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "owner": "Implementing agent; repository maintainer reviews",
+      "priority": "P3",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Audit approved public documentation discoverability",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Bounded #27 research criterion met: version/date-linked comparison, ten class lifecycles, PRS/public host inventory and five routing counterexamples; same-family fresh-context review found no material issues at ce34c0190ecbf603980f89ee04dc9ed97843a064. No backend effectiveness, owner acceptance or release inferred.",
+      "criterion": "A source-linked comparison records implementation/version/date, storage scope, writer, trust, privacy, retention, retrieval and supersession for each class. Memory recall never silently overrides source evidence or grants acceptance. Include a personal-only fact, shared repo convention, changed decision, failed experiment and generated status example; propose an explicit routing/authority map without inventing a universal memory engine.",
+      "dependsOn": [],
+      "evidence": [
+        {
+          "kind": "research",
+          "revision": "ce34c0190ecbf603980f89ee04dc9ed97843a064",
+          "source": "audit/records/2026-10-30/investigation.md"
+        },
+        {
+          "kind": "review",
+          "revision": "ce34c0190ecbf603980f89ee04dc9ed97843a064",
+          "source": "audit/records/2026-10-30/verification.json"
+        },
+        {
+          "kind": "test",
+          "revision": "ce34c0190ecbf603980f89ee04dc9ed97843a064",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/41027247677"
+        }
+      ],
+      "groupId": "G13",
+      "id": "PRS-RECORDS-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/27",
+      "kind": "research",
+      "milestoneId": "M13",
+      "note": "Queue 01/34 research complete in PR #43. Native milestone9; M13 remains unaccepted. Next eligible package PRS-POLICY-01/#28/M10; #29 owns layouts and three-host fixtures.",
+      "owner": "Codex contributor; fresh-context Codex review recorded",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "sourced-research-reviewed",
+      "state": "done",
+      "title": "Investigate personal memory and project record lifecycles",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "17-rule sourced catalogue, mechanism matrix and5 paired executable boundary probes reviewed at239b4aadac5f83faa18c6500a58fb9d7e08221cf; no hard-enforcement or owner-acceptance inference.",
+      "criterion": "A rule-to-mechanism matrix distinguishes skills, CLI, local hooks, required CI, scheduler and optional MCP; positive and negative cases cover duplicate credit, mismatched evidence, unauthorized acceptance, source drift and out-of-scope work. Every hard claim identifies its actual trust boundary and bypass. No autonomous permission or mandatory service is inferred.",
+      "dependsOn": [
+        "PRS-RECORDS-01"
+      ],
+      "evidence": [
+        {
+          "kind": "specification",
+          "revision": "239b4aadac5f83faa18c6500a58fb9d7e08221cf",
+          "source": "standards/POLICY.md"
+        },
+        {
+          "kind": "test",
+          "revision": "239b4aadac5f83faa18c6500a58fb9d7e08221cf",
+          "source": "tests/test_policy.py"
+        },
+        {
+          "kind": "review",
+          "revision": "239b4aadac5f83faa18c6500a58fb9d7e08221cf",
+          "source": "audit/policy/2026-10-30/verification.json"
+        }
+      ],
+      "groupId": "G10",
+      "id": "PRS-POLICY-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/28",
+      "kind": "research",
+      "milestoneId": "M10",
+      "note": "Queue02/34 complete in PR44. Next#29/M13; no host activation or scope change. Release boundaries revised as proposals, with earlier#38 preparation held.",
+      "owner": "Codex contributor; fresh-context review recorded",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "catalogue-and-boundary-probes-reviewed",
+      "state": "done",
+      "title": "Specify the rule catalogue and enforcement boundaries",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Optional layoutVersion1 metadata mapping, three synthetic hosts and20 behavioral tests verified at87bd6837ba15fc447c1b45d0d9f29792bb8888aa after four reviewed regressions were fixed. No migration, memory effectiveness, enforcement or owner acceptance inferred.",
+      "criterion": "Three synthetic hosts (README-only research, private personal agent, shared repository) resolve each class to one writer/home. Private memory and transient caches are excluded from Git/public output unless deliberately approved; links do not leak private totals/URLs. Conflicting/shared IDs, stale recall, moved documents, superseded decisions and generated files have observable handling. No second completion ledger, forced language/folder hierarchy or automatic destructive migration is introduced.",
+      "dependsOn": [
+        "PRS-RECORDS-01",
+        "PRS-POLICY-01"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "revision": "87bd6837ba15fc447c1b45d0d9f29792bb8888aa",
+          "source": "src/project_record/record_layout.py"
+        },
+        {
+          "kind": "test",
+          "revision": "87bd6837ba15fc447c1b45d0d9f29792bb8888aa",
+          "source": "tests/test_record_layout.py"
+        },
+        {
+          "kind": "review",
+          "revision": "87bd6837ba15fc447c1b45d0d9f29792bb8888aa",
+          "source": "audit/record-layout/2026-10-30/verification.json"
+        }
+      ],
+      "groupId": "G13",
+      "id": "PRS-RECORDS-02",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/29",
+      "kind": "implementation",
+      "milestoneId": "M13",
+      "note": "Queue03/34 complete in PR45. M13 work gates complete, outcome unaccepted. Next PRS-PIN-01/#30/M10.",
+      "owner": "Codex contributor; fresh-context review recorded",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "optional-layout-helpers-verified",
+      "state": "done",
+      "title": "Define portable file layouts and record naming profiles",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Expected pinVersion1 selected-byte verification reuses existing receipt;24 pin tests and84 Python tests pass after reviewed classification fixes at02cac0676fe57a23faa6b0eb203a0771d3df6fba. Provenance/support/apply authority remain separate; no publisher authentication, upgrade application or outcome acceptance inferred.",
+      "criterion": "Exact pins verify bytes and provenance separately; mutable main/latest cannot certify an install. Mixed/locally edited installs remain conflicted. Major/minor and security-patch assessments are distinct from authorized application; ordinary patches can be deferred with a recorded reason. Tests preserve existing v0.4.1 history and old record compatibility, and make runtime-floor changes explicit.",
+      "dependsOn": [
+        "PRS-POLICY-01",
+        "PRS-RECORDS-02"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "revision": "02cac0676fe57a23faa6b0eb203a0771d3df6fba",
+          "source": "src/project_record/pins.py"
+        },
+        {
+          "kind": "test",
+          "revision": "02cac0676fe57a23faa6b0eb203a0771d3df6fba",
+          "source": "tests/test_pins.py"
+        },
+        {
+          "kind": "review",
+          "revision": "02cac0676fe57a23faa6b0eb203a0771d3df6fba",
+          "source": "audit/pins/2026-10-30/verification.json"
+        }
+      ],
+      "groupId": "G10",
+      "id": "PRS-PIN-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/30",
+      "kind": "implementation",
+      "milestoneId": "M10",
+      "note": "Queue04/34 complete in PR46. No floor/contract/release change. Next PRS-HANDOFF-01/#15/M5; #38 must select/test next-publication supported minimum.",
+      "owner": "Codex contributor; fresh-context review recorded",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "read-only-pins-and-assessment-verified",
+      "state": "done",
+      "title": "Implement verified installation pins and compatibility assessment",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Read-only shared policy API/CLI/wrapper at c55d410e6bcc0a793591ff405aac41bcf9cd20e5:25 policy and142 full Python tests pass; fresh-context review resolves restored-scope and malformed-visibility findings. Exact-subject/revision evidence, duplicate accounting, unexplained scope loss, privacy/destination guards and interface equivalence exercised. Unsupported predicates remain unknown; no permission, owner acceptance or host enforcement inferred.",
+      "criterion": "CLI fixtures reject duplicate credit, wrong-revision proof, silent scope loss and unsafe public output; unknown evidence cannot certify a required gate. Unknown is not silently success. Results are equivalent through direct calls and wrappers, with explicit exit semantics and no required model/server.",
+      "deferReason": null,
+      "dependsOn": [
+        "PRS-POLICY-01",
+        "PRS-PIN-01",
+        "PRS-EVIDENCE-STAGES"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "c55d410e6bcc0a793591ff405aac41bcf9cd20e5",
+          "source": "src/project_record/policy.py; tools/check_policy.py",
+          "subject": "PRS-GATE-01"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "c55d410e6bcc0a793591ff405aac41bcf9cd20e5",
+          "source": "tests/test_policy.py; audit/policy-cli/2026-10-30/verification.json",
+          "subject": "PRS-GATE-01"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-10-30",
+          "producer": "Codex /root/policy_cli_review",
+          "result": "passed",
+          "revision": "c55d410e6bcc0a793591ff405aac41bcf9cd20e5",
+          "source": "audit/policy-cli/2026-10-30/verification.json",
+          "subject": "PRS-GATE-01"
+        }
+      ],
+      "groupId": "G10",
+      "id": "PRS-GATE-01",
+      "implementationRevision": "c55d410e6bcc0a793591ff405aac41bcf9cd20e5",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/31",
+      "kind": "implementation",
+      "milestoneId": "M10",
+      "note": "Queue09/34 complete in PR51; optional policyVersion1/resultVersion1 preserve completion contracts0.1/0.2 and publishedv0.4.1. Shared output guard rejects symlink paths. Next PRS-RECONCILE-01/#32/M10; early foundations release preparation remains held pending #38 detailing.",
+      "owner": "Codex contributor; fresh-context same-family review recorded",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "verified-read-only-policy-interface",
+      "state": "done",
+      "title": "Expose deterministic policy checks through the shared CLI",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Opt-in normalized-v1 host-authorized writer passes22 reconciliation and164 full Python tests, including replay/stale/negative events, scoped discovery,7 interrupted phases, real process deaths and lock contention. Fresh-context same-family review found no confirmed issues. No live lifecycle, arbitrary-editor CAS, supported Windows/network filesystem/power-loss, owner acceptance or release claim.",
+      "criterion": "Replayed, failed, cancelled, concurrent and stale events cannot duplicate credit or overwrite newer authored work. Successful evidence updates the canonical source and derived views under the adopted policy; human-only acceptance remains pending. Newly discovered work is visible with origin/reason and denominator effect when admitted under declared scope authority. Crash/retry preserves source bytes or exposes a recoverable partial state.",
+      "dependsOn": [
+        "PRS-GATE-01",
+        "PRS-AGENT-EXECUTION",
+        "PRS-RECORDS-02"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+          "source": "src/project_record/reconcile.py",
+          "subject": "PRS-RECONCILE-01"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+          "source": "tests/test_reconcile.py; audit/reconciliation/2026-10-30/verification.json",
+          "subject": "PRS-RECONCILE-01"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-10-30",
+          "producer": "Codex /root/reconciliation_review",
+          "result": "passed",
+          "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+          "source": "audit/reconciliation/2026-10-30/verification.json",
+          "subject": "PRS-RECONCILE-01"
+        },
+        {
+          "eventId": "prs:PRS-RECONCILE-01:0bd960c65017a24bf3c08de124fc999d1d783ead",
+          "kind": "work-result",
+          "observedOn": "2026-10-30",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+          "source": "https://github.com/interzettel/project-record-standard/pull/52",
+          "subject": "PRS-RECONCILE-01",
+          "summary": "Opt-in normalized-v1 host-authorized writer passes22 reconciliation and164 full Python tests, including replay/stale/negative events, scoped discovery,7 interrupted phases, real process deaths and lock contention. Fresh-context same-family review found no confirmed issues. No live lifecycle, arbitrary-editor CAS, supported Windows/network filesystem/power-loss, owner acceptance or release claim."
+        }
+      ],
+      "groupId": "G10",
+      "id": "PRS-RECONCILE-01",
+      "implementationRevision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/32",
+      "kind": "implementation",
+      "milestoneId": "M10",
+      "note": "Queue 10/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "after-work-completed",
+      "state": "done",
+      "title": "Reconcile completed work automatically with a resumable journal",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": true,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "A failing fixture is rejected at the configured boundary and corrected fixture passes at the same revision. Local hook bypass still meets the CI gate. Protected workflow/pin/policy changes, forks/untrusted code, skip/path filters, unavailable checks and authorized bypass actors have explicit coverage. Do not change broad access or silently label an advisory job enforced.",
+      "dependsOn": [
+        "PRS-GATE-01",
+        "PRS-PIN-01"
+      ],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "src/project_record/policy_ci.py; .github/workflows/policy.yml",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "tests/test_policy_ci.py; audit/ci-enforcement/2026-10-30/verification.json",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-10-30",
+          "producer": "Codex /root/ci_boundary_review",
+          "result": "passed",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "audit/ci-enforcement/2026-10-30/verification.json",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "kind": "host-enforcement",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "unknown",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "audit/ci-enforcement/2026-10-30/host-observation.json",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "eventId": "prs:PRS-GATE-02:preparation:f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "kind": "work-result",
+          "observedOn": "2026-10-30",
+          "outcome": "blocked",
+          "producer": "Codex task session",
+          "result": "unknown",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "https://github.com/interzettel/project-record-standard/pull/53",
+          "subject": "PRS-GATE-02",
+          "summary": "CI data-check preparation passes13 focused/177 Python tests and fresh-context review. Fullcriterion incomplete: main is reported unprotected, detailed protection endpointintegration403 and EdgeblockedbyotherextensionUI. Native settings/event-policy review, activation/read-back and actual merge-refusal/bypass tests remain pending; hosted negative/corrected probe follows prep integration. No Done credit or enforcement claim."
+        }
+      ],
+      "groupId": "G10",
+      "id": "PRS-GATE-02",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/33",
+      "kind": "implementation",
+      "milestoneId": "M10",
+      "note": "Queue 11/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "after-work-blocked",
+      "state": "backlog",
+      "title": "Verify the CI enforcement profile and its bypass limits",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "Actual tested runtime/version and trigger evidence distinguish native lifecycle hooks from command-wrapper/manual fallback. Duplicate stop events, missing trigger, unavailable core, timeout and hook failure keep a recoverable pending record. Two runtimes share policy results; no provider-specific second rule engine or fixed professional roles. Installation previews and rollback preserve host configuration.",
+      "dependsOn": [
+        "PRS-RECONCILE-01",
+        "PRS-GATE-02"
+      ],
+      "evidence": [],
+      "groupId": "G10",
+      "id": "PRS-HOOK-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/34",
+      "kind": "implementation",
+      "milestoneId": "M10",
+      "note": "Queue 12/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "planned-not-implemented",
+      "state": "backlog",
+      "title": "Pilot after-work adapters in supported agent runtimes",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "An ordinary authorized session updates canonical progress and projections with zero manual copying/retyping or duplicate tracker edits. Record observed tracking time, intervention count and failure recovery rather than promise universal zero overhead. Scope growth, failed checks, blockers, next work and before/after counts remain visible. Disconnected, concurrent, cancelled and interrupted sessions recover without false Done, acceptance or publication.",
+      "dependsOn": [
+        "PRS-HOOK-01",
+        "PRS-GATE-02"
+      ],
+      "evidence": [],
+      "groupId": "G10",
+      "id": "PRS-RECONCILE-02",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/35",
+      "kind": "implementation",
+      "milestoneId": "M10",
+      "note": "Queue 13/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "planned-not-implemented",
+      "state": "backlog",
+      "title": "Prove unattended tracking and recovery in real work sessions",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "A report names the actual task/impact, exact known pins/adapter, expected rule versus observed result, minimal public-safe reproduction, workaround, affected IDs and proposed check/change. Repeated root causes reuse one record, incomplete searches remain visible, private context is not exported, and a project-only bug or preference does not create an upstream ticket. Missing publication permission retains a local proposal without repeated prompts. Tests cover deduplication, denied/partial transport, redaction, no-impact suppression and no owner-acceptance inference. Track actual feedback/correction overhead; no ticket quota or required background model call.",
+      "dependsOn": [
+        "PRS-POLICY-01",
+        "PRS-RECORDS-02",
+        "PRS-AGENT-EXECUTION"
+      ],
+      "evidence": [],
+      "groupId": "G11",
+      "id": "PRS-FEEDBACK-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/36",
+      "kind": "implementation",
+      "milestoneId": "M11",
+      "note": "Queue 14/34. Native milestone 7. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "planned-not-implemented",
+      "state": "backlog",
+      "title": "Route encountered standards gaps into deduplicated feedback",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "Cases include off-road work, owner acceptance, scope discovery, wrong revision, stale pin, bypassed/missing hook, failed checks and useful negative research. All claimed supported paths have observed outcomes; fixtures and same-model lenses are not independent multi-model proof. Report unsafe claims/writes, intervention burden and tracking time; a no-go/limited-support finding blocks an unsupported universal claim. No outside human expert is mandatory.",
+      "dependsOn": [
+        "PRS-RECONCILE-02",
+        "PRS-AGENT-EXECUTION",
+        "PRS-FEEDBACK-01"
+      ],
+      "evidence": [],
+      "groupId": "G10",
+      "id": "PRS-EVAL-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/37",
+      "kind": "research",
+      "milestoneId": "M10",
+      "note": "Queue 15/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "planned-not-implemented",
+      "state": "backlog",
+      "title": "Challenge automatic tracking across models and runtimes",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "Candidate contents and compatibility/deprecations are explicit; immutable tag/assets/checksums and a fresh-extraction install/rollback are reproducible. Version mismatch or missing acceptance/host evidence prevents publication. README/Pages distinguish available from planned, and release change classes state who must assess/apply/defer. Old v0.4.1 tag/assets are unchanged. This task prepares release; publication needs its own observed receipt.",
+      "dependsOn": [
+        "PRS-EVAL-01",
+        "PRS-HANDOFF-02",
+        "PRS-EVIDENCE-STAGES",
+        "PRS-FEEDBACK-01"
+      ],
+      "evidence": [],
+      "groupId": "G11",
+      "id": "PRS-RELEASE-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/38",
+      "kind": "implementation",
+      "milestoneId": "M11",
+      "note": "Queue 16/34. Native milestone 7. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "planned-not-implemented",
+      "state": "backlog",
+      "title": "Prepare the next versioned release and adopter handoff",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "Minor/major and security-patch triggers produce a sourced assessment without automatic install or new permissions. Ordinary fixes can be deferred with a reason. Partial pagination, dropped/delayed schedules and changed release metadata preserve prior counts and expose freshness gaps. Repeat discovery is quiet and idempotent; meaningful new security changes bypass an earlier ordinary deferral.",
+      "dependsOn": [
+        "PRS-PIN-01",
+        "PRS-UPGRADE-01"
+      ],
+      "evidence": [],
+      "groupId": "G11",
+      "id": "PRS-OPS-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/39",
+      "kind": "implementation",
+      "milestoneId": "M11",
+      "note": "Queue 24/34. Native milestone 7. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "required": true,
+      "sourceState": "planned-not-implemented",
+      "state": "backlog",
+      "title": "Implement quiet release-drift monitoring with freshness recovery",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "At least two real client paths are assessed with exact versions and explicit unsupported results; tools return core-equivalent claims. Path scoping, untrusted input, error/cancel behavior and process permissions are tested. No second ledger, policy implementation, implicit model call or always-on server. A supported no-adapter decision can satisfy this research criterion.",
+      "deferReason": "Conditional/optional extension; retained outside required preparation until deliberately selected.",
+      "dependsOn": [
+        "PRS-GATE-01",
+        "PRS-PIN-01"
+      ],
+      "evidence": [],
+      "groupId": "G12",
+      "id": "PRS-MCP-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/40",
+      "kind": "research",
+      "milestoneId": "M12",
+      "note": "Queue 26/34. Native milestone 8. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P2",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Evaluate a thin local MCP adapter over the shared core",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "Icons complement visible labels and have appropriate accessible names or decorative hiding; colour is not the only status signal. Light/dark, keyboard focus, touch, 320px reflow, text enlargement and monochrome/print fallbacks retain equivalent readable content. Exact asset versions/licences and screenshot observations are recorded; no external icon/font CDN, analytics, fixed global branding or metric/state changes are required.",
+      "deferReason": "Conditional/optional extension; retained outside required preparation until deliberately selected.",
+      "dependsOn": [
+        "PRS-TAILOR-README"
+      ],
+      "evidence": [],
+      "groupId": "G8",
+      "id": "PRS-TEMPLATE-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/41",
+      "kind": "implementation",
+      "milestoneId": "M8",
+      "note": "Queue 31/34. Native milestone 4. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P2",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Improve tracker icons and visual templates accessibly",
+      "unmappedDependencies": []
+    },
+    {
+      "blocked": false,
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "criterion": "A costed decision includes owner/restore/exit plan and verifies the need cannot be met more simply by local/CI operation. No-service is a valid outcome. No server, paid account, credentials, automatic migrations or broad public/private-data access are created by this investigation.",
+      "deferReason": "Conditional/optional extension; retained outside required preparation until deliberately selected.",
+      "dependsOn": [
+        "PRS-MCP-01",
+        "PRS-OPS-01"
+      ],
+      "evidence": [],
+      "groupId": "G12",
+      "id": "PRS-HOST-01",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/42",
+      "kind": "research",
+      "milestoneId": "M12",
+      "note": "Queue 32/34. Native milestone 8. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P2",
+      "required": false,
+      "sourceState": "deferred-not-selected",
+      "state": "backlog",
+      "title": "Decide whether remote hosting solves a measured need",
+      "unmappedDependencies": []
+    }
+  ],
+  "milestones": [
+    {
+      "acceptanceRule": "all-gate-items",
+      "gateItemIds": [
+        "STD-08"
+      ],
+      "goal": "Record the implementation checks and their limits.",
+      "groupIds": [
+        "G1"
+      ],
+      "horizon": "Now",
+      "id": "M1",
+      "nextAction": "Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits.",
+      "sourceAccepted": null,
+      "title": "Technical package verified",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "gateItemIds": [
+        "STD-09"
+      ],
+      "goal": "The owner reviews terminology, behavior and adaptation boundaries.",
+      "groupIds": [
+        "G2"
+      ],
+      "horizon": "Next",
+      "id": "M2",
+      "nextAction": "Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits.",
+      "sourceAccepted": true,
+      "title": "Shared standard accepted for adaptation",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "all-gate-items",
+      "gateItemIds": [
+        "STD-10",
+        "STD-11",
+        "STD-12",
+        "STD-13",
+        "STD-18"
+      ],
+      "goal": "Publish the public toolkit, observe hosted checks and Pages, and record native interaction evidence.",
+      "groupIds": [
+        "G3"
+      ],
+      "horizon": "Now",
+      "id": "M3",
+      "nextAction": "Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits.",
+      "sourceAccepted": null,
+      "title": "Canonical example delivered and interactions verified",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "all-gate-items",
+      "evidence": [],
+      "gateItemIds": [
+        "STD-14",
+        "STD-15",
+        "STD-16",
+        "STD-17"
+      ],
+      "goal": "Scout, plan, adapt, update, report, present and recover tracking while preserving brand, scope history and authority.",
+      "groupIds": [
+        "G4"
+      ],
+      "horizon": "Now",
+      "id": "M4",
+      "nextAction": "Shared package and scoped native follow-up complete. Individual repository adaptations remain separate; retain version/transcript and full-conformance limits.",
+      "priority": "P1",
+      "sourceAccepted": null,
+      "sourceState": "done",
+      "title": "Agents can establish and operate the tracking system",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "evidence": [],
+      "gateItemIds": [
+        "PRS-HANDOFF-01",
+        "PRS-HANDOFF-02",
+        "PRS-EVIDENCE-STAGES",
+        "PRS-AGENT-EXECUTION"
+      ],
+      "goal": "Prove the offline record handoff and evidence-based work-selection semantics.",
+      "groupIds": [
+        "G5"
+      ],
+      "horizon": "Now",
+      "id": "M5",
+      "nextAction": "Yiğit reviews the bounded M5 evidence now that its four work gates are complete; source acceptance remains pending. Continue independent #31/M10 under existing authorization.",
+      "priority": "P1",
+      "sourceAccepted": false,
+      "sourceState": "planned",
+      "title": "Interoperability and agent execution",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "evidence": [],
+      "gateItemIds": [
+        "PRS-TAILOR-README",
+        "PRS-INSPECT-01",
+        "PRS-INSPECT-02",
+        "PRS-INSPECT-03"
+      ],
+      "goal": "Let an owner inspect declared project records offline with source traceability and privacy boundaries.",
+      "groupIds": [
+        "G6"
+      ],
+      "horizon": "Next",
+      "id": "M6",
+      "nextAction": "Select #2 after checking execution prerequisites; owner acceptance remains pending.",
+      "priority": "P1",
+      "sourceAccepted": false,
+      "sourceState": "planned",
+      "title": "Readable project records",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "evidence": [],
+      "gateItemIds": [
+        "PRS-UPGRADE-01",
+        "PRS-UPGRADE-02",
+        "PRS-UPGRADE-03"
+      ],
+      "goal": "Assess and apply bounded release-aware migrations with verified conflict handling and rollback.",
+      "groupIds": [
+        "G7"
+      ],
+      "horizon": "Next",
+      "id": "M7",
+      "nextAction": "Select #20 after checking execution prerequisites; owner acceptance remains pending.",
+      "priority": "P1",
+      "sourceAccepted": false,
+      "sourceState": "planned",
+      "title": "Safe upgrade adoption",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "evidence": [],
+      "gateItemIds": [
+        "PRS-AGENT-AUTHORITY",
+        "PRS-CONTROL-01",
+        "PRS-CONTROL-02",
+        "PRS-CONVENTIONS-01",
+        "PRS-CONVENTIONS-02",
+        "PRS-TEMPLATE-01"
+      ],
+      "goal": "Retain optional role guidance, dependency views and convention profiles for later selection.",
+      "groupIds": [
+        "G8"
+      ],
+      "horizon": "Later",
+      "id": "M8",
+      "nextAction": "Select #1 after checking execution prerequisites; owner acceptance remains pending.",
+      "priority": "P2",
+      "sourceAccepted": false,
+      "sourceState": "planned",
+      "title": "Optional execution and conventions",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "evidence": [],
+      "gateItemIds": [
+        "PRS-PROJECTIONS",
+        "PRS-DISCOVERABILITY"
+      ],
+      "goal": "Retain optional physical projection and public discoverability work without blocking core adoption.",
+      "groupIds": [
+        "G9"
+      ],
+      "horizon": "Later",
+      "id": "M9",
+      "nextAction": "Select #8 after checking execution prerequisites; owner acceptance remains pending.",
+      "priority": "P3",
+      "sourceAccepted": false,
+      "sourceState": "planned",
+      "title": "Optional projections and discoverability",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "evidence": [],
+      "gateItemIds": [
+        "PRS-POLICY-01",
+        "PRS-PIN-01",
+        "PRS-GATE-01",
+        "PRS-RECONCILE-01",
+        "PRS-GATE-02",
+        "PRS-HOOK-01",
+        "PRS-RECONCILE-02",
+        "PRS-EVAL-01"
+      ],
+      "goal": "One reviewed installation leads to verified after-work reconciliation through a common policy/core across actual supported runtimes.",
+      "groupIds": [
+        "G10"
+      ],
+      "horizon": "Next",
+      "id": "M10",
+      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome.",
+      "priority": "P1",
+      "sourceAccepted": false,
+      "sourceState": "planned",
+      "title": "Portable policy and automatic reconciliation",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "evidence": [],
+      "gateItemIds": [
+        "PRS-FEEDBACK-01",
+        "PRS-RELEASE-01",
+        "PRS-OPS-01"
+      ],
+      "goal": "Pinned adoption, evidence-based feedback and release/drift operations stay current without noisy manual tracking.",
+      "groupIds": [
+        "G11"
+      ],
+      "horizon": "Next",
+      "id": "M11",
+      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome.",
+      "priority": "P1",
+      "sourceAccepted": false,
+      "sourceState": "planned",
+      "title": "Maintained compatibility and release operations",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "evidence": [],
+      "gateItemIds": [
+        "PRS-MCP-01",
+        "PRS-HOST-01"
+      ],
+      "goal": "Only justified MCP/hosting integrations proceed after measured needs, cost and recovery decisions.",
+      "groupIds": [
+        "G12"
+      ],
+      "horizon": "Later",
+      "id": "M12",
+      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome.",
+      "priority": "P2",
+      "sourceAccepted": false,
+      "sourceState": "planned",
+      "title": "Conditional MCP and hosting",
+      "unscopedWork": []
+    },
+    {
+      "acceptanceRule": "source-state",
+      "evidence": [],
+      "gateItemIds": [
+        "PRS-RECORDS-01",
+        "PRS-RECORDS-02"
+      ],
+      "goal": "Personal memory, shared knowledge and authoritative records have explicit homes, writers, naming and lifecycle mappings.",
+      "groupIds": [
+        "G13"
+      ],
+      "horizon": "Now",
+      "id": "M13",
+      "nextAction": "Both #27/#29 work criteria met. Yiğit separately accepts M13 outcome; next eligible implementation is #30/M10. No new memory backend or host migration claimed.",
+      "priority": "P1",
+      "sourceAccepted": false,
+      "sourceState": "planned",
+      "title": "Records and memory boundaries",
+      "unscopedWork": []
+    }
+  ],
+  "warnings": [
+    "Historical observations and all16 required IDs retained; scoped owner acceptance closes STD-09/13 under CR-0.4-ACCESSIBILITY.",
+    "Native200%/400% checks observed and owner confirmed Narrator works. Versions and actual speech transcript unavailable; no independently observed or universal WCAG conformance claim. All18 required leaves complete; readiness grade remains separate.",
+    "Post-release planning observation 2026-10-30: adds 11 required and 7 deferred leaves; 18/29 required (62.1%), 18/36 retained (50.0%), 4/9 declared milestones. New required work is 0/11 and new required milestone outcomes are 0/3; v0.4.1 historical delivery remains 18/18 and 4/4.",
+    "The 30 October infrastructure expansion adds future work, not finished automation. New required work0/24; complete the real-session and cross-model gates before claiming unattended support.",
+    "PRS-RECORDS-01 research completed after source-linked comparison and fresh-context review: required18/42→19/42; retained18/52→19/52; newly required1/24. No scope added, milestone acceptance unchanged4/13, automatic tracking remains unimplemented.",
+    "PRS-POLICY-01 completes the scoped catalogue and boundary probes: required19/42→20/42, retained19/52→20/52, newly required2/24. No added scope, authority or milestone acceptance; structural approval checks are not authentication.",
+    "PRS-RECORDS-02 completes the optional mapping/helpers after review fixes and20 layout tests: required20/42→21/42, retained20/52→21/52, newly required3/24. No scope added; M13 work gates complete but outcome unaccepted; accepted milestones remain4/13.",
+    "PRS-PIN-01 completes read-only expected-pin and compatibility assessment: required21/42→22/42, retained21/52→22/52, newly required4/24. No scope added or acceptance changed. Selected byte match is not publisher authentication or upgrade permission; v0.4.1 history/native floor preserved."
+  ]
+}
