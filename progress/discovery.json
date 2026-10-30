@@ -21,7 +21,7 @@
     {
       "kind": "native parent links",
       "source": "Earlier bounded readback and attempted completion",
-      "coverage": "7/12 previously confirmed. Remaining #22→#10,#23/#24→#11,#25/#26→#12 are preserved in issue bodies/canonical plan. Edge automation is blocked by another extension UI; no completed relationship or screenshot is fabricated."
+      "coverage": "7/12 previously confirmed. Remaining #22\u2192#10,#23/#24\u2192#11,#25/#26\u2192#12 are preserved in issue bodies/canonical plan. Edge automation is blocked by another extension UI; no completed relationship or screenshot is fabricated."
     },
     {
       "kind": "current standards and upstream dependencies",
@@ -34,7 +34,7 @@
       "coverage": "New public adopter homepage and17 guides separate recorded release from future automation. Hosted publication and deployment are verified separately after integration; actual browser layout/speech remain untested in this pass."
     }
   ],
-  "nextAction": "Execute PRS-GATE-01/#31/M10 shared CLI policy checks. M5 work gates are4/4 complete; Yiğit retains M5 outcome acceptance, with no release inferred.",
+  "nextAction": "Execute PRS-RECONCILE-01/#32/M10 resumable authorized journal/reconciliation. Policy checks are read-only; M5/M13 outcome acceptance and release gates remain separate.",
   "reconciliations": [
     {
       "package": "PRS-RECORDS-01",
@@ -99,6 +99,19 @@
       "verifiedRevision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
       "applicationRevision": "423b168b1625cb8bcb0eae037271e986dc21f433",
       "coverage": "Read #3/comment and complete open-PR page at start: no overlap. Synthetic blocked/unknown/eligible/stale-mapping fixture, optional read-only API, owned instruction upgrade and old-pin compatibility. Five fresh installed-guidance applications at423b168; later multi-leaf issue fix reproduced/reviewed independently with21 tests. No live consumer/runtime/remote mutation or cross-model proof."
+    },
+    {
+      "package": "PRS-GATE-01",
+      "observedOn": "2026-10-30",
+      "inputRevision": "b6634ce486b0197a14835165b127e3e22dfd0382",
+      "reviewedRevision": "1a614f1d1b8d6699e12427bb982fec0e7b1f6640",
+      "coverage": "Read #31 and complete open-PR page at package start, no overlap; reviewed selected policy/core/history/evidence/output and compatibility boundaries.24 policy tests including API/file/moduleCLI/wrapper parity,141 Python/14 JavaScript, fresh archive and public projections. Two review failures retained and fixed.",
+      "notInspected": [
+        "Actual required-check protection/bypass settings",
+        "Live consumer after-work lifecycle",
+        "Cross-model effectiveness or burden reduction"
+      ],
+      "result": "Bounded shared read-only interface criterion met; no scope/acceptance/release expansion."
     }
   ]
 }

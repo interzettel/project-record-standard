@@ -1,0 +1,15 @@
+{
+  "revision": "6deb48498789c5f2adf23b00f1ba0d0779f48158",
+  "restoredScope": {
+    "expected": "fail1 without explanation",
+    "actual": "pass",
+    "exitCode": 0,
+    "requiredBefore": 0,
+    "requiredAfter": 1
+  },
+  "malformedVisibility": {
+    "expected": "structured failed check",
+    "actual": "TypeError: argument of type 'NoneType' is not iterable"
+  },
+  "note": "Valid cancelled fixture retains its required cancellation reason; both review gaps independently reproduced."
+}

@@ -1,0 +1,358 @@
+Reproduction against baseb6634ce with current22-case test file. Existing5 probes pass; new17 cases error because the shared interface is absent. These are not pre-existing core semantic regressions. Original early5-case red log was transient and is unavailable.
+usage: python3 -m unittest [-h]
+                           {check,build,pipeline,export,validate,compare,lint-issue,readme,init,adoption-plan,status,install-skills}
+                           ...
+python3 -m unittest: error: argument command: invalid choice: 'policy-check' (choose from check, build, pipeline, export, validate, compare, lint-issue, readme, init, adoption-plan, status, install-skills)
+======================================================================
+ERROR: test_criterion_dependency_and_visibility_changes_need_explicit_history_and_authority (test_policy.SharedPolicyInterfaceTests.test_criterion_dependency_and_visibility_changes_need_explicit_history_and_authority) (field='criterion')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 245, in test_criterion_dependency_and_visibility_changes_need_explicit_history_and_authority
+    self.assertEqual(self.evaluate(request)['exitCode'], 1)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_criterion_dependency_and_visibility_changes_need_explicit_history_and_authority (test_policy.SharedPolicyInterfaceTests.test_criterion_dependency_and_visibility_changes_need_explicit_history_and_authority) (field='dependsOn')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 245, in test_criterion_dependency_and_visibility_changes_need_explicit_history_and_authority
+    self.assertEqual(self.evaluate(request)['exitCode'], 1)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_criterion_dependency_and_visibility_changes_need_explicit_history_and_authority (test_policy.SharedPolicyInterfaceTests.test_criterion_dependency_and_visibility_changes_need_explicit_history_and_authority)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 248, in test_criterion_dependency_and_visibility_changes_need_explicit_history_and_authority
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_direct_file_cli_and_thin_wrapper_return_equivalent_diagnostics_and_exit_codes (test_policy.SharedPolicyInterfaceTests.test_direct_file_cli_and_thin_wrapper_return_equivalent_diagnostics_and_exit_codes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 160, in test_direct_file_cli_and_thin_wrapper_return_equivalent_diagnostics_and_exit_codes
+    from project_record.policy import evaluate_file
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_duplicate_credit_fails_even_if_accounting_was_not_listed_as_required (test_policy.SharedPolicyInterfaceTests.test_duplicate_credit_fails_even_if_accounting_was_not_listed_as_required)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 107, in test_duplicate_credit_fails_even_if_accounting_was_not_listed_as_required
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_empty_policy_and_unpinned_gate_do_not_certify_success (test_policy.SharedPolicyInterfaceTests.test_empty_policy_and_unpinned_gate_do_not_certify_success) (change={'policy': {}})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 200, in test_empty_policy_and_unpinned_gate_do_not_certify_success
+    self.assertEqual(self.evaluate(request)['exitCode'], 3)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_empty_policy_and_unpinned_gate_do_not_certify_success (test_policy.SharedPolicyInterfaceTests.test_empty_policy_and_unpinned_gate_do_not_certify_success) (change={'policy': None})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 200, in test_empty_policy_and_unpinned_gate_do_not_certify_success
+    self.assertEqual(self.evaluate(request)['exitCode'], 3)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_empty_policy_and_unpinned_gate_do_not_certify_success (test_policy.SharedPolicyInterfaceTests.test_empty_policy_and_unpinned_gate_do_not_certify_success) (change={'revision': None})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 200, in test_empty_policy_and_unpinned_gate_do_not_certify_success
+    self.assertEqual(self.evaluate(request)['exitCode'], 3)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_empty_policy_and_unpinned_gate_do_not_certify_success (test_policy.SharedPolicyInterfaceTests.test_empty_policy_and_unpinned_gate_do_not_certify_success) (change={'receipts': None})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 200, in test_empty_policy_and_unpinned_gate_do_not_certify_success
+    self.assertEqual(self.evaluate(request)['exitCode'], 3)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_empty_policy_and_unpinned_gate_do_not_certify_success (test_policy.SharedPolicyInterfaceTests.test_empty_policy_and_unpinned_gate_do_not_certify_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 202, in test_empty_policy_and_unpinned_gate_do_not_certify_success
+    self.assertEqual(self.evaluate(request)['exitCode'], 1)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_existing_01_record_contract_remains_readable (test_policy.SharedPolicyInterfaceTests.test_existing_01_record_contract_remains_readable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 309, in test_existing_01_record_contract_remains_readable
+    self.assertEqual(self.evaluate(request)['exitCode'], 0)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_existing_automated_acceptance_rule_does_not_invent_an_owner_gate (test_policy.SharedPolicyInterfaceTests.test_existing_automated_acceptance_rule_does_not_invent_an_owner_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 235, in test_existing_automated_acceptance_rule_does_not_invent_an_owner_gate
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_explicit_required_subset_passes_without_certifying_unknown_mechanisms_or_writing (test_policy.SharedPolicyInterfaceTests.test_explicit_required_subset_passes_without_certifying_unknown_mechanisms_or_writing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 94, in test_explicit_required_subset_passes_without_certifying_unknown_mechanisms_or_writing
+    report = self.evaluate()
+             ^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_history_guard_rejects_reverse_observation_order_with_or_without_new_source_identity (test_policy.SharedPolicyInterfaceTests.test_history_guard_rejects_reverse_observation_order_with_or_without_new_source_identity) (changed_identity=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 318, in test_history_guard_rejects_reverse_observation_order_with_or_without_new_source_identity
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_history_guard_rejects_reverse_observation_order_with_or_without_new_source_identity (test_policy.SharedPolicyInterfaceTests.test_history_guard_rejects_reverse_observation_order_with_or_without_new_source_identity) (changed_identity=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 318, in test_history_guard_rejects_reverse_observation_order_with_or_without_new_source_identity
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check (test_policy.SharedPolicyInterfaceTests.test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check) (change={'policyVersion': True})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 264, in test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check
+    self.assertEqual(self.evaluate(request)['exitCode'], 2)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check (test_policy.SharedPolicyInterfaceTests.test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check) (change={'requiredRules': []})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 264, in test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check
+    self.assertEqual(self.evaluate(request)['exitCode'], 2)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check (test_policy.SharedPolicyInterfaceTests.test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check) (change={'requiredRules': ['NOT-A-RULE']})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 264, in test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check
+    self.assertEqual(self.evaluate(request)['exitCode'], 2)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check (test_policy.SharedPolicyInterfaceTests.test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check) (change={'extraField': True})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 264, in test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check
+    self.assertEqual(self.evaluate(request)['exitCode'], 2)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check (test_policy.SharedPolicyInterfaceTests.test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check) (change={'output': {'path': 'bad\x00path'}})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 264, in test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check
+    self.assertEqual(self.evaluate(request)['exitCode'], 2)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check (test_policy.SharedPolicyInterfaceTests.test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 1943, in _parse_known_args2
+    namespace, args = self._parse_known_args(args, namespace, intermixed)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 2165, in _parse_known_args
+    positionals_end_index = consume_positionals(start_index)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 2141, in consume_positionals
+    take_action(action, args)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 2003, in take_action
+    argument_values = self._get_values(action, argument_strings)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 2523, in _get_values
+    self._check_value(action, value[0])
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 2573, in _check_value
+    raise ArgumentError(action, msg % args)
+argparse.ArgumentError: argument command: invalid choice: 'policy-check' (choose from check, build, pipeline, export, validate, compare, lint-issue, readme, init, adoption-plan, status, install-skills)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 269, in test_malformed_input_has_structured_exit_two_but_invalid_record_is_a_failed_check
+    code = main(['policy-check', '--request', str(path)])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/src/project_record/__main__.py", line 62, in main
+    args = parser.parse_args(argv)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 1904, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 1914, in parse_known_args
+    return self._parse_known_args2(args, namespace, intermixed=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 1945, in _parse_known_args2
+    self.error(str(err))
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 2650, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/argparse.py", line 2637, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+======================================================================
+ERROR: test_missing_changed_and_uppercase_source_hashes_keep_identity_semantics (test_policy.SharedPolicyInterfaceTests.test_missing_changed_and_uppercase_source_hashes_keep_identity_semantics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 207, in test_missing_changed_and_uppercase_source_hashes_keep_identity_semantics
+    self.assertEqual(self.evaluate(request)['exitCode'], 0)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_new_done_cannot_use_consistently_old_gate_and_receipts_against_declared_new_artifact (test_policy.SharedPolicyInterfaceTests.test_new_done_cannot_use_consistently_old_gate_and_receipts_against_declared_new_artifact)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 301, in test_new_done_cannot_use_consistently_old_gate_and_receipts_against_declared_new_artifact
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_new_done_requires_its_gate_and_new_source_acceptance_remains_unauthenticated (test_policy.SharedPolicyInterfaceTests.test_new_done_requires_its_gate_and_new_source_acceptance_remains_unauthenticated)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 221, in test_new_done_requires_its_gate_and_new_source_acceptance_remains_unauthenticated
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_private_public_input_and_nonempty_output_are_rejected_before_writes (test_policy.SharedPolicyInterfaceTests.test_private_public_input_and_nonempty_output_are_rejected_before_writes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 142, in test_private_public_input_and_nonempty_output_are_rejected_before_writes
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_silent_scope_loss_fails_and_explanation_does_not_authenticate_scope_admission (test_policy.SharedPolicyInterfaceTests.test_silent_scope_loss_fails_and_explanation_does_not_authenticate_scope_admission)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 127, in test_silent_scope_loss_fails_and_explanation_does_not_authenticate_scope_admission
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_unknown_catalogue_rule_cannot_be_downgraded_to_success_by_omission (test_policy.SharedPolicyInterfaceTests.test_unknown_catalogue_rule_cannot_be_downgraded_to_success_by_omission)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 190, in test_unknown_catalogue_rule_cannot_be_downgraded_to_success_by_omission
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_unrelated_prior_project_and_output_symlink_are_not_success (test_policy.SharedPolicyInterfaceTests.test_unrelated_prior_project_and_output_symlink_are_not_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 282, in test_unrelated_prior_project_and_output_symlink_are_not_success
+    report = self.evaluate(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+======================================================================
+ERROR: test_wrong_revision_proof_fails_and_missing_proof_is_unknown (test_policy.SharedPolicyInterfaceTests.test_wrong_revision_proof_fails_and_missing_proof_is_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 115, in test_wrong_revision_proof_fails_and_missing_proof_is_unknown
+    self.assertEqual(self.evaluate(request)['exitCode'], 1)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/prs-gate-base-reproduction/tests/test_policy.py", line 86, in evaluate
+    from project_record.policy import evaluate
+ModuleNotFoundError: No module named 'project_record.policy'
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.408s
+
+FAILED (errors=29)

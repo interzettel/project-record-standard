@@ -41,3 +41,7 @@ PR49 completes #6 with STANDARD as the authoritative evidence-claim/dependency h
 ## Canonical work selection and alignment
 
 PR50 completes #3 with read-only executionVersion1 assessment and the installed bounded start/end protocol. Missing/stale facts stay unknown; explicit multi-leaf issue mappings keep one credit per canonical leaf. Owned rule-only changes require explicit upgrade; previous pins remain readable. Skill bodies/metadata and record contract unchanged. Required26/42 (61.9%),retained26/52 (50.0%),newly required8/24;accepted milestones4/13. M5 four work gates complete with owner acceptance pending; next #31/M10 shared CLI checks. Actual5 preparation applications retain423b168 identity; fixed API/review at 8b49fb5281bd879d7af9a846400e1b4888480c94.
+
+## Shared policy interface handoff
+
+PR51 completes #31 with policyVersion1 API/CLI/wrapper, structured rule scopes and exit0/1/3/2. Duplicate credit, wrong revisions, unknown evidence, scope loss/restoration and unsafe public output are exercised in25 policy tests;142 Python and14 JavaScript tests pass. Two Important review findings were reproduced and fixed. Required27/42 (64.3%), retained27/52 (51.9%), newly required9/24, accepted milestones4/13. History under pre-gates/audit/policy-cli preserves exact inputs and limits. Shared output preflight rejects symlink destinations/ancestors; no production writer, enforced host profile or consumer update. Current next action:#32/M10. Published release staysv0.4.1; foundations publication remains held by #38 detailing.
