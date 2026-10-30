@@ -1,92 +1,38 @@
 {
   "projectId": "standard",
-  "observedOn": "2026-10-22",
+  "observedOn": "2026-10-30",
+  "sourceRevision": "e91ad8e26392020dee232a35dd9f6d07e26a5d95",
   "sources": [
     {
-      "kind": "issues",
-      "source": "https://api.github.com/repos/interzettel/project-record-standard/issues?state=all&per_page=100",
-      "observedAt": "2026-10-22T18:03:27.650033+00:00",
-      "coverage": "complete for the selected collection: fewer than 100 entries on first page",
-      "total": 0,
-      "revision": null
-    },
-    {
-      "kind": "pulls",
-      "source": "https://api.github.com/repos/interzettel/project-record-standard/pulls?state=all&per_page=100",
-      "observedAt": "2026-10-22T18:03:27.650047+00:00",
-      "coverage": "complete for the selected collection: fewer than 100 entries on first page",
-      "total": 0,
-      "revision": null
+      "kind": "issues and PRs",
+      "source": "GitHub connector complete open-issue and all-state PR pages, page size100",
+      "coverage": "39 open issues:34 delivery leaves and5 uncounted parents. PR14 is the only open PR at review; PR5 was already merged. No inaccessible collection is treated as empty."
     },
     {
       "kind": "branches",
-      "source": "https://api.github.com/repos/interzettel/project-record-standard/branches?per_page=100",
-      "observedAt": "2026-10-22T18:03:27.650050+00:00",
-      "coverage": "complete for the selected collection: fewer than 100 entries on first page",
-      "total": 1,
-      "revision": "59396a891fbc740ffe0be095f02934dfae270d38"
+      "source": "GitHub connector complete branch page",
+      "coverage": "main9fab17d; structuring branch e91ad8e; license branch6d14bcc. Consolidation is authorized; final integration/CI observations are retained in PR14 and its hosted runs."
     },
     {
-      "kind": "releases",
-      "source": "https://api.github.com/repos/interzettel/project-record-standard/releases?per_page=100",
-      "observedAt": "2026-10-22T18:03:27.650052+00:00",
-      "coverage": "complete for the selected collection: fewer than 100 entries on first page",
-      "total": 0,
-      "revision": null
+      "kind": "milestones and labels",
+      "source": "Native milestone UI creation plus issue-create/update readback",
+      "coverage": "New native6-9 map toM10-M13; existing1-5 map toM5-M9. All34 leaves have type/priority/area/tracking/scope labels and a native milestone; counts and completion remain canonical in the ledger."
     },
     {
-      "kind": "local docs, source, tracking and branding",
-      "source": "AGENTS.md; README.md; standards/; src/; web/; examples/projects.json; progress/",
-      "coverage": "complete for named local package paths at the published 0.3.0 candidate; subsequent evidence-only update is recorded separately",
-      "findings": [
-        "Own ledger and public references have declared writers.",
-        "Original history and existing website brands remain intact.",
-        "No individual repository migration is included."
-      ],
-      "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297"
+      "kind": "native parent links",
+      "source": "Earlier bounded readback and attempted completion",
+      "coverage": "7/12 previously confirmed. Remaining #22\u2192#10,#23/#24\u2192#11,#25/#26\u2192#12 are preserved in issue bodies/canonical plan. Edge automation is blocked by another extension UI; no completed relationship or screenshot is fabricated."
     },
     {
-      "kind": "native GitHub Projects",
-      "coverage": "not-assessed",
-      "source": "No native Project enumeration or creation was performed.",
-      "findings": [
-        "The standard defines mappings and native views without claiming an existing Project has been reconciled."
-      ]
+      "kind": "current standards and upstream dependencies",
+      "source": "Official Agent Skills,AGENTS.md,MCP,GitHub,SemVer,Python,Node,Claude Code,Codex,LangGraph,MADR,Diataxis,Lucide/WAI sources and upstream action release/tag objects",
+      "coverage": "Research inspected30October2026; exact adopted action/toolchain pins in audit/compatibility/2026-10-30/upstream.json. Compatibility/effectiveness claims are limited to actual tests. No individual consumer repo or memory store was migrated."
     },
     {
-      "kind": "CI and website",
-      "source": "https://github.com/interzettel/project-record-standard/actions/runs/39866474910",
-      "coverage": "complete for the three jobs in the selected run; tracker, guide and native keyboard behavior inspected on its deployed Pages artifact",
-      "findings": [
-        "Verify, reusable / record and deploy jobs all completed successfully.",
-        "Pages reported success at 2026-10-22T22:39:27.6365785Z.",
-        "Live tracker showed 13/16 = 81.3%; the ten-skill agent guide was served. Keyboard checks passed within the recorded scope; actual screen-reader output and owner acceptance remain pending."
-      ],
-      "revision": "9b02b4380da76d16cabfe801fc368302d5ae5297",
-      "observedAt": "2026-10-22T22:44:54.607837+00:00"
+      "kind": "public site",
+      "source": "Local pipeline/site checks and existing Pages workflow",
+      "coverage": "New public adopter homepage and17 guides separate recorded release from future automation. Hosted publication and deployment are verified separately after integration; actual browser layout/speech remain untested in this pass."
     }
   ],
-  "unresolved": [
-    "Actual screen-reader speech and native browser zoom (disclosed test limitations)",
-    "Additional personal Skills save rejected HTTP422; repository package complete"
-  ],
-  "completionObservation": {
-    "observedOn": "2026-10-23",
-    "revision": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
-    "coverage": "Selected hosted run and scoped accessibility audit only; earlier issue/PR/branch collection dates are unchanged.",
-    "result": "Bounded package accepted; no individual migration selected.",
-    "limits": [
-      "Scoped review, not a WCAG conformance certification.",
-      "Actual screen-reader speech, native browser zoom, OS forced colours and reduced-motion preferences were not exercised.",
-      "26 rendered scenarios cover the two branded reference trackers and three selected guides; source structure was checked across all eleven guides.",
-      "Five skill applications are source-only reviews; source evolved between baseline and guided applications, so no controlled causal comparison is claimed."
-    ]
-  },
-  "readinessIntegration": {
-    "observedOn": "2026-10-23",
-    "sourceRepository": "interzettel/personal-agent-stack",
-    "revision": "d53545f4274fac8c32203be63e070d0e3ab3534a",
-    "coverage": "Read seven named readiness/ADR source documents plus auditor skill. No upstream deployment/assessment records imported, no hosted source collection refreshed.",
-    "result": "Integrated into standard setup/adaptation; detailed central assessments are separate from public tracking and this repository remains ungraded."
-  }
+  "nextAction": "After reviewed consolidation, begin PRS-RECORDS-01/#27 with the scoped comparison, not service provisioning."
 }

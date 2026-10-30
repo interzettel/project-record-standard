@@ -1,0 +1,101 @@
+[
+  {
+    "finding": "PRS-DIA-C1",
+    "where": "artifact",
+    "path": "standards/STANDARD.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "The usual planning view is **roadmap → milestone → epic → work item**.",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-C1",
+    "where": "basis[0]",
+    "path": "standards/AGENT-WORKFLOWS.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "Milestones are outcome checkpoints; the roadmap places them into horizons, dependencies and any sourced dates.",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-M1",
+    "where": "artifact",
+    "path": "standards/AGENT-WORKFLOWS.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "Synthetic setup/adaptation runs use disposable fixtures; no individual project migration is implied.",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-M1",
+    "where": "basis[0]",
+    "path": "standards/AGENT-WORKFLOWS.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "A successful skill test, local suite or hosted CI run establishes only its tested boundary.",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-S1",
+    "where": "artifact",
+    "path": "standards/GITHUB.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "Workflow status lives in the Project rather than being independently maintained in another family of status labels.",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-S1",
+    "where": "basis[0]",
+    "path": "standards/GITHUB.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "The manifest records field ownership.",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-S1",
+    "where": "basis[1]",
+    "path": "standards/STANDARD.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "Each fact has one authoritative writer.",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-T1",
+    "where": "artifact",
+    "path": "standards/STANDARD.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "| Task | An execution step or a repository's legacy name for a work item. |",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-T1",
+    "where": "basis[0]",
+    "path": "standards/STANDARD.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "Done means the work item's own criterion is complete.",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-U1",
+    "where": "artifact",
+    "path": "AGENTS.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "Select the earliest authorized, unfinished required leaf whose execution prerequisites are complete.",
+    "status": "found",
+    "reason": "exact match"
+  },
+  {
+    "finding": "PRS-DIA-U1",
+    "where": "basis[0]",
+    "path": "standards/STANDARD.md",
+    "revision": "dda9bfa848446a3ca8045d1c93ada31ac1a2df23",
+    "span": "| Work item | A stable, independently checkable leaf in the ledger. |",
+    "status": "found",
+    "reason": "exact match"
+  }
+]

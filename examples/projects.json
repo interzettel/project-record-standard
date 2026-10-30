@@ -38,16 +38,16 @@
         "kind": "file-snapshot",
         "path": "examples/sources/standard/ledger.json",
         "commit": null,
-        "observedOn": "2026-10-23",
-        "updatedOn": "2026-10-23",
-        "authority": "Authored canonical ledger with scoped owner acceptance, observed native zoom and attributed Narrator confirmation; version/transcript limits explicit."
+        "observedOn": "2026-10-30",
+        "updatedOn": "2026-10-30",
+        "authority": "Canonical ledger: preserved historical claims and owner-requested planning expansion; detailed designs and new milestone outcomes are not accepted."
       },
       "presentation": {
         "renderer": "standard",
         "theme": "themes/standard.json",
         "readmeMetric": "work",
         "hostFont": "system-ui, sans-serif",
-        "progressUrl": "https://interzettel.github.io/project-record-standard/",
+        "progressUrl": "https://interzettel.github.io/project-record-standard/standard/progress.html",
         "readmeImageUrl": "./assets/progress.svg"
       },
       "supplements": [
@@ -124,16 +124,34 @@
           "visibility": "public",
           "authority": "Authored release packaging and documentation change",
           "observedOn": "2026-10-23"
+        },
+        {
+          "path": "sources/standard/changes/CH-POST-RELEASE-STRUCTURE.json",
+          "visibility": "public",
+          "authority": "Authored planning and repository-operation change; no product implementation claimed.",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-OPEN-CONTRIBUTION-TERMINOLOGY.json",
+          "visibility": "public",
+          "authority": "Authored local change fragment",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-INFRASTRUCTURE-PLAN.json",
+          "visibility": "public",
+          "authority": "Authored architecture/planning and public adoption change",
+          "observedOn": "2026-10-30"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-native-completion-0.4.1.json",
+      "previousSourceFile": "sources/standard/pre-infrastructure-2026-10-30.json",
       "previousSource": {
         "kind": "file-snapshot",
-        "path": "examples/sources/standard/pre-native-completion-0.4.1.json",
-        "commit": "8063b65a9832143551dc021a9c00026b4c4f04f3",
-        "observedOn": "2026-10-23",
-        "updatedOn": "2026-10-23",
-        "authority": "Exact17/18 native follow-up before owner-assisted native zoom and Narrator confirmation."
+        "path": "sources/standard/pre-infrastructure-2026-10-30.json",
+        "commit": "e91ad8e26392020dee232a35dd9f6d07e26a5d95",
+        "observedOn": "2026-10-30",
+        "updatedOn": "2026-10-30",
+        "authority": "Exact18/29 required,18/36 retained,4/9 milestones before owner-requested infrastructure expansion."
       },
       "snapshots": [
         {
@@ -211,6 +229,28 @@
             "observedOn": "2026-10-23",
             "updatedOn": "2026-10-23",
             "authority": "Exact17/17 scoped package before newly requested native verification."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-native-completion-0.4.1.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/pre-native-completion-0.4.1.json",
+            "commit": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+            "observedOn": "2026-10-23",
+            "updatedOn": "2026-10-23",
+            "authority": "Exact17/18 native follow-up before owner-assisted native zoom and Narrator confirmation."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-post-release-2026-10-30.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/pre-post-release-2026-10-30.json",
+            "commit": "9fab17ddae8c2488eff63670d8f1a28d5c763a1f",
+            "observedOn": "2026-10-23",
+            "updatedOn": "2026-10-23",
+            "authority": "Exact preserved 18/18, four-milestone ledger before post-release scope expansion."
           }
         }
       ]

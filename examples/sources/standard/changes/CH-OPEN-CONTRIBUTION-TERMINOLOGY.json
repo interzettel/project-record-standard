@@ -1,0 +1,9 @@
+{
+  "id": "CH-OPEN-CONTRIBUTION-TERMINOLOGY",
+  "component": "standard",
+  "type": "documentation",
+  "summary": "Clarify open contribution, work language, field authority and execution verification; distribute the work-model guide and record planning/skill evidence limits.",
+  "workItemIds": [],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/14",
+  "compatibility": "Partial guidance for existing evidence, execution and authority packages; no leaf completion or scope change. Runtime/suite0.4.1 and record contract0.2.0 unchanged."
+}

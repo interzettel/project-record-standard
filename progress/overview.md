@@ -1,27 +1,25 @@
 # Project record standard
 
-## Current result — 23 October 2026
+## Direction · 30 October 2026
 
-The implementation scope is complete: **18/18 required work items (100%) and 4/4 milestone gates (100%)**. Runtime and skill suite version 0.4.1 retain record contract 0.2.0. Release publication is recorded separately in the delivery supplement; repository migrations belong to the next phase.
+PRS is becoming low-overhead project infrastructure: a reviewed installation, automatic routine recording after authorized work, and a clear account of what works, what remains, next work, failures and scope growth. The released v0.4.1 toolkit has offline validation, history/delivery projections, eleven guidance skills and owned-file installation. Unattended reconciliation and host enforcement are planned, not released.
 
-Native Edge zoom at 200% and 400% was directly inspected. Narrator operation is owner-confirmed; the agent did not capture speech, software versions or a transcript. The personal accessibility skill save is verified. These are scoped acceptance results, not a full WCAG conformance claim or a project readiness grade.
+The [execution plan](execution-plan.md) contains thirty-four delivery leaves: twenty-four required and ten deferred, plus five uncounted parent requests. Sixteen new issues (#27-#42) cover enforcement/pins, automatic reconciliation, runtime/model proof, feedback/release operations, records/memory and optional MCP/hosting/visuals. The first package is **PRS-RECORDS-01 / #27**, the classification and authority investigation.
 
-## Purpose and users
+| Named measure | Current authored observation | Meaning |
+| --- | ---: | --- |
+| Historical released work | 18/18 | Preserved v0.4.1 outcome |
+| Newly selected required work | 0/24 | Preparation across M5-M7,M10-M11,M13 |
+| Expanded required work | 18/42 · 42.9% | Historical plus current required leaves |
+| Retained ledger work | 18/52 · 34.6% | Includes ten deferred leaves |
+| Accepted declared milestones | 4/13 · 30.8% | Historical acceptance retained; new outcomes pending |
 
-Give independently branded projects shared words for scope, progress, evidence and delivery. Maintainers and agents should be able to explain what works, what remains, why a percentage changed and what proof is missing. Outsiders enter through a readable README and the project’s own interactive website.
+The proposed next core cut is 0.5.0, covering the first sixteen ordered packages. It is not a release or accepted candidate. Contract0.2.0 stays independent. The full inspector, semantic upgrade suite and fleet watcher can follow without forcing optional MCP, VPS, icons or private brand assets into core adoption.
 
-The toolkit supplies a versioned JSON contract, adapters, exact-count calculators, history bridges, change/release/deployment records, optional browser components, an offline CLI/action/workflow, eleven agent skills and an additive instructions installer. Projects keep their fonts, palette, routes and technology. The standard’s navy/lavender example and the independently branded Prehnite reference demonstrate that separation.
+## Sources and boundaries
 
-## Scope and authority
+`examples/projects.json` selects sources. `examples/sources/standard/ledger.json` owns scope/state/criteria/dependencies and acceptance; registered supplements own changes and delivery observations. GitHub owns assignment and discussion. README, SVG and Pages are projections. Yiğit owns outcome acceptance; the consolidation request authorizes merging reviewed work and public documentation, not automatic acceptance of future milestones.
 
-The completed package covers purpose/scope-first scouting, cleanup priorities, work breakdown, milestone exit criteria, scope expansion, agent installation, status and collection telemetry, recovery, delivery and accessibility review. Setup includes the portable L0–L5 readiness contract, ten evidence dimensions and separate R0–R4 task-risk limits. A readiness assessment does not grant authority.
+[Architecture](../standards/ARCHITECTURE.md) separates guidance, deterministic gates, lifecycle adapters, schedulers and optional MCP/hosting. [Records](../standards/RECORDS.md) separates personal memory from shared knowledge, plans, decisions and evidence. [Compatibility](../standards/COMPATIBILITY.md) defines exact pins and when to assess/apply/defer changes. [Feedback](../standards/FEEDBACK.md) routes actual encountered gaps without creating a noisy maintenance queue.
 
-`examples/projects.json` declares the sources. `examples/sources/standard/ledger.json` owns completion and scope; its registered supplements own delivery and changes. README, SVG and Pages are derived views. Yiğit owns scope and acceptance. Progress documents supply context rather than a second ledger.
-
-Individual repository migrations, live feeds from reference projects, private operational assessments, paid services, new credentials and recurring schedules are outside this package. Prehnite remains a pinned reference.
-
-## Evidence and next phase
-
-Success means preserved source IDs and brands, named fractions, explicit unknowns, reproducible tooling, usable saved skills, repeatable installation/recovery, matching README/Pages calculations and observable CI/deployment. See [verification](../VERIFICATION-public.md), [delivery](../standards/DELIVERY.md) and [adoption handoff](adoption.md).
-
-Previous 13-, 16-, 17- and 18-item observations remain in source snapshots. Superseded planning text is preserved in [dated history](history/2026-10-23-before-release/progress--overview.md). It must not be read as a current blocker list.
+Historical native zoom and owner-reported Narrator evidence keeps its original scope/version/transcript limits. No full accessibility, multi-model effectiveness, real consumer migration or unattended-operation claim is added here. Preserve those limits during the next real-session pilots.

@@ -2,6 +2,12 @@
 
 An agent starts with the project’s purpose and scope, scouts its actual state, and turns the evidence into a manageable plan. The tracker and website show that plan and its progress. They evolve when the project discovers or accepts more work.
 
+## Open contribution and bounded responsibility
+
+Use [work language and open contribution](WORK-MODEL.md) to separate temporary package responsibility, accounting ownership, review lenses and acceptance authority. Any contributor can bring ideas or work across disciplines. Skill routing chooses useful questions and procedures, not exclusive job roles. Record actual producers and dissent; multiple lenses from one model do not establish independent review. Existing authorization governs execution.
+
+A goal-based cycle can select a bounded outcome, inspect the actual result, and reflect on the process. A solo maintainer chooses a useful cadence without claiming full Scrum adoption. Keep criteria and project quality policy explicit for the artifact being made.
+
 ## Start or reestablish a project
 
 Use `establish-project-tracking` when tracking authority has not been established, even if the repository already has a README and website. Use `adapt-project-tracking` when plans, IDs, claims or generated tracking already exist. An interrupted installation resumes from its recorded state. Damaged generated output uses `operate-project-tracking`; it does not justify resetting the ledger.

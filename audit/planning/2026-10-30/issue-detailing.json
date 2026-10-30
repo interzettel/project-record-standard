@@ -1,0 +1,114 @@
+{
+  "observedOn": "2026-10-30",
+  "kind": "bounded-issue-detailing",
+  "issues": [
+    {
+      "issue": 2,
+      "url": "https://github.com/interzettel/project-record-standard/issues/2",
+      "updated": true,
+      "bodyIncludesSlices": true,
+      "preserved": [
+        "labels",
+        "milestone",
+        "state",
+        "assignees"
+      ]
+    },
+    {
+      "issue": 3,
+      "url": "https://github.com/interzettel/project-record-standard/issues/3",
+      "updated": true,
+      "bodyIncludesSlices": true,
+      "preserved": [
+        "labels",
+        "milestone",
+        "state",
+        "assignees"
+      ]
+    },
+    {
+      "issue": 6,
+      "url": "https://github.com/interzettel/project-record-standard/issues/6",
+      "updated": true,
+      "bodyIncludesSlices": true,
+      "preserved": [
+        "labels",
+        "milestone",
+        "state",
+        "assignees"
+      ]
+    },
+    {
+      "issue": 17,
+      "url": "https://github.com/interzettel/project-record-standard/issues/17",
+      "updated": true,
+      "bodyIncludesSlices": true,
+      "preserved": [
+        "labels",
+        "milestone",
+        "state",
+        "assignees"
+      ]
+    },
+    {
+      "issue": 18,
+      "url": "https://github.com/interzettel/project-record-standard/issues/18",
+      "updated": true,
+      "bodyIncludesSlices": true,
+      "preserved": [
+        "labels",
+        "milestone",
+        "state",
+        "assignees"
+      ]
+    },
+    {
+      "issue": 19,
+      "url": "https://github.com/interzettel/project-record-standard/issues/19",
+      "updated": true,
+      "bodyIncludesSlices": true,
+      "preserved": [
+        "labels",
+        "milestone",
+        "state",
+        "assignees"
+      ]
+    },
+    {
+      "issue": 20,
+      "url": "https://github.com/interzettel/project-record-standard/issues/20",
+      "updated": true,
+      "bodyIncludesSlices": true,
+      "preserved": [
+        "labels",
+        "milestone",
+        "state",
+        "assignees"
+      ]
+    },
+    {
+      "issue": 21,
+      "url": "https://github.com/interzettel/project-record-standard/issues/21",
+      "updated": true,
+      "bodyIncludesSlices": true,
+      "preserved": [
+        "labels",
+        "milestone",
+        "state",
+        "assignees"
+      ]
+    },
+    {
+      "issue": 22,
+      "url": "https://github.com/interzettel/project-record-standard/issues/22",
+      "updated": true,
+      "bodyIncludesSlices": true,
+      "preserved": [
+        "labels",
+        "milestone",
+        "state",
+        "assignees"
+      ]
+    }
+  ]
+}

@@ -23,13 +23,13 @@ Implementation: 0.4.1; contract: 0.2.0. Existing 0.1.0 records remain readable. 
 | Deployment | An observed artifact or revision in a named environment. | A merge or release does not prove deployment. |
 | Changelog | The meaningful user/operator changes, assembled from authored change records. | Describes changes; its headings do not establish publication. |
 
-The usual planning view is **roadmap → milestone → epic → work item**. It is not a mandatory WBS hierarchy. A milestone is a checkpoint; its displayed work percentage describes the supporting scope. A small project may omit epics. A WBS organizes deliverables and work packages separately when needed. Phases and initiatives are optional grouping views. Legacy IDs and names remain unchanged in the source, with explicit aliases for differing terms.
+A roadmap presents direction and milestone checkpoints. Epics optionally group work items; a WBS organizes deliverables and work packages. Milestone support, containment and execution prerequisites are different relations. There is no mandatory roadmap-to-task hierarchy. Phases, initiatives, features and user stories are optional host vocabulary with explicit mappings. Legacy IDs and names remain unchanged. See [work language and open contribution](WORK-MODEL.md) for the Agile/Scrum adaptation and delivery-claim distinctions.
 
 ## States
 
 Execution states are Planned, Ready, In progress, In review, Done, Cancelled and Unknown. Blocked is a flag with a reason and next responsible action. Risk and accepted debt are attributes, not extra completion states. Existing labels can map to these terms through an explicit alias table.
 
-Done means the work item's own criterion is complete. Verification, milestone acceptance, publication and deployment are separate claims. A closed issue that was cancelled, rejected or superseded is not completed work. A specified capability is not automatically implemented. An experiment earns completion only against its own declared criterion. A useful negative result can complete a measurement task; a failed or unfinished acceptance check cannot become a pass.
+A new Done claim means the work item's own criterion and its applicable project quality policy (Definition of Done) are met. The policy must fit the artifact; a project can require integration where relevant. Historical source claims retain their recorded meaning without recertification. Verification, milestone acceptance, publication and deployment are separate claims. A closed issue that was cancelled, rejected or superseded is not completed work. A specified capability is not automatically implemented. An experiment earns completion only against its own declared criterion. A useful negative result can complete a measurement task; a failed or unfinished acceptance check cannot become a pass.
 
 ## Percentages
 
@@ -51,7 +51,7 @@ Do not remove a denominator because its percentage looks inconvenient. Record ad
 
 ## Evidence and sources
 
-Each fact has one authoritative writer. Reviewed plans own scope, criteria and acceptance records. Repository-local ledgers can continue to own completion. Issues own discussion, assignment, closure and native relationships. Projects own workflow and iteration. Change fragments own the authored change summary. Channel and deployment observations own publication and runtime claims.
+Each fact has one authoritative writer. Reviewed plans own scope, criteria and acceptance records. Repository-local ledgers can continue to own completion. Issues own discussion, assignment, closure and native relationships. Projects own workflow and iteration when the host declares that authority; a Project is optional. Change fragments own the authored change summary. Channel and deployment observations own publication and runtime claims.
 
 The normalized record is a projection. It retains original IDs, source state, source path, commit, file digest, observation date, declared source-update date, evidence and unmapped meaning. A newly generated file cannot make an old observation fresh. Missing, unknown, inaccessible and zero are distinct.
 

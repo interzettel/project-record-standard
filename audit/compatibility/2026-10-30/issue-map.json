@@ -1,0 +1,256 @@
+{
+  "observedOn": "2026-10-30",
+  "sourceRevision": "e91ad8e26392020dee232a35dd9f6d07e26a5d95 (review base; working-tree expansion)",
+  "results": [
+    {
+      "id": "PRS-HOST-01",
+      "issue": 42,
+      "nativeMilestone": 8,
+      "canonicalMilestone": "M12",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-TEMPLATE-01",
+      "issue": 41,
+      "nativeMilestone": 4,
+      "canonicalMilestone": "M8",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-MCP-01",
+      "issue": 40,
+      "nativeMilestone": 8,
+      "canonicalMilestone": "M12",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-OPS-01",
+      "issue": 39,
+      "nativeMilestone": 7,
+      "canonicalMilestone": "M11",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-RELEASE-01",
+      "issue": 38,
+      "nativeMilestone": 7,
+      "canonicalMilestone": "M11",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-EVAL-01",
+      "issue": 37,
+      "nativeMilestone": 6,
+      "canonicalMilestone": "M10",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-FEEDBACK-01",
+      "issue": 36,
+      "nativeMilestone": 7,
+      "canonicalMilestone": "M11",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-RECONCILE-02",
+      "issue": 35,
+      "nativeMilestone": 6,
+      "canonicalMilestone": "M10",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-HOOK-01",
+      "issue": 34,
+      "nativeMilestone": 6,
+      "canonicalMilestone": "M10",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-GATE-02",
+      "issue": 33,
+      "nativeMilestone": 6,
+      "canonicalMilestone": "M10",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-RECONCILE-01",
+      "issue": 32,
+      "nativeMilestone": 6,
+      "canonicalMilestone": "M10",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-GATE-01",
+      "issue": 31,
+      "nativeMilestone": 6,
+      "canonicalMilestone": "M10",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-PIN-01",
+      "issue": 30,
+      "nativeMilestone": 6,
+      "canonicalMilestone": "M10",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-RECORDS-02",
+      "issue": 29,
+      "nativeMilestone": 9,
+      "canonicalMilestone": "M13",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-POLICY-01",
+      "issue": 28,
+      "nativeMilestone": 6,
+      "canonicalMilestone": "M10",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-RECORDS-01",
+      "issue": 27,
+      "nativeMilestone": 9,
+      "canonicalMilestone": "M13",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-CONVENTIONS-02",
+      "issue": 26,
+      "nativeMilestone": 4,
+      "canonicalMilestone": "M8",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-CONVENTIONS-01",
+      "issue": 25,
+      "nativeMilestone": 4,
+      "canonicalMilestone": "M8",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-CONTROL-02",
+      "issue": 24,
+      "nativeMilestone": 4,
+      "canonicalMilestone": "M8",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-CONTROL-01",
+      "issue": 23,
+      "nativeMilestone": 4,
+      "canonicalMilestone": "M8",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-UPGRADE-03",
+      "issue": 22,
+      "nativeMilestone": 3,
+      "canonicalMilestone": "M7",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-UPGRADE-02",
+      "issue": 21,
+      "nativeMilestone": 3,
+      "canonicalMilestone": "M7",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-UPGRADE-01",
+      "issue": 20,
+      "nativeMilestone": 3,
+      "canonicalMilestone": "M7",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-INSPECT-03",
+      "issue": 19,
+      "nativeMilestone": 2,
+      "canonicalMilestone": "M6",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-INSPECT-02",
+      "issue": 18,
+      "nativeMilestone": 2,
+      "canonicalMilestone": "M6",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-INSPECT-01",
+      "issue": 17,
+      "nativeMilestone": 2,
+      "canonicalMilestone": "M6",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-HANDOFF-02",
+      "issue": 16,
+      "nativeMilestone": 1,
+      "canonicalMilestone": "M5",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-HANDOFF-01",
+      "issue": 15,
+      "nativeMilestone": 1,
+      "canonicalMilestone": "M5",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-PROJECTIONS",
+      "issue": 8,
+      "nativeMilestone": 5,
+      "canonicalMilestone": "M9",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-DISCOVERABILITY",
+      "issue": 7,
+      "nativeMilestone": 5,
+      "canonicalMilestone": "M9",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-EVIDENCE-STAGES",
+      "issue": 6,
+      "nativeMilestone": 1,
+      "canonicalMilestone": "M5",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-AGENT-EXECUTION",
+      "issue": 3,
+      "nativeMilestone": 1,
+      "canonicalMilestone": "M5",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-TAILOR-README",
+      "issue": 2,
+      "nativeMilestone": 2,
+      "canonicalMilestone": "M6",
+      "lint": "passed"
+    },
+    {
+      "id": "PRS-AGENT-AUTHORITY",
+      "issue": 1,
+      "nativeMilestone": 4,
+      "canonicalMilestone": "M8",
+      "lint": "passed"
+    }
+  ],
+  "scopeEffect": {
+    "requiredBefore": "18/29",
+    "requiredAfter": "18/42",
+    "retainedBefore": "18/36",
+    "retainedAfter": "18/52",
+    "milestonesBefore": "4/9",
+    "milestonesAfter": "4/13"
+  },
+  "limits": [
+    "Labels/milestone/IDs and issue headings do not establish behavioral quality.",
+    "Five native parent links and actual browser rendering remain blocked by Edge UI."
+  ]
+}
