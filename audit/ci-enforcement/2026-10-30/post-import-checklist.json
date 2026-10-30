@@ -1,0 +1,77 @@
+{
+  "handoffVersion": 1,
+  "package": "PRS-GATE-02",
+  "issue": 33,
+  "canonicalMilestone": "M10",
+  "preparedOn": "2026-10-30",
+  "repository": "interzettel/project-record-standard",
+  "rulesetImportFile": ".github/rulesets/main-ci.json",
+  "rulesetImportSha256": "8f0c653eba2d5e099e81cfffbab6c60b03d125610a2db9922664b223fb551e14",
+  "importFileMeaning": "GitHub ruleset import payload; prepared, not activated or server-validated",
+  "thisFileMeaning": "Operational checklist only; do not import into GitHub rulesets",
+  "ownerAction": "Import main-ci.json, review the preview and create the main-only active ruleset",
+  "agentActions": [
+    {
+      "id": "native-readback",
+      "status": "pending-import",
+      "action": "Read new ruleset by native ID and all inherited rules, compare every setting and observe effective main protection; preserve timestamp, revision, ID, URL, response and pagination."
+    },
+    {
+      "id": "event-policy",
+      "status": "unknown",
+      "action": "Inspect actual repository and organization Actions event policy; preserve inaccessible settings as unknown. No unsafe checkout or event-policy opt-out is authorized by this file."
+    },
+    {
+      "id": "failing-check-refusal",
+      "status": "not-tested",
+      "action": "Use controlled unmerged non-draft probe and non-mutating native rule/mergeability evidence to distinguish required-check refusal from other blockers; never attempt to merge bad data into main."
+    },
+    {
+      "id": "unavailable-check-refusal",
+      "status": "not-tested",
+      "action": "Observe missing required verify/reusable checks on a controlled skip-message probe and native blocking evidence, then correct without skip instructions and observe all required checks."
+    },
+    {
+      "id": "bypass-boundary",
+      "status": "not-tested",
+      "action": "Confirm empty configured branch bypass list; record tested actor identities and admin policy-edit trust boundary without granting bypass or inferring untested cross-actor behavior."
+    },
+    {
+      "id": "remaining-coverage",
+      "status": "partial",
+      "action": "Preserve actual workflow/pin/policy review-notice limits, fork-before-checkout hold, unsupported merge queues and runner/event-policy coverage gaps."
+    },
+    {
+      "id": "reconcile",
+      "status": "held",
+      "action": "Only after criterion evidence is sufficient, preserve prior source, reconcile canonical completion through the writer, regenerate projections and update issue 33. Until then no completion credit."
+    }
+  ],
+  "alreadyObserved": {
+    "mainRevision": "ae2764e36f8c79503e9df23bb0f07786a2544fd0",
+    "mainProtected": false,
+    "requiredContexts": [],
+    "source": "https://api.github.com/repos/interzettel/project-record-standard/branches/main",
+    "hostedEvidence": "audit/ci-enforcement/2026-10-30/hosted-probes.json",
+    "negativeRun": 41127372512,
+    "negativeResult": "failure: Duplicate items ID",
+    "correctedRun": 41127506344,
+    "correctedResult": "success despite skip message; same trusted checker",
+    "probePR": 54,
+    "probeMerged": false,
+    "meaning": "Historical pre-activation observations, not proof of current protection"
+  },
+  "criterionComplete": false,
+  "activationAppliedByAgent": false,
+  "progress": {
+    "requiredDone": 28,
+    "requiredTotal": 42,
+    "retainedDone": 28,
+    "retainedTotal": 52
+  },
+  "nextIndependentWork": {
+    "issue": 36,
+    "leaf": "PRS-FEEDBACK-01",
+    "milestone": "M11"
+  }
+}
