@@ -10,7 +10,7 @@ The proposed **0.5.0 core cut** is the first sixteen entries below: records/poli
 
 ## Ordered packages
 
-Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 is the first bounded investigation; #15 remains the first handoff implementation. Parallel independent preparation is allowed without creating permanent contributor roles.
+Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 is now the earliest eligible unfinished package. #15 remains the first handoff implementation. Parallel independent preparation is allowed without creating permanent contributor roles.
 
 | Order | Issue / stable leaf | Checkpoint | Scope | Execution prerequisites |
 | ---: | --- | --- | --- | --- |
@@ -67,8 +67,10 @@ The requested consolidation authorizes reviewed PR integration and public Pages 
 
 ## Counts and next work
 
-Before→after: required 18/29 (62.1%)→18/42 (42.9%); retained 18/36 (50.0%)→18/52 (34.6%); accepted declared milestones 4/9→4/13 (30.8%). Newly required work remains0/24 and its six milestone outcomes 0/6. Added scope explains the ratio change; no historical completed ID or acceptance is removed.
+Before→after: required 18/29 (62.1%)→18/42 (42.9%); retained 18/36 (50.0%)→18/52 (34.6%); accepted declared milestones 4/9→4/13 (30.8%). At expansion, newly required work was0/24 and its six milestone outcomes0/6. Added scope explains the ratio change; no historical completed ID or acceptance is removed.
 
 New native milestones6,7,8,9 map to canonicalM10,M11,M12,M13. Existing native1-5 map toM5-M9. GitHub milestone closure counts include parent requests and are not the canonical percentages. No due dates or effort/value forecasts are invented.
 
-After consolidation, start **PRS-RECORDS-01 / #27 / M13** with the sourced classification/authority comparison and five concrete routing cases. Then #28 defines rule/control ownership and #29 pins optional path profiles. Do not start by provisioning a service or mass-updating consumer repositories.
+After the records investigation in [PR #43](https://github.com/interzettel/project-record-standard/pull/43), required work is19/42 (45.2%), retained work19/52 (36.5%) and newly required work1/24; accepted milestones stay4/13. No scope or required denominator changed. The comparison and five routing cases are in `audit/records/2026-10-30/`; M13 acceptance and #29 remain pending.
+
+Next, execute **PRS-POLICY-01 / #28 / M10** to define rule/control ownership; #29 then maps optional paths. Do not start by provisioning a service or mass-updating consumer repositories.

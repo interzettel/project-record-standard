@@ -1,0 +1,237 @@
+{
+  "inputCommit": "ceb6c35954a309d014cba97c4416562cfc1b464b",
+  "manifestEntry": {
+    "adapter": "normalized-v1",
+    "sourceFile": "sources/standard/ledger.json",
+    "project": {
+      "id": "standard",
+      "name": "Project record standard",
+      "repository": "interzettel/project-record-standard",
+      "visibility": "public"
+    },
+    "source": {
+      "kind": "file-snapshot",
+      "path": "examples/sources/standard/ledger.json",
+      "commit": null,
+      "observedOn": "2026-10-30",
+      "updatedOn": "2026-10-30",
+      "authority": "Canonical ledger: preserved historical claims and owner-requested planning expansion; detailed designs and new milestone outcomes are not accepted."
+    },
+    "presentation": {
+      "renderer": "standard",
+      "theme": "themes/standard.json",
+      "readmeMetric": "work",
+      "hostFont": "system-ui, sans-serif",
+      "progressUrl": "https://interzettel.github.io/project-record-standard/standard/progress.html",
+      "readmeImageUrl": "./assets/progress.svg"
+    },
+    "supplements": [
+      {
+        "path": "sources/standard/delivery.json",
+        "visibility": "public",
+        "authority": "Authored local change and candidate records",
+        "observedOn": "2026-10-23"
+      }
+    ],
+    "changeFiles": [
+      {
+        "path": "sources/standard/changes/CH-0.2-HISTORY.json",
+        "visibility": "public",
+        "authority": "Authored local change fragment",
+        "observedOn": "2026-10-22"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.2-DELIVERY.json",
+        "visibility": "public",
+        "authority": "Authored local change fragment",
+        "observedOn": "2026-10-22"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.2-AUTOMATION.json",
+        "visibility": "public",
+        "authority": "Authored local change fragment",
+        "observedOn": "2026-10-22"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.2-ADOPTION.json",
+        "visibility": "public",
+        "authority": "Authored local change fragment",
+        "observedOn": "2026-10-22"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.2-CANONICAL.json",
+        "visibility": "public",
+        "authority": "Authored canonical delivery change fragment",
+        "observedOn": "2026-10-22"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.3-AGENTS.json",
+        "visibility": "public",
+        "authority": "Authored standard-agent workflow change fragment",
+        "observedOn": "2026-10-22"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.4-ACCESSIBILITY.json",
+        "visibility": "public",
+        "authority": "Authored accessibility remediation and agent workflow change fragment",
+        "observedOn": "2026-10-23"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.4.1-READINESS.json",
+        "visibility": "public",
+        "authority": "Authored readiness setup integration change",
+        "observedOn": "2026-10-23"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.4.1-NATIVE-FOLLOWUP.json",
+        "visibility": "public",
+        "authority": "Authored personal save recovery and native verification attempt",
+        "observedOn": "2026-10-23"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.4.1-NATIVE-COMPLETION.json",
+        "visibility": "public",
+        "authority": "Authored owner-assisted native accessibility completion record",
+        "observedOn": "2026-10-23"
+      },
+      {
+        "path": "sources/standard/changes/CH-0.4.1-RELEASE.json",
+        "visibility": "public",
+        "authority": "Authored release packaging and documentation change",
+        "observedOn": "2026-10-23"
+      },
+      {
+        "path": "sources/standard/changes/CH-POST-RELEASE-STRUCTURE.json",
+        "visibility": "public",
+        "authority": "Authored planning and repository-operation change; no product implementation claimed.",
+        "observedOn": "2026-10-30"
+      },
+      {
+        "path": "sources/standard/changes/CH-OPEN-CONTRIBUTION-TERMINOLOGY.json",
+        "visibility": "public",
+        "authority": "Authored local change fragment",
+        "observedOn": "2026-10-30"
+      },
+      {
+        "path": "sources/standard/changes/CH-INFRASTRUCTURE-PLAN.json",
+        "visibility": "public",
+        "authority": "Authored architecture/planning and public adoption change",
+        "observedOn": "2026-10-30"
+      }
+    ],
+    "previousSourceFile": "sources/standard/pre-infrastructure-2026-10-30.json",
+    "previousSource": {
+      "kind": "file-snapshot",
+      "path": "sources/standard/pre-infrastructure-2026-10-30.json",
+      "commit": "e91ad8e26392020dee232a35dd9f6d07e26a5d95",
+      "observedOn": "2026-10-30",
+      "updatedOn": "2026-10-30",
+      "authority": "Exact18/29 required,18/36 retained,4/9 milestones before owner-requested infrastructure expansion."
+    },
+    "snapshots": [
+      {
+        "sourceFile": "sources/standard/previous-local-0.2.json",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "examples/sources/standard/previous-local-0.2.json",
+          "commit": null,
+          "observedOn": "2026-10-22",
+          "updatedOn": "2026-10-22",
+          "authority": "Preserved local 0.2.0 implementation snapshot before canonical delivery scope"
+        }
+      },
+      {
+        "sourceFile": "sources/standard/canonical-setup-0.2.json",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "examples/sources/standard/canonical-setup-0.2.json",
+          "commit": null,
+          "observedOn": "2026-10-22",
+          "updatedOn": "2026-10-22",
+          "authority": "Preserved initial canonical setup scope before hosted completion evidence"
+        }
+      },
+      {
+        "sourceFile": "sources/standard/pre-agent-workflows-0.3.json",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "examples/sources/standard/pre-agent-workflows-0.3.json",
+          "commit": null,
+          "observedOn": "2026-10-22",
+          "updatedOn": "2026-10-22",
+          "authority": "Preserved 11/13 canonical observation before agent workflow scope expansion"
+        }
+      },
+      {
+        "sourceFile": "sources/standard/agent-package-local-0.3.json",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "examples/sources/standard/agent-package-local-0.3.json",
+          "commit": null,
+          "observedOn": "2026-10-23",
+          "updatedOn": "2026-10-23",
+          "authority": "Preserved published 13/16 observation before recording hosted agent-package verification"
+        }
+      },
+      {
+        "sourceFile": "sources/standard/pre-accessibility-0.4.json",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "examples/sources/standard/pre-accessibility-0.4.json",
+          "commit": "a8e7b07c3d3a4e4a1d6b15d3720507996be00b36",
+          "observedOn": "2026-10-23",
+          "updatedOn": "2026-10-23",
+          "authority": "Exact retained14/16 source before owner-authorized accessibility closure."
+        }
+      },
+      {
+        "sourceFile": "sources/standard/pre-readiness-0.4.1.json",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "examples/sources/standard/pre-readiness-0.4.1.json",
+          "commit": "34acc83b56621bc41ad08f6a28e9dddc09e5999f",
+          "observedOn": "2026-10-23",
+          "updatedOn": "2026-10-23",
+          "authority": "Exact16/16 accepted scoped package before the owner-requested readiness setup extension."
+        }
+      },
+      {
+        "sourceFile": "sources/standard/pre-native-followup-0.4.1.json",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "examples/sources/standard/pre-native-followup-0.4.1.json",
+          "commit": "60590b06bb8475b3d19235f36a6fb9cd8420b245",
+          "observedOn": "2026-10-23",
+          "updatedOn": "2026-10-23",
+          "authority": "Exact17/17 scoped package before newly requested native verification."
+        }
+      },
+      {
+        "sourceFile": "sources/standard/pre-native-completion-0.4.1.json",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "examples/sources/standard/pre-native-completion-0.4.1.json",
+          "commit": "8063b65a9832143551dc021a9c00026b4c4f04f3",
+          "observedOn": "2026-10-23",
+          "updatedOn": "2026-10-23",
+          "authority": "Exact17/18 native follow-up before owner-assisted native zoom and Narrator confirmation."
+        }
+      },
+      {
+        "sourceFile": "sources/standard/pre-post-release-2026-10-30.json",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "examples/sources/standard/pre-post-release-2026-10-30.json",
+          "commit": "9fab17ddae8c2488eff63670d8f1a28d5c763a1f",
+          "observedOn": "2026-10-23",
+          "updatedOn": "2026-10-23",
+          "authority": "Exact preserved 18/18, four-milestone ledger before post-release scope expansion."
+        }
+      }
+    ]
+  },
+  "rawSource": "examples/sources/standard/pre-records-2026-10-30.json",
+  "normalizedObservation": "audit/records/2026-10-30/before-normalized.json",
+  "rawSha256": "0d1325c035ed2cfd769ce754ed794778da8f038de67b7654fa5c09b9ad18d67c",
+  "normalizedSha256": "8c6247b6f1b974deb34a5df0a24d6c1dc3ef2d8f7a36b2bf2591e773bd1547eb"
+}

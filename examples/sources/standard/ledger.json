@@ -336,7 +336,7 @@
       "priority": "P1",
       "sourceState": "planned",
       "evidence": [],
-      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome."
+      "nextAction": "Records research #27 complete; #28 defines rule ownership, then #29 supplies portable naming/layout fixtures. Yiğit separately accepts M13."
     }
   ],
   "items": [
@@ -1314,20 +1314,36 @@
       "title": "Investigate personal memory and project record lifecycles",
       "groupId": "G13",
       "milestoneId": "M13",
-      "state": "backlog",
-      "sourceState": "planned-not-implemented",
+      "state": "done",
+      "sourceState": "sourced-research-reviewed",
       "required": true,
       "blocked": false,
       "dependsOn": [],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "evidence": [
+        {
+          "kind": "research",
+          "source": "audit/records/2026-10-30/investigation.md",
+          "revision": "ce34c0190ecbf603980f89ee04dc9ed97843a064"
+        },
+        {
+          "kind": "review",
+          "source": "audit/records/2026-10-30/verification.json",
+          "revision": "ce34c0190ecbf603980f89ee04dc9ed97843a064"
+        },
+        {
+          "kind": "test",
+          "source": "https://github.com/interzettel/project-record-standard/actions/runs/41027247677",
+          "revision": "ce34c0190ecbf603980f89ee04dc9ed97843a064"
+        }
+      ],
+      "completionBasis": "Bounded #27 research criterion met: version/date-linked comparison, ten class lifecycles, PRS/public host inventory and five routing counterexamples; same-family fresh-context review found no material issues at ce34c0190ecbf603980f89ee04dc9ed97843a064. No backend effectiveness, owner acceptance or release inferred.",
       "kind": "research",
-      "owner": "Selected contributor; repository maintainer reviews",
+      "owner": "Codex contributor; fresh-context Codex review recorded",
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/27",
       "criterion": "A source-linked comparison records implementation/version/date, storage scope, writer, trust, privacy, retention, retrieval and supersession for each class. Memory recall never silently overrides source evidence or grants acceptance. Include a personal-only fact, shared repo convention, changed decision, failed experiment and generated status example; propose an explicit routing/authority map without inventing a universal memory engine.",
-      "note": "Queue 01/34. Native milestone 9. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+      "note": "Queue 01/34 research complete in PR #43. Native milestone9; M13 remains unaccepted. Next eligible package PRS-POLICY-01/#28/M10; #29 owns layouts and three-host fixtures."
     },
     {
       "id": "PRS-POLICY-01",
@@ -1686,7 +1702,8 @@
     "Historical observations and all16 required IDs retained; scoped owner acceptance closes STD-09/13 under CR-0.4-ACCESSIBILITY.",
     "Native200%/400% checks observed and owner confirmed Narrator works. Versions and actual speech transcript unavailable; no independently observed or universal WCAG conformance claim. All18 required leaves complete; readiness grade remains separate.",
     "Post-release planning observation 2026-10-30: adds 11 required and 7 deferred leaves; 18/29 required (62.1%), 18/36 retained (50.0%), 4/9 declared milestones. New required work is 0/11 and new required milestone outcomes are 0/3; v0.4.1 historical delivery remains 18/18 and 4/4.",
-    "The 30 October infrastructure expansion adds future work, not finished automation. New required work0/24; complete the real-session and cross-model gates before claiming unattended support."
+    "The 30 October infrastructure expansion adds future work, not finished automation. New required work0/24; complete the real-session and cross-model gates before claiming unattended support.",
+    "PRS-RECORDS-01 research completed after source-linked comparison and fresh-context review: required18/42→19/42; retained18/52→19/52; newly required1/24. No scope added, milestone acceptance unchanged4/13, automatic tracking remains unimplemented."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",

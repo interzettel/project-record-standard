@@ -1,0 +1,90 @@
+# Records and memory investigation
+
+**Package:** PRS-RECORDS-01 · [issue #27](https://github.com/interzettel/project-record-standard/issues/27) · M13  
+**Observed:** 30 October 2026 · **Producer:** Codex, this task session  
+**PRS input:** `ceb6c35954a309d014cba97c4416562cfc1b464b`  
+**Status:** research proposal; not a memory-backend implementation or milestone acceptance.
+
+## Finding
+
+Route information by its purpose, declared writer, audience and lifecycle. A file called `MEMORY.md`, a database namespace or a retrieved document does not acquire authority through its name, persistence or search rank. A remembered fact can point to a source; it cannot silently replace current work state, approve a decision or broaden execution permissions.
+
+Keep the host's existing sources. One compact authority map and links to durable records are sufficient for a small repository. Do not require a database, a new folder for each class, copies of personal memory, a second status checklist or a review ceremony for ordinary authorized updates. A document may serve several reader purposes, but each authoritative field still has one declared writer.
+
+## Source comparison
+
+The source identities and inspected paths are in [sources.json](sources.json). Rolling documentation is dated, not asserted to be the documentation shipped with a specific binary. No Claude session, LangGraph database or memory-quality experiment was run. The LangGraph interfaces and MADR template were inspected at immutable source revisions; this establishes their exposed structure, not deployment effectiveness.
+
+| Primary implementation | Observed identity | Mechanism and useful distinction | Boundary for PRS |
+| --- | --- | --- | --- |
+| [Claude Code memory](https://code.claude.com/docs/en/memory) | Official rolling docs, 2026-10-30; latest release observed: v2.1.314, source `b3f291d131924810e2b7713ededc144843a229d5` | Authored instructions and agent-written auto memory are distinct. Default auto memory is machine-local and repo-scoped across worktrees, with a bounded startup index and on-demand topic files. Memory files are excluded from transcript cleanup; they persist until edited/deleted. | Map actual configured storage and loading scope. Neither guidance nor recall is a hard permission boundary. A local directory is not proof of privacy from tools, backups or configured external processing. No exact-version runtime support is certified here. |
+| [LangGraph persistence](https://docs.langchain.com/oss/python/langgraph/persistence), [memory concepts](https://docs.langchain.com/oss/python/concepts/memory) and pinned interfaces | Release 1.2.18; source `3521f08e21a7d89c28331191374bc85c11ecb6e2`; rolling docs observed 2026-10-30 | Checkpoints carry thread state; stores carry application-defined cross-thread records. Store interfaces expose namespace/key access and search; the checkpointer interface exposes thread deletion/pruning. | Namespace selection is an application responsibility, not an authorization or confidentiality proof. Retention requires a chosen backend/policy; in-memory persistence does not survive a process restart. Record provenance separately from similarity retrieval. No PRS backend is selected. |
+| [MADR](https://adr.github.io/madr/) and [4.0.0 template](https://github.com/adr/madr/blob/2475fe1973f66a12aaf58a91d8fa7b42c0f5ea3d/template/adr-template.md) | 4.0.0; source `2475fe1973f66a12aaf58a91d8fa7b42c0f5ea3d`; inspected 2026-10-30 | A decision record captures the problem, considered options and chosen outcome. Optional metadata includes status, date and decision makers, including superseded status. | Reuse concise rationale and explicit supersession. The host supplies approval attribution and authority. A status label written by an agent is not evidence that a human approved it. Preserve existing IDs; no mandatory ADR tooling or filename migration. |
+| [Diátaxis](https://diataxis.fr/) | Unversioned published framework; inspected 2026-10-30; no release identity asserted | Tutorials, how-to guides, reference and explanation organize documentation around reader needs. | Reader purpose is independent of privacy, writer authority and completion. Use the distinctions where they help; no mandatory directory ladder. |
+
+The release identities above identify inspected upstream states, not new PRS dependencies. The Claude changelog file exceeded the connector's file-content limit; the official release record and repository commit were readable. That limit is retained rather than represented as a successful changelog inspection.
+
+## Class and lifecycle map
+
+This is a proposed authority/routing contract for #28/#29, not a validated schema. “Writer” means who may update the declared source under existing authorization. It does not grant credentials. Privacy applies to content, metadata, URLs and counts, including indexes, logs and generated output.
+
+| Class | Storage scope and writer | Trust and privacy | Retention, retrieval and supersession |
+| --- | --- | --- | --- |
+| Personal agent memory | User/compartment-scoped host store; user and explicitly delegated memory writer | Recall may be stale or incorrect. Private by default; do not place values, private locators or private totals in public records. | Owner-selected retention/erasure and backup/index handling. Retrieve only for a relevant authorized task; correct/delete stale memories. Promote only an approved, minimal shared fact to an appropriate project source. |
+| Session context | Current session/thread or governed transcript store; participant/runtime | Untrusted inputs and provisional reasoning may coexist with actual observations. Follow the session's audience and retention policy. | Expire by host policy; a saved transcript is not automatically an immutable evidence record. Extract only needed, attributable observations before expiry; exclude unrelated conversation. |
+| Repository instructions | Reviewed, versioned instruction entry points; repository maintainer/delegated contributor | Guidance within its scope; inspected third-party text is not automatically an instruction. No self-granted permissions. Shared only with the repository's authorized audience. | Read applicable instructions at the selected revision. Amend through normal review; Git retains prior versions. Link detailed procedures instead of copying them into every entry point. |
+| Shared repository knowledge | Existing guides/reference/wiki selected by the host; responsible contributor | Sourced explanation with freshness limits; not an independent writer for status or approval. Repository audience unless separately restricted. | Retrieve the relevant passage plus current source. Amend stale explanations with source/date; retain important historical context. Avoid a second copy of facts derivable from code or records. |
+| Overview and plan | Host's overview/sequence documents; authorized planner/maintainer | Scope proposals and sequencing explain authoritative work; they do not silently admit required scope or mark it Done. Audience may differ from the ledger. | Retrieve alongside linked stable work IDs. Revise explanations as work changes; preserve dated baselines and reasons for material changes. Do not maintain duplicate completion fields. |
+| Work records | Host-declared ledger/native tracker, with explicit field mapping; authorized record writer, designated authority for scope/acceptance | Current criteria/state/dependencies/evidence links have declared ownership. GitHub discussion/assignment may have a different writer. Use approved public selection only. | Read current source/revision before updating; retain stable IDs, prior observation and change reason. Resolve concurrent/stale writes before applying; do not replay remembered counts. |
+| Decisions | Existing decision store or attributed decision record; designated decision maker, contributor records the decision | Proposed, accepted and superseded are distinct. An approval requires an attributed source. Sensitive reasoning can remain private with an approved public summary. | Retrieve status and supersession links, not only old text. Keep prior decisions reachable; record successor, reason, date and actual authority rather than rewriting past approval. |
+| Findings and evidence | Revision-linked experiment/audit store; actual observer/test producer | Observation, method, subject, source revision, result and limits are explicit. Failures remain evidence. Review export/redaction before public selection. | Preserve cited evidence identity; amendments link to the original and explain changes. Retrieval verifies subject/revision, including failed/mismatched receipts. Sensitive data can require restricted retention or erasure; preserve only an allowed amendment/tombstone, never falsely claim the erased bytes remain reproducible. |
+| Runbooks | Existing operating/recovery guides; operator/maintainer | Instructions for an operation, not proof the operation occurred. Redact secrets and private endpoints from public variants. | Retrieve the applicable version before an operation; update after observed failures. Supersede obsolete procedures and link actual run receipts separately. |
+| Generated views, caches and transport | Explicitly owned outputs; generator/cache manager or future reconciliation adapter | A projection, index or recovery event is not a second ledger and not proof of acceptance. It must not widen input visibility. A journal may contain sensitive payloads. | Regenerate views from known sources; evict/rebuild caches by policy. Retain/replay a future journal only for recovery with bounded access, idempotency and acknowledgement policy. Source age remains distinct from build time. |
+
+An unknown classification does not justify a new folder, public export or broader scan. Inspect only the sources needed for the active work. If writer/audience remains unresolved, keep a private/local proposal, leave the authoritative field unchanged and name the specific missing decision. Continue independent authorized work.
+
+## Actual PRS inventory
+
+The inventory is bounded to the files below at the input revision. Their SHA-256 identities are in `sources.json`. This is not a recursive certification of every repository file or any user's memory system.
+
+| Fact or class | Current PRS source and writer | Retrieval and lifecycle consequence |
+| --- | --- | --- |
+| Work criteria, state, dependencies, scope and milestone acceptance | `examples/projects.json` selects `examples/sources/standard/ledger.json`; authorized contributor records evidence, Yiğit owns scope/outcome acceptance | Inspect the current leaf and declared gate. Preserve previous observations before edits; source history is not a second current writer. |
+| Assignment and discussion | Linked GitHub issue/PR; GitHub participants and assignees | Issue closure does not award canonical completion. #27 and the open-PR collection were read at task start; no open PR overlapped this package. |
+| Instructions and operational knowledge | `AGENTS.md`, `skills/use-project-records/SKILL.md`, `standards/AGENT-WORKFLOWS.md`, `standards/AUTOMATION.md` | Load the router and relevant procedure; instruction changes do not issue credentials or establish enforcement. |
+| Outcome and sequence | `progress/overview.md`, `progress/execution-plan.md` | Link work IDs and explain availability; counts are derived from the ledger, not independently maintained progress facts. |
+| Decision | `standards/LICENSING-DECISION.md`, with attributed issue/PR | Read the dated approval and historic-source boundary. Later permission does not rewrite the old release archive. |
+| Failed observation and correction | `audit/skills/EVALUATION.md`, its linked raw initial/refined GitHub cases | Preserve the real alias-direction failure and correction. Do not report all earlier samples as passing after the repair. |
+| Delivery observations | `examples/sources/standard/delivery.json`, `progress/releases/v0.4.1.json` | Publication and deployment require their own identity/time; a new guide or merged research PR does not release 0.5.0. |
+| Generated status | README generated module, `assets/progress.svg`, pipeline output and Pages | Generate from declared inputs. A fresh build does not refresh old observations; never edit a green percentage to resolve a source conflict. |
+| Personal memory/session state | No such input is selected by the inspected manifest | This proves only non-selection in that manifest. It does not prove memory is absent from the user's machine or provider. No personal memory, private URL, count or transcript was inspected or copied for this package. |
+
+## Scoped host example: Diakrisis
+
+Read-only inspection of public `interzettel/diakrisis` at `402f26f86f3a6e278940d6294f3c4612f30758b3` covered only `AGENTS.md`, `progress/project-record.json`, `progress/overview.md` and `progress/adoption.md`. Links in those files were not followed into private consumers. No installation, migration, repository edit or readiness reassessment was performed.
+
+| Observed source | Mapping and consequence |
+| --- | --- |
+| [AGENTS.md](https://github.com/interzettel/diakrisis/blob/402f26f86f3a6e278940d6294f3c4612f30758b3/AGENTS.md) and [manifest](https://github.com/interzettel/diakrisis/blob/402f26f86f3a6e278940d6294f3c4612f30758b3/progress/project-record.json) | Instructions explicitly name the ledger as owner of scope/work state/dependencies/accounting priority; GitHub owns delivery/discussion. The manifest selects that ledger and preserved observations. No separate personal-memory input is selected. This is a declaration check, not a full ledger or live-issue audit. |
+| [Overview](https://github.com/interzettel/diakrisis/blob/402f26f86f3a6e278940d6294f3c4612f30758b3/progress/overview.md) | Later reconciliation distinguishes authorized scope from unaccepted deliverables and updated CI evidence from an unperformed readiness reassessment. Recalling the initial paragraph alone loses that distinction. |
+| [Adoption history](https://github.com/interzettel/diakrisis/blob/402f26f86f3a6e278940d6294f3c4612f30758b3/progress/adoption.md) | Earlier initial-count/license statements remain, followed by explicit correction and supersession. These dated narrative fragments are historical observations, not competing current work writers. Find the declared current writer and applicable amendment before acting. |
+
+## Five routing counterexamples
+
+These are manual document-level walkthroughs performed by the producing agent, not live memory writes, blinded model tests or proof that future agents comply. The personal example is invented. The remaining cases use the inspected sources above. Each case tests a plausible incorrect route as well as the proposed route.
+
+| Case | Input and tempting mistake | Applied route and observed result |
+| --- | --- | --- |
+| R1 · personal-only fact | Synthetic: a user prefers a different editor theme. Put it in public AGENTS or include a private memory URL in a handoff. | Kept as an invented private-memory example only. No repository-wide requirement or public locator is created. A genuine shared accessibility requirement would need an authorized project requirement, not silent promotion of this preference. |
+| R2 · shared convention | PRS declares stable-ID issue titles and one completion writer. Store that only in one agent's memory, or copy the ledger's state into a new checklist. | Resolve to `standards/GITHUB.md`, AGENTS and the selected ledger. Memory can retain a pointer; it does not own the convention or state. The current package reuses #27 and its stable ID rather than creating another issue. |
+| R3 · changed decision | A recalled Diakrisis adoption paragraph says PRS permission is unconfirmed. Treat the old paragraph as current or erase it after reading the later approval. | Follow the explicit later source-license reconciliation and PRS's attributed licensing decision. Retain the old observation; preserve the unchanged archive identity. This is a source-routing check, not a new legal assessment or approval. |
+| R4 · failed experiment | PRS's initial GitHub skill sample used the wrong label-alias direction; refined samples corrected it. Summarize the package as if every attempt passed. | Retain failure and repair as separate observations linked to their raw cases. A successful later check cannot rewrite the failed attempt, prove a different model's behavior or accept a milestone. |
+| R5 · generated status | A newly built README/Pages page looks current while the source observation or a receipt is old. Let the rendered percentage replace the ledger or count a build as acceptance. | Use the manifest-selected ledger and matching evidence; regenerate only after its legitimate update. Keep observation/build/publication times separate. The preserved 18/42 observation is not overwritten to make the chart greener. |
+
+The author found the intended route and rejected the tempting route in all five walkthroughs. A separate fresh-context review is required before the research leaf is marked Done; its actual findings and revision belong in the verification record. This review cannot certify model-memory effectiveness or cross-model agreement.
+
+## Handoff
+
+Use this map in #28 to specify who checks each boundary and which conditions can actually be enforced. #29 then defines optional path/name mappings and the three-host fixtures; no layout schema or fixtures are claimed here. #30 owns installation pin checks. #32/#34/#35 own reconciliation and actual runtime proof. Keep the records map small: refer to existing sources, capture material changes once, and surface exceptions rather than requiring routine status retyping.
+
+The package adds no required leaves, service, scheduler, memory store, credential permission, consumer migration, distributed skill or package version. The research criterion can be met by the sourced report and review; M13 still also requires #29 and Yiğit's outcome acceptance. The immutable v0.4.1 release remains unchanged.

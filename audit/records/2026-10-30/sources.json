@@ -1,0 +1,187 @@
+{
+  "package": "PRS-RECORDS-01",
+  "observedOn": "2026-10-30",
+  "method": "Read-only primary documentation, immutable source interfaces/templates and selected public repository files. No installed memory runtime or private store was inspected.",
+  "prsInput": {
+    "commit": "ceb6c35954a309d014cba97c4416562cfc1b464b",
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "3a505ad30a36b5da92739c87817d17737b329d33e188d6cd03908afe718a2e3a",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/AGENTS.md"
+      },
+      {
+        "path": "examples/projects.json",
+        "sha256": "67ac1e79a1e3f96821183097a7c6e93f7c4db6e1f13f7ba9a7cffa8465f38fab",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/examples/projects.json"
+      },
+      {
+        "path": "examples/sources/standard/ledger.json",
+        "sha256": "0d1325c035ed2cfd769ce754ed794778da8f038de67b7654fa5c09b9ad18d67c",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/examples/sources/standard/ledger.json"
+      },
+      {
+        "path": "skills/use-project-records/SKILL.md",
+        "sha256": "25da894669262b54b69e068f345da0975c8a7f72f06072d22106ef4329cabcc5",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/skills/use-project-records/SKILL.md"
+      },
+      {
+        "path": "standards/AGENT-WORKFLOWS.md",
+        "sha256": "637593e93e989bcfd0078171e5538d95e3ed89d7a80162b50622d45d41dd7385",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/standards/AGENT-WORKFLOWS.md"
+      },
+      {
+        "path": "standards/AUTOMATION.md",
+        "sha256": "9a5d2b3bec830528ad76b26abab9fc8a9106269860bc5855f4b6bacbfdc8f0eb",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/standards/AUTOMATION.md"
+      },
+      {
+        "path": "standards/GITHUB.md",
+        "sha256": "2795af56ad2a588b927aeeef8332248175743b23c95c273da4a8d5c4115661fa",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/standards/GITHUB.md"
+      },
+      {
+        "path": "standards/LICENSING-DECISION.md",
+        "sha256": "3f06aa62670f80462f4be1065d126d33c22350c15677cc2e4e53d1af93a17e83",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/standards/LICENSING-DECISION.md"
+      },
+      {
+        "path": "audit/skills/EVALUATION.md",
+        "sha256": "fbf4197d43174dadb0cfc07bcf1ba220b0f93103a496d78f18c36dd0cebba420",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/audit/skills/EVALUATION.md"
+      },
+      {
+        "path": "progress/overview.md",
+        "sha256": "abbba8ebb9d13b31bdb1329f7af680601bd50161589820af0c049036f3cc3acf",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/progress/overview.md"
+      },
+      {
+        "path": "progress/execution-plan.md",
+        "sha256": "57f30d8ff85354e3b48cbaad46a763aedbf24622ab1693a8e20012ab79c70a0a",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/progress/execution-plan.md"
+      },
+      {
+        "path": "examples/sources/standard/delivery.json",
+        "sha256": "563b33775f296a27355e3df061028128c77b4db18ec4ec8c1d1bf0bb669c87ec",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/examples/sources/standard/delivery.json"
+      },
+      {
+        "path": "progress/releases/v0.4.1.json",
+        "sha256": "610467a8ae71310c87177aa5b088d8a18bbc26ac94c179f159bdea1742b1aa00",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/progress/releases/v0.4.1.json"
+      },
+      {
+        "path": "audit/skills/connect-github-tracking/initial/4.md",
+        "sha256": "4f2b6d5cd89c695a1f2c6b7aa824808635ec5cc6b2f265447cc1d633c171062a",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/audit/skills/connect-github-tracking/initial/4.md"
+      },
+      {
+        "path": "audit/skills/connect-github-tracking/1.md",
+        "sha256": "2f7c8b47f55e0a4ae7ae1263fd76c5a00d144a114116ff61cfe1da5210714095",
+        "url": "https://github.com/interzettel/project-record-standard/blob/ceb6c35954a309d014cba97c4416562cfc1b464b/audit/skills/connect-github-tracking/1.md"
+      }
+    ]
+  },
+  "upstream": [
+    {
+      "id": "claude-code",
+      "version": "v2.1.314",
+      "sourceCommit": "b3f291d131924810e2b7713ededc144843a229d5",
+      "releaseUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
+      "documentation": [
+        {
+          "url": "https://code.claude.com/docs/en/memory",
+          "identity": "rolling documentation read 2026-10-30; not mapped to an installed binary"
+        }
+      ],
+      "inspectedBoundary": "Official release metadata and repository commit; documentation comparison. Changelog file content unavailable due connector size limit.",
+      "executed": false
+    },
+    {
+      "id": "langgraph",
+      "version": "1.2.18",
+      "sourceCommit": "3521f08e21a7d89c28331191374bc85c11ecb6e2",
+      "releaseUrl": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.18",
+      "documentation": [
+        {
+          "url": "https://docs.langchain.com/oss/python/concepts/memory",
+          "identity": "rolling documentation read 2026-10-30"
+        },
+        {
+          "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+          "identity": "rolling documentation read 2026-10-30"
+        }
+      ],
+      "sourcePaths": [
+        "libs/checkpoint/langgraph/store/base/__init__.py",
+        "libs/checkpoint/langgraph/checkpoint/base/__init__.py"
+      ],
+      "inspectedBoundary": "Namespaced store get/search/put/delete interfaces and thread checkpoint interfaces at pinned source; no database started.",
+      "executed": false
+    },
+    {
+      "id": "madr",
+      "version": "4.0.0",
+      "sourceCommit": "2475fe1973f66a12aaf58a91d8fa7b42c0f5ea3d",
+      "releaseUrl": "https://github.com/adr/madr/releases/tag/4.0.0",
+      "documentation": [
+        {
+          "url": "https://adr.github.io/madr/",
+          "identity": "published site read 2026-10-30"
+        }
+      ],
+      "sourcePaths": [
+        "template/adr-template.md"
+      ],
+      "inspectedBoundary": "Decision template and optional status/date/decision-maker metadata.",
+      "executed": false
+    },
+    {
+      "id": "diataxis",
+      "version": null,
+      "sourceCommit": null,
+      "documentation": [
+        {
+          "url": "https://diataxis.fr/",
+          "identity": "unversioned published framework read 2026-10-30"
+        }
+      ],
+      "inspectedBoundary": "Four reader purposes; no release or source revision asserted.",
+      "executed": false
+    }
+  ],
+  "host": {
+    "repository": "interzettel/diakrisis",
+    "commit": "402f26f86f3a6e278940d6294f3c4612f30758b3",
+    "access": "public, read-only; no host edits or downstream traversal",
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "gitBlobSha": "eca5fe70619c711ef8b0ea3cb282277a63f8bac4",
+        "url": "https://github.com/interzettel/diakrisis/blob/402f26f86f3a6e278940d6294f3c4612f30758b3/AGENTS.md"
+      },
+      {
+        "path": "progress/project-record.json",
+        "gitBlobSha": "a8c309c2a27d51ae3ac8aebae2eb38b973c993d1",
+        "url": "https://github.com/interzettel/diakrisis/blob/402f26f86f3a6e278940d6294f3c4612f30758b3/progress/project-record.json"
+      },
+      {
+        "path": "progress/overview.md",
+        "gitBlobSha": "e4a78059e8db0861c1c896d3d3bcf4379a8dfd07",
+        "url": "https://github.com/interzettel/diakrisis/blob/402f26f86f3a6e278940d6294f3c4612f30758b3/progress/overview.md"
+      },
+      {
+        "path": "progress/adoption.md",
+        "gitBlobSha": "30da391bee67b5c1976b2be0783da3909ce26873",
+        "url": "https://github.com/interzettel/diakrisis/blob/402f26f86f3a6e278940d6294f3c4612f30758b3/progress/adoption.md"
+      }
+    ],
+    "privacy": "No personal-memory store, private source, private locator inventory or private totals collected."
+  },
+  "limits": [
+    "Rolling documentation has no asserted exact binary-version mapping.",
+    "Claude Code CHANGELOG.md was too large for the connector; official release metadata and source commit were read instead.",
+    "No Claude runtime, LangGraph backend, behavioral model comparison or private memory effectiveness was tested.",
+    "Host inspection covers only the four named public files; no downstream links, private sources or host migration were included."
+  ]
+}
