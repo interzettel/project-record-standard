@@ -36,7 +36,7 @@ Automatic progress recording after an authorized work session is separate from a
 
 ## Current development baseline
 
-Upstream releases were checked on 30 October 2026. Development CI selects Python 3.15.2 and Node 26.13.0, pinned official action commits and locked jsdom 30.1.3. Markdown 3.11.2 remains the current inspected release with a hash pin. Exact adopted action revisions are retained in the compatibility audit and workflow comments; hosted CI proves only the revision it runs.
+Upstream releases were checked on 30 October 2026. Development CI selects Python 3.15.2 and Node 26.13.0, pinned official action commits and locked jsdom 30.1.3 and build backend setuptools 84.2.1. Markdown 3.11.2 remains the current inspected release with a hash pin. Exact adopted action revisions are retained in the compatibility audit and workflow comments; hosted CI proves only the revision it runs.
 
 [Python's release table](https://www.python.org/downloads/) marks 3.10 end-of-life. The historical v0.4.1 archive and package declaration remain unchanged; new installations should use a supported Python, and the next release must make any minimum-version change explicit. [Node's release table](https://nodejs.org/en/about/previous-releases) identifies supported LTS branches. A current major does not itself prove dependency compatibility; install and behavioral checks must pass.
 

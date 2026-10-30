@@ -13,3 +13,5 @@ Local checks cover35Python tests,14JavaScript tests, the eleven-skill metadata s
 The full automatic reconciliation system, runtime/model evaluation, MCP service and consumer upgrades remain planned. The eleven distributed skill bodies are unchanged; later edits require their authoring/evaluation process. Guidance/schema correctness cannot establish universal agent reliability or a grant of permissions.
 
 UI limitation: Edge stopped automation because another extension panel was open. Five remaining native parent links and actual visual browser checks are pending; all parent relationships are explicit in issue bodies and the ledger/plan. Connector-based merge/CI/deployment checks can finish independently. No screenshot, screen-reader output or native ruleset enforcement is invented.
+
+The final development-pin pass also pins setuptools84.2.1 and adds a hosted wheel-build smoke check. A local wheel build passed; this is an unpublished test artifact, not a new v0.4.1 release or a reproducible-wheel certification.

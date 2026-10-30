@@ -80,5 +80,6 @@
       "revision": "2.0.0",
       "scope": "Version meaning plus explicitly tailored PRS assessment policy"
     }
-  ]
+  ],
+  "setuptools": "84.2.1"
 }

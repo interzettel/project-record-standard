@@ -34,6 +34,8 @@ jobs:
           config: examples/projects.json
           output: .record-build
           audience: public
+      - name: Build the Python wheel with the pinned backend
+        run: python3 -m pip wheel --no-deps --wheel-dir "${{ runner.temp }}/prs-wheel" .
       - name: Test the Python runtime and site boundaries
         run: PYTHONPATH=src python3 -m unittest discover -s tests -v
       - name: Check the versioned agent skill suite
