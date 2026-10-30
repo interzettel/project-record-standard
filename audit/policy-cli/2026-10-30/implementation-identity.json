@@ -1,0 +1,19 @@
+{
+  "revision": "c55d410e6bcc0a793591ff405aac41bcf9cd20e5",
+  "equivalentLocalCommit": "1fa496c",
+  "files": {
+    "src/project_record/__main__.py": "13dd92e24a672b9364f6377f2d66d3d3d4aaaf2984f891a443b9dace5460d546",
+    "src/project_record/build.py": "a46460f3d5b9b2d818cf93fe893b6b8e061b166b96936905ce1df9d9cb130b41",
+    "src/project_record/policy.py": "7af97d9a55f3d06c23cfa447db4403bff26fdca7fd10595d99e9d11581ac51ea",
+    "standards/COMPATIBILITY.md": "a0c7c4da44a9f7c2a54e86a4f0388b6e33007452f65b012f94b1122e9e20c5f7",
+    "standards/POLICY.md": "8890ef95577f1be703e7f0cddd8eea0cb7284f52d102c06871f1bb735ec80220",
+    "templates/policy-request.example.json": "413523bea033df6f29dff014b0bba7dfcd9358b85d84299b96679b35d6efcf8c",
+    "tests/test_packaging.py": "64d4e6c9123ab305577228e4a33cff469744bc02d609d9adc8f00e8355af9c2a",
+    "tests/test_policy.py": "be46e2ba94893dbbd8bf6172b30795b28aa6e9d5bee5eb1a921c4d67e061645a",
+    "tools/build_site.py": "835fc190048f62d405d6e5971c378d7729b56bca2ce274c83f443c4086938086",
+    "tools/check_policy.py": "6d49618bce5449ecdeb33f4566301add5629944f4344fa1131e48d3a1cff7b73",
+    "tools/package_standard.py": "dbcca336bdb0b500843d0fd34b985b9af324c486662c596e40cfd0f17bf047fb",
+    "tools/run_action.py": "5bdf283c903dcfb05ec9e62fff7c7776d802de0bfd2e8bb5b5c3f5122da12f3a"
+  },
+  "initialRevision": "6deb48498789c5f2adf23b00f1ba0d0779f48158"
+}

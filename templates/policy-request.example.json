@@ -1,0 +1,324 @@
+{
+  "policyVersion": 1,
+  "record": {
+    "contractVersion": "0.2.0",
+    "project": {
+      "id": "synthetic-handoff",
+      "name": "Offline handoff example",
+      "visibility": "public"
+    },
+    "source": {
+      "kind": "file-snapshot",
+      "path": "tests/fixtures/handoff/ledger.json",
+      "commit": null,
+      "observedOn": "2026-10-30",
+      "authority": "Synthetic fixture author only; not a consumer observation",
+      "sha256": "1c94e095e02e098d573a4d3842c937830fe24f728f9162e7333fd968cff4aea3"
+    },
+    "groups": [
+      {
+        "id": "G",
+        "title": "Synthetic work",
+        "panel": "Now"
+      }
+    ],
+    "milestones": [
+      {
+        "id": "M",
+        "title": "Synthetic outcome",
+        "goal": "Keep work completion separate from acceptance",
+        "horizon": "Now",
+        "groupIds": [
+          "G"
+        ],
+        "gateItemIds": [
+          "SYNTHETIC-LEAF-01"
+        ],
+        "acceptanceRule": "source-state",
+        "sourceAccepted": false,
+        "nextAction": "Owner reviews the outcome; no acceptance receipt exists.",
+        "unscopedWork": []
+      }
+    ],
+    "items": [
+      {
+        "id": "SYNTHETIC-LEAF-01",
+        "title": "Produce the synthetic result",
+        "groupId": "G",
+        "milestoneId": "M",
+        "state": "done",
+        "sourceState": "fixture-author-recorded-done",
+        "required": true,
+        "blocked": false,
+        "dependsOn": [],
+        "unmappedDependencies": [],
+        "evidence": [
+          {
+            "kind": "implementation",
+            "subject": "SYNTHETIC-LEAF-01",
+            "revision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+            "result": "passed",
+            "source": "synthetic:implementation",
+            "observedOn": "2026-10-30",
+            "producer": "synthetic-worker"
+          },
+          {
+            "kind": "test",
+            "subject": "SYNTHETIC-LEAF-01",
+            "revision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+            "result": "passed",
+            "source": "synthetic:test",
+            "observedOn": "2026-10-30",
+            "producer": "synthetic-checker"
+          }
+        ],
+        "completionBasis": "Fixture author records implementation and matching test; owner acceptance absent.",
+        "kind": "implementation",
+        "criterion": "Synthetic implementation and matching check exist.",
+        "owner": "Synthetic fixture author",
+        "implementationRevision": "55eeb498d36f42824bdaab5c2164888c5676e8f1"
+      }
+    ],
+    "warnings": [],
+    "presentation": {
+      "renderer": "host"
+    },
+    "inputVisibility": [
+      "public"
+    ],
+    "supplementSources": [],
+    "history": {
+      "coverage": "Only the listed pinned observations; intervening events are unknown.",
+      "snapshots": [
+        {
+          "observedOn": "2026-10-30",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "tests/fixtures/handoff/ledger.json",
+            "commit": null,
+            "observedOn": "2026-10-30",
+            "authority": "Synthetic fixture author only; not a consumer observation",
+            "sha256": "1c94e095e02e098d573a4d3842c937830fe24f728f9162e7333fd968cff4aea3"
+          },
+          "metrics": {
+            "work": {
+              "done": 1,
+              "total": 1,
+              "percent": 100.0,
+              "active": 0,
+              "review": 0,
+              "blocked": 0,
+              "unknown": 0,
+              "excluded": 0,
+              "method": "completed-leaves / required-leaves"
+            },
+            "ledger": {
+              "done": 1,
+              "total": 1,
+              "percent": 100.0,
+              "active": 0,
+              "review": 0,
+              "blocked": 0,
+              "unknown": 0,
+              "excluded": 0,
+              "method": "completed-leaves / retained-ledger-leaves"
+            },
+            "milestones": {
+              "done": 0,
+              "total": 1,
+              "known": 1,
+              "percent": 0.0,
+              "method": "accepted-milestones / declared-milestones"
+            },
+            "roadmapMean": {
+              "percent": 100.0,
+              "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+              "milestoneCount": 1
+            }
+          }
+        }
+      ],
+      "comparisons": []
+    }
+  },
+  "before": {
+    "contractVersion": "0.2.0",
+    "project": {
+      "id": "synthetic-handoff",
+      "name": "Offline handoff example",
+      "visibility": "public"
+    },
+    "source": {
+      "kind": "file-snapshot",
+      "path": "tests/fixtures/handoff/ledger.json",
+      "commit": null,
+      "observedOn": "2026-10-30",
+      "authority": "Synthetic fixture author only; not a consumer observation",
+      "sha256": "1c94e095e02e098d573a4d3842c937830fe24f728f9162e7333fd968cff4aea3"
+    },
+    "groups": [
+      {
+        "id": "G",
+        "title": "Synthetic work",
+        "panel": "Now"
+      }
+    ],
+    "milestones": [
+      {
+        "id": "M",
+        "title": "Synthetic outcome",
+        "goal": "Keep work completion separate from acceptance",
+        "horizon": "Now",
+        "groupIds": [
+          "G"
+        ],
+        "gateItemIds": [
+          "SYNTHETIC-LEAF-01"
+        ],
+        "acceptanceRule": "source-state",
+        "sourceAccepted": false,
+        "nextAction": "Owner reviews the outcome; no acceptance receipt exists.",
+        "unscopedWork": []
+      }
+    ],
+    "items": [
+      {
+        "id": "SYNTHETIC-LEAF-01",
+        "title": "Produce the synthetic result",
+        "groupId": "G",
+        "milestoneId": "M",
+        "state": "done",
+        "sourceState": "fixture-author-recorded-done",
+        "required": true,
+        "blocked": false,
+        "dependsOn": [],
+        "unmappedDependencies": [],
+        "evidence": [
+          {
+            "kind": "implementation",
+            "subject": "SYNTHETIC-LEAF-01",
+            "revision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+            "result": "passed",
+            "source": "synthetic:implementation",
+            "observedOn": "2026-10-30",
+            "producer": "synthetic-worker"
+          },
+          {
+            "kind": "test",
+            "subject": "SYNTHETIC-LEAF-01",
+            "revision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+            "result": "passed",
+            "source": "synthetic:test",
+            "observedOn": "2026-10-30",
+            "producer": "synthetic-checker"
+          }
+        ],
+        "completionBasis": "Fixture author records implementation and matching test; owner acceptance absent.",
+        "kind": "implementation",
+        "criterion": "Synthetic implementation and matching check exist.",
+        "owner": "Synthetic fixture author",
+        "implementationRevision": "55eeb498d36f42824bdaab5c2164888c5676e8f1"
+      }
+    ],
+    "warnings": [],
+    "presentation": {
+      "renderer": "host"
+    },
+    "inputVisibility": [
+      "public"
+    ],
+    "supplementSources": [],
+    "history": {
+      "coverage": "Only the listed pinned observations; intervening events are unknown.",
+      "snapshots": [
+        {
+          "observedOn": "2026-10-30",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "tests/fixtures/handoff/ledger.json",
+            "commit": null,
+            "observedOn": "2026-10-30",
+            "authority": "Synthetic fixture author only; not a consumer observation",
+            "sha256": "1c94e095e02e098d573a4d3842c937830fe24f728f9162e7333fd968cff4aea3"
+          },
+          "metrics": {
+            "work": {
+              "done": 1,
+              "total": 1,
+              "percent": 100.0,
+              "active": 0,
+              "review": 0,
+              "blocked": 0,
+              "unknown": 0,
+              "excluded": 0,
+              "method": "completed-leaves / required-leaves"
+            },
+            "ledger": {
+              "done": 1,
+              "total": 1,
+              "percent": 100.0,
+              "active": 0,
+              "review": 0,
+              "blocked": 0,
+              "unknown": 0,
+              "excluded": 0,
+              "method": "completed-leaves / retained-ledger-leaves"
+            },
+            "milestones": {
+              "done": 0,
+              "total": 1,
+              "known": 1,
+              "percent": 0.0,
+              "method": "accepted-milestones / declared-milestones"
+            },
+            "roadmapMean": {
+              "percent": 100.0,
+              "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+              "milestoneCount": 1
+            }
+          }
+        }
+      ],
+      "comparisons": []
+    }
+  },
+  "requiredRules": [
+    "PRS-EVIDENCE-01",
+    "PRS-HISTORY-01",
+    "PRS-SCOPE-01"
+  ],
+  "gates": [
+    {
+      "subject": "SYNTHETIC-LEAF-01",
+      "revision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+      "policy": {
+        "allOf": [
+          "implementation",
+          "test"
+        ]
+      },
+      "receipts": [
+        {
+          "kind": "implementation",
+          "subject": "SYNTHETIC-LEAF-01",
+          "revision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+          "result": "passed",
+          "source": "synthetic:implementation",
+          "observedOn": "2026-10-30",
+          "producer": "synthetic-worker"
+        },
+        {
+          "kind": "test",
+          "subject": "SYNTHETIC-LEAF-01",
+          "revision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+          "result": "passed",
+          "source": "synthetic:test",
+          "observedOn": "2026-10-30",
+          "producer": "synthetic-checker"
+        }
+      ]
+    }
+  ],
+  "audience": "public",
+  "changes": []
+}

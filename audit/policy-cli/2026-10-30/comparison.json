@@ -1,0 +1,84 @@
+{
+  "added": [],
+  "removed": [],
+  "stateChanges": [
+    {
+      "id": "PRS-GATE-01",
+      "from": "backlog",
+      "to": "done"
+    }
+  ],
+  "scopeChanges": [],
+  "before": {
+    "work": {
+      "done": 26,
+      "total": 42,
+      "percent": 61.9,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 26,
+      "total": 52,
+      "percent": 50.0,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  },
+  "after": {
+    "work": {
+      "done": 27,
+      "total": 42,
+      "percent": 64.3,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 27,
+      "total": 52,
+      "percent": 51.9,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  }
+}

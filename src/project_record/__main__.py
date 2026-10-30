@@ -1,4 +1,4 @@
-"""Runs offline record validation, builds, comparisons and issue checks.
+"""Runs offline record/policy validation, builds, comparisons and issue checks.
 
 Run python -m project_record with --help. Commands read declared sources and
 write only explicit local build, setup or instruction targets. No command
@@ -11,7 +11,7 @@ from pathlib import Path
 import sys
 
 from .adapters import load_config
-from .build import build
+from .build import build, check_output_destination
 from .core import RecordError, compare, export_record, summarize
 from .issues import lint_issue
 from .readme import update_readme
@@ -59,16 +59,22 @@ def main(argv: list[str] | None = None) -> int:
     command.add_argument("--target", type=Path, required=True)
     command.add_argument("--apply", action="store_true")
     command.add_argument("--upgrade", action="store_true")
+    command = subs.add_parser("policy-check")
+    command.add_argument("--request", type=Path, required=True, help="Reviewed policyVersion1 request; reads explicit local inputs only")
     args = parser.parse_args(argv)
     try:
+        if args.command == "policy-check":
+            from .policy import evaluate_file
+            result = evaluate_file(args.request)
+            print(json.dumps(result, indent=2))
+            return result["exitCode"]
         if args.command in {"check", "build", "pipeline", "export"}:
             records = load_config(args.config.resolve(), set(args.only.split(",")) if args.only else None)
             if args.command == "check":
                 result = [{"project": r["project"]["id"], "metrics": summarize(r)["metrics"]} for r in records]
             elif args.command == "export":
                 prepared = [export_record(r, args.audience) for r in records]
-                if args.audience == "public" and args.output.exists() and any(args.output.iterdir()):
-                    raise RecordError("Public export needs a new or empty destination")
+                check_output_destination(args.output, require_empty=args.audience == "public")
                 args.output.mkdir(parents=True, exist_ok=True)
                 result = []
                 for record in prepared:

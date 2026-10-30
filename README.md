@@ -67,17 +67,17 @@ Weekly dependency proposals keep development pins reviewable; they do not auto-m
 
 ## Project progress
 
-The historical release remains 18/18 complete. The expanded plan has **8/24 newly required items complete**, plus ten deferred items. The following source-derived figures include historical work and the larger current denominator; they do not measure effort or time remaining.
+The historical release remains 18/18 complete. The expanded plan has **9/24 newly required items complete**, plus ten deferred items. The following source-derived figures include historical work and the larger current denominator; they do not measure effort or time remaining.
 
 <!-- project-record:start -->
 [![Project record standard · current required scope](./assets/progress.svg)](https://interzettel.github.io/project-record-standard/standard/progress.html)
 
 | Measure | Completion | Meaning |
 | --- | ---: | --- |
-| Required work | 26/42 · 61.9% | Completed leaf items in the named required scope. |
+| Required work | 27/42 · 64.3% | Completed leaf items in the named required scope. |
 | Accepted milestones | 4/13 · 30.8% | Milestones whose declared outcome gates passed. |
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/standard/progress.html) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-10-30 against `cecb9d21`.
+Observed 2026-10-30 against `d176ce9e`.
 <!-- project-record:end -->

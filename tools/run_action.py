@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from project_record.__main__ import main
+from project_record.build import check_output_destination
+from project_record.core import RecordError
 
 
 def run() -> int:
@@ -20,8 +22,10 @@ def run() -> int:
         print("PROJECT_RECORD_CONFIG is required", file=sys.stderr)
         return 1
     destination = Path(output)
-    if destination.exists() and (not destination.is_dir() or any(destination.iterdir())):
-        print("The action requires a new or empty dedicated output directory", file=sys.stderr)
+    try:
+        check_output_destination(destination)
+    except (RecordError, OSError) as error:
+        print(str(error), file=sys.stderr)
         return 1
     arguments = ["pipeline", "--config", config, "--output", output, "--audience", audience]
     only = os.environ.get("PROJECT_RECORD_ONLY")

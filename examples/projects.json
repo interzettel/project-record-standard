@@ -190,16 +190,22 @@
           "visibility": "public",
           "authority": "Authored bounded selection/alignment and installed instruction change",
           "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-POLICY-CLI.json",
+          "visibility": "public",
+          "authority": "Authored shared read-only policy interface feature",
+          "observedOn": "2026-10-30"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-execution-2026-10-30.json",
+      "previousSourceFile": "sources/standard/pre-gates-2026-10-30.json",
       "previousSource": {
         "kind": "file-snapshot",
         "path": "examples/sources/standard/ledger.json",
-        "commit": "6db2d19e09e74b54620a723e60051ea6d0f35b8e",
+        "commit": "b6634ce486b0197a14835165b127e3e22dfd0382",
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Exact25/42 required,25/52 retained and4/13 accepted milestones before PRS-AGENT-EXECUTION completion."
+        "authority": "Exact26/42 required,26/52 retained and4/13 accepted milestones before PRS-GATE-01 completion."
       },
       "snapshots": [
         {
@@ -387,6 +393,17 @@
             "observedOn": "2026-10-30",
             "updatedOn": "2026-10-30",
             "authority": "Exact24/42 required,24/52 retained and4/13 accepted milestones before PRS-EVIDENCE-STAGES completion."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-execution-2026-10-30.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/ledger.json",
+            "commit": "6db2d19e09e74b54620a723e60051ea6d0f35b8e",
+            "observedOn": "2026-10-30",
+            "updatedOn": "2026-10-30",
+            "authority": "Exact25/42 required,25/52 retained and4/13 accepted milestones before PRS-AGENT-EXECUTION completion."
           }
         }
       ]

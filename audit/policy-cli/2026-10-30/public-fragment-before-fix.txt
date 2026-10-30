@@ -1,0 +1,15 @@
+======================================================================
+FAIL: test_additional_public_fragment_does_not_invent_visibility_scope_change (test_policy.SharedPolicyInterfaceTests.test_additional_public_fragment_does_not_invent_visibility_scope_change)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_policy.py", line 365, in test_additional_public_fragment_does_not_invent_visibility_scope_change
+    self.assertEqual(self.result(report, 'PRS-SCOPE-01')['status'], 'pass')
+AssertionError: 'fail' != 'pass'
+- fail
++ pass
+
+
+----------------------------------------------------------------------
+Ran 25 tests in 1.605s
+
+FAILED (failures=1)

@@ -1,0 +1,120 @@
+{
+  "package": "PRS-GATE-01",
+  "inputRevision": "b6634ce486b0197a14835165b127e3e22dfd0382",
+  "implementationRevision": "c55d410e6bcc0a793591ff405aac41bcf9cd20e5",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "runtime": {
+    "Python": "3.12.14",
+    "Node": "24.22.1"
+  },
+  "implementation": {
+    "summary": "Read-only policyVersion1 API/CLI/wrapper;17 stable catalogue rows, required scoped pass/fail/unknown and explicit0/1/3/2 exits; shared source/account/evidence/history/public/output guards.",
+    "canonicalWrites": false,
+    "operationAuthorized": false,
+    "skillBodiesChanged": false,
+    "recordContractChanged": false
+  },
+  "initialFailure": {
+    "log": "interface-before-implementation.txt",
+    "scope": "Current22-case tests reproduced on base:17 absent-interface errors,5 existing probes passed. No claim of17 historical core semantic bugs. Original early5-case red log unavailable."
+  },
+  "reviewCorrections": {
+    "initialRevision": "6deb48498789c5f2adf23b00f1ba0d0779f48158",
+    "producer": "Codex /root/policy_cli_review",
+    "findings": [
+      "Restoring cancelled work changed denominator without explanation/admission assessment.",
+      "Malformed public inputVisibility:null escaped structured result."
+    ],
+    "reproduction": "review-before-fix.txt",
+    "fix": "Detect restored membership and require explanation, leaving admission unknown; validate public visibility context and return structured failed check.24 targeted and141 full Python tests pass."
+  },
+  "checks": [
+    "142 Python tests pass",
+    "25 policy tests pass, including API/file/CLI/thin-wrapper equivalence and malformed metadata regressions",
+    "14 JavaScript tests pass",
+    "11 skill metadata entries valid; no new skill behavior claim",
+    "20 palette pairs pass",
+    "19-guide public build and source/README parity pass",
+    "Comment wording checker6files0findings"
+  ],
+  "limits": [
+    "Required-subset diagnostics do not certify all17 catalogue rules; unsupported predicates remain unknown.",
+    "Supplied policies/receipts/authority fields are not authenticated; no test execution or criterion-prose interpretation.",
+    "Source observation and directory checks are preflight only; no lock/CAS/race protection.",
+    "Local reports may contain private identifiers; not approved public projections.",
+    "Same-family fresh-context review, no human/cross-model/live-session or overhead-reduction proof.",
+    "No production writer,journal,lifecycle adapter,host enforcement,server,MCP,scheduler,consumer migration,permission grant or release."
+  ],
+  "progress": {
+    "requiredBefore": [
+      26,
+      42
+    ],
+    "requiredAfter": [
+      27,
+      42
+    ],
+    "retainedBefore": [
+      26,
+      52
+    ],
+    "retainedAfter": [
+      27,
+      52
+    ],
+    "newRequiredBefore": [
+      8,
+      24
+    ],
+    "newRequiredAfter": [
+      9,
+      24
+    ],
+    "acceptedMilestonesBefore": [
+      4,
+      13
+    ],
+    "acceptedMilestonesAfter": [
+      4,
+      13
+    ],
+    "scopeChanges": [],
+    "next": "PRS-RECONCILE-01/#32/M10"
+  },
+  "review": {
+    "revision": "c55d410e6bcc0a793591ff405aac41bcf9cd20e5",
+    "equivalentLocalCommit": "1fa496cc3e035657d1e4346247bec446d76b6ff5",
+    "tree": "211ba83a95b6d6a6cc7189e8b9debebc8c90b6bf",
+    "producer": "Codex /root/policy_cli_review",
+    "result": "No findings after coordinator follow-up; independently25 policy tests pass, public repetition passes while adding/removing private remains scope change. Earlier2Important findings resolved.",
+    "scope": "Fresh-context same-family read-only review, not owner or cross-model acceptance."
+  },
+  "hostedCI": {
+    "revision": "1a614f1d1b8d6699e12427bb982fec0e7b1f6640",
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41115763993",
+    "result": "success"
+  },
+  "archive": {
+    "path": "/tmp/prs-gate-corrected-kit.zip",
+    "files": 209,
+    "sha256": "926d4615836e0523266e17b92784edf5515af9f248d1e660a00fcf324ba4566d",
+    "audience": "public-input-only source distribution",
+    "published": false,
+    "verification": "Fresh extraction24 policy tests and byte-equivalent example CLI/wrapper passed; unpublished archive before completion reconciliation."
+  },
+  "coordinatorFollowup": {
+    "initialRevision": "1a614f1d1b8d6699e12427bb982fec0e7b1f6640",
+    "log": "public-fragment-before-fix.txt",
+    "reason": "Adding another public change fragment changed only visibility declaration multiplicity, causing a false scope-change failure during actual PRS reconciliation.",
+    "fix": "Compare classification sets independent of repetition/order; genuine classification changes still require explanation and unknown authority.25 policy and142 full tests pass."
+  },
+  "archiveAfterReconciliation": {
+    "path": "/tmp/prs-gate-reconciled-kit.zip",
+    "files": 211,
+    "sha256": "c130fa5700b21f52179c1014f97527d06fb3f2cedee64316060ab3b7d7a156e9",
+    "audience": "public-input-only source distribution",
+    "published": false,
+    "verification": "Fresh extraction25 policy tests and example wrapper pass; unpublished, no release."
+  }
+}

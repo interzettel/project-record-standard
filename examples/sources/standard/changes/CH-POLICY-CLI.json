@@ -1,0 +1,11 @@
+{
+  "id": "CH-POLICY-CLI",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Assess explicit record/evidence/history/public-output predicates through one scoped read-only policy API, CLI and wrapper; preserve unknown evidence and shared destination guards.",
+  "workItemIds": [
+    "PRS-GATE-01"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/51",
+  "compatibility": "Unreleased optional policyVersion1/resultVersion1; no completion contract, native/suite version or skill-body change. Build/export/action share output preflight; symlink paths or file ancestors now rejected. No writer, host enforcement, consumer migration, authority or release."
+}

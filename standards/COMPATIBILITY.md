@@ -83,3 +83,9 @@ This package does not change the historical `requires-python >=3.10` declaration
 ## Execution-guidance development change
 
 PRS-AGENT-EXECUTION adds optional executionVersion1 read-only assessment and revises the installed marked instruction section. Skill bodies/suite metadata and completion contract remain unchanged. Existing installations must explicitly preview/apply an instruction upgrade when the rules digest differs, even if skill-file suite identity matches. PinVersion1 validation retains both the preceding writer and this instruction writer; verification compares the chosen expected rules digest against actual owned bytes. No historical pin, receipt or release asset is rewritten. This is unreleased development behavior, not an automatic migration or authorization token.
+
+## Shared policy interface development change
+
+PRS-GATE-01 adds optional policyVersion1 requests and policyResultVersion1 reports through the Python API, `policy-check` command and thin wrapper. These identities are independent of completion contract0.2.0; contract0.1.0 remains readable. Required checks return exit0 for pass,1 for failure,3 for unknown and2 for invalid request input. Consumers must handle unknown explicitly and review the reported scope before using a result.
+
+Build, export, action and policy diagnostics now share the output destination guard. Existing public/action outputs still require a new or empty directory; owner build/export retain their existing reuse behavior. All reject symlinks in the destination or its ancestors and existing file ancestors. Hosts using symlink output paths must choose a real directory when adopting this unreleased change. This preflight check does not reserve the path or prevent races. No automatic installation, consumer update, host enforcement, native version bump or release occurs here.
