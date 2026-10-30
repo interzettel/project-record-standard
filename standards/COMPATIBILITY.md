@@ -2,7 +2,7 @@
 
 ## Available and planned
 
-The published toolkit and eleven-skill suite are v0.4.1, with record contract 0.2.0 and readers for 0.1.0/0.2.0. Main also contains unreleased planning and integration improvements. The [revised release direction](https://github.com/interzettel/project-record-standard/blob/main/progress/release-direction.md) proposes foundations0.5.0 followed by opt-in automation previews and separately proven support; no 0.5.0 tag, artifact, autonomous-tracking support or accepted candidate is claimed.
+The published toolkit and eleven-skill suite are v0.4.1, with record contract 0.2.0 and readers for 0.1.0/0.2.0. Main also contains unreleased planning and integration improvements. The [revised release direction](https://github.com/interzettel/project-record-standard/blob/main/progress/release-direction.md) proposes foundations 0.5.0 followed by opt-in automation previews and separately proven support; no 0.5.0 tag, artifact, autonomous-tracking support or accepted candidate is claimed.
 
 The v0.4.1 release source is `ebc6afb0b977ff3d7605893c73ac63021775c4d3`. Its source ZIP SHA-256 is `a46cdcea938eb987b936497a22db8eab07106aad7dd12a8cfe10b4ad41f74607`. Obtain it from the [release](https://github.com/interzettel/project-record-standard/releases/tag/v0.4.1), verify all assets and extracted checksums using [INSTALL](https://github.com/interzettel/project-record-standard/blob/main/INSTALL.md), and retain those identities in the adopter's dependency record. A tag name alone is not a byte identity; a checksum alone does not authenticate its publisher.
 

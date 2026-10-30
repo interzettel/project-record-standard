@@ -1,0 +1,11 @@
+{
+  "id": "CH-POLICY-CATALOGUE",
+  "component": "standard",
+  "type": "documentation",
+  "summary": "Specify17 policy rules and test existing checks and authority limits; separate foundation, automation preview and supported-operation candidate releases.",
+  "workItemIds": [
+    "PRS-POLICY-01"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/44",
+  "compatibility": "No runtime/contract/skill version bump or published artifact. No host activation, new source-writer engine or counted scope. Earlier-release preparation remains an explicit #38 detailing hold."
+}

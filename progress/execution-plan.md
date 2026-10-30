@@ -6,11 +6,11 @@ The owner requested a maintained, low-overhead infrastructure: install once, rec
 
 The prior plan is preserved under `progress/history/2026-10-30-before-infrastructure/`; its exact ledger is `examples/sources/standard/pre-infrastructure-2026-10-30.json`. The expansion adds sixteen leaves: thirteen required, three deferred. Thirty-four post-release delivery leaves now comprise twenty-four required and ten deferred; five existing parent requests earn no extra credit. Existing historical completion and acceptance stay unchanged.
 
-The [revised release direction](release-direction.md) proposes a foundations0.5.0, opt-in0.6.0-alpha previews and a supported0.6.0 only after real-session/evaluation gates. It replaces the earlier sixteen-package single release batch. Versions remain candidates. #38 currently depends on final evaluation: preparing earlier releases needs explicit detailing/dependency reconciliation before publication, not an inferred bypass. Execution prerequisites and counted scope remain unchanged by this proposal.
+The [revised release direction](release-direction.md) proposes a foundations 0.5.0, opt-in 0.6.0-alpha previews and a supported 0.6.0 only after real-session/evaluation gates. It replaces the earlier sixteen-package single release batch. Versions remain candidates. #38 currently depends on final evaluation: preparing earlier releases needs explicit detailing/dependency reconciliation before publication, not an inferred bypass. Execution prerequisites and counted scope remain unchanged by this proposal.
 
 ## Ordered packages
 
-Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 is now the earliest eligible unfinished package. #15 remains the first handoff implementation. Parallel independent preparation is allowed without creating permanent contributor roles.
+Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 also completed the policy catalogue; #29 is now the earliest eligible unfinished package. #15 remains the first handoff implementation. Parallel independent preparation is allowed without creating permanent contributor roles.
 
 | Order | Issue / stable leaf | Checkpoint | Scope | Execution prerequisites |
 | ---: | --- | --- | --- | --- |
@@ -73,4 +73,8 @@ New native milestones6,7,8,9 map to canonicalM10,M11,M12,M13. Existing native1-5
 
 After the records investigation in [PR #43](https://github.com/interzettel/project-record-standard/pull/43), required work is19/42 (45.2%), retained work19/52 (36.5%) and newly required work1/24; accepted milestones stay4/13. No scope or required denominator changed. The comparison and five routing cases are in `audit/records/2026-10-30/`; M13 acceptance and #29 remain pending.
 
-Next, execute **PRS-POLICY-01 / #28 / M10** to define rule/control ownership; #29 then maps optional paths. Do not start by provisioning a service or mass-updating consumer repositories.
+Policy/control ownership is now specified by #28. Next, execute **PRS-RECORDS-02 / #29 / M13** to map optional paths and naming with three-host fixtures. Do not start by provisioning a service or mass-updating consumer repositories.
+
+## Policy completion and next package
+
+PR44 completes #28 with17 rules,5 paired tests and explicit unenforced boundaries. Required19/42→20/42 (47.6%); retained19/52→20/52 (38.5%); newly required2/24; accepted milestones remain4/13. No criteria/dependencies/scope changed. Next: **PRS-RECORDS-02 / #29 / M13**. The release proposal separates foundations, experimental integration and supported operation; earlier release preparation remains held for #38 detailing.

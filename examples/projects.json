@@ -40,7 +40,7 @@
         "commit": null,
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Canonical ledger: preserved historical claims, requested infrastructure scope and bounded records-research completion; new milestone outcomes remain unaccepted."
+        "authority": "Canonical ledger: preserved historical claims, requested infrastructure scope and bounded records/policy research completion; new milestone outcomes remain unaccepted."
       },
       "presentation": {
         "renderer": "standard",
@@ -148,16 +148,22 @@
           "visibility": "public",
           "authority": "Authored records/memory research change; no backend or release",
           "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-POLICY-CATALOGUE.json",
+          "visibility": "public",
+          "authority": "Authored policy catalogue and candidate release-direction change",
+          "observedOn": "2026-10-30"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-records-2026-10-30.json",
+      "previousSourceFile": "sources/standard/pre-policy-2026-10-30.json",
       "previousSource": {
         "kind": "file-snapshot",
         "path": "examples/sources/standard/ledger.json",
-        "commit": "ceb6c35954a309d014cba97c4416562cfc1b464b",
+        "commit": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Exact18/42 required,18/52 retained,4/13 accepted milestones before PRS-RECORDS-01 research completion; raw bytes and normalized observation retained."
+        "authority": "Exact19/42 required,19/52 retained and4/13 accepted milestones before PRS-POLICY-01 completion."
       },
       "snapshots": [
         {
@@ -268,6 +274,17 @@
             "observedOn": "2026-10-30",
             "updatedOn": "2026-10-30",
             "authority": "Exact18/29 required,18/36 retained,4/9 milestones before owner-requested infrastructure expansion."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-records-2026-10-30.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/ledger.json",
+            "commit": "ceb6c35954a309d014cba97c4416562cfc1b464b",
+            "observedOn": "2026-10-30",
+            "updatedOn": "2026-10-30",
+            "authority": "Exact18/42 required,18/52 retained,4/13 accepted milestones before PRS-RECORDS-01 research completion; raw bytes and normalized observation retained."
           }
         }
       ]

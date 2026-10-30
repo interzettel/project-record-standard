@@ -2,7 +2,7 @@
 
 PRS records what a check proves and what still needs judgment. This catalogue specifies the selected rules for the planned automatic workflow; it does not activate hooks, protected branches, schedulers, MCP or a universal permission engine.
 
-The versioned [catalogue revision 1](https://github.com/interzettel/project-record-standard/blob/main/audit/policy/2026-10-30/catalogue.json) names each rule's source revision, applicability, writer, check point, failure/unknown behavior, trust boundary, bypass, evidence and override authority. It is a research artifact, not an extension to record contract0.2.0. [Records](RECORDS.md) supplies the information/writer map; [compatibility](COMPATIBILITY.md) supplies adoption and update decisions.
+The versioned [catalogue revision 1](https://github.com/interzettel/project-record-standard/blob/main/audit/policy/2026-10-30/catalogue.json) names each rule's source revision, applicability, writer, check point, failure/unknown behavior, trust boundary, bypass, evidence and override authority. It is a research artifact, not an extension to record contract 0.2.0. [Records](RECORDS.md) supplies the information/writer map; [compatibility](COMPATIBILITY.md) supplies adoption and update decisions.
 
 ## Rule-to-mechanism matrix
 

@@ -6,10 +6,14 @@ The exact previous source and explanation are preserved under `examples/sources/
 
 Reviewed consolidation integrates the structuring branch into main and lets the existing Pages workflow deploy the tested public projection. A tag/branch name is not a publication record. Existing release tags/assets must remain unchanged. Only already-merged, fully reachable topic branches may be removed during cleanup; retain any unmerged work.
 
-The next agent reads root AGENTS, the local router, overview, architecture/records/compatibility and the selected issue. The reviewed records investigation #27 is complete; start #28 on rule/control ownership. No VPS or portfolio-wide migration is required. Use the issue's actual criterion and source pins. Routine package updates need no repeated whole-portfolio scan. Keep any unavailable source or native/server enforcement observation explicit.
+The next agent reads root AGENTS, the local router, overview, architecture/records/compatibility and the selected issue. The reviewed records investigation #27 is complete; start #29 on portable layout/naming profiles. No VPS or portfolio-wide migration is required. Use the issue's actual criterion and source pins. Routine package updates need no repeated whole-portfolio scan. Keep any unavailable source or native/server enforcement observation explicit.
 
 Counts after expansion: required18/42 (42.9%), retained18/52 (34.6%), accepted milestones4/13; newly required0/24. Sixteen new leaves, four new checkpoints and a new order do not earn completion credit. The detailed design/baseline is maintainer-authored; new outcome acceptance remains pending.
 
 ## Records investigation handoff
 
 [PR #43](https://github.com/interzettel/project-record-standard/pull/43) completes the bounded #27 research, with primary-source identities, a scoped public host inventory and five routing counterexamples. Required18/42→19/42 (45.2%), retained18/52→19/52 (36.5%); newly required1/24; accepted milestones remain4/13. No scope added. `pre-records-2026-10-30.json` and `audit/records/2026-10-30/before-*` preserve the immediate prior observation and metadata; older snapshots remain selected. No memory backend, layout schema or automatic reconciliation is claimed. Next: #28, then #29.
+
+## Policy catalogue handoff
+
+PR44 completes #28 as a specification and boundary-test package. Structural checks do not authenticate approval or scope permission, and no compare-and-swap writer or host enforcement was installed. Required20/42 (47.6%), retained20/52 (38.5%), newly required2/24, accepted milestones4/13. Prior source bytes/meta/normalized observation remain under pre-policy/audit/policy. Next#29; release candidates and #38 earlier-release preparation hold are in release-direction.md.

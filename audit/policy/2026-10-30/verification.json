@@ -4,16 +4,35 @@
   "producer": "Codex task session",
   "inputRevision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
   "checks": [
-    "5 policy boundary tests passed",
-    "40 total Python tests passed"
+    "5 paired policy tests including3 limit probes passed",
+    "40 Python tests passed",
+    "14 JavaScript tests passed",
+    "18-guide public build passed",
+    "17 catalogue entries have all boundary fields",
+    "11-skill metadata check and20 contrast pairs passed"
   ],
   "limits": [
     "Structural approval/scope metadata is not authenticated",
     "Unpinned evidence call does not enforce revision matching",
     "No source compare-and-swap writer implemented",
     "No host settings/hook/scheduler/MCP activation or runtime enforcement claimed",
-    "Rolling official mechanism documentation inspected; not exact-version adapter support",
-    "Fresh-context review pending"
+    "Rolling official mechanism documentation inspected; not exact-version adapter support"
   ],
-  "versionProposal": "progress/release-direction.md; candidate scopes only; #38 earlier-release preparation remains an explicit hold"
+  "versionProposal": "progress/release-direction.md; candidate scopes only; #38 earlier-release preparation remains an explicit hold",
+  "researchRevision": "239b4aadac5f83faa18c6500a58fb9d7e08221cf",
+  "hostedCI": {
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41033952866",
+    "result": "success",
+    "revision": "239b4aadac5f83faa18c6500a58fb9d7e08221cf"
+  },
+  "review": {
+    "producer": "Codex /root/policy_review",
+    "revision": "239b4aadac5f83faa18c6500a58fb9d7e08221cf",
+    "mode": "fresh-context same-family read-only review",
+    "result": "No critical/important findings;5 policy tests independently rerun and passed",
+    "minorFinding": "Missing prose spaces around dates/versions; corrected in final reconciliation",
+    "limits": "Not human or cross-model proof; no real hook or host enforcement tested"
+  },
+  "next": "PRS-RECORDS-02/#29/M13; use policy writers/boundaries for optional layout fixtures",
+  "scopeEffect": "No added/removed IDs or dependency/criterion changes;19/42\u219220/42 required;19/52\u219220/52 retained; milestone acceptance4/13 unchanged"
 }
