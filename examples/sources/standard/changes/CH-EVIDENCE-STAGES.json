@@ -1,0 +1,11 @@
+{
+  "id": "CH-EVIDENCE-STAGES",
+  "component": "standard",
+  "type": "documentation",
+  "summary": "Clarify evidence claims, execution prerequisites and bounded preparation exceptions with five worked cases; preserve source criteria and acceptance authority.",
+  "workItemIds": [
+    "PRS-EVIDENCE-STAGES"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/49",
+  "compatibility": "Unreleased reference clarification and tests. Existing contract0.1/0.2 readers, execution states, blocked/readiness meanings, skill bodies/metadata and native versions unchanged. No historical recertification, permission change or publication."
+}

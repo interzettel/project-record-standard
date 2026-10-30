@@ -34,7 +34,7 @@
       "coverage": "New public adopter homepage and17 guides separate recorded release from future automation. Hosted publication and deployment are verified separately after integration; actual browser layout/speech remain untested in this pass."
     }
   ],
-  "nextAction": "Execute PRS-EVIDENCE-STAGES/#6/M5. The bounded #9 offline record-semantics gate passes; live consumer gates and M5 acceptance remain separate.",
+  "nextAction": "Execute PRS-AGENT-EXECUTION/#3/M5 using the clarified evidence/dependency reference; M5 acceptance and release gates remain separate.",
   "reconciliations": [
     {
       "package": "PRS-RECORDS-01",
@@ -84,6 +84,13 @@
       "inputRevision": "543ba0368e3d85c5bf270f171a8a6f3fabd611fd",
       "verifiedRevision": "29e8fe5202d952c218ba89581063e9fc172ed916",
       "coverage": "Read #16/#9 and complete open-PR page at start: no overlap. Minimal offline consumer stub and17 handoff tests include replay/conflicts/missing/freshness/privacy/absence of acceptance. Fresh-context review exposed4 reproduced receipt-filter failures; fixed/re-reviewed and17 tests independently passed. Live consumer/private service behavior not inspected."
+    },
+    {
+      "package": "PRS-EVIDENCE-STAGES",
+      "observedOn": "2026-10-30",
+      "inputRevision": "4e6c50dfbcb1cb9fc4ab665bc48d38a0a9b49579",
+      "verifiedRevision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
+      "coverage": "Read #6 and complete open-PR page at start: no overlap. Existing sources plus5 worked cases/7 runtime-boundary tests;5 fresh-context controls and5 installed-skill applications, all raw responses reviewed. No skill body change justified by core baseline results. Fresh-context reviewer approved portable reference path and independently passed7 tests; no real consumer or cross-model proof."
     }
   ]
 }

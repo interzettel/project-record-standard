@@ -40,7 +40,7 @@
         "commit": null,
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Canonical ledger: preserved historical claims and bounded records/policy/layout/pins/offline-handoff completion; new milestone outcomes remain unaccepted."
+        "authority": "Canonical ledger: preserved historical claims and reviewed bounded delivery completion; new milestone outcomes remain unaccepted."
       },
       "presentation": {
         "renderer": "standard",
@@ -178,16 +178,22 @@
           "visibility": "public",
           "authority": "Authored adversarial offline handoff proof",
           "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-EVIDENCE-STAGES.json",
+          "visibility": "public",
+          "authority": "Authored evidence/dependency reference clarification",
+          "observedOn": "2026-10-30"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-handoff-adversarial-2026-10-30.json",
+      "previousSourceFile": "sources/standard/pre-evidence-stages-2026-10-30.json",
       "previousSource": {
         "kind": "file-snapshot",
         "path": "examples/sources/standard/ledger.json",
-        "commit": "543ba0368e3d85c5bf270f171a8a6f3fabd611fd",
+        "commit": "4e6c50dfbcb1cb9fc4ab665bc48d38a0a9b49579",
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Exact23/42 required,23/52 retained and4/13 accepted milestones before PRS-HANDOFF-02 completion."
+        "authority": "Exact24/42 required,24/52 retained and4/13 accepted milestones before PRS-EVIDENCE-STAGES completion."
       },
       "snapshots": [
         {
@@ -353,6 +359,17 @@
             "observedOn": "2026-10-30",
             "updatedOn": "2026-10-30",
             "authority": "Exact22/42 required,22/52 retained and4/13 accepted milestones before PRS-HANDOFF-01 completion."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-handoff-adversarial-2026-10-30.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/ledger.json",
+            "commit": "543ba0368e3d85c5bf270f171a8a6f3fabd611fd",
+            "observedOn": "2026-10-30",
+            "updatedOn": "2026-10-30",
+            "authority": "Exact23/42 required,23/52 retained and4/13 accepted milestones before PRS-HANDOFF-02 completion."
           }
         }
       ]

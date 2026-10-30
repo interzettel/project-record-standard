@@ -10,7 +10,7 @@ The [revised release direction](release-direction.md) proposes a foundations 0.5
 
 ## Ordered packages
 
-Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 also completed the policy catalogue; #29 has completed the optional mapping/helpers; #30 has completed read-only pin/compatibility checks; #15/#16 have completed the bounded synthetic offline handoff gate; #6 is now the earliest eligible unfinished package. Parallel independent preparation is allowed without creating permanent contributor roles.
+Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 also completed the policy catalogue; #29 has completed the optional mapping/helpers; #30 has completed read-only pin/compatibility checks; #15/#16 have completed the bounded synthetic offline handoff gate; #6 has completed the evidence/dependency reference; #3 is now the earliest eligible unfinished package. Parallel independent preparation is allowed without creating permanent contributor roles.
 
 | Order | Issue / stable leaf | Checkpoint | Scope | Execution prerequisites |
 | ---: | --- | --- | --- | --- |
@@ -94,3 +94,7 @@ PR47 completes #15 at 5424ea8b132c44768fee804d97a54e63394d52ec with6 handoff tes
 ## Adversarial handoff completion
 
 PR48 completes #16 at 29e8fe5202d952c218ba89581063e9fc172ed916 with17 handoff tests,101 Python tests,14 JavaScript tests and a reviewed bounded offline gate PASS. Four mixed-receipt regression failures were reproduced and fixed; private visibility conditions are independently tested. Required23/42→24/42 (57.1%); retained23/52→24/52 (46.2%); newly required6/24; accepted milestones remain4/13. Previous source/metadata/normalized observation retained under pre-handoff-adversarial/audit/handoff-adversarial. No scope, criteria or dependency changes. Current next action: **PRS-EVIDENCE-STAGES / #6 / M5**. Parent#9 earns no extra credit; live consumer gates and M5 acceptance stay pending.
+
+## Evidence-stage clarification completion
+
+PR49 completes #6 at a602e90238d24ad5b87ef4025a755a27091e6c2e with5 worked cases,7 existing-runtime boundary tests,108 Python tests,14 JavaScript tests and fresh-context review. Five controls and five installed-skill applications preserve expected case claims; no core baseline failure justified editing the skill body, which already reads STANDARD. No causal/cross-model effectiveness claim. Required24/42→25/42 (59.5%); retained24/52→25/52 (48.1%); newly required7/24; accepted milestones remain4/13. Prior raw/meta/normalized observation retained under pre-evidence-stages/audit/evidence-stages. No scope, criteria, dependencies or readiness/runtime meanings changed. Current next action: **PRS-AGENT-EXECUTION / #3 / M5**. Owner acceptance and releases remain pending.
