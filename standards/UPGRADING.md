@@ -19,3 +19,7 @@ No command automatically updates GitHub fields, creates a release, deploys a sit
 ## Historical 0.1.0 → 0.2.0 contract migration
 
 The original migration note, including vocabulary aliases and renderer integration guidance, is preserved in [dated history](https://github.com/interzettel/project-record-standard/blob/main/progress/history/2026-10-23-before-release/standards--UPGRADING.md). Read it when adapting a 0.1.0 integration. Its implementation-version statement describes that historical package.
+
+## Current compatibility and maintenance policy
+
+Read [pins and update decisions](COMPATIBILITY.md) for the next-phase minor/major/security/ordinary-patch matrix and expected-versus-observed installation identities. A host may automate routine progress under its adopted policy without automatically migrating PRS itself. [Records and memory](RECORDS.md) keeps recall and private information separate from source authority; [feedback](FEEDBACK.md) routes only encountered shared gaps.

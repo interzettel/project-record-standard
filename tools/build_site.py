@@ -24,6 +24,10 @@ DOCUMENTS = [
     ('START-HERE', 'Start here'),
     ('STANDARD', 'Terminology and percentages'),
     ('WORK-MODEL', 'Work language and contribution'),
+    ('ARCHITECTURE', 'Guidance and automatic tracking'),
+    ('COMPATIBILITY', 'Pins and update policy'),
+    ('RECORDS', 'Records and agent memory'),
+    ('FEEDBACK', 'Feedback from real work'),
     ('GITHUB', 'Issues and GitHub Projects'),
     ('AUTOMATION', 'Automation'),
     ('ADAPTATION-PROFILES', 'New and existing projects'),
@@ -55,10 +59,56 @@ SITE_CSS = """
 def navigation(prefix: str) -> str:
     """Returns navigation relative to the current page's public directory."""
     return (f'<nav class="site-nav" aria-label="Standard website">'
-            f'<a href="{prefix}index.html">Example tracker</a>'
+            f'<a href="{prefix}index.html">PRS home</a>'
+            f'<a href="{prefix}standard/progress.html">Project status</a>'
             f'<a href="{prefix}guide/START-HERE.html">Use the standard</a>'
             f'<a href="{prefix}prehnite/progress.html">Prehnite example</a>'
             f'<a href="{REPOSITORY}">GitHub source</a></nav>')
+
+
+def landing_page(delivery: dict) -> str:
+    """Returns the adopter introduction with sourced publication boundaries.
+
+    Args:
+        delivery: The validated public delivery projection for the standard.
+
+    Returns:
+        Static HTML separating recorded releases from planned capabilities.
+    """
+    releases = [r for r in delivery.get('releases', [])
+                if r['component'] == 'standard' and r['channel'] == 'github-release']
+    release = max(releases, key=lambda r: r.get('publishedAt') or '', default=None)
+    version = escape(release['version']) if release else 'not recorded'
+    release_url = release['url'] if release else REPOSITORY + '/releases'
+    if urlsplit(release_url).scheme != 'https':
+        release_url = REPOSITORY + '/releases'
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Shared project records, agent workflows and an evidence-based path to automatic progress tracking.">
+<title>Project Record Standard</title><style>{SITE_CSS}
+.landing{{max-width:1100px;margin:auto;padding:64px 34px 90px}}.landing h1{{max-width:20ch}}
+.landing .intro{{max-width:70ch;font-size:21px}}.landing .eyebrow{{font-size:14px;font-weight:700;letter-spacing:.05em}}
+.landing .cards{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:32px 0}}
+.landing .card{{border:1px solid #a7b6c9;border-radius:10px;padding:24px;min-width:0}}
+.landing .card h2{{margin:0 0 14px}}.landing .links{{display:flex;flex-wrap:wrap;gap:12px 26px;margin:28px 0}}
+.landing li{{margin:12px 0}}@media(max-width:600px){{.landing{{padding:38px 18px 60px}}.landing .cards{{grid-template-columns:minmax(0,1fr)}}}}
+</style></head><body class="guide"><a class="skip-link" href="#main">Skip to content</a>{navigation('')}
+<main id="main" class="landing"><p class="eyebrow">PROJECT RECORD STANDARD</p>
+<h1>Project records that keep up with the work</h1>
+<p class="intro">Know what works, what remains, what changed and what to do next. Keep one source for each fact, preserve your project’s identity, and give humans and agents a shared way to work.</p>
+<div class="links"><a href="guide/START-HERE.html">Start with a pinned installation</a><a href="standard/progress.html">Explore the project tracker</a><a href="guide/ARCHITECTURE.html">Read the next-phase design</a></div>
+<section class="cards" aria-label="Availability and direction">
+<article class="card"><h2>Available now</h2><p>Offline validation, progress calculations, history and delivery records, eleven guidance skills, owned-file installation and static views.</p><p>Recorded github-release: <a href="{escape(release_url, quote=True)}">v{version}</a>. Installation grants no background automation or extra permissions.</p></article>
+<article class="card"><h2>Planned next</h2><p>The proposed 0.5.0 cut adds automatic after-work reconciliation, shared policy checks, verified pins and tested runtime adapters. These capabilities are not yet released.</p><p>MCP and hosted services remain optional research. <a href="guide/COMPATIBILITY.html">See compatibility and update policy</a>.</p></article>
+</section>
+<section><h2>Less tracking work, clearer decisions</h2><p>The target is one reviewed setup followed by routine recording after authorized work. The system should expose failed checks, blockers and scope growth without duplicate status edits. Real sessions must demonstrate the time saved and the exceptions that still need a person.</p></section>
+<section><h2>Find the right information</h2><ul>
+<li><a href="guide/RECORDS.html">Personal memory and project records</a>: separate private recall, shared knowledge, plans, decisions and evidence.</li>
+<li><a href="guide/WORK-MODEL.html">Open contribution</a>: contribute across disciplines with clear temporary responsibility and authority.</li>
+<li><a href="guide/FEEDBACK.html">Feedback from real work</a>: report reproducible gaps without creating a maintenance queue.</li>
+<li><a href="{REPOSITORY}/blob/main/progress/execution-plan.md">Ordered implementation plan</a>: inspect the actual work, prerequisites and evidence limits.</li>
+</ul></section><p>All progress figures are on the <a href="standard/progress.html">source-derived tracker</a>. Completion, acceptance, publication and deployment are separate claims.</p>
+</main></body></html>'''
 
 
 def rewrite_links(html: str) -> str:
@@ -134,9 +184,8 @@ def build_site(records: Path, output: Path) -> dict:
             html = html.replace('<main class="wrap"', navigation('../') + '<main class="wrap"', 1)
             content = html.encode()
         target.write_bytes(content)
-    homepage = (output / 'standard/progress.html').read_text()
-    homepage = homepage.replace(navigation('../'), navigation(''), 1)
-    (output / 'index.html').write_text(homepage)
+    delivery = json.loads((output / 'standard/delivery.json').read_text())
+    (output / 'index.html').write_text(landing_page(delivery))
     (output / '.nojekyll').touch()
     (output / 'record-build-manifest.json').write_bytes((records / 'build-manifest.json').read_bytes())
     guide = output / 'guide'

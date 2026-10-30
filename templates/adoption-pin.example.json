@@ -1,0 +1,14 @@
+{
+  "status": "illustrative-dependency-record-not-a-validated-runtime-format",
+  "toolkit": {
+    "version": "0.4.1",
+    "sourceCommit": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+    "archiveSha256": "a46cdcea938eb987b936497a22db8eab07106aad7dd12a8cfe10b4ad41f74607",
+    "channel": "https://github.com/interzettel/project-record-standard/releases/tag/v0.4.1"
+  },
+  "skillSuiteVersion": "0.4.1",
+  "recordContractVersion": "0.2.0",
+  "observedInstallationReceipt": ".project-record/agent-installation.json",
+  "futurePinValidator": "PRS-PIN-01 / issue #30",
+  "policy": "Do not auto-migrate or infer permission from a newly discovered release."
+}

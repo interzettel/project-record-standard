@@ -45,3 +45,7 @@ Primary references: [composite actions](https://docs.github.com/en/actions/tutor
 ## Accessibility regression checks
 
 Run `npm ci --ignore-scripts --no-audit --no-fund`, then `npm test`. The locked development-only DOM environment checks mounted announcements, search/focus continuity, filtered-item closure, map/list state parity and default colour contrast. These tests do not render layout or exercise screen-reader speech. The generated `/qa/accessibility.html` fixture loads the real public pages at selected CSS widths and applies explicitly labelled text stress for browser review.
+
+## Current development maintenance
+
+The 30 October 2026 refresh uses reviewed full-SHA action pins, Python 3.15.2 and Node 26.13.0 from the version files, with npm lock and hash-pinned site dependency. `.github/dependabot.yml` proposes weekly Actions/npm/pip updates; it does not merge or migrate adopters. The earlier workflow-provenance paragraph is a dated historical observation. Read [architecture](ARCHITECTURE.md) for future after-work adapters and [compatibility](COMPATIBILITY.md) for assessment/application boundaries.

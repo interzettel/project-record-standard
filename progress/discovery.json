@@ -1,48 +1,38 @@
 {
   "projectId": "standard",
   "observedOn": "2026-10-30",
-  "sourceRevision": "e5ed63afa6da204f8b4dad53103b5fce8c1b36ff",
+  "sourceRevision": "e91ad8e26392020dee232a35dd9f6d07e26a5d95",
   "sources": [
     {
       "kind": "issues and PRs",
-      "source": "GitHub connector all-state collections, page size100",
-      "coverage": "Complete named collections below page size;23 open issues after12 creations, including5 parents and18 delivery leaves. PR #14 is the open structuring draft; PR #5 is merged."
+      "source": "GitHub connector complete open-issue and all-state PR pages, page size100",
+      "coverage": "39 open issues:34 delivery leaves and5 uncounted parents. PR14 is the only open PR at review; PR5 was already merged. No inaccessible collection is treated as empty."
     },
     {
-      "kind": "native milestones",
-      "source": "https://github.com/interzettel/project-record-standard/milestones",
-      "coverage": "UI observed zero open/closed milestones before creation; created five open milestones. Native1-5 map to canonical M5-M9; no due dates supplied."
+      "kind": "branches",
+      "source": "GitHub connector complete branch page",
+      "coverage": "main9fab17d; structuring branch e91ad8e; license branch6d14bcc. Consolidation is authorized; final integration/CI observations are retained in PR14 and its hosted runs."
     },
     {
-      "kind": "labels",
-      "source": "Issue create/update connector responses and readback",
-      "coverage": "Exactly one type and priority plus area, parent/leaf and required/deferred labels applied to all23 open issues. Colours are default; taxonomy, not appearance, controls meaning."
+      "kind": "milestones and labels",
+      "source": "Native milestone UI creation plus issue-create/update readback",
+      "coverage": "New native6-9 map toM10-M13; existing1-5 map toM5-M9. All34 leaves have type/priority/area/tracking/scope labels and a native milestone; counts and completion remain canonical in the ledger."
     },
     {
-      "kind": "Projects",
-      "source": "https://github.com/interzettel/project-record-standard/projects",
-      "coverage": "UI reported no linked open or closed repository Projects. No organization-wide Project inventory or new Project creation was performed."
+      "kind": "native parent links",
+      "source": "Earlier bounded readback and attempted completion",
+      "coverage": "7/12 previously confirmed. Remaining #22\u2192#10,#23/#24\u2192#11,#25/#26\u2192#12 are preserved in issue bodies/canonical plan. Edge automation is blocked by another extension UI; no completed relationship or screenshot is fabricated."
     },
     {
-      "kind": "branches and delivery",
-      "source": "Prior triage plus current PR #14 checkout",
-      "coverage": "Main9fab17d and structuring branch inspected. Retained license branch belongs to merged PR #5. Historical release facts remain pinned; no deploy or new release attempted."
+      "kind": "current standards and upstream dependencies",
+      "source": "Official Agent Skills,AGENTS.md,MCP,GitHub,SemVer,Python,Node,Claude Code,Codex,LangGraph,MADR,Diataxis,Lucide/WAI sources and upstream action release/tag objects",
+      "coverage": "Research inspected30October2026; exact adopted action/toolchain pins in audit/compatibility/2026-10-30/upstream.json. Compatibility/effectiveness claims are limited to actual tests. No individual consumer repo or memory store was migrated."
     },
     {
-      "kind": "local sources and skills",
-      "source": "AGENTS.md; skills/use-project-records; govern-project-scope; connect-github-tracking; update-project-progress; standards; canonical manifest/ledger; runtime calculators",
-      "coverage": "Read relevant local workflows and source ownership; root AGENTS and source structure prepared together. Distributed skill content and versions unchanged."
-    },
-    {
-      "kind": "native parent relationships",
-      "source": "GitHub issue sub_issues endpoint readbacks",
-      "coverage": "Seven of twelve saved:9→15/16,13→17/18/19,10→20/21. Browser access ended before22→10,23/24→11,25/26→12. All relationships remain in both issue bodies; all native milestone mappings are verified."
+      "kind": "public site",
+      "source": "Local pipeline/site checks and existing Pages workflow",
+      "coverage": "New public adopter homepage and17 guides separate recorded release from future automation. Hosted publication and deployment are verified separately after integration; actual browser layout/speech remain untested in this pass."
     }
   ],
-  "limits": [
-    "The detailed source baseline and AGENTS change remain on PR #14 until integration.",
-    "Product implementation and all new owner acceptance are pending.",
-    "Historical accessibility test limits retain their original dates; no new screen-reader or consumer-runtime proof is claimed."
-  ],
-  "previousDiscovery": "history/2026-10-30-before-structuring/discovery.json"
+  "nextAction": "After reviewed consolidation, begin PRS-RECORDS-01/#27 with the scoped comparison, not service provisioning."
 }

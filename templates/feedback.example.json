@@ -1,0 +1,9 @@
+{
+  "status": "illustrative-proposal-not-submitted",
+  "encounter": {"task": "actual bounded work ID and outcome", "impact": "observed user/developer consequence"},
+  "identity": {"toolkitCommit": null, "suiteVersion": null, "contractVersion": null, "adapterRuntime": null},
+  "rule": {"source": null, "expected": "applicable rule", "observed": "actual result and limits"},
+  "reproduction": {"publicSafe": false, "synthetic": false, "evidence": [], "workaround": null},
+  "deduplication": {"searched": [], "coverage": "not-inspected", "existingIssue": null},
+  "publication": {"authorized": false, "destination": "interzettel/project-record-standard", "submittedUrl": null}
+}

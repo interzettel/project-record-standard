@@ -68,3 +68,7 @@ Use this index as another route to the pages in the guide:
 ## Readiness during setup
 
 New setup and existing adaptation include [L0–L5 agent readiness](READINESS.md): inspect evidence, ask about the target and delegation boundaries, record the central assessment reference, and select useful remediation. Readiness and work-completion percentages are separate.
+
+## Infrastructure and adoption boundaries
+
+The [architecture](ARCHITECTURE.md) separates guidance, deterministic checks and planned automatic reconciliation. Read [pins and update policy](COMPATIBILITY.md), [records and memory](RECORDS.md), and [feedback from real work](FEEDBACK.md) before enabling a host integration. The published v0.4.1 kit does not yet implement unattended tracking.

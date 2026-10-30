@@ -12,6 +12,10 @@ Use one primary implementation package. If it is blocked, state the missing evid
 
 Read [work language and open contribution](standards/WORK-MODEL.md). Any human or model may contribute across disciplines. A skill or review lens selects questions and procedures, not a permanent job identity. Name the current responsible contributor for the bounded package; keep accounting ownership, acceptance authority and execution permissions explicit. Record actual review producers and supported dissent. Several lenses from one model do not establish independent agreement. Existing authorization applies; this guidance grants no new permissions or budget.
 
+## Infrastructure direction
+
+The goal is routine after-work reconciliation with less tracking overhead. Read `standards/ARCHITECTURE.md`, `standards/COMPATIBILITY.md`, `standards/RECORDS.md` or `standards/FEEDBACK.md` when the selected package touches that boundary; avoid loading every guide for an unrelated edit. Use verified immutable toolkit/action/dependency pins. Keep personal memory and untrusted recall separate from authoritative work/decision/evidence records. Planned adapters are not installed capabilities. Routine authorized record updates need no repeated approval, while actual scope/acceptance and permission policies remain explicit. Feed back a real encountered gap with a safe reproduction and duplicate check; do not generate upstream work merely to fill a report.
+
 ## Sources and routing
 
 `examples/projects.json` declares inputs. `examples/sources/standard/ledger.json` alone owns completion, scope, dependency and acceptance facts; its supplements own change/delivery observations. The execution plan explains order and package interfaces. GitHub owns issue discussion and assignment. README, SVG and Pages are derived views. Context/discovery/adoption documents never become a second completion ledger. Prehnite remains a pinned reference, not a migration target.

@@ -1,0 +1,9 @@
+{
+  "id": "CH-INFRASTRUCTURE-PLAN",
+  "component": "standard",
+  "type": "documentation",
+  "summary": "Plan automatic after-work reconciliation, current compatibility pins, enforcement boundaries, records/memory profiles and encountered-gap feedback; refresh the adopter README and Pages.",
+  "workItemIds": [],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/14",
+  "compatibility": "Planning/public presentation and development tooling update. Historical v0.4.1 release remains immutable; no new product leaf or owner acceptance is awarded."
+}

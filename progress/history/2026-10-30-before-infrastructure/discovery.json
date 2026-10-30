@@ -1,0 +1,48 @@
+{
+  "projectId": "standard",
+  "observedOn": "2026-10-30",
+  "sourceRevision": "e5ed63afa6da204f8b4dad53103b5fce8c1b36ff",
+  "sources": [
+    {
+      "kind": "issues and PRs",
+      "source": "GitHub connector all-state collections, page size100",
+      "coverage": "Complete named collections below page size;23 open issues after12 creations, including5 parents and18 delivery leaves. PR #14 is the open structuring draft; PR #5 is merged."
+    },
+    {
+      "kind": "native milestones",
+      "source": "https://github.com/interzettel/project-record-standard/milestones",
+      "coverage": "UI observed zero open/closed milestones before creation; created five open milestones. Native1-5 map to canonical M5-M9; no due dates supplied."
+    },
+    {
+      "kind": "labels",
+      "source": "Issue create/update connector responses and readback",
+      "coverage": "Exactly one type and priority plus area, parent/leaf and required/deferred labels applied to all23 open issues. Colours are default; taxonomy, not appearance, controls meaning."
+    },
+    {
+      "kind": "Projects",
+      "source": "https://github.com/interzettel/project-record-standard/projects",
+      "coverage": "UI reported no linked open or closed repository Projects. No organization-wide Project inventory or new Project creation was performed."
+    },
+    {
+      "kind": "branches and delivery",
+      "source": "Prior triage plus current PR #14 checkout",
+      "coverage": "Main9fab17d and structuring branch inspected. Retained license branch belongs to merged PR #5. Historical release facts remain pinned; no deploy or new release attempted."
+    },
+    {
+      "kind": "local sources and skills",
+      "source": "AGENTS.md; skills/use-project-records; govern-project-scope; connect-github-tracking; update-project-progress; standards; canonical manifest/ledger; runtime calculators",
+      "coverage": "Read relevant local workflows and source ownership; root AGENTS and source structure prepared together. Distributed skill content and versions unchanged."
+    },
+    {
+      "kind": "native parent relationships",
+      "source": "GitHub issue sub_issues endpoint readbacks",
+      "coverage": "Seven of twelve saved:9→15/16,13→17/18/19,10→20/21. Browser access ended before22→10,23/24→11,25/26→12. All relationships remain in both issue bodies; all native milestone mappings are verified."
+    }
+  ],
+  "limits": [
+    "The detailed source baseline and AGENTS change remain on PR #14 until integration.",
+    "Product implementation and all new owner acceptance are pending.",
+    "Historical accessibility test limits retain their original dates; no new screen-reader or consumer-runtime proof is claimed."
+  ],
+  "previousDiscovery": "history/2026-10-30-before-structuring/discovery.json"
+}

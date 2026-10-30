@@ -45,6 +45,26 @@
       "id": "G9",
       "title": "Optional projections and discoverability",
       "panel": "Deferred extensions"
+    },
+    {
+      "id": "G10",
+      "title": "Portable policy and automatic reconciliation",
+      "panel": "Infrastructure preparation"
+    },
+    {
+      "id": "G11",
+      "title": "Maintained compatibility and release operations",
+      "panel": "Infrastructure preparation"
+    },
+    {
+      "id": "G12",
+      "title": "Conditional MCP and hosting",
+      "panel": "Deferred extensions"
+    },
+    {
+      "id": "G13",
+      "title": "Records and memory boundaries",
+      "panel": "Infrastructure preparation"
     }
   ],
   "milestones": [
@@ -200,7 +220,8 @@
         "PRS-CONTROL-01",
         "PRS-CONTROL-02",
         "PRS-CONVENTIONS-01",
-        "PRS-CONVENTIONS-02"
+        "PRS-CONVENTIONS-02",
+        "PRS-TEMPLATE-01"
       ],
       "acceptanceRule": "source-state",
       "sourceAccepted": false,
@@ -229,6 +250,93 @@
       "sourceState": "planned",
       "evidence": [],
       "nextAction": "Select #8 after checking execution prerequisites; owner acceptance remains pending."
+    },
+    {
+      "id": "M10",
+      "title": "Portable policy and automatic reconciliation",
+      "goal": "One reviewed installation leads to verified after-work reconciliation through a common policy/core across actual supported runtimes.",
+      "horizon": "Next",
+      "groupIds": [
+        "G10"
+      ],
+      "gateItemIds": [
+        "PRS-POLICY-01",
+        "PRS-PIN-01",
+        "PRS-GATE-01",
+        "PRS-RECONCILE-01",
+        "PRS-GATE-02",
+        "PRS-HOOK-01",
+        "PRS-RECONCILE-02",
+        "PRS-EVAL-01"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "unscopedWork": [],
+      "priority": "P1",
+      "sourceState": "planned",
+      "evidence": [],
+      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome."
+    },
+    {
+      "id": "M11",
+      "title": "Maintained compatibility and release operations",
+      "goal": "Pinned adoption, evidence-based feedback and release/drift operations stay current without noisy manual tracking.",
+      "horizon": "Next",
+      "groupIds": [
+        "G11"
+      ],
+      "gateItemIds": [
+        "PRS-FEEDBACK-01",
+        "PRS-RELEASE-01",
+        "PRS-OPS-01"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "unscopedWork": [],
+      "priority": "P1",
+      "sourceState": "planned",
+      "evidence": [],
+      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome."
+    },
+    {
+      "id": "M12",
+      "title": "Conditional MCP and hosting",
+      "goal": "Only justified MCP/hosting integrations proceed after measured needs, cost and recovery decisions.",
+      "horizon": "Later",
+      "groupIds": [
+        "G12"
+      ],
+      "gateItemIds": [
+        "PRS-MCP-01",
+        "PRS-HOST-01"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "unscopedWork": [],
+      "priority": "P2",
+      "sourceState": "planned",
+      "evidence": [],
+      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome."
+    },
+    {
+      "id": "M13",
+      "title": "Records and memory boundaries",
+      "goal": "Personal memory, shared knowledge and authoritative records have explicit homes, writers, naming and lifecycle mappings.",
+      "horizon": "Now",
+      "groupIds": [
+        "G13"
+      ],
+      "gateItemIds": [
+        "PRS-RECORDS-01",
+        "PRS-RECORDS-02"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "unscopedWork": [],
+      "priority": "P1",
+      "sourceState": "planned",
+      "evidence": [],
+      "nextAction": "Complete the scoped leaves with actual evidence; Yiğit separately accepts this outcome."
     }
   ],
   "items": [
@@ -811,7 +919,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/15",
       "criterion": "One synthetic leaf maps to one separate consumer task without another accounting row. A worker's implementation and passing check remain distinct from absent owner acceptance. The fixture runs offline, references exact contract/source identity, and changes no runtime permissions.",
-      "note": "Queue 01/18. Parent request #9 earns no extra credit. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 05/34. Parent request #9 earns no extra credit. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -834,7 +942,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/16",
       "criterion": "Retries earn one canonical credit; changed revisions cannot reuse incompatible evidence. Missing/inaccessible is distinct from zero; source freshness survives a newer render. Private payloads do not enter public output; independent review cites the tested head and bounded pass/fail/unknown.",
-      "note": "Queue 02/18. Parent request #9 earns no extra credit. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 06/34. Parent request #9 earns no extra credit. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -855,7 +963,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/6",
       "criterion": "Examples preserve original Done criteria, execution states and denominators. Implemented evidence does not imply verification or acceptance; useful negative research can finish without a release. Existing contract and readiness levels remain compatible; any skill edit follows distribution and evaluation gates.",
-      "note": "Queue 03/18. Existing request is one leaf. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 07/34. Existing request is one leaf. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -878,7 +986,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/3",
       "criterion": "Selection names leaf, issue, milestone, criterion and dependency status. Alignment catches missing/stale mappings without inferring native milestone or owner acceptance. No off-road scope, duplicate credit, mandatory all-repo scan or repeated approval is introduced.",
-      "note": "Queue 04/18. Existing request is one leaf. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 08/34. Existing request is one leaf. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -899,7 +1007,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/2",
       "criterion": "Fixture contains accessible granular work text and SVG with source identity. Deterministic rerun preserves authored README bytes; stale output is detected. Per-skill versions apply only to independently published modules; no mandatory website or host version rewrite.",
-      "note": "Queue 05/18. Existing request is one leaf. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 17/34. Existing request is one leaf. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -920,7 +1028,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/17",
       "criterion": "Inventory separates real producer output from adopter inputs and hypothetical receipts. Declared files are bounded; no recursive scan or private-input publication is implied. Fixture supplies stable identities, source/render timestamps and negative cases for later packages.",
-      "note": "Queue 06/18. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 18/34. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -944,7 +1052,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/18",
       "criterion": "All summarized claims link to their source field/path and observation. Source and projection share one work identity/credit; failed CI, merge and recommendations cannot become verified/released/accepted. Output needs no server, token, model call, client write or graph engine; missing and error states are readable.",
-      "note": "Queue 07/18. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 19/34. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -968,7 +1076,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/19",
       "criterion": "Public builds reject unreviewed sensitive input and resist hostile HTML/JS/URLs; no source mutation. Repeated builds are deterministic, owned-output-only, and stale generated output fails the parity check. Three profiles keep source identity, branding and no-Pages choice; browser checks and independent review name exact revision and limits.",
-      "note": "Queue 08/18. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 20/34. Parent request #13 earns no extra credit. Native milestone 2; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -989,7 +1097,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/20",
       "criterion": "Mixed/partial installs and missing release evidence remain unknown/conflicted. Major/minor trigger assessment; security patch escalates without automatic apply. README-only/custom layout and already-satisfied hosts receive no forced rewrite or extra completion.",
-      "note": "Queue 09/18. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 21/34. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -1012,7 +1120,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/21",
       "criterion": "Edited owned files or ambiguous mappings fail closed without overwrite. Replay/interruption/rollback preserves IDs, dependencies, accepted criteria, history and denominators. No permission, GitHub write, merge or deployment is inferred from upstream capabilities or release arrival.",
-      "note": "Queue 10/18. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 22/34. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -1037,7 +1145,7 @@
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/22",
       "criterion": "Eight minimum consumer cases and SemVer trigger cases have sourced results and limits. Distribution, owned-file conflicts, repeated install and rollback are verified; no historical v0.4.1 bytes change. Exact-head independent review and a resumable migration receipt support the future upgrade gate; publication remains separate.",
-      "note": "Queue 11/18. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 23/34. Parent request #10 earns no extra credit. Native milestone 3; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": null
     },
     {
@@ -1060,7 +1168,7 @@
       "priority": "P2",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/1",
       "criterion": "Judge/reviewer/approver/enforcement roles remain distinct. Positive escalation and confidence-to-permission attack examples preserve authorization. Repositories without delegated agents gain no setup burden or mandatory runtime.",
-      "note": "Queue 12/18. Existing request is one leaf. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 25/34. Existing request is one leaf. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution."
     },
     {
@@ -1084,7 +1192,7 @@
       "priority": "P2",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/23",
       "criterion": "Cancelled, unknown and optional/support cases have explicit denominator policy. all-gate-items and source-state milestone rules both work; deferred acceptance does not invalidate historical implementation. No diagnostic rewrites canonical Done and no durations/CPM are invented; genuine schema gaps require separate review.",
-      "note": "Queue 13/18. Parent request #11 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 27/34. Parent request #11 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution."
     },
     {
@@ -1107,7 +1215,7 @@
       "priority": "P2",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/24",
       "criterion": "Graph and equivalent table expose ready/waiting/unknown with traceable formulas. Keyboard/path focus and privacy/public snapshot checks name tested limits. No game-specific schema, competing publisher, live writes or mandatory inspector dependency enters core PRS.",
-      "note": "Queue 14/18. Parent request #11 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 28/34. Parent request #11 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution."
     },
     {
@@ -1131,7 +1239,7 @@
       "priority": "P2",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/25",
       "criterion": "No second global-standard repository, upgrade engine or VERSION authority is created. Research, suite and website version dimensions retain their meanings. Zettlerei owns visual assets; a neutral PRS profile remains usable without an approved brand.",
-      "note": "Queue 15/18. Parent request #12 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 29/34. Parent request #12 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution."
     },
     {
@@ -1154,7 +1262,7 @@
       "priority": "P2",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/26",
       "criterion": "Each consumer keeps native version, source authority, identity and release channel. No private font/media binaries leak; monochrome/missing-font fallbacks remain usable. Brand-bearing claims wait for Zettlerei #88 owner approval; neutral fixture results are reported separately.",
-      "note": "Queue 16/18. Parent request #12 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 30/34. Parent request #12 earns no extra credit. Native milestone 4; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution."
     },
     {
@@ -1177,7 +1285,7 @@
       "priority": "P3",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/8",
       "criterion": "Two copies/revisions and two cards from one source remain distinguishable without duplicate credit. Scan, print completion and physical movement cannot grant Done/Accepted or source-write authority. No printer dependency, QR secret, device execution or effectiveness claim enters PRS.",
-      "note": "Queue 17/18. Existing request is one leaf. Native milestone 5; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 33/34. Existing request is one leaf. Native milestone 5; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution."
     },
     {
@@ -1198,14 +1306,387 @@
       "priority": "P3",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/7",
       "criterion": "Canonical/public status and meaningful no-JS content have direct evidence. Citations, bot requests and referred visitors remain distinct; unknown metrics stay unknown. No private inspector data, unsolicited analytics, ranking guarantees or deployment authority is introduced.",
-      "note": "Queue 18/18. Existing request is one leaf. Native milestone 5; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue 34/34. Existing request is one leaf. Native milestone 5; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
       "deferReason": "P2/P3 extension retained outside the selected eleven-leaf post-release required scope; owner reprioritization is needed before execution."
+    },
+    {
+      "id": "PRS-RECORDS-01",
+      "title": "Investigate personal memory and project record lifecycles",
+      "groupId": "G13",
+      "milestoneId": "M13",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "research",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/27",
+      "criterion": "A source-linked comparison records implementation/version/date, storage scope, writer, trust, privacy, retention, retrieval and supersession for each class. Memory recall never silently overrides source evidence or grants acceptance. Include a personal-only fact, shared repo convention, changed decision, failed experiment and generated status example; propose an explicit routing/authority map without inventing a universal memory engine.",
+      "note": "Queue 01/34. Native milestone 9. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-POLICY-01",
+      "title": "Specify the rule catalogue and enforcement boundaries",
+      "groupId": "G10",
+      "milestoneId": "M10",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-RECORDS-01"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "research",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/28",
+      "criterion": "A rule-to-mechanism matrix distinguishes skills, CLI, local hooks, required CI, scheduler and optional MCP; positive and negative cases cover duplicate credit, mismatched evidence, unauthorized acceptance, source drift and out-of-scope work. Every hard claim identifies its actual trust boundary and bypass. No autonomous permission or mandatory service is inferred.",
+      "note": "Queue 02/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-RECORDS-02",
+      "title": "Define portable file layouts and record naming profiles",
+      "groupId": "G13",
+      "milestoneId": "M13",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-RECORDS-01",
+        "PRS-POLICY-01"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/29",
+      "criterion": "Three synthetic hosts (README-only research, private personal agent, shared repository) resolve each class to one writer/home. Private memory and transient caches are excluded from Git/public output unless deliberately approved; links do not leak private totals/URLs. Conflicting/shared IDs, stale recall, moved documents, superseded decisions and generated files have observable handling. No second completion ledger, forced language/folder hierarchy or automatic destructive migration is introduced.",
+      "note": "Queue 03/34. Native milestone 9. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-PIN-01",
+      "title": "Implement verified installation pins and compatibility assessment",
+      "groupId": "G10",
+      "milestoneId": "M10",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-POLICY-01",
+        "PRS-RECORDS-02"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/30",
+      "criterion": "Exact pins verify bytes and provenance separately; mutable main/latest cannot certify an install. Mixed/locally edited installs remain conflicted. Major/minor and security-patch assessments are distinct from authorized application; ordinary patches can be deferred with a recorded reason. Tests preserve existing v0.4.1 history and old record compatibility, and make runtime-floor changes explicit.",
+      "note": "Queue 04/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-GATE-01",
+      "title": "Expose deterministic policy checks through the shared CLI",
+      "groupId": "G10",
+      "milestoneId": "M10",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-POLICY-01",
+        "PRS-PIN-01",
+        "PRS-EVIDENCE-STAGES"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/31",
+      "criterion": "CLI fixtures reject duplicate credit, wrong-revision proof, silent scope loss and unsafe public output; unknown evidence cannot certify a required gate. Unknown is not silently success. Results are equivalent through direct calls and wrappers, with explicit exit semantics and no required model/server.",
+      "note": "Queue 09/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-RECONCILE-01",
+      "title": "Reconcile completed work automatically with a resumable journal",
+      "groupId": "G10",
+      "milestoneId": "M10",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-GATE-01",
+        "PRS-AGENT-EXECUTION",
+        "PRS-RECORDS-02"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/32",
+      "criterion": "Replayed, failed, cancelled, concurrent and stale events cannot duplicate credit or overwrite newer authored work. Successful evidence updates the canonical source and derived views under the adopted policy; human-only acceptance remains pending. Newly discovered work is visible with origin/reason and denominator effect when admitted under declared scope authority. Crash/retry preserves source bytes or exposes a recoverable partial state.",
+      "note": "Queue 10/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-GATE-02",
+      "title": "Verify the CI enforcement profile and its bypass limits",
+      "groupId": "G10",
+      "milestoneId": "M10",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-GATE-01",
+        "PRS-PIN-01"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/33",
+      "criterion": "A failing fixture is rejected at the configured boundary and corrected fixture passes at the same revision. Local hook bypass still meets the CI gate. Protected workflow/pin/policy changes, forks/untrusted code, skip/path filters, unavailable checks and authorized bypass actors have explicit coverage. Do not change broad access or silently label an advisory job enforced.",
+      "note": "Queue 11/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-HOOK-01",
+      "title": "Pilot after-work adapters in supported agent runtimes",
+      "groupId": "G10",
+      "milestoneId": "M10",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-RECONCILE-01",
+        "PRS-GATE-02"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/34",
+      "criterion": "Actual tested runtime/version and trigger evidence distinguish native lifecycle hooks from command-wrapper/manual fallback. Duplicate stop events, missing trigger, unavailable core, timeout and hook failure keep a recoverable pending record. Two runtimes share policy results; no provider-specific second rule engine or fixed professional roles. Installation previews and rollback preserve host configuration.",
+      "note": "Queue 12/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-RECONCILE-02",
+      "title": "Prove unattended tracking and recovery in real work sessions",
+      "groupId": "G10",
+      "milestoneId": "M10",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-HOOK-01",
+        "PRS-GATE-02"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/35",
+      "criterion": "An ordinary authorized session updates canonical progress and projections with zero manual copying/retyping or duplicate tracker edits. Record observed tracking time, intervention count and failure recovery rather than promise universal zero overhead. Scope growth, failed checks, blockers, next work and before/after counts remain visible. Disconnected, concurrent, cancelled and interrupted sessions recover without false Done, acceptance or publication.",
+      "note": "Queue 13/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-FEEDBACK-01",
+      "title": "Route encountered standards gaps into deduplicated feedback",
+      "groupId": "G11",
+      "milestoneId": "M11",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-POLICY-01",
+        "PRS-RECORDS-02",
+        "PRS-AGENT-EXECUTION"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/36",
+      "criterion": "A report names the actual task/impact, exact known pins/adapter, expected rule versus observed result, minimal public-safe reproduction, workaround, affected IDs and proposed check/change. Repeated root causes reuse one record, incomplete searches remain visible, private context is not exported, and a project-only bug or preference does not create an upstream ticket. Missing publication permission retains a local proposal without repeated prompts. Tests cover deduplication, denied/partial transport, redaction, no-impact suppression and no owner-acceptance inference. Track actual feedback/correction overhead; no ticket quota or required background model call.",
+      "note": "Queue 14/34. Native milestone 7. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-EVAL-01",
+      "title": "Challenge automatic tracking across models and runtimes",
+      "groupId": "G10",
+      "milestoneId": "M10",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-RECONCILE-02",
+        "PRS-AGENT-EXECUTION",
+        "PRS-FEEDBACK-01"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "research",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/37",
+      "criterion": "Cases include off-road work, owner acceptance, scope discovery, wrong revision, stale pin, bypassed/missing hook, failed checks and useful negative research. All claimed supported paths have observed outcomes; fixtures and same-model lenses are not independent multi-model proof. Report unsafe claims/writes, intervention burden and tracking time; a no-go/limited-support finding blocks an unsupported universal claim. No outside human expert is mandatory.",
+      "note": "Queue 15/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-RELEASE-01",
+      "title": "Prepare the next versioned release and adopter handoff",
+      "groupId": "G11",
+      "milestoneId": "M11",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-EVAL-01",
+        "PRS-HANDOFF-02",
+        "PRS-EVIDENCE-STAGES",
+        "PRS-FEEDBACK-01"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/38",
+      "criterion": "Candidate contents and compatibility/deprecations are explicit; immutable tag/assets/checksums and a fresh-extraction install/rollback are reproducible. Version mismatch or missing acceptance/host evidence prevents publication. README/Pages distinguish available from planned, and release change classes state who must assess/apply/defer. Old v0.4.1 tag/assets are unchanged. This task prepares release; publication needs its own observed receipt.",
+      "note": "Queue 16/34. Native milestone 7. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-OPS-01",
+      "title": "Implement quiet release-drift monitoring with freshness recovery",
+      "groupId": "G11",
+      "milestoneId": "M11",
+      "state": "backlog",
+      "sourceState": "planned-not-implemented",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-PIN-01",
+        "PRS-UPGRADE-01"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P1",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/39",
+      "criterion": "Minor/major and security-patch triggers produce a sourced assessment without automatic install or new permissions. Ordinary fixes can be deferred with a reason. Partial pagination, dropped/delayed schedules and changed release metadata preserve prior counts and expose freshness gaps. Repeat discovery is quiet and idempotent; meaningful new security changes bypass an earlier ordinary deferral.",
+      "note": "Queue 24/34. Native milestone 7. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+    },
+    {
+      "id": "PRS-MCP-01",
+      "title": "Evaluate a thin local MCP adapter over the shared core",
+      "groupId": "G12",
+      "milestoneId": "M12",
+      "state": "backlog",
+      "sourceState": "deferred-not-selected",
+      "required": false,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-GATE-01",
+        "PRS-PIN-01"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "research",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P2",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/40",
+      "criterion": "At least two real client paths are assessed with exact versions and explicit unsupported results; tools return core-equivalent claims. Path scoping, untrusted input, error/cancel behavior and process permissions are tested. No second ledger, policy implementation, implicit model call or always-on server. A supported no-adapter decision can satisfy this research criterion.",
+      "note": "Queue 26/34. Native milestone 8. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "deferReason": "Conditional/optional extension; retained outside required preparation until deliberately selected."
+    },
+    {
+      "id": "PRS-TEMPLATE-01",
+      "title": "Improve tracker icons and visual templates accessibly",
+      "groupId": "G8",
+      "milestoneId": "M8",
+      "state": "backlog",
+      "sourceState": "deferred-not-selected",
+      "required": false,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-TAILOR-README"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "implementation",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P2",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/41",
+      "criterion": "Icons complement visible labels and have appropriate accessible names or decorative hiding; colour is not the only status signal. Light/dark, keyboard focus, touch, 320px reflow, text enlargement and monochrome/print fallbacks retain equivalent readable content. Exact asset versions/licences and screenshot observations are recorded; no external icon/font CDN, analytics, fixed global branding or metric/state changes are required.",
+      "note": "Queue 31/34. Native milestone 4. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "deferReason": "Conditional/optional extension; retained outside required preparation until deliberately selected."
+    },
+    {
+      "id": "PRS-HOST-01",
+      "title": "Decide whether remote hosting solves a measured need",
+      "groupId": "G12",
+      "milestoneId": "M12",
+      "state": "backlog",
+      "sourceState": "deferred-not-selected",
+      "required": false,
+      "blocked": false,
+      "dependsOn": [
+        "PRS-MCP-01",
+        "PRS-OPS-01"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "kind": "research",
+      "owner": "Selected contributor; repository maintainer reviews",
+      "priority": "P2",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/42",
+      "criterion": "A costed decision includes owner/restore/exit plan and verifies the need cannot be met more simply by local/CI operation. No-service is a valid outcome. No server, paid account, credentials, automatic migrations or broad public/private-data access are created by this investigation.",
+      "note": "Queue 32/34. Native milestone 8. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates.",
+      "deferReason": "Conditional/optional extension; retained outside required preparation until deliberately selected."
     }
   ],
   "warnings": [
     "Historical observations and all16 required IDs retained; scoped owner acceptance closes STD-09/13 under CR-0.4-ACCESSIBILITY.",
     "Native200%/400% checks observed and owner confirmed Narrator works. Versions and actual speech transcript unavailable; no independently observed or universal WCAG conformance claim. All18 required leaves complete; readiness grade remains separate.",
-    "Post-release planning observation 2026-10-30: adds 11 required and 7 deferred leaves; 18/29 required (62.1%), 18/36 retained (50.0%), 4/9 declared milestones. New required work is 0/11 and new required milestone outcomes are 0/3; v0.4.1 historical delivery remains 18/18 and 4/4."
+    "Post-release planning observation 2026-10-30: adds 11 required and 7 deferred leaves; 18/29 required (62.1%), 18/36 retained (50.0%), 4/9 declared milestones. New required work is 0/11 and new required milestone outcomes are 0/3; v0.4.1 historical delivery remains 18/18 and 4/4.",
+    "The 30 October infrastructure expansion adds future work, not finished automation. New required work0/24; complete the real-session and cross-model gates before claiming unattended support."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
@@ -1323,7 +1804,8 @@
           "PRS-CONTROL-01",
           "PRS-CONTROL-02",
           "PRS-CONVENTIONS-01",
-          "PRS-CONVENTIONS-02"
+          "PRS-CONVENTIONS-02",
+          "PRS-TEMPLATE-01"
         ]
       },
       {
@@ -1334,6 +1816,53 @@
         "workItemIds": [
           "PRS-PROJECTIONS",
           "PRS-DISCOVERABILITY"
+        ]
+      },
+      {
+        "id": "WP-11",
+        "deliverable": "Portable policy and automatic reconciliation",
+        "owner": "Repository maintainer; selected contributor",
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "workItemIds": [
+          "PRS-POLICY-01",
+          "PRS-PIN-01",
+          "PRS-GATE-01",
+          "PRS-RECONCILE-01",
+          "PRS-GATE-02",
+          "PRS-HOOK-01",
+          "PRS-RECONCILE-02",
+          "PRS-EVAL-01"
+        ]
+      },
+      {
+        "id": "WP-12",
+        "deliverable": "Maintained compatibility and release operations",
+        "owner": "Repository maintainer; selected contributor",
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "workItemIds": [
+          "PRS-FEEDBACK-01",
+          "PRS-RELEASE-01",
+          "PRS-OPS-01"
+        ]
+      },
+      {
+        "id": "WP-13",
+        "deliverable": "Conditional MCP and hosting",
+        "owner": "Repository maintainer; selected contributor",
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "workItemIds": [
+          "PRS-MCP-01",
+          "PRS-HOST-01"
+        ]
+      },
+      {
+        "id": "WP-14",
+        "deliverable": "Records and memory boundaries",
+        "owner": "Repository maintainer; selected contributor",
+        "acceptance": "Each leaf meets its own criterion and evidence policy. Yiğit separately accepts the milestone; no publication or permission is inferred.",
+        "workItemIds": [
+          "PRS-RECORDS-01",
+          "PRS-RECORDS-02"
         ]
       }
     ],
@@ -1347,6 +1876,11 @@
         "id": "STD-post-release-2026-10-30",
         "status": "proposed",
         "note": "Owner requested decomposition, AGENTS optimization and GitHub organization. Detailed execution structure is maintainer-authored in PR #14; product outcomes are not accepted."
+      },
+      {
+        "id": "STD-infrastructure-2026-10-30",
+        "status": "proposed",
+        "note": "Owner requested enforcement/automation research, automatic after-work tracking, current standards/pins, memory/record separation, visuals and encountered-gap feedback. The detailed design/cut is maintainer-authored; implementation and outcome acceptance remain pending."
       }
     ],
     "changeRequests": [
@@ -1397,6 +1931,12 @@
         "status": "proposed",
         "reason": "Yiğit requested use of repository skills, AGENTS optimization, granular work, new tagged issues and an executable order.",
         "impact": "Preserves all 18 historical leaves and four accepted milestones; adds 18 distinct leaves in M5-M9, of which 11 are required and seven deferred. Required18/18→18/29; retained18/18→18/36; declared milestones4/4→4/9. Parent requests earn no duplicate credit. Runtime0.4.1 and contract0.2.0 remain unchanged. Detailed baseline awaits review in PR #14."
+      },
+      {
+        "id": "CR-INFRASTRUCTURE-2026-10-30",
+        "status": "proposed",
+        "reason": "Owner expanded the preparation from guidance-only work to useful low-overhead infrastructure and authorized consolidation/merge/public documentation.",
+        "impact": "Adds 16 distinct leaves: 13 required and three deferred; old leaves/criteria/acceptance preserved. Required18/29→18/42;retained18/36→18/52;declared milestones4/9→4/13. New selected required work0/24. Reorders future work around records/policy/pins before after-work automation. A proposed0.5.0 cut is not a release or accepted capability."
       }
     ],
     "risks": [

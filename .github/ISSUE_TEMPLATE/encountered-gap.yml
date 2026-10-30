@@ -1,0 +1,36 @@
+name: Encountered PRS gap
+description: Report a shared-standard problem encountered during actual work.
+title: "[feedback] "
+labels: ["type:research", "area:semantics", "priority:P2"]
+body:
+  - type: markdown
+    attributes:
+      value: "Report the smallest useful case. Check existing issues first, retain a safe workaround, and omit private memory, credentials and identifying logs. A host-only bug belongs in its own repository."
+  - type: textarea
+    id: impact
+    attributes:
+      label: Actual task and impact
+      description: What work exposed this gap, and what did it prevent or make harder?
+    validations:
+      required: true
+  - type: textarea
+    id: identity
+    attributes:
+      label: Known pins and environment
+      description: Toolkit, suite, contract and relevant adapter/runtime versions. Unknown is acceptable.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected rule and observed result
+      description: Link the applicable rule and explain the actual difference, including uncertainty.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Minimal safe reproduction and workaround
+      description: Include observed checks, related issue search, practical workaround and a narrow proposed remedy if known. Synthetic reproductions are welcome when labelled.
+    validations:
+      required: true

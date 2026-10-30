@@ -63,3 +63,7 @@ PYTHONPATH=src python3 tools/check_readme.py --records ../record-smoke
 ```
 
 Serve `record-site` with a local HTTP server to inspect the example. Adapting a project connects reviewed output to its existing site and deployment process. The source kit does not replace that site.
+
+## Development tree and future support
+
+The instructions above describe the immutable v0.4.1 kit. Current main also contains unreleased planning/tooling changes. Its development checks use the pinned `.python-version` and `.node-version`; Python3.10 is now end-of-life, so choose a supported Python for new installations. A future minimum-version change belongs to the next declared release, with its compatibility notes. Do not replace the v0.4.1 checksum with a development archive. See [compatibility](standards/COMPATIBILITY.md).
