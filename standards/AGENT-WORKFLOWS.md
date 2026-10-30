@@ -37,6 +37,39 @@ Give each leaf one accounting owner and primary milestone. Link shared prerequis
 
 Propose unknown scope in concrete language, proceed with authorized preparation, and retain the designated authority’s actual approval boundary. An observed snapshot is useful before a baseline is approved. A working setup is not proof that the plan is complete or accepted.
 
+## Select and reconcile an implementation package
+
+At an implementation turn, use the existing authorized queue and its authoritative source. Inspect the selected scope's issue/PR observations, local instructions and current plan. Preserve coverage/date/revision; refresh only relevant missing or stale observations. A new bounded feature does not require rescanning every repository, private memory store or unrelated branch. Setup or substantial scope expansion still uses the wider scouting process above. Missing service access remains unknown and keeps the last observation visible.
+
+Select an existing required, unfinished **accounting leaf**, following the host's declared order (which can express outcome, horizon and priority), execution prerequisites, actual holds, authorization and capacity. Use the [evidence/dependency meanings](STANDARD.md#evidence-claims-and-dependency-meanings). A parent groups work, and a completion or acceptance gate does not automatically become a start prerequisite. Retain unknown meaning/evidence; do not infer eligibility. If an earlier item is blocked or unknown, explain it and continue known eligible independent work under the existing authorization. If none is eligible, report the missing fact/decision and responsible next action. A new idea remains a proposal until scoped; it cannot displace the authorized queue or earn an extra completion point.
+
+Start with the leaf ID, issue URL/number, **canonical** milestone ID, exact criterion, bounded deliverable, dependency status and actual remaining gate. A native milestone number is an observed host mapping, never a number guessed from the canonical ID. A missing mapping can prompt a bounded detailing/repair pass within existing authority; retain the ID/criterion/denominator, and seek a decision only for an actual scope or permission change. Branch/PR titles and commits use the existing stable ID. Internal steps earn no duplicate credit.
+
+At package end, preserve the previous source/observation and record actual implementation/check/review revisions, results and limitations. Update the canonical writer once; reconcile relevant issue discussion/status under the task's authorization and regenerate README/graphic/site projections through their owners. Keep issue closure, Done, outcome acceptance, release and deployment separate. Report source/issue mapping gaps, unchanged or changed named fractions, actual blockers, remaining owner/release gates and the **next eligible leaf + issue + milestone + action**. Routine authorized recording does not need repeated approval. A production writer, journal and host scheduling are separate packages, not effects of these instructions.
+
+### Optional read-only assessment API
+
+`project_record.execution.select_work` and `check_alignment` consume an existing loaded record plus an optional **executionVersion1** local assessment profile. This does not extend record contract0.2.0 or create a second completion ledger. The profile supplies a complete order for that selected record's leaves, a source SHA-256, per-leaf authorized/hold/capacity observations, explicit dependency meanings, optional native mapping, explicitly obsolete artifact URLs and optional milestone evidence policies. Every leaf occurs once; undeclared, duplicate or omitted IDs are rejected. Missing conditions/dependency meaning remain unknown. Done/cancelled/deferred leaves are not selected. No universal priority formula or permission is inferred from a state label.
+
+```python
+from project_record.adapters import load_config
+from project_record.execution import select_work, check_alignment
+
+record = load_config(config_path)[0]
+start = select_work(record, profile, current_source_sha256=current_hash,
+                    as_of=report_date)
+alignment = check_alignment(record, profile, issue_snapshot, as_of=report_date,
+                            readme=readme_path, expected_module=current_generated_module)
+```
+
+These variables are host-supplied inputs, not a new configuration mandate. `current_hash` is the actually observed current canonical source hash; missing/mismatched/stale source identity cannot support current selection. `authorized` is an observation of existing task authority, not a grant, signature or credential. Holds and capacity remain separate. This helper does not execute bounded dependency exceptions: an explicit blocked flag remains blocking; resolve the host's allowed scope before assessing it. Completion/acceptance edge labels do not erase their later gates.
+
+Issue snapshots contain `projectId`, `source`, `observedOn`, an explicit `complete` coverage boolean and interpreted rows with `url`, `leafId`, `milestoneId`, optional `nativeMilestone` and `artifactUrls`. A host adapter owns interpretation of actual issue bodies. No snapshot is fetched, authenticated or silently refreshed. An absent row is a mismatch only for declared fresh complete coverage; partial, stale or unavailable coverage stays unknown. Unmapped observed issues, including parents, are diagnostic references, never added work rows. Conflicting explicit canonical body linkage is reported even if native linkage matches. An actual historical commit URL is not stale merely because it is old; only explicitly configured obsolete refs are flagged.
+
+`check_alignment` reports canonical/issue mapping gaps, configured obsolete refs, accepted outcomes with unassessed/unsatisfied declared evidence, and actual marked README drift against the **supplied current generator module**. It never overwrites legacy acceptance: no policy means unassessed, not newly rejected; supplied matching metadata still cannot authenticate an owner. README checks inspect the marked text only; SVG/layout checks remain separate. Diagnostics may expose local/private URLs and are not an approved public projection. They are not a CI enforcement claim or an automatic reconciliation service.
+
+The synthetic `tests/fixtures/execution/` uses actual public issue URL identities with **invented** work states/mappings. It demonstrates one blocked earlier item, an unknown prerequisite, an eligible leaf, a deferred idea and an uncounted parent, with deliberate stale issue/milestone/artifact refs. No current native issue state is asserted. Run `PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_agents.py' -v`; actual installed-guidance application is recorded separately from installer/metadata success.
+
 ## Let the system grow with the project
 
 Revisit the overview and scouting record when the outcome changes, new substantial work appears, a release closes, sources conflict or a repo has accumulated unfinished work. Ordinary bounded progress updates can use the existing map. Scope changes refresh the affected map and priorities.
@@ -76,7 +109,7 @@ PYTHONPATH=src python3 -m project_record install-skills --toolkit . --target /pa
 
 The installer writes `.agents/skills/`, appends a marked section to the existing `AGENTS.md`, and records exact file and suite hashes in `.project-record/agent-installation.json`. Existing instructions and unrelated files remain intact. A repeat run has no changes. An interrupted installation can resume when the partially written files match the selected suite.
 
-Review an upgrade with `--upgrade`, then use `--upgrade --apply`. Changed project-owned skill files cause a conflict; reconcile them deliberately. The installer does not delete retired skills, overwrite local edits, vendor the runtime, create a workflow, edit the ledger, schedule a job or deploy a site. Vendor/pin the toolkit separately under the repository’s dependency policy. Repositories whose agent runner uses another discovery directory can point it to `.agents/skills/` or install the same reviewed folders using that runner’s documented mechanism.
+Review an upgrade with `--upgrade`, then use `--upgrade --apply`. A changed owned instruction digest also requires that explicit upgrade even when skill-file bytes and suite label are unchanged. Existing pinVersion1 readers recognize the preceding instruction writer as well as the execution-guidance writer; an old expected pin still checks its own bytes and never authorizes an upgrade. Changed project-owned skill files cause a conflict; reconcile them deliberately. The installer does not delete retired skills, overwrite local edits, vendor the runtime, create a workflow, edit the ledger, schedule a job or deploy a site. Vendor/pin the toolkit separately under the repository’s dependency policy. Repositories whose agent runner uses another discovery directory can point it to `.agents/skills/` or install the same reviewed folders using that runner’s documented mechanism.
 
 ## Status and operational telemetry
 

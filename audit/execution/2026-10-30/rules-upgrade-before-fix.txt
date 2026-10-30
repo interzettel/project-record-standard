@@ -1,0 +1,13 @@
+======================================================================
+FAIL: test_changed_owned_rules_need_upgrade_even_when_skill_suite_bytes_match (test_agents.InstructionUpgradeTests.test_changed_owned_rules_need_upgrade_even_when_skill_suite_bytes_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_agents.py", line 126, in test_changed_owned_rules_need_upgrade_even_when_skill_suite_bytes_match
+    with self.assertRaisesRegex(RecordError, 'upgrade'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RecordError not raised
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.064s
+
+FAILED (failures=1)

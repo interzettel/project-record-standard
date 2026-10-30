@@ -247,3 +247,19 @@ class PinTests(unittest.TestCase):
             result = assess_update('1.0.0-alpha.1+build-one', available)
             self.assertEqual(result['change'], 'unchanged')
             self.assertEqual(result['disposition'], 'no-change')
+
+    def test_historical_rules_profile_remains_readable_without_upgrading_its_install(self):
+        from unittest.mock import patch
+        from project_record.agents import _rules
+        from project_record.pins import validate_pin
+        # Freeze the preceding writer's exact instruction bytes for this suite.
+        legacy = lambda names, digest, **kwargs: _rules(names, digest, execution=False)
+        with patch('project_record.agents._rules', side_effect=legacy), patch('project_record.pins._rules', side_effect=legacy):
+            install_skills(self.kit, self.target, apply=True, upgrade=True)
+            old_pin = capture_pin(self.kit, ['policy.md'], 'a' * 40, 'tools/prs')
+        before = (self.target / 'AGENTS.md').read_bytes()
+        validate_pin(old_pin)
+        self.assertEqual(verify_installation(old_pin, self.target)['bytes'], 'selected-bytes-match')
+        self.assertEqual((self.target / 'AGENTS.md').read_bytes(), before)
+        root = Path(__file__).resolve().parents[1]
+        validate_pin(json.loads((root / 'templates/adoption-pin.example.json').read_text()))

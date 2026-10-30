@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "adapter": "normalized-v1",
+      "sourceFile": "ledger.json",
+      "project": {
+        "id": "synthetic-execution",
+        "name": "Synthetic execution fixture",
+        "repository": "interzettel/project-record-standard",
+        "visibility": "public"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "commit": null,
+        "path": "tests/fixtures/execution/ledger.json",
+        "observedOn": "2026-10-30",
+        "updatedOn": "2026-10-30",
+        "authority": "Synthetic fixture only; real issue URL identities, invented states"
+      },
+      "presentation": {
+        "renderer": "host"
+      }
+    }
+  ]
+}

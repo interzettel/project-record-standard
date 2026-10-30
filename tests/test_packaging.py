@@ -25,6 +25,9 @@ class DistributionTests(unittest.TestCase):
                 self.assertIn(root + 'LICENSE', names)
                 self.assertIn(root + 'src/project_record/record_layout.py', names)
                 self.assertIn(root + 'src/project_record/pins.py', names)
+                self.assertIn(root + 'src/project_record/execution.py', names)
+                for name in ['projects.json','ledger.json','profile.json','issues.json']:
+                    self.assertIn(root + 'tests/fixtures/execution/' + name, names)
                 self.assertIn(root + 'templates/adoption-pin.example.json', names)
                 self.assertIn(root + 'tests/test_pins.py', names)
                 self.assertIn(root + 'tests/test_handoff.py', names)

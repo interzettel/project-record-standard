@@ -1,0 +1,14 @@
+{
+  "inputRevision": "6db2d19e09e74b54620a723e60051ea6d0f35b8e",
+  "observedOn": "2026-10-30",
+  "files": {
+    "src/project_record/execution.py": "ec227b9aa302569bcdd0b2d1031f197e31000eb6cc11e699a29241f50ffe691a",
+    "src/project_record/agents.py": "dfadc53f7dc25e1a989415f9fb1e85c64a8af0696703a99a55510a517a88f8ce",
+    "src/project_record/pins.py": "47451e67c507cf6db03ad93705ad0dca3ac82899f751f1656253b1d4dfc9a088",
+    "standards/AGENT-WORKFLOWS.md": "30906ee5c83f2481b1ab23b7949d6c8cc5288c201a6e26421aa61251b9d2c14f",
+    "standards/STANDARD.md": "1d7f8cc2159d20892aaad5d7bfa198feec6b995a390693876c4f243d9d8151e0",
+    "skills/manifest.json": "21582cecfe852c09eeb82626cb4b1ff66ef8e2ba24c0ba6857e04ef9fcbb9c2a",
+    "skills/use-project-records/SKILL.md": "25da894669262b54b69e068f345da0975c8a7f72f06072d22106ef4329cabcc5",
+    "skills/update-project-progress/SKILL.md": "ecbfd830a3f201e1625c05d78627e0cacff4daea9e02a2e11085a331c58a8d65"
+  }
+}

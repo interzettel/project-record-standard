@@ -1,0 +1,59 @@
+{
+  "projectId": "synthetic-execution",
+  "source": "Synthetic snapshots using actual public issue URL identities; not live API observations",
+  "observedOn": "2026-10-30",
+  "complete": true,
+  "issues": [
+    {
+      "url": "https://github.com/interzettel/project-record-standard/issues/3",
+      "leafId": "EX-BLOCK",
+      "milestoneId": "M5",
+      "nativeMilestone": null,
+      "artifactUrls": []
+    },
+    {
+      "url": "https://github.com/interzettel/project-record-standard/issues/6",
+      "leafId": "STALE-LEAF",
+      "milestoneId": "M5",
+      "nativeMilestone": null,
+      "artifactUrls": []
+    },
+    {
+      "url": "https://github.com/interzettel/project-record-standard/issues/31",
+      "leafId": "EX-NEXT",
+      "milestoneId": "OLD-MILESTONE",
+      "nativeMilestone": null,
+      "artifactUrls": [
+        "https://github.com/interzettel/project-record-standard/blob/superseded-bootstrap/progress/ledger.json"
+      ]
+    },
+    {
+      "url": "https://github.com/interzettel/project-record-standard/issues/32",
+      "leafId": "EX-GAP",
+      "milestoneId": "M5",
+      "nativeMilestone": null,
+      "artifactUrls": []
+    },
+    {
+      "url": "https://github.com/interzettel/project-record-standard/issues/27",
+      "leafId": "EX-DONE",
+      "milestoneId": "M5",
+      "nativeMilestone": null,
+      "artifactUrls": []
+    },
+    {
+      "url": "https://github.com/interzettel/project-record-standard/issues/40",
+      "leafId": "EX-LATER",
+      "milestoneId": "M5",
+      "nativeMilestone": null,
+      "artifactUrls": []
+    },
+    {
+      "url": "https://github.com/interzettel/project-record-standard/issues/9",
+      "leafId": "PARENT-REQUEST",
+      "milestoneId": "M5",
+      "nativeMilestone": null,
+      "artifactUrls": []
+    }
+  ]
+}

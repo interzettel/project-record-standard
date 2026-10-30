@@ -1,0 +1,56 @@
+{
+  "package": "PRS-AGENT-EXECUTION",
+  "inputRevision": "6db2d19e09e74b54620a723e60051ea6d0f35b8e",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "implementation": {
+    "summary": "Optional executionVersion1 selection/alignment diagnostics; revised owned instruction section and explicit rules upgrade guard; previous pin rules writer remains readable.",
+    "canonicalWrites": false,
+    "remoteWrites": false,
+    "skillBodiesChanged": false
+  },
+  "initialFailure": {
+    "result": "Owned rule-only change silently upgraded without --upgrade:1 reproduced failure.",
+    "log": "rules-upgrade-before-fix.txt",
+    "run": "17 discovered tests included inherited repeats; test moved into original class to avoid duplicate base cases."
+  },
+  "applications": {
+    "samples": 5,
+    "producers": [
+      "Codex /root/execution_application_1",
+      "Codex /root/execution_application_2",
+      "Codex /root/execution_application_3",
+      "Codex /root/execution_application_4",
+      "Codex /root/execution_application_5"
+    ],
+    "rawFiles": [
+      "application-1.md",
+      "application-2.md",
+      "application-3.md",
+      "application-4.md",
+      "application-5.md"
+    ],
+    "observed": "All5 selected EX-NEXT/#31/canonicalM5, preserved blocked/unknown/deferred/history distinctions, rejected off-road theme, reported stale issue/milestone/artifact refs and README drift, withheld native/owner acceptance claims, retained required1/5 and ledger1/6/accepted0/1.",
+    "nuance": "Sample3 included absent native mapping among repair proposals; native linkage is optional and no mandatory assignment or extra scope is established.",
+    "scoring": "Coordinator read every full response; not keyword-only scoring. Actual copied host inputs/README remained unchanged; installer repeat had no changes."
+  },
+  "checks": [
+    "20 agent/selection/alignment tests pass",
+    "25 pin tests pass, including previous-rule profile readback and worked old example validation",
+    "121 full Python tests pass",
+    "14 JavaScript tests pass after npm ci",
+    "11 skill metadata entries,20 palette pairs,19-guide public build and README parity pass",
+    "Comment wording checker:3 files,0 warnings/notes; no new language-linter configuration",
+    "20 agent/selection and25 pin tests pass from fresh unpublished source-kit extraction"
+  ],
+  "limits": [
+    "Synthetic preparation responses with real URL identities and invented states; no live consumer/task efficacy or remote reconciliation proof",
+    "Same-family fresh contexts, no human/cross-model or causal improvement proof",
+    "Current source/authority/coverage and mapping interpretation are supplied observations, not authenticated",
+    "Local diagnostics are not a public projection or actual enforcement/authorization",
+    "No production writer,journal,CLI enforcement,service,scheduler,credential or release was added; those retain their package gates"
+  ],
+  "review": {
+    "status": "pending"
+  }
+}

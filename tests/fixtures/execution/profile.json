@@ -1,0 +1,59 @@
+{
+  "executionVersion": 1,
+  "projectId": "synthetic-execution",
+  "sourceSha256": "d477de806917022ee76430822e0c7323498920e463412be7a083c9f1f2b9e2ae",
+  "order": [
+    "EX-BLOCK",
+    "EX-WAIT",
+    "EX-NEXT",
+    "EX-GAP",
+    "EX-DONE",
+    "EX-LATER"
+  ],
+  "conditions": {
+    "EX-BLOCK": {
+      "authorized": true,
+      "hold": false,
+      "capacity": true
+    },
+    "EX-WAIT": {
+      "authorized": true,
+      "hold": false,
+      "capacity": true
+    },
+    "EX-NEXT": {
+      "authorized": true,
+      "hold": false,
+      "capacity": true
+    },
+    "EX-GAP": {
+      "authorized": true,
+      "hold": false,
+      "capacity": true
+    },
+    "EX-DONE": {
+      "authorized": true,
+      "hold": false,
+      "capacity": true
+    },
+    "EX-LATER": {
+      "authorized": true,
+      "hold": false,
+      "capacity": true
+    }
+  },
+  "dependencyKinds": {
+    "EX-BLOCK": {
+      "EX-GAP": "execution"
+    },
+    "EX-WAIT": {
+      "EX-GAP": "execution"
+    }
+  },
+  "nativeMilestones": {
+    "M5": null
+  },
+  "obsoleteArtifactUrls": [
+    "https://github.com/interzettel/project-record-standard/blob/superseded-bootstrap/progress/ledger.json"
+  ]
+}

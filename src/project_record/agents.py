@@ -29,11 +29,16 @@ def _safe_path(root: Path, relative: str) -> Path:
     return candidate
 
 
-def _rules(names: list[str], digest: str) -> bytes:
+def _rules(names: list[str], digest: str, execution: bool = True) -> bytes:
     rows = [START.decode(), '## Project tracking agent rules', '',
             'Read the matching skill before tracking work. Discover project purpose, scope, existing authority and local instructions first. Use the project’s terminology aliases and brand.', '',
             '| Workflow skill | Instructions |', '| --- | --- |']
     rows += [f'| {name} | `.agents/skills/{name}/SKILL.md` |' for name in names]
+    if execution:
+        rows += ['',
+                 'At implementation start, read the authorized queue and relevant source/issue/PR observations. Refresh only relevant stale or missing coverage; unavailable access remains unknown. Use standards/AGENT-WORKFLOWS.md in the pinned toolkit for the selection and reconciliation contract.',
+                 'Select an existing authorized required leaf by declared order, execution prerequisites, holds and capacity. State stable leaf ID, issue, canonical milestone, criterion, deliverable and dependency status. Unknown eligibility stays unknown; continue eligible independent work when another item is blocked. A parent is not a prerequisite or extra accounting row.',
+                 'At package end, retain source/evidence/revision and remaining acceptance gates, reconcile the authoritative source and relevant issue discussion under existing permission, regenerate derived views and name the next eligible leaf/issue/milestone/action. Report stale/missing mappings without inventing native milestones or owner acceptance. No repeated all-repository scan or approval for unchanged authorized routine work is required.']
     rows += ['', 'Treat authored sources as authority and README/Pages as derived views. Scout docs, issues, PRs, branches, releases and existing trackers before planning a setup or scope expansion. Record inaccessible sources and observation dates.',
              'Keep stable IDs and one accounting owner per leaf. Use named fractions and the toolkit calculators. Preserve snapshots when scope grows. A rebuild does not refresh source observation or award acceptance.',
              'Run record checks and relevant project checks before reporting completion. Preserve evidence subject and revision. Keep unavailable acceptance tests pending. Review public output and protect project-owned files.',
@@ -99,8 +104,9 @@ def install_skills(toolkit: Path, target: Path, apply: bool = False,
     old_files = previous['files'] if previous else {}
     if set(old_files) - set(files):
         raise RecordError('Removed skills require a reviewed retirement before upgrade')
-    if previous and previous.get('suiteDigest') != suite_digest and not upgrade:
-        raise RecordError('Different suite identity; preview and use --upgrade deliberately')
+    if previous and (previous.get('suiteDigest') != suite_digest
+                     or previous.get('rulesSha256') != _digest(section)) and not upgrade:
+        raise RecordError('Different suite or instruction identity; preview and use --upgrade deliberately')
     changes = {}
     for relative, content in files.items():
         path = _safe_path(target, relative)
