@@ -37,3 +37,7 @@ PR48 completes #16 with17 handoff tests and a reviewed offline record-semantics 
 ## Evidence and dependency reference
 
 PR49 completes #6 with STANDARD as the authoritative evidence-claim/dependency home and five worked cases. Existing portable skill already reads it; skill bodies/metadata and suite version remain unchanged. Seven deterministic tests,5 controls/5 installed-skill applications and scoped review support the reference path without causal effectiveness claims. Required25/42 (59.5%), retained25/52 (48.1%), newly required7/24; accepted milestones4/13. Next: #3/M5 canonical selection and bounded reconciliation. No source criterion, dependency, readiness meaning, permission or release changed.
+
+## Canonical work selection and alignment
+
+PR50 completes #3 with read-only executionVersion1 assessment and the installed bounded start/end protocol. Missing/stale facts stay unknown; explicit multi-leaf issue mappings keep one credit per canonical leaf. Owned rule-only changes require explicit upgrade; previous pins remain readable. Skill bodies/metadata and record contract unchanged. Required26/42 (61.9%),retained26/52 (50.0%),newly required8/24;accepted milestones4/13. M5 four work gates complete with owner acceptance pending; next #31/M10 shared CLI checks. Actual5 preparation applications retain423b168 identity; fixed API/review at 8b49fb5281bd879d7af9a846400e1b4888480c94.

@@ -184,16 +184,22 @@
           "visibility": "public",
           "authority": "Authored evidence/dependency reference clarification",
           "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-AGENT-EXECUTION.json",
+          "visibility": "public",
+          "authority": "Authored bounded selection/alignment and installed instruction change",
+          "observedOn": "2026-10-30"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-evidence-stages-2026-10-30.json",
+      "previousSourceFile": "sources/standard/pre-execution-2026-10-30.json",
       "previousSource": {
         "kind": "file-snapshot",
         "path": "examples/sources/standard/ledger.json",
-        "commit": "4e6c50dfbcb1cb9fc4ab665bc48d38a0a9b49579",
+        "commit": "6db2d19e09e74b54620a723e60051ea6d0f35b8e",
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Exact24/42 required,24/52 retained and4/13 accepted milestones before PRS-EVIDENCE-STAGES completion."
+        "authority": "Exact25/42 required,25/52 retained and4/13 accepted milestones before PRS-AGENT-EXECUTION completion."
       },
       "snapshots": [
         {
@@ -370,6 +376,17 @@
             "observedOn": "2026-10-30",
             "updatedOn": "2026-10-30",
             "authority": "Exact23/42 required,23/52 retained and4/13 accepted milestones before PRS-HANDOFF-02 completion."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-evidence-stages-2026-10-30.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/ledger.json",
+            "commit": "4e6c50dfbcb1cb9fc4ab665bc48d38a0a9b49579",
+            "observedOn": "2026-10-30",
+            "updatedOn": "2026-10-30",
+            "authority": "Exact24/42 required,24/52 retained and4/13 accepted milestones before PRS-EVIDENCE-STAGES completion."
           }
         }
       ]

@@ -1,0 +1,13 @@
+{
+  "revision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+  "files": {
+    "src/project_record/execution.py": "0ec9366c3585381fdd43e4673271b1ca8689b17de1d87b7695a23027889dd544",
+    "src/project_record/agents.py": "dfadc53f7dc25e1a989415f9fb1e85c64a8af0696703a99a55510a517a88f8ce",
+    "src/project_record/pins.py": "47451e67c507cf6db03ad93705ad0dca3ac82899f751f1656253b1d4dfc9a088",
+    "standards/AGENT-WORKFLOWS.md": "e6014e7ebeb56efbd46f6d68e5ac76eed013943c929d3ecb29817ba1fa40c859",
+    "standards/COMPATIBILITY.md": "7c9ea25e537cb5c10871fafe4df2a8e1c111e39c0116cf425afeaf2c1ae0cbd9",
+    "tests/test_agents.py": "19c3e9d2a5533be1dd6cb4a6a04bc8de981111dd5260cf8fd6d8f1a75f7b5ee1",
+    "tests/test_pins.py": "7cd31bcac0139ea78d10411de347dc99cc93839d985a007f4bbe7f374485db45"
+  },
+  "applicationIdentity": "guidance-identity.json retains the actual423b168 application bytes; no recertification at this later code."
+}

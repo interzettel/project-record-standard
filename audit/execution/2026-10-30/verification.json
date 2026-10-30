@@ -51,7 +51,10 @@
     "No production writer,journal,CLI enforcement,service,scheduler,credential or release was added; those retain their package gates"
   ],
   "review": {
-    "status": "pending-followup-review"
+    "revision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+    "producer": "Codex /root/execution_review",
+    "result": "Approve with no actionable findings; independently passed21 agent tests after multi-ID followup. Initial423b168 review independently passed20 agent and25 unchanged pin tests and read all5 applications.",
+    "scope": "Fresh-context read-only same-family review, not human/cross-model/live effectiveness proof."
   },
   "applicationRevision": "423b168b1625cb8bcb0eae037271e986dc21f433",
   "initialReview": {
@@ -64,5 +67,40 @@
     "reason": "Standard permits one delivery issue to refer to several distinct accounting leaves; original scalar-only alignment flagged valid explicit sharing as mismatch.",
     "beforeFix": "New multi-ID regression failed against423b168;21 tests,1failure; log retained.",
     "fix": "Explicit distinct leafIds supported alongside scalar leafId; sharing issue URL earns no extra accounting rows; malformed/contradictory mappings rejected."
+  },
+  "implementationRevision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+  "hostedCI": {
+    "revision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41085251389",
+    "result": "success"
+  },
+  "progress": {
+    "requiredBefore": [
+      25,
+      42
+    ],
+    "requiredAfter": [
+      26,
+      42
+    ],
+    "retainedBefore": [
+      25,
+      52
+    ],
+    "retainedAfter": [
+      26,
+      52
+    ],
+    "acceptedMilestonesBefore": [
+      4,
+      13
+    ],
+    "acceptedMilestonesAfter": [
+      4,
+      13
+    ],
+    "scopeChanges": [],
+    "milestonePlanningChange": "M5 nextAction now requests owner review of4/4 completed work gates; acceptanceRule/sourceAccepted/criteria remain unchanged.",
+    "next": "PRS-GATE-01/#31/M10"
   }
 }

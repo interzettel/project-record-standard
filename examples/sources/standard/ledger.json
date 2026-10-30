@@ -162,7 +162,7 @@
       "priority": "P1",
       "sourceState": "planned",
       "evidence": [],
-      "nextAction": "Select #15 after checking execution prerequisites; owner acceptance remains pending."
+      "nextAction": "Yiğit reviews the bounded M5 evidence now that its four work gates are complete; source acceptance remains pending. Continue independent #31/M10 under existing authorization."
     },
     {
       "id": "M6",
@@ -1064,22 +1064,59 @@
       "title": "Select canonical work and reconcile bounded delivery",
       "groupId": "G5",
       "milestoneId": "M5",
-      "state": "backlog",
-      "sourceState": "selected-not-started",
+      "state": "done",
+      "sourceState": "verified-bounded-selection-alignment",
       "required": true,
       "blocked": false,
       "dependsOn": [
         "PRS-EVIDENCE-STAGES"
       ],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "evidence": [
+        {
+          "kind": "implementation",
+          "subject": "PRS-AGENT-EXECUTION",
+          "revision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+          "result": "passed",
+          "source": "src/project_record/execution.py",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "test",
+          "subject": "PRS-AGENT-EXECUTION",
+          "revision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+          "result": "passed",
+          "source": "tests/test_agents.py",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "application",
+          "subject": "PRS-AGENT-EXECUTION",
+          "revision": "423b168b1625cb8bcb0eae037271e986dc21f433",
+          "result": "passed",
+          "source": "audit/execution/2026-10-30/verification.json",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "review",
+          "subject": "PRS-AGENT-EXECUTION",
+          "revision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+          "result": "passed",
+          "source": "audit/execution/2026-10-30/verification.json",
+          "producer": "Codex /root/execution_review",
+          "observedOn": "2026-10-30"
+        }
+      ],
+      "completionBasis": "Optional read-only selection/alignment and owned installed start/end protocol at 8b49fb5281bd879d7af9a846400e1b4888480c94 pass21 agent/alignment tests,25 pin tests and122 Python tests. Five actual installed-guidance applications at423b168 selected existing eligible work and preserved source/acceptance; fixed-head review approves multi-leaf issue compatibility. No live writer, native assignment or owner acceptance inferred.",
       "kind": "implementation",
-      "owner": "Implementing agent; repository maintainer reviews",
+      "owner": "Codex contributor; fresh-context same-family review recorded",
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/3",
       "criterion": "Selection names leaf, issue, milestone, criterion and dependency status. Alignment catches missing/stale mappings without inferring native milestone or owner acceptance. No off-road scope, duplicate credit, mandatory all-repo scan or repeated approval is introduced.",
-      "note": "Queue 08/34. Existing request is one leaf. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue08/34 complete in PR50. Skill bodies/metadata unchanged; rule-only upgrades require explicit --upgrade and old pins stay readable. M5 four work gates complete without source acceptance. Next PRS-GATE-01/#31/M10; M5 owner/release gates remain separate.",
       "deferReason": null
     },
     {
