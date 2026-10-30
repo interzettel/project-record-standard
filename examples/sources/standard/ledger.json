@@ -955,22 +955,50 @@
       "title": "Prove adversarial handoff reconciliation and record the exit gate",
       "groupId": "G5",
       "milestoneId": "M5",
-      "state": "backlog",
-      "sourceState": "selected-not-started",
+      "state": "done",
+      "sourceState": "verified-adversarial-offline-handoff",
       "required": true,
       "blocked": false,
       "dependsOn": [
         "PRS-HANDOFF-01"
       ],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "evidence": [
+        {
+          "kind": "implementation",
+          "subject": "PRS-HANDOFF-02",
+          "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+          "result": "passed",
+          "source": "tests/fixtures/handoff/consumer_stub.py",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "test",
+          "subject": "PRS-HANDOFF-02",
+          "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+          "result": "passed",
+          "source": "tests/test_handoff.py",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "review",
+          "subject": "PRS-HANDOFF-02",
+          "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+          "result": "passed",
+          "source": "audit/handoff-adversarial/2026-10-30/verification.json",
+          "producer": "Codex /root/handoff_adversarial_review",
+          "observedOn": "2026-10-30"
+        }
+      ],
+      "completionBasis": "Bounded offline PRS-facing gate passes at 29e8fe5202d952c218ba89581063e9fc172ed916:17 handoff tests,101 Python tests,14 JavaScript tests; fresh-context review independently reran17 and approved after reproduced/fixed mixed-receipt defect. Test stub only: no production writer, live consumer, acceptance or release inferred.",
       "kind": "implementation",
-      "owner": "Implementing agent; repository maintainer reviews",
+      "owner": "Codex contributor; fresh-context same-family review recorded",
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/16",
       "criterion": "Retries earn one canonical credit; changed revisions cannot reuse incompatible evidence. Missing/inaccessible is distinct from zero; source freshness survives a newer render. Private payloads do not enter public output; independent review cites the tested head and bounded pass/fail/unknown.",
-      "note": "Queue 06/34. Parent request #9 earns no extra credit. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue06/34 complete in PR48. Parent#9 offline boundary met without extra accounting credit; M5 owner acceptance and live Qurultai/Hermes gates remain pending. Next PRS-EVIDENCE-STAGES/#6/M5.",
       "deferReason": null
     },
     {

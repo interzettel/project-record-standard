@@ -10,7 +10,7 @@ The [revised release direction](release-direction.md) proposes a foundations 0.5
 
 ## Ordered packages
 
-Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 also completed the policy catalogue; #29 has completed the optional mapping/helpers; #30 has completed read-only pin/compatibility checks; #15 has completed the first synthetic offline handoff; #16 is now the earliest eligible unfinished package. Parallel independent preparation is allowed without creating permanent contributor roles.
+Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 also completed the policy catalogue; #29 has completed the optional mapping/helpers; #30 has completed read-only pin/compatibility checks; #15/#16 have completed the bounded synthetic offline handoff gate; #6 is now the earliest eligible unfinished package. Parallel independent preparation is allowed without creating permanent contributor roles.
 
 | Order | Issue / stable leaf | Checkpoint | Scope | Execution prerequisites |
 | ---: | --- | --- | --- | --- |
@@ -90,3 +90,7 @@ PR46 completes #30 with24 pin tests, existing-receipt preservation and explicit 
 ## Offline handoff completion
 
 PR47 completes #15 at 5424ea8b132c44768fee804d97a54e63394d52ec with6 handoff tests,90 Python tests,14 JavaScript tests and fresh-context review. Required22/42→23/42 (54.8%); retained22/52→23/52 (44.2%); newly required5/24; accepted milestones remain4/13. Source bytes/metadata/normalized observation are retained under pre-handoff/audit/handoff. No scope, criterion or dependency changes. Current next action: **PRS-HANDOFF-02 / #16 / M5**, adversarial reconciliation and the bounded exit verdict. M5 outcome acceptance and releases remain pending.
+
+## Adversarial handoff completion
+
+PR48 completes #16 at 29e8fe5202d952c218ba89581063e9fc172ed916 with17 handoff tests,101 Python tests,14 JavaScript tests and a reviewed bounded offline gate PASS. Four mixed-receipt regression failures were reproduced and fixed; private visibility conditions are independently tested. Required23/42→24/42 (57.1%); retained23/52→24/52 (46.2%); newly required6/24; accepted milestones remain4/13. Previous source/metadata/normalized observation retained under pre-handoff-adversarial/audit/handoff-adversarial. No scope, criteria or dependency changes. Current next action: **PRS-EVIDENCE-STAGES / #6 / M5**. Parent#9 earns no extra credit; live consumer gates and M5 acceptance stay pending.

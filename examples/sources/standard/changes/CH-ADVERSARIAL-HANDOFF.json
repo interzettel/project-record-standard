@@ -1,0 +1,11 @@
+{
+  "id": "CH-ADVERSARIAL-HANDOFF",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Exercise replay, evidence/source conflicts, unavailable collection, absent approval and private-output refusal in the pinned offline handoff reference.",
+  "workItemIds": [
+    "PRS-HANDOFF-02"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/48",
+  "compatibility": "Unreleased fixture/reference tests only. No supported runtime API, canonical writer, native version, record contract, permissions or release bytes changed. Production reconciliation and live consumer gates stay separate."
+}

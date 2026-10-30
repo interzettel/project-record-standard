@@ -19,17 +19,22 @@
     "101 full Python tests pass",
     "14 JavaScript tests pass after npm ci",
     "11 skill metadata entries,20 palette pairs,19-guide public build and README parity pass",
-    "Comment wording checker:2 files,0 warnings/notes; no new language-linter configuration"
+    "Comment wording checker:2 files,0 warnings/notes; no new language-linter configuration",
+    "17 tests pass from fresh unpublished fixed source-kit extraction"
   ],
   "review": {
-    "status": "pending-fixed-head-review"
+    "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+    "producer": "Codex /root/handoff_adversarial_review",
+    "result": "Both findings resolved; no remaining blockers; independently passed17 tests; approved bounded offline gate",
+    "scope": "Fresh-context read-only same-family review; no human or cross-model evidence"
   },
   "exit": {
-    "offlineRecordSemantics": "pending-exact-revision-review",
+    "offlineRecordSemantics": "pass-at-reviewed-revision",
     "liveQurultai": "unknown-not-tested",
     "liveHermes": "unknown-not-tested",
     "ownerAcceptance": "not-supplied",
-    "publication": "not-performed"
+    "publication": "not-performed",
+    "nextOwnerAction": "Qurultai maintainers:real task/board/reconciliation runtime tests in #102; Hermes maintainers:real-worker Gate C in #13. Yiğit retains M5 outcome acceptance."
   },
   "limits": [
     "Minimal read-only consumer test stub, not a supported API or production reconciler",
@@ -43,5 +48,39 @@
     "regression": "17 tests:4 mixed-receipt subcase failures reproduced before filtering fix",
     "fix": "Reuse policy_satisfied per proposed receipt; isolate private-project/private-supplement refusal conditions",
     "scope": "Fresh-context read-only same-family review, not cross-model proof"
+  },
+  "implementationRevision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+  "progress": {
+    "requiredBefore": [
+      23,
+      42
+    ],
+    "requiredAfter": [
+      24,
+      42
+    ],
+    "retainedBefore": [
+      23,
+      52
+    ],
+    "retainedAfter": [
+      24,
+      52
+    ],
+    "acceptedMilestonesBefore": [
+      4,
+      13
+    ],
+    "acceptedMilestonesAfter": [
+      4,
+      13
+    ],
+    "scopeChanges": [],
+    "next": "PRS-EVIDENCE-STAGES/#6/M5"
+  },
+  "hostedCI": {
+    "revision": "29e8fe5202d952c218ba89581063e9fc172ed916",
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41067717257",
+    "result": "success"
   }
 }
