@@ -67,7 +67,7 @@ Weekly dependency proposals keep development pins reviewable; they do not auto-m
 
 ## Project progress
 
-The historical release remains 18/18 complete. The expanded plan has **8/24 newly required items complete**, plus ten deferred items. The following source-derived figures include historical work and the larger current denominator; they do not measure effort or time remaining.
+The historical release remains 18/18 complete. The expanded plan has **9/24 newly required items complete**, plus ten deferred items. The following source-derived figures include historical work and the larger current denominator; they do not measure effort or time remaining.
 
 <!-- project-record:start -->
 [![Project record standard · current required scope](./assets/progress.svg)](https://interzettel.github.io/project-record-standard/standard/progress.html)
