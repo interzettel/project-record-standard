@@ -1,0 +1,21 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "synthetic-reconcile",
+  "manifest": "tests/fixtures/reconcile/projects.json",
+  "journal": ".project-record/reconciliation-journal",
+  "output": ".project-record/reconciliation-views",
+  "audience": "public",
+  "authority": {
+    "source": "synthetic:replace-with-adopted-host-policy",
+    "routineRecording": null
+  },
+  "workPolicies": {
+    "WORK-1": {
+      "allOf": [
+        "implementation",
+        "test"
+      ]
+    }
+  },
+  "scopeAdmission": {}
+}

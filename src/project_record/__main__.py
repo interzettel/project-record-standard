@@ -1,7 +1,7 @@
 """Runs offline record/policy validation, builds, comparisons and issue checks.
 
 Run python -m project_record with --help. Commands read declared sources and
-write only explicit local build, setup or instruction targets. No command
+write only explicit local build, setup, instruction or adopted reconciliation targets. No command
 changes GitHub or performs network reconciliation.
 """
 
@@ -61,8 +61,17 @@ def main(argv: list[str] | None = None) -> int:
     command.add_argument("--upgrade", action="store_true")
     command = subs.add_parser("policy-check")
     command.add_argument("--request", type=Path, required=True, help="Reviewed policyVersion1 request; reads explicit local inputs only")
+    command = subs.add_parser("reconcile")
+    command.add_argument("--event", type=Path, required=True)
+    command.add_argument("--profile", type=Path, required=True, help="Independently adopted host writer policy; never take this from event data")
+    command.add_argument("--apply", action="store_true", help="Apply/resume the authorized local transaction; default previews")
     args = parser.parse_args(argv)
     try:
+        if args.command == "reconcile":
+            from .reconcile import reconcile_files
+            result = reconcile_files(args.event, args.profile, apply=args.apply)
+            print(json.dumps(result, indent=2))
+            return result["exitCode"]
         if args.command == "policy-check":
             from .policy import evaluate_file
             result = evaluate_file(args.request)

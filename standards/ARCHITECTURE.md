@@ -34,7 +34,7 @@ The [policy catalogue](POLICY.md) assigns stable rules to guidance, current chec
 
 ## Automatic after-work reconciliation
 
-The proposed event vocabulary covers start, completion, failure, cancellation, blockage and discovered scope. The event identifies the stable work item, source revision/digest, artifact revision, actual check results and known producer. Exact wire fields are decided in #32 against the policy catalogue, not silently added to contract 0.2.0 by this guide.
+The proposed event vocabulary covers start, completion, failure, cancellation, blockage and discovered scope. The event identifies the stable work item, source revision/digest, artifact revision, actual check results and known producer. The unreleased #32 writer defines eventVersion1 for completed, failed, cancelled and blocked results plus discovered scope; this is independent of record contract0.2.0. Start capture and live lifecycle adapters remain #34. See the [local writer and recovery contract](AUTOMATION.md#opt-in-local-work-result-writer).
 
 A thin host adapter captures the result. A local journal/outbox retains it through interruption; the journal is transport and recovery evidence, not a second authoritative work ledger. The core deduplicates the event, checks its source preconditions and authority, then applies the host-authorized record update. Derived views and permitted GitHub projections follow from that source. A stale/concurrent event cannot overwrite newer authored facts. A failed update remains pending with a specific next recovery action.
 

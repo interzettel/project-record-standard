@@ -1,0 +1,31 @@
+{
+  "eventVersion": 1,
+  "eventId": "synthetic-session:result-1",
+  "projectId": "synthetic-reconcile",
+  "workItemId": "WORK-1",
+  "sourceSha256": "585a2450d71d28610ffd0e8743389c979e693dc044dc9a818f6cc07c065bd99d",
+  "manifestSha256": "45ba739a4f6beabccc9c21df1a48c9b6e63ce884a7c1cc3a743d4c260e17f4a7",
+  "artifactRevision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "result": "completed",
+  "producer": "synthetic-worker",
+  "source": "synthetic:session",
+  "observedOn": "2026-10-30",
+  "summary": "Synthetic implementation and matching check exist.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "WORK-1",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "result": "passed",
+      "source": "synthetic:implementation"
+    },
+    {
+      "kind": "test",
+      "subject": "WORK-1",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "result": "passed",
+      "source": "synthetic:test"
+    }
+  ],
+  "discoveries": []
+}
