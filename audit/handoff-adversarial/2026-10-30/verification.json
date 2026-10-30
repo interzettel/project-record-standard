@@ -1,0 +1,39 @@
+{
+  "package": "PRS-HANDOFF-02",
+  "inputRevision": "543ba0368e3d85c5bf270f171a8a6f3fabd611fd",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "initialFailures": [
+    {
+      "kind": "test-authoring",
+      "result": "Two errors: history test looked for source in metric dictionaries instead of comparison.sourceRevisions; corrected assertion without runtime change"
+    },
+    {
+      "kind": "environment",
+      "result": "Full suite import failed because pinned Markdown package was absent after session restart; dependency restoration and rerun pending",
+      "resolution": "Installed hash-pinned Markdown3.11.2; full100-test rerun passed."
+    }
+  ],
+  "checks": [
+    "16 handoff tests pass, including6 preserved happy-path tests",
+    "16 tests pass from fresh unpublished source-kit extraction",
+    "100 full Python tests pass after pinned dependency restoration",
+    "14 JavaScript tests pass after npm ci",
+    "11 skill metadata entries,20 palette pairs,19-guide public build and README parity pass"
+  ],
+  "review": {
+    "status": "pending"
+  },
+  "exit": {
+    "offlineRecordSemantics": "pending-exact-revision-review",
+    "liveQurultai": "unknown-not-tested",
+    "liveHermes": "unknown-not-tested",
+    "ownerAcceptance": "not-supplied",
+    "publication": "not-performed"
+  },
+  "limits": [
+    "Minimal read-only consumer test stub, not a supported API or production reconciler",
+    "No network/runtime changes or canonical writes; proposals are local diagnostics",
+    "No producer authentication, content classification, durable journal or transaction proof"
+  ]
+}
