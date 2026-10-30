@@ -67,6 +67,7 @@ def _scope_changes(before: dict, record: dict, delta: dict) -> set[tuple[str, st
     changes = {('added', i) for i in delta['added']} | {('removed', i) for i in delta['removed']}
     changes |= {('membership', c['id']) for c in delta['scopeChanges']}
     changes |= {('cancelled', c['id']) for c in delta['stateChanges'] if c['to'] == 'cancelled'}
+    changes |= {('restored', c['id']) for c in delta['stateChanges'] if c['from'] == 'cancelled' and c['to'] != 'cancelled'}
     old = {i['id']: i for i in before['items']}
     new = {i['id']: i for i in record['items']}
     for identity in old.keys() & new.keys():
@@ -291,6 +292,10 @@ def evaluate(request: dict) -> dict:
         put('PRS-PRIVACY-01', 'not-applicable', 'No public export requested', 'Owner-local assessment requests no public projection')
     elif audience == 'public' and normalized is not None:
         try:
+            visibility = record.get('inputVisibility', [])
+            if (not isinstance(visibility, list)
+                    or any(not isinstance(v, str) or v not in {'public', 'private'} for v in visibility)):
+                raise RecordError('Input visibility must be a list of public/private declarations')
             export_record(record, 'public')
             put('PRS-PRIVACY-01', 'pass', 'Existing declared visibility/input selection guard', 'Public export guard accepts declared input visibility; no content classification or publication performed')
         except RecordError as error:

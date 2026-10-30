@@ -318,3 +318,42 @@ class SharedPolicyInterfaceTests(unittest.TestCase):
                 report = self.evaluate(request)
                 self.assertEqual(self.result(report, 'PRS-HISTORY-01')['status'], 'fail')
                 self.assertEqual(report['exitCode'], 1)
+
+    def test_restoring_cancelled_work_requires_explanation_and_admission_assessment(self):
+        request = deepcopy(self.request)
+        request['before']['items'][0].update(state='cancelled', sourceState='cancelled', note='Synthetic prior cancellation')
+        request['record']['items'][0].update(state='backlog', sourceState='backlog')
+        report = self.evaluate(request)
+        self.assertEqual(report['exitCode'], 1)
+        self.assertEqual(self.result(report, 'PRS-SCOPE-01')['status'], 'fail')
+        request['changes'] = [dict(kind='restored', id=request['record']['items'][0]['id'],
+                                  reason='Restore scoped work', source='synthetic:decision')]
+        report = self.evaluate(request)
+        self.assertEqual(self.result(report, 'PRS-HISTORY-01')['status'], 'pass')
+        self.assertEqual(self.result(report, 'PRS-SCOPE-01')['status'], 'unknown')
+        self.assertEqual(report['exitCode'], 3)
+
+    def test_malformed_visibility_returns_structured_failed_check_through_all_interfaces(self):
+        import os
+        import subprocess
+        import sys
+        from project_record.policy import evaluate_file
+        for malformed in [None, 'public', {}, ['not-classified'], [None]]:
+            with self.subTest(visibility=malformed):
+                request = deepcopy(self.request)
+                request['record']['inputVisibility'] = malformed
+                request['before']['inputVisibility'] = malformed
+                report = self.evaluate(request)
+                self.assertEqual(report['exitCode'], 1)
+                self.assertEqual(self.result(report, 'PRS-PRIVACY-01')['status'], 'fail')
+                path = self.folder / 'malformed.json'
+                path.write_text(json.dumps(request))
+                self.assertEqual(evaluate_file(path), report)
+                for command in [[sys.executable, '-m', 'project_record', 'policy-check'],
+                                [sys.executable, str(ROOT / 'tools/check_policy.py')]]:
+                    result = subprocess.run(command + ['--request', str(path)], cwd=ROOT,
+                                            env=dict(os.environ, PYTHONPATH=str(ROOT / 'src')),
+                                            capture_output=True, text=True)
+                    self.assertEqual(result.returncode, 1)
+                    self.assertEqual(json.loads(result.stdout), report)
+                    self.assertEqual(result.stderr, '')
