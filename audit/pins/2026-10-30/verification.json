@@ -4,17 +4,18 @@
   "producer": "Codex task session",
   "inputRevision": "5892daa603a201a50b0b5745b9c70dbce5ae5e88",
   "checks": [
-    "20 pin tests pass against disposable real installer outputs",
-    "Existing installer8tests pass after shared identity extraction",
-    "79 Python tests passed before final optional-shape test was added",
-    "19 pin tests passed from fresh unpublished source-kit extraction before final optional-shape test"
+    "24 pin tests pass, independently rerun by fresh-context reviewer after fixes",
+    "84 full Python tests pass",
+    "14 JavaScript tests pass after npm ci",
+    "18-guide build,11-skill metadata and20 palette pairs pass",
+    "24 pin tests pass from fresh unpublished source-kit extraction",
+    "Actual11-skill suite installed in disposable host: expected selected bytes match, no provenance/publisher authentication inferred"
   ],
   "limits": [
     "Only explicitly selected toolkit files plus complete selected suite are byte checked",
     "No publisher authentication, live feed, upgrade apply or real consumer migration",
     "Runtime/adapter observations and support evidence are caller supplied",
-    "Native floor>=3.10 and historical release bytes unchanged; next publication floor must be tested in #38",
-    "Fresh-context review pending"
+    "Native floor>=3.10 and historical release bytes unchanged; next publication floor must be tested in #38"
   ],
   "initialReview": {
     "revision": "7d7ec5284d02eb91255ee893bef28b385c97d544",
@@ -29,5 +30,54 @@
     "regressionRun": "24 tests:4 failures reproduced on original implementation before fixes",
     "fixRun": "24 tests pass after fixes",
     "boundary": "Read-only same-family review; no human or cross-model proof"
+  },
+  "implementationRevision": "02cac0676fe57a23faa6b0eb203a0771d3df6fba",
+  "initialChecks": {
+    "revision": "7d7ec5284d02eb91255ee893bef28b385c97d544",
+    "checks": [
+      "20 pin tests pass against disposable real installer outputs",
+      "Existing installer8tests pass after shared identity extraction",
+      "79 Python tests passed before final optional-shape test was added",
+      "19 pin tests passed from fresh unpublished source-kit extraction before final optional-shape test"
+    ]
+  },
+  "review": {
+    "producer": "Codex /root/pins_review",
+    "revision": "02cac0676fe57a23faa6b0eb203a0771d3df6fba",
+    "result": "Both findings resolved; no new material regressions;24 tests rerun",
+    "scope": "Same-family fresh-context read-only review, not human or cross-model proof"
+  },
+  "hostedCI": {
+    "revision": "02cac0676fe57a23faa6b0eb203a0771d3df6fba",
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41040198110",
+    "result": "success"
+  },
+  "progress": {
+    "requiredBefore": [
+      21,
+      42
+    ],
+    "requiredAfter": [
+      22,
+      42
+    ],
+    "retainedBefore": [
+      21,
+      52
+    ],
+    "retainedAfter": [
+      22,
+      52
+    ],
+    "acceptedMilestonesBefore": [
+      4,
+      13
+    ],
+    "acceptedMilestonesAfter": [
+      4,
+      13
+    ],
+    "scopeChanges": [],
+    "next": "PRS-HANDOFF-01/#15/M5"
   }
 }

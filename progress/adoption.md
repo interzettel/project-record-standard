@@ -21,3 +21,7 @@ PR44 completes #28 as a specification and boundary-test package. Structural chec
 ## Optional records layout handoff
 
 PR45 completes #29 as optional metadata helpers and three synthetic profiles, with20 tests and a retained four-finding review/correction record. No filesystem migration, memory backend or enforcement activation. Required21/42 (50.0%), retained21/52 (40.4%), newly required3/24; accepted milestones4/13. Source/meta/normalized history retained under pre-record-layout/audit/record-layout. Current next action: #30/M10, verified installation pins and compatibility assessment. M13 work gates are complete; Yiğit separately accepts its outcome.
+
+## Expected pins handoff
+
+PR46 completes #30: pinVersion1 capture/validation, selected-byte checks against the existing installation receipt, and read-only compatibility decisions. Native package/suite/contract/policy/runtime identities remain distinct. Missing data is not zero, malformed ownership is conflicted, and matching supplied provenance is not publisher authentication. Required22/42 (52.4%), retained22/52 (42.3%), newly required4/24; accepted milestones4/13. Prior raw/meta/normalized observations are retained under pre-pins/audit/pins. Current next action: #15/M5 offline handoff. No live consumer upgrade or runtime-floor change.

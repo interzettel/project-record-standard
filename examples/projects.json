@@ -40,7 +40,7 @@
         "commit": null,
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Canonical ledger: preserved historical claims and bounded records/policy/layout completion; new milestone outcomes remain unaccepted."
+        "authority": "Canonical ledger: preserved historical claims and bounded records/policy/layout/pins completion; new milestone outcomes remain unaccepted."
       },
       "presentation": {
         "renderer": "standard",
@@ -160,16 +160,22 @@
           "visibility": "public",
           "authority": "Authored optional layout mapping/helper feature",
           "observedOn": "2026-10-30"
+        },
+        {
+          "path": "sources/standard/changes/CH-VERIFIED-PINS.json",
+          "visibility": "public",
+          "authority": "Authored expected-pin verification and compatibility-assessment feature",
+          "observedOn": "2026-10-30"
         }
       ],
-      "previousSourceFile": "sources/standard/pre-record-layout-2026-10-30.json",
+      "previousSourceFile": "sources/standard/pre-pins-2026-10-30.json",
       "previousSource": {
         "kind": "file-snapshot",
         "path": "examples/sources/standard/ledger.json",
-        "commit": "06099cfc582cebc1ecbf9798c13c960f89cfa5cf",
+        "commit": "5892daa603a201a50b0b5745b9c70dbce5ae5e88",
         "observedOn": "2026-10-30",
         "updatedOn": "2026-10-30",
-        "authority": "Exact20/42 required,20/52 retained and4/13 accepted milestones before PRS-RECORDS-02 completion."
+        "authority": "Exact21/42 required,21/52 retained and4/13 accepted milestones before PRS-PIN-01 completion."
       },
       "snapshots": [
         {
@@ -302,6 +308,17 @@
             "observedOn": "2026-10-30",
             "updatedOn": "2026-10-30",
             "authority": "Exact19/42 required,19/52 retained and4/13 accepted milestones before PRS-POLICY-01 completion."
+          }
+        },
+        {
+          "sourceFile": "sources/standard/pre-record-layout-2026-10-30.json",
+          "source": {
+            "kind": "file-snapshot",
+            "path": "examples/sources/standard/ledger.json",
+            "commit": "06099cfc582cebc1ecbf9798c13c960f89cfa5cf",
+            "observedOn": "2026-10-30",
+            "updatedOn": "2026-10-30",
+            "authority": "Exact20/42 required,20/52 retained and4/13 accepted milestones before PRS-RECORDS-02 completion."
           }
         }
       ]
