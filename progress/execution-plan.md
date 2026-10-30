@@ -10,7 +10,7 @@ The [revised release direction](release-direction.md) proposes a foundations 0.5
 
 ## Ordered packages
 
-Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 also completed the policy catalogue; #29 has completed the optional mapping/helpers; #30 has completed read-only pin/compatibility checks; #15 is now the earliest eligible unfinished package. #15 remains the first handoff implementation. Parallel independent preparation is allowed without creating permanent contributor roles.
+Pick the earliest authorized required leaf whose execution prerequisites and actual holds/authority permit it. This order changes priority, not the meaning of existing `dependsOn`. #27 completed the bounded records investigation; #28 also completed the policy catalogue; #29 has completed the optional mapping/helpers; #30 has completed read-only pin/compatibility checks; #15 has completed the first synthetic offline handoff; #16 is now the earliest eligible unfinished package. Parallel independent preparation is allowed without creating permanent contributor roles.
 
 | Order | Issue / stable leaf | Checkpoint | Scope | Execution prerequisites |
 | ---: | --- | --- | --- | --- |
@@ -86,3 +86,7 @@ PR45 completes #29 with three synthetic hosts, read-only mapping/index/preview h
 ## Pin verification completion
 
 PR46 completes #30 with24 pin tests, existing-receipt preservation and explicit provenance/runtime/application limits. Required21/42→22/42 (52.4%); retained21/52→22/52 (42.3%); newly required4/24; accepted milestones remain4/13. No scope, criteria, dependencies or runtime floor changed. Four regression failures from review were reproduced and corrected. Current next action: **PRS-HANDOFF-01 / #15 / M5**. #38 must select/test the supported minimum before publication; no old release bytes are rewritten.
+
+## Offline handoff completion
+
+PR47 completes #15 at 5424ea8b132c44768fee804d97a54e63394d52ec with6 handoff tests,90 Python tests,14 JavaScript tests and fresh-context review. Required22/42→23/42 (54.8%); retained22/52→23/52 (44.2%); newly required5/24; accepted milestones remain4/13. Source bytes/metadata/normalized observation are retained under pre-handoff/audit/handoff. No scope, criterion or dependency changes. Current next action: **PRS-HANDOFF-02 / #16 / M5**, adversarial reconciliation and the bounded exit verdict. M5 outcome acceptance and releases remain pending.

@@ -25,3 +25,7 @@ PR45 completes #29 as optional metadata helpers and three synthetic profiles, wi
 ## Expected pins handoff
 
 PR46 completes #30: pinVersion1 capture/validation, selected-byte checks against the existing installation receipt, and read-only compatibility decisions. Native package/suite/contract/policy/runtime identities remain distinct. Missing data is not zero, malformed ownership is conflicted, and matching supplied provenance is not publisher authentication. Required22/42 (52.4%), retained22/52 (42.3%), newly required4/24; accepted milestones4/13. Prior raw/meta/normalized observations are retained under pre-pins/audit/pins. Current next action: #15/M5 offline handoff. No live consumer upgrade or runtime-floor change.
+
+## Pinned offline handoff
+
+PR47 completes #15 with one synthetic PRS leaf and a distinct consumer task, contract/source/reader pins and6 offline tests. Work completion1/1 in the fixture coexists with accepted milestones0/1; matching worker/check receipts do not supply owner acceptance. Required23/42 (54.8%), retained23/52 (44.2%), newly required5/24; accepted milestones4/13. No runtime permissions or release changed. Next: #16/M5 adversarial exit proof.

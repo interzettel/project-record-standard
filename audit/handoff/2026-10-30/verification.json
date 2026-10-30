@@ -16,6 +16,49 @@
     "Adversarial integration and bounded exit verdict remain #16; M5 acceptance remains pending"
   ],
   "review": {
-    "status": "pending"
+    "producer": "Codex /root/handoff_review",
+    "revision": "5424ea8b132c44768fee804d97a54e63394d52ec",
+    "result": "No defects found; independently passed6 handoff and2 packaging tests",
+    "scope": "Fresh-context read-only same-family review, not human or cross-model proof",
+    "declined": [
+      "Adversarial retry/race/stale/private cases assigned to #16",
+      "Live consumer protocols/adapters outside synthetic scope",
+      "Owner acceptance/release/deployment claims not made",
+      "Full suite/build results not independently rerun by reviewer"
+    ]
+  },
+  "implementationRevision": "5424ea8b132c44768fee804d97a54e63394d52ec",
+  "hostedCI": {
+    "revision": "5424ea8b132c44768fee804d97a54e63394d52ec",
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41042424375",
+    "result": "success"
+  },
+  "progress": {
+    "requiredBefore": [
+      22,
+      42
+    ],
+    "requiredAfter": [
+      23,
+      42
+    ],
+    "retainedBefore": [
+      22,
+      52
+    ],
+    "retainedAfter": [
+      23,
+      52
+    ],
+    "acceptedMilestonesBefore": [
+      4,
+      13
+    ],
+    "acceptedMilestonesAfter": [
+      4,
+      13
+    ],
+    "scopeChanges": [],
+    "next": "PRS-HANDOFF-02/#16/M5"
   }
 }

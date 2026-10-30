@@ -906,20 +906,48 @@
       "title": "Pin the record boundary and prove one offline handoff",
       "groupId": "G5",
       "milestoneId": "M5",
-      "state": "ready",
-      "sourceState": "selected-not-started",
+      "state": "done",
+      "sourceState": "verified-offline-handoff",
       "required": true,
       "blocked": false,
       "dependsOn": [],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "evidence": [
+        {
+          "kind": "implementation",
+          "subject": "PRS-HANDOFF-01",
+          "revision": "5424ea8b132c44768fee804d97a54e63394d52ec",
+          "result": "passed",
+          "source": "standards/HANDOFF.md",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "test",
+          "subject": "PRS-HANDOFF-01",
+          "revision": "5424ea8b132c44768fee804d97a54e63394d52ec",
+          "result": "passed",
+          "source": "tests/test_handoff.py",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "review",
+          "subject": "PRS-HANDOFF-01",
+          "revision": "5424ea8b132c44768fee804d97a54e63394d52ec",
+          "result": "passed",
+          "source": "audit/handoff/2026-10-30/verification.json",
+          "producer": "Codex /root/handoff_review",
+          "observedOn": "2026-10-30"
+        }
+      ],
+      "completionBasis": "Pinned synthetic contract0.2 handoff through existing loader/validator/calculator at 5424ea8b132c44768fee804d97a54e63394d52ec. Six handoff tests,90 Python tests and14 JavaScript tests pass; fresh-context review independently passed handoff/packaging tests. Worker implementation/check remain distinct from absent owner acceptance.",
       "kind": "implementation",
-      "owner": "Implementing agent; repository maintainer reviews",
+      "owner": "Codex contributor; fresh-context same-family review recorded",
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/15",
       "criterion": "One synthetic leaf maps to one separate consumer task without another accounting row. A worker's implementation and passing check remain distinct from absent owner acceptance. The fixture runs offline, references exact contract/source identity, and changes no runtime permissions.",
-      "note": "Queue 05/34. Parent request #9 earns no extra credit. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue05/34 complete in PR47. No runtime/contract/permission/release change. Next PRS-HANDOFF-02/#16/M5; adversarial exit and M5 owner acceptance pending.",
       "deferReason": null
     },
     {
