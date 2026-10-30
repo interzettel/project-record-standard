@@ -336,7 +336,7 @@
       "priority": "P1",
       "sourceState": "planned",
       "evidence": [],
-      "nextAction": "Records research #27 complete; #28 defines rule ownership, then #29 supplies portable naming/layout fixtures. Yiğit separately accepts M13."
+      "nextAction": "Both #27/#29 work criteria met. Yiğit separately accepts M13 outcome; next eligible implementation is #30/M10. No new memory backend or host migration claimed."
     }
   ],
   "items": [
@@ -1388,8 +1388,8 @@
       "title": "Define portable file layouts and record naming profiles",
       "groupId": "G13",
       "milestoneId": "M13",
-      "state": "backlog",
-      "sourceState": "planned-not-implemented",
+      "state": "done",
+      "sourceState": "optional-layout-helpers-verified",
       "required": true,
       "blocked": false,
       "dependsOn": [
@@ -1397,14 +1397,30 @@
         "PRS-POLICY-01"
       ],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "evidence": [
+        {
+          "kind": "implementation",
+          "source": "src/project_record/record_layout.py",
+          "revision": "87bd6837ba15fc447c1b45d0d9f29792bb8888aa"
+        },
+        {
+          "kind": "test",
+          "source": "tests/test_record_layout.py",
+          "revision": "87bd6837ba15fc447c1b45d0d9f29792bb8888aa"
+        },
+        {
+          "kind": "review",
+          "source": "audit/record-layout/2026-10-30/verification.json",
+          "revision": "87bd6837ba15fc447c1b45d0d9f29792bb8888aa"
+        }
+      ],
+      "completionBasis": "Optional layoutVersion1 metadata mapping, three synthetic hosts and20 behavioral tests verified at87bd6837ba15fc447c1b45d0d9f29792bb8888aa after four reviewed regressions were fixed. No migration, memory effectiveness, enforcement or owner acceptance inferred.",
       "kind": "implementation",
-      "owner": "Selected contributor; repository maintainer reviews",
+      "owner": "Codex contributor; fresh-context review recorded",
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/29",
       "criterion": "Three synthetic hosts (README-only research, private personal agent, shared repository) resolve each class to one writer/home. Private memory and transient caches are excluded from Git/public output unless deliberately approved; links do not leak private totals/URLs. Conflicting/shared IDs, stale recall, moved documents, superseded decisions and generated files have observable handling. No second completion ledger, forced language/folder hierarchy or automatic destructive migration is introduced.",
-      "note": "Queue 03/34. Native milestone 9. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+      "note": "Queue03/34 complete in PR45. M13 work gates complete, outcome unaccepted. Next PRS-PIN-01/#30/M10."
     },
     {
       "id": "PRS-PIN-01",
@@ -1720,7 +1736,8 @@
     "Post-release planning observation 2026-10-30: adds 11 required and 7 deferred leaves; 18/29 required (62.1%), 18/36 retained (50.0%), 4/9 declared milestones. New required work is 0/11 and new required milestone outcomes are 0/3; v0.4.1 historical delivery remains 18/18 and 4/4.",
     "The 30 October infrastructure expansion adds future work, not finished automation. New required work0/24; complete the real-session and cross-model gates before claiming unattended support.",
     "PRS-RECORDS-01 research completed after source-linked comparison and fresh-context review: required18/42→19/42; retained18/52→19/52; newly required1/24. No scope added, milestone acceptance unchanged4/13, automatic tracking remains unimplemented.",
-    "PRS-POLICY-01 completes the scoped catalogue and boundary probes: required19/42→20/42, retained19/52→20/52, newly required2/24. No added scope, authority or milestone acceptance; structural approval checks are not authentication."
+    "PRS-POLICY-01 completes the scoped catalogue and boundary probes: required19/42→20/42, retained19/52→20/52, newly required2/24. No added scope, authority or milestone acceptance; structural approval checks are not authentication.",
+    "PRS-RECORDS-02 completes the optional mapping/helpers after review fixes and20 layout tests: required20/42→21/42, retained20/52→21/52, newly required3/24. No scope added; M13 work gates complete but outcome unaccepted; accepted milestones remain4/13."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",
