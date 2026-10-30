@@ -1,0 +1,44 @@
+{
+  "fixtureRevision": 1,
+  "synthetic": true,
+  "cases": [
+    {
+      "rule": "PRS-ACCOUNT-01",
+      "positive": [
+        "W1",
+        "W2"
+      ],
+      "negative": [
+        "W1",
+        "W1"
+      ]
+    },
+    {
+      "rule": "PRS-EVIDENCE-01",
+      "subject": "G1",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "negativeSubject": "G2"
+    },
+    {
+      "rule": "PRS-ACCEPT-01",
+      "approvedBy": "Synthetic owner",
+      "approvedAt": "2026-10-30",
+      "approvalSource": "synthetic attribution, not an authenticated approval"
+    },
+    {
+      "rule": "PRS-SOURCE-01",
+      "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "observed": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "rule": "PRS-SCOPE-01",
+      "declared": "STD-01",
+      "outside": "OUTSIDE-UNDECLARED"
+    }
+  ],
+  "limits": [
+    "fabricated-attribution-passes-structure",
+    "unapproved-scope-can-pass-structure",
+    "null-revision-does-not-pin"
+  ]
+}

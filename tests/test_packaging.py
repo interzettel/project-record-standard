@@ -23,7 +23,7 @@ class DistributionTests(unittest.TestCase):
                 self.assertIn(root + 'CHANGELOG.md', names)
                 self.assertIn(root + 'INSTALL.md', names)
                 self.assertIn(root + 'LICENSE', names)
-                for guide in ['ARCHITECTURE', 'COMPATIBILITY', 'RECORDS', 'FEEDBACK']:
+                for guide in ['ARCHITECTURE', 'POLICY', 'COMPATIBILITY', 'RECORDS', 'FEEDBACK']:
                     self.assertIn(root + 'standards/' + guide + '.md', names)
                 self.assertIn(root + 'standards/WORK-MODEL.md', names)
                 config=json.loads(archive.read(root+'examples/projects.json'))

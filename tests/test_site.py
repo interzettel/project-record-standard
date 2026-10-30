@@ -22,7 +22,7 @@ class SiteTests(unittest.TestCase):
             self.assertTrue((site/'guide/STANDARD.html').exists())
             self.assertTrue((site/'guide/READINESS.html').exists())
             self.assertTrue((site/'guide/WORK-MODEL.html').exists())
-            for guide in ['ARCHITECTURE', 'COMPATIBILITY', 'RECORDS', 'FEEDBACK']:
+            for guide in ['ARCHITECTURE', 'POLICY', 'COMPATIBILITY', 'RECORDS', 'FEEDBACK']:
                 self.assertTrue((site / 'guide' / (guide + '.html')).is_file())
             home = (site/'index.html').read_text()
             self.assertIn('Project records that keep up with the work', home)

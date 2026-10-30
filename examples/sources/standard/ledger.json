@@ -1350,22 +1350,38 @@
       "title": "Specify the rule catalogue and enforcement boundaries",
       "groupId": "G10",
       "milestoneId": "M10",
-      "state": "backlog",
-      "sourceState": "planned-not-implemented",
+      "state": "done",
+      "sourceState": "catalogue-and-boundary-probes-reviewed",
       "required": true,
       "blocked": false,
       "dependsOn": [
         "PRS-RECORDS-01"
       ],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "evidence": [
+        {
+          "kind": "specification",
+          "source": "standards/POLICY.md",
+          "revision": "239b4aadac5f83faa18c6500a58fb9d7e08221cf"
+        },
+        {
+          "kind": "test",
+          "source": "tests/test_policy.py",
+          "revision": "239b4aadac5f83faa18c6500a58fb9d7e08221cf"
+        },
+        {
+          "kind": "review",
+          "source": "audit/policy/2026-10-30/verification.json",
+          "revision": "239b4aadac5f83faa18c6500a58fb9d7e08221cf"
+        }
+      ],
+      "completionBasis": "17-rule sourced catalogue, mechanism matrix and5 paired executable boundary probes reviewed at239b4aadac5f83faa18c6500a58fb9d7e08221cf; no hard-enforcement or owner-acceptance inference.",
       "kind": "research",
-      "owner": "Selected contributor; repository maintainer reviews",
+      "owner": "Codex contributor; fresh-context review recorded",
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/28",
       "criterion": "A rule-to-mechanism matrix distinguishes skills, CLI, local hooks, required CI, scheduler and optional MCP; positive and negative cases cover duplicate credit, mismatched evidence, unauthorized acceptance, source drift and out-of-scope work. Every hard claim identifies its actual trust boundary and bypass. No autonomous permission or mandatory service is inferred.",
-      "note": "Queue 02/34. Native milestone 6. Execution prerequisites only are in dependsOn; acceptance/publication are separate gates."
+      "note": "Queue02/34 complete in PR44. Next#29/M13; no host activation or scope change. Release boundaries revised as proposals, with earlier#38 preparation held."
     },
     {
       "id": "PRS-RECORDS-02",
@@ -1703,7 +1719,8 @@
     "Native200%/400% checks observed and owner confirmed Narrator works. Versions and actual speech transcript unavailable; no independently observed or universal WCAG conformance claim. All18 required leaves complete; readiness grade remains separate.",
     "Post-release planning observation 2026-10-30: adds 11 required and 7 deferred leaves; 18/29 required (62.1%), 18/36 retained (50.0%), 4/9 declared milestones. New required work is 0/11 and new required milestone outcomes are 0/3; v0.4.1 historical delivery remains 18/18 and 4/4.",
     "The 30 October infrastructure expansion adds future work, not finished automation. New required work0/24; complete the real-session and cross-model gates before claiming unattended support.",
-    "PRS-RECORDS-01 research completed after source-linked comparison and fresh-context review: required18/42→19/42; retained18/52→19/52; newly required1/24. No scope added, milestone acceptance unchanged4/13, automatic tracking remains unimplemented."
+    "PRS-RECORDS-01 research completed after source-linked comparison and fresh-context review: required18/42→19/42; retained18/52→19/52; newly required1/24. No scope added, milestone acceptance unchanged4/13, automatic tracking remains unimplemented.",
+    "PRS-POLICY-01 completes the scoped catalogue and boundary probes: required19/42→20/42, retained19/52→20/52, newly required2/24. No added scope, authority or milestone acceptance; structural approval checks are not authentication."
   ],
   "governance": {
     "purpose": "Make scoped work, evidence and delivery understandable across independently branded projects.",

@@ -30,6 +30,8 @@ Official [AGENTS.md guidance](https://agents.md/) describes a place for coding-a
 
 [Claude Code hooks](https://code.claude.com/docs/en/hooks-guide) supply lifecycle commands, but post-tool checks occur after the action and hook failure behavior needs configuration. [Codex rules](https://learn.chatgpt.com/docs/agent-configuration/rules) govern matching command prefixes; project trust and actual runner permissions matter. Neither source establishes a universal cross-agent hook. Runtime/version support must be observed before PRS labels an adapter supported.
 
+The [policy catalogue](POLICY.md) assigns stable rules to guidance, current checks and future enforcement points. It records existing authority gaps rather than treating structural validation as authentication.
+
 ## Automatic after-work reconciliation
 
 The proposed event vocabulary covers start, completion, failure, cancellation, blockage and discovered scope. The event identifies the stable work item, source revision/digest, artifact revision, actual check results and known producer. Exact wire fields are decided in #32 against the policy catalogue, not silently added to contract 0.2.0 by this guide.
@@ -54,6 +56,6 @@ The [MCP stdio specification](https://modelcontextprotocol.io/specification/2026
 
 ## Completion and support claims
 
-The proposed 0.5.0 cut is the records/memory profile, M5 handoff/evidence/execution, M10 policy/pins/gates/reconciliation and the feedback/release handoff. It requires real end-to-end sessions and at least two actual model/runtime paths with known coverage. Synthetic events, one model's multiple lenses and correct metadata cannot certify those claims. Missing client/model access remains a pending gate.
+The [revised release direction](https://github.com/interzettel/project-record-standard/blob/main/progress/release-direction.md) separates foundations from experimental integration and supported automatic operation. The supported automatic workflow requires real end-to-end sessions and at least two actual model/runtime paths with known coverage. Synthetic events, one model's multiple lenses and correct metadata cannot certify those claims. Missing client/model access remains a pending gate.
 
 README-only presentation, the full JSON inspector, semantic upgrade tooling and fleet monitoring continue in their existing bounded packages. Icons and reference-template polish are optional. The [execution plan](https://github.com/interzettel/project-record-standard/blob/main/progress/execution-plan.md) owns the ordered interfaces; the ledger owns state and credit. The initial research and documentation prepare implementation, not completion of the future product.

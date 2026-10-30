@@ -1,0 +1,382 @@
+{
+  "catalogueRevision": 1,
+  "status": "design catalogue; not a runtime policy schema or installed enforcement engine",
+  "observedOn": "2026-10-30",
+  "inputRevision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+  "rules": [
+    {
+      "id": "PRS-ACCOUNT-01",
+      "rule": "Count each stable leaf once; containers earn no second credit",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Every counted record",
+      "writer": "Ledger field owner",
+      "checkPoint": "core.progress/validate; governance WBS mapping",
+      "failureOrUnknown": "duplicate ID or WBS assignment fails",
+      "trustBoundaryAndBypass": "Distinct IDs describing the same work need judgment; bypass by not calling core",
+      "overrideAuthority": "Scope authority records split/merge aliases; never waive duplicate credit",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-EVIDENCE-01",
+      "rule": "Match evidence kind, subject, result and exact artifact revision",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "New evidence-based claim",
+      "writer": "Actual observer; declared criterion/gate owner",
+      "checkPoint": "core.policy_satisfied; delivery.release_readiness",
+      "failureOrUnknown": "missing, failed, superseded or wrong-revision receipt cannot pass pinned policy",
+      "trustBoundaryAndBypass": "Legacy source Done labels are not recertified; revision=None does not pin; source strings do not authenticate observations",
+      "overrideAuthority": "Criterion authority may amend policy prospectively with rationale; retain prior receipts",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-ACCEPT-01",
+      "rule": "Attribute acceptance to the designated authority",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Approval, milestone or release gate",
+      "writer": "Designated acceptance authority",
+      "checkPoint": "governance metadata checks plus attributed-source review",
+      "failureOrUnknown": "missing required attribution fails applicable structural checks; unverifiable identity remains unknown",
+      "trustBoundaryAndBypass": "Plausible approvedBy/source strings can pass; this core has no identity authentication",
+      "overrideAuthority": "Only designated authority or explicit prior delegation; agent confidence/CI cannot substitute",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-SOURCE-01",
+      "rule": "Compare expected source identity with current bytes before writing",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Any reconciliation write",
+      "writer": "Manifest source owner",
+      "checkPoint": "adapter digests available; future #30/#32 precondition check",
+      "failureOrUnknown": "conflict/unknown stops affected write; retain proposed result and last success",
+      "trustBoundaryAndBypass": "Digest shape or new computed hash is not compare-and-swap; current core does not prevent stale writes",
+      "overrideAuthority": "Writer reconciles current source; no blind force override",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-SCOPE-01",
+      "rule": "Admit required scope only under declared authority or bounded grant",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "New required IDs, criteria, denominator or authority change",
+      "writer": "Declared scope authority",
+      "checkPoint": "governance reference checks; future admission policy; contributor judgment",
+      "failureOrUnknown": "outside grant stays proposal/deferred; no required-scope credit until admitted",
+      "trustBoundaryAndBypass": "Valid JSON and complete WBS can include an unapproved new leaf; no authorization proof in core",
+      "overrideAuthority": "Scope authority records actual decision/grant and before/after effect",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-PRIVACY-01",
+      "rule": "Keep private memory, locators and revealing totals out of public output",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Export/public feedback/index or evidence",
+      "writer": "Host data/publication authority",
+      "checkPoint": "core.export_record plus reviewed public selection",
+      "failureOrUnknown": "private input flags reject export; unknown audience blocks export of affected content",
+      "trustBoundaryAndBypass": "Visibility flag can lie; content review and process isolation are separate controls",
+      "overrideAuthority": "Only authorized reviewed projection; no override by merely relabeling private as public",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-OWNED-01",
+      "rule": "Write only selected owned outputs; preserve authored inputs",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Build/install/update",
+      "writer": "Host file owner; installer receipt owns installed bytes",
+      "checkPoint": "agents installer; build/run_action dedicated-output checks",
+      "failureOrUnknown": "foreign edits/collisions fail; interrupted matching install can resume",
+      "trustBoundaryAndBypass": "Does not stop another program or credential holder writing directly",
+      "overrideAuthority": "Owner reconciles edits or chooses a new output; do not disable ownership checks",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-HISTORY-01",
+      "rule": "Preserve prior observation and explain scope/state changes",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Authoritative progress update",
+      "writer": "Ledger/history writer",
+      "checkPoint": "compare/timeline checks plus update-project-progress guidance",
+      "failureOrUnknown": "incompatible history fails; missing before evidence leaves update unverified",
+      "trustBoundaryAndBypass": "compare reports selected differences, not every criterion edit or scope permission",
+      "overrideAuthority": "Source authority records correction/amendment; keep old identity reachable",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-PINS-01",
+      "rule": "Separate verified expected pin, observed installation and newer release discovery",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Install, upgrade or adapter activation",
+      "writer": "Host dependency authority; observed installer receipt",
+      "checkPoint": "existing skill byte receipts; future #30 pin assessment",
+      "failureOrUnknown": "unverified/mixed target remains unknown; do not auto-apply",
+      "trustBoundaryAndBypass": "Current catalogue does not implement general pin checks or support every runtime",
+      "overrideAuthority": "Apply/defer under adopted compatibility policy; security changes get fresh triage",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-ELIGIBLE-01",
+      "rule": "Select authorized unfinished work with satisfied execution prerequisites",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Package selection",
+      "writer": "Ledger work owner; contributor selects within grant",
+      "checkPoint": "router/agent-workflows guidance; future #3 selection contract",
+      "failureOrUnknown": "blocked/unknown prerequisite holds affected work; continue eligible independent work",
+      "trustBoundaryAndBypass": "A reference/cycle check does not verify permission or distinguish all dependency meanings",
+      "overrideAuthority": "Existing task authority may record bounded exception; no silent criterion rewrite",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-DELIVERY-01",
+      "rule": "Separate work, verification, acceptance, publication and deployment",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Any delivery claim",
+      "writer": "Each declared gate/channel/environment writer",
+      "checkPoint": "delivery summaries, matching receipts and source review",
+      "failureOrUnknown": "missing evidence stays pending/unknown; no inference from merge or issue closure",
+      "trustBoundaryAndBypass": "Synthetic attributed receipts can be structurally valid; network publication is separately observed",
+      "overrideAuthority": "Designated gate/publisher/operator authority; no self-issued release grant",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-HOST-01",
+      "rule": "Prove required checks and permitted bypass at the actual boundary",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Claim that CI enforces a rule",
+      "writer": "Host ruleset administrator",
+      "checkPoint": "CI invokes core; #33 activation receipt remains future",
+      "failureOrUnknown": "unreadable settings/untested rejection => enforcement unknown",
+      "trustBoundaryAndBypass": "Workflow success/YAML presence is not protected merge; admin/bypass and alternate branches matter",
+      "overrideAuthority": "Host policy authority controls explicit exception with actor, scope, reason and evidence",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-EVENT-01",
+      "rule": "Capture after-work results and replay without duplicate or stale writes",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Future runtime adapter/reconciliation",
+      "writer": "Authorized host adapter; core writer per source map",
+      "checkPoint": "future #32/#34 journal and lifecycle adapters",
+      "failureOrUnknown": "failure/timeout/disconnect retains pending result; bounded retry; no invented success",
+      "trustBoundaryAndBypass": "Hooks may be absent/disabled, miss tool paths or run after a write; no adapter installed by this policy",
+      "overrideAuthority": "Host grants bounded record writes; new permissions remain a separate decision",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-FRESH-01",
+      "rule": "Observe drift without replacing the last successful facts",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Future scheduled collection",
+      "writer": "Host scheduler/collection owner",
+      "checkPoint": "status collection receipts; future #39 observer",
+      "failureOrUnknown": "partial/delayed/missed run keeps old snapshot with stale/error state",
+      "trustBoundaryAndBypass": "Schedule can be delayed/dropped; time elapsed is not a successful collection",
+      "overrideAuthority": "Host owns cadence/retry/escalation; no scheduler created here",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-TRANSPORT-01",
+      "rule": "Optional MCP delegates to the same core and authority",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Future MCP client operation",
+      "writer": "Host tool/process authority",
+      "checkPoint": "future #40 thin transport; no second policy engine",
+      "failureOrUnknown": "unsupported/unavailable call stays unknown; no implied grant",
+      "trustBoundaryAndBypass": "Tool discovery does not force use; process credentials and client coverage limit enforcement",
+      "overrideAuthority": "Host permission policy; no mandatory MCP, VPS or remote account",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-FEEDBACK-01",
+      "rule": "Report only actual encountered shared gaps, safely and without duplicates",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Upstream issue/PR proposal",
+      "writer": "Contributor proposes; publication follows task grant",
+      "checkPoint": "FEEDBACK guidance; future #36 route",
+      "failureOrUnknown": "dedupe/unknown publication permission => local proposal; continue original task",
+      "trustBoundaryAndBypass": "No ticket quota or background idea generation; a tool cannot judge all relevance/privacy",
+      "overrideAuthority": "Existing upstream publication grant applies; no repeated prompt for already authorized work",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    },
+    {
+      "id": "PRS-OVERHEAD-01",
+      "rule": "Measure usefulness and correction burden before claiming unattended support",
+      "source": {
+        "revision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+        "paths": [
+          "standards/STANDARD.md",
+          "standards/ARCHITECTURE.md",
+          "standards/AGENT-WORKFLOWS.md",
+          "standards/RECORDS.md",
+          "standards/COMPATIBILITY.md",
+          "standards/FEEDBACK.md"
+        ]
+      },
+      "applicability": "Support/release claim",
+      "writer": "Declared evaluation/release authority",
+      "checkPoint": "future #35/#37 actual sessions and multiple producer/runtime paths",
+      "failureOrUnknown": "missing real-session evidence holds support claim; preserve negative results",
+      "trustBoundaryAndBypass": "Metadata/synthetic cases or one model in many lenses do not establish effectiveness",
+      "overrideAuthority": "Release authority may narrow supported set with evidence; no unsupported universal claim",
+      "evidence": "tests/test_policy.py for covered probes; audit/policy/2026-10-30/verification.json for actual outcomes; future packages remain unverified"
+    }
+  ]
+}
