@@ -16,6 +16,8 @@ Implementation: 0.4.1; contract: 0.2.0. Existing 0.1.0 records remain readable. 
 | Scope | The boundary of an outcome or package: inclusions, exclusions, dependencies and criteria. | Scope changes are recorded; it is not another mandatory hierarchy level. |
 | Capability | A lasting thing the product can do. | Can improve across milestones and releases; not automatically an accounting leaf. |
 | Gate | A criterion and its required evidence or designated acceptance. | All required criteria pass; a high work percentage cannot substitute. |
+| Implemented | The bounded code, configuration or content exists at an identified revision and location. | Establishes existence, not successful behavior, integration or acceptance. |
+| Integrated | The change is merged into the project's declared integration branch. | Required for Done only when the item criterion or applicable quality policy requires it. |
 | Verified | The stated check passed for the identified artifact, revision and environment. | Credit is limited to that check. |
 | Accepted | The designated reviewer accepted the declared outcome. Some technical gates may be automated; owner-only decisions remain owner decisions. | Never inferred from an agent's opinion or issue closure. |
 | Release candidate | A plan for a particular component/version/channel and its gates. | Does not prove publication. |
@@ -30,6 +32,45 @@ A roadmap presents direction and milestone checkpoints. Epics optionally group w
 Execution states are Planned, Ready, In progress, In review, Done, Cancelled and Unknown. Blocked is a flag with a reason and next responsible action. Risk and accepted debt are attributes, not extra completion states. Existing labels can map to these terms through an explicit alias table.
 
 A new Done claim means the work item's own criterion and its applicable project quality policy (Definition of Done) are met. The policy must fit the artifact; a project can require integration where relevant. Historical source claims retain their recorded meaning without recertification. Verification, milestone acceptance, publication and deployment are separate claims. A closed issue that was cancelled, rejected or superseded is not completed work. A specified capability is not automatically implemented. An experiment earns completion only against its own declared criterion. A useful negative result can complete a measurement task; a failed or unfinished acceptance check cannot become a pass.
+
+## Evidence claims and dependency meanings
+
+Implemented, Verified, Accepted and Released describe evidence about a deliverable. They do not replace execution states, form a mandatory linear lifecycle, or add fields to contract 0.2.0. Designed/Proposed can describe earlier work; Integrated, Deployed and Delivered remain separately inspectable claims. Readiness L0–L5 and delegated task risk R0–R4 measure different things and grant no authority from a claim or percentage.
+
+| Claim | Minimum subject, evidence and writer | Remaining boundary |
+| --- | --- | --- |
+| Implemented | Identify the bounded code/configuration/content, exact revision and location; the implementation source establishes that it exists. | An unmerged artifact can be implemented. Presence alone does not establish correctness or the whole item's criterion. |
+| Verified | Identify the named check, exact subject/revision, environment, result, producer/source and observation; the check observation owns that result. | A passing check of revision A does not certify revision B. A test of one behavior does not verify all behavior. |
+| Accepted | Identify the declared outcome/gate and its designated decision authority's attributed acceptance record. | CI, implementation, deployment and issue closure cannot supply a missing owner decision. Structural validation cannot authenticate a producer. |
+| Released | Identify the component/artifact, version, actual channel, exact revision/digest and sourced publication observation. | A candidate, tag or changelog heading alone does not prove the artifact is published. One channel does not prove another; release does not prove deployment. |
+
+The canonical completion writer applies the item's **unchanged criterion plus applicable artifact quality policy** to new Done claims. It retains the evidence dimensions separately. A project can require integration or outcome acceptance for one item and omit them for a read-only research item. A useful negative measurement can meet a research criterion; a failed criterion cannot be relabelled a successful outcome. Historical Done claims keep their source meaning, IDs, states and denominators without retrospective recertification. [Delivery records](DELIVERY.md) specify publication/deployment receipts; [the handoff](HANDOFF.md) demonstrates absent acceptance.
+
+| Relationship | Effect and handling |
+| --- | --- |
+| Execution prerequisite | Supplies something required to start the identified scope. Keep its declared meaning and source relationship; unfinished prerequisites do not become completed because a worker proceeds. |
+| Completion gate | Must pass before the item's own Done claim. Preparation may proceed if execution authority and actual holds permit; the gate and criterion remain pending. |
+| Outcome acceptance gate | Must pass before the declared outcome is accepted. Supporting implementation can be Done if its own criterion permits, while the outcome remains unaccepted. |
+| Reusable input or parent grouping | Supports work or groups it; does not itself mean a start prerequisite, Done gate or second accounting credit. |
+| Unknown legacy dependency meaning | Retain the original relationship and report the missing interpretation. Do not infer start permission or a contradiction from graph order alone. Resolve the host meaning before a dependent action. |
+
+These distinctions are host mappings, not new runtime edge enums. Existing `dependsOn` values and blocked flags remain intact. The current core checks references/cycles and explicit state structure; it does **not** infer dependency meaning, interpret prose criteria, select eligible work, authenticate authorization, or enforce all completion gates. `policy_satisfied` matches supplied metadata only and must receive the exact revision when revision applicability matters. A schema-valid record is not evidence that a newly authored Done claim is justified.
+
+A designated authority can record a **bounded execution exception**: affected work, original prerequisite, allowed actions/environment, decision source/authority, and remaining restrictions/gates. Such an exception permits only its declared preparation. It does not delete `dependsOn`, change Done criteria, accept outcomes or grant merge/release/deployment permission. Use an existing authorized exception without repeated approval requests. A missing exception or authority stays unresolved; do not manufacture one from a request to continue. A genuine scope/criterion change follows the host's source/history/approval policy separately.
+
+### Worked cases
+
+Each row is a separate synthetic project. Fractions concern that project's unchanged required scope; they are not an aggregate portfolio metric. Exact revisions, criteria, receipts and expected results are in `tests/fixtures/evidence_stages/cases.json`, exercised through the existing reader/validator/calculator/evidence policy by `tests/test_evidence_stages.py`.
+
+| Case | Supported claims | Done and remaining gate |
+| --- | --- | --- |
+| Built but unmerged | LG-1 exporter implementation and exact-revision tests exist on branch B. Its criterion also requires main integration and maintainer outcome acceptance; neither exists. | **0/1**. Preserve implementation/verification; integration and acceptance remain pending. No release/deployment claim. |
+| Wrong-revision verification | OB-1 implementation is integrated at C; only A's tests passed. An old v0.1.0 publication at A is retained as history. | **0/1**, active. Test C. Neither old tests nor old publication certify C; this criterion requires no owner acceptance or release. |
+| Authorized build-first, accept-later | BUILD depends on ACCEPT as a declared execution prerequisite. Owner Mira's sourced EX-7 allows implementation/offline tests in a disposable branch only. They pass at D, while BUILD's unchanged Done criterion still requires ACCEPT's owner decision. | **0/2**, both In review. Keep the edge and both criteria; prepare review under EX-7, obtain the missing owner decision. No merge/publication/live deployment authorized. |
+| Completed negative research | NEG-1's criterion requires comparison, retained measurements/report, method review and applicable quality checks; all pass at E, finding no improvement. | **1/1 can be recorded Done**. Retain the negative result. No criterion requires proving improvement, software release or owner outcome acceptance. If a different criterion required improvement, this result would not satisfy it. |
+| Deployed without acceptance | TF-1 code is integrated/tested at F and an authorized staging deployment is healthy. Its criterion still requires owner acceptance, which is absent. | **0/1**. Report staging deployment and missing acceptance separately. No release observation, criterion change or production permission follows. |
+
+Reproduce the deterministic cases with `PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_evidence_stages.py' -v`. They check the supplied source/policy boundaries; agent application evidence is separate from these checks and from `check_skills.py` metadata validation. No host runtime permission, publication or completed historical release changes through this clarification.
 
 ## Percentages
 

@@ -1,0 +1,560 @@
+{
+  "exampleOnly": true,
+  "cases": [
+    {
+      "id": "loomglass",
+      "project": {
+        "id": "loomglass",
+        "name": "Synthetic loomglass",
+        "visibility": "public"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "ledger.json",
+        "commit": null,
+        "observedOn": "2026-10-30",
+        "authority": "Synthetic fixture author"
+      },
+      "ledger": {
+        "contractVersion": "0.2.0",
+        "groups": [
+          {
+            "id": "G",
+            "title": "Synthetic work",
+            "panel": "Now"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "M",
+            "title": "Synthetic outcome",
+            "goal": "Keep criterion and acceptance distinct",
+            "horizon": "Now",
+            "groupIds": [
+              "G"
+            ],
+            "gateItemIds": [
+              "LG-1"
+            ],
+            "acceptanceRule": "source-state",
+            "sourceAccepted": false,
+            "nextAction": "Retain declared missing gates",
+            "unscopedWork": []
+          }
+        ],
+        "items": [
+          {
+            "id": "LG-1",
+            "title": "Implemented exporter, exact test, main integration and maintainer outcome acceptance",
+            "groupId": "G",
+            "milestoneId": "M",
+            "state": "review",
+            "sourceState": "synthetic-in-review",
+            "required": true,
+            "blocked": false,
+            "dependsOn": [],
+            "evidence": [
+              {
+                "kind": "implementation",
+                "subject": "LG-1",
+                "revision": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "result": "passed",
+                "source": "synthetic:implementation",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              },
+              {
+                "kind": "test",
+                "subject": "LG-1",
+                "revision": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "result": "passed",
+                "source": "synthetic:test",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              }
+            ],
+            "completionBasis": "Synthetic source observation",
+            "kind": "implementation",
+            "criterion": "Implemented exporter, exact test, main integration and maintainer outcome acceptance",
+            "implementationRevision": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        ]
+      },
+      "policies": {
+        "LG-1": {
+          "allOf": [
+            "implementation",
+            "test",
+            "integration",
+            "owner-review"
+          ]
+        }
+      },
+      "expected": {
+        "requiredDone": 0,
+        "requiredTotal": 1,
+        "acceptedMilestones": 0
+      }
+    },
+    {
+      "id": "obsidian",
+      "project": {
+        "id": "obsidian",
+        "name": "Synthetic obsidian",
+        "visibility": "public"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "ledger.json",
+        "commit": null,
+        "observedOn": "2026-10-30",
+        "authority": "Synthetic fixture author"
+      },
+      "ledger": {
+        "contractVersion": "0.2.0",
+        "groups": [
+          {
+            "id": "G",
+            "title": "Synthetic work",
+            "panel": "Now"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "M",
+            "title": "Synthetic outcome",
+            "goal": "Keep criterion and acceptance distinct",
+            "horizon": "Now",
+            "groupIds": [
+              "G"
+            ],
+            "gateItemIds": [
+              "OB-1"
+            ],
+            "acceptanceRule": "source-state",
+            "sourceAccepted": false,
+            "nextAction": "Retain declared missing gates",
+            "unscopedWork": []
+          }
+        ],
+        "items": [
+          {
+            "id": "OB-1",
+            "title": "Implementation and exact-revision tests",
+            "groupId": "G",
+            "milestoneId": "M",
+            "state": "active",
+            "sourceState": "synthetic-active",
+            "required": true,
+            "blocked": false,
+            "dependsOn": [],
+            "evidence": [
+              {
+                "kind": "implementation",
+                "subject": "OB-1",
+                "revision": "cccccccccccccccccccccccccccccccccccccccc",
+                "result": "passed",
+                "source": "synthetic:implementation",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              },
+              {
+                "kind": "integration",
+                "subject": "OB-1",
+                "revision": "cccccccccccccccccccccccccccccccccccccccc",
+                "result": "passed",
+                "source": "synthetic:integration",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              },
+              {
+                "kind": "test",
+                "subject": "OB-1",
+                "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "result": "passed",
+                "source": "synthetic:test",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              }
+            ],
+            "completionBasis": "Synthetic source observation",
+            "kind": "implementation",
+            "criterion": "Implementation and exact-revision tests",
+            "implementationRevision": "cccccccccccccccccccccccccccccccccccccccc"
+          }
+        ]
+      },
+      "policies": {
+        "OB-1": {
+          "allOf": [
+            "implementation",
+            "test"
+          ]
+        }
+      },
+      "expected": {
+        "requiredDone": 0,
+        "requiredTotal": 1,
+        "acceptedMilestones": 0
+      },
+      "publication": {
+        "component": "exporter",
+        "version": "0.1.0",
+        "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "source": "synthetic:old-publication"
+      }
+    },
+    {
+      "id": "caldera",
+      "project": {
+        "id": "caldera",
+        "name": "Synthetic caldera",
+        "visibility": "public"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "ledger.json",
+        "commit": null,
+        "observedOn": "2026-10-30",
+        "authority": "Synthetic fixture author"
+      },
+      "ledger": {
+        "contractVersion": "0.2.0",
+        "groups": [
+          {
+            "id": "G",
+            "title": "Synthetic work",
+            "panel": "Now"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "M",
+            "title": "Synthetic outcome",
+            "goal": "Keep criterion and acceptance distinct",
+            "horizon": "Now",
+            "groupIds": [
+              "G"
+            ],
+            "gateItemIds": [
+              "BUILD",
+              "ACCEPT"
+            ],
+            "acceptanceRule": "source-state",
+            "sourceAccepted": false,
+            "nextAction": "Retain declared missing gates",
+            "unscopedWork": []
+          }
+        ],
+        "items": [
+          {
+            "id": "BUILD",
+            "title": "Implementation, exact tests and ACCEPT owner decision",
+            "groupId": "G",
+            "milestoneId": "M",
+            "state": "review",
+            "sourceState": "synthetic-in-review",
+            "required": true,
+            "blocked": true,
+            "dependsOn": [
+              "ACCEPT"
+            ],
+            "evidence": [
+              {
+                "kind": "implementation",
+                "subject": "BUILD",
+                "revision": "dddddddddddddddddddddddddddddddddddddddd",
+                "result": "passed",
+                "source": "synthetic:implementation",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              },
+              {
+                "kind": "test",
+                "subject": "BUILD",
+                "revision": "dddddddddddddddddddddddddddddddddddddddd",
+                "result": "passed",
+                "source": "synthetic:test",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              }
+            ],
+            "completionBasis": "Synthetic source observation",
+            "kind": "implementation",
+            "criterion": "Implementation, exact tests and ACCEPT owner decision",
+            "implementationRevision": "dddddddddddddddddddddddddddddddddddddddd",
+            "note": "Done gate remains pending despite scoped preparation exception."
+          },
+          {
+            "id": "ACCEPT",
+            "title": "Record owner outcome decision",
+            "groupId": "G",
+            "milestoneId": "M",
+            "state": "review",
+            "sourceState": "synthetic-in-review",
+            "required": true,
+            "blocked": false,
+            "dependsOn": [],
+            "evidence": [],
+            "completionBasis": "Synthetic source observation",
+            "kind": "implementation",
+            "criterion": "Record owner outcome decision",
+            "implementationRevision": "dddddddddddddddddddddddddddddddddddddddd"
+          }
+        ]
+      },
+      "policies": {
+        "BUILD": {
+          "allOf": [
+            "implementation",
+            "test",
+            "owner-review"
+          ]
+        },
+        "ACCEPT": {
+          "allOf": [
+            "owner-review"
+          ]
+        }
+      },
+      "expected": {
+        "requiredDone": 0,
+        "requiredTotal": 2,
+        "acceptedMilestones": 0
+      },
+      "exception": {
+        "id": "EX-7",
+        "authority": "Mira (synthetic project owner)",
+        "source": "synthetic:recorded-owner-decision",
+        "workItemId": "BUILD",
+        "prerequisiteId": "ACCEPT",
+        "allowed": [
+          "implement-in-disposable-branch",
+          "offline-tests",
+          "prepare-review"
+        ],
+        "remaining": [
+          "original-dependency",
+          "both-done-criteria",
+          "owner-acceptance"
+        ],
+        "prohibited": [
+          "merge",
+          "publish",
+          "live-deploy"
+        ]
+      }
+    },
+    {
+      "id": "basalt",
+      "project": {
+        "id": "basalt",
+        "name": "Synthetic basalt",
+        "visibility": "public"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "ledger.json",
+        "commit": null,
+        "observedOn": "2026-10-30",
+        "authority": "Synthetic fixture author"
+      },
+      "ledger": {
+        "contractVersion": "0.2.0",
+        "groups": [
+          {
+            "id": "G",
+            "title": "Synthetic work",
+            "panel": "Now"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "M",
+            "title": "Synthetic outcome",
+            "goal": "Keep criterion and acceptance distinct",
+            "horizon": "Now",
+            "groupIds": [
+              "G"
+            ],
+            "gateItemIds": [
+              "NEG-1"
+            ],
+            "acceptanceRule": "source-state",
+            "sourceAccepted": false,
+            "nextAction": "Retain declared missing gates",
+            "unscopedWork": []
+          }
+        ],
+        "items": [
+          {
+            "id": "NEG-1",
+            "title": "Declared comparison, retained measurements/report, method peer review and applicable quality checks",
+            "groupId": "G",
+            "milestoneId": "M",
+            "state": "done",
+            "sourceState": "synthetic-criterion-met",
+            "required": true,
+            "blocked": false,
+            "dependsOn": [],
+            "evidence": [
+              {
+                "kind": "analysis",
+                "subject": "NEG-1",
+                "revision": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                "result": "passed",
+                "source": "synthetic:analysis",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              },
+              {
+                "kind": "peer-review",
+                "subject": "NEG-1",
+                "revision": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                "result": "passed",
+                "source": "synthetic:peer-review",
+                "producer": "Kai (synthetic peer reviewer)",
+                "observedOn": "2026-10-30"
+              }
+            ],
+            "completionBasis": "Synthetic source observation",
+            "kind": "research",
+            "criterion": "Declared comparison, retained measurements/report, method peer review and applicable quality checks",
+            "implementationRevision": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+          }
+        ]
+      },
+      "policies": {
+        "NEG-1": {
+          "allOf": [
+            "analysis",
+            "peer-review"
+          ]
+        }
+      },
+      "expected": {
+        "requiredDone": 1,
+        "requiredTotal": 1,
+        "acceptedMilestones": 0
+      },
+      "measurement": {
+        "outcome": "no-improvement",
+        "source": "synthetic:retained-measurements",
+        "revision": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      },
+      "qualityChecks": "all-applicable-passed",
+      "publication": null
+    },
+    {
+      "id": "tuff",
+      "project": {
+        "id": "tuff",
+        "name": "Synthetic tuff",
+        "visibility": "public"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "ledger.json",
+        "commit": null,
+        "observedOn": "2026-10-30",
+        "authority": "Synthetic fixture author"
+      },
+      "ledger": {
+        "contractVersion": "0.2.0",
+        "groups": [
+          {
+            "id": "G",
+            "title": "Synthetic work",
+            "panel": "Now"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "M",
+            "title": "Synthetic outcome",
+            "goal": "Keep criterion and acceptance distinct",
+            "horizon": "Now",
+            "groupIds": [
+              "G"
+            ],
+            "gateItemIds": [
+              "TF-1"
+            ],
+            "acceptanceRule": "source-state",
+            "sourceAccepted": false,
+            "nextAction": "Retain declared missing gates",
+            "unscopedWork": []
+          }
+        ],
+        "items": [
+          {
+            "id": "TF-1",
+            "title": "Implement, verify and obtain owner acceptance",
+            "groupId": "G",
+            "milestoneId": "M",
+            "state": "review",
+            "sourceState": "synthetic-in-review",
+            "required": true,
+            "blocked": false,
+            "dependsOn": [],
+            "evidence": [
+              {
+                "kind": "implementation",
+                "subject": "TF-1",
+                "revision": "ffffffffffffffffffffffffffffffffffffffff",
+                "result": "passed",
+                "source": "synthetic:implementation",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              },
+              {
+                "kind": "integration",
+                "subject": "TF-1",
+                "revision": "ffffffffffffffffffffffffffffffffffffffff",
+                "result": "passed",
+                "source": "synthetic:integration",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              },
+              {
+                "kind": "test",
+                "subject": "TF-1",
+                "revision": "ffffffffffffffffffffffffffffffffffffffff",
+                "result": "passed",
+                "source": "synthetic:test",
+                "producer": "Synthetic fixture observer",
+                "observedOn": "2026-10-30"
+              }
+            ],
+            "completionBasis": "Synthetic source observation",
+            "kind": "implementation",
+            "criterion": "Implement, verify and obtain owner acceptance",
+            "implementationRevision": "ffffffffffffffffffffffffffffffffffffffff"
+          }
+        ]
+      },
+      "policies": {
+        "TF-1": {
+          "allOf": [
+            "implementation",
+            "test",
+            "owner-review"
+          ]
+        }
+      },
+      "expected": {
+        "requiredDone": 0,
+        "requiredTotal": 1,
+        "acceptedMilestones": 0
+      },
+      "deployment": {
+        "environment": "staging",
+        "revision": "ffffffffffffffffffffffffffffffffffffffff",
+        "source": "synthetic:staging-receipt",
+        "health": "healthy",
+        "authorizedScope": "staging-only"
+      },
+      "publication": null
+    }
+  ]
+}

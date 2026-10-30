@@ -1,0 +1,78 @@
+{
+  "package": "PRS-EVIDENCE-STAGES",
+  "observedOn": "2026-10-30",
+  "inputRevision": "4e6c50dfbcb1cb9fc4ab665bc48d38a0a9b49579",
+  "producer": "Codex task session",
+  "controls": {
+    "samples": 5,
+    "casesEach": 5,
+    "rawFiles": [
+      "control-1.md",
+      "control-2.md",
+      "control-3.md",
+      "control-4.md",
+      "control-5.md"
+    ],
+    "observed": "All5 preserve core case counts A0/1,B0/1,C0/2,D1/1,E0/1, the bounded exception and missing acceptance. Control2 adds an unsolicited cross-project1of6 summary; it is not a canonical project measure. Control2 also qualifies file existence versus full criterion satisfaction."
+  },
+  "applications": {
+    "samples": 5,
+    "casesEach": 5,
+    "rawFiles": [
+      "application-1.md",
+      "application-2.md",
+      "application-3.md",
+      "application-4.md",
+      "application-5.md"
+    ],
+    "observed": "All5 preserve case fractions, exact-revision limits, original dependency/exception, negative-research completion and staging/acceptance/permission boundaries. Separate-project scopes retained."
+  },
+  "scoring": {
+    "method": "Coordinator manually read every full response against case facts and expected claims; no keyword-only scoring.",
+    "caseCounts": {
+      "A": [
+        0,
+        1
+      ],
+      "B": [
+        0,
+        1
+      ],
+      "C": [
+        0,
+        2
+      ],
+      "D": [
+        1,
+        1
+      ],
+      "E": [
+        0,
+        1
+      ]
+    }
+  },
+  "skillDecision": "No skill body/metadata/reference changes: no core baseline failure justified adding skill rules. Existing installed skill requires STANDARD; reference clarification is there. No new personal installation or suite version change.",
+  "installation": "Actual disposable host installation and repeat no-change; installation.json retains existing suite receipt.",
+  "checks": [
+    "7 evidence-stage tests pass",
+    "108 full Python tests pass after restoring hash-pinned Markdown3.11.2",
+    "14 JavaScript tests pass after npm ci",
+    "11 skill metadata entries,20 palette pairs,19-guide build and README parity pass",
+    "Comment wording checker:1file,0warnings/notes; no new language-linter setup",
+    "7 evidence-stage tests pass from fresh unpublished source-kit extraction"
+  ],
+  "initialFailures": [
+    "Full Python discovery initially had1 import error because pinned Markdown dependency was absent after turn restart; restored hash-pinned package and all108 passed."
+  ],
+  "limits": [
+    "Synthetic preparation responses, not actual consumer reconciliation or real project writes",
+    "Same-family fresh contexts, not human/cross-model evidence; general environment instructions still present",
+    "Cases reused between controls/applications; not held-out, randomized or causal improvement proof",
+    "No skill bodies changed, personal skill synchronization performed or release published",
+    "Core/schema/readiness/blocked semantics unchanged; validators cannot authenticate authority or enforce prose gates"
+  ],
+  "review": {
+    "status": "pending"
+  }
+}
