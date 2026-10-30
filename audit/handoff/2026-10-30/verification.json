@@ -1,0 +1,21 @@
+{
+  "package": "PRS-HANDOFF-01",
+  "inputRevision": "d1d609b5fbf72b33e7b030aab18fd265b7a18e91",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "checks": [
+    "6 offline handoff tests pass",
+    "90 full Python tests pass",
+    "14 JavaScript tests pass after npm ci",
+    "11 skill metadata entries,20 palette pairs,19-guide public build and README parity pass",
+    "6 handoff tests pass in fresh unpublished source-kit extraction"
+  ],
+  "limits": [
+    "Synthetic data only, no real Qurultai/A2A or consumer migration",
+    "No permission changes, service, external write loop, release or authentication claim",
+    "Adversarial integration and bounded exit verdict remain #16; M5 acceptance remains pending"
+  ],
+  "review": {
+    "status": "pending"
+  }
+}

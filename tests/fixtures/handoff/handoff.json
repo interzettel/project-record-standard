@@ -1,0 +1,68 @@
+{
+  "exampleOnly": true,
+  "pin": {
+    "contractVersion": "0.2.0",
+    "toolkitCommit": "d1d609b5fbf72b33e7b030aab18fd265b7a18e91",
+    "toolkitFiles": {
+      "schemas/record.schema.json": "d699b0f2c4e86609f69bb7a9c16374954e76926db728328a81c9f781a98e85e0",
+      "src/project_record/core.py": "75f677dbab461b4a88f9e09d2e65bcc7dd8f1e452c9e4f614476ad58003a4c25",
+      "src/project_record/adapters.py": "9af530e44729b7abcd239f437b22bccc4a1af33cc4a31192159291778f16f11f"
+    },
+    "sourceSha256": "1c94e095e02e098d573a4d3842c937830fe24f728f9162e7333fd968cff4aea3",
+    "manifestSha256": "c7cade53f34f3626999037215d2c745c1999cff90b322f29e071cdb65ecbed31"
+  },
+  "mapping": {
+    "projectId": "synthetic-handoff",
+    "prsLeafId": "SYNTHETIC-LEAF-01",
+    "consumerTaskId": "synthetic-qurultai-task-01",
+    "a2aTaskId": null
+  },
+  "consumerTask": {
+    "id": "synthetic-qurultai-task-01",
+    "status": "completed",
+    "implementationRevision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+    "receipts": [
+      {
+        "kind": "implementation",
+        "subject": "SYNTHETIC-LEAF-01",
+        "revision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+        "result": "passed",
+        "source": "synthetic:implementation",
+        "observedOn": "2026-10-30",
+        "producer": "synthetic-worker"
+      },
+      {
+        "kind": "test",
+        "subject": "SYNTHETIC-LEAF-01",
+        "revision": "55eeb498d36f42824bdaab5c2164888c5676e8f1",
+        "result": "passed",
+        "source": "synthetic:test",
+        "observedOn": "2026-10-30",
+        "producer": "synthetic-checker"
+      }
+    ]
+  },
+  "workPolicy": {
+    "allOf": [
+      "implementation",
+      "test"
+    ]
+  },
+  "acceptancePolicy": {
+    "allOf": [
+      "owner-review"
+    ]
+  },
+  "permissions": {
+    "network": false,
+    "externalWrites": false,
+    "spawnAgents": false,
+    "release": false
+  },
+  "expected": {
+    "requiredDone": 1,
+    "requiredTotal": 1,
+    "acceptedMilestones": 0,
+    "declaredMilestones": 1
+  }
+}
