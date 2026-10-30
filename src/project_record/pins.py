@@ -37,7 +37,13 @@ def _relative(value: object) -> str:
 
 
 def _file(root: Path, relative: str) -> Path:
-    return _safe_path(root, _relative(relative))
+    path = _safe_path(root, _relative(relative))
+    parent = path.parent
+    while parent != root:
+        if parent.exists() and not parent.is_dir():
+            raise RecordError('Selected path has a non-directory parent')
+        parent = parent.parent
+    return path
 
 
 def _native_version(root: Path) -> str:
@@ -194,10 +200,15 @@ def verify_installation(pin: dict, target: Path, provenance: dict | None = None,
         check(path, digest)
     try:
         receipt_path = _file(target, RECEIPT)
-        receipt = json.loads(receipt_path.read_text()) if receipt_path.is_file() else None
-        if receipt is None:
+        if not receipt_path.exists():
             missing.append(RECEIPT)
-        elif (not isinstance(receipt, dict) or receipt.get('schemaVersion') != 1
+            receipt = {}
+        elif not receipt_path.is_file():
+            issues.append('installation-receipt')
+            receipt = {}
+        else:
+            receipt = json.loads(receipt_path.read_text())
+        if receipt_path.exists() and (not isinstance(receipt, dict) or type(receipt.get('schemaVersion')) is not int or receipt.get('schemaVersion') != 1
               or receipt.get('files') != suite['files'] or receipt.get('suiteDigest') != suite['suiteDigest']
               or receipt.get('suiteVersion') != suite['manifest']['suiteVersion']
               or receipt.get('contractVersion') != suite['manifest']['contractVersion']
@@ -278,7 +289,7 @@ def assess_update(installed: str, available: str, security: bool = False,
     if type(security) is not bool:
         raise RecordError('Security relevance must be explicit')
     order = _compare_versions(installed, available)
-    kind = ('downgrade' if order > 0 else 'prerelease' if pre else 'unchanged' if order == 0 else
+    kind = ('downgrade' if order > 0 else 'unchanged' if order == 0 else 'prerelease' if pre else
             'major' if new[0] != old[0] else 'minor' if new[1] != old[1] else 'patch' if new[2] != old[2] else 'stabilization')
     if security:
         disposition = 'prioritized-assessment-required'

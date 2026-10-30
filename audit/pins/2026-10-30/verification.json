@@ -15,5 +15,19 @@
     "Runtime/adapter observations and support evidence are caller supplied",
     "Native floor>=3.10 and historical release bytes unchanged; next publication floor must be tested in #38",
     "Fresh-context review pending"
-  ]
+  ],
+  "initialReview": {
+    "revision": "7d7ec5284d02eb91255ee893bef28b385c97d544",
+    "producer": "Codex /root/pins_review",
+    "result": "one material conflict-classification finding plus minor unchanged-prerelease noise",
+    "reproduced": [
+      "Existing null receipt became partial",
+      "Receipt directory became partial",
+      "Selected skill directory replaced by file became partial",
+      "Equal prerelease/build precedence repeatedly classified as opt-in change"
+    ],
+    "regressionRun": "24 tests:4 failures reproduced on original implementation before fixes",
+    "fixRun": "24 tests pass after fixes",
+    "boundary": "Read-only same-family review; no human or cross-model proof"
+  }
 }

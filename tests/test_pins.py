@@ -216,3 +216,34 @@ class PinTests(unittest.TestCase):
         self.pin.pop('policy')
         with self.assertRaises(RecordError):
             self.verify()
+
+    def test_existing_null_or_invalid_schema_receipt_is_conflicted(self):
+        path = self.target / RECEIPT
+        original = path.read_bytes()
+        for value in [None, [], True]:
+            path.write_text(json.dumps(value))
+            self.assertEqual(self.verify()['bytes'], 'conflicted')
+        for version in [True, 1.0]:
+            value = json.loads(original)
+            value['schemaVersion'] = version
+            path.write_text(json.dumps(value))
+            self.assertEqual(self.verify()['bytes'], 'conflicted')
+
+    def test_existing_receipt_directory_is_conflicted(self):
+        path = self.target / RECEIPT
+        path.unlink()
+        path.mkdir()
+        self.assertEqual(self.verify()['bytes'], 'conflicted')
+
+    def test_selected_skill_directory_replaced_by_file_is_conflicted(self):
+        import shutil
+        path = self.target / '.agents/skills/example'
+        shutil.rmtree(path)
+        path.write_text('replacement')
+        self.assertEqual(self.verify()['bytes'], 'conflicted')
+
+    def test_equal_prerelease_precedence_reports_no_change(self):
+        for available in ['1.0.0-alpha.1', '1.0.0-alpha.1+build-two']:
+            result = assess_update('1.0.0-alpha.1+build-one', available)
+            self.assertEqual(result['change'], 'unchanged')
+            self.assertEqual(result['disposition'], 'no-change')
