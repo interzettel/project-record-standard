@@ -15,5 +15,19 @@
     "Lookup, Git selection, owner indexes and previews require authorized local use",
     "M13 outcome acceptance remains with Yi\u011fit",
     "Fresh-context review pending"
-  ]
+  ],
+  "initialReview": {
+    "revision": "79b411bf64eb0ccca10481f6c6edaf14af4c9e6c",
+    "producer": "Codex /root/layout_review, fresh-context same-family read-only",
+    "result": "changes required",
+    "findings": [
+      "Whole-file selection ignored private sections",
+      "Repeated moves could drop old aliases",
+      "Malformed transient flags accepted; control changes absent from preview",
+      "Indirect dangling supersession raised KeyError"
+    ],
+    "regressionRun": "20 tests:3 failures and1 error on the original implementation; all4 reproduced before fixes",
+    "fixRun": "20 layout tests pass after metadata/privacy/alias/preview fixes",
+    "limits": "Not human/cross-model effectiveness evidence"
+  }
 }

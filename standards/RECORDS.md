@@ -62,7 +62,7 @@ The profile must test README-only research, private personal-agent and shared-re
 | Field | Meaning |
 | --- | --- |
 | `stores` | Exactly one entry per class: personal-memory, session-context, instructions, knowledge, plan, work, decisions, evidence, runbooks and generated. Use an explicit unused home when a class is unnecessary. No folder must be created to satisfy this declaration. |
-| `home` | `kind: repo` with literal relative `path` and `scope: file` or `directory`; `external` with a host-local `reference`; or `unused`. File anchors permit a README-only host. Directory scope is explicit, so dots in existing directory names work. |
+| `home` | `kind: repo` with literal relative `path` and `scope: file` or `directory`; `external` with a host-local `reference`; or `unused`. File anchors permit a README-only host. Whole-file Git/public selection must agree across all collocated sections and declared private directories; a private section cannot be hidden inside a selected public file. Directory scope is explicit, so dots in existing directory names work. |
 | `writer`, `owns` | One declared writer per class; unique qualified field identities. Only work may own `work.*`; generated views own no authoritative fields. The profile points to existing authority and carries no work states, completion counts or approvals. |
 | `visibility`, `git`, `publicIndex` | Explicit independent selections. Private entries cannot enter a public index. External/unused homes are never selected. Personal/session and transient stores are private; Git selection requires an attributed `gitApproval` decision and is never automatic. |
 | `retention` | Host lifecycle/erasure rule. The helper requires a declaration; it does not delete or retain actual files. |
@@ -74,7 +74,7 @@ Use `project_record.record_layout.validate_layout`, `layout_index`, `git_paths`,
 
 Lookup by class and stable ID disambiguates reused names. Duplicate IDs within one class fail validation. A shared file or historical locator matching several records returns ambiguous; a missing ID returns unknown. A stale recalled revision is flagged and cannot replace the indexed current locator. Superseded decisions return their successor ID without deleting the earlier record. This does not authenticate a decision, prove a file exists or certify its current bytes.
 
-A migration preview lists moves for stable identities, requires the previous locator on moved records, reports removed mappings as `unmapped-hold`, and flags changes to home/writer/visibility/selection/ownership/retention as `policy-change-hold`. Added references are reported explicitly. Nothing is applied; resolve holds and inspect real source/destination conflicts, symlinks, permissions and authorized audience before a separately implemented migration. Public sharing of a preview needs its own selection review.
+A migration preview lists moves for stable identities, requires the previous locator on moved records, reports removed mappings as `unmapped-hold`, and flags changes to home/writer/visibility/selection/ownership/retention as `policy-change-hold`. This includes transient flags, Git grants and extension-field changes. Historical aliases cannot be dropped silently on repeated moves. Added references are reported explicitly. Nothing is applied; resolve holds and inspect real source/destination conflicts, symlinks, permissions and authorized audience before a separately implemented migration. Public sharing of a preview needs its own selection review.
 
 ## Naming, revisions and lifecycle
 

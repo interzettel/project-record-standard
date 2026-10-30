@@ -155,3 +155,38 @@ class RecordLayoutTests(unittest.TestCase):
         profile['layoutVersion'] = True
         with self.assertRaises(RecordError):
             validate_layout(profile)
+
+    def test_private_section_cannot_hide_inside_a_selected_git_file(self):
+        profile = self.profile('readme-research')
+        store = next(s for s in profile['stores'] if s['class'] == 'personal-memory')
+        store['home'] = {'kind':'repo', 'path':'README.md#private-memory', 'scope':'file'}
+        with self.assertRaises(RecordError):
+            git_paths(profile)
+
+    def test_second_move_preserves_all_historical_aliases(self):
+        before = self.profile()
+        before['records'][4]['previousPaths'] = ['old-experiment.md']
+        after = deepcopy(before)
+        item = after['records'][4]
+        item.update(path='Existing.evidence/new.md', previousPaths=[item['path']])
+        with self.assertRaises(RecordError):
+            migration_preview(before, after)
+
+    def test_transient_and_grant_changes_are_validated_and_held(self):
+        before = self.profile()
+        after = deepcopy(before)
+        store = next(s for s in after['stores'] if s['class'] == 'generated')
+        store['transient'] = 'true'
+        with self.assertRaises(RecordError):
+            validate_layout(after)
+        store['transient'] = False
+        self.assertEqual(migration_preview(before, after)[0]['action'], 'policy-change-hold')
+        store['transient'] = True
+        store['gitApproval'] = {'by':'changed', 'source':'synthetic', 'reason':'test'}
+        self.assertEqual(migration_preview(before, after)[0]['action'], 'policy-change-hold')
+
+    def test_indirect_missing_successor_is_a_record_error(self):
+        profile = self.profile()
+        profile['records'][3]['supersededBy'] = 'MISSING'
+        with self.assertRaises(RecordError):
+            validate_layout(profile)

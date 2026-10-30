@@ -60,6 +60,8 @@ def validate_layout(profile: dict) -> None:
             raise RecordError('External/unused homes are never selected for Git/public indexes')
         if store['visibility'] == 'private' and store['publicIndex']:
             raise RecordError('Private metadata must not enter a public index')
+        if 'transient' in store and type(store['transient']) is not bool:
+            raise RecordError('Transient must be an explicit boolean')
         if store['class'] in _PRIVATE or store.get('transient') is True:
             if store['visibility'] != 'private' or store['publicIndex']:
                 raise RecordError('Personal/session/transient stores remain private')
@@ -106,12 +108,28 @@ def validate_layout(profile: dict) -> None:
             raise RecordError('Unknown superseding record in the same class')
         seen = set()
         while target is not None:
-            if not _text(target):
+            if not _text(target) or (record['class'], target) not in index:
                 raise RecordError('Superseding identity must be textual')
             if target in seen or target == record['id']:
                 raise RecordError('Supersession cycle')
             seen.add(target)
             target = index[(record['class'], target)].get('supersededBy')
+
+    # Selection acts on whole files, even when multiple classes use anchors.
+    for record in records:
+        selected = homes[record['class']]
+        path = record['path'].split('#')[0]
+        for store in stores:
+            home = store['home']
+            if home['kind'] != 'repo':
+                continue
+            base = home['path'].split('#')[0]
+            overlap = path == base or (home['scope'] == 'directory' and path.startswith(base + '/'))
+            private_records = [r['path'].split('#')[0] for r in records if r['class'] == store['class']]
+            overlap = overlap or path in private_records
+            if overlap and ((selected['git'] and not store['git']) or
+                            (selected['publicIndex'] and store['visibility'] == 'private')):
+                raise RecordError('Whole-file selection conflicts with another declared home policy')
 
 
 def layout_index(profile: dict, audience: str = 'public') -> list[dict]:
@@ -161,13 +179,15 @@ def migration_preview(before: dict, after: dict) -> list[dict]:
     result = []
     prior = {s['class']: s for s in before['stores']}
     for store in after['stores']:
-        changed = [key for key in ['home', 'writer', 'visibility', 'git', 'publicIndex', 'owns', 'retention']
+        changed = [key for key in sorted(set(prior[store['class']]) | set(store), key=str)
                    if prior[store['class']].get(key) != store.get(key)]
         if changed:
             result.append({'class': store['class'], 'action': 'policy-change-hold',
                            'fields': changed, 'applied': False})
     for record in after.get('records', []):
         previous = old.get((record['class'], record['id']))
+        if previous and not set(previous.get('previousPaths', [])) <= set(record.get('previousPaths', [])):
+            raise RecordError('Historical locators cannot disappear silently')
         if previous and previous['path'] != record['path']:
             if previous['path'] not in record.get('previousPaths', []):
                 raise RecordError('Moved record must retain its previous locator')
