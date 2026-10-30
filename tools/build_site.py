@@ -27,6 +27,7 @@ DOCUMENTS = [
     ('ARCHITECTURE', 'Guidance and automatic tracking'),
     ('POLICY', 'Rules and enforcement boundaries'),
     ('COMPATIBILITY', 'Pins and update policy'),
+    ('HANDOFF', 'Pinned offline handoff'),
     ('RECORDS', 'Records and agent memory'),
     ('FEEDBACK', 'Feedback from real work'),
     ('GITHUB', 'Issues and GitHub Projects'),

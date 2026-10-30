@@ -1,0 +1,11 @@
+{
+  "id": "CH-OFFLINE-HANDOFF",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Prove one pinned synthetic offline handoff through existing record loading and evidence checks, with separate consumer identity and absent owner acceptance.",
+  "workItemIds": [
+    "PRS-HANDOFF-01"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/47",
+  "compatibility": "Unreleased documentation/fixtures/tests only; no record contract, core API, native version, consumer permissions or existing release bytes changed. Synthetic task envelope is not a consumer protocol implementation."
+}

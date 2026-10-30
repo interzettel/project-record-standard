@@ -1,0 +1,23 @@
+{
+  "projects": [
+    {
+      "adapter": "normalized-v1",
+      "sourceFile": "ledger.json",
+      "project": {
+        "id": "synthetic-handoff",
+        "name": "Offline handoff example",
+        "visibility": "public"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "tests/fixtures/handoff/ledger.json",
+        "commit": null,
+        "observedOn": "2026-10-30",
+        "authority": "Synthetic fixture author only; not a consumer observation"
+      },
+      "presentation": {
+        "renderer": "host"
+      }
+    }
+  ]
+}
