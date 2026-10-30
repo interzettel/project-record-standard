@@ -1,0 +1,254 @@
+{
+  "observedOn": "2026-10-30",
+  "package": "PRS-GATE-02",
+  "criterionComplete": false,
+  "preparationMerge": "ae2764e36f8c79503e9df23bb0f07786a2544fd0",
+  "probePR": 54,
+  "merged": false,
+  "trustedCheckerRevision": "ae2764e36f8c79503e9df23bb0f07786a2544fd0",
+  "implementationIdentity": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+  "negative": {
+    "candidateRevision": "7c4b712a7d4c241481267d0539cb61bf41ac2d02",
+    "run": 41127372512,
+    "ordinaryCI": 41127372426,
+    "report": {
+      "policyCIResultVersion": 1,
+      "exitCode": 1,
+      "overall": "fail",
+      "hostEnforcement": "not-assessed",
+      "written": false,
+      "protectedChanges": [],
+      "protectedChangeMeaning": "Review notices, not authorization or a tamper-proof future-workflow guarantee",
+      "reason": "Duplicate items ID"
+    },
+    "expected": "Duplicate data rejected by actual trusted-policy job; ordinary verification also failed"
+  },
+  "corrected": {
+    "candidateRevision": "0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b",
+    "run": 41127506344,
+    "messageIncludes": "[skip ci]",
+    "report": {
+      "policyCIResultVersion": 1,
+      "exitCode": 0,
+      "overall": "pass",
+      "hostEnforcement": "not-assessed",
+      "written": false,
+      "protectedChanges": [],
+      "protectedChangeMeaning": "Review notices, not authorization or a tamper-proof future-workflow guarantee",
+      "policy": {
+        "policyResultVersion": 1,
+        "catalogueRevision": 1,
+        "overall": "pass",
+        "exitCode": 0,
+        "inputDigests": {
+          "requestCanonicalSha256": "68406a8e6ba067b0bed8d8faedae8b7c536696f64583ed72d3e4eed2d5a30cbf",
+          "recordCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13",
+          "beforeCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13",
+          "declaredSource": {
+            "commit": null,
+            "sha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768",
+            "observedOn": "2026-10-30"
+          },
+          "observedSourceSha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768"
+        },
+        "checks": [
+          {
+            "ruleId": "PRS-ACCOUNT-01",
+            "required": true,
+            "status": "pass",
+            "scope": "Existing record validator/accounting/reference structure",
+            "reasons": [
+              "Current and any supplied prior record satisfy existing structural checks"
+            ]
+          },
+          {
+            "ruleId": "PRS-EVIDENCE-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Supply the required predicate context"
+            ]
+          },
+          {
+            "ruleId": "PRS-ACCEPT-01",
+            "required": false,
+            "status": "not-applicable",
+            "scope": "No new acceptance decision in supplied comparison",
+            "reasons": [
+              "Historical acceptance remains unchanged and is not recertified"
+            ]
+          },
+          {
+            "ruleId": "PRS-SOURCE-01",
+            "required": true,
+            "status": "pass",
+            "scope": "Actual source bytes against before/current expected identity",
+            "reasons": [
+              "Source bytes match the declared precondition; no lock/CAS/write is performed"
+            ]
+          },
+          {
+            "ruleId": "PRS-SCOPE-01",
+            "required": false,
+            "status": "pass",
+            "scope": "No scope/criteria/dependency/governance change in supplied comparison",
+            "reasons": [
+              "No new scope admission is claimed; routine unchanged-scope updates need no new approval here"
+            ]
+          },
+          {
+            "ruleId": "PRS-PRIVACY-01",
+            "required": true,
+            "status": "pass",
+            "scope": "Existing declared visibility/input selection guard",
+            "reasons": [
+              "Public export guard accepts declared input visibility; no content classification or publication performed"
+            ]
+          },
+          {
+            "ruleId": "PRS-OWNED-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Supply an explicit output path for the shared dedicated-directory guard"
+            ]
+          },
+          {
+            "ruleId": "PRS-HISTORY-01",
+            "required": true,
+            "status": "pass",
+            "scope": "Supplied before/after comparison and declared scope explanations",
+            "reasons": [
+              "Supplied prior observation/order and explicit scope explanations cover this comparison"
+            ],
+            "changes": [],
+            "missingExplanations": []
+          },
+          {
+            "ruleId": "PRS-PINS-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Use pins.verify_installation with expected/observed installation inputs; this request does not evaluate installation pins"
+            ]
+          },
+          {
+            "ruleId": "PRS-ELIGIBLE-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Use execution.select_work with an explicit source/queue/conditions profile; this request does not select work"
+            ]
+          },
+          {
+            "ruleId": "PRS-DELIVERY-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Use declared delivery/channel/environment observations; this request does not certify publication or deployment"
+            ]
+          },
+          {
+            "ruleId": "PRS-HOST-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Verify actual required-check settings and permitted bypass through #33; no host enforcement is tested here"
+            ]
+          },
+          {
+            "ruleId": "PRS-EVENT-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Retain and test event replay/recovery through #32/#34; no journal or lifecycle adapter is evaluated here"
+            ]
+          },
+          {
+            "ruleId": "PRS-FRESH-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Use status.project_status with a dated collection receipt; this request performs no collection/freshness assessment"
+            ]
+          },
+          {
+            "ruleId": "PRS-TRANSPORT-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Test the actual optional client/protocol transport in #40; no MCP transport is evaluated here"
+            ]
+          },
+          {
+            "ruleId": "PRS-FEEDBACK-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Assess the encountered gap, privacy and duplicates through #36; no feedback relevance judgment is performed here"
+            ]
+          },
+          {
+            "ruleId": "PRS-OVERHEAD-01",
+            "required": false,
+            "status": "unknown",
+            "scope": "Predicate or context not evaluated by this request",
+            "reasons": [
+              "Measure actual sessions, interventions and model/runtime coverage in #35/#37; synthetic validity cannot certify overhead reduction"
+            ]
+          }
+        ],
+        "operationAuthorized": false,
+        "written": false,
+        "limits": [
+          "Pass concerns only required predicates and their reported scope, not all catalogue rules.",
+          "Requests, evidence, policy and authority metadata must come from reviewed host inputs; this interface authenticates none of them.",
+          "No repair, source lock/CAS, test execution, public content review, publication, host enforcement or permission grant occurs.",
+          "Reports are local diagnostics and can contain private identifiers; they are not approved public projections."
+        ]
+      },
+      "inputs": {
+        "beforeSourceSha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768",
+        "afterSourceSha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768",
+        "beforeCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13",
+        "afterCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13"
+      },
+      "hostDecisions": [],
+      "reason": "Verdict covers selected data predicates and separately adopted exact-input authority decisions only"
+    },
+    "runCollection": [
+      {
+        "id": 41127506344,
+        "event": "pull_request_target",
+        "name": "PRS policy boundary",
+        "status": "completed",
+        "conclusion": "success",
+        "head": "0102a00d42c7b3fbd69d1454b3970e3ac9c8f90b"
+      }
+    ],
+    "scope": "Complete exact-head first100 run page returned one target-event run; no ordinary PR/push workflow observed at this readback."
+  },
+  "hookBypass": "Both commits created through GitHub connector, not local Git hooks; hosted policy still ran.",
+  "mainReadback": {
+    "sha": "ae2764e36f8c79503e9df23bb0f07786a2544fd0",
+    "protected": false
+  },
+  "nativeBoundary": "Still unprotected; no administrative activation or merge-refusal/bypass behavior certified.",
+  "remaining": [
+    "Restore settings UI access",
+    "Review Actions event policy and actual capabilities",
+    "Apply/read back reviewed narrow native activation",
+    "Prove controlled native merge refusal/unavailable checks and actor bypass limits"
+  ],
+  "metadataCorrection": "GitHub parsed a negated closing phrase in PR53 and auto-closed issue33. Phrase removed and issue reopened; canonical leaf remained blocked/incomplete throughout."
+}
