@@ -1,0 +1,116 @@
+{
+  "package": "PRS-RECONCILE-01",
+  "inputRevision": "8ab28c3635b1fdd248f87ee461c482757a514eca",
+  "implementationRevision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "runtime": {
+    "Python": "3.12.14",
+    "Node": "24.22.1"
+  },
+  "initialFailure": {
+    "log": "interface-before-implementation.txt",
+    "result": "Five initial reconciliation cases errored because the new module/interface was absent; not five existing core semantic regressions."
+  },
+  "implementation": {
+    "summary": "Opt-in eventVersion1/reconcileVersion1 local normalized-v1 writer; host work/evidence/admission profile, expected hashes, cooperative OS lock, private resumable journal, preserved before states and derived views/marked README.",
+    "remoteWrites": false,
+    "skillBodiesChanged": false,
+    "completionContractChanged": false
+  },
+  "checks": [
+    "164 Python tests pass, including22 reconciliation tests",
+    "14 JavaScript tests pass after npm ci",
+    "7 injected phase interruptions resume without duplicate credit",
+    "2 actual subprocess deaths release the OS lock and resume at source/committed boundaries",
+    "An actual second process is held while the cooperating manifest lock is held",
+    "Replay, stale/wrong revisions, unknown proof/authority, negative events, scope admission/proposals, newer edits, corrupt journal, privacy, symlinks, CLI parity and README CRLF cases pass",
+    "22 reconciliation tests pass from a fresh unpublished archive",
+    "11 skill metadata entries valid,20 palette pairs pass,19-guide public build and README parity pass",
+    "Comment wording checker3files0findings"
+  ],
+  "review": {
+    "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+    "equivalentLocalCommit": "ec99861531ceefa8f4cf79a92013ceaa85e9e45c",
+    "tree": "e0426eafdec233f593a211cbc3a6cee6de9777f2",
+    "producer": "Codex /root/reconciliation_review",
+    "result": "No confirmed Critical/Important/Minor findings. Independently164 full Python and22 reconciliation tests pass.",
+    "scope": "Fresh-context same-family read-only review, not human/cross-model/runtime support proof.",
+    "withdrawn": "Initial suspected supplement-path defect was a reading error and withdrawn; no code change or regression claimed."
+  },
+  "hostedCI": {
+    "revision": "0bd960c65017a24bf3c08de124fc999d1d783ead",
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41120260503",
+    "result": "success"
+  },
+  "archive": {
+    "path": "/tmp/prs-reconcile-kit.zip",
+    "files": 218,
+    "sha256": "5a091e110f3f885b6e5c08b84b5550a703b0ca998ef4000edcfb4d1f21a9e277",
+    "audience": "public-input-only source distribution",
+    "published": false
+  },
+  "actualApplication": {
+    "event": "actual-event.json",
+    "profile": "actual-profile.json",
+    "preview": "actual-preview.json",
+    "result": "actual-application.json",
+    "replay": "actual-replay.json",
+    "invariants": "invariants.json",
+    "outcome": "Reviewed writer records actual local PRS leaf completion; replay returns duplicate and source/manifest bytes remain unchanged.",
+    "boundary": "Actual local coordinator CLI use under existing authorization, not lifecycle event capture or unattended agent/runtime proof.",
+    "projectionFollowup": "Writer generated source/history/views and marked README. Host then registered the change fragment and regenerated the final public views/PUBLIC-README/SVG. Authored duplicated live README tally replaced with overview link to avoid stale competing prose."
+  },
+  "progress": {
+    "requiredBefore": [
+      27,
+      42
+    ],
+    "requiredAfter": [
+      28,
+      42
+    ],
+    "retainedBefore": [
+      27,
+      52
+    ],
+    "retainedAfter": [
+      28,
+      52
+    ],
+    "newRequiredBefore": [
+      9,
+      24
+    ],
+    "newRequiredAfter": [
+      10,
+      24
+    ],
+    "acceptedMilestonesBefore": [
+      4,
+      13
+    ],
+    "acceptedMilestonesAfter": [
+      4,
+      13
+    ],
+    "scopeChanges": [],
+    "next": "PRS-GATE-02/#33/M10"
+  },
+  "limits": [
+    "Advisory locking requires cooperating local writers; rechecks are not kernel CAS against arbitrary editors.",
+    "Multi-file updates are recoverable, not globally atomic; partial state is explicit through marker/journal. Readers requiring cross-file consistency must honor the marker.",
+    "Host profile/file/OS permissions own authority. Event/receipt strings authenticate nobody; metadata checks do not execute tests.",
+    "Windows, network filesystem behavior, power loss and hostile concurrent processes are not certified.",
+    "Journal/results are private local diagnostics; generated public output reuses declared visibility guards, not content classification.",
+    "No service,scheduler,MCP,remote updates,live lifecycle adapter,consumer migration,automatic PRS upgrade,supported unattended operation,owner acceptance or release added."
+  ],
+  "archiveAfterReconciliation": {
+    "path": "/tmp/prs-reconcile-final-kit.zip",
+    "files": 220,
+    "sha256": "d93656ac56bbc94c538a7c6346f2793c0e6936cf98a26ba2203881ad637b06b9",
+    "audience": "public-input-only source distribution",
+    "published": false,
+    "verification": "22 reconciliation tests pass from fresh extraction after completion reconciliation; unpublished."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "contractVersion": "0.2.0",
+  "groups": [
+    {
+      "id": "G",
+      "title": "Synthetic work",
+      "panel": "Now"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M",
+      "title": "Synthetic outcome",
+      "goal": "Keep work completion separate from acceptance",
+      "horizon": "Now",
+      "groupIds": [
+        "G"
+      ],
+      "gateItemIds": [
+        "WORK-1"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "nextAction": "Owner reviews the outcome; no acceptance receipt exists.",
+      "unscopedWork": []
+    }
+  ],
+  "items": [
+    {
+      "id": "WORK-1",
+      "title": "Produce the synthetic result",
+      "groupId": "G",
+      "milestoneId": "M",
+      "state": "active",
+      "sourceState": "synthetic-active",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete",
+      "kind": "implementation",
+      "criterion": "Synthetic implementation and matching check exist.",
+      "owner": "Synthetic fixture author",
+      "implementationRevision": null
+    }
+  ]
+}

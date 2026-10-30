@@ -27,6 +27,10 @@ class DistributionTests(unittest.TestCase):
                 self.assertIn(root + 'src/project_record/pins.py', names)
                 self.assertIn(root + 'src/project_record/execution.py', names)
                 self.assertIn(root + 'src/project_record/policy.py', names)
+                self.assertIn(root + 'src/project_record/reconcile.py', names)
+                self.assertIn(root + 'tests/test_reconcile.py', names)
+                self.assertIn(root + 'templates/work-result.example.json', names)
+                self.assertIn(root + 'templates/reconciliation-profile.example.json', names)
                 self.assertIn(root + 'tools/check_policy.py', names)
                 self.assertIn(root + 'templates/policy-request.example.json', names)
                 for name in ['projects.json','ledger.json','profile.json','issues.json']:

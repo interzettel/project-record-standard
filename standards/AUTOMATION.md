@@ -49,3 +49,45 @@ Run `npm ci --ignore-scripts --no-audit --no-fund`, then `npm test`. The locked 
 ## Current development maintenance
 
 The 30 October 2026 refresh uses reviewed full-SHA action pins, Python 3.15.2 and Node 26.13.0 from the version files, with npm lock and hash-pinned site dependency. `.github/dependabot.yml` proposes weekly Actions/npm/pip updates; it does not merge or migrate adopters. The earlier workflow-provenance paragraph is a dated historical observation. Read [architecture](ARCHITECTURE.md) for future after-work adapters and [compatibility](COMPATIBILITY.md) for assessment/application boundaries.
+
+## Opt-in local work-result writer
+
+Unreleased `project_record.reconcile.reconcile(event, profile, apply=False)` and `reconcile_files(event_path, profile_path, apply=False)` implement the bounded #32 local transaction. They share the record/policy/history/build/README implementations. The initial writer supports a selected **normalized-v1** source in an existing manifest. It refuses other source adapters rather than rewriting their native formats. No remote issue update, hook, scheduler, consumer migration or automatic PRS upgrade is performed. #33 owns actual host enforcement; #34 owns lifecycle capture, and #35/#37 own real-session effectiveness/support claims.
+
+```sh
+PYTHONPATH=src python3 -m project_record reconcile --event /host/work-result.json --profile /host/adopted-writer.json
+PYTHONPATH=src python3 -m project_record reconcile --event /host/work-result.json --profile /host/adopted-writer.json --apply
+```
+
+Preview validates and renders in temporary scratch space without changing host sources, output destinations or journal. Apply is a local writer operation under existing host authorization. Relative profile paths resolve from the process working directory, not the event/profile file location. The example templates are synthetic: `templates/work-result.example.json` pins the bundled fixture bytes; `templates/reconciliation-profile.example.json` leaves routine authority **unknown**, so it cannot authorize application. Copy the fixture to an isolated host and adopt the actual policy before testing a write. Do not toggle the example into a policy for a real repository.
+
+| Input | Meaning and boundary |
+| --- | --- |
+| `eventVersion: 1` | Exact event ID, canonical project/work IDs, expected raw source and manifest SHA-256, immutable artifact revision, result, producer/source/date, summary, typed receipts and discoveries. An event contains no authority or path-selection fields. |
+| `reconcileVersion: 1` | Independently adopted host profile: selected manifest/project, separate private journal and owned output roots, audience, attributed routine-recording decision, per-work applicable evidence policies, bounded admission map and optional existing marked README. |
+| Completion policy | A completed event needs its configured allOf/anyOf evidence kinds against this exact work/artifact revision. The writer evaluates metadata; it does not run tests, authenticate producers or interpret the criterion prose. Capture verified observations through the host's actual trust boundary. |
+| Negative results | Failed, blocked and cancelled **sessions** retain typed work-result evidence without awarding Done. Blocked sets the unfinished leaf's blocked flag. Session cancellation does not cancel a leaf or remove it from the denominator. Existing Done/cancelled/deferred work requires reviewed correction/scope handling rather than routine overwrite. |
+| Discovered work | Each proposal has an item plus origin, reason and source. Without an exact host admission it stays proposed in the private journal/result, outside accounting. A grant pins the new ID's required flag, group, milestone and attributed admission source. Admitted work starts backlog with provenance and a visible denominator effect; it cannot arrive Done or alter existing criteria, dependencies, milestones or owner acceptance. |
+
+The host profile is a policy input selected by trusted host code or an operator, protected by the host's file/OS permissions. It is not authenticated merely because its `source` string looks plausible. Never accept the profile from an untrusted event or model output without the host's normal adoption process. A policy-check scope result remains unknown about identity authentication even when this writer finds an explicit matching host admission. The writer records that separate decision; it never changes the check to pass.
+
+### Transaction and recovery
+
+Each selected manifest has one persistent sibling `.prs-lock` file and a temporary `.prs-pending.json` marker. A nonblocking OS advisory lock serializes cooperating PRS writers using that manifest. It is released on process exit. Expected source/manifest hashes and the selected theme/supplement/history input hashes are checked before writing and throughout recovery. The source's parent holds immutable `reconciliation-history/<before-sha256>.json`; the manifest registers those exact before bytes and retains any previous history. The private journal also retains the exact previous metadata/normalized observation, event, profile, plan integrity digest, per-file before/after bytes and eventual result. It is transport/recovery evidence, never another authoritative work ledger.
+
+Apply prepares the recovery marker and journal, preserves the prior raw source, atomically replaces source and manifest files, installs a complete generated-view directory for the event, then updates only the configured README's marked region. File data and supported directory metadata are flushed. Each individual file/directory replacement is atomic on the tested local filesystem; the whole multi-file transaction is **not atomic**. During interruption the marker/journal make partial state explicit. Other events are held until the original event and profile resume. Consumers that require a consistent cross-file view must honor that marker or wait for the writer result; bare readers are not a transaction coordinator.
+
+Retry with the exact event/profile. Each current target must equal its preserved before or planned after bytes. A newer authored edit, changed dependency, corrupted journal or mixed/unowned projection produces a conflict and preserves those bytes. Do not delete the marker, reset the source or replace journal contents to make retry green. Reconcile the conflict through the host's source authority. If the journal cannot be recovered, preserve it and the authored files for a reviewed repair; no automatic rollback discards later work.
+
+An event ID plus matching payload/profile can commit once. Reusing that ID with other data conflicts. A replay of an already committed event returns its historical result, even when later work has advanced the source; it does not rewrite newer facts or pretend to be a fresh observation. A crash after commit but before marker cleanup resumes as a duplicate and clears only its own recovery marker. A crash before the prepared journal is durable can rebuild the plan under the original unchanged preconditions. Temporary staging directories left by a hard process kill are unpublished; cleanup/retention remains host-owned and must not delete journal/history evidence blindly.
+
+| Result / exit | Meaning |
+| --- | --- |
+| `preview`, `applied`, `duplicate` / 0 | Valid preview, completed transaction, or exact historical replay. `written` distinguishes these. |
+| `rejected`, `conflict` / 1 | Invalid required predicate or conflicting source/identity; no certification. A pending conflict may already include partial writes. |
+| `invalid-input` / 2 | Unsupported/malformed event/profile/CLI input. |
+| `held`, `recoverable` / 3 | Missing authority/evidence, competing writer or interrupted transaction requiring recovery. `recoveryPending` identifies a prepared transaction; `written: null` means partial writes are possible, not that nothing changed. |
+
+Local journal/result data can contain private context and is not an approved public projection. Only the existing public-export guard and explicit selected inputs govern generated public views; there is no content classifier. No journal is included in the public kit or recursively published by this writer.
+
+The tested boundary is cooperating local processes and injected process interruption. Advisory locking cannot stop a noncooperating editor, malicious process or changed host permissions. Rechecks catch observed drift but are not a kernel compare-and-swap against arbitrary external writers. Network-filesystem locking, Windows runtime behavior, sudden power loss, real agent hooks, cross-model evidence and reduced tracking burden require separate actual verification. The Windows lock branch is an implementation path, not a supported-runtime receipt.
