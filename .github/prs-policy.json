@@ -1,0 +1,9 @@
+{
+  "ciProfileVersion": 1,
+  "config": "examples/projects.json",
+  "projectId": "standard",
+  "audience": "public",
+  "completionPolicy": {"allOf": ["implementation", "test", "review"]},
+  "protectedPaths": [".github/*", "src/*", "tools/*", "standards/POLICY.md", "pyproject.toml", "requirements*.txt", "package*.json", ".python-version", ".node-version", "action.yml", "skills/*", "templates/.github/*"],
+  "approvedChanges": []
+}

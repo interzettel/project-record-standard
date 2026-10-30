@@ -1,0 +1,83 @@
+{
+  "observedOn": "2026-10-30",
+  "inputRevision": "047b9f6f8dbfbe223e5c2c4b054be3363a01f79d",
+  "producer": "Codex task session",
+  "repository": "interzettel/project-record-standard",
+  "branch": {
+    "name": "main",
+    "protected": false,
+    "requiredStatusChecks": {
+      "enforcement_level": "off",
+      "contexts": [],
+      "checks": []
+    },
+    "source": "https://api.github.com/repos/interzettel/project-record-standard/branches/main"
+  },
+  "administrativeEndpoint": {
+    "url": "https://api.github.com/repos/interzettel/project-record-standard/branches/main/protection",
+    "status": 403,
+    "message": "Resource not accessible by integration",
+    "meaning": "Detailed protection configuration inaccessible; repository role admin:true does not grant this connector the missing scope"
+  },
+  "rulesets": {
+    "url": "https://api.github.com/repos/interzettel/project-record-standard/rulesets?includes_parents=true&per_page=100",
+    "pagination": "Complete page:1 object, below100",
+    "observed": [
+      {
+        "id": 25269992,
+        "name": "disallow-deletions-transfers",
+        "target": "repository",
+        "source_type": "Organization",
+        "source": "interzettel",
+        "enforcement": "active",
+        "rules": [
+          "repository_delete",
+          "repository_transfer"
+        ],
+        "bypassActors": [
+          {
+            "actor_id": 19963437,
+            "actor_type": "Team",
+            "bypass_mode": "always"
+          }
+        ]
+      }
+    ],
+    "meaning": "This rule concerns deletion/transfer, not branch required checks; its bypass actor is not a branch-check bypass grant"
+  },
+  "browser": {
+    "browser": "Edge",
+    "attempt": "Inspect repository rules settings through existing PRS tab",
+    "result": "blocked",
+    "message": "Another extension UI is open; complete or dismiss that UI before continuing browser automation.",
+    "settingsObserved": false,
+    "settingsChanged": false
+  },
+  "checkProducer": {
+    "observedRevision": "047b9f6f8dbfbe223e5c2c4b054be3363a01f79d",
+    "appId": 15368,
+    "checks": [
+      "verify",
+      "reusable / record",
+      "deploy",
+      "release"
+    ]
+  },
+  "priorPackage": {
+    "package": "PRS-RECONCILE-01",
+    "run": "https://github.com/interzettel/project-record-standard/actions/runs/41121776953",
+    "revision": "047b9f6f8dbfbe223e5c2c4b054be3363a01f79d",
+    "verification": "success",
+    "reusable": "success",
+    "pages": "success",
+    "release": "skipped"
+  },
+  "hostEnforcement": "not-established",
+  "activationApplied": false,
+  "remaining": [
+    "Review native branch/ruleset and Actions event-policy settings",
+    "Review/apply/read back narrow activation proposal through authorized admin channel",
+    "Prove actual configured merge refusal and permitted bypass behavior with controlled fixtures",
+    "Fork/merge-queue support remains held, not certified"
+  ]
+}
