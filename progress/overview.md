@@ -25,3 +25,7 @@ Individual repository migrations, live feeds from reference projects, private op
 Success means preserved source IDs and brands, named fractions, explicit unknowns, reproducible tooling, usable saved skills, repeatable installation/recovery, matching README/Pages calculations and observable CI/deployment. See [verification](../VERIFICATION-public.md), [delivery](../standards/DELIVERY.md) and [adoption handoff](adoption.md).
 
 Previous 13-, 16-, 17- and 18-item observations remain in source snapshots. Superseded planning text is preserved in [dated history](history/2026-10-23-before-release/progress--overview.md). It must not be read as a current blocker list.
+
+## Post-release priorities — 30 October 2026
+
+The [issue relationship and work-order review](triage-2026-10-30.md) maps the eleven open improvement proposals, their shared inputs, completion gates and referenced consumer PRs. Its first implementation package is #9, the offline PRS-to-Qurultai/Hermes record handoff fixture. Evidence/execution guidance, README-only tailoring, the JSON inspector and semantic upgrades follow in the stated order. The queue is outside the completed v0.4.1 accounting scope;18/18 required items and4/4 milestone gates retain their recorded meaning. Each implementation package still needs its own evidence and applicable acceptance.
