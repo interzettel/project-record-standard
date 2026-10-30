@@ -1,0 +1,9 @@
+{
+  "id": "CH-POST-RELEASE-STRUCTURE",
+  "component": "standard",
+  "type": "documentation",
+  "summary": "Structure the post-release issue queue into 18 distinct leaves, five milestones and bounded agent operating guidance, with preserved release history.",
+  "workItemIds": [],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/14",
+  "compatibility": "Planning/source expansion only; runtime/suite0.4.1 and record contract0.2.0 unchanged. No leaf earns Done for this structuring change."
+}

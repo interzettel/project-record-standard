@@ -135,15 +135,18 @@ The Prehnite reference uses a pinned public source and retains its own brand. In
 
 ## This standard’s progress
 
+The released v0.4.1 snapshot remains 18/18. The [post-release execution plan](progress/execution-plan.md) adds eleven required and seven deferred leaves; its selected required work starts at 0/11. The generated figures include preserved historical work and the expanded scope.
+
+
 <!-- project-record:start -->
 [![Project record standard · current required scope](./assets/progress.svg)](https://interzettel.github.io/project-record-standard/)
 
 | Measure | Completion | Meaning |
 | --- | ---: | --- |
-| Required work | 18/18 · 100.0% | Completed leaf items in the named required scope. |
-| Accepted milestones | 4/4 · 100.0% | Milestones whose declared outcome gates passed. |
+| Required work | 18/29 · 62.1% | Completed leaf items in the named required scope. |
+| Accepted milestones | 4/9 · 44.4% | Milestones whose declared outcome gates passed. |
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-10-23 against `ae63d00e`.
+Observed 2026-10-30 against `695105b9`.
 <!-- project-record:end -->

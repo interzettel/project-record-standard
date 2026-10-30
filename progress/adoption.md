@@ -27,3 +27,9 @@ Replay pinned authored inputs into a new empty output directory, verify hashes/c
 Release v0.4.1 and its four assets are published and read back; the exact revision, digests and four passed hosted gates are in `progress/releases/v0.4.1.json`. The package is ready for selecting one pilot repository. The pilot should use the released skills, preserve IDs, counts and branding, and return installation friction to this standard before wider migration.
 
 See [verification](../VERIFICATION-public.md) for scoped evidence and limits. Superseded scouting, intermediate counts and blocked attempts are preserved in [dated history](history/2026-10-23-before-release/progress--adoption.md).
+
+## Post-release execution handoff: 30 October 2026
+
+The source-preserving expansion in PR #14 adds M5-M9 and the [ordered execution plan](execution-plan.md). The v0.4.1 18/18 source is preserved as `examples/sources/standard/pre-post-release-2026-10-30.json`; its source metadata is the next comparison baseline. Required work expands to 18/29 and retained work to 18/36; newly selected required work is 0/11. Historical release artifacts and evidence remain unchanged.
+
+Native GitHub milestones 1-5 map to canonical M5-M9. Issue labels distinguish type, priority, area, parent/leaf and required/deferred scope. These navigation fields do not write completion. The repository Projects page showed no linked open or closed Project; no competing Project workflow was created. GitHub issue closure percentages are not canonical work percentages. The next selected package is PRS-HANDOFF-01/#15; independent review and owner acceptance remain named gates.
