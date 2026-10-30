@@ -30,17 +30,7 @@ Order work by the active outcome, prerequisites, current blockers, risk, value a
 
 An acceptance criterion states an observable result, the check and required evidence. A project Definition of Done states the applicable shared quality policy for that kind of artifact. Code, research, a design and an operational procedure can require different proof. The item's criterion and applicable quality policy together govern a new Done claim. A negative experimental result can satisfy a measurement criterion.
 
-| Claim | Evidence and boundary |
-| --- | --- |
-| Implemented | The identified change exists in a named artifact/revision; a specification alone cannot establish implementation. |
-| Integrated | The change is merged into the declared integration branch, if the project uses that policy. |
-| Verified | A named check passed for its subject, revision and environment. |
-| Done | The item's criterion and applicable project quality policy are met. |
-| Accepted | The designated authority recorded the declared acceptance decision. |
-| Published / deployed | A named channel contains the artifact / a named environment runs the observed revision. |
-| Delivered | Availability to the intended audience is established under the project's declared delivery policy, with supporting channel or environment evidence. |
-
-These are separately inspectable claims, not a mandatory linear state machine or new required schema fields. A project may require integration before Done; PRS does not redefine all implementation as merging. A documentation preview can exist before merge, and deployment can precede acceptance. Historical source claims retain their original meaning without recertification.
+The authoritative [evidence-claim matrix and worked dependency cases](STANDARD.md#evidence-claims-and-dependency-meanings) distinguish implementation, integration, verification, Done, acceptance and release. Publication and deployment remain separate observations; delivered means availability to the intended audience under the host's declared delivery policy. These are inspectable claims, not a mandatory state machine or new required schema fields. Historical source meanings remain intact.
 
 ## Facts, findings and decisions
 

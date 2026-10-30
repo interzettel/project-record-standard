@@ -1006,20 +1006,57 @@
       "title": "Define evidence stages and dependency meanings",
       "groupId": "G5",
       "milestoneId": "M5",
-      "state": "ready",
-      "sourceState": "selected-not-started",
+      "state": "done",
+      "sourceState": "verified-evidence-reference",
       "required": true,
       "blocked": false,
       "dependsOn": [],
       "unmappedDependencies": [],
-      "evidence": [],
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "evidence": [
+        {
+          "kind": "implementation",
+          "subject": "PRS-EVIDENCE-STAGES",
+          "revision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
+          "result": "passed",
+          "source": "standards/STANDARD.md",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "test",
+          "subject": "PRS-EVIDENCE-STAGES",
+          "revision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
+          "result": "passed",
+          "source": "tests/test_evidence_stages.py",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "application",
+          "subject": "PRS-EVIDENCE-STAGES",
+          "revision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
+          "result": "passed",
+          "source": "audit/evidence-stages/2026-10-30/verification.json",
+          "producer": "Codex task session",
+          "observedOn": "2026-10-30"
+        },
+        {
+          "kind": "review",
+          "subject": "PRS-EVIDENCE-STAGES",
+          "revision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
+          "result": "passed",
+          "source": "audit/evidence-stages/2026-10-30/verification.json",
+          "producer": "Codex /root/evidence_stages_review",
+          "observedOn": "2026-10-30"
+        }
+      ],
+      "completionBasis": "Authoritative STANDARD matrix and5 worked cases at a602e90238d24ad5b87ef4025a755a27091e6c2e preserve original criteria/dependency meanings. Seven runtime-boundary tests and108 Python tests pass;5 controls/5 installed-skill applications and fresh-context review support bounded portable guidance. No skill body edit or causal effectiveness/owner acceptance claim.",
       "kind": "implementation",
-      "owner": "Implementing agent; repository maintainer reviews",
+      "owner": "Codex contributor; fresh-context same-family review recorded",
       "priority": "P1",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/6",
       "criterion": "Examples preserve original Done criteria, execution states and denominators. Implemented evidence does not imply verification or acceptance; useful negative research can finish without a release. Existing contract and readiness levels remain compatible; any skill edit follows distribution and evaluation gates.",
-      "note": "Queue 07/34. Existing request is one leaf. Native milestone 1; execution prerequisites only are stored in dependsOn. Acceptance/release gates remain separate.",
+      "note": "Queue07/34 complete in PR49. Existing installed skill already reads STANDARD; bodies/metadata/suite unchanged. No core/schema/readiness/permission/release change. Next PRS-AGENT-EXECUTION/#3/M5; M5 outcome acceptance remains pending.",
       "deferReason": null
     },
     {

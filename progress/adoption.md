@@ -33,3 +33,7 @@ PR47 completes #15 with one synthetic PRS leaf and a distinct consumer task, con
 ## Adversarial offline handoff
 
 PR48 completes #16 with17 handoff tests and a reviewed offline record-semantics PASS at 29e8fe5202d952c218ba89581063e9fc172ed916. Replay stays one credit, incompatible/mixed receipts are filtered, unknown collection retains old metrics/date, and private public-build inputs are refused before output. This is a read-only consumer test stub, not a production writer or live Qurultai/Hermes pass. Required24/42 (57.1%), retained24/52 (46.2%), newly required6/24; accepted milestones4/13. Next: #6/M5 evidence stages.
+
+## Evidence and dependency reference
+
+PR49 completes #6 with STANDARD as the authoritative evidence-claim/dependency home and five worked cases. Existing portable skill already reads it; skill bodies/metadata and suite version remain unchanged. Seven deterministic tests,5 controls/5 installed-skill applications and scoped review support the reference path without causal effectiveness claims. Required25/42 (59.5%), retained25/52 (48.1%), newly required7/24; accepted milestones4/13. Next: #3/M5 canonical selection and bounded reconciliation. No source criterion, dependency, readiness meaning, permission or release changed.

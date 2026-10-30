@@ -28,6 +28,8 @@ class DistributionTests(unittest.TestCase):
                 self.assertIn(root + 'templates/adoption-pin.example.json', names)
                 self.assertIn(root + 'tests/test_pins.py', names)
                 self.assertIn(root + 'tests/test_handoff.py', names)
+                self.assertIn(root + 'tests/test_evidence_stages.py', names)
+                self.assertIn(root + 'tests/fixtures/evidence_stages/cases.json', names)
                 for name in ['projects.json', 'ledger.json', 'handoff.json', 'consumer_stub.py']:
                     self.assertIn(root + 'tests/fixtures/handoff/' + name, names)
                 self.assertIn(root + 'templates/record-layout.example.json', names)

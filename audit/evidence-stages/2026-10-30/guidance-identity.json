@@ -1,0 +1,13 @@
+{
+  "inputRevision": "4e6c50dfbcb1cb9fc4ab665bc48d38a0a9b49579",
+  "observedOn": "2026-10-30",
+  "files": {
+    "standards/STANDARD.md": "1d7f8cc2159d20892aaad5d7bfa198feec6b995a390693876c4f243d9d8151e0",
+    "standards/WORK-MODEL.md": "a92df87dbff87e87ee4b19cc441690be011d98686b3347ac890513bbd5fed8c6",
+    "standards/GITHUB.md": "2795af56ad2a588b927aeeef8332248175743b23c95c273da4a8d5c4115661fa",
+    "standards/AGENT-WORKFLOWS.md": "637593e93e989bcfd0078171e5538d95e3ed89d7a80162b50622d45d41dd7385",
+    "AGENTS.md": "aaaad12b3f5f4721453b713e0e4c4a8adb1ea0554b37d099091df12cf8cb010c",
+    "skills/update-project-progress/SKILL.md": "ecbfd830a3f201e1625c05d78627e0cacff4daea9e02a2e11085a331c58a8d65",
+    "skills/manifest.json": "21582cecfe852c09eeb82626cb4b1ff66ef8e2ba24c0ba6857e04ef9fcbb9c2a"
+  }
+}

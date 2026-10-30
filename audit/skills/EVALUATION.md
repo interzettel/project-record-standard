@@ -42,3 +42,7 @@ Runtime tests cover additive installation, previews/repeats, interrupted install
 Metadata validation and CI verify packaging/discovery structure. They do not establish agent behavior, authenticate an owner or observe a screen reader. Native GitHub issue/Project mutation was not exercised against real project repositories; those migrations and integrations remain separate authorized work.
 
 Manual gates remain actual screen-reader output and designated owner acceptance. No result here closes them.
+
+## Evidence-stage reference clarification · 30 October 2026
+
+PRS-EVIDENCE-STAGES/#6 adds the authoritative claim/dependency matrix and five worked cases in STANDARD. The existing update skill already reads that source; all distributed skill bodies and suite metadata remain unchanged. Five fresh-context controls and five applications through an actual disposable installed skill preserved the expected case counts and core authority boundaries. No core baseline failure justified adding skill rules, and no causal improvement or cross-model effectiveness is claimed. Raw responses, source identities, actual installation receipt, deterministic checks and review are retained in `audit/evidence-stages/2026-10-30/verification.json` and adjacent files. The cases are preparation exercises, not real project migrations or acceptance.

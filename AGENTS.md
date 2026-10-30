@@ -26,7 +26,7 @@ The router selects `govern-project-scope` for decomposition, `connect-github-tra
 
 Preserve project-owned branding, stable IDs, historical source bytes and attributed acceptance. Before expanding scope or changing completion, preserve the previous observation and record the reason and denominator effect. Keep new required work distinct from retained deferred ideas; do not count a parent and its leaves twice.
 
-Branch/PR titles and commits name the existing leaf ID. Code changes need tests that exercise the changed behavior. A bounded package ends with outcome, exact tested revision, actual checks/limits, source update, before/after fractions, scope effect, change fragment or omission reason, and the next eligible issue. Regenerate projections from sources once. Implementation, verification, acceptance, publication and deployment remain distinct. Never infer Done from issue closure, owner approval from CI, or release from merge.
+Branch/PR titles and commits name the existing leaf ID. Code changes need tests that exercise the changed behavior. A bounded package ends with outcome, exact tested revision, actual checks/limits, source update, before/after fractions, scope effect, change fragment or omission reason, and the next eligible issue. Regenerate projections from sources once. Use `standards/STANDARD.md` for the evidence-claim matrix and execution-prerequisite versus completion/acceptance-gate examples. Implementation, integration, verification, acceptance, publication and deployment remain distinct. Preserve criteria/dependencies during an authorized bounded build-first exception. Never infer Done from issue closure, owner approval from CI, or release from merge.
 
 ## Verification
 
