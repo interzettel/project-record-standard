@@ -14,7 +14,7 @@ The [execution plan](execution-plan.md) contains thirty-four delivery leaves: tw
 | Retained ledger work | 19/52 · 36.5% | Includes ten deferred leaves |
 | Accepted declared milestones | 4/13 · 30.8% | Historical acceptance retained; new outcomes pending |
 
-The proposed next core cut is 0.5.0, covering the first sixteen ordered packages. It is not a release or accepted candidate. Contract0.2.0 stays independent. The full inspector, semantic upgrade suite and fleet watcher can follow without forcing optional MCP, VPS, icons or private brand assets into core adoption.
+The [release direction](release-direction.md) now separates foundations0.5.0, opt-in0.6.0-alpha integration and supported automatic operation0.6.0. These are candidate boundaries, not publications; earlier-release preparation is explicitly held until #38 is detailed appropriately. The inspector, upgrades and monitoring can ship independently. Contract0.2.0 stays independent.
 
 ## Sources and boundaries
 

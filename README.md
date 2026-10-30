@@ -63,7 +63,7 @@ Use a new or empty output directory. For development/site checks, install the ha
 
 When a real task exposes a shared-standard gap, check existing issues and report the expected rule, observed result, exact known pins, practical impact, safe reproduction and workaround. Keep private context out of public reports. A narrow tested PR is welcome. There is no ticket quota or routine idea-generation requirement. [Feedback contract](standards/FEEDBACK.md)
 
-Weekly dependency proposals keep development pins reviewable; they do not auto-merge. The next core target is **0.5.0**, with real-session and cross-model evidence required before claiming unattended support. The source kit is MIT licensed; third-party assets keep their own licences.
+Weekly dependency proposals keep development pins reviewable; they do not auto-merge. The [release proposal](progress/release-direction.md) separates **0.5.0 foundations** from opt-in automation previews and proven unattended support. Real-session and cross-model evidence remains required for the supported automatic workflow. The source kit is MIT licensed; third-party assets keep their own licences.
 
 ## Project progress
 

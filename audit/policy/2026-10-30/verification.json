@@ -1,0 +1,19 @@
+{
+  "package": "PRS-POLICY-01",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "inputRevision": "de1548a224f7d475a4fd61d7282ed0fce77a863b",
+  "checks": [
+    "5 policy boundary tests passed",
+    "40 total Python tests passed"
+  ],
+  "limits": [
+    "Structural approval/scope metadata is not authenticated",
+    "Unpinned evidence call does not enforce revision matching",
+    "No source compare-and-swap writer implemented",
+    "No host settings/hook/scheduler/MCP activation or runtime enforcement claimed",
+    "Rolling official mechanism documentation inspected; not exact-version adapter support",
+    "Fresh-context review pending"
+  ],
+  "versionProposal": "progress/release-direction.md; candidate scopes only; #38 earlier-release preparation remains an explicit hold"
+}

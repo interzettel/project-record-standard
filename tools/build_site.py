@@ -25,6 +25,7 @@ DOCUMENTS = [
     ('STANDARD', 'Terminology and percentages'),
     ('WORK-MODEL', 'Work language and contribution'),
     ('ARCHITECTURE', 'Guidance and automatic tracking'),
+    ('POLICY', 'Rules and enforcement boundaries'),
     ('COMPATIBILITY', 'Pins and update policy'),
     ('RECORDS', 'Records and agent memory'),
     ('FEEDBACK', 'Feedback from real work'),

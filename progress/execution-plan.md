@@ -6,7 +6,7 @@ The owner requested a maintained, low-overhead infrastructure: install once, rec
 
 The prior plan is preserved under `progress/history/2026-10-30-before-infrastructure/`; its exact ledger is `examples/sources/standard/pre-infrastructure-2026-10-30.json`. The expansion adds sixteen leaves: thirteen required, three deferred. Thirty-four post-release delivery leaves now comprise twenty-four required and ten deferred; five existing parent requests earn no extra credit. Existing historical completion and acceptance stay unchanged.
 
-The proposed **0.5.0 core cut** is the first sixteen entries below: records/policy/pins, M5 handoff/evidence/execution, deterministic gates, automatic after-work reconciliation, measured runtime/model coverage, feedback and guarded release preparation. It is not a published or accepted candidate. M6 readable records, M7 semantic upgrades and the later fleet watcher can ship separately; no automatic 0.6/0.7 promise is made. Milestone IDs are not version numbers. Publication requires actual candidate gates and authorization; a partially finished milestone cannot be called accepted merely because one release ships.
+The [revised release direction](release-direction.md) proposes a foundations0.5.0, opt-in0.6.0-alpha previews and a supported0.6.0 only after real-session/evaluation gates. It replaces the earlier sixteen-package single release batch. Versions remain candidates. #38 currently depends on final evaluation: preparing earlier releases needs explicit detailing/dependency reconciliation before publication, not an inferred bypass. Execution prerequisites and counted scope remain unchanged by this proposal.
 
 ## Ordered packages
 
