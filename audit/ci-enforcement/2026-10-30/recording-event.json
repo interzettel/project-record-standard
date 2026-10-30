@@ -1,0 +1,53 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-GATE-02:preparation:f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+  "projectId": "standard",
+  "workItemId": "PRS-GATE-02",
+  "sourceSha256": "7346a4d2ac894e9b0e777eea8f55cae21539791b01cec42d52faedad11190e77",
+  "manifestSha256": "fc6d989350c42c515df197d64a6785e460466fd257cf9039b6a00bf48923f5a0",
+  "artifactRevision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+  "result": "blocked",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/53",
+  "observedOn": "2026-10-30",
+  "summary": "CI data-check preparation passes13 focused/177 Python tests and fresh-context review. Fullcriterion incomplete: main is reported unprotected, detailed protection endpointintegration403 and EdgeblockedbyotherextensionUI. Native settings/event-policy review, activation/read-back and actual merge-refusal/bypass tests remain pending; hosted negative/corrected probe follows prep integration. No Done credit or enforcement claim.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-GATE-02",
+      "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+      "result": "passed",
+      "source": "src/project_record/policy_ci.py; .github/workflows/policy.yml",
+      "producer": "Codex task session",
+      "observedOn": "2026-10-30"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-GATE-02",
+      "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+      "result": "passed",
+      "source": "tests/test_policy_ci.py; audit/ci-enforcement/2026-10-30/verification.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-10-30"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-GATE-02",
+      "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+      "result": "passed",
+      "source": "audit/ci-enforcement/2026-10-30/verification.json",
+      "producer": "Codex /root/ci_boundary_review",
+      "observedOn": "2026-10-30"
+    },
+    {
+      "kind": "host-enforcement",
+      "subject": "PRS-GATE-02",
+      "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+      "result": "unknown",
+      "source": "audit/ci-enforcement/2026-10-30/host-observation.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-10-30"
+    }
+  ],
+  "discoveries": []
+}

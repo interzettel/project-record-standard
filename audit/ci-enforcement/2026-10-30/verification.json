@@ -1,0 +1,94 @@
+{
+  "package": "PRS-GATE-02",
+  "inputRevision": "047b9f6f8dbfbe223e5c2c4b054be3363a01f79d",
+  "implementationRevision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "outcome": "partial-implementation-host-activation-blocked",
+  "criterionComplete": false,
+  "runtime": {
+    "Python": "3.12.14",
+    "Node": "24.22.1"
+  },
+  "checks": [
+    "177 Python tests pass, including13 CI data-policy tests",
+    "14 JavaScript tests pass",
+    "13 CI tests pass from fresh unpublished source archive",
+    "11 skill metadata entries valid,20 palette pairs,19-guide public build and README parity pass",
+    "Actual base047b9f6\u2192candidate preparation data passes shared CLI adapter; hostEnforcement remains not-assessed."
+  ],
+  "review": {
+    "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+    "equivalentLocalCommit": "cc5166fd6a90e550e613d159fad264b3b7242cb6",
+    "tree": "aa3a89d22d101f6f4c31abf87d559af2abf35e01",
+    "producer": "Codex /root/ci_boundary_review",
+    "result": "No Critical/Important/Minor findings. Independently177 Python tests passed.",
+    "scope": "Fresh-context same-family review; supports bounded preparation, not host enforcement or #33 completion."
+  },
+  "archive": {
+    "path": "/tmp/prs-ci-kit.zip",
+    "files": 226,
+    "sha256": "f8a8451cf6fafeb3ce85819b9828ff75734cdcf7c5c4360ec904215d54c0bd4f",
+    "audience": "public-input-only source distribution",
+    "published": false
+  },
+  "sourceUpdate": {
+    "event": "recording-event.json",
+    "profile": "recording-profile.json",
+    "result": "recording-result.json",
+    "effect": "Actual #32 writer marks #33 blocked, preserves prior source/history and all scope/acceptance; no Done awarded."
+  },
+  "progress": {
+    "requiredBefore": [
+      28,
+      42
+    ],
+    "requiredAfter": [
+      28,
+      42
+    ],
+    "retainedBefore": [
+      28,
+      52
+    ],
+    "retainedAfter": [
+      28,
+      52
+    ],
+    "newRequiredBefore": [
+      10,
+      24
+    ],
+    "newRequiredAfter": [
+      10,
+      24
+    ],
+    "acceptedMilestonesBefore": [
+      4,
+      13
+    ],
+    "acceptedMilestonesAfter": [
+      4,
+      13
+    ],
+    "blockedRequiredBefore": 0,
+    "blockedRequiredAfter": 1,
+    "scopeChanges": [],
+    "nextIndependent": "PRS-FEEDBACK-01/#36/M11"
+  },
+  "host": "host-observation.json",
+  "activation": "activation-proposal.json",
+  "limits": [
+    "Native settings/activation/bypass proof missing; PRS-HOST-01 remains unassessed/unknown.",
+    "Protected-path notices are not approval of future workflow/pin/policy changes.",
+    "Forks held; no actual fork or merge-queue support claim.",
+    "No event-policy/unsafe-checkout opt-out, broad permission change, service, scheduler, skill-body edit, migration or release.",
+    "Hosted negative/corrected probes are separate evidence after prep integration; this introducing PR cannot run a base workflow that did not exist yet."
+  ],
+  "hostedCI": {
+    "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+    "url": "https://github.com/interzettel/project-record-standard/actions/runs/41126609528",
+    "result": "success",
+    "scope": "Existing bootstrap workflow verification/reusable; new base data-policy workflow cannot run until installed on main."
+  }
+}

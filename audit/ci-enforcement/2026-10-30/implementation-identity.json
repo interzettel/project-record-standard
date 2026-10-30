@@ -1,0 +1,21 @@
+{
+  "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+  "equivalentLocalCommit": "cc5166fd6a90e550e613d159fad264b3b7242cb6",
+  "tree": "aa3a89d22d101f6f4c31abf87d559af2abf35e01",
+  "files": {
+    ".github/prs-policy.json": "8301ecf8c23405cacf2b8958d97a6ef72c8ec5d60a51bc5d309158c53c2c4aaa",
+    ".github/workflows/policy.yml": "52f5c60efef93f1669ed769bb857bab2bee9990aa5d17ad18b6379506251faa4",
+    "audit/ci-enforcement/2026-10-30/activation-proposal.json": "8f0c653eba2d5e099e81cfffbab6c60b03d125610a2db9922664b223fb551e14",
+    "audit/ci-enforcement/2026-10-30/host-observation.json": "3a7039b18126023d898de91d06c3aeb31eb9fda083f3416e8e59116fb321faa0",
+    "audit/ci-enforcement/2026-10-30/sources.json": "b81387e64fb1b98a15d76aae429237f78f974531fa58429b5d1cb7ba3541625f",
+    "src/project_record/policy_ci.py": "715625e4364615582bb61d1a0a34110949eeb34b6f023ef66929f4a07acbb9fb",
+    "standards/AUTOMATION.md": "08edb9801778027ed58dbe7dbe8d4148a92c0de2a328d202b44827601be90659",
+    "standards/POLICY.md": "af94625af6f5deae58904f6841bb92ed14155d30d8ded9ad0e73f31dd219b0c3",
+    "templates/.github/workflows/policy.example.yml": "52f5c60efef93f1669ed769bb857bab2bee9990aa5d17ad18b6379506251faa4",
+    "templates/.github/workflows/project-record.example.yml": "9348fc93b9136dc0c7e9a4dca55e0cdba57bbb0bb2109948fe1138b908fcd958",
+    "tests/test_packaging.py": "1860fad3133afb0339052e3aa1df9667c0cf0ca2aa441e822e94f62346071f40",
+    "tests/test_policy_ci.py": "f68ba041e7c81f408c82c4d8388a49834694d4250a4281dcc28cd121d19bc005",
+    "tools/package_standard.py": "ccdac731c7da3a8fcfaedfc0d772ff75533c0e3fca76a21f75d02cd58954ab9f",
+    "tools/run_policy_ci.py": "eb729e64a15bc9b1eecd27264e3a7e6a4b7d9761220f84c1fe75cbcc23218f6f"
+  }
+}

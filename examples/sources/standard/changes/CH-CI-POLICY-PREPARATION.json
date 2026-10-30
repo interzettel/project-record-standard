@@ -1,0 +1,11 @@
+{
+  "id": "CH-CI-POLICY-PREPARATION",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Prepare trusted CI data validation with fail/unknown propagation and explicit native enforcement/activation limits; remove path-filter gaps from the build example.",
+  "workItemIds": [
+    "PRS-GATE-02"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/53",
+  "compatibility": "Unreleased optional ciProfileVersion1; no completion contract, package/suite version or skill-body change. Forks/merge queues held; native branch protection and event-policy opt-outs not activated. #33 remains incomplete; no automatic acceptance, broad access or release."
+}

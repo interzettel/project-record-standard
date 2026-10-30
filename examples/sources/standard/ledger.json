@@ -1738,14 +1738,63 @@
       "unmappedDependencies": []
     },
     {
-      "blocked": false,
+      "blocked": true,
       "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
       "criterion": "A failing fixture is rejected at the configured boundary and corrected fixture passes at the same revision. Local hook bypass still meets the CI gate. Protected workflow/pin/policy changes, forks/untrusted code, skip/path filters, unavailable checks and authorized bypass actors have explicit coverage. Do not change broad access or silently label an advisory job enforced.",
       "dependsOn": [
         "PRS-GATE-01",
         "PRS-PIN-01"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "src/project_record/policy_ci.py; .github/workflows/policy.yml",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "tests/test_policy_ci.py; audit/ci-enforcement/2026-10-30/verification.json",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-10-30",
+          "producer": "Codex /root/ci_boundary_review",
+          "result": "passed",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "audit/ci-enforcement/2026-10-30/verification.json",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "kind": "host-enforcement",
+          "observedOn": "2026-10-30",
+          "producer": "Codex task session",
+          "result": "unknown",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "audit/ci-enforcement/2026-10-30/host-observation.json",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "eventId": "prs:PRS-GATE-02:preparation:f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "kind": "work-result",
+          "observedOn": "2026-10-30",
+          "outcome": "blocked",
+          "producer": "Codex task session",
+          "result": "unknown",
+          "revision": "f1c13a32bba897bc20ddbf557b4985cb12f340e3",
+          "source": "https://github.com/interzettel/project-record-standard/pull/53",
+          "subject": "PRS-GATE-02",
+          "summary": "CI data-check preparation passes13 focused/177 Python tests and fresh-context review. Fullcriterion incomplete: main is reported unprotected, detailed protection endpointintegration403 and EdgeblockedbyotherextensionUI. Native settings/event-policy review, activation/read-back and actual merge-refusal/bypass tests remain pending; hosted negative/corrected probe follows prep integration. No Done credit or enforcement claim."
+        }
+      ],
       "groupId": "G10",
       "id": "PRS-GATE-02",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/33",
@@ -1755,7 +1804,7 @@
       "owner": "Selected contributor; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "planned-not-implemented",
+      "sourceState": "after-work-blocked",
       "state": "backlog",
       "title": "Verify the CI enforcement profile and its bypass limits",
       "unmappedDependencies": []

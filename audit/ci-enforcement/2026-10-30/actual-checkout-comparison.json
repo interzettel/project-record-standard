@@ -1,0 +1,235 @@
+{
+  "policyCIResultVersion": 1,
+  "exitCode": 0,
+  "overall": "pass",
+  "hostEnforcement": "not-assessed",
+  "written": false,
+  "protectedChanges": [
+    ".github/prs-policy.json",
+    ".github/workflows/policy.yml",
+    "src/project_record/__pycache__/__init__.cpython-312.pyc",
+    "src/project_record/__pycache__/__main__.cpython-312.pyc",
+    "src/project_record/__pycache__/adapters.cpython-312.pyc",
+    "src/project_record/__pycache__/agents.cpython-312.pyc",
+    "src/project_record/__pycache__/build.cpython-312.pyc",
+    "src/project_record/__pycache__/core.cpython-312.pyc",
+    "src/project_record/__pycache__/delivery.cpython-312.pyc",
+    "src/project_record/__pycache__/execution.cpython-312.pyc",
+    "src/project_record/__pycache__/governance.cpython-312.pyc",
+    "src/project_record/__pycache__/history.cpython-312.pyc",
+    "src/project_record/__pycache__/issues.cpython-312.pyc",
+    "src/project_record/__pycache__/pins.cpython-312.pyc",
+    "src/project_record/__pycache__/policy.cpython-312.pyc",
+    "src/project_record/__pycache__/policy_ci.cpython-312.pyc",
+    "src/project_record/__pycache__/readme.cpython-312.pyc",
+    "src/project_record/__pycache__/reconcile.cpython-312.pyc",
+    "src/project_record/__pycache__/record_layout.cpython-312.pyc",
+    "src/project_record/__pycache__/scaffold.cpython-312.pyc",
+    "src/project_record/__pycache__/status.cpython-312.pyc",
+    "src/project_record/__pycache__/timeline.cpython-312.pyc",
+    "src/project_record/policy_ci.py",
+    "src/project_record_standard.egg-info/PKG-INFO",
+    "src/project_record_standard.egg-info/SOURCES.txt",
+    "src/project_record_standard.egg-info/dependency_links.txt",
+    "src/project_record_standard.egg-info/entry_points.txt",
+    "src/project_record_standard.egg-info/top_level.txt",
+    "standards/POLICY.md",
+    "templates/.github/workflows/policy.example.yml",
+    "templates/.github/workflows/project-record.example.yml",
+    "tools/__pycache__/build_site.cpython-312.pyc",
+    "tools/__pycache__/package_standard.cpython-312.pyc",
+    "tools/package_standard.py",
+    "tools/run_policy_ci.py"
+  ],
+  "protectedChangeMeaning": "Review notices, not authorization or a tamper-proof future-workflow guarantee",
+  "policy": {
+    "policyResultVersion": 1,
+    "catalogueRevision": 1,
+    "overall": "pass",
+    "exitCode": 0,
+    "inputDigests": {
+      "requestCanonicalSha256": "2606cfaec2cc5a9ebd3f8e6b5ca70d7413ef1b21b06617c716c76c7f07357358",
+      "recordCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13",
+      "beforeCanonicalSha256": "e39bc86e569edd6b12451904308a27258bf8a1b7ae262670123e9fcc52a07989",
+      "declaredSource": {
+        "commit": null,
+        "sha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768",
+        "observedOn": "2026-10-30"
+      },
+      "observedSourceSha256": "7346a4d2ac894e9b0e777eea8f55cae21539791b01cec42d52faedad11190e77"
+    },
+    "checks": [
+      {
+        "ruleId": "PRS-ACCOUNT-01",
+        "required": true,
+        "status": "pass",
+        "scope": "Existing record validator/accounting/reference structure",
+        "reasons": [
+          "Current and any supplied prior record satisfy existing structural checks"
+        ]
+      },
+      {
+        "ruleId": "PRS-EVIDENCE-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Supply the required predicate context"
+        ]
+      },
+      {
+        "ruleId": "PRS-ACCEPT-01",
+        "required": false,
+        "status": "not-applicable",
+        "scope": "No new acceptance decision in supplied comparison",
+        "reasons": [
+          "Historical acceptance remains unchanged and is not recertified"
+        ]
+      },
+      {
+        "ruleId": "PRS-SOURCE-01",
+        "required": true,
+        "status": "pass",
+        "scope": "Actual source bytes against before/current expected identity",
+        "reasons": [
+          "Source bytes match the declared precondition; no lock/CAS/write is performed"
+        ]
+      },
+      {
+        "ruleId": "PRS-SCOPE-01",
+        "required": false,
+        "status": "pass",
+        "scope": "No scope/criteria/dependency/governance change in supplied comparison",
+        "reasons": [
+          "No new scope admission is claimed; routine unchanged-scope updates need no new approval here"
+        ]
+      },
+      {
+        "ruleId": "PRS-PRIVACY-01",
+        "required": true,
+        "status": "pass",
+        "scope": "Existing declared visibility/input selection guard",
+        "reasons": [
+          "Public export guard accepts declared input visibility; no content classification or publication performed"
+        ]
+      },
+      {
+        "ruleId": "PRS-OWNED-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Supply an explicit output path for the shared dedicated-directory guard"
+        ]
+      },
+      {
+        "ruleId": "PRS-HISTORY-01",
+        "required": true,
+        "status": "pass",
+        "scope": "Supplied before/after comparison and declared scope explanations",
+        "reasons": [
+          "Supplied prior observation/order and explicit scope explanations cover this comparison"
+        ],
+        "changes": [],
+        "missingExplanations": []
+      },
+      {
+        "ruleId": "PRS-PINS-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Use pins.verify_installation with expected/observed installation inputs; this request does not evaluate installation pins"
+        ]
+      },
+      {
+        "ruleId": "PRS-ELIGIBLE-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Use execution.select_work with an explicit source/queue/conditions profile; this request does not select work"
+        ]
+      },
+      {
+        "ruleId": "PRS-DELIVERY-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Use declared delivery/channel/environment observations; this request does not certify publication or deployment"
+        ]
+      },
+      {
+        "ruleId": "PRS-HOST-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Verify actual required-check settings and permitted bypass through #33; no host enforcement is tested here"
+        ]
+      },
+      {
+        "ruleId": "PRS-EVENT-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Retain and test event replay/recovery through #32/#34; no journal or lifecycle adapter is evaluated here"
+        ]
+      },
+      {
+        "ruleId": "PRS-FRESH-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Use status.project_status with a dated collection receipt; this request performs no collection/freshness assessment"
+        ]
+      },
+      {
+        "ruleId": "PRS-TRANSPORT-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Test the actual optional client/protocol transport in #40; no MCP transport is evaluated here"
+        ]
+      },
+      {
+        "ruleId": "PRS-FEEDBACK-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Assess the encountered gap, privacy and duplicates through #36; no feedback relevance judgment is performed here"
+        ]
+      },
+      {
+        "ruleId": "PRS-OVERHEAD-01",
+        "required": false,
+        "status": "unknown",
+        "scope": "Predicate or context not evaluated by this request",
+        "reasons": [
+          "Measure actual sessions, interventions and model/runtime coverage in #35/#37; synthetic validity cannot certify overhead reduction"
+        ]
+      }
+    ],
+    "operationAuthorized": false,
+    "written": false,
+    "limits": [
+      "Pass concerns only required predicates and their reported scope, not all catalogue rules.",
+      "Requests, evidence, policy and authority metadata must come from reviewed host inputs; this interface authenticates none of them.",
+      "No repair, source lock/CAS, test execution, public content review, publication, host enforcement or permission grant occurs.",
+      "Reports are local diagnostics and can contain private identifiers; they are not approved public projections."
+    ]
+  },
+  "inputs": {
+    "beforeSourceSha256": "7346a4d2ac894e9b0e777eea8f55cae21539791b01cec42d52faedad11190e77",
+    "afterSourceSha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768",
+    "beforeCanonicalSha256": "e39bc86e569edd6b12451904308a27258bf8a1b7ae262670123e9fcc52a07989",
+    "afterCanonicalSha256": "dd5a03bb48e357c5104a2acef2e6e01adcca31b3012bae71fc07fd882f755b13"
+  },
+  "hostDecisions": [],
+  "reason": "Verdict covers selected data predicates and separately adopted exact-input authority decisions only"
+}
