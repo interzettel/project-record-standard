@@ -1,0 +1,19 @@
+{
+  "package": "PRS-RECORDS-02",
+  "observedOn": "2026-10-30",
+  "producer": "Codex task session",
+  "inputRevision": "06099cfc582cebc1ecbf9798c13c960f89cfa5cf",
+  "implementation": "optional layoutVersion1 read-only metadata helpers; independent of completion contract0.2.0",
+  "checks": [
+    "16 record-layout tests passed across three synthetic hosts",
+    "56 Python tests passed before archive-presence assertions"
+  ],
+  "limits": [
+    "No real host migration, memory effectiveness or runtime conformance experiment",
+    "No authentication of profile visibility/approval declarations",
+    "No file traversal, staging, deletion or apply migration",
+    "Lookup, Git selection, owner indexes and previews require authorized local use",
+    "M13 outcome acceptance remains with Yi\u011fit",
+    "Fresh-context review pending"
+  ]
+}

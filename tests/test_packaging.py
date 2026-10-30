@@ -23,6 +23,11 @@ class DistributionTests(unittest.TestCase):
                 self.assertIn(root + 'CHANGELOG.md', names)
                 self.assertIn(root + 'INSTALL.md', names)
                 self.assertIn(root + 'LICENSE', names)
+                self.assertIn(root + 'src/project_record/record_layout.py', names)
+                self.assertIn(root + 'templates/record-layout.example.json', names)
+                self.assertIn(root + 'tests/test_record_layout.py', names)
+                for host in ['readme-research', 'private-agent', 'shared-repository']:
+                    self.assertIn(root + 'tests/fixtures/record_layout/' + host + '.json', names)
                 for guide in ['ARCHITECTURE', 'POLICY', 'COMPATIBILITY', 'RECORDS', 'FEEDBACK']:
                     self.assertIn(root + 'standards/' + guide + '.md', names)
                 self.assertIn(root + 'standards/WORK-MODEL.md', names)

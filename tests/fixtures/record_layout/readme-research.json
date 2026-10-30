@@ -1,0 +1,184 @@
+{
+  "layoutVersion": 1,
+  "profileId": "readme-research",
+  "synthetic": true,
+  "stores": [
+    {
+      "class": "decisions",
+      "home": {
+        "kind": "repo",
+        "path": "README.md#decisions",
+        "scope": "file"
+      },
+      "writer": "synthetic-decisions-writer",
+      "visibility": "public",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": true,
+      "publicIndex": true,
+      "owns": []
+    },
+    {
+      "class": "evidence",
+      "home": {
+        "kind": "repo",
+        "path": "README.md#evidence",
+        "scope": "file"
+      },
+      "writer": "synthetic-evidence-writer",
+      "visibility": "public",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": true,
+      "publicIndex": true,
+      "owns": []
+    },
+    {
+      "class": "generated",
+      "home": {
+        "kind": "repo",
+        "path": ".generated",
+        "scope": "directory"
+      },
+      "writer": "synthetic-generated-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": [],
+      "transient": true
+    },
+    {
+      "class": "instructions",
+      "home": {
+        "kind": "repo",
+        "path": "README.md#instructions",
+        "scope": "file"
+      },
+      "writer": "synthetic-instructions-writer",
+      "visibility": "public",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": true,
+      "publicIndex": true,
+      "owns": []
+    },
+    {
+      "class": "knowledge",
+      "home": {
+        "kind": "repo",
+        "path": "README.md#knowledge",
+        "scope": "file"
+      },
+      "writer": "synthetic-knowledge-writer",
+      "visibility": "public",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": true,
+      "publicIndex": true,
+      "owns": []
+    },
+    {
+      "class": "personal-memory",
+      "home": {
+        "kind": "external",
+        "reference": "synthetic-private://DO-NOT-PUBLISH/personal-memory"
+      },
+      "writer": "synthetic-personal-memory-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "plan",
+      "home": {
+        "kind": "repo",
+        "path": "README.md#plan",
+        "scope": "file"
+      },
+      "writer": "synthetic-plan-writer",
+      "visibility": "public",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": true,
+      "publicIndex": true,
+      "owns": []
+    },
+    {
+      "class": "runbooks",
+      "home": {
+        "kind": "repo",
+        "path": "README.md#runbooks",
+        "scope": "file"
+      },
+      "writer": "synthetic-runbooks-writer",
+      "visibility": "public",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": true,
+      "publicIndex": true,
+      "owns": []
+    },
+    {
+      "class": "session-context",
+      "home": {
+        "kind": "external",
+        "reference": "synthetic-private://DO-NOT-PUBLISH/session-context"
+      },
+      "writer": "synthetic-session-context-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "work",
+      "home": {
+        "kind": "repo",
+        "path": "README.md#work",
+        "scope": "file"
+      },
+      "writer": "synthetic-work-writer",
+      "visibility": "public",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": true,
+      "publicIndex": true,
+      "owns": [
+        "work.state",
+        "work.criteria",
+        "work.dependencies",
+        "work.acceptance"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "class": "work",
+      "id": "R1",
+      "path": "README.md#work",
+      "revision": "synthetic-revision-1"
+    },
+    {
+      "class": "knowledge",
+      "id": "R1",
+      "path": "README.md#knowledge",
+      "revision": "synthetic-revision-1"
+    },
+    {
+      "class": "decisions",
+      "id": "ADR-1",
+      "path": "README.md#decisions",
+      "revision": "synthetic-revision-1",
+      "supersededBy": "ADR-2"
+    },
+    {
+      "class": "decisions",
+      "id": "ADR-2",
+      "path": "README.md#decisions",
+      "revision": "synthetic-revision-1"
+    },
+    {
+      "class": "evidence",
+      "id": "EXP-1",
+      "path": "README.md#evidence",
+      "revision": "synthetic-revision-1"
+    }
+  ]
+}

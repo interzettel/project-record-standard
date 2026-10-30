@@ -1,0 +1,184 @@
+{
+  "layoutVersion": 1,
+  "profileId": "private-agent",
+  "synthetic": true,
+  "stores": [
+    {
+      "class": "decisions",
+      "home": {
+        "kind": "repo",
+        "path": "Existing.decisions",
+        "scope": "directory"
+      },
+      "writer": "synthetic-decisions-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "evidence",
+      "home": {
+        "kind": "repo",
+        "path": "Existing.evidence",
+        "scope": "directory"
+      },
+      "writer": "synthetic-evidence-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "generated",
+      "home": {
+        "kind": "repo",
+        "path": ".generated",
+        "scope": "directory"
+      },
+      "writer": "synthetic-generated-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": [],
+      "transient": true
+    },
+    {
+      "class": "instructions",
+      "home": {
+        "kind": "repo",
+        "path": "AGENTS.md",
+        "scope": "file"
+      },
+      "writer": "synthetic-instructions-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "knowledge",
+      "home": {
+        "kind": "repo",
+        "path": "Existing.knowledge",
+        "scope": "directory"
+      },
+      "writer": "synthetic-knowledge-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "personal-memory",
+      "home": {
+        "kind": "external",
+        "reference": "synthetic-private://DO-NOT-PUBLISH/personal-memory"
+      },
+      "writer": "synthetic-personal-memory-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "plan",
+      "home": {
+        "kind": "repo",
+        "path": "Planung.md",
+        "scope": "file"
+      },
+      "writer": "synthetic-plan-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "runbooks",
+      "home": {
+        "kind": "repo",
+        "path": "Existing.runbooks",
+        "scope": "file"
+      },
+      "writer": "synthetic-runbooks-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "session-context",
+      "home": {
+        "kind": "external",
+        "reference": "synthetic-private://DO-NOT-PUBLISH/session-context"
+      },
+      "writer": "synthetic-session-context-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": []
+    },
+    {
+      "class": "work",
+      "home": {
+        "kind": "repo",
+        "path": "Bestehend/Arbeit.json",
+        "scope": "file"
+      },
+      "writer": "synthetic-work-writer",
+      "visibility": "private",
+      "retention": "host-selected lifecycle; preserve amendments for cited records",
+      "git": false,
+      "publicIndex": false,
+      "owns": [
+        "work.state",
+        "work.criteria",
+        "work.dependencies",
+        "work.acceptance"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "class": "work",
+      "id": "R1",
+      "path": "Bestehend/Arbeit.json",
+      "revision": "synthetic-revision-1"
+    },
+    {
+      "class": "knowledge",
+      "id": "R1",
+      "path": "Existing.knowledge/R1.md",
+      "revision": "synthetic-revision-1"
+    },
+    {
+      "class": "decisions",
+      "id": "ADR-1",
+      "path": "Existing.decisions/ADR-1.md",
+      "revision": "synthetic-revision-1",
+      "supersededBy": "ADR-2"
+    },
+    {
+      "class": "decisions",
+      "id": "ADR-2",
+      "path": "Existing.decisions/ADR-2.md",
+      "revision": "synthetic-revision-1"
+    },
+    {
+      "class": "evidence",
+      "id": "EXP-1",
+      "path": "Existing.evidence/EXP-1.md",
+      "revision": "synthetic-revision-1"
+    }
+  ]
+}
