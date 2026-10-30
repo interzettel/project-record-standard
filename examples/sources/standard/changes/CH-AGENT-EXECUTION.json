@@ -1,0 +1,11 @@
+{
+  "id": "CH-AGENT-EXECUTION",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Assess canonical eligible work and observed issue/README alignment; install bounded start/end instructions with explicit rule-upgrade handling and legacy pin readability.",
+  "workItemIds": [
+    "PRS-AGENT-EXECUTION"
+  ],
+  "pr": "https://github.com/interzettel/project-record-standard/pull/50",
+  "compatibility": "Unreleased optional executionVersion1 API; no completion contract/native version/skill-body change. Marked instruction digest changes require explicit upgrade even with identical skill suite bytes. Previous rules pins/receipts remain readable and historical release assets unchanged. No automatic writer, remote mutation or permission grant."
+}

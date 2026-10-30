@@ -1,0 +1,133 @@
+{
+  "contractVersion": "0.2.0",
+  "groups": [
+    {
+      "id": "G",
+      "title": "Synthetic execution",
+      "panel": "Now"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M5",
+      "title": "Synthetic canonical milestone",
+      "goal": "Select eligible existing work without granting acceptance",
+      "horizon": "Now",
+      "groupIds": [
+        "G"
+      ],
+      "gateItemIds": [
+        "EX-DONE"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "nextAction": "Review the next synthetic item",
+      "unscopedWork": [],
+      "evidence": []
+    }
+  ],
+  "items": [
+    {
+      "id": "EX-BLOCK",
+      "title": "Synthetic EX-BLOCK",
+      "groupId": "G",
+      "milestoneId": "M5",
+      "state": "ready",
+      "sourceState": "synthetic-ready",
+      "required": true,
+      "blocked": true,
+      "dependsOn": [
+        "EX-GAP"
+      ],
+      "evidence": [],
+      "completionBasis": "not-complete",
+      "kind": "implementation",
+      "criterion": "Demonstrate the bounded synthetic result for EX-BLOCK",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/3",
+      "note": "Unfinished implementation prerequisite"
+    },
+    {
+      "id": "EX-WAIT",
+      "title": "Synthetic EX-WAIT",
+      "groupId": "G",
+      "milestoneId": "M5",
+      "state": "ready",
+      "sourceState": "synthetic-ready",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [
+        "EX-GAP"
+      ],
+      "evidence": [],
+      "completionBasis": "not-complete",
+      "kind": "implementation",
+      "criterion": "Demonstrate the bounded synthetic result for EX-WAIT",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/6"
+    },
+    {
+      "id": "EX-NEXT",
+      "title": "Synthetic EX-NEXT",
+      "groupId": "G",
+      "milestoneId": "M5",
+      "state": "ready",
+      "sourceState": "synthetic-ready",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "evidence": [],
+      "completionBasis": "not-complete",
+      "kind": "implementation",
+      "criterion": "Demonstrate the bounded synthetic result for EX-NEXT",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/31"
+    },
+    {
+      "id": "EX-GAP",
+      "title": "Synthetic EX-GAP",
+      "groupId": "G",
+      "milestoneId": "M5",
+      "state": "unknown",
+      "sourceState": "unavailable-observation",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "evidence": [],
+      "completionBasis": "not-complete",
+      "kind": "implementation",
+      "criterion": "Demonstrate the bounded synthetic result for EX-GAP",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/32"
+    },
+    {
+      "id": "EX-DONE",
+      "title": "Synthetic EX-DONE",
+      "groupId": "G",
+      "milestoneId": "M5",
+      "state": "done",
+      "sourceState": "synthetic-done",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "evidence": [],
+      "completionBasis": "not-complete",
+      "kind": "implementation",
+      "criterion": "Demonstrate the bounded synthetic result for EX-DONE",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/27"
+    },
+    {
+      "id": "EX-LATER",
+      "title": "Synthetic EX-LATER",
+      "groupId": "G",
+      "milestoneId": "M5",
+      "state": "ready",
+      "sourceState": "synthetic-ready",
+      "required": false,
+      "blocked": false,
+      "dependsOn": [],
+      "evidence": [],
+      "completionBasis": "not-complete",
+      "kind": "implementation",
+      "criterion": "Demonstrate the bounded synthetic result for EX-LATER",
+      "issueUrl": "https://github.com/interzettel/project-record-standard/issues/40",
+      "deferReason": "Deferred optional example"
+    }
+  ]
+}

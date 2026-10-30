@@ -127,7 +127,7 @@ def validate_pin(pin: dict) -> None:
     if any('.agents/skills/' + n + '/SKILL.md' not in digests for n in names):
         raise RecordError('Each expected skill needs instructions')
     expected = sha256(json.dumps({'manifest': manifest, 'files': digests}, sort_keys=True).encode()).hexdigest()
-    if expected != suite.get('suiteDigest') or sha256(_rules(names, expected)).hexdigest() != suite.get('rulesSha256'):
+    if expected != suite.get('suiteDigest') or suite.get('rulesSha256') not in {sha256(_rules(names, expected, execution=mode)).hexdigest() for mode in [False, True]}:
         raise RecordError('Expected suite identity is internally inconsistent')
     if 'policy' not in pin:
         raise RecordError('Policy must be explicitly pinned or null')

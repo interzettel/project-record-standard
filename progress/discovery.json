@@ -34,7 +34,7 @@
       "coverage": "New public adopter homepage and17 guides separate recorded release from future automation. Hosted publication and deployment are verified separately after integration; actual browser layout/speech remain untested in this pass."
     }
   ],
-  "nextAction": "Execute PRS-AGENT-EXECUTION/#3/M5 using the clarified evidence/dependency reference; M5 acceptance and release gates remain separate.",
+  "nextAction": "Execute PRS-GATE-01/#31/M10 shared CLI policy checks. M5 work gates are4/4 complete; Yiğit retains M5 outcome acceptance, with no release inferred.",
   "reconciliations": [
     {
       "package": "PRS-RECORDS-01",
@@ -91,6 +91,14 @@
       "inputRevision": "4e6c50dfbcb1cb9fc4ab665bc48d38a0a9b49579",
       "verifiedRevision": "a602e90238d24ad5b87ef4025a755a27091e6c2e",
       "coverage": "Read #6 and complete open-PR page at start: no overlap. Existing sources plus5 worked cases/7 runtime-boundary tests;5 fresh-context controls and5 installed-skill applications, all raw responses reviewed. No skill body change justified by core baseline results. Fresh-context reviewer approved portable reference path and independently passed7 tests; no real consumer or cross-model proof."
+    },
+    {
+      "package": "PRS-AGENT-EXECUTION",
+      "observedOn": "2026-10-30",
+      "inputRevision": "6db2d19e09e74b54620a723e60051ea6d0f35b8e",
+      "verifiedRevision": "8b49fb5281bd879d7af9a846400e1b4888480c94",
+      "applicationRevision": "423b168b1625cb8bcb0eae037271e986dc21f433",
+      "coverage": "Read #3/comment and complete open-PR page at start: no overlap. Synthetic blocked/unknown/eligible/stale-mapping fixture, optional read-only API, owned instruction upgrade and old-pin compatibility. Five fresh installed-guidance applications at423b168; later multi-leaf issue fix reproduced/reviewed independently with21 tests. No live consumer/runtime/remote mutation or cross-model proof."
     }
   ]
 }
