@@ -97,3 +97,13 @@ The eleven required leaves and seven deferred leaves keep their identities, orde
 | #25 · `PRS-CONVENTIONS-01` (deferred) | Map optional epic/feature/story/task and typed origin/effect/relationship vocabulary. A milestone is a checkpoint; a parent does not imply a prerequisite. Keep the delivery plan separate from an operations runbook. |
 
 The documentation and distribution correction changes no leaf state, acceptance, required/deferred scope or runtime contract. Before and after: new required work 0/11; expanded required work 18/29 (62.1%); retained work 18/36 (50.0%); declared milestone outcomes 4/9. No model roster, fixed cadence, new required tracker, global merge-first rule or permanent agent roles are introduced. Remaining product behavior belongs to the linked packages and their existing gates.
+
+## Execution-readiness correction · 30 October 2026
+
+The [execution-readiness review](execution-readiness-review-2026-10-30.md) distinguishes a valid issue structure from fully detailed execution and reliable skill behavior. #15 is a bounded next mapping/fixture package. #6, #3, #2 and #17–#22 now have internal slices or more direct verification expectations in their existing issue bodies; those slices earn no additional accounting credit. The seven deferred leaves remain progressively detailed when selected.
+
+A package begins with its deliverable, inputs/authority, unresolved decisions and a check that tests the new behavior. Existing metadata, installer or example-ledger checks are supplements where they do not exercise that behavior. Finish a reviewable slice before taking another primary package, preserving partial results without awarding the entire leaf Done. A case/discovery table can be the first result where the contract itself is the work. This does not require line-by-line implementation plans or fixed agent jobs.
+
+Skill metadata and source/package tests pass their tested boundary; the published synthetic application records do not establish universal reliability or causal improvement. Portable work selection, README-only behavior and semantic upgrades remain #3, #2 and #22. Current root guidance is not a completed portable-suite upgrade.
+
+The release workflow is pinned to v0.4.1. No next release cut/version has been selected. Before publication, use `prepare-project-delivery` to define included changes and candidate gates and to update/test the version-bound publication path. A proposed 0.5.0 is not an existing release or a promise that M5–M7 equal its release scope. This review changes no ledger state, prerequisite, denominator or acceptance.

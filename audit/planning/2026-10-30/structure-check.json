@@ -1,0 +1,119 @@
+{
+  "sourceRevision": "35f646e86c77d6f68ca07bfbc21e1de7d529616c",
+  "observedOn": "2026-10-30",
+  "coverage": "One complete open-issue page: 23 issues, 18 leaves, 5 parents; closed collections and unrelated repositories not refreshed.",
+  "results": [
+    {
+      "issue": 26,
+      "id": "PRS-CONVENTIONS-02",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 25,
+      "id": "PRS-CONVENTIONS-01",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 24,
+      "id": "PRS-CONTROL-02",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 23,
+      "id": "PRS-CONTROL-01",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 22,
+      "id": "PRS-UPGRADE-03",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 21,
+      "id": "PRS-UPGRADE-02",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 20,
+      "id": "PRS-UPGRADE-01",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 19,
+      "id": "PRS-INSPECT-03",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 18,
+      "id": "PRS-INSPECT-02",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 17,
+      "id": "PRS-INSPECT-01",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 16,
+      "id": "PRS-HANDOFF-02",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 15,
+      "id": "PRS-HANDOFF-01",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 8,
+      "id": "PRS-PROJECTIONS",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 7,
+      "id": "PRS-DISCOVERABILITY",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 6,
+      "id": "PRS-EVIDENCE-STAGES",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 3,
+      "id": "PRS-AGENT-EXECUTION",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 2,
+      "id": "PRS-TAILOR-README",
+      "lint": [],
+      "milestoneMatches": true
+    },
+    {
+      "issue": 1,
+      "id": "PRS-AGENT-AUTHORITY",
+      "lint": [],
+      "milestoneMatches": true
+    }
+  ],
+  "limits": [
+    "Issue lint checks heading/title/label shape, not semantic completeness, effort or agent behavior.",
+    "Native parent-link completion was not reverified in this pass."
+  ]
+}
