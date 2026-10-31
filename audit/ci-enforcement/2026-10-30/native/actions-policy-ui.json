@@ -1,0 +1,6 @@
+[
+  {
+    "type": "text",
+    "text": "{\"url\":\"https://github.com/interzettel/project-record-standard/settings/actions/rules\",\"text\":\"Settings: interzettel/project-record-standard\\nGeneral\\nAccess\\nCollaborators and teams\\nModeration\\nCode, planning, and automation\\nRulesets\\nCustom properties\\nBranches\\nTags\\nActions\\nGeneral\\nRunners\\nPolicies\\nPolicy insights\\nOIDC\\nWebhooks\\nCopilot\\nPlanning\\nEnvironments\\nCodespaces\\nPages\\nSecurity and quality\\nAdvanced Security\\nCode quality\\nDeploy keys\\nSecrets and variables\\nIntegrations\\nGitHub Apps\\nAutolink references\\nActions policies\\nOn December 2, 2026, GitHub will restrict pull_request_target on public repositories by default. To continue allowing the event trigger, configure an Actions policy. Learn more\\nYou haven't created any policies\\n\\nDefine whether actions can run in specific contexts. Learn more about policies.\\n\\nNew policy\"}"
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "observedAt": "2026-10-30T21:59:22.825Z",
+  "trustedBase": "9b309574c577d8d6e0afda81705f1f531b2654f5",
+  "probePR": 56,
+  "ruleset": 26242462,
+  "actor": {
+    "login": "yigit-denktas",
+    "integration": "ChatGPT Codex Connector",
+    "currentUserCanBypass": "never"
+  },
+  "malformedTransport": {
+    "commit": "cce2472dd686b7aa777ab4de5a0114f90e678303",
+    "runs": [
+      {
+        "id": 41134592947,
+        "name": "PRS policy boundary"
+      },
+      {
+        "id": 41134592831,
+        "name": "Verify and publish the standard"
+      }
+    ],
+    "reason": "Expecting ':' delimiter: line 768 column 9 (char 29197)",
+    "meaning": "Probe construction error caused by truncated transfer; preserved negative result, not duplicate-predicate evidence"
+  },
+  "duplicate": {
+    "commit": "f43b5b4d0dfd2dc951e280baf8f12964281dc1ee",
+    "runs": [
+      {
+        "id": 41134757982,
+        "name": "Verify and publish the standard"
+      },
+      {
+        "id": 41134755846,
+        "name": "PRS policy boundary"
+      }
+    ],
+    "job": 124334341665,
+    "policyResult": "failure / Duplicate items ID",
+    "draft": false,
+    "mergeable": true,
+    "mergeableState": "blocked",
+    "ui": "Three failing required checks; Merge pull request disabled"
+  },
+  "unavailable": {
+    "commit": "361966d2d2ea363c052ab07dc5ade245bafd7bc5",
+    "runs": [
+      {
+        "id": 41134877784,
+        "name": "PRS policy boundary"
+      }
+    ],
+    "policyResult": "success",
+    "draft": false,
+    "mergeable": true,
+    "mergeableState": "blocked",
+    "ui": "verify and reusable / record Expected/Required; Merge pull request disabled"
+  },
+  "corrected": {
+    "commit": "caaaa994dea9e344884a6cc427f6d022d46df2bb",
+    "runs": [
+      {
+        "id": 41134998309,
+        "name": "Verify and publish the standard"
+      },
+      {
+        "id": 41134998509,
+        "name": "PRS policy boundary"
+      }
+    ],
+    "requiredChecks": "verify, reusable / record, PRS policy all success",
+    "draft": false,
+    "mergeable": true,
+    "mergeableState": "clean",
+    "ui": "All checks passed; Merge pull request enabled",
+    "uiObservedOn": "2026-10-30"
+  },
+  "sourceRestoredBlob": "4d74f31254084be346ed0a3ae2962e8d47606858",
+  "scope": "Non-mutating native refusal/readiness evidence; no bad-data merge API request; no direct-push, fork, cross-actor or policy-edit bypass certification",
+  "configurationChangesByAgent": [],
+  "closedWithoutMerge": true,
+  "criterionDecision": "Pending evidence review; current required-check enforcement verified, future event-policy restriction retained as explicit limit"
+}

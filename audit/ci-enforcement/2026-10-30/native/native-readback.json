@@ -1,0 +1,89 @@
+{
+  "observedOn": "2026-10-30",
+  "repository": "interzettel/project-record-standard",
+  "source": "https://api.github.com/repos/interzettel/project-record-standard/rulesets/26242462",
+  "ruleset": {
+    "id": 26242462,
+    "name": "PRS main CI gates",
+    "target": "branch",
+    "source_type": "Repository",
+    "source": "interzettel/project-record-standard",
+    "enforcement": "active",
+    "conditions": {
+      "ref_name": {
+        "exclude": [],
+        "include": [
+          "refs/heads/main"
+        ]
+      }
+    },
+    "rules": [
+      {
+        "type": "pull_request",
+        "parameters": {
+          "required_approving_review_count": 0,
+          "dismiss_stale_reviews_on_push": false,
+          "required_reviewers": [],
+          "require_code_owner_review": false,
+          "dismissal_restriction": {
+            "enabled": false,
+            "allowed_actors": []
+          },
+          "require_last_push_approval": false,
+          "required_review_thread_resolution": false,
+          "require_extra_approval_for_unattributed_changes": true,
+          "allowed_merge_methods": [
+            "merge",
+            "squash",
+            "rebase"
+          ]
+        }
+      },
+      {
+        "type": "required_status_checks",
+        "parameters": {
+          "strict_required_status_checks_policy": true,
+          "do_not_enforce_on_create": false,
+          "required_status_checks": [
+            {
+              "context": "verify",
+              "integration_id": 15368
+            },
+            {
+              "context": "reusable / record",
+              "integration_id": 15368
+            },
+            {
+              "context": "PRS policy",
+              "integration_id": 15368
+            }
+          ]
+        }
+      }
+    ],
+    "node_id": "RRS_lACqUmVwb3NpdG9yec5VOlzMzgGQbZ4",
+    "created_at": "2026-10-30T22:54:28.009+01:00",
+    "updated_at": "2026-10-30T22:54:28.121+01:00",
+    "bypass_actors": [],
+    "current_user_can_bypass": "never",
+    "_links": {
+      "self": {
+        "href": "https://api.github.com/repos/interzettel/project-record-standard/rulesets/26242462"
+      },
+      "html": {
+        "href": "https://github.com/interzettel/project-record-standard/rules/26242462"
+      }
+    }
+  },
+  "branch": {
+    "name": "main",
+    "revision": "9b309574c577d8d6e0afda81705f1f531b2654f5",
+    "protected": true,
+    "classicProtectionSummary": {
+      "enabled": false,
+      "requiredContexts": []
+    },
+    "meaning": "Ruleset protection is active; classic branch protection summary is not the ruleset configuration."
+  },
+  "scope": "Imported by owner; no native mutation by agent"
+}
