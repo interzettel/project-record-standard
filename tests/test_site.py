@@ -22,6 +22,8 @@ class SiteTests(unittest.TestCase):
             self.assertTrue((site/'guide/STANDARD.html').exists())
             self.assertTrue((site/'guide/READINESS.html').exists())
             self.assertTrue((site/'guide/WORK-MODEL.html').exists())
+            self.assertTrue((site/'guide/RUNTIME-ADAPTERS.html').exists())
+            self.assertIn('<a href="RUNTIME-ADAPTERS.html">runtime adapter pilot</a>', (site/'guide/AUTOMATION.html').read_text())
             for guide in ['ARCHITECTURE', 'POLICY', 'COMPATIBILITY', 'RECORDS', 'FEEDBACK']:
                 self.assertTrue((site / 'guide' / (guide + '.html')).is_file())
             home = (site/'index.html').read_text()

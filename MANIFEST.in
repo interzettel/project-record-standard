@@ -7,3 +7,5 @@ include AGENTS.md
 recursive-include progress *.md *.json
 include package.json package-lock.json
 include tests/accessibility.test.mjs tests/history.test.mjs tools/accessibility_review.html
+recursive-include integrations *.md *.json
+include tools/run_runtime_adapter.py tools/run_reconcile_event.py

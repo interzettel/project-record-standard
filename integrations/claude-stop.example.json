@@ -1,0 +1,6 @@
+{
+  "session_id": "replace-with-observed-session-id",
+  "cwd": "/absolute/host/workspace",
+  "hook_event_name": "Stop",
+  "stop_hook_active": false
+}
