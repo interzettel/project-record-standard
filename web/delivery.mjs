@@ -5,7 +5,7 @@ const deliveryPP = value => value === null ? 'Not measured' : (value > 0 ? '+' :
 /** Mounts history and delivery views with project-owned typography and colours. */
 export function mountDelivery(root, record, options = {}) {
   root.dataset.projectDelivery = '';
-  const view = {section:'history', measure:record.project.id==='portfolio'?'ledger':'work'};
+  const view = {section:'history', measure:record.project.id==='portfolio'?'ledger':'work', observation:null};
   const history = record.history || {snapshots:[], comparisons:[], coverage:'No history mapped.'};
   const delivery = record.deliverySummary || {plans:[],unreleased:[],releases:[],deployments:[],coverage:'Delivery records have not been mapped.'};
   const h = deliveryEscape;
@@ -17,15 +17,39 @@ export function mountDelivery(root, record, options = {}) {
     const points = history.snapshots;
     const measure = view.measure;
     const controls = `<label>History measure<select aria-label="History measure" data-delivery-measure><option value="work"${measure==='work'?' selected':''}>Required scope</option><option value="ledger"${measure==='ledger'?' selected':''}>Retained ledger</option></select></label>`;
-    const known = points.filter(p=>p.metrics[measure].percent!==null);
-    const coords = known.map((p,i)=>[45+(known.length>1?i*510/(known.length-1):255),175-p.metrics[measure].percent*1.4]);
-    const chart = known.length ? `<svg viewBox="0 0 600 225" role="img" aria-label="${h(measure==='work'?'Required-scope':'Retained-ledger')} progress at ${known.length} observed snapshots"><title>Observed progress; gaps between observations are not measured</title><path d="M45 30V175H555" class="pd-axis"/>${[0,50,100].map(p=>`<text x="8" y="${179-p*1.4}">${p}%</text>`).join('')}<polyline points="${coords.map(c=>c.join(',')).join(' ')}" class="pd-line"/>${coords.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="5"/><text x="${x}" y="${y-13}" text-anchor="middle">${deliveryPercent(known[i].metrics[measure].percent)}</text><text x="${x}" y="200" text-anchor="middle">${h(known[i].observedOn)}</text>`).join('')}</svg>` : '<p>No measured denominator is available.</p>';
+    const selected = view.observation === null ? points.length - 1 : view.observation;
+    const point = points[selected];
+    const measured = points.filter(p=>Number.isFinite(p.metrics[measure].percent));
+    const inspection = point ? `<label class="pd-observation-control">Inspect observation<select aria-label="Inspect observation" data-history-observation>${points.map((p,i)=>`<option value="${i}"${i===selected?' selected':''}>${i+1} · ${h(p.observedOn)} · ${deliveryPercent(p.metrics[measure].percent)} · ${p.metrics[measure].done}/${p.metrics[measure].total} · ${h(sourceName(p))}</option>`).join('')}</select></label><p class="pd-observation"><strong>${deliveryPercent(point.metrics[measure].percent)}</strong><span>${point.metrics[measure].done}/${point.metrics[measure].total} ${measure==='work'?'required':'retained'} work items completed<br>Observation ${selected+1} · ${h(point.observedOn)} · source ${h(sourceName(point))}</span></p>` : '';
+    const chart = measured.length ? `<figure class="pd-history-figure"><div data-history-plot></div><figcaption>Observations in source order, equally spaced; horizontal distance does not represent elapsed time. Gaps in measured values are left open. All ${points.length} source observations remain in the table.</figcaption></figure>` : '<p>No measured denominator is available.</p>';
     const rows = points.map(p=>`<tr><th scope="row">${h(p.observedOn)}<small>${h(sourceName(p))}</small></th><td>${p.metrics[measure].done}/${p.metrics[measure].total}</td><td>${deliveryPercent(p.metrics[measure].percent)}</td></tr>`).join('');
     const comparisons = history.comparisons.map((c,i)=>{
       const b=c.bridges[measure];
       return `<article class="pd-comparison"><h4>What changed · ${h(points[i].observedOn)} → ${h(points[i+1].observedOn)}</h4><div class="pd-bridge"><div><span>State changes on earlier scope</span><strong>${deliveryPP(b.stateEffectPP)}</strong></div><div><span>Scope and membership changes</span><strong>${deliveryPP(b.scopeEffectPP)}</strong></div><div><span>Total percentage change</span><strong>${deliveryPP(b.totalChangePP)}</strong></div></div><p>${b.before.done}/${b.before.total} → ${b.afterStateChanges.done}/${b.afterStateChanges.total} after state changes → ${b.after.done}/${b.after.total} after scope changes.</p>${ids('Added work',c.added)}${ids('Removed work',c.removed)}${ids('Required-scope changes',c.scopeChanges.map(x=>x.id))}${ids('State changes',c.stateChanges.map(x=>x.id))}${ids('Completion regressions',c.regressions.map(x=>x.id))}<details><summary>Calculation and change-control limits</summary><p>${h(b.method)}</p><p>The comparison observes a change; it does not establish who approved it. Check the linked source history and the governance change record.</p></details></article>`;
     }).join('');
-    return `<h3>Progress history</h3><p>${h(history.coverage)}</p>${controls}${chart}<table><caption>Exact observation counts</caption><thead><tr><th scope="col">Observation / source</th><th scope="col">Done / scope</th><th scope="col">Progress</th></tr></thead><tbody>${rows}</tbody></table>${points.length<2?'<p>A second pinned snapshot is needed to explain change over time.</p>':''}${comparisons}<p class="pd-note">These percentages measure completed leaves. They do not estimate effort, earned value, schedule efficiency or business benefit.</p>`;
+    return `<h3>Progress history</h3><p>${h(history.coverage)}</p>${controls}${inspection}${chart}<table><caption>Exact observation counts</caption><thead><tr><th scope="col">Observation / source</th><th scope="col">Done / scope</th><th scope="col">Progress</th></tr></thead><tbody>${rows}</tbody></table>${points.length<2?'<p>A second pinned snapshot is needed to explain change over time.</p>':''}${comparisons}<p class="pd-note">These percentages measure completed leaves. They do not estimate effort, earned value, schedule efficiency or business benefit.</p>`;
+  }
+
+  function drawHistory() {
+    const host=root.querySelector('[data-history-plot]');
+    if(!host)return;
+    const points=history.snapshots;
+    const width=Math.max(260,Math.min(900,root.getBoundingClientRect().width || 640));
+    const left=42, right=width-66, top=26, bottom=190;
+    const x=i=>points.length===1?(left+right)/2:left+i*(right-left)/(points.length-1);
+    const y=value=>bottom-value*(bottom-top)/100;
+    const selected=view.observation===null?points.length-1:view.observation;
+    const tickCount=width<400?2:width<700?3:5;
+    const ticks=[...new Set(Array.from({length:Math.min(tickCount,points.length)},(_,i)=>Math.round(i*(points.length-1)/Math.max(1,Math.min(tickCount,points.length)-1))))];
+    let path='',open=false,last=-1;
+    const marks=points.map((p,i)=>{
+      const m=p.metrics[view.measure];
+      if(!Number.isFinite(m.percent)){open=false;return '';}
+      path+=`${open?'L':'M'}${x(i)},${y(m.percent)} `;open=true;last=i;
+      return `<circle cx="${x(i)}" cy="${y(m.percent)}" r="${i===selected?5:3}" class="${i===selected?'pd-selected-point':'pd-point'}"><title>Observation ${i+1} · ${h(p.observedOn)} · ${m.done}/${m.total} · ${deliveryPercent(m.percent)} · source ${h(sourceName(p))}</title></circle>`;
+    }).join('');
+    const measureLabel=view.measure==='work'?'Required-scope':'Retained-ledger';
+    host.innerHTML=`<svg viewBox="0 0 ${width} 246" role="img" aria-label="${measureLabel} progress across ${points.length} source observations, equally spaced rather than elapsed time"><title>${measureLabel} observations; exact values in the observation table</title><desc>Zero to 100 percent. Observations with no measured denominator leave a gap. Select an observation with the Inspect observation control for its date, source, fraction and percentage.</desc>${[0,50,100].map(p=>`<path d="M${left} ${y(p)}H${right}" class="pd-grid"/><text x="${left-8}" y="${y(p)+4}" text-anchor="end">${p}%</text>`).join('')}<path d="${path}" class="pd-line"/>${marks}${last>=0?`<text class="pd-end-label" x="${x(last)+9}" y="${y(points[last].metrics[view.measure].percent)+4}">${deliveryPercent(points[last].metrics[view.measure].percent)}</text>`:''}${ticks.map(i=>`<text x="${x(i)}" y="214" text-anchor="middle">${i+1}</text>`).join('')}<text x="${left}" y="240">Observation</text></svg>`;
   }
 
   function readinessHTML() {
@@ -38,14 +62,20 @@ export function mountDelivery(root, record, options = {}) {
 
   function render() {
     root.innerHTML = `<div class="pd-navigation" role="group" aria-label="Tracking sections">${[['history','Progress history'],['readiness','Release readiness'],['changes','Changelog & deployments']].map(([value,label])=>`<button type="button" data-delivery-section="${value}" aria-pressed="${view.section===value}">${label}</button>`).join('')}</div><section class="pd-content">${view.section==='history'?historyHTML():view.section==='readiness'?readinessHTML():changesHTML()}</section>`;
+    drawHistory();
   }
+  const resizeObserver = typeof root.ownerDocument.defaultView.ResizeObserver === 'function' ? new root.ownerDocument.defaultView.ResizeObserver(()=>drawHistory()) : null;
+  resizeObserver?.observe(root);
   const onClick = event => {
     const button=event.target.closest('button');
     if(!button || !root.contains(button))return;
     if(button.dataset.deliverySection){view.section=button.dataset.deliverySection;render();root.querySelector(`[data-delivery-section="${view.section}"]`)?.focus();}
     if(button.dataset.deliveryItem)options.onItem?.(button.dataset.deliveryItem);
   };
-  const onChange = event => {if(event.target.matches('[data-delivery-measure]')){view.measure=event.target.value;render();root.querySelector('[data-delivery-measure]')?.focus();}};
+  const onChange = event => {
+    if(event.target.matches('[data-delivery-measure]')){view.measure=event.target.value;render();root.querySelector('[data-delivery-measure]')?.focus();}
+    if(event.target.matches('[data-history-observation]')){view.observation=Number(event.target.value);render();root.querySelector('[data-history-observation]')?.focus();}
+  };
   root.addEventListener('click',onClick);root.addEventListener('change',onChange);render();
-  return {destroy(){root.removeEventListener('click',onClick);root.removeEventListener('change',onChange);}};
+  return {destroy(){resizeObserver?.disconnect();root.removeEventListener('click',onClick);root.removeEventListener('change',onChange);}};
 }

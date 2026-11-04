@@ -31,6 +31,7 @@ class DistributionTests(unittest.TestCase):
                 self.assertIn(root + 'tools/run_policy_ci.py', names)
                 self.assertIn(root + '.github/prs-policy.json', names)
                 self.assertIn(root + 'tests/test_policy_ci.py', names)
+                self.assertIn(root + 'tests/history.test.mjs', names)
                 self.assertIn(root + 'src/project_record/reconcile.py', names)
                 self.assertIn(root + 'tests/test_reconcile.py', names)
                 self.assertIn(root + 'templates/work-result.example.json', names)

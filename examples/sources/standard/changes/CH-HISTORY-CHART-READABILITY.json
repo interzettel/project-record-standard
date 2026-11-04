@@ -1,0 +1,11 @@
+{
+  "id": "CH-HISTORY-CHART-READABILITY",
+  "component": "standard",
+  "type": "fix",
+  "summary": "Keep every history observation while replacing colliding point/date labels with sparse ordinal ticks, a direct endpoint label and an accessible exact-observation selector. Resize chart geometry without shrinking text.",
+  "workItemIds": [
+    "STD-12"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased shared presentation repair for existing website capability; observation order is explicitly distinguished from elapsed time. No record/schema/package/suite version, source completion, denominator or acceptance change."
+}
