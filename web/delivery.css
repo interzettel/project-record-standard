@@ -29,3 +29,5 @@
 @media(max-width:550px){[data-project-delivery] .pd-bridge{grid-template-columns:1fr}[data-project-delivery] .pd-bridge>div{display:flex;align-items:center;justify-content:space-between}[data-project-delivery] .pd-bridge strong{font-size:24px}[data-project-delivery] .pd-comparison,[data-project-delivery] .pd-release{padding:16px}[data-project-delivery] th,[data-project-delivery] td{padding:10px 4px;font-size:12px}}
 
 [data-project-delivery] td{text-align:right}
+
+[data-project-delivery] select{min-width:0;width:100%}
