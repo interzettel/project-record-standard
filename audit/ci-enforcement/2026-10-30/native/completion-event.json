@@ -1,0 +1,53 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-GATE-02:native-proof:f8298be0da0c00bac569c061af43242ae033fbd7",
+  "projectId": "standard",
+  "workItemId": "PRS-GATE-02",
+  "sourceSha256": "256e3b2b7fb06cdcf24cc3786191a7506cec80b0604e3d2cf963272633e05768",
+  "manifestSha256": "cb7fd5bb80a14ba58ad067cf1abaddef710fcce55184d78ef3b44231b9080cf0",
+  "artifactRevision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/59",
+  "observedOn": "2026-11-04",
+  "summary": "Active main-only ruleset26242462 requires3app15368 checks, strict updates and PRs with zero approvals/empty bypass. Same trusted base9b309574 rejected duplicate data, held missing required checks on skip commit, then enabled merge readiness after corrected ordinary checks. Probe56 closed unmerged; no bad merge/directpush attempted. Review found no confirmed findings. Known Dec2 Actions event-policy incompatibility must be resolved before adoption across that date; no livefork/otheractor/queue/perpetualsupport, milestone acceptance or release claim.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-GATE-02",
+      "revision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+      "result": "passed",
+      "source": "src/project_record/policy_ci.py; .github/workflows/policy.yml; audit/ci-enforcement/2026-10-30/native/native-readback.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-04"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-GATE-02",
+      "revision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+      "result": "passed",
+      "source": "audit/ci-enforcement/2026-10-30/native/completion-verification.json; native/probe-observations.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-04"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-GATE-02",
+      "revision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+      "result": "passed",
+      "source": "audit/ci-enforcement/2026-10-30/native/review.json",
+      "producer": "Codex /root/native_gate_review",
+      "observedOn": "2026-11-04"
+    },
+    {
+      "kind": "host-enforcement",
+      "subject": "PRS-GATE-02",
+      "revision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+      "result": "passed",
+      "source": "audit/ci-enforcement/2026-10-30/native/REPORT.md; https://github.com/interzettel/project-record-standard/pull/56",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-04"
+    }
+  ],
+  "discoveries": []
+}

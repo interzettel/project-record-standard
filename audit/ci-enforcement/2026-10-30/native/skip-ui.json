@@ -1,0 +1,6 @@
+[
+  {
+    "type": "text",
+    "text": "{\"url\":\"https://github.com/interzettel/project-record-standard/pull/56\",\"mergeDisabled\":true,\"checks\":\"Some checks haven't completed yet\\n\\n2 expected, 1 successful checks\\n\\n2 pending checks\\npending checks\\nreusable / recordExpected — Waiting for status to be reported\\nRequired\\nverifyExpected — Waiting for status to be reported\\nRequired\\n1 successful check\\nsuccessful checks\\nPRS policy boundary / PRS policy (pull_request_target)Successful in 16s\\nRequired\"}"
+  }
+]

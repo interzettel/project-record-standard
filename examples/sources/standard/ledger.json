@@ -1738,8 +1738,8 @@
       "unmappedDependencies": []
     },
     {
-      "blocked": true,
-      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "blocked": false,
+      "completionBasis": "Active main-only ruleset26242462 requires3app15368 checks, strict updates and PRs with zero approvals/empty bypass. Same trusted base9b309574 rejected duplicate data, held missing required checks on skip commit, then enabled merge readiness after corrected ordinary checks. Probe56 closed unmerged; no bad merge/directpush attempted. Review found no confirmed findings. Known Dec2 Actions event-policy incompatibility must be resolved before adoption across that date; no livefork/otheractor/queue/perpetualsupport, milestone acceptance or release claim.",
       "criterion": "A failing fixture is rejected at the configured boundary and corrected fixture passes at the same revision. Local hook bypass still meets the CI gate. Protected workflow/pin/policy changes, forks/untrusted code, skip/path filters, unavailable checks and authorized bypass actors have explicit coverage. Do not change broad access or silently label an advisory job enforced.",
       "dependsOn": [
         "PRS-GATE-01",
@@ -1793,10 +1793,59 @@
           "source": "https://github.com/interzettel/project-record-standard/pull/53",
           "subject": "PRS-GATE-02",
           "summary": "CI data-check preparation passes13 focused/177 Python tests and fresh-context review. Fullcriterion incomplete: main is reported unprotected, detailed protection endpointintegration403 and EdgeblockedbyotherextensionUI. Native settings/event-policy review, activation/read-back and actual merge-refusal/bypass tests remain pending; hosted negative/corrected probe follows prep integration. No Done credit or enforcement claim."
+        },
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-04",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+          "source": "src/project_record/policy_ci.py; .github/workflows/policy.yml; audit/ci-enforcement/2026-10-30/native/native-readback.json",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-04",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+          "source": "audit/ci-enforcement/2026-10-30/native/completion-verification.json; native/probe-observations.json",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-04",
+          "producer": "Codex /root/native_gate_review",
+          "result": "passed",
+          "revision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+          "source": "audit/ci-enforcement/2026-10-30/native/review.json",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "kind": "host-enforcement",
+          "observedOn": "2026-11-04",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+          "source": "audit/ci-enforcement/2026-10-30/native/REPORT.md; https://github.com/interzettel/project-record-standard/pull/56",
+          "subject": "PRS-GATE-02"
+        },
+        {
+          "eventId": "prs:PRS-GATE-02:native-proof:f8298be0da0c00bac569c061af43242ae033fbd7",
+          "kind": "work-result",
+          "observedOn": "2026-11-04",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "f8298be0da0c00bac569c061af43242ae033fbd7",
+          "source": "https://github.com/interzettel/project-record-standard/pull/59",
+          "subject": "PRS-GATE-02",
+          "summary": "Active main-only ruleset26242462 requires3app15368 checks, strict updates and PRs with zero approvals/empty bypass. Same trusted base9b309574 rejected duplicate data, held missing required checks on skip commit, then enabled merge readiness after corrected ordinary checks. Probe56 closed unmerged; no bad merge/directpush attempted. Review found no confirmed findings. Known Dec2 Actions event-policy incompatibility must be resolved before adoption across that date; no livefork/otheractor/queue/perpetualsupport, milestone acceptance or release claim."
         }
       ],
       "groupId": "G10",
       "id": "PRS-GATE-02",
+      "implementationRevision": "f8298be0da0c00bac569c061af43242ae033fbd7",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/33",
       "kind": "implementation",
       "milestoneId": "M10",
@@ -1804,8 +1853,8 @@
       "owner": "Selected contributor; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "after-work-blocked",
-      "state": "backlog",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Verify the CI enforcement profile and its bypass limits",
       "unmappedDependencies": []
     },

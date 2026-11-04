@@ -39,7 +39,7 @@ The existing [probe PR #54](https://github.com/interzettel/project-record-standa
 
 Confirm that the imported bypass list is empty. Do not grant an actor bypass just to test bypass behavior. Administrators who can edit or delete policy remain a trust boundary. Record unavailable actor/runtime coverage, fork rejection before checkout, protected-file review notices and unsupported merge queues. Check producer binding identifies the app, not an immutable workflow; notices do not prevent an administrator from replacing a workflow.
 
-Only reconcile the canonical #33 completion record after its criterion is supported. Until then, #33 remains blocked, #34 remains dependent on it, and #36/M11 is the next eligible independent package. No version bump or release follows from import.
+The owner imported ruleset26242462, and the [native verification report](../../audit/ci-enforcement/2026-10-30/native/REPORT.md) supports the bounded #33 completion. #34/M10 is the next runtime pilot. The observed Actions policy would block this event after the announced 2 December 2026 restriction; resolve compatibility before unattended use across that date through a reviewed design or an expressly authorized narrow policy decision. Import and verification add no version bump or release.
 
 ## Recover from an import problem
 

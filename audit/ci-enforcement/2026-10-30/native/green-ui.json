@@ -1,0 +1,8 @@
+{
+  "observedOn": "2026-10-30",
+  "source": "https://github.com/interzettel/project-record-standard/pull/56",
+  "head": "caaaa994dea9e344884a6cc427f6d022d46df2bb",
+  "observation": "All checks have passed; 2 skipped, 3 successful checks; Merge pull request enabled",
+  "producer": "Codex Browser plugin observation before closing probe PR",
+  "limitation": "Scoped transcription of prior DOM observation; not a new current open-PR observation"
+}

@@ -1,0 +1,6 @@
+[
+  {
+    "type": "text",
+    "text": "{\"url\":\"https://github.com/interzettel/project-record-standard/pull/56\",\"mergeDisabled\":true,\"checks\":\"Some checks were not successful\\n\\n3 failing, 2 skipped checks\\n\\n3 failing checks\\nfailing checks\\nPRS policy boundary / PRS policy (pull_request_target)Failing after 16s\\nRequired\\nVerify and publish the standard / reusable / record (pull_request)Failing after 16s\\nRequired\\nVerify and publish the standard / verify (pull_request)Failing after 19s\\nRequired\\n2 skipped checks\\nskipped checks\\nVerify and publish the standard / deploy (pull_request)Skipped \\nVerify and publish the standard / release (pull_request)Skipped \"}"
+  }
+]

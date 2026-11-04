@@ -1,0 +1,8 @@
+{
+  "observedOn": "2026-10-30",
+  "source": "https://github.com/interzettel/project-record-standard/settings/actions/rules/insights",
+  "observation": "Actions policy insights showed seven visible pull_request_target workflow rows, each Evaluate / Would block",
+  "coverage": "Visible rows only; no complete history or pagination claim",
+  "producer": "Codex Browser plugin observation",
+  "meaning": "Known upcoming restriction; no Actions policy changed by agent"
+}
