@@ -1,0 +1,11 @@
+{
+  "id": "CH-RUNTIME-ADAPTER-PILOT",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Add experimental host-prepared runtime tickets, shared-writer delivery, pending recovery and reversible opt-in JSON hooks for documented Codex and Claude Code envelopes.",
+  "workItemIds": [
+    "PRS-HOOK-01"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased partial #34 preparation. No native runtime sessions, supported unattended operation, automatic ticket preparation, version bump, scope/criterion change or completion credit. Host review and exact pins remain required."
+}

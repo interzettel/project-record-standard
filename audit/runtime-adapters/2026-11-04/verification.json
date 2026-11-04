@@ -1,0 +1,88 @@
+{
+  "observedOn": "2026-11-04",
+  "workItemId": "PRS-HOOK-01",
+  "issue": 34,
+  "stage": "experimental-implementation-verification",
+  "completion": "pending-actual-runtime-sessions",
+  "baseRevision": "7dd4fd9c60d4dec66efa1a881e19d7a282340951",
+  "baseTree": "9406f484d8703ccd2c0ca423a5e1b21a5612c85f",
+  "implementationSha256": {
+    "src/project_record/runtime_adapters.py": "bbb043e8a753fa7579e66ac91a8530e148bb114ff2f77121403615b69082e1f7",
+    "tools/run_runtime_adapter.py": "7ec23291206707737af8d8b217ceb1564100c3e1994cf9c0f18a9fb94346e9fc",
+    "tools/run_reconcile_event.py": "0a9694fdf46c11fa713541ad04c1bd28faf0c95962c3c878939a592e17e1d5ef",
+    "tests/test_runtime_adapters.py": "1256e0cadfc69ff3c167a41509121edcf47887141d1d3a3b717791567400697e"
+  },
+  "runtimeInventory": [
+    {
+      "runtime": "codex",
+      "executable": null,
+      "version": null,
+      "nativeTriggerVerified": false,
+      "documentedEvents": [
+        "Stop",
+        "Interrupt",
+        "SessionEnd"
+      ],
+      "status": "not-installed"
+    },
+    {
+      "runtime": "claude-code",
+      "executable": null,
+      "version": null,
+      "nativeTriggerVerified": false,
+      "documentedEvents": [
+        "Stop",
+        "StopFailure",
+        "SessionEnd"
+      ],
+      "status": "not-installed"
+    }
+  ],
+  "syntheticAdapterTests": 14,
+  "pythonTests": 191,
+  "javascriptTests": 21,
+  "checks": [
+    "source validation",
+    "11 skill metadata entries",
+    "public pipeline",
+    "hash-pinned npm installation",
+    "palette",
+    "19-document site build",
+    "README text/graphic parity",
+    "packaging",
+    "fresh-context review"
+  ],
+  "notTested": [
+    "actual runtime lifecycle hooks",
+    "native config trust prompts and permission handling",
+    "native timeout termination",
+    "actual model sessions",
+    "automatic start capture and ticket preparation",
+    "Windows shells"
+  ],
+  "review": {
+    "producer": "runtime_adapter_review",
+    "modelIndependence": "not-established",
+    "finding": "cwd parent traversal passed lexical containment",
+    "correction": "Refuse parent path segments before containment; regression now holds pending without source edits",
+    "status": "no-outstanding-material-findings"
+  },
+  "counts": {
+    "before": {
+      "required": "29/42",
+      "retained": "29/52",
+      "newRequired": "11/24",
+      "acceptedMilestones": "4/13"
+    },
+    "after": {
+      "required": "29/42",
+      "retained": "29/52",
+      "newRequired": "11/24",
+      "acceptedMilestones": "4/13"
+    }
+  },
+  "sourceLedgerSha256": "07770294049b6da995d02ff5c707048fca229509c7bfbade58e31d74f1920b2f",
+  "sourceUpdate": "Canonical ledger unchanged: no completed native runtime criterion and no new acceptance, scope or completion credit",
+  "release": "No publication or version change; v0.4.1 remains published",
+  "nextAction": "Run two actual authorized runtime sessions with exact version, session/turn, native trigger, config/trust and shared-writer recovery evidence. #36 remains eligible independent preparation while this gate is unavailable."
+}
