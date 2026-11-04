@@ -41,4 +41,4 @@ The current required-check boundary works. It will fail closed if the policy job
 | Merge queues | Unsupported until merge-group event behavior is configured and tested. |
 | Acceptance/release | Owner milestone acceptance, release and runtime adoption remain separate; no version or release change. |
 
-Historical preparation/probe files remain unchanged. The `native/` records supplement them with actual host observations. Completion disposition follows review against the unchanged leaf criterion; the known event-policy compatibility limit must remain visible whatever that disposition is.
+Historical preparation/probe files remain unchanged. The `native/` records supplement them with actual host observations. The fresh-context review supports bounded completion against the unchanged leaf criterion. Completion is recorded on 4 November 2026; the known event-policy compatibility limit remains a downstream adoption entry condition. See review.json and completion-result.json.

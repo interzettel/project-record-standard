@@ -1,0 +1,24 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-native-proof-journal-20261104",
+  "output": "/tmp/prs-native-proof-views-20261104",
+  "audience": "public",
+  "authority": {
+    "source": "Owner imported ruleset and requested continue; existing authorized routine bounded delivery/reconciliation",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-GATE-02": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review",
+        "host-enforcement"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}
