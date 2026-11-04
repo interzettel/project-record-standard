@@ -37,6 +37,8 @@ Roadmap starts with milestones: outcome, horizon, work percentage, accepted gate
 
 Selection has an immediate visible response. Tapping a work tile reveals its title, criterion, state, owner, dependency links and proof. The next action stays close to the selected scope. Detail appears near the current work, rather than at the bottom of hundreds of cells. Links to scopes and work items survive reload; browser Back restores the previous selection. Editing opens the source issue or file.
 
+Dense history charts keep every source observation and label the horizontal scale explicitly. The shared renderer uses equally spaced observation order, sparse numeric ticks, a direct endpoint value and a native selector with date/source/fraction/percentage; the exact table remains available. Unknown denominators leave path gaps. Container-sized SVG geometry keeps labels readable at narrow widths instead of shrinking a fixed desktop drawing. Lighter reference lines sit behind data marks; percentages and fractions retain the same source.
+
 The optional component implements local search, state and denominator filters, selectable IDs, a map/list switch, dependencies and a selected-item inspector. The example host owns milestone navigation and deep links. It remains possible to replace every visual component without changing the data meanings.
 
 ## Interaction and accessibility acceptance

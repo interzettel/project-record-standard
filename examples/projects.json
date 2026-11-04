@@ -177,6 +177,12 @@
           "observedOn": "2026-10-30",
           "path": "sources/standard/changes/CH-CI-POLICY-PREPARATION.json",
           "visibility": "public"
+        },
+        {
+          "authority": "Authored maintenance repair from owner-reported history chart defect #60",
+          "observedOn": "2026-11-04",
+          "path": "sources/standard/changes/CH-HISTORY-CHART-READABILITY.json",
+          "visibility": "public"
         }
       ],
       "presentation": {
