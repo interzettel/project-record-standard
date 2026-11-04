@@ -1,0 +1,58 @@
+{
+  "observedOn": "2026-11-04",
+  "source": "https://interzettel.github.io/project-record-standard/standard/progress.html",
+  "implementationPRs": [
+    61,
+    62
+  ],
+  "deployedRevision": "7dd4fd9c60d4dec66efa1a881e19d7a282340951",
+  "pagesRun": 41912815854,
+  "policyRun": 41912815584,
+  "producer": "Codex task session; Edge Browser plugin",
+  "design": "Tufte-derived data-visualization skill: retained resolution, sparse labels, direct endpoint, layered reference lines, explicit ordinal scale and exact source/count lookup",
+  "checks": {
+    "python": 177,
+    "javascript": 21,
+    "newHistoryCases": 7,
+    "review": "Fresh-context implementation and mobile-CSS reviews found no confirmed findings",
+    "publicBuild": "19 guides; README/SVG parity,11 skill metadata entries and20 palette pairs passed"
+  },
+  "desktop": {
+    "observations": 23,
+    "tableRows": 23,
+    "labelOverlaps": 0,
+    "textPx": 12,
+    "chartWidth": 900
+  },
+  "mobile390": {
+    "viewport": 390,
+    "clientWidth": 375,
+    "documentWidth": 375,
+    "chartWidth": 339,
+    "selectorWidth": 339,
+    "textPx": 12,
+    "labelOverlaps": 0
+  },
+  "mobile320": {
+    "viewport": 320,
+    "clientWidth": 305,
+    "documentWidth": 305,
+    "chartWidth": 269,
+    "selectorWidth": 269,
+    "textPx": 12,
+    "labelOverlaps": 0
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "interaction": "Native observation and measure selection retain focus and display exact selected fraction/date/source/percentage",
+  "prehnite": "Single-observation history retains one mark and one exact table row",
+  "recoveredDefect": "Initial320px live test found native select overflow; PR62 corrected its intrinsic minimum width; subsequent320/390 retests passed",
+  "scope": "No canonical completion/acceptance/denominator changes; maintenance of existingSTD-12",
+  "limits": [
+    "Actual screen-reader output not tested",
+    "Native200% browser zoom and touch gesture testing not performed"
+  ],
+  "runtimeWork": "PRS-HOOK-01/#34 remains open; capability sources and absence of local CLIs recorded; no runtime pilot completion claim"
+}
