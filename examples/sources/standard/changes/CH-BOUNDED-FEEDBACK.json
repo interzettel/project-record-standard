@@ -1,0 +1,11 @@
+{
+  "id": "CH-BOUNDED-FEEDBACK",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Retain encountered standards gaps once, reuse existing root-cause reports, require complete search and independently adopted publication/content review, and hold uncertain transport outcomes before retry.",
+  "workItemIds": [
+    "PRS-FEEDBACK-01"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased feedbackVersion1 API/CLI and explicit encounter/policy/search examples. No network client or credential discovery; optional host callback requires its adopted grant and exact public-text review. Existing released pins, record contract, package/suite versions and permissions stay unchanged. Native capture and supported unattended operation remain separate #34/#35 gates."
+}

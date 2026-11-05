@@ -1,0 +1,8 @@
+{
+  "feedbackPolicyVersion": 1,
+  "destination": "interzettel/project-record-standard",
+  "grant": {"source": "host:publication-not-granted", "actions": []},
+  "review": null,
+  "redactions": [],
+  "maxAttempts": 1
+}

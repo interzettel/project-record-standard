@@ -1,0 +1,14 @@
+{
+  "searchVersion": 1,
+  "destination": "interzettel/project-record-standard",
+  "rootCause": "runtime-cwd-parent-segments-pass-lexical-containment",
+  "observedOn": "2026-11-04",
+  "source": "https://github.com/interzettel/project-record-standard/pull/63",
+  "coverage": "partial",
+  "resources": ["pull-requests"],
+  "states": ["closed"],
+  "nextCursor": null,
+  "matches": [
+    {"rootCause": "runtime-cwd-parent-segments-pass-lexical-containment", "url": "https://github.com/interzettel/project-record-standard/pull/63"}
+  ]
+}

@@ -65,8 +65,20 @@ def main(argv: list[str] | None = None) -> int:
     command.add_argument("--event", type=Path, required=True)
     command.add_argument("--profile", type=Path, required=True, help="Independently adopted host writer policy; never take this from event data")
     command.add_argument("--apply", action="store_true", help="Apply/resume the authorized local transaction; default previews")
+    command = subs.add_parser("feedback")
+    command.add_argument("--encounter", type=Path, required=True)
+    command.add_argument("--profile", type=Path, required=True, help="Host-adopted feedback policy; separate from encounter input")
+    command.add_argument("--search", type=Path, required=True, help="Explicit duplicate-search receipt, including incomplete coverage")
+    command.add_argument("--directory", type=Path, required=True, help="Private local proposal directory")
+    command.add_argument("--apply", action="store_true", help="Retain local proposal; default previews. Never submits from this CLI")
     args = parser.parse_args(argv)
     try:
+        if args.command == "feedback":
+            from .feedback import prepare_feedback
+            result = prepare_feedback(json.loads(args.encounter.read_text()), json.loads(args.profile.read_text()),
+                                      json.loads(args.search.read_text()), args.directory, apply=args.apply)
+            print(json.dumps(result, indent=2))
+            return 0
         if args.command == "reconcile":
             from .reconcile import reconcile_files
             result = reconcile_files(args.event, args.profile, apply=args.apply)

@@ -1,9 +1,29 @@
 {
-  "status": "illustrative-proposal-not-submitted",
-  "encounter": {"task": "actual bounded work ID and outcome", "impact": "observed user/developer consequence"},
-  "identity": {"toolkitCommit": null, "suiteVersion": null, "contractVersion": null, "adapterRuntime": null},
-  "rule": {"source": null, "expected": "applicable rule", "observed": "actual result and limits"},
-  "reproduction": {"publicSafe": false, "synthetic": false, "evidence": [], "workaround": null},
-  "deduplication": {"searched": [], "coverage": "not-inspected", "existingIssue": null},
-  "publication": {"authorized": false, "destination": "interzettel/project-record-standard", "submittedUrl": null}
+  "feedbackVersion": 1,
+  "encounterId": "PRS-HOOK-01-review-cwd",
+  "rootCause": "runtime-cwd-parent-segments-pass-lexical-containment",
+  "classification": "shared-standard",
+  "task": "PRS-HOOK-01: verify that runtime observations belong to the prepared workspace",
+  "impact": "The adapter could accept an outside-workspace observation with the matching session and turn.",
+  "affectedIds": ["PRS-HOOK-01"],
+  "identity": {
+    "toolkitCommit": "619f54249207b775c2dc532cda24a7e5f05ee4a7",
+    "suiteVersion": "0.4.1",
+    "contractVersion": "0.2.0",
+    "adapterRuntime": "adapterVersion1; native runtime versions unknown"
+  },
+  "rule": {
+    "source": "standards/RUNTIME-ADAPTERS.md",
+    "expected": "A native trigger must belong to the host-selected workspace.",
+    "observed": "Fresh review reproduced lexical containment accepting an outside path; the integrated revision corrects it."
+  },
+  "reproduction": {
+    "steps": "In a disposable adapter fixture, supply matching session/turn and cwd=/workspace/allowed/../other.",
+    "actual": "The earlier check delivered the event; after refusing parent segments it remains pending with mismatched-workspace.",
+    "synthetic": true,
+    "limits": "This reproduces an actually encountered review finding using synthetic data; no native lifecycle session was run."
+  },
+  "workaround": "Use normalized host paths and the corrected adapter; retain the regression test.",
+  "proposedChange": "Reuse PR63 and its audit record; do not create a new upstream ticket for the already corrected root cause.",
+  "effort": {"ownerInterventions": 0}
 }

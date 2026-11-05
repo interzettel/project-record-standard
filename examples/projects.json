@@ -189,6 +189,12 @@
           "observedOn": "2026-11-04",
           "path": "sources/standard/changes/CH-RUNTIME-ADAPTER-PILOT.json",
           "visibility": "public"
+        },
+        {
+          "authority": "Authored PRS-FEEDBACK-01 bounded feedback route under existing implementation authorization",
+          "observedOn": "2026-11-05",
+          "path": "sources/standard/changes/CH-BOUNDED-FEEDBACK.json",
+          "visibility": "public"
         }
       ],
       "presentation": {
