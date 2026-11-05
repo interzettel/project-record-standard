@@ -1,0 +1,12 @@
+{
+  "projectId": "synthetic-reconcile",
+  "status": "failed",
+  "attemptedAt": "2026-11-05T15:00:00Z",
+  "source": "toy collector",
+  "coverage": {
+    "pagesRead": 0,
+    "pagesExpected": null
+  },
+  "lastSuccessfulObservedOn": "2026-10-30",
+  "error": "Synthetic unavailable collector"
+}

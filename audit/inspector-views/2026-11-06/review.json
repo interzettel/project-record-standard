@@ -1,0 +1,49 @@
+{
+  "producer": "GPT-6 Astra /root/inspector_views_review",
+  "reviewedLocalRevision": "d6bb1b9",
+  "modelScope": "Fresh same-family model review, not independent-provider effectiveness",
+  "findings": [
+    {
+      "id": "REV-1",
+      "effect": "Lone surrogate aborted later records",
+      "disposition": "Per-row unrenderable-unicode; declaration Unicode preflight; regression RED to GREEN"
+    },
+    {
+      "id": "REV-2",
+      "effect": "Present null linked root and raw scalar types conflated",
+      "disposition": "Missing sentinel, exact null pointer, JSON scalar notation; regression RED to GREEN"
+    },
+    {
+      "id": "REV-3",
+      "effect": "Calculated gate joins omitted decisive state and exact plan/gate inputs",
+      "disposition": "Links to exact plan work references, item states and acceptance rule/gate inputs; regression checks actual target fields RED to GREEN"
+    },
+    {
+      "id": "REV-4",
+      "effect": "Repeated derived receipt output amplified input before guard",
+      "disposition": "Compact candidate counts/status plus source links; early node enqueue guard; bounded subtree/view joins and incremental32MiB page assembly; 5.27MiB amplification regression RED to GREEN plus real multi-artifact expansion refusal"
+    },
+    {
+      "id": "REV-5",
+      "effect": "Permissive umask made selected private data readable to other local users",
+      "disposition": "POSIX directory0700/file0600; permissive umask regression RED to GREEN"
+    },
+    {
+      "id": "REV-6",
+      "effect": "Unchecked embedded extras appeared core-validated",
+      "disposition": "Explicit per-view shape-only or unvalidated-extra labels/fallback; regression RED to GREEN"
+    }
+  ],
+  "minorFindings": [
+    {
+      "finding": "Invalid mapped assessment shapes labelled unsupported kind",
+      "disposition": "Corrected to invalid-shape under explicit builder kinds; no diagnostic scope change"
+    },
+    {
+      "finding": "Collection/discovery families mapping omitted explicit builder shapes",
+      "disposition": "Coverage table now names conditional explicit builder shapes and otherwise fallback"
+    }
+  ],
+  "nativeLimits": "Reviewer finds no native-browser requirement in #18 bounded implementation criterion; native file-open/reflow/keyboard/zoom/speech remain untested and #19 integration proof remains separate",
+  "followup": "Author verifies all fixes with named regression tests and full suite; no second review pass claimed"
+}

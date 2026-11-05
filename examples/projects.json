@@ -207,6 +207,12 @@
           "observedOn": "2026-11-05",
           "path": "sources/standard/changes/CH-INSPECTOR-INVENTORY.json",
           "visibility": "public"
+        },
+        {
+          "authority": "Authored PRS-INSPECT-02 offline owner-local semantic views",
+          "observedOn": "2026-11-06",
+          "path": "sources/standard/changes/CH-INSPECTOR-VIEWS.json",
+          "visibility": "public"
         }
       ],
       "presentation": {
@@ -225,7 +231,7 @@
         "path": "examples/sources/standard/ledger.json",
         "updatedOn": "2026-11-05"
       },
-      "previousSourceFile": "sources/standard/reconciliation-history/8d9067f5166e4597a99814dfb59a6e17367f35da7653303af4fcab2e9621b134.json",
+      "previousSourceFile": "sources/standard/reconciliation-history/8e5714a5fb688d2d49e9642612c93125c873204b6474500f69fefa2b270700be.json",
       "project": {
         "id": "standard",
         "name": "Project record standard",
@@ -496,15 +502,26 @@
             "updatedOn": "2026-11-05"
           },
           "sourceFile": "sources/standard/reconciliation-history/91ee9e8100e21a8e87ca52a48280fba22c1e474604511218ca6feaf0388ea83c.json"
+        },
+        {
+          "source": {
+            "authority": "Canonical ledger: preserved historical claims and reviewed bounded delivery completion; new milestone outcomes remain unaccepted.",
+            "commit": null,
+            "kind": "file-snapshot",
+            "observedOn": "2026-11-05",
+            "path": "examples/sources/standard/ledger.json",
+            "updatedOn": "2026-11-05"
+          },
+          "sourceFile": "sources/standard/reconciliation-history/8d9067f5166e4597a99814dfb59a6e17367f35da7653303af4fcab2e9621b134.json"
         }
       ],
       "source": {
         "authority": "Canonical ledger: preserved historical claims and reviewed bounded delivery completion; new milestone outcomes remain unaccepted.",
         "commit": null,
         "kind": "file-snapshot",
-        "observedOn": "2026-11-05",
+        "observedOn": "2026-11-06",
         "path": "examples/sources/standard/ledger.json",
-        "updatedOn": "2026-11-05"
+        "updatedOn": "2026-11-06"
       },
       "sourceFile": "sources/standard/ledger.json",
       "supplements": [

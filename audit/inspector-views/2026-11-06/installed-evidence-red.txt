@@ -1,0 +1,23 @@
+.......E....
+======================================================================
+ERROR: test_private_all_views_fixture_renders_each_original_content_role (test_inspector.InspectorTests.test_private_all_views_fixture_renders_each_original_content_role)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 173, in test_private_all_views_fixture_renders_each_original_content_role
+    text = render_inspector(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector_views.py", line 228, in render_inspector
+    body += ''.join('<div class="semantic-view">' + _view(row, v) + '</div>' for v in row['views'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector_views.py", line 228, in <genexpr>
+    body += ''.join('<div class="semantic-view">' + _view(row, v) + '</div>' for v in row['views'])
+                                                    ^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector_views.py", line 207, in _view
+    body += '<p>' + notes[role] + '</p>' + _fields(row, pointer, role)
+                    ~~~~~^^^^^^
+KeyError: 'evidence'
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.244s
+
+FAILED (errors=1)

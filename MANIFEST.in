@@ -10,3 +10,6 @@ include tests/accessibility.test.mjs tests/history.test.mjs tools/accessibility_
 recursive-include integrations *.md *.json
 include tools/run_runtime_adapter.py tools/run_reconcile_event.py
 include standards/inspector-inventory.json
+
+include tests/test_inspector.py tests/inspector.test.mjs
+recursive-include tests/fixtures/inspector-views *.json *.md

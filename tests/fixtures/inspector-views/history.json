@@ -1,0 +1,53 @@
+{
+  "coverage": "Only the listed pinned observations; intervening events are unknown.",
+  "snapshots": [
+    {
+      "observedOn": "2026-10-30",
+      "source": {
+        "kind": "file-snapshot",
+        "path": "ledger.json",
+        "commit": null,
+        "observedOn": "2026-10-30",
+        "authority": "Synthetic fixture author only; not a consumer observation",
+        "sha256": "585a2450d71d28610ffd0e8743389c979e693dc044dc9a818f6cc07c065bd99d"
+      },
+      "metrics": {
+        "work": {
+          "done": 0,
+          "total": 1,
+          "percent": 0.0,
+          "active": 1,
+          "review": 0,
+          "blocked": 0,
+          "unknown": 0,
+          "excluded": 0,
+          "method": "completed-leaves / required-leaves"
+        },
+        "ledger": {
+          "done": 0,
+          "total": 1,
+          "percent": 0.0,
+          "active": 1,
+          "review": 0,
+          "blocked": 0,
+          "unknown": 0,
+          "excluded": 0,
+          "method": "completed-leaves / retained-ledger-leaves"
+        },
+        "milestones": {
+          "done": 0,
+          "total": 1,
+          "known": 1,
+          "percent": 0.0,
+          "method": "accepted-milestones / declared-milestones"
+        },
+        "roadmapMean": {
+          "percent": 0.0,
+          "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+          "milestoneCount": 1
+        }
+      }
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "CH-INSPECTOR-VIEWS",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Render bounded owner-local offline views for work, provenance, discovery, readiness, evidence, history, delivery and operations with exact selected-source links and explicit unsupported fallback.",
+  "workItemIds": [
+    "PRS-INSPECT-02"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased inspectorViewVersion1 owner-local single-file HTML command. Selected raw/private contents require --owner-local; no public export/integration before #19. Metadata-only inspect-inputs remains unchanged. No source/work identity, dependency, milestone acceptance, suite/package/contract version or release change."
+}

@@ -1,0 +1,211 @@
+{
+  "contractVersion": "0.2.0",
+  "project": {
+    "id": "synthetic-reconcile",
+    "name": "Synthetic reconciliation",
+    "visibility": "public"
+  },
+  "source": {
+    "kind": "file-snapshot",
+    "path": "ledger.json",
+    "commit": null,
+    "observedOn": "2026-10-30",
+    "authority": "Synthetic fixture author only; not a consumer observation",
+    "sha256": "585a2450d71d28610ffd0e8743389c979e693dc044dc9a818f6cc07c065bd99d"
+  },
+  "groups": [
+    {
+      "id": "G",
+      "title": "Synthetic work",
+      "panel": "Now",
+      "progress": {
+        "done": 0,
+        "total": 1,
+        "percent": 0.0,
+        "active": 1,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / required-leaves"
+      },
+      "ledgerProgress": {
+        "done": 0,
+        "total": 1,
+        "percent": 0.0,
+        "active": 1,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / retained-ledger-leaves"
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M",
+      "title": "Synthetic outcome",
+      "goal": "Keep work completion separate from acceptance",
+      "horizon": "Now",
+      "groupIds": [
+        "G"
+      ],
+      "gateItemIds": [
+        "WORK-1"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "nextAction": "Owner reviews the outcome; no acceptance receipt exists.",
+      "unscopedWork": [],
+      "progress": {
+        "done": 0,
+        "total": 1,
+        "percent": 0.0,
+        "active": 1,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / required-leaves"
+      },
+      "gateProgress": {
+        "done": 0,
+        "total": 1,
+        "percent": 0.0,
+        "active": 1,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / retained-ledger-leaves"
+      },
+      "accepted": false
+    }
+  ],
+  "items": [
+    {
+      "id": "WORK-1",
+      "title": "Produce the synthetic result",
+      "groupId": "G",
+      "milestoneId": "M",
+      "state": "active",
+      "sourceState": "synthetic-active",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete",
+      "kind": "implementation",
+      "criterion": "Synthetic implementation and matching check exist.",
+      "owner": "Synthetic fixture author",
+      "implementationRevision": null
+    }
+  ],
+  "warnings": [],
+  "presentation": {
+    "renderer": "host",
+    "theme": "theme.json"
+  },
+  "inputVisibility": [
+    "public"
+  ],
+  "supplementSources": [],
+  "history": {
+    "coverage": "Only the listed pinned observations; intervening events are unknown.",
+    "snapshots": [
+      {
+        "observedOn": "2026-10-30",
+        "source": {
+          "kind": "file-snapshot",
+          "path": "ledger.json",
+          "commit": null,
+          "observedOn": "2026-10-30",
+          "authority": "Synthetic fixture author only; not a consumer observation",
+          "sha256": "585a2450d71d28610ffd0e8743389c979e693dc044dc9a818f6cc07c065bd99d"
+        },
+        "metrics": {
+          "work": {
+            "done": 0,
+            "total": 1,
+            "percent": 0.0,
+            "active": 1,
+            "review": 0,
+            "blocked": 0,
+            "unknown": 0,
+            "excluded": 0,
+            "method": "completed-leaves / required-leaves"
+          },
+          "ledger": {
+            "done": 0,
+            "total": 1,
+            "percent": 0.0,
+            "active": 1,
+            "review": 0,
+            "blocked": 0,
+            "unknown": 0,
+            "excluded": 0,
+            "method": "completed-leaves / retained-ledger-leaves"
+          },
+          "milestones": {
+            "done": 0,
+            "total": 1,
+            "known": 1,
+            "percent": 0.0,
+            "method": "accepted-milestones / declared-milestones"
+          },
+          "roadmapMean": {
+            "percent": 0.0,
+            "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+            "milestoneCount": 1
+          }
+        }
+      }
+    ],
+    "comparisons": []
+  },
+  "metrics": {
+    "work": {
+      "done": 0,
+      "total": 1,
+      "percent": 0.0,
+      "active": 1,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 0,
+      "total": 1,
+      "percent": 0.0,
+      "active": 1,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 0,
+      "total": 1,
+      "known": 1,
+      "percent": 0.0,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": 0.0,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 1
+    }
+  },
+  "deliverySummary": {
+    "coverage": "Publication and deployment channels have not been reconciled.",
+    "unreleased": [],
+    "plans": [],
+    "releases": [],
+    "deployments": []
+  }
+}

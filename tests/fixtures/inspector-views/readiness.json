@@ -1,0 +1,22 @@
+{
+  "recordKind": "repository-readiness-assessment",
+  "repository": "synthetic",
+  "revision": null,
+  "assessedAt": "2026-10-30T12:00:00Z",
+  "readinessLevel": "L1",
+  "levelBasis": "Toy assessment only",
+  "dimensions": {
+    "verification_loop": {
+      "status": "unknown",
+      "evidence": [],
+      "gaps": [
+        "No real sessions"
+      ]
+    }
+  },
+  "taskRisk": "R1",
+  "autonomy": {
+    "promotionAuthorized": false,
+    "decision": "No authority granted"
+  }
+}

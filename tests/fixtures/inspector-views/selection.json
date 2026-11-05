@@ -1,0 +1,86 @@
+{
+  "selectionVersion": 1,
+  "records": [
+    {
+      "id": "RECORD",
+      "path": "record.json",
+      "kind": "project-record",
+      "visibility": "private",
+      "synthetic": true,
+      "sourceObservedOn": "2026-10-30",
+      "renderedAt": "2026-11-05T12:00:00Z"
+    },
+    {
+      "id": "HISTORY",
+      "path": "history.json",
+      "kind": "history",
+      "visibility": "private",
+      "synthetic": true,
+      "sourceObservedOn": "2026-10-30",
+      "renderedAt": "2026-11-05T12:00:00Z"
+    },
+    {
+      "id": "DELIVERY",
+      "path": "delivery.json",
+      "kind": "delivery",
+      "visibility": "private",
+      "synthetic": true,
+      "sourceObservedOn": "2026-10-30",
+      "renderedAt": "2026-11-05T12:00:00Z"
+    },
+    {
+      "id": "DISCOVERY",
+      "path": "discovery.json",
+      "kind": "discovery",
+      "visibility": "private",
+      "synthetic": true,
+      "sourceObservedOn": "2026-10-30",
+      "renderedAt": "2026-11-05T12:00:00Z"
+    },
+    {
+      "id": "READINESS",
+      "path": "readiness.json",
+      "kind": "readiness-assessment",
+      "visibility": "private",
+      "synthetic": true,
+      "sourceObservedOn": "2026-10-30",
+      "renderedAt": "2026-11-05T12:00:00Z"
+    },
+    {
+      "id": "EVIDENCE",
+      "path": "evidence.json",
+      "kind": "evidence-record",
+      "visibility": "private",
+      "synthetic": true,
+      "sourceObservedOn": "2026-10-30",
+      "renderedAt": "2026-11-05T12:00:00Z"
+    },
+    {
+      "id": "COLLECTION",
+      "path": "collection.json",
+      "kind": "collection-observation",
+      "visibility": "private",
+      "synthetic": true,
+      "sourceObservedOn": "2026-10-30",
+      "renderedAt": "2026-11-05T12:00:00Z"
+    },
+    {
+      "id": "FUTURE",
+      "path": "future.json",
+      "kind": "future",
+      "visibility": "private",
+      "synthetic": true,
+      "sourceObservedOn": "2026-10-30",
+      "renderedAt": "2026-11-05T12:00:00Z"
+    },
+    {
+      "id": "MANIFEST",
+      "path": "manifest.json",
+      "kind": "project-manifest",
+      "visibility": "private",
+      "synthetic": true,
+      "sourceObservedOn": "2026-10-30",
+      "renderedAt": "2026-11-05T12:00:00Z"
+    }
+  ]
+}

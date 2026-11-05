@@ -1,0 +1,32 @@
+test_all_catalogue_families_have_explicit_view_or_fallback_mapping (test_inspector.InspectorTests.test_all_catalogue_families_have_explicit_view_or_fallback_mapping) ... ok
+test_assessment_views_are_explicit_shape_only_and_preserve_negative_claims (test_inspector.InspectorTests.test_assessment_views_are_explicit_shape_only_and_preserve_negative_claims) ... ok
+test_cli_requires_owner_local_new_output_and_never_changes_input (test_inspector.InspectorTests.test_cli_requires_owner_local_new_output_and_never_changes_input) ... ok
+test_digest_conflict_symlink_complexity_and_empty_sets_stay_readable (test_inspector.InspectorTests.test_digest_conflict_symlink_complexity_and_empty_sets_stay_readable) ... ok
+test_large_nested_keys_and_missing_newer_views_are_bounded (test_inspector.InspectorTests.test_large_nested_keys_and_missing_newer_views_are_bounded) ... FAIL
+test_render_has_closed_source_joins_and_escapes_hostile_data (test_inspector.InspectorTests.test_render_has_closed_source_joins_and_escapes_hostile_data) ... ok
+test_selected_bodies_read_once_unknown_fallback_and_private_neighbor_untouched (test_inspector.InspectorTests.test_selected_bodies_read_once_unknown_fallback_and_private_neighbor_untouched) ... ok
+test_semantic_history_preserves_exact_observations_and_candidate_failure (test_inspector.InspectorTests.test_semantic_history_preserves_exact_observations_and_candidate_failure) ... FAIL
+test_shared_metrics_ignore_cached_values_and_never_aggregate_snapshots (test_inspector.InspectorTests.test_shared_metrics_ignore_cached_values_and_never_aggregate_snapshots) ... ok
+
+======================================================================
+FAIL: test_large_nested_keys_and_missing_newer_views_are_bounded (test_inspector.InspectorTests.test_large_nested_keys_and_missing_newer_views_are_bounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 139, in test_large_nested_keys_and_missing_newer_views_are_bounded
+    self.assertEqual(result['artifacts'][0]['status'], 'render-limit')
+AssertionError: 'unsupported-kind' != 'render-limit'
+- unsupported-kind
++ render-limit
+
+
+======================================================================
+FAIL: test_semantic_history_preserves_exact_observations_and_candidate_failure (test_inspector.InspectorTests.test_semantic_history_preserves_exact_observations_and_candidate_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 148, in test_semantic_history_preserves_exact_observations_and_candidate_failure
+    self.assertNotIn('&quot;observedOn&quot;:', text, 'semantic history should use labelled fields rather than a serialized JSON blob')
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.196s
+
+FAILED (failures=2)

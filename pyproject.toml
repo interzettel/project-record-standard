@@ -17,7 +17,8 @@ project-record = "project_record.__main__:main"
 where = ["src"]
 
 [tool.setuptools.data-files]
-"share/project-record-standard/web" = ["web/metrics.mjs", "web/components.mjs", "web/components.css", "web/delivery.mjs", "web/delivery.css"]
+"share/project-record-standard/web" = ["web/metrics.mjs", "web/components.mjs", "web/components.css", "web/delivery.mjs", "web/delivery.css", "web/inspector.mjs", "web/inspector.css"]
+"share/project-record-standard/standards" = ["standards/inspector-inventory.json"]
 
 [tool.ruff.lint]
 extend-select = ["D"]

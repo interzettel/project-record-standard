@@ -3,6 +3,7 @@
 from datetime import date, datetime
 from hashlib import sha256
 import json
+import os
 from pathlib import Path, PurePosixPath
 import re
 
@@ -52,6 +53,12 @@ def _validate_selection(selection):
     for row in rows:
         if not isinstance(row, dict) or not required <= set(row) or set(row) - required - optional:
             raise RecordError('Use only declared selection fields')
+        try:
+            for value in row.values():
+                if isinstance(value, str):
+                    value.encode('utf-8')
+        except UnicodeError as error:
+            raise RecordError('Selection strings must contain renderable Unicode') from error
         if not isinstance(row['id'], str) or not re.fullmatch('[A-Za-z0-9][A-Za-z0-9_.:-]{0,95}', row['id']) or row['id'] in ids:
             raise RecordError('Selection needs unique stable artifact IDs')
         name = row['path']
@@ -94,16 +101,21 @@ def inspect_inventory(root: Path, selection: dict, *, observed_at: str) -> dict:
     Only project-record delegates full contract checks to the existing core;
     other known families receive explicitly limited entry-point shape checks.
     """
+    return _inspect(root, selection, observed_at=observed_at)[0]
+
+
+def _inspect(root, selection, *, observed_at, capture=False):
+    """Shares bounded reads; raw capture is exclusive to the owner-local builder."""
     _timestamp(observed_at)
     _validate_selection(selection)
     root = _path(str(root))
     if not root.is_dir():
         raise RecordError('The selected root must be an existing directory')
-    result = []
+    result, values, consumed = [], {}, 0
     for declaration in selection['records']:
         row = dict(declaration, contentRead=False, sha256=None, validation='none')
         result.append(row)
-        if row['kind'] not in KINDS:
+        if row['kind'] not in KINDS and not capture:
             row['status'] = 'unsupported-kind'
             continue
         try:
@@ -111,9 +123,16 @@ def inspect_inventory(root: Path, selection: dict, *, observed_at: str) -> dict:
             if not path.is_file():
                 row['status'] = 'missing' if not path.exists() else 'not-a-regular-file'
                 continue
+            if capture and consumed >= 16 * 1024 * 1024:
+                row['status'] = 'set-limit'
+                continue
             with path.open('rb') as stream:
-                data = stream.read(MAX_BYTES + 1)
+                data = stream.read(min(MAX_BYTES + 1, 16 * 1024 * 1024 - consumed + 1) if capture else MAX_BYTES + 1)
+            consumed += len(data)
             row['contentRead'] = True
+            if capture and consumed > 16 * 1024 * 1024:
+                row['status'] = 'set-limit'
+                continue
             if len(data) > MAX_BYTES:
                 row['status'] = 'oversized'
                 continue
@@ -126,6 +145,17 @@ def inspect_inventory(root: Path, selection: dict, *, observed_at: str) -> dict:
             except (ValueError, UnicodeError, RecursionError):
                 row['status'] = 'malformed-json'
                 continue
+            if capture:
+                from .inspector_views import within_render_budget
+                try:
+                    json.dumps(value, ensure_ascii=False).encode('utf-8')
+                except UnicodeError:
+                    row['status'] = 'unrenderable-unicode'
+                    continue
+                if not within_render_budget(value):
+                    row['status'] = 'render-limit'
+                    continue
+                values[row['id']] = value
             if row['kind'] == 'project-record':
                 if not isinstance(value, dict) or not isinstance(value.get('contractVersion'), str) or value['contractVersion'] not in {'0.1.0', '0.2.0'}:
                     row['status'] = 'unsupported-version'
@@ -139,6 +169,12 @@ def inspect_inventory(root: Path, selection: dict, *, observed_at: str) -> dict:
                     row['status'] = 'invalid-record'
                     continue
                 row.update(status='validated', validation='existing-core-contract')
+            elif row['kind'] not in KINDS:
+                from .inspector_views import assessment_shape
+                if assessment_shape(row['kind'], value):
+                    row.update(status='recognized-shape', validation='entry-point-shape-only')
+                else:
+                    row['status'] = 'invalid-shape' if row['kind'] in {'discovery', 'readiness-assessment', 'evidence-record', 'collection-observation'} else 'unsupported-kind'
             elif row['kind'] in {'skill-suite', 'installation-receipt'} and (not isinstance(value, dict) or type(value.get('schemaVersion')) is not int or value['schemaVersion'] != 1):
                 row['status'] = 'unsupported-version'
             elif _shape(row['kind'], value):
@@ -150,7 +186,7 @@ def inspect_inventory(root: Path, selection: dict, *, observed_at: str) -> dict:
         except OSError:
             row['status'] = 'unavailable'
     problems = sum(r['status'] not in {'validated', 'recognized-shape'} for r in result)
-    return dict(inspectorInventoryVersion=1, audience='owner-local-diagnostic', publishable=False,
+    report = dict(inspectorInventoryVersion=1, audience='owner-local-diagnostic', publishable=False,
                 inspectedAt=observed_at, records=result,
                 coverage=dict(declared=len(result), contentRead=sum(r['contentRead'] for r in result), problems=problems,
                               unselected='not-inspected', repositoryCoverage='not-assessed'),
@@ -159,10 +195,11 @@ def inspect_inventory(root: Path, selection: dict, *, observed_at: str) -> dict:
                         'Declared timestamps, visibility and producer identities are not authenticated or refreshed.',
                         'Shape recognition is not full schema validation, publication approval or inspector UI support.',
                         'Local diagnostics can contain private locators; no public export is implemented here.'])
+    return report, values
 
 
-def inspect_files(root: Path, selection_file: Path, *, observed_at: str) -> dict:
-    """Loads a bounded explicit selection; does not infer declarations from files."""
+def _load_selection(selection_file):
+    """Loads the same bounded declaration for diagnostics and local views."""
     path = _path(str(selection_file))
     if not path.is_file():
         raise RecordError('Selection must be a regular file')
@@ -174,4 +211,42 @@ def inspect_files(root: Path, selection_file: Path, *, observed_at: str) -> dict
         selection = _decode(data)
     except (ValueError, UnicodeError, RecursionError) as error:
         raise RecordError('Selection must be bounded strict UTF-8 JSON') from error
-    return inspect_inventory(root, selection, observed_at=observed_at)
+    return selection
+
+
+def inspect_files(root: Path, selection_file: Path, *, observed_at: str) -> dict:
+    """Loads a bounded explicit selection; does not infer declarations from files."""
+    return inspect_inventory(root, _load_selection(selection_file), observed_at=observed_at)
+
+
+def inspector_model(root: Path, selection: dict, *, observed_at: str) -> dict:
+    """Builds private semantic views from the exact bytes read by the inspector."""
+    from .inspector_views import make_model
+    report, values = _inspect(root, selection, observed_at=observed_at, capture=True)
+    return make_model(report, values)
+
+
+def build_inspector(root: Path, selection_file: Path, output: Path, *, observed_at: str) -> dict:
+    """Writes one owner-local page to a new dedicated directory; never publishes."""
+    from .inspector_views import render_inspector
+    output = _path(str(output))
+    if output.exists():
+        raise RecordError('Inspector output must be a new dedicated directory')
+    if output.suffix == '.json':
+        raise RecordError('Inspector output cannot replace a declared JSON input')
+    model = inspector_model(root, _load_selection(selection_file), observed_at=observed_at)
+    text = render_inspector(model)
+    if len(text.encode('utf-8')) > 32 * 1024 * 1024:
+        raise RecordError('Inspector HTML exceeds the 32MiB output limit; narrow the selection')
+    output.mkdir(mode=0o700, parents=True, exist_ok=False)
+    try:
+        descriptor = os.open(output / 'index.html', os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+        with os.fdopen(descriptor, 'w', encoding='utf-8') as stream:
+            stream.write(text)
+    except OSError:
+        # Only this newly created file/directory belongs to this operation.
+        (output / 'index.html').unlink(missing_ok=True)
+        output.rmdir()
+        raise
+    return dict(path=str(output/'index.html'), audience='owner-local', publishable=False,
+                exitCode=model['exitCode'], coverage=model['coverage'])

@@ -83,8 +83,19 @@ def main(argv: list[str] | None = None) -> int:
     command.add_argument("--root", type=Path, required=True)
     command.add_argument("--selection", type=Path, required=True)
     command.add_argument("--observed-at", required=True, help="Explicit zoned inspection time; never refreshes source dates")
+    command = subs.add_parser("inspector")
+    command.add_argument("--root", type=Path, required=True)
+    command.add_argument("--selection", type=Path, required=True)
+    command.add_argument("--observed-at", required=True)
+    command.add_argument("--output", type=Path, required=True, help="New dedicated owner-local output directory")
+    command.add_argument("--owner-local", action="store_true", required=True, help="Includes selected raw/private contents; never a public export")
     args = parser.parse_args(argv)
     try:
+        if args.command == "inspector":
+            from .inspector import build_inspector
+            result = build_inspector(args.root, args.selection, args.output, observed_at=args.observed_at)
+            print(json.dumps(result, indent=2))
+            return result['exitCode']
         if args.command == "inspect-inputs":
             from .inspector import inspect_files
             result = inspect_files(args.root, args.selection, observed_at=args.observed_at)

@@ -1,0 +1,16 @@
+{
+  "policyCIResultVersion": 1,
+  "exitCode": 0,
+  "overall": "pass",
+  "written": false,
+  "hostDecisions": [],
+  "reason": "Verdict covers selected data predicates and separately adopted exact-input authority decisions only",
+  "inputs": {
+    "beforeSourceSha256": "8e5714a5fb688d2d49e9642612c93125c873204b6474500f69fefa2b270700be",
+    "afterSourceSha256": "8f39477df4a2bc30c3a6f9dceafc8b5e200574a458b76426c5536a526091b4ab",
+    "beforeCanonicalSha256": "1cfb6c8afdd207ab43ad447fc346195a098af29dc476456325ab67c7e60ccd5e",
+    "afterCanonicalSha256": "df2f85bede28eaf976ab48f8e9677e5cffd07608eefd077c5d89f650db4ac0d9"
+  },
+  "baseTree": "5850d6a8c101f691d68c103b12b6b70da491ec53",
+  "scope": "Local trusted-base predicate check only; no native bypass or server setting verification"
+}

@@ -1,0 +1,23 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-inspector-views-completion-journal-20261106",
+  "output": "/tmp/prs-inspector-views-completion-output-20261106",
+  "audience": "public",
+  "authority": {
+    "source": "Owner continue working on18; existing authorized implementation, reviewed integration and routine source reconciliation. Native34 sessions remain deferred; no milestone acceptance or release authority.",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-INSPECT-02": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}

@@ -1,0 +1,90 @@
+test_all_catalogue_families_have_explicit_view_or_fallback_mapping (test_inspector.InspectorTests.test_all_catalogue_families_have_explicit_view_or_fallback_mapping) ... FAIL
+test_assessment_views_are_explicit_shape_only_and_preserve_negative_claims (test_inspector.InspectorTests.test_assessment_views_are_explicit_shape_only_and_preserve_negative_claims) ... FAIL
+test_cli_requires_owner_local_new_output_and_never_changes_input (test_inspector.InspectorTests.test_cli_requires_owner_local_new_output_and_never_changes_input) ... FAIL
+test_digest_conflict_symlink_complexity_and_empty_sets_stay_readable (test_inspector.InspectorTests.test_digest_conflict_symlink_complexity_and_empty_sets_stay_readable) ... FAIL
+test_render_has_closed_source_joins_and_escapes_hostile_data (test_inspector.InspectorTests.test_render_has_closed_source_joins_and_escapes_hostile_data) ... FAIL
+test_selected_bodies_read_once_unknown_fallback_and_private_neighbor_untouched (test_inspector.InspectorTests.test_selected_bodies_read_once_unknown_fallback_and_private_neighbor_untouched) ... FAIL
+test_shared_metrics_ignore_cached_values_and_never_aggregate_snapshots (test_inspector.InspectorTests.test_shared_metrics_ignore_cached_values_and_never_aggregate_snapshots) ... FAIL
+
+======================================================================
+FAIL: test_all_catalogue_families_have_explicit_view_or_fallback_mapping (test_inspector.InspectorTests.test_all_catalogue_families_have_explicit_view_or_fallback_mapping)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 105, in test_all_catalogue_families_have_explicit_view_or_fallback_mapping
+    model = self.model()
+            ^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 38, in model
+    self.assertTrue(hasattr(inspector, 'inspector_model'), 'offline semantic model is not implemented')
+AssertionError: False is not true : offline semantic model is not implemented
+
+======================================================================
+FAIL: test_assessment_views_are_explicit_shape_only_and_preserve_negative_claims (test_inspector.InspectorTests.test_assessment_views_are_explicit_shape_only_and_preserve_negative_claims)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 83, in test_assessment_views_are_explicit_shape_only_and_preserve_negative_claims
+    model = self.model(dict(selectionVersion=1, records=rows))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 38, in model
+    self.assertTrue(hasattr(inspector, 'inspector_model'), 'offline semantic model is not implemented')
+AssertionError: False is not true : offline semantic model is not implemented
+
+======================================================================
+FAIL: test_cli_requires_owner_local_new_output_and_never_changes_input (test_inspector.InspectorTests.test_cli_requires_owner_local_new_output_and_never_changes_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 130, in test_cli_requires_owner_local_new_output_and_never_changes_input
+    self.assertEqual(run.returncode, 3, run.stderr)
+AssertionError: 2 != 3 : usage: __main__.py [-h]
+                   {check,build,pipeline,export,validate,compare,lint-issue,readme,init,adoption-plan,status,install-skills,policy-check,reconcile,feedback,readme-profile,inspect-inputs}
+                   ...
+__main__.py: error: argument command: invalid choice: 'inspector' (choose from check, build, pipeline, export, validate, compare, lint-issue, readme, init, adoption-plan, status, install-skills, policy-check, reconcile, feedback, readme-profile, inspect-inputs)
+
+
+======================================================================
+FAIL: test_digest_conflict_symlink_complexity_and_empty_sets_stay_readable (test_inspector.InspectorTests.test_digest_conflict_symlink_complexity_and_empty_sets_stay_readable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 112, in test_digest_conflict_symlink_complexity_and_empty_sets_stay_readable
+    self.assertNotIn('value', self.model(dict(selectionVersion=1, records=[bad]))['artifacts'][0])
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 38, in model
+    self.assertTrue(hasattr(inspector, 'inspector_model'), 'offline semantic model is not implemented')
+AssertionError: False is not true : offline semantic model is not implemented
+
+======================================================================
+FAIL: test_render_has_closed_source_joins_and_escapes_hostile_data (test_inspector.InspectorTests.test_render_has_closed_source_joins_and_escapes_hostile_data)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 92, in test_render_has_closed_source_joins_and_escapes_hostile_data
+    model = self.model(dict(selectionVersion=1, records=[row, self.selection['records'][0]]))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 38, in model
+    self.assertTrue(hasattr(inspector, 'inspector_model'), 'offline semantic model is not implemented')
+AssertionError: False is not true : offline semantic model is not implemented
+
+======================================================================
+FAIL: test_selected_bodies_read_once_unknown_fallback_and_private_neighbor_untouched (test_inspector.InspectorTests.test_selected_bodies_read_once_unknown_fallback_and_private_neighbor_untouched)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 67, in test_selected_bodies_read_once_unknown_fallback_and_private_neighbor_untouched
+    result = self.model()
+             ^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 38, in model
+    self.assertTrue(hasattr(inspector, 'inspector_model'), 'offline semantic model is not implemented')
+AssertionError: False is not true : offline semantic model is not implemented
+
+======================================================================
+FAIL: test_shared_metrics_ignore_cached_values_and_never_aggregate_snapshots (test_inspector.InspectorTests.test_shared_metrics_ignore_cached_values_and_never_aggregate_snapshots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 50, in test_shared_metrics_ignore_cached_values_and_never_aggregate_snapshots
+    result = self.model(dict(selectionVersion=1, records=[a, b]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 38, in model
+    self.assertTrue(hasattr(inspector, 'inspector_model'), 'offline semantic model is not implemented')
+AssertionError: False is not true : offline semantic model is not implemented
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.105s
+
+FAILED (failures=7)

@@ -1272,16 +1272,57 @@
     },
     {
       "blocked": false,
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "completionBasis": "Owner-local single-file offline semantic inspector with shared work/delivery calculations, exact selected-field joins, separate source/render clocks and29-family view/fallback mapping.257 Python/24 JS tests and installed-wheel smoke pass. Six fresh-review blockers reproduced/fixed; author final disposition records remaining native browser limits. No public inspector export, native34 evidence, milestone acceptance or release claim.",
       "criterion": "All summarized claims link to their source field/path and observation. Source and projection share one work identity/credit; failed CI, merge and recommendations cannot become verified/released/accepted. Output needs no server, token, model call, client write or graph engine; missing and error states are readable.",
       "deferReason": null,
       "dependsOn": [
         "PRS-INSPECT-01",
         "PRS-EVIDENCE-STAGES"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-06",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "8079c20998782905c520f5447987d0225b4db1b3",
+          "source": "src/project_record/inspector.py; src/project_record/inspector_views.py; web/inspector.mjs; web/inspector.css",
+          "subject": "PRS-INSPECT-02"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-06",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "8079c20998782905c520f5447987d0225b4db1b3",
+          "source": "audit/inspector-views/2026-11-06/verification.json; tests/test_inspector.py; tests/inspector.test.mjs",
+          "subject": "PRS-INSPECT-02"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-06",
+          "producer": "Codex /root final disposition using GPT-6 Astra fresh review and RED to GREEN regressions",
+          "result": "passed",
+          "revision": "8079c20998782905c520f5447987d0225b4db1b3",
+          "source": "audit/inspector-views/2026-11-06/review.json; verification.json:review final disposition",
+          "subject": "PRS-INSPECT-02"
+        },
+        {
+          "eventId": "prs:PRS-INSPECT-02:8079c20998782905c520f5447987d0225b4db1b3",
+          "kind": "work-result",
+          "observedOn": "2026-11-06",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "8079c20998782905c520f5447987d0225b4db1b3",
+          "source": "https://github.com/interzettel/project-record-standard/pull/67",
+          "subject": "PRS-INSPECT-02",
+          "summary": "Owner-local single-file offline semantic inspector with shared work/delivery calculations, exact selected-field joins, separate source/render clocks and29-family view/fallback mapping.257 Python/24 JS tests and installed-wheel smoke pass. Six fresh-review blockers reproduced/fixed; author final disposition records remaining native browser limits. No public inspector export, native34 evidence, milestone acceptance or release claim."
+        }
+      ],
       "groupId": "G6",
       "id": "PRS-INSPECT-02",
+      "implementationRevision": "8079c20998782905c520f5447987d0225b4db1b3",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/18",
       "kind": "implementation",
       "milestoneId": "M6",
@@ -1289,8 +1330,8 @@
       "owner": "Implementing agent; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "selected-not-started",
-      "state": "backlog",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Render traceable semantic views in one offline inspector",
       "unmappedDependencies": []
     },

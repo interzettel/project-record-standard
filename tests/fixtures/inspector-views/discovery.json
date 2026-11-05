@@ -1,0 +1,26 @@
+{
+  "projectId": "synthetic-reconcile",
+  "status": "proposed",
+  "sources": [
+    {
+      "kind": "issues",
+      "source": "toy snapshot",
+      "revision": null,
+      "observedAt": "2026-10-30T12:00:00Z",
+      "coverage": "partial",
+      "pagesRead": 1,
+      "pagesExpected": null,
+      "findings": [
+        {
+          "id": "FIND-1",
+          "observation": "Synthetic gap",
+          "actionWorkId": "WORK-1"
+        }
+      ]
+    }
+  ],
+  "cleanupQueue": [],
+  "unresolvedDecisions": [
+    "Coverage remains unknown"
+  ]
+}

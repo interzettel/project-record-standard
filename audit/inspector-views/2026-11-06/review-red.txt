@@ -1,0 +1,60 @@
+Long rendered HTML in assertion messages omitted; test names, tracebacks and failure totals retained.
+..F.F....F.F....FE
+======================================================================
+ERROR: test_unrenderable_unicode_cannot_suppress_later_records_or_crash_output (test_inspector.InspectorTests.test_unrenderable_unicode_cannot_suppress_later_records_or_crash_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 194, in test_unrenderable_unicode_cannot_suppress_later_records_or_crash_output
+    result = inspector.build_inspector(self.root, self.root/'selection-local.json', out, observed_at=TIME)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector.py", line 227, in build_inspector
+    if len(text.encode('utf-8')) > 32 * 1024 * 1024:
+           ^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\ud800' in position 5797: surrogates not allowed
+
+======================================================================
+FAIL: test_calculated_gates_link_decisive_work_states_and_exact_plan_fields (test_inspector.InspectorTests.test_calculated_gates_link_decisive_work_states_and_exact_plan_fields)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 220, in test_calculated_gates_link_decisive_work_states_and_exact_plan_fields
+    self.assertIn(label,text)
+
+======================================================================
+FAIL: test_derived_delivery_does_not_repeat_large_work_receipts_per_plan (test_inspector.InspectorTests.test_derived_delivery_does_not_repeat_large_work_receipts_per_plan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 228, in test_derived_delivery_does_not_repeat_large_work_receipts_per_plan
+    self.assertLess(len(text.encode()),1024*1024)
+AssertionError: 5269821 not less than 1048576
+
+======================================================================
+FAIL: test_present_null_joins_its_exact_field_and_raw_json_types_remain_distinct (test_inspector.InspectorTests.test_present_null_joins_its_exact_field_and_raw_json_types_remain_distinct)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 208, in test_present_null_joins_its_exact_field_and_raw_json_types_remain_distinct
+    self.assertEqual(source.group(1), link.group(1))
+AssertionError: 'source-a1102cd77016b89a333d7c329633e0aa9c8f009de86fe8e9b4b50ff6f590686b' != 'source-c819bfad833e7e3f66353a75e840ece64938ae14a55475f0ee08ee19ee183b64'
+- source-a1102cd77016b89a333d7c329633e0aa9c8f009de86fe8e9b4b50ff6f590686b
++ source-c819bfad833e7e3f66353a75e840ece64938ae14a55475f0ee08ee19ee183b64
+
+
+======================================================================
+FAIL: test_private_output_is_owner_only_even_under_permissive_umask (test_inspector.InspectorTests.test_private_output_is_owner_only_even_under_permissive_umask)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 238, in test_private_output_is_owner_only_even_under_permissive_umask
+    self.assertEqual(out.stat().st_mode & 0o777,0o700)
+AssertionError: 511 != 448
+
+======================================================================
+FAIL: test_unchecked_embedded_extras_cannot_inherit_core_validation (test_inspector.InspectorTests.test_unchecked_embedded_extras_cannot_inherit_core_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 248, in test_unchecked_embedded_extras_cannot_inherit_core_validation
+    self.assertTrue(all(v['role']=='uninterpreted' and v['validation']=='unvalidated-extra' for v in extras))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.320s
+
+FAILED (failures=5, errors=1)
