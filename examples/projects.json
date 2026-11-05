@@ -195,6 +195,12 @@
           "observedOn": "2026-11-05",
           "path": "sources/standard/changes/CH-BOUNDED-FEEDBACK.json",
           "visibility": "public"
+        },
+        {
+          "authority": "Authored README-only profile and cooperating suite policy under PRS-TAILOR-README",
+          "observedOn": "2026-11-05",
+          "path": "sources/standard/changes/CH-README-ONLY-PROFILE.json",
+          "visibility": "public"
         }
       ],
       "presentation": {

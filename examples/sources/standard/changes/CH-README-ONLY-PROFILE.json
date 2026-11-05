@@ -1,0 +1,11 @@
+{
+  "id": "CH-README-ONLY-PROFILE",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Add a complete README-only profile with granular source-backed text/SVG, deterministic write and read-only parity gate; reject cooperating PRS suite/native version drift.",
+  "workItemIds": [
+    "PRS-TAILOR-README"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased opt-in renderer readme and readme-profile CLI; existing presentation profiles and generic readme command retain their behavior. No website, host version rewrite, new per-skill version, installed skill-body change, package/contract/suite version bump or publication. Exact pins remain unchanged; assess before adopting the new optional profile."
+}

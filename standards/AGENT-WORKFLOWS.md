@@ -1,6 +1,6 @@
 # Agent workflows
 
-An agent starts with the project’s purpose and scope, scouts its actual state, and turns the evidence into a manageable plan. The tracker and website show that plan and its progress. They evolve when the project discovers or accepts more work.
+An agent starts with the project’s purpose and scope, scouts its actual state, and turns the evidence into a manageable plan. The chosen presentation shows that plan and its progress: a README-only tracker is sufficient when selected; a website is optional. They evolve when the project discovers or accepts more work.
 
 ## Open contribution and bounded responsibility
 
@@ -92,7 +92,7 @@ Reprioritization follows the project’s authority model. Use the approval alrea
 | `answer-project-status` | Answer questions with named fractions, source dates, blockers and evidence limits. |
 | `connect-github-tracking` | Prepare or apply authorized issue/label/Project mappings and bounded reconciliation. |
 | `prepare-project-delivery` | Prepare changes, candidate gates and separately observed publication/deployment. |
-| `present-project-tracking` | Integrate interactive tracking into the project’s own README and website. |
+| `present-project-tracking` | Use the selected README-only or website profile with project-owned branding and source parity. |
 | `operate-project-tracking` | Recover generated output, verify CI, manage collection health and upgrade safely. |
 | `verify-project-accessibility` | Audit WCAG 2.2 A/AA criteria, remediate tracker interactions and preserve actual test/acceptance limits. |
 

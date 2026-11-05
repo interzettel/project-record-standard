@@ -1,0 +1,24 @@
+test_cli_apply_rerun_and_stale_text_image_and_source_detection (test_readme_profile.ReadmeProfileTests.test_cli_apply_rerun_and_stale_text_image_and_source_detection) ... ok
+test_cooperating_prs_suite_drift_is_rejected_without_rewriting_host_version (test_readme_profile.ReadmeProfileTests.test_cooperating_prs_suite_drift_is_rejected_without_rewriting_host_version) ... FAIL
+test_empty_required_scope_is_not_measured_and_symlink_output_is_refused (test_readme_profile.ReadmeProfileTests.test_empty_required_scope_is_not_measured_and_symlink_output_is_refused) ... ok
+test_interrupted_output_pair_is_detected_and_repaired (test_readme_profile.ReadmeProfileTests.test_interrupted_output_pair_is_detected_and_repaired) ... ok
+test_literal_work_and_project_text_cannot_inject_markup (test_readme_profile.ReadmeProfileTests.test_literal_work_and_project_text_cannot_inject_markup) ... ok
+test_other_declared_sources_cannot_be_replaced_by_graphic (test_readme_profile.ReadmeProfileTests.test_other_declared_sources_cannot_be_replaced_by_graphic) ... ok
+test_private_inputs_missing_markers_and_conflicting_modes_fail_without_writes (test_readme_profile.ReadmeProfileTests.test_private_inputs_missing_markers_and_conflicting_modes_fail_without_writes) ... ok
+test_public_build_needs_no_html_javascript_or_pages (test_readme_profile.ReadmeProfileTests.test_public_build_needs_no_html_javascript_or_pages) ... ok
+test_readme_contains_granular_semantics_source_and_no_site_requirement (test_readme_profile.ReadmeProfileTests.test_readme_contains_granular_semantics_source_and_no_site_requirement) ... ok
+test_source_labels_are_literal_and_unsafe_evidence_is_not_a_link (test_readme_profile.ReadmeProfileTests.test_source_labels_are_literal_and_unsafe_evidence_is_not_a_link) ... ok
+
+======================================================================
+FAIL: test_cooperating_prs_suite_drift_is_rejected_without_rewriting_host_version (test_readme_profile.ReadmeProfileTests.test_cooperating_prs_suite_drift_is_rejected_without_rewriting_host_version)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_readme_profile.py", line 164, in test_cooperating_prs_suite_drift_is_rejected_without_rewriting_host_version
+    with self.assertRaises(RecordError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RecordError not raised
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.837s
+
+FAILED (failures=1)

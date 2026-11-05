@@ -1,0 +1,1 @@
+Synthetic passing check for DOC-1, revision aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa. This is not a native runtime or real publication receipt.

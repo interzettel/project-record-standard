@@ -1,0 +1,29 @@
+{
+  "sourceRevision": "6635df6ff508ba5b81ea03e109b7e65587aab6f0",
+  "kind": "fresh-context-source-only-planning-baselines",
+  "attempted": 5,
+  "completed": 3,
+  "notRun": [
+    "readme_control_1: exec-server transport disconnected",
+    "readme_control_2: exec-server transport disconnected"
+  ],
+  "samples": [
+    {
+      "producer": "readme_control_3",
+      "quote": "The generated module still says “Interactive route not connected.” If that wording is unacceptable, it requires a renderer change; these files provide no README-only wording option.",
+      "result": "Respected README-only and version ownership; identified missing dedicated output and nonzero stale CLI."
+    },
+    {
+      "producer": "readme_control_4",
+      "quote": "The built-in module shows summary measures, not granular tasks, and emits “Interactive route not connected.” when no URL exists.",
+      "result": "Respected no-site scope and version identities; proposed host transformation to supply missing readable work."
+    },
+    {
+      "producer": "readme_control_5",
+      "quote": "The generated README module itself has no granular item explorer.",
+      "result": "Respected no-site and suite/host/toolkit identity separation; identified generic preview exit0 despite changed output."
+    }
+  ],
+  "decision": "No observed skill-body violation justifies editing/distributing a new skill body. Existing present skill reads PRESENTATION; update that human-facing contract and implement deterministic missing capability.",
+  "limits": "Three source-only plans, not five completed skill evaluations or live consumer applications. Same model family; no causal or independent-model effectiveness claim."
+}

@@ -156,6 +156,58 @@ if(location.hash)restoreSelection();
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>{escape(record['project']['name'])} · source-backed progress reference</title><style>{_theme_css(theme)}:root{{--host-font:{theme['font']}}}{BASE_CSS}{css}</style></head><body class="{project}"><a class="skip-link" href="#top">Skip to tracking</a><div class="review-strip">Reference integration · {escape(mode_note)} · source observed {escape(record['source']['observedOn'])}</div><main class="wrap" id="top" tabindex="-1">{body}<section class="explorer-section" aria-label="History and delivery"><h2 style="margin-bottom:22px">History and delivery</h2><div id="delivery-explorer"></div></section><section id="explore" class="explorer-section"><div class="section-head"><h2>{'Open the workbench' if project == 'prehnite' else 'Inside the work'}</h2><span>Choose a milestone above or explore the ledger below</span></div><p>Find a work item, select its tile, and follow its scope, dependencies and available evidence. These figures come from the source snapshot.</p><div id="milestone-detail"></div><div id="work-explorer" class="pr-host"></div><p class="evidence-notice">Source evidence is retained. The standard does not turn legacy completion labels into a new approval.</p></section><details class="source-detail"><summary>Source, calculation and publication limits</summary><p>{source_navigation} · updated {escape(record['source']['updatedOn'])} · observed {escape(record['source']['observedOn'])}</p><p>Input SHA-256: <code>{record['source']['sha256']}</code></p><p>{escape(record['source']['authority'])}. Percentages count completed leaf items, with each denominator named. Active work earns no partial credit. Accepted milestones follow their declared exit criteria.</p><p>{escape(' '.join(record['warnings']))}</p><p>This is an additive reference integration. The existing website, hero artwork, navigation and authored content are not replaced.</p></details><p class="back-to-top"><a href="#top">Back to top ↑</a></p></main><script type="application/json" id="record-data">{model}</script><script>(()=>{{{script}}})();</script></body></html>'''
 
 
+def _md_text(value) -> str:
+    """Keeps source prose literal inside generated Markdown table cells."""
+    text = escape(str(value), quote=False).replace("\\", "\\\\")
+    for char in ['|', '[', ']', '`', '*', '_']:
+        text = text.replace(char, "\\" + char)
+    return text.replace("\r\n", "\n").replace("\r", "\n").replace("\n", "<br>")
+
+
+def _readme_link(label, url) -> str:
+    """Links explicit web/relative evidence, leaving other source labels literal."""
+    from urllib.parse import quote, urlsplit
+    if not isinstance(url, str) or any(ord(c) < 32 for c in url):
+        return _md_text(label) + ': ' + _md_text(url)
+    parsed = urlsplit(url)
+    if parsed.scheme in {'http', 'https'} or (not parsed.scheme and not parsed.netloc and url.startswith('./')):
+        return '[' + _md_text(label) + '](' + quote(url, safe='/:%#?=&+-_~') + ')'
+    return _md_text(label) + ': ' + _md_text(url)
+
+
+def _readme_work(record: dict) -> str:
+    """Makes every retained work item readable without a site or hover control."""
+    ledger = record['metrics']['ledger']
+    lines = ['', f"Retained ledger: {ledger['done']}/{ledger['total']} · {_percent(ledger['percent'])} (includes deferred work).",
+             f"Source SHA-256: `{record['source']['sha256']}`.",
+             f"Recorded publication receipts: {len(record.get('releases', []))}. Work completion does not establish publication or downstream installation.",
+             '', '<details>', '<summary>Milestones and granular work</summary>', '', '### Milestones', '',
+             '| Milestone | Required work | Acceptance | Next action |', '| --- | --- | --- | --- |']
+    for milestone in record['milestones']:
+        metric = milestone['progress']
+        accepted = {True: 'Accepted', False: 'Pending', None: 'Unknown'}[milestone['accepted']]
+        lines.append('| ' + ' | '.join([_md_text(milestone['id'] + ' — ' + milestone['title']),
+                      f"{metric['done']}/{metric['total']} · {_percent(metric['percent'])}", accepted,
+                      _md_text(milestone.get('nextAction') or 'Not recorded')]) + ' |')
+    for item in record['items']:
+        state = item['state'].title() + (' · Blocked' if item.get('blocked') else '')
+        scope = 'Required' if item['required'] else 'Deferred: ' + (item.get('deferReason') or 'Outside required scope')
+        evidence = []
+        for receipt in item.get('evidence', []):
+            label = ' / '.join(str(receipt.get(k, 'Unknown')) for k in ['kind', 'result'])
+            evidence.append(_readme_link(label, receipt.get('source', 'Not recorded')) +
+                            (' · revision ' + _md_text(receipt['revision']) if receipt.get('revision') else ''))
+        identity = _readme_link(item['id'], item['issueUrl']) if item.get('issueUrl') else _md_text(item['id'])
+        rows = [('Priority / state', _md_text(item.get('priority') or 'Not recorded') + ' / ' + _md_text(state)),
+                ('Scope', _md_text(scope)), ('Criterion', _md_text(item.get('criterion') or 'Not recorded')),
+                ('Owner', _md_text(item.get('owner') or 'Not recorded')),
+                ('Dependencies', _md_text(', '.join(item.get('dependsOn', []) + item.get('unmappedDependencies', [])) or 'None recorded')),
+                ('Verification / evidence', '<br>'.join(evidence) or 'Not recorded')]
+        lines += ['', '### ' + identity + ' — ' + _md_text(item['title']), '', '| Field | Source observation |', '| --- | --- |']
+        lines += ['| ' + label + ' | ' + value + ' |' for label, value in rows]
+    return '\n'.join(lines + ['', '</details>', ''])
+
+
 def render_readme(record: dict, theme: dict) -> tuple[str, str]:
     """Creates compact branded SVG and text with matching counts."""
     work, accepted = record["metrics"]["work"], record["metrics"]["milestones"]
@@ -166,14 +218,26 @@ def render_readme(record: dict, theme: dict) -> tuple[str, str]:
     primary_text = f"{_percent(primary['percent'])} · {primary_count}" if roadmap else f"{work['done']}/{work['total']} · {_percent(work['percent'])}"
     meaning = "Equal weight for each milestone's required-work fraction." if roadmap else "Completed leaf items in the named required scope."
     title = record["project"]["name"] + (" · roadmap" if roadmap else " · current required scope")
-    progress_url = record["presentation"].get("progressUrl") or ("./progress.html" if record["presentation"].get("renderer") != "host" else None)
+    readme_only = record['presentation'].get('renderer') == 'readme'
+    if readme_only and record['presentation'].get('progressUrl'):
+        raise RecordError('README-only presentation cannot declare an interactive route')
+    progress_url = record["presentation"].get("progressUrl") or ("./progress.html" if record["presentation"].get("renderer") not in {"host", "readme"} else None)
     image_url = record["presentation"].get("readmeImageUrl", "./progress.svg")
-    graphic = f"![{title}]({image_url})"
+    if readme_only:
+        from urllib.parse import quote, urlsplit
+        parsed_image = urlsplit(image_url)
+        if any(ord(c) < 32 for c in image_url) or not (parsed_image.scheme in {'http', 'https'} or (not parsed_image.scheme and not parsed_image.netloc and image_url.startswith('./'))):
+            raise RecordError('Use an explicit local or web README graphic URL')
+        graphic = '![' + _md_text(title) + '](' + quote(image_url, safe='/:%#?=&+-_~') + ')'
+    else:
+        graphic = f"![{title}]({image_url})"
     if progress_url:
         graphic = f"[{graphic}]({progress_url})"
     source_url = _source_url(record)
     navigation = f"[Interactive roadmap]({progress_url})" if progress_url else "Interactive route not connected."
     source_link = f"[Canonical source]({source_url})" if source_url else f"Source file: `{record['source']['path']}` (content-addressed file snapshot)."
+    if readme_only:
+        source_link = _readme_link('Canonical source', source_url) if source_url else 'Source file: ' + _md_text(record['source']['path']) + ' (content-addressed file snapshot).'
     tokens = theme["light"]
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 840 214"><title id="title">{escape(title)}</title><desc id="desc">Work {work['done']} of {work['total']} ({_percent(work['percent'])}); accepted milestones {accepted['done']} of {accepted['total']} ({_percent(accepted['percent'])}). Observed {record['source']['observedOn']}.</desc><rect width="840" height="214" rx="10" fill="{tokens['background']}"/><g font-family="{escape(theme['font'],quote=True)}" fill="{tokens['text']}"><text x="28" y="37" font-size="18" font-weight="700">{escape(title)}</text><text x="28" y="77" font-size="14">Required work</text><text x="28" y="112" font-size="28" font-weight="700">{_percent(work['percent'])}</text><text x="148" y="111" font-size="14">{work['done']} / {work['total']} items</text><rect x="28" y="132" width="350" height="8" rx="4" fill="{tokens['border']}"/><rect x="28" y="132" width="{350*(work['percent'] or 0)/100:.2f}" height="8" rx="4" fill="{tokens['accent']}"/><text x="445" y="77" font-size="14">Accepted milestones</text><text x="445" y="112" font-size="28" font-weight="700">{_percent(accepted['percent'])}</text><text x="565" y="111" font-size="14">{accepted['done']} / {accepted['total']} outcomes</text><rect x="445" y="132" width="350" height="8" rx="4" fill="{tokens['border']}"/><rect x="445" y="132" width="{350*(accepted['percent'] or 0)/100:.2f}" height="8" rx="4" fill="{tokens['accent']}"/><text x="28" y="181" font-size="12" fill="{tokens['muted']}">Observed {record['source']['observedOn']} · {_source_label(record)} · source-backed snapshot</text></g></svg>'''
     svg = svg.replace(f"Work {work['done']} of {work['total']} ({_percent(work['percent'])})", f"{primary_label} {_percent(primary['percent'])}, {primary_count}")
@@ -194,6 +258,10 @@ def render_readme(record: dict, theme: dict) -> tuple[str, str]:
 Observed {record['source']['observedOn']} against `{_source_label(record)}`.
 <!-- project-record:end -->
 '''
+    if readme_only:
+        md = md.replace('Interactive route not connected. · ', '')
+        md = md.replace('<!-- project-record:end -->', _readme_work(record) + '<!-- project-record:end -->')
+        svg = svg.replace('</desc>', ' Input SHA-256 ' + record['source']['sha256'] + '.</desc>', 1)
     return svg, md
 
 
@@ -248,7 +316,7 @@ def build(records: list[dict], config_path: Path, destination: Path,
                "delivery.json": json.dumps(record["deliverySummary"], indent=2) + "\n",
                "CHANGELOG-generated.md": changelog_markdown(record)}
         renderer = record["presentation"].get("renderer", project)
-        if renderer != "host":
+        if renderer not in {"host", "readme"}:
             if renderer != project:
                 raise RecordError("A reference renderer cannot replace another project's brand")
             own["progress.html"] = render_html(record, theme, toolkit_root)

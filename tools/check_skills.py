@@ -9,6 +9,7 @@ from pathlib import Path
 import re
 
 from project_record.core import RecordError
+from project_record.pins import _native_version
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -26,6 +27,8 @@ def check_suite(root: Path) -> dict:
         RecordError: If declared folders, metadata or references conflict.
     """
     manifest = json.loads((root / 'skills/manifest.json').read_text())
+    if manifest['suiteVersion'] != _native_version(root):
+        raise RecordError('Cooperating PRS skill suite must match its native package version')
     names = manifest['skills']
     if not names or len(names) != len(set(names)):
         raise RecordError('Skill manifest must declare unique skills')

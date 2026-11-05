@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "adapter": "normalized-v1",
+      "sourceFile": "ledger.json",
+      "project": {
+        "id": "readme-only",
+        "name": "Small Workshop",
+        "visibility": "public"
+      },
+      "source": {
+        "kind": "file-snapshot",
+        "path": "ledger.json",
+        "commit": null,
+        "observedOn": "2026-11-05",
+        "authority": "Synthetic fixture author only; not a consumer observation"
+      },
+      "presentation": {
+        "renderer": "readme",
+        "theme": "theme.json",
+        "readmeImageUrl": "./assets/progress.svg"
+      }
+    }
+  ]
+}

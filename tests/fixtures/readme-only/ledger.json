@@ -1,0 +1,99 @@
+{
+  "contractVersion": "0.2.0",
+  "groups": [
+    {
+      "id": "G",
+      "title": "Synthetic work",
+      "panel": "Now"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M",
+      "title": "Synthetic outcome",
+      "goal": "Keep work completion separate from acceptance",
+      "horizon": "Now",
+      "groupIds": [
+        "G"
+      ],
+      "gateItemIds": [
+        "DOC-1",
+        "DOC-2"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "nextAction": "Verify DOC-2, then the owner separately reviews the outcome.",
+      "unscopedWork": []
+    }
+  ],
+  "items": [
+    {
+      "id": "DOC-1",
+      "title": "Publish the local guide",
+      "groupId": "G",
+      "milestoneId": "M",
+      "state": "done",
+      "sourceState": "synthetic-check-passed",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [
+        {
+          "kind": "test",
+          "result": "passed",
+          "subject": "DOC-1",
+          "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "source": "./evidence/check.txt"
+        }
+      ],
+      "completionBasis": "Synthetic fixture observation; not a real publication",
+      "kind": "implementation",
+      "criterion": "Synthetic implementation and matching check exist.",
+      "owner": "Synthetic fixture author",
+      "implementationRevision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "priority": "P1"
+    },
+    {
+      "id": "DOC-2",
+      "title": "Check the next criterion",
+      "groupId": "G",
+      "milestoneId": "M",
+      "state": "ready",
+      "sourceState": "synthetic-blocked",
+      "required": true,
+      "blocked": true,
+      "dependsOn": [
+        "DOC-1"
+      ],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete",
+      "kind": "implementation",
+      "criterion": "Synthetic implementation and matching check exist.",
+      "owner": "Synthetic fixture author",
+      "implementationRevision": null,
+      "priority": "P2"
+    },
+    {
+      "id": "DOC-3",
+      "title": "Consider optional polish",
+      "groupId": "G",
+      "milestoneId": "M",
+      "state": "backlog",
+      "sourceState": "synthetic-deferred",
+      "required": false,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete",
+      "kind": "implementation",
+      "criterion": "Synthetic implementation and matching check exist.",
+      "owner": "Synthetic fixture author",
+      "implementationRevision": null,
+      "priority": "P3",
+      "deferReason": "Optional fixture idea, outside required scope."
+    }
+  ]
+}

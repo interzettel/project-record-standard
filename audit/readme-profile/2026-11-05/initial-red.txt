@@ -1,0 +1,39 @@
+test_cli_apply_rerun_and_stale_text_image_and_source_detection (test_readme_profile.ReadmeProfileTests.test_cli_apply_rerun_and_stale_text_image_and_source_detection) ... FAIL
+test_public_build_needs_no_html_javascript_or_pages (test_readme_profile.ReadmeProfileTests.test_public_build_needs_no_html_javascript_or_pages) ... ERROR
+test_readme_contains_granular_semantics_source_and_no_site_requirement (test_readme_profile.ReadmeProfileTests.test_readme_contains_granular_semantics_source_and_no_site_requirement) ... FAIL
+
+======================================================================
+ERROR: test_public_build_needs_no_html_javascript_or_pages (test_readme_profile.ReadmeProfileTests.test_public_build_needs_no_html_javascript_or_pages)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_readme_profile.py", line 52, in test_public_build_needs_no_html_javascript_or_pages
+    result=build(load_config(self.config), self.config, output, 'public', ROOT)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/build.py", line 253, in build
+    raise RecordError("A reference renderer cannot replace another project's brand")
+project_record.core.RecordError: A reference renderer cannot replace another project's brand
+
+======================================================================
+FAIL: test_cli_apply_rerun_and_stale_text_image_and_source_detection (test_readme_profile.ReadmeProfileTests.test_cli_apply_rerun_and_stale_text_image_and_source_detection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_readme_profile.py", line 63, in test_cli_apply_rerun_and_stale_text_image_and_source_detection
+    self.assertEqual(stale.returncode, 1, stale.stderr)
+AssertionError: 2 != 1 : usage: __main__.py [-h]
+                   {check,build,pipeline,export,validate,compare,lint-issue,readme,init,adoption-plan,status,install-skills,policy-check,reconcile,feedback}
+                   ...
+__main__.py: error: argument command: invalid choice: 'readme-profile' (choose from check, build, pipeline, export, validate, compare, lint-issue, readme, init, adoption-plan, status, install-skills, policy-check, reconcile, feedback)
+
+
+======================================================================
+FAIL: test_readme_contains_granular_semantics_source_and_no_site_requirement (test_readme_profile.ReadmeProfileTests.test_readme_contains_granular_semantics_source_and_no_site_requirement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_readme_profile.py", line 33, in test_readme_contains_granular_semantics_source_and_no_site_requirement
+    self.assertIn('DOC-1', markdown)
+AssertionError: 'DOC-1' not found in '<!-- project-record:start -->\n[![Small Workshop · current required scope](./assets/progress.svg)](./progress.html)\n\n| Measure | Completion | Meaning |\n| --- | ---: | --- |\n| Required work | 1/2 · 50.0% | Completed leaf items in the named required scope. |\n| Accepted milestones | 0/1 · 0.0% | Milestones whose declared outcome gates passed. |\n\n[Interactive roadmap](./progress.html) · Source file: `ledger.json` (content-addressed file snapshot).\n\nObserved 2026-11-05 against `ee7dc296`.\n<!-- project-record:end -->\n'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.045s
+
+FAILED (failures=2, errors=1)

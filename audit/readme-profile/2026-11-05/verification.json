@@ -1,0 +1,95 @@
+{
+  "observedOn": "2026-11-05",
+  "workItemId": "PRS-TAILOR-README",
+  "baseRevision": "6635df6ff508ba5b81ea03e109b7e65587aab6f0",
+  "baseTree": "0cd17f566f1b3d4a115f66ade88aafbd0f3c1d24",
+  "implementationSha256": {
+    "src/project_record/build.py": "da8f940bbeb29a4fce6da9d8e24b98c5e561a550603ad4415ef4c0c064f2747c",
+    "src/project_record/readme_profile.py": "a9fddc102680bf1aedc31b27a90bc36001f55ba5472bfb73b5cac64eb21df740",
+    "src/project_record/__main__.py": "a54e7c8d68d35092bfe4672add8b003d3fdc4938dd23cb7fe7e22ec5a2c23972",
+    "tools/check_skills.py": "4bf80d6810f93e3a65ad36e6b1c823b29343cd544aa673177bb060d73684a8a7",
+    "tools/package_standard.py": "d8208e2671df9d90dac5cdcf2d04b5b22b614eee36aeec3478f0f0b1c24b923f",
+    "tests/test_readme_profile.py": "ef0ee4e96b7586e10560442ce870ecbc494af1c5496cb69d2972401d6bee8945",
+    "tests/test_packaging.py": "77cfcf75e4c2516f0a22bb6e0579763bab0d669b074a7055f90d17c4aee1563a",
+    "standards/ADAPTATION-PROFILES.md": "09e113100a972112b7ad3eeffcb0f52e79683d773f4655c3e0caabc3e85382f3",
+    "standards/PRESENTATION.md": "b76c587628b530a1983bff780b4b61ba5ce145500e51953927476bd6e8bc7328",
+    "standards/GITHUB.md": "a4eec0666e34741bd5aefaedcfdbbe679c670ab7df469b314e4b2ad92f903140",
+    "standards/AGENT-WORKFLOWS.md": "7520927d446acd591da691bd340386cb677b00a7a2583955175332d49ff51001"
+  },
+  "checks": {
+    "readmeProfileTests": 11,
+    "pythonTests": 224,
+    "javascriptTests": 21,
+    "skillEntries": 11,
+    "palettePairs": 20,
+    "siteDocuments": 20,
+    "sourceValidation": "passed",
+    "publicPipeline": "passed",
+    "readmeTextAndSvgParity": "passed",
+    "packageTests": "passed"
+  },
+  "fixture": {
+    "path": "tests/fixtures/readme-only",
+    "required": "1/2",
+    "retained": "1/3",
+    "accepted": "0/1",
+    "appVersion": "2.8.0",
+    "sitesRequired": false,
+    "checkedInSvgAndGranularText": true
+  },
+  "consumerEvidence": [
+    {
+      "url": "https://github.com/interzettel/diakrisis/pull/15",
+      "merged": true,
+      "head": "2ca4c33f0630d0f2b4a89b9fce8198541a9a7d5e",
+      "meaning": "Historical README-only consumer implementation"
+    },
+    {
+      "url": "https://github.com/interzettel/diakrisis/pull/16",
+      "merged": true,
+      "head": "731c8b93d4715d63de996cd58545147c1828f030",
+      "meaning": "Historical correction to one suite rather than per-skill version machinery"
+    }
+  ],
+  "primaryReferences": [
+    {
+      "url": "https://semver.org/spec/v2.0.0.html",
+      "inspectedOn": "2026-11-05"
+    },
+    {
+      "url": "https://agentskills.io/specification",
+      "inspectedOn": "2026-11-05"
+    }
+  ],
+  "review": {
+    "producer": "Codex /root/readme_profile_review",
+    "status": "no-outstanding-material-findings",
+    "independentModelAgreement": false,
+    "reproducedFinding": "SVG output could overwrite another declared project source; all declared input-name collision guard now rejects it without reading unselected contents",
+    "checks": "11 profile tests,2 package tests,suite/native version check,diff whitespace; independently injected second-output failure recovered"
+  },
+  "negativeEvidence": [
+    "Expected red: renderer lacks granular README-only output/new profile/CLI parity",
+    "Expected red: project-title markup unsafe, cross-project authored-source overwrite, cooperating suite drift accepted; regressions now pass",
+    "Exec-server disconnected temporarily;2/5 baseline samples not run",
+    "Pinned Markdown dependency reinstalled before final full suite",
+    "Optional SVG raster inspection unavailable: CairoSVG absent and ImageMagick lacks rsvg-convert delegate; semantic XML/text checked instead"
+  ],
+  "limits": [
+    "No new browser reflow or assistive-technology speech observed",
+    "No full WCAG conformance or independent-model efficacy",
+    "No native Codex/Claude capture;#34 remains deferred by owner",
+    "No new consumer migration, website requirement, release or owner acceptance"
+  ],
+  "skillBodiesChanged": false,
+  "suiteVersion": "0.4.1",
+  "recordContractVersion": "0.2.0",
+  "sourceBeforeSha256": "91ee9e8100e21a8e87ca52a48280fba22c1e474604511218ca6feaf0388ea83c",
+  "countsBefore": {
+    "required": "30/42",
+    "retained": "30/52",
+    "newRequired": "12/24",
+    "acceptedMilestones": "4/13"
+  },
+  "completion": "Implementation verified; shared-writer completion will bind the published implementation revision separately"
+}
