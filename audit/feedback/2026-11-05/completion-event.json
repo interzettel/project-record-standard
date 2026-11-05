@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-FEEDBACK-01:5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+  "projectId": "standard",
+  "workItemId": "PRS-FEEDBACK-01",
+  "sourceSha256": "07770294049b6da995d02ff5c707048fca229509c7bfbade58e31d74f1920b2f",
+  "manifestSha256": "d9c5ad964fe81f9fd060895cf61bae56f325ede76bf59361078ec2f6e046ab2f",
+  "artifactRevision": "5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/64",
+  "observedOn": "2026-11-05",
+  "summary": "Bounded feedbackVersion1 API/CLI retains real gaps once, links known reports, separates public projection/content review from an adopted issue grant, holds incomplete searches and uncertain writes, and records actual route effort.22 feedback tests/213 Python/21 JS pass; fresh review corrected2 recovery defects. Actual PR63 encounter replay reused1record with0publications/prompts. Host transport/search/privacy judgment remain explicit; no native capture, whole-task savings, owner acceptance or release inferred.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-FEEDBACK-01",
+      "revision": "5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+      "result": "passed",
+      "source": "src/project_record/feedback.py; standards/FEEDBACK.md; audit/feedback/2026-11-05/verification.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-05"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-FEEDBACK-01",
+      "revision": "5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+      "result": "passed",
+      "source": "audit/feedback/2026-11-05/verification.json; audit/feedback/2026-11-05/pilot.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-05"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-FEEDBACK-01",
+      "revision": "5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+      "result": "passed",
+      "source": "audit/feedback/2026-11-05/verification.json:review",
+      "producer": "Codex /root/feedback_review_resumed",
+      "observedOn": "2026-11-05"
+    }
+  ],
+  "discoveries": []
+}

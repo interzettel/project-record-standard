@@ -1,0 +1,23 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-feedback-completion-journal-20261105",
+  "output": "/tmp/prs-feedback-completion-output-20261105",
+  "audience": "public",
+  "authority": {
+    "source": "Owner instructions: start working on36; Continue this chat; existing bounded implementation/integration/reconciliation authority",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-FEEDBACK-01": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}

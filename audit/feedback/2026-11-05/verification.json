@@ -1,0 +1,81 @@
+{
+  "observedOn": "2026-11-05",
+  "workItemId": "PRS-FEEDBACK-01",
+  "stage": "implementation-verification",
+  "baseRevision": "619f54249207b775c2dc532cda24a7e5f05ee4a7",
+  "baseTree": "add4692664e577de48c2863b62e078ac49d90adf",
+  "sha256": {
+    "src/project_record/feedback.py": "6c041ac7a357544c8ae64d4cfa585913f82c4f3e5c75f88bae6a357a70f52d31",
+    "src/project_record/__main__.py": "1f721afecd413f5eac4b763f01edbe884290c47da67ef013f3bdb7ff911bd2cb",
+    "tests/test_feedback.py": "60de72e983aebcf84c07df2a329bc59b4ea710fb06711bc565b5e39f42e63884",
+    "standards/FEEDBACK.md": "5b2d62098be5020fe792e1db1394a61d4ba8c895b8cc6c4dead7d192892c47fc",
+    "templates/feedback.example.json": "ac7ed72c6902b7898f19c2591358ae260605d063ca2ace2a881edc6e126f601e",
+    "templates/feedback-policy.example.json": "4e5c6a347decd60cfbab0b234042edc3b5933b90758d495e711f8eb5cfd22009",
+    "templates/feedback-search.example.json": "fc5ab2581d905eb364fa2b9f55d5b5d793ff29b905035bc392be732be7c66088",
+    "tests/fixtures/feedback/runtime-path-gap.json": "ac7ed72c6902b7898f19c2591358ae260605d063ca2ace2a881edc6e126f601e",
+    "tools/package_standard.py": "2533cbd6c6f4d185f8accc56541b1967f05166f4120213b6334de63a66b7e0e7",
+    "tests/test_packaging.py": "ecbe482831bc36b4243fc4f9dd99fabab70ca35bb656b2c3c5f0cf6f754159f9"
+  },
+  "tests": {
+    "feedback": 22,
+    "python": 213,
+    "javascript": 21
+  },
+  "checks": [
+    "source validation",
+    "public pipeline",
+    "20-document site build",
+    "README text/graphic parity",
+    "11 skill metadata entries",
+    "locked npm install",
+    "20 palette checks",
+    "deterministic public packaging",
+    "fresh-context review"
+  ],
+  "negativeResults": [
+    {
+      "kind": "environment",
+      "observation": "Initial full discovery failed to import test_site: Markdown absent after environment maintenance;212 discovered entries included the import error. Installed hash-pinned Markdown3.11.2 and reran all213 tests successfully."
+    },
+    {
+      "kind": "review",
+      "observation": "Literal root-cause redaction broke search binding; separate private queue identity now survives redaction, with regression."
+    },
+    {
+      "kind": "review",
+      "observation": "Failed initial atomic save left an unrecoverable existing directory; idempotent directory creation now permits same-ticket retry, with regression."
+    }
+  ],
+  "review": {
+    "producer": "Codex /root/feedback_review_resumed",
+    "status": "no-outstanding-material-findings",
+    "independentModels": false,
+    "blobIds": {
+      "src/project_record/feedback.py": "dd158a3d4ffcf3f3e4eca9e615055c45ad975640",
+      "tests/test_feedback.py": "65a7463cfec9300beb0db7d40a8576d3086d4974",
+      "standards/FEEDBACK.md": "49c2557d224b9033cb1804c4ebfc6482f2643a0d"
+    }
+  },
+  "pilot": "audit/feedback/2026-11-05/pilot.json",
+  "limits": [
+    "No real remote issue/comment/PR created by feedback transport",
+    "Host must supply authentic/fresh duplicate-search receipt, privacy judgment, grant and truthful bounded transport",
+    "No actual native runtime capture;#34/#35 remain separate",
+    "No Windows execution or independent-model effectiveness proof",
+    "No owner acceptance, release or measured whole-task time-saving claim"
+  ],
+  "skills": {
+    "bodiesChanged": false,
+    "suiteVersion": "0.4.1",
+    "reason": "Root AGENTS already routes real encountered gaps to standards/FEEDBACK.md. No demonstrated installed-skill defect justified a body change or suite redistribution; executable route and linked contract implement this package."
+  },
+  "sourceBeforeSha256": "07770294049b6da995d02ff5c707048fca229509c7bfbade58e31d74f1920b2f",
+  "countsBefore": {
+    "required": "29/42",
+    "retained": "29/52",
+    "newRequired": "11/24",
+    "acceptedMilestones": "4/13"
+  },
+  "completion": "Implementation criterion verified; canonical completion is a separate bounded writer step bound to the published implementation revision.",
+  "release": "Unreleased feedbackVersion1 interface; no package/suite/record contract version change"
+}

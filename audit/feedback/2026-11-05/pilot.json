@@ -1,0 +1,66 @@
+{
+  "observedOn": "2026-11-05",
+  "kind": "real-encounter-replay-local-route",
+  "encounterSource": "audit/runtime-adapters/2026-11-04/REPORT.md",
+  "search": {
+    "searchVersion": 1,
+    "destination": "interzettel/project-record-standard",
+    "rootCause": "runtime-cwd-parent-segments-pass-lexical-containment",
+    "observedOn": "2026-11-05",
+    "source": "Connector read-back https://github.com/interzettel/project-record-standard/pull/63 on 2026-11-05; root-cause evidence audit/runtime-adapters/2026-11-04/REPORT.md",
+    "coverage": "partial",
+    "resources": [
+      "pull-requests"
+    ],
+    "states": [
+      "closed"
+    ],
+    "nextCursor": null,
+    "matches": [
+      {
+        "rootCause": "runtime-cwd-parent-segments-pass-lexical-containment",
+        "url": "https://github.com/interzettel/project-record-standard/pull/63"
+      }
+    ]
+  },
+  "outcome": {
+    "status": "linked",
+    "reason": "Reuse verified existing root-cause report; no comment or new issue",
+    "submittedUrl": "https://github.com/interzettel/project-record-standard/pull/63",
+    "attempts": 0,
+    "search": {
+      "searchVersion": 1,
+      "destination": "interzettel/project-record-standard",
+      "rootCause": "runtime-cwd-parent-segments-pass-lexical-containment",
+      "observedOn": "2026-11-05",
+      "source": "Connector read-back https://github.com/interzettel/project-record-standard/pull/63 on 2026-11-05; root-cause evidence audit/runtime-adapters/2026-11-04/REPORT.md",
+      "coverage": "partial",
+      "resources": [
+        "pull-requests"
+      ],
+      "states": [
+        "closed"
+      ],
+      "nextCursor": null,
+      "matches": [
+        {
+          "rootCause": "runtime-cwd-parent-segments-pass-lexical-containment",
+          "url": "https://github.com/interzettel/project-record-standard/pull/63"
+        }
+      ]
+    }
+  },
+  "retainedQueueRecords": 1,
+  "secondPreparationReused": true,
+  "publicationCalls": 0,
+  "permissionPrompts": 0,
+  "actualRouteSeconds": 0.006159721000017271,
+  "queueTelemetry": {
+    "preparationSeconds": 0.0005550110000172026,
+    "reusedRootCauses": 0,
+    "transportSeconds": []
+  },
+  "trackingSecondsOutsideRoute": null,
+  "correctionSecondsOutsideRoute": null,
+  "limits": "Replay of a real already corrected PRS finding using its synthetic reproduction. Partial PR63 retrieval, not an exhaustive search. No new issue, comment, native runtime, model comparison, whole-task overhead or time-saving claim."
+}
