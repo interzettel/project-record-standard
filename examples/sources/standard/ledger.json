@@ -1148,13 +1148,54 @@
     },
     {
       "blocked": false,
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "completionBasis": "Complete opt-in README-only renderer/CLI provides accessible semantic SVG and granular source-backed work/milestone text without a site. Deterministic write/check preserves authored bytes, detects stale README/image/source, refuses private/colliding paths and recovers interrupted pairs. Cooperating PRS suite/native drift is rejected; independently published modules alone need their own version; host2.8.0 unchanged.11 profile/224 Python/21 JS tests pass and fresh review corrected source-overwrite/escaping cases. No new consumer migration, skill-body/version/release change, native34session or full browser/AT conformance claimed.",
       "criterion": "Fixture contains accessible granular work text and SVG with source identity. Deterministic rerun preserves authored README bytes; stale output is detected. Per-skill versions apply only to independently published modules; no mandatory website or host version rewrite.",
       "deferReason": null,
       "dependsOn": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-05",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+          "source": "src/project_record/readme_profile.py; src/project_record/build.py; standards/ADAPTATION-PROFILES.md; standards/GITHUB.md",
+          "subject": "PRS-TAILOR-README"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-05",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+          "source": "audit/readme-profile/2026-11-05/verification.json; tests/fixtures/readme-only/README.md; tests/fixtures/readme-only/assets/progress.svg",
+          "subject": "PRS-TAILOR-README"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-05",
+          "producer": "Codex /root/readme_profile_review",
+          "result": "passed",
+          "revision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+          "source": "audit/readme-profile/2026-11-05/verification.json:review",
+          "subject": "PRS-TAILOR-README"
+        },
+        {
+          "eventId": "prs:PRS-TAILOR-README:a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+          "kind": "work-result",
+          "observedOn": "2026-11-05",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+          "source": "https://github.com/interzettel/project-record-standard/pull/65",
+          "subject": "PRS-TAILOR-README",
+          "summary": "Complete opt-in README-only renderer/CLI provides accessible semantic SVG and granular source-backed work/milestone text without a site. Deterministic write/check preserves authored bytes, detects stale README/image/source, refuses private/colliding paths and recovers interrupted pairs. Cooperating PRS suite/native drift is rejected; independently published modules alone need their own version; host2.8.0 unchanged.11 profile/224 Python/21 JS tests pass and fresh review corrected source-overwrite/escaping cases. No new consumer migration, skill-body/version/release change, native34session or full browser/AT conformance claimed."
+        }
+      ],
       "groupId": "G6",
       "id": "PRS-TAILOR-README",
+      "implementationRevision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/2",
       "kind": "implementation",
       "milestoneId": "M6",
@@ -1162,8 +1203,8 @@
       "owner": "Implementing agent; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "selected-not-started",
-      "state": "ready",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Support README-only tracking and suite-level versioning",
       "unmappedDependencies": []
     },

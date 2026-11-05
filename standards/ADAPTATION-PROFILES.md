@@ -43,3 +43,27 @@ The same run is resumable and idempotent: inspect existing manifests and generat
 Test the skills on an empty project, a branded existing repository, an interrupted migration and a broken generated tracker. Verify repeated runs, partial histories, source failures, private/public projections, native GitHub field aliases and rollback. New owner approvals must remain explicit in all four cases. Tests must prove preservation of existing content and the absence of duplicate accounting.
 
 The reusable action, offline commands and agent skills are versioned together. Scouting uses the agent’s available repository/GitHub capabilities; the runtime performs no autonomous network reconciliation. Per-service writes require task authorization. Individual repository migrations remain separate work.
+
+## README-only presentation profile
+
+Choose `presentation.renderer: readme` when the project wants its tracker in the repository README. This is a complete presentation choice: no Pages configuration, website, JavaScript, hosting account or deployment is required. The project still owns its branding, source writer, version authority and acceptance decisions. Keep an existing website untouched when it is outside this package.
+
+Declare the project-owned theme and a graphic path relative to the README:
+
+```json
+{"renderer":"readme","theme":"theme.json","readmeImageUrl":"./assets/progress.svg"}
+```
+
+Omit `progressUrl`; a contradictory interactive route is refused. Add the existing `project-record:start` / `project-record:end` marker pair to the authored README. From the reviewed toolkit, preview the selected source-backed output:
+
+```sh
+PYTHONPATH=/reviewed/prs/src python3 -m project_record readme-profile --config /host/progress/projects.json --only example --readme /host/README.md --image /host/assets/progress.svg
+```
+
+Add `--write` to regenerate those two owned outputs. Add `--check` instead for a read-only parity gate: exit0 means current, exit1 means stale or invalid. It checks both the generated region and graphic against current declared inputs, rather than trusting a cached build. It does not install CI. An adopted host check can run it on source/manifest/theme changes without any Pages job. The older generic `readme` preview still returns success when its diff is nonempty; use this profile's parity command for the combined check.
+
+Acceptance: exact named required and accepted-milestone fractions, retained/deferred scope, source date/full digest, a labelled SVG with equivalent readable text, and every retained leaf's stable ID, title, priority/state, criterion, owner, dependencies and evidence. Milestone next actions and publication-receipt counts keep work, outcome acceptance and release distinct. Missing evidence remains Not recorded; empty denominators remain Not measured. Tables/disclosures require no hover controls.
+
+Only one explicit public project is selected. Private sources are refused; unselected source contents are not read. Outputs cannot overwrite any manifest-declared source/theme/supplement/snapshot or each other. The graphic stays under the README's repository subtree and its declared URL must match its actual path. Existing markers are required and outside-region bytes are preserved. Write uses a cooperative `.prs-lock` file beside the README; exclude those transport locks under host policy. An interruption between atomic image/README replacements can leave stale output; rerun `--check`, then `--write` from the same reviewed inputs. This is recovery by deterministic regeneration, not a two-file atomic transaction.
+
+`tests/fixtures/readme-only/` is a synthetic minimal host with no site configuration, a checked-in SVG/README, source/evidence and preserved application version. The reusable generator ships in PRS; host-owned generators can keep their own composition if they meet the same source/parity contract. Neither setup nor a passing check awards owner acceptance or publishes a package.

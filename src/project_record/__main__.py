@@ -71,8 +71,21 @@ def main(argv: list[str] | None = None) -> int:
     command.add_argument("--search", type=Path, required=True, help="Explicit duplicate-search receipt, including incomplete coverage")
     command.add_argument("--directory", type=Path, required=True, help="Private local proposal directory")
     command.add_argument("--apply", action="store_true", help="Retain local proposal; default previews. Never submits from this CLI")
+    command = subs.add_parser("readme-profile")
+    command.add_argument("--config", type=Path, required=True)
+    command.add_argument("--only", required=True, help="One README-only project ID")
+    command.add_argument("--readme", type=Path, required=True)
+    command.add_argument("--image", type=Path, required=True)
+    mode = command.add_mutually_exclusive_group()
+    mode.add_argument("--write", action="store_true")
+    mode.add_argument("--check", action="store_true", help="Exit1 if README or graphic is stale; never writes")
     args = parser.parse_args(argv)
     try:
+        if args.command == "readme-profile":
+            from .readme_profile import sync_readme
+            result = sync_readme(args.config, args.only, args.readme, args.image, write=args.write)
+            print(json.dumps(result, indent=2))
+            return 1 if args.check and result['changed'] else 0
         if args.command == "feedback":
             from .feedback import prepare_feedback
             result = prepare_feedback(json.loads(args.encounter.read_text()), json.loads(args.profile.read_text()),

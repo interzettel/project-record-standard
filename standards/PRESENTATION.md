@@ -29,6 +29,8 @@ Use project-owned colours and type. Keep the dense work map behind a disclosure 
 
 The README and Pages use the same source record and metric names. A live CI badge links to its actual workflow. Dated test counts and deployment observations are labelled snapshots. A static green badge does not establish ongoing health.
 
+For a complete repository-only presentation, select [the README-only profile](ADAPTATION-PROFILES.md#readme-only-presentation-profile). Its shared renderer provides granular text and an SVG, with a combined read-only stale-output gate. No website is a required companion. Use [the suite policy](GITHUB.md#cooperating-suite-and-independent-module-versions) without changing the consumer application’s version.
+
 ## Interactive Pages
 
 The site's own navigation can expose Overview, Roadmap, Work, Changes, Releases and Evidence. These are content roles, not compulsory route names or tabs. An adapting agent fits them to the site's existing architecture and preserves URLs and aliases.

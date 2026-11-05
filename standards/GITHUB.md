@@ -45,3 +45,17 @@ Tracker changes run the offline record/schema/reference checks and relevant rend
 After merge, build from a known revision. Follow the repository's accepted generated-file policy: build artifacts directly or use a generated update PR; preserve owner decisions such as the portfolio's generator-owner rule. The included CI file is an adaptation example and is not installed in any repository.
 
 Optional GitHub reconciliation is a separate bounded job with source/observation time, coverage, pagination and an error state. Authentication or quota failure keeps the last successful snapshot visibly stale. A freshly generated page cannot claim a fresh observation. No scheduled job or credential is created by this kit.
+
+## Cooperating suite and independent module versions
+
+Use one suite SemVer by default for cooperating skills/tools released together. Keep member inclusion, draft/available state, compatibility and actual publication receipts separate from that version. A skill name, file edit, review result or successful installation does not need a new independent version. Do not add per-skill SemVer/tag machinery merely because a suite contains several folders.
+
+A module needs its own version only when it is independently published and supported. Name its package/channel, public interface, native version authority, supported suite/record/runtime compatibility and immutable release bytes. An illustrative independent-module example is not a release receipt. The host application's version remains under its existing authority; a PRS adoption does not rewrite it to the toolkit version.
+
+For PRS's cooperating distribution, `pyproject.toml` owns the native release version and `skills/manifest.json` mirrors it as `suiteVersion`. `tools/check_skills.py` rejects drift. The record contract version and suite-manifest schema version remain different meanings. The check reads only the selected toolkit, not a consumer application's metadata; it does not change versions or prove behavior. `tests/fixtures/readme-only/version-policy.example.json` contrasts a cooperating host suite with an independently published module without claiming either was released.
+
+Follow [Semantic Versioning2.0.0](https://semver.org/spec/v2.0.0.html) for the declared package interface; major-zero development requires explicit compatibility assessment rather than assumptions of stability. Released bytes stay immutable; a changed package requires a new publication/version. Pin the observed commit/digest independently of the version label and use [the existing update policy](COMPATIBILITY.md) to assess/apply/defer. One cooperating suite version is a PRS policy, not a requirement to align unrelated projects.
+
+The [Agent Skills specification](https://agentskills.io/specification), inspected5 November2026, requires name/description and permits optional metadata, including a version example. It does not mandate independent SemVer for every skill. No new frontmatter/version field is introduced into PRS skill bodies here. Skill behavior evaluation, package validation, owner acceptance, release and downstream installation remain separate gates.
+
+[Diakrisis PR15](https://github.com/interzettel/diakrisis/pull/15) supplies merged README-only consumer evidence. [PR16](https://github.com/interzettel/diakrisis/pull/16) corrects its initial per-skill machinery to a single suite. These historical consumer changes inform this policy; they do not prove a new consumer migration or reviewer effectiveness.

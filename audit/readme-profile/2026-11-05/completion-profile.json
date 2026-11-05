@@ -1,0 +1,23 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-readme-completion-journal-20261105",
+  "output": "/tmp/prs-readme-completion-output-20261105",
+  "audience": "public",
+  "authority": {
+    "source": "Owner: go ahead; live34sessionslater; implement independent2. Existing bounded implementation/integration/reconciliation authority.",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-TAILOR-README": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}
