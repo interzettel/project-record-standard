@@ -201,6 +201,12 @@
           "observedOn": "2026-11-05",
           "path": "sources/standard/changes/CH-README-ONLY-PROFILE.json",
           "visibility": "public"
+        },
+        {
+          "authority": "Authored PRS-INSPECT-01 producer inventory and bounded declared selection",
+          "observedOn": "2026-11-05",
+          "path": "sources/standard/changes/CH-INSPECTOR-INVENTORY.json",
+          "visibility": "public"
         }
       ],
       "presentation": {
@@ -219,7 +225,7 @@
         "path": "examples/sources/standard/ledger.json",
         "updatedOn": "2026-11-05"
       },
-      "previousSourceFile": "sources/standard/reconciliation-history/91ee9e8100e21a8e87ca52a48280fba22c1e474604511218ca6feaf0388ea83c.json",
+      "previousSourceFile": "sources/standard/reconciliation-history/8d9067f5166e4597a99814dfb59a6e17367f35da7653303af4fcab2e9621b134.json",
       "project": {
         "id": "standard",
         "name": "Project record standard",
@@ -479,6 +485,17 @@
             "updatedOn": "2026-11-04"
           },
           "sourceFile": "sources/standard/reconciliation-history/07770294049b6da995d02ff5c707048fca229509c7bfbade58e31d74f1920b2f.json"
+        },
+        {
+          "source": {
+            "authority": "Canonical ledger: preserved historical claims and reviewed bounded delivery completion; new milestone outcomes remain unaccepted.",
+            "commit": null,
+            "kind": "file-snapshot",
+            "observedOn": "2026-11-05",
+            "path": "examples/sources/standard/ledger.json",
+            "updatedOn": "2026-11-05"
+          },
+          "sourceFile": "sources/standard/reconciliation-history/91ee9e8100e21a8e87ca52a48280fba22c1e474604511218ca6feaf0388ea83c.json"
         }
       ],
       "source": {

@@ -1,0 +1,39 @@
+test_cli_surfaces_all_declared_cases_without_scanning_neighbors (test_inspector_inventory.InspectorInventoryTests.test_cli_surfaces_all_declared_cases_without_scanning_neighbors) ... ok
+test_core_validation_exhaustion_is_unknown_and_does_not_abort_following_rows (test_inspector_inventory.InspectorInventoryTests.test_core_validation_exhaustion_is_unknown_and_does_not_abort_following_rows) ... ERROR
+test_deep_or_oversized_selection_is_rejected_without_traceback (test_inspector_inventory.InspectorInventoryTests.test_deep_or_oversized_selection_is_rejected_without_traceback) ... ok
+test_digest_mismatch_and_oversize_are_partial_not_validated (test_inspector_inventory.InspectorInventoryTests.test_digest_mismatch_and_oversize_are_partial_not_validated) ... ok
+test_duplicate_members_nonfinite_values_and_bad_utf8_are_malformed (test_inspector_inventory.InspectorInventoryTests.test_duplicate_members_nonfinite_values_and_bad_utf8_are_malformed) ... ok
+test_invalid_selection_fails_before_any_data_read (test_inspector_inventory.InspectorInventoryTests.test_invalid_selection_fails_before_any_data_read) ... ok
+test_only_declared_regular_files_are_read_without_transitive_manifest_reads (test_inspector_inventory.InspectorInventoryTests.test_only_declared_regular_files_are_read_without_transitive_manifest_reads) ... ok
+test_shape_only_recognition_does_not_claim_full_schema_validation (test_inspector_inventory.InspectorInventoryTests.test_shape_only_recognition_does_not_claim_full_schema_validation) ... ok
+test_source_and_render_times_do_not_refresh_on_inspection (test_inspector_inventory.InspectorInventoryTests.test_source_and_render_times_do_not_refresh_on_inspection) ... ok
+test_symlink_and_nonregular_targets_are_not_read (test_inspector_inventory.InspectorInventoryTests.test_symlink_and_nonregular_targets_are_not_read) ... ok
+test_unknown_versions_and_invalid_records_do_not_abort_other_entries (test_inspector_inventory.InspectorInventoryTests.test_unknown_versions_and_invalid_records_do_not_abort_other_entries) ... ok
+
+======================================================================
+ERROR: test_core_validation_exhaustion_is_unknown_and_does_not_abort_following_rows (test_inspector_inventory.InspectorInventoryTests.test_core_validation_exhaustion_is_unknown_and_does_not_abort_following_rows)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_inventory.py", line 130, in test_core_validation_exhaustion_is_unknown_and_does_not_abort_following_rows
+    result=self.inspect({'selectionVersion':1,'records':[row,self.selection['records'][0]]})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_inventory.py", line 27, in inspect
+    return inspect_inventory(self.root,self.selection if selection is None else selection,observed_at=OBSERVED)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector.py", line 134, in inspect_inventory
+    validate(value)
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/core.py", line 178, in validate
+    visit(item_id)
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/core.py", line 173, in visit
+    visit(dependency)
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/core.py", line 173, in visit
+    visit(dependency)
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/core.py", line 173, in visit
+    visit(dependency)
+  [Previous line repeated 978 more times]
+RecursionError: maximum recursion depth exceeded
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.274s
+
+FAILED (errors=1)

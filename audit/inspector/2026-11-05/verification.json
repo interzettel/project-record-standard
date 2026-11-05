@@ -1,0 +1,83 @@
+{
+  "observedOn": "2026-11-05",
+  "workItemId": "PRS-INSPECT-01",
+  "baseRevision": "4030b63c3cf6487ae7ea659be8d6962e795a16f5",
+  "baseTree": "44bf9722b6a6171e24f87369fc81e5858270d488",
+  "implementationSha256": {
+    "src/project_record/inspector.py": "4ad35582b8372527298fcbafdfaa71447301a14882a905f00e5479d359709c74",
+    "src/project_record/__main__.py": "760c7ab467d3e957d7fa2476e91844d6cf1a6f887ef75f62f96d8878e1491cbf",
+    "standards/inspector-inventory.json": "eea7ae75b00c3ee728d344475ac04acecaa10d8ca8f6c2a106eb403424851d25",
+    "standards/RECORD-INSPECTOR.md": "7bad547a957e7ccd2b8eb2fa533204a0d753bb895cf4a562686c658ef170ae3e",
+    "standards/RECORDS.md": "5e26ec23825c142ba06968ef768093eae7a4e71a619e8b98c5acff7b63ba91d3",
+    "tests/test_inspector_inventory.py": "5cb3ed33e375b3e3fa58f3b3cd16eba309cc576c5c5fd7072eaa80b8ceccb74d",
+    "tests/test_packaging.py": "0da1a9a2e320a946904831df5ee65b7fb1a1a2ac336f8be3c5fcdb158d760f07",
+    "tools/package_standard.py": "8122fc520ccf86420ca3543aeb2aa4362ba110164e1c33402ca445d293d1502a",
+    "tools/build_site.py": "8f1cbca473c9846d59dfbb337cd0059ee8f47df9ccafe2c105dbe3076cb6ad71",
+    "MANIFEST.in": "2fb78bd2e0dc93068eb4d761390821e58e005626987ad26e719dbe5fe7e99b94"
+  },
+  "releaseBaseline": {
+    "tag": "v0.4.1",
+    "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+    "smoke": "released-producer-proof.json",
+    "portableWitness": "tests/fixtures/inspector/provenance.json"
+  },
+  "coverage": {
+    "families": 29,
+    "knownKinds": 7,
+    "coreContractKinds": 1,
+    "shapeOnlyKinds": 6,
+    "repositoryCensus": "not-performed",
+    "semanticInspectorUI": "not-implemented",
+    "publicExportGate": "not-implemented"
+  },
+  "checks": {
+    "inspectorTests": 14,
+    "pythonTests": 238,
+    "javascriptTests": 21,
+    "skillEntries": 11,
+    "palettePairs": 20,
+    "siteDocuments": 21,
+    "sourceValidation": "passed",
+    "publicPipeline": "passed",
+    "readmeParity": "passed",
+    "publicPackaging": "passed"
+  },
+  "review": {
+    "producer": "Codex /root/inspector_inventory_review",
+    "status": "no-remaining-material-blocker",
+    "independentModels": false,
+    "findings": [
+      "A1200-item chain exhausted recursive core validation and aborted later rows; now validation-unavailable per row with regression",
+      "Site-copy manifest and record/history/delivery paths missing from catalogue; aliases/copy attribution added",
+      "Portable fixture provenance pointer added for source kit, which excludes audit"
+    ]
+  },
+  "negativeResults": [
+    "Expected missing-command red before implementation",
+    "Unhashable future contract metadata fixed; duplicate-ID test setup corrected",
+    "Recursive core exhaustion corrected without a second validator",
+    "Initial release smoke needed existing disposable installer target; fixed harness",
+    "Initial full suite237 entries/errors3 lacked pinned Markdown; restored hash-pinned dependency and all238 passed"
+  ],
+  "limits": [
+    "Owner-local diagnostic only; metadata can remain private",
+    "Seven declared kinds are not universal schema coverage; six receive entry-point shape checks only",
+    "Search/scan/network/ref traversal and input-body output are absent",
+    "Host timestamps/producer identities/visibility and hashes do not authenticate source or approval",
+    "No #18 UI, #19 public integration, native34/model-effectiveness/acceptance or release claim"
+  ],
+  "skillBodiesChanged": false,
+  "versions": {
+    "package": "0.4.1",
+    "suite": "0.4.1",
+    "recordContract": "0.2.0"
+  },
+  "sourceBeforeSha256": "8d9067f5166e4597a99814dfb59a6e17367f35da7653303af4fcab2e9621b134",
+  "countsBefore": {
+    "required": "31/42",
+    "retained": "31/52",
+    "newRequired": "13/24",
+    "acceptedMilestones": "4/13"
+  },
+  "completion": "Implementation verified; routine completion follows through shared writer at published implementation revision."
+}

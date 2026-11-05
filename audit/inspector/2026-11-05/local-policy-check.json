@@ -1,0 +1,14 @@
+{
+  "exitCode": 0,
+  "overall": "pass",
+  "inputs": {
+    "beforeSourceSha256": "8d9067f5166e4597a99814dfb59a6e17367f35da7653303af4fcab2e9621b134",
+    "afterSourceSha256": "8e5714a5fb688d2d49e9642612c93125c873204b6474500f69fefa2b270700be",
+    "beforeCanonicalSha256": "b09c65b26be2d2182470964217f8a777ca2af4e5ea2cbc44089ce160af7be653",
+    "afterCanonicalSha256": "1cfb6c8afdd207ab43ad447fc346195a098af29dc476456325ab67c7e60ccd5e"
+  },
+  "hostDecisions": [],
+  "reason": "Verdict covers selected data predicates and separately adopted exact-input authority decisions only",
+  "baseRevision": "4030b63c3cf6487ae7ea659be8d6962e795a16f5",
+  "audienceReview": "Minimized public PRS result/input hashes only; raw diagnostic paths omitted."
+}

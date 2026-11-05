@@ -1,0 +1,66 @@
+[
+  {
+    "project": "synthetic-reconcile",
+    "audience": "public",
+    "source": {
+      "kind": "file-snapshot",
+      "path": "ledger.json",
+      "commit": null,
+      "observedOn": "2026-10-30",
+      "authority": "Synthetic fixture author only; not a consumer observation",
+      "sha256": "585a2450d71d28610ffd0e8743389c979e693dc044dc9a818f6cc07c065bd99d"
+    },
+    "metrics": {
+      "work": {
+        "done": 0,
+        "total": 1,
+        "percent": 0.0,
+        "active": 1,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / required-leaves"
+      },
+      "ledger": {
+        "done": 0,
+        "total": 1,
+        "percent": 0.0,
+        "active": 1,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / retained-ledger-leaves"
+      },
+      "milestones": {
+        "done": 0,
+        "total": 1,
+        "known": 1,
+        "percent": 0.0,
+        "method": "accepted-milestones / declared-milestones"
+      },
+      "roadmapMean": {
+        "percent": 0.0,
+        "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+        "milestoneCount": 1
+      }
+    },
+    "files": [
+      "synthetic-reconcile/record.json",
+      "synthetic-reconcile/history.json",
+      "synthetic-reconcile/delivery.json",
+      "synthetic-reconcile/CHANGELOG-generated.md",
+      "synthetic-reconcile/progress.svg",
+      "synthetic-reconcile/README-module.md"
+    ],
+    "sha256": {
+      "synthetic-reconcile/record.json": "b48a55b32d55924933b6ddd7ba95cc589750aaf8d7857664739d9f8f8194f79b",
+      "synthetic-reconcile/history.json": "3aa88890a04621d9f65078d67739777f3691de284e57bc8730e1744429a902d1",
+      "synthetic-reconcile/delivery.json": "ec6a6723a4719132a4e554cd6bce5f74b583d50e0b8a05afed8ecd207521a880",
+      "synthetic-reconcile/CHANGELOG-generated.md": "dd9a3912b7597c171dc9a1bd27df8d0c045b595ba0fd2bceb7da1474213e7854",
+      "synthetic-reconcile/progress.svg": "7902b911607d3ce1846ce0defea31c51297266bfa26ec516d89336ed81f42eb3",
+      "synthetic-reconcile/README-module.md": "8d642e22714a8b8859553bbef96637332903d440844d81dfbf2256810aed6b5b"
+    }
+  }
+]

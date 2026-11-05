@@ -83,3 +83,7 @@ Keep native language, case, existing IDs and paths. An ID names the work/decisio
 A generated index never becomes another completion ledger. Empty generated directories create no records. Preserve prior evidence identities and failures, record moved locators, and retain explicit successor links for decisions. A sensitive source may require erasure under its host policy: keep only an allowed amendment/tombstone and do not claim erased bytes remain reproducible. #25/#26 consume this mapping for broader conventions rather than introduce competing ownership.
 
 The tests cover README-only research, private personal-agent and shared-repository metadata. They are synthetic local applications, not real host migrations, agent-memory effectiveness experiments or model/runtime conformance evidence. All actual host access and acceptance boundaries remain unchanged.
+
+## Declared inspector coverage
+
+The [record inventory](RECORD-INSPECTOR.md) distinguishes released producers, adopter-authored inputs, unreleased local APIs/transport and hypothetical receipts. Its bounded selector reads explicit files only and produces owner-local metadata, not a public projection. The unified inspector and public integration gates remain separate work.

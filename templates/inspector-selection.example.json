@@ -1,0 +1,93 @@
+{
+  "selectionVersion": 1,
+  "records": [
+    {
+      "id": "REC-1",
+      "path": "record.json",
+      "kind": "project-record",
+      "visibility": "public",
+      "sourceObservedOn": "2026-10-30",
+      "sourceUpdatedOn": null,
+      "renderedAt": "2026-11-05T12:00:00Z",
+      "producerRevision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "synthetic": true
+    },
+    {
+      "id": "HIST-1",
+      "path": "history.json",
+      "kind": "history",
+      "visibility": "public",
+      "sourceObservedOn": "2026-10-30",
+      "sourceUpdatedOn": null,
+      "renderedAt": "2026-11-05T12:00:00Z",
+      "producerRevision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "synthetic": true
+    },
+    {
+      "id": "DEL-1",
+      "path": "delivery.json",
+      "kind": "delivery",
+      "visibility": "public",
+      "sourceObservedOn": "2026-10-30",
+      "sourceUpdatedOn": null,
+      "renderedAt": "2026-11-05T12:00:00Z",
+      "producerRevision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "synthetic": true
+    },
+    {
+      "id": "BUILD-1",
+      "path": "build-manifest.json",
+      "kind": "build-manifest",
+      "visibility": "public",
+      "sourceObservedOn": "2026-10-30",
+      "sourceUpdatedOn": null,
+      "renderedAt": "2026-11-05T12:00:00Z",
+      "producerRevision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "synthetic": true
+    },
+    {
+      "id": "INSTALL-1",
+      "path": "installation.json",
+      "kind": "installation-receipt",
+      "visibility": "private",
+      "sourceObservedOn": "2026-10-30",
+      "sourceUpdatedOn": null,
+      "renderedAt": "2026-11-05T12:00:00Z",
+      "producerRevision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "synthetic": true
+    },
+    {
+      "id": "MISSING-1",
+      "path": "absent.json",
+      "kind": "project-record",
+      "visibility": "public",
+      "sourceObservedOn": "2026-10-30",
+      "sourceUpdatedOn": null,
+      "renderedAt": "2026-11-05T12:00:00Z",
+      "producerRevision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "synthetic": true
+    },
+    {
+      "id": "BROKEN-1",
+      "path": "malformed.json",
+      "kind": "project-record",
+      "visibility": "public",
+      "sourceObservedOn": "2026-10-30",
+      "sourceUpdatedOn": null,
+      "renderedAt": "2026-11-05T12:00:00Z",
+      "producerRevision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "synthetic": true
+    },
+    {
+      "id": "FUTURE-1",
+      "path": "unsupported.json",
+      "kind": "hypothetical-approval",
+      "visibility": "public",
+      "sourceObservedOn": "2026-10-30",
+      "sourceUpdatedOn": null,
+      "renderedAt": "2026-11-05T12:00:00Z",
+      "producerRevision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "synthetic": true
+    }
+  ]
+}

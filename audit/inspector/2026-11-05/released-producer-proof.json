@@ -1,0 +1,36 @@
+{
+  "release": "v0.4.1",
+  "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+  "method": "Execute pinned release modules on disposable synthetic inputs; no network, publication, credential or live model call",
+  "artifactSha256": {
+    "installation.json": "39baf993a64f3b4ddfc56fb743349eca29eed56f44654f607f5fd714c9a4bfc9",
+    "record.json": "b48a55b32d55924933b6ddd7ba95cc589750aaf8d7857664739d9f8f8194f79b",
+    "delivery.json": "ec6a6723a4719132a4e554cd6bce5f74b583d50e0b8a05afed8ecd207521a880",
+    "history.json": "3aa88890a04621d9f65078d67739777f3691de284e57bc8730e1744429a902d1",
+    "build-manifest.json": "c8ef1cc5b57d58383df5e9283edada0d02544c5c973175b4e1484558e4090669"
+  },
+  "pipelineFiles": [
+    "synthetic-reconcile/record.json",
+    "synthetic-reconcile/history.json",
+    "synthetic-reconcile/delivery.json",
+    "synthetic-reconcile/CHANGELOG-generated.md",
+    "synthetic-reconcile/progress.svg",
+    "synthetic-reconcile/README-module.md"
+  ],
+  "scaffoldCreated": [
+    "progress/ledger.json",
+    "progress/project-record.json",
+    "progress/theme.json",
+    "README.md"
+  ],
+  "installationSuite": "0.4.1",
+  "producerSha256": {
+    "src/project_record/build.py": "610cb40ac448a7a1b8949b3933ec5fe975228f33789088c8730f7b5cbf9afa89",
+    "src/project_record/scaffold.py": "03040605b4171e571c844215be41bcc4933e3c8e844f049d38c9b47957adb9eb",
+    "src/project_record/agents.py": "e0e26182cbf9d2cfcab8774ce13be2c404f68d24550db4c4281ca6011deb8e47",
+    "src/project_record/status.py": "bc22e2fe1af2b04da9e944b6269004fcaa342eae31d675db64372500a2f1f896",
+    "tools/build_site.py": "73402cf890627dbf02645b654dc3bb45c52d5f1b5b9ee62da778fc4c62e93d09",
+    "tools/build_schemas.py": "aa98e979c98b47df67147d8833a790e8af96361697d5661890eca10320f813e1"
+  },
+  "limits": "Synthetic smoke verifies bounded release producers, not full conformance of every JSON channel or actual consumer installation."
+}
