@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-INSPECT-02:8079c20998782905c520f5447987d0225b4db1b3",
+  "projectId": "standard",
+  "workItemId": "PRS-INSPECT-02",
+  "sourceSha256": "8e5714a5fb688d2d49e9642612c93125c873204b6474500f69fefa2b270700be",
+  "manifestSha256": "0fe99ab70ef183fe8413cf9f12c232949fd8dec436b12a77d9d00218c8a4d54c",
+  "artifactRevision": "8079c20998782905c520f5447987d0225b4db1b3",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/67",
+  "observedOn": "2026-11-06",
+  "summary": "Owner-local single-file offline semantic inspector with shared work/delivery calculations, exact selected-field joins, separate source/render clocks and29-family view/fallback mapping.257 Python/24 JS tests and installed-wheel smoke pass. Six fresh-review blockers reproduced/fixed; author final disposition records remaining native browser limits. No public inspector export, native34 evidence, milestone acceptance or release claim.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-INSPECT-02",
+      "revision": "8079c20998782905c520f5447987d0225b4db1b3",
+      "result": "passed",
+      "source": "src/project_record/inspector.py; src/project_record/inspector_views.py; web/inspector.mjs; web/inspector.css",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-06"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-INSPECT-02",
+      "revision": "8079c20998782905c520f5447987d0225b4db1b3",
+      "result": "passed",
+      "source": "audit/inspector-views/2026-11-06/verification.json; tests/test_inspector.py; tests/inspector.test.mjs",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-06"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-INSPECT-02",
+      "revision": "8079c20998782905c520f5447987d0225b4db1b3",
+      "result": "passed",
+      "source": "audit/inspector-views/2026-11-06/review.json; verification.json:review final disposition",
+      "producer": "Codex /root final disposition using GPT-6 Astra fresh review and RED to GREEN regressions",
+      "observedOn": "2026-11-06"
+    }
+  ],
+  "discoveries": []
+}

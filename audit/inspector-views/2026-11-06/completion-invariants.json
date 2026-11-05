@@ -1,0 +1,39 @@
+{
+  "changedLeaves": [
+    "PRS-INSPECT-02"
+  ],
+  "changedFields": [
+    "completionBasis",
+    "evidence",
+    "implementationRevision",
+    "sourceState",
+    "state"
+  ],
+  "addedIds": [],
+  "removedIds": [],
+  "denominatorEffect": 0,
+  "rawBeforeSha256": "8e5714a5fb688d2d49e9642612c93125c873204b6474500f69fefa2b270700be",
+  "preservedRawSnapshot": "examples/sources/standard/reconciliation-history/8e5714a5fb688d2d49e9642612c93125c873204b6474500f69fefa2b270700be.json",
+  "beforeObservation": "before-normalized.json and before-metadata.json captured together after fragment registration before completion; source/metadata match implementation8079c20998782905c520f5447987d0225b4db1b3",
+  "before": {
+    "required": "32/42",
+    "retained": "32/52",
+    "accepted": "4/13"
+  },
+  "after": {
+    "required": "33/42",
+    "requiredPercent": 78.6,
+    "retained": "33/52",
+    "retainedPercent": 63.5,
+    "newlyRequired": "15/24",
+    "accepted": "4/13"
+  },
+  "scope": "Unchanged IDs/criteria/prerequisites/milestones/versions; only18completion",
+  "next": "PRS-INSPECT-03/#19/M6",
+  "native34": "Owner-deferred; no credit",
+  "publication": "v0.4.1 unchanged; new inspector unreleased, no generated page published",
+  "harnessCorrections": [
+    "Initial assertion iterated existing keys and omitted new implementationRevision; fixed with union of keys, source event not reapplied",
+    "Generated output includes event-hash directory; copied from actual observed dedicated output path"
+  ]
+}

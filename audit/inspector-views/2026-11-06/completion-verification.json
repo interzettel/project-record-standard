@@ -1,0 +1,16 @@
+{
+  "implementationRevision": "8079c20998782905c520f5447987d0225b4db1b3",
+  "implementationTree": "1c6413fc8198fa16c70d01b11228ea18cbe44cb0",
+  "codeHashes": "All verification.json hashes still match; no code or tests changed during completion reconciliation",
+  "beforeObservation": "Metadata equals immutable implementation34cff5b/8079c2; raw ledger hash equals event precondition and preserved snapshot",
+  "checks": {
+    "python": 257,
+    "javascript": 24,
+    "publicPipeline": "pass; no generated inspector HTML",
+    "site": "21 documents pass",
+    "readme": "text and graphic parity pass",
+    "trustedBasePolicy": "exit0, no authority decisions/exemptions"
+  },
+  "scopeEffect": "Only PRS-INSPECT-02 Done; denominator0; required33/42 retained33/52 accepted4/13",
+  "remaining": "#19 public/privacy and actual integrated-profile proof; native browser checks not-tested; live34owner-deferred; no version/release change"
+}
