@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-INSPECT-01:69ce2cd2e00cb350e82e9dff186a4f3697152551",
+  "projectId": "standard",
+  "workItemId": "PRS-INSPECT-01",
+  "sourceSha256": "8d9067f5166e4597a99814dfb59a6e17367f35da7653303af4fcab2e9621b134",
+  "manifestSha256": "2836f936f75bb09921ca12651cfbc729e07126bd4fee2adfcb11f7ca617f1f39",
+  "artifactRevision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/66",
+  "observedOn": "2026-11-05",
+  "summary": "Inventory29 released/adopter/main/planned JSON families with paths, producer/schema/ownership/sensitivity/planned view. Pinned0.4.1 build/scaffold/installer smoke and synthetic fixture prove bounded explicit selection, stable IDs/source-render-inspection separation and missing/malformed/unknown/unselected cases.14 inspector/238 Python/21 JS tests pass; fresh review fixed per-file core recursion exhaustion and site-copy aliases. Local diagnostics only, no input-body/public export, UI18/privacy19/native34/model/acceptance/release claim.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-INSPECT-01",
+      "revision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+      "result": "passed",
+      "source": "standards/inspector-inventory.json; standards/RECORD-INSPECTOR.md; src/project_record/inspector.py",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-05"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-INSPECT-01",
+      "revision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+      "result": "passed",
+      "source": "audit/inspector/2026-11-05/verification.json; tests/fixtures/inspector/provenance.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-05"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-INSPECT-01",
+      "revision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+      "result": "passed",
+      "source": "audit/inspector/2026-11-05/verification.json:review",
+      "producer": "Codex /root/inspector_inventory_review",
+      "observedOn": "2026-11-05"
+    }
+  ],
+  "discoveries": []
+}

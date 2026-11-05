@@ -1210,13 +1210,54 @@
     },
     {
       "blocked": false,
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "completionBasis": "Inventory29 released/adopter/main/planned JSON families with paths, producer/schema/ownership/sensitivity/planned view. Pinned0.4.1 build/scaffold/installer smoke and synthetic fixture prove bounded explicit selection, stable IDs/source-render-inspection separation and missing/malformed/unknown/unselected cases.14 inspector/238 Python/21 JS tests pass; fresh review fixed per-file core recursion exhaustion and site-copy aliases. Local diagnostics only, no input-body/public export, UI18/privacy19/native34/model/acceptance/release claim.",
       "criterion": "Inventory separates real producer output from adopter inputs and hypothetical receipts. Declared files are bounded; no recursive scan or private-input publication is implied. Fixture supplies stable identities, source/render timestamps and negative cases for later packages.",
       "deferReason": null,
       "dependsOn": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-05",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+          "source": "standards/inspector-inventory.json; standards/RECORD-INSPECTOR.md; src/project_record/inspector.py",
+          "subject": "PRS-INSPECT-01"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-05",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+          "source": "audit/inspector/2026-11-05/verification.json; tests/fixtures/inspector/provenance.json",
+          "subject": "PRS-INSPECT-01"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-05",
+          "producer": "Codex /root/inspector_inventory_review",
+          "result": "passed",
+          "revision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+          "source": "audit/inspector/2026-11-05/verification.json:review",
+          "subject": "PRS-INSPECT-01"
+        },
+        {
+          "eventId": "prs:PRS-INSPECT-01:69ce2cd2e00cb350e82e9dff186a4f3697152551",
+          "kind": "work-result",
+          "observedOn": "2026-11-05",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+          "source": "https://github.com/interzettel/project-record-standard/pull/66",
+          "subject": "PRS-INSPECT-01",
+          "summary": "Inventory29 released/adopter/main/planned JSON families with paths, producer/schema/ownership/sensitivity/planned view. Pinned0.4.1 build/scaffold/installer smoke and synthetic fixture prove bounded explicit selection, stable IDs/source-render-inspection separation and missing/malformed/unknown/unselected cases.14 inspector/238 Python/21 JS tests pass; fresh review fixed per-file core recursion exhaustion and site-copy aliases. Local diagnostics only, no input-body/public export, UI18/privacy19/native34/model/acceptance/release claim."
+        }
+      ],
       "groupId": "G6",
       "id": "PRS-INSPECT-01",
+      "implementationRevision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/17",
       "kind": "research",
       "milestoneId": "M6",
@@ -1224,8 +1265,8 @@
       "owner": "Implementing agent; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "selected-not-started",
-      "state": "ready",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Inventory declared JSON producers and define inspector coverage",
       "unmappedDependencies": []
     },

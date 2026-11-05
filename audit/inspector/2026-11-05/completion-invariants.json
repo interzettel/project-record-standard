@@ -1,0 +1,28 @@
+{
+  "implementationRevision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+  "changedLeaves": [
+    "PRS-INSPECT-01"
+  ],
+  "priorRawSha256": "8d9067f5166e4597a99814dfb59a6e17367f35da7653303af4fcab2e9621b134",
+  "afterRawSha256": "8e5714a5fb688d2d49e9642612c93125c873204b6474500f69fefa2b270700be",
+  "scopeCriteriaDependenciesAndAcceptanceUnchanged": true,
+  "reviewedImplementationHashesUnchanged": true,
+  "replay": "duplicate",
+  "before": {
+    "required": "31/42",
+    "retained": "31/52",
+    "newRequired": "13/24",
+    "acceptedMilestones": "4/13"
+  },
+  "after": {
+    "required": "32/42",
+    "retained": "32/52",
+    "newRequired": "14/24",
+    "acceptedMilestones": "4/13"
+  },
+  "nextIndependent": "PRS-INSPECT-02/#18/M6",
+  "deferred": "PRS-HOOK-01/#34 live sessions",
+  "release": "None;v0.4.1 remains published",
+  "observationScopes": "observation-scopes.json",
+  "normalizedBaselineStage": "pre-implementation, not immediate precompletion"
+}

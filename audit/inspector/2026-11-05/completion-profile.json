@@ -1,0 +1,23 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-inspector-completion-journal-20261105",
+  "output": "/tmp/prs-inspector-completion-output-20261105",
+  "audience": "public",
+  "authority": {
+    "source": "Owner go go go for17; existing bounded implementation/integration/reconciliation authority. Live34sessions stay deferred.",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-INSPECT-01": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}

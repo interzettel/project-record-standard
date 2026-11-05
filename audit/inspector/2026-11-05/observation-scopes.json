@@ -1,0 +1,27 @@
+{
+  "beforeMetadata": {
+    "path": "before-metadata.json",
+    "stage": "pre-implementation baseline",
+    "revision": "4030b63c3cf6487ae7ea659be8d6962e795a16f5",
+    "meaning": "Captured before this package registered its new change fragment"
+  },
+  "beforeNormalized": {
+    "path": "before-normalized.json",
+    "stage": "pre-implementation baseline",
+    "meaning": "Immutable normalized observation for the whole bounded package; not an immediate precompletion capture"
+  },
+  "immediatePrecompletionMetadata": {
+    "path": "precompletion-metadata.json",
+    "revision": "69ce2cd2e00cb350e82e9dff186a4f3697152551",
+    "meaning": "Exact selected standard manifest entry after implementation/change-fragment registration, before completion"
+  },
+  "immediatePrecompletionRaw": {
+    "path": "../../../examples/sources/standard/reconciliation-history/8d9067f5166e4597a99814dfb59a6e17367f35da7653303af4fcab2e9621b134.json",
+    "meaning": "Exact raw ledger bytes; implementation did not change the raw ledger"
+  },
+  "comparison": {
+    "path": "comparison.json",
+    "meaning": "Whole-package preimplementation baseline to completed observation; new change registration is an implementation observation, not added accounting scope"
+  },
+  "noDuplicateNormalizedCapture": "Immediate precompletion source is reconstructible at immutable implementation revision; no separate immediate normalized snapshot is claimed."
+}
