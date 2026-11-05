@@ -33,6 +33,7 @@ DOCUMENTS = [
     ('GITHUB', 'Issues and GitHub Projects'),
     ('AUTOMATION', 'Automation'),
     ('RUNTIME-ADAPTERS', 'Experimental runtime adapters'),
+    ('RECORD-INSPECTOR', 'Record inventory and inspector coverage'),
     ('ADAPTATION-PROFILES', 'New and existing projects'),
     ('AGENT-WORKFLOWS', 'Agent skills and planning'),
     ('READINESS', 'L0–L5 agent readiness'),

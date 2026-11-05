@@ -1,0 +1,488 @@
+{
+  "inventoryVersion": 1,
+  "baseline": {
+    "release": "v0.4.1",
+    "revision": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+    "mainRevision": "4030b63c3cf6487ae7ea659be8d6962e795a16f5",
+    "observedOn": "2026-11-05"
+  },
+  "coverage": {
+    "scope": "Reviewed named producer/adapter families in src/project_record and listed tools/templates; not a recursive JSON census",
+    "repositoryJsonCensus": "not-performed",
+    "downstreamCoverage": "not-assessed",
+    "viewImplementation": "Unified inspector #18 pending; existing reference presentations remain available",
+    "privacyPublicationGate": "#19 pending",
+    "releaseSmoke": "audit/inspector/2026-11-05/released-producer-proof.json",
+    "releaseFixtureProof": "tests/fixtures/inspector/provenance.json"
+  },
+  "records": [
+    {
+      "id": "R-RECORD",
+      "kind": "normalized project record",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "{build}/{project}/record.json",
+        "{export}/{project}.json",
+        "{site}/{project}/record.json"
+      ],
+      "producer": "src/project_record/build.py:build; __main__.py:export; adapters.py:load_config; tools/build_site.py copies verified outputs",
+      "ownership": "Derived normalized projection; declared ledger/adopter owns work and acceptance fields",
+      "sensitivity": "Selected audience; public export explicitly validates visibility",
+      "schemaStatus": "record contract0.1.0/0.2.0; schemas/record.schema.json plus existing core cross-record checks",
+      "plannedView": "Overview, work, milestones, source/evidence links",
+      "selectorKind": "project-record",
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "R-HISTORY",
+      "kind": "pinned observation timeline",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "{build}/{project}/history.json",
+        "{site}/{project}/history.json"
+      ],
+      "producer": "src/project_record/build.py:build; timeline.py:make_timeline; tools/build_site.py copies verified outputs",
+      "ownership": "Derived from explicit ordered source observations, not build time",
+      "sensitivity": "Same selected audience as source; not automatically current",
+      "schemaStatus": "No standalone JSON schema; selector checks coverage/snapshots/comparisons entry shape only",
+      "plannedView": "Scope/state history with unknown intervening events",
+      "selectorKind": "history",
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "R-DELIVERY",
+      "kind": "change/candidate/publication/deployment projection",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "{build}/{project}/delivery.json",
+        "{site}/{project}/delivery.json"
+      ],
+      "producer": "src/project_record/build.py:build; delivery.py:delivery_summary; tools/build_site.py copies verified outputs",
+      "ownership": "Derived from authored delivery records; merge is not publication",
+      "sensitivity": "Same selected audience; historical observed receipts may be incomplete",
+      "schemaStatus": "No standalone schema; entry shape only; no receipt authentication",
+      "plannedView": "Changes, candidate gates, actual publications, deployments",
+      "selectorKind": "delivery",
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "R-BUILD",
+      "kind": "generated-output identity manifest",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "{build}/build-manifest.json",
+        "{site}/record-build-manifest.json"
+      ],
+      "producer": "src/project_record/build.py:build; tools/build_site.py verified manifest copy",
+      "ownership": "Generator owns file list/digests; source dates remain source-owned",
+      "sensitivity": "Only a validated public build is a public projection",
+      "schemaStatus": "Unversioned list of project/source/metric/file/hash entries; shape-only",
+      "plannedView": "Build identity and source/output traceability",
+      "selectorKind": "build-manifest",
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "R-INSTALL",
+      "kind": "agent installation ownership receipt",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "{host}/.project-record/agent-installation.json"
+      ],
+      "producer": "src/project_record/agents.py:install_skills",
+      "ownership": "Local installer owns installed-file/rule digests; host owns instructions and adoption",
+      "sensitivity": "Private/local by default; file map and instruction digests are not a public report",
+      "schemaStatus": "schemaVersion1 in producer; selector checks entry shape/version, not host file equality",
+      "plannedView": "Installed suite/pin and interrupted install evidence",
+      "selectorKind": "installation-receipt",
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "R-SITE",
+      "kind": "site build identity",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "{site}/website-build.json"
+      ],
+      "producer": "tools/build_site.py:build_site",
+      "ownership": "Site generator owns copied hashes; deployment health has a separate observer",
+      "sensitivity": "Public only for validated public inputs; not proof of hosted health",
+      "schemaStatus": "No standalone schema or selector yet",
+      "plannedView": "Site/source/revision identity and delivery link",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "R-SCHEMA",
+      "kind": "normalized record JSON schema",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "schemas/record.schema.json"
+      ],
+      "producer": "tools/build_schemas.py:main",
+      "ownership": "Versioned schema source/generated definition; not project state",
+      "sensitivity": "Public toolkit definition",
+      "schemaStatus": "JSON Schema document; not itself a project-record; no selector yet",
+      "plannedView": "Schema/validator coverage and limits",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "R-COLD-SEED",
+      "kind": "initial scaffold JSON",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "{host}/progress/ledger.json",
+        "{host}/progress/project-record.json",
+        "{host}/progress/theme.json"
+      ],
+      "producer": "src/project_record/scaffold.py:initialize",
+      "ownership": "Seed becomes host-authored input; empty scope is unapproved, not Done",
+      "sensitivity": "Private initial project by default",
+      "schemaStatus": "Adapter ledger, source manifest and theme are distinct shapes; not all normalized exports",
+      "plannedView": "Setup state and unresolved authority (link to input types)",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "R-ARCHIVE",
+      "kind": "copied public JSON inside source kit",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "{extracted-kit}/examples/projects.json",
+        "{extracted-kit}/{explicitly selected source/snapshot/supplement/change JSON}",
+        "{extracted-kit}/templates/{explicit template}.json",
+        "{extracted-kit}/schemas/record.schema.json",
+        "{extracted-kit}/skills/manifest.json",
+        "{extracted-kit}/progress/{explicit authored record}.json"
+      ],
+      "producer": "tools/package_standard.py:package",
+      "ownership": "Filtered copies retain upstream authored ownership; archive checksum is not approval",
+      "sensitivity": "Public-input-only source distribution; no private portfolio export",
+      "schemaStatus": "Same underlying input kinds; ZIP is not automatically opened by inspector",
+      "plannedView": "Package identity and declared inclusion, after explicit verified extraction",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "R-DIAGNOSTIC",
+      "kind": "command/API diagnostics captured by a host",
+      "availability": "released-0.4.1",
+      "pathPatterns": [
+        "{explicit host capture}.json; stdout only unless host saves it"
+      ],
+      "producer": "__main__.py:check/validate/compare/lint-issue/readme/init/adoption-plan/status/install-skills/export/build/pipeline; tools/check_skills.py/check_palette.py/package_standard.py/run_action.py/build_site.py",
+      "ownership": "Command owns result/diff/coverage; no work/acceptance authority is created",
+      "sensitivity": "Local by default; diffs/paths/counts may contain private context",
+      "schemaStatus": "Command-specific shapes; no universal stdout schema or selector. Build-manifest-shaped captures can be explicitly declared as that kind",
+      "plannedView": "Typed diagnostics and original observed limits, not a generic valid-record label",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "I-MANIFEST",
+      "kind": "source-selection manifest",
+      "availability": "adopter-input",
+      "pathPatterns": [
+        "examples/projects.json",
+        "{host}/progress/project-record.json"
+      ],
+      "producer": "Host author; scaffold.py may seed it; adapters.py reads explicit declarations",
+      "ownership": "Host declares adapters, source/field writers, history and audience",
+      "sensitivity": "Can mention private sources; sourceFile references are not traversal permission",
+      "schemaStatus": "projects entry point recognized only; selector never calls load_config or follows references",
+      "plannedView": "Input ownership and bounded source graph",
+      "selectorKind": "project-manifest",
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "I-LEDGER",
+      "kind": "raw adapter-specific authored work ledger",
+      "availability": "adopter-input",
+      "pathPatterns": [
+        "{manifest.sourceFile}",
+        "{manifest.previousSourceFile}",
+        "{manifest.snapshots[].sourceFile}"
+      ],
+      "producer": "Host writer; supported adapters consume explicit formats",
+      "ownership": "Authoritative work/scope/dependency/acceptance observation under host policy",
+      "sensitivity": "Declared audience; never recursively discover files or infer public from extension",
+      "schemaStatus": "Adapter-specific, including normalized-v1 payload before project/source decoration. Not interchangeable with exported project-record; selector unsupported until explicit adapter mapping",
+      "plannedView": "Raw-source meaning and exact provenance; unresolved mapping remains named",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "I-THEME",
+      "kind": "brand tokens",
+      "availability": "adopter-input",
+      "pathPatterns": [
+        "{manifest.presentation.theme}"
+      ],
+      "producer": "Host brand authority; scaffold.py may seed neutral fallback",
+      "ownership": "Host owns fonts/colors and source references",
+      "sensitivity": "Usually public brand data, but declared audience still applies",
+      "schemaStatus": "No standalone schema/selector; not a work record",
+      "plannedView": "Presentation identity without a compulsory skin",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "I-SUPPLEMENT",
+      "kind": "declared governance/delivery/decision supplements",
+      "availability": "adopter-input",
+      "pathPatterns": [
+        "{manifest.supplements[].path}"
+      ],
+      "producer": "Host author; adapters.py merges only declared permitted fields",
+      "ownership": "Host owns decisions/observations; no second completion ledger",
+      "sensitivity": "Can include sensitive rationale, publication or operations observations",
+      "schemaStatus": "Fields validated within assembled record; no standalone selection validator",
+      "plannedView": "Separate decisions, findings/actions, candidate/publication/deployment evidence",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "I-CHANGE",
+      "kind": "authored change fragment",
+      "availability": "adopter-input",
+      "pathPatterns": [
+        "{manifest.changeFiles[].path}",
+        "templates/change.example.json"
+      ],
+      "producer": "Host author; template is illustrative; adapters.py/delivery.py consume",
+      "ownership": "Author names affected IDs/compatibility; generator derives Unreleased",
+      "sensitivity": "Explicit registered visibility, not directory-wide publication",
+      "schemaStatus": "Embedded change rules, no standalone JSON schema/selector",
+      "plannedView": "Unreleased meaning and later publication linkage",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "I-COLLECTION",
+      "kind": "collection attempt receipt",
+      "availability": "adopter-input",
+      "pathPatterns": [
+        "{explicit --observation capture}.json",
+        "templates/collection-attempt.example.json"
+      ],
+      "producer": "External collector/host supplies; status.py validates, does not fetch",
+      "ownership": "Observer owns actual attempt/coverage/error, never refreshes authored source date",
+      "sensitivity": "Potentially private logs/quota details",
+      "schemaStatus": "status.py collection contract; no inspector selector yet",
+      "plannedView": "Attempt versus last source observation and failed/partial recovery",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "I-DISCOVERY",
+      "kind": "discovery/adoption/governance records",
+      "availability": "adopter-input",
+      "pathPatterns": [
+        "{host}/progress/discovery.json",
+        "templates/discovery.example.json",
+        "{host-selected readiness/decision/evidence JSON}"
+      ],
+      "producer": "Host/agent under adopted policy; not emitted automatically by init",
+      "ownership": "Field authorities and attributed decisions remain explicit",
+      "sensitivity": "Often private; personal memory is not an inspector source by default",
+      "schemaStatus": "Guide/template meanings; no automatic schema inference or selector",
+      "plannedView": "Coverage, readiness, findings/actions and decisions as distinct records",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "I-SUITE",
+      "kind": "cooperating suite manifest",
+      "availability": "adopter-input",
+      "pathPatterns": [
+        "skills/manifest.json"
+      ],
+      "producer": "Toolkit release author; tools/check_skills.py/agents.py consume",
+      "ownership": "Native package version authority with cooperating suite mirror; independent publication is a separate policy",
+      "sensitivity": "Public toolkit metadata; version presence is not behavior evidence",
+      "schemaStatus": "schemaVersion1 entry shape only; selector does not inspect skill files",
+      "plannedView": "Suite/contract/schema identities and declared members",
+      "selectorKind": "skill-suite",
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "I-ISSUE",
+      "kind": "native tracker/issue snapshot and label aliases",
+      "availability": "adopter-input",
+      "pathPatterns": [
+        "{explicit host issue capture}.json",
+        "templates/labels.json"
+      ],
+      "producer": "Native service/host collector supplies; issues.py lints subset/aliases",
+      "ownership": "Native assignment/discussion writer is distinct from ledger completion writer",
+      "sensitivity": "Conversation/identifying metadata may be private",
+      "schemaStatus": "Native schema/host mapping; not produced by a PRS network collector",
+      "plannedView": "Typed native links, coverage and aliases without guessing completion",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "U-PINS",
+      "kind": "pin, compatibility and handoff input/results",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "templates/adoption-pin.example.json",
+        "{caller-captured pin/verify/update/handoff JSON}"
+      ],
+      "producer": "src/project_record/pins.py API; host supplies profile/observations",
+      "ownership": "Expected adopted pin versus observed bytes/support; no automatic migration or grant",
+      "sensitivity": "Local paths/runtime identities may be sensitive",
+      "schemaStatus": "pinVersion1 and declared compatibility contracts; API dicts require host serialization; no selector yet",
+      "plannedView": "Expected/observed identity, support and update decision; synthetic handoff proof is not live runtime adoption",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "U-POLICY",
+      "kind": "policy request/evaluation and CI boundary result",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "templates/policy-request.example.json",
+        ".github/prs-policy.json",
+        "{captured policy-check/CI result}.json"
+      ],
+      "producer": "policy.py; policy_ci.py; tools/run_policy_ci.py; host supplies trusted request/profile",
+      "ownership": "Shared rule result is bounded; host enforcement/authority remain separate observations",
+      "sensitivity": "Local diagnostics may contain private identifiers; no automatic public export",
+      "schemaStatus": "policyVersion1/CI request-result contracts in code; no standalone selector",
+      "plannedView": "Pass/fail/unknown, selected predicates, trusted-base provenance and native enforcement limits",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "U-RECONCILE",
+      "kind": "work event/profile, writer journal and canonical updates",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "templates/work-result.example.json",
+        "templates/reconciliation-profile.example.json",
+        "{profile.journal}/{event-hash}.json",
+        "{manifest}.prs-pending.json",
+        "{declared source/manifest and reconciliation-history snapshot}"
+      ],
+      "producer": "src/project_record/reconcile.py shared writer; host supplies event/profile",
+      "ownership": "Host-authorized source/metadata/history writer; journal is recovery transport, not another ledger",
+      "sensitivity": "Private: full before/after text, paths, policy and evidence",
+      "schemaStatus": "eventVersion1/reconcileVersion1/journalVersion1; canonical payload retains its own adapter; no inspector selector yet",
+      "plannedView": "Work-result/recovery transaction versus authored source and acceptance",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "U-RUNTIME",
+      "kind": "adapter ticket/state/core result and reversible hook configuration",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "{outbox}/{ticket}/request.json",
+        "{outbox}/{ticket}/state.json",
+        "{outbox}/{ticket}/last-core-result.json",
+        "{explicit config and install receipt}.json"
+      ],
+      "producer": "runtime_adapters.py; tools/run_runtime_adapter.py/run_reconcile_event.py",
+      "ownership": "Host-prepared result is immutable; transport delivery is not work acceptance or native activation",
+      "sensitivity": "Private: config can contain unrelated host settings; never publish whole receipt",
+      "schemaStatus": "adapterVersion1 request plus internal transport shapes; provider config opaque; native #34 proof still pending; no selector",
+      "plannedView": "Delivery/duplicate/pending recovery and exact config rollback, not a second policy engine",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "U-FEEDBACK",
+      "kind": "deduplicated local feedback proposal and submission state",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "{feedback queue}/{cause-hash}/feedback.json",
+        "templates/feedback*.json (explicit files, not a scan pattern)"
+      ],
+      "producer": "feedback.py; feedback CLI; optional host callback",
+      "ownership": "Local proposal/transport ownership; review/grant/search claims are host-supplied",
+      "sensitivity": "Private queue/effort/identity; only separately reviewed report fields may be submitted",
+      "schemaStatus": "feedbackVersion1 and policy/search contracts; no selector yet",
+      "plannedView": "Encounter/finding, proposed action, known upstream report and uncertain submission",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "U-LAYOUT",
+      "kind": "record-layout/index/cleanup planning API results",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "templates/record-layout.example.json",
+        "{caller-captured mapping/index/preview}.json"
+      ],
+      "producer": "record_layout.py API; host-authored layout profile",
+      "ownership": "Maps ownership/visibility/retention; does not make memory authoritative or delete files",
+      "sensitivity": "Private references can be present; index is not public permission",
+      "schemaStatus": "Profile/API shapes; not a background crawler or automatic file producer",
+      "plannedView": "Record class/authority/supersession and unresolved mapping",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "U-EXECUTION",
+      "kind": "canonical work selection/alignment API results",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "{caller-captured selection/alignment}.json"
+      ],
+      "producer": "execution.py API; host supplies native snapshots",
+      "ownership": "Read-only eligible work suggestion/alignment, not new completion",
+      "sensitivity": "Local project IDs/coverage may be private",
+      "schemaStatus": "Bounded API dicts; no automatic file writer or inspector selector",
+      "plannedView": "Prerequisites, holds and native/source alignment at known revision",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "U-README",
+      "kind": "README-only parity result",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "{captured readme-profile stdout}.json"
+      ],
+      "producer": "readme_profile.py and __main__.py:readme-profile",
+      "ownership": "Generator owns README/SVG parity; host owns outside text/version",
+      "sensitivity": "Diff may contain project text; local diagnostic by default",
+      "schemaStatus": "No standalone schema/selector; README/SVG are not JSON inputs",
+      "plannedView": "Current/stale parity, exact input/output identities and recovery limits",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "U-INSPECTOR",
+      "kind": "declared selection and inventory diagnostics",
+      "availability": "this-package-unreleased",
+      "pathPatterns": [
+        "templates/inspector-selection.example.json",
+        "{captured inspect-inputs stdout}.json"
+      ],
+      "producer": "inspector.py; __main__.py:inspect-inputs",
+      "ownership": "Host declares bounded paths; inspector reports reads/problems only",
+      "sensitivity": "Owner-local diagnostic, publishable=false; no public rendering/export in #17",
+      "schemaStatus": "selectionVersion1/inspectorInventoryVersion1 in code; schema support explicitly per kind",
+      "plannedView": "Coverage/error/source timing handoff to #18; no semantic UI yet",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "F-RECEIPTS",
+      "kind": "hypothetical monitoring/MCP/hosting/Codex-Claude live-session proof",
+      "availability": "planned-no-producer",
+      "pathPatterns": [
+        "Illustrative future receipt only; no installed producer asserted"
+      ],
+      "producer": "No currently evidenced producer for planned service/actual native proof",
+      "ownership": "A future receipt cannot create work/approval authority",
+      "sensitivity": "Unknown until scoped implementation/privacy policy",
+      "schemaStatus": "Unsupported; keep illustrative fixture labels and failed/missing observations",
+      "plannedView": "Unsupported placeholder/coverage limit until actual producer and schema are proven",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    }
+  ]
+}

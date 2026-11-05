@@ -1,0 +1,45 @@
+test_cli_surfaces_all_declared_cases_without_scanning_neighbors (test_inspector_inventory.InspectorInventoryTests.test_cli_surfaces_all_declared_cases_without_scanning_neighbors) ... ok
+test_digest_mismatch_and_oversize_are_partial_not_validated (test_inspector_inventory.InspectorInventoryTests.test_digest_mismatch_and_oversize_are_partial_not_validated) ... ok
+test_duplicate_members_nonfinite_values_and_bad_utf8_are_malformed (test_inspector_inventory.InspectorInventoryTests.test_duplicate_members_nonfinite_values_and_bad_utf8_are_malformed) ... ok
+test_invalid_selection_fails_before_any_data_read (test_inspector_inventory.InspectorInventoryTests.test_invalid_selection_fails_before_any_data_read) ... ok
+test_only_declared_regular_files_are_read_without_transitive_manifest_reads (test_inspector_inventory.InspectorInventoryTests.test_only_declared_regular_files_are_read_without_transitive_manifest_reads) ... ok
+test_shape_only_recognition_does_not_claim_full_schema_validation (test_inspector_inventory.InspectorInventoryTests.test_shape_only_recognition_does_not_claim_full_schema_validation) ... ERROR
+test_source_and_render_times_do_not_refresh_on_inspection (test_inspector_inventory.InspectorInventoryTests.test_source_and_render_times_do_not_refresh_on_inspection) ... ok
+test_symlink_and_nonregular_targets_are_not_read (test_inspector_inventory.InspectorInventoryTests.test_symlink_and_nonregular_targets_are_not_read) ... ok
+test_unknown_versions_and_invalid_records_do_not_abort_other_entries (test_inspector_inventory.InspectorInventoryTests.test_unknown_versions_and_invalid_records_do_not_abort_other_entries) ... ERROR
+
+======================================================================
+ERROR: test_shape_only_recognition_does_not_claim_full_schema_validation (test_inspector_inventory.InspectorInventoryTests.test_shape_only_recognition_does_not_claim_full_schema_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_inventory.py", line 117, in test_shape_only_recognition_does_not_claim_full_schema_validation
+    result=self.inspect({'selectionVersion':1,'records':[row,self.selection['records'][1]]})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_inventory.py", line 27, in inspect
+    return inspect_inventory(self.root,self.selection if selection is None else selection,observed_at=OBSERVED)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector.py", line 98, in inspect_inventory
+    _validate_selection(selection)
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector.py", line 56, in _validate_selection
+    raise RecordError('Selection needs unique stable artifact IDs')
+project_record.core.RecordError: Selection needs unique stable artifact IDs
+
+======================================================================
+ERROR: test_unknown_versions_and_invalid_records_do_not_abort_other_entries (test_inspector_inventory.InspectorInventoryTests.test_unknown_versions_and_invalid_records_do_not_abort_other_entries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_inventory.py", line 51, in test_unknown_versions_and_invalid_records_do_not_abort_other_entries
+    result=self.inspect({'selectionVersion':1,'records':[row,self.selection['records'][0]]})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_inventory.py", line 27, in inspect
+    return inspect_inventory(self.root,self.selection if selection is None else selection,observed_at=OBSERVED)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector.py", line 130, in inspect_inventory
+    if not isinstance(value, dict) or value.get('contractVersion') not in {'0.1.0', '0.2.0'}:
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.097s
+
+FAILED (errors=2)

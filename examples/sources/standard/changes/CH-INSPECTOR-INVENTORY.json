@@ -1,0 +1,11 @@
+{
+  "id": "CH-INSPECTOR-INVENTORY",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Inventory29 JSON producer/input families with released/main/planned distinctions; inspect only bounded explicit files and report unsupported/malformed/missing/limited-validation cases for the later inspector.",
+  "workItemIds": [
+    "PRS-INSPECT-01"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased selectionVersion1/inspectorInventoryVersion1 local diagnostic and inspect-inputs CLI. No UI, recursive scan, network traversal, public-export mode, credential, native-session proof, source mutation, package/suite/record version bump or publication. #18/#19 own rendering/privacy integration."
+}

@@ -1,0 +1,56 @@
+{
+  "case": "Synthetic declared-file boundary fixture, not a general public-export projection",
+  "declared": 8,
+  "unselected": "not-inspected",
+  "rows": [
+    {
+      "id": "REC-1",
+      "status": "validated",
+      "contentRead": true,
+      "validation": "existing-core-contract"
+    },
+    {
+      "id": "HIST-1",
+      "status": "recognized-shape",
+      "contentRead": true,
+      "validation": "entry-point-shape-only"
+    },
+    {
+      "id": "DEL-1",
+      "status": "recognized-shape",
+      "contentRead": true,
+      "validation": "entry-point-shape-only"
+    },
+    {
+      "id": "BUILD-1",
+      "status": "recognized-shape",
+      "contentRead": true,
+      "validation": "entry-point-shape-only"
+    },
+    {
+      "id": "INSTALL-1",
+      "status": "recognized-shape",
+      "contentRead": true,
+      "validation": "entry-point-shape-only"
+    },
+    {
+      "id": "MISSING-1",
+      "status": "missing",
+      "contentRead": false,
+      "validation": "none"
+    },
+    {
+      "id": "BROKEN-1",
+      "status": "malformed-json",
+      "contentRead": true,
+      "validation": "none"
+    },
+    {
+      "id": "FUTURE-1",
+      "status": "unsupported-kind",
+      "contentRead": false,
+      "validation": "none"
+    }
+  ],
+  "privacyReview": "Only synthetic IDs/status/validation/read flags retained; no input bodies, paths or private owner context."
+}

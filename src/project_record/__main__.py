@@ -79,8 +79,17 @@ def main(argv: list[str] | None = None) -> int:
     mode = command.add_mutually_exclusive_group()
     mode.add_argument("--write", action="store_true")
     mode.add_argument("--check", action="store_true", help="Exit1 if README or graphic is stale; never writes")
+    command = subs.add_parser("inspect-inputs")
+    command.add_argument("--root", type=Path, required=True)
+    command.add_argument("--selection", type=Path, required=True)
+    command.add_argument("--observed-at", required=True, help="Explicit zoned inspection time; never refreshes source dates")
     args = parser.parse_args(argv)
     try:
+        if args.command == "inspect-inputs":
+            from .inspector import inspect_files
+            result = inspect_files(args.root, args.selection, observed_at=args.observed_at)
+            print(json.dumps(result, indent=2))
+            return result['exitCode']
         if args.command == "readme-profile":
             from .readme_profile import sync_readme
             result = sync_readme(args.config, args.only, args.readme, args.image, write=args.write)

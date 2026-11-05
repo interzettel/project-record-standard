@@ -1,0 +1,18 @@
+test_cli_surfaces_all_declared_cases_without_scanning_neighbors (test_inspector_inventory.InspectorInventoryTests.test_cli_surfaces_all_declared_cases_without_scanning_neighbors) ... FAIL
+
+======================================================================
+FAIL: test_cli_surfaces_all_declared_cases_without_scanning_neighbors (test_inspector_inventory.InspectorInventoryTests.test_cli_surfaces_all_declared_cases_without_scanning_neighbors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_inventory.py", line 32, in test_cli_surfaces_all_declared_cases_without_scanning_neighbors
+    self.assertEqual(run.returncode,3,run.stderr)
+AssertionError: 2 != 3 : usage: __main__.py [-h]
+                   {check,build,pipeline,export,validate,compare,lint-issue,readme,init,adoption-plan,status,install-skills,policy-check,reconcile,feedback,readme-profile}
+                   ...
+__main__.py: error: argument command: invalid choice: 'inspect-inputs' (choose from check, build, pipeline, export, validate, compare, lint-issue, readme, init, adoption-plan, status, install-skills, policy-check, reconcile, feedback, readme-profile)
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.053s
+
+FAILED (failures=1)
