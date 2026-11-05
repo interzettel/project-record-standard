@@ -1906,16 +1906,57 @@
     },
     {
       "blocked": false,
-      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "completionBasis": "Bounded feedbackVersion1 API/CLI retains real gaps once, links known reports, separates public projection/content review from an adopted issue grant, holds incomplete searches and uncertain writes, and records actual route effort.22 feedback tests/213 Python/21 JS pass; fresh review corrected2 recovery defects. Actual PR63 encounter replay reused1record with0publications/prompts. Host transport/search/privacy judgment remain explicit; no native capture, whole-task savings, owner acceptance or release inferred.",
       "criterion": "A report names the actual task/impact, exact known pins/adapter, expected rule versus observed result, minimal public-safe reproduction, workaround, affected IDs and proposed check/change. Repeated root causes reuse one record, incomplete searches remain visible, private context is not exported, and a project-only bug or preference does not create an upstream ticket. Missing publication permission retains a local proposal without repeated prompts. Tests cover deduplication, denied/partial transport, redaction, no-impact suppression and no owner-acceptance inference. Track actual feedback/correction overhead; no ticket quota or required background model call.",
       "dependsOn": [
         "PRS-POLICY-01",
         "PRS-RECORDS-02",
         "PRS-AGENT-EXECUTION"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-05",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+          "source": "src/project_record/feedback.py; standards/FEEDBACK.md; audit/feedback/2026-11-05/verification.json",
+          "subject": "PRS-FEEDBACK-01"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-05",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+          "source": "audit/feedback/2026-11-05/verification.json; audit/feedback/2026-11-05/pilot.json",
+          "subject": "PRS-FEEDBACK-01"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-05",
+          "producer": "Codex /root/feedback_review_resumed",
+          "result": "passed",
+          "revision": "5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+          "source": "audit/feedback/2026-11-05/verification.json:review",
+          "subject": "PRS-FEEDBACK-01"
+        },
+        {
+          "eventId": "prs:PRS-FEEDBACK-01:5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+          "kind": "work-result",
+          "observedOn": "2026-11-05",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
+          "source": "https://github.com/interzettel/project-record-standard/pull/64",
+          "subject": "PRS-FEEDBACK-01",
+          "summary": "Bounded feedbackVersion1 API/CLI retains real gaps once, links known reports, separates public projection/content review from an adopted issue grant, holds incomplete searches and uncertain writes, and records actual route effort.22 feedback tests/213 Python/21 JS pass; fresh review corrected2 recovery defects. Actual PR63 encounter replay reused1record with0publications/prompts. Host transport/search/privacy judgment remain explicit; no native capture, whole-task savings, owner acceptance or release inferred."
+        }
+      ],
       "groupId": "G11",
       "id": "PRS-FEEDBACK-01",
+      "implementationRevision": "5fb7b5ad4d6a8fca7f56df9e58b63fb79a7825d9",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/36",
       "kind": "implementation",
       "milestoneId": "M11",
@@ -1923,8 +1964,8 @@
       "owner": "Selected contributor; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "planned-not-implemented",
-      "state": "backlog",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Route encountered standards gaps into deduplicated feedback",
       "unmappedDependencies": []
     },
