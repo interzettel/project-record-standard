@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-TAILOR-README:a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+  "projectId": "standard",
+  "workItemId": "PRS-TAILOR-README",
+  "sourceSha256": "91ee9e8100e21a8e87ca52a48280fba22c1e474604511218ca6feaf0388ea83c",
+  "manifestSha256": "b79fbb805e873c9ad58429b8123b64dd7bb539e79cdbe788d9c07f6c82f22667",
+  "artifactRevision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/65",
+  "observedOn": "2026-11-05",
+  "summary": "Complete opt-in README-only renderer/CLI provides accessible semantic SVG and granular source-backed work/milestone text without a site. Deterministic write/check preserves authored bytes, detects stale README/image/source, refuses private/colliding paths and recovers interrupted pairs. Cooperating PRS suite/native drift is rejected; independently published modules alone need their own version; host2.8.0 unchanged.11 profile/224 Python/21 JS tests pass and fresh review corrected source-overwrite/escaping cases. No new consumer migration, skill-body/version/release change, native34session or full browser/AT conformance claimed.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-TAILOR-README",
+      "revision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+      "result": "passed",
+      "source": "src/project_record/readme_profile.py; src/project_record/build.py; standards/ADAPTATION-PROFILES.md; standards/GITHUB.md",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-05"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-TAILOR-README",
+      "revision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+      "result": "passed",
+      "source": "audit/readme-profile/2026-11-05/verification.json; tests/fixtures/readme-only/README.md; tests/fixtures/readme-only/assets/progress.svg",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-05"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-TAILOR-README",
+      "revision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+      "result": "passed",
+      "source": "audit/readme-profile/2026-11-05/verification.json:review",
+      "producer": "Codex /root/readme_profile_review",
+      "observedOn": "2026-11-05"
+    }
+  ],
+  "discoveries": []
+}

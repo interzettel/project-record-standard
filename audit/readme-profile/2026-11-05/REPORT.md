@@ -15,3 +15,5 @@ SVG title/description, full source identity and text equivalence are checked str
 The implementation is unreleased and leaves runtime/suite0.4.1 and record contract0.2.0 intact. Canonical completion/history, integration and deployment are recorded separately. No scope, criterion, dependency or acceptance change is proposed.
 
 The authored fixture intentionally retains CRLF outside the generated region. Fixture-local Git attributes preserve those bytes across checkout and recognize CR-at-EOL; this does not change the repository-wide whitespace policy.
+
+The shared writer records only PRS-TAILOR-README Done at published implementationa4b671d088ba0b0950433fa396ffbfdaa70f9de6, with exact implementation/test/review receipts. Replay is duplicate; previous raw91ee9e81, normalized observation and source metadata are preserved. Required30/42→31/42(73.8%), retained30/52→31/52(59.6%), newly required13/24; accepted milestones4/13 stay unchanged. Completion invariants preserve IDs/scope/criteria/dependencies/acceptance and reviewed file hashes. #34 live sessions are owner-deferred; #17/M6 is next independent work.

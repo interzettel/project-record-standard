@@ -1,0 +1,15 @@
+{
+  "producer": "Codex /root/readme_profile_review",
+  "observedOn": "2026-11-05",
+  "implementationRevision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+  "status": "no-material-findings",
+  "verified": [
+    "Only PRS-TAILOR-README receives credit",
+    "Scope/IDs/criteria/dependencies/milestone acceptance unchanged",
+    "Exact prior raw91ee9e81 and implementation hashes preserved",
+    "Recomputed31/42 required31/52 retained4/13 accepted",
+    "Root README authored bytes unchanged",
+    "Source validation and whitespace checks pass"
+  ],
+  "limits": "No browser/AT conformance, native34 session, skill-body efficacy, acceptance or release credit."
+}

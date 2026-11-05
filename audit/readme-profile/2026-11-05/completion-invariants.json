@@ -1,0 +1,26 @@
+{
+  "implementationRevision": "a4b671d088ba0b0950433fa396ffbfdaa70f9de6",
+  "changedLeaves": [
+    "PRS-TAILOR-README"
+  ],
+  "scopeCriteriaDependenciesAndAcceptanceUnchanged": true,
+  "priorRawSha256": "91ee9e8100e21a8e87ca52a48280fba22c1e474604511218ca6feaf0388ea83c",
+  "afterRawSha256": "8d9067f5166e4597a99814dfb59a6e17367f35da7653303af4fcab2e9621b134",
+  "replay": "duplicate",
+  "reviewedImplementationHashesUnchanged": true,
+  "before": {
+    "required": "30/42",
+    "retained": "30/52",
+    "newRequired": "12/24",
+    "acceptedMilestones": "4/13"
+  },
+  "after": {
+    "required": "31/42",
+    "retained": "31/52",
+    "newRequired": "13/24",
+    "acceptedMilestones": "4/13"
+  },
+  "nextIndependent": "PRS-INSPECT-01/#17/M6",
+  "ownerDeferred": "PRS-HOOK-01/#34 live sessions",
+  "release": "None; v0.4.1 remains published"
+}
