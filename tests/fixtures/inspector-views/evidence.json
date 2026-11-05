@@ -1,0 +1,18 @@
+{
+  "receipts": [
+    {
+      "kind": "test",
+      "subject": "WORK-1",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "result": "failed",
+      "source": "toy failed run"
+    },
+    {
+      "kind": "integration",
+      "subject": "WORK-1",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "result": "passed",
+      "source": "toy merge, not verification"
+    }
+  ]
+}

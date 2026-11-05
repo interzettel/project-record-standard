@@ -1,0 +1,8 @@
+{
+  "projects": [
+    {
+      "id": "synthetic-reconcile",
+      "sourceFile": "undeclared-private.json"
+    }
+  ]
+}

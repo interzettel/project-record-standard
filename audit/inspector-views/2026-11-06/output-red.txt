@@ -1,0 +1,14 @@
+......F.....
+======================================================================
+FAIL: test_output_render_failure_leaves_no_directory_or_partial_artifact (test_inspector.InspectorTests.test_output_render_failure_leaves_no_directory_or_partial_artifact)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector.py", line 177, in test_output_render_failure_leaves_no_directory_or_partial_artifact
+    with self.assertRaises(RecordError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RecordError not raised
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.335s
+
+FAILED (failures=1)

@@ -1,0 +1,84 @@
+{
+  "leaf": "PRS-INSPECT-02",
+  "issue": 18,
+  "milestone": "M6",
+  "implementationLocalRevision": "169038e51000db2f4954b80524b353ff8c8d8dbd",
+  "baseMainRevision": "3cdbc01a6f91c1a6cc4b552017f36f90f15b67f0",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux",
+    "javascript": "Node test runner; locked jsdom30.1.3"
+  },
+  "checks": {
+    "python": {
+      "passed": 257,
+      "inspectorViews": 19,
+      "inventoryRegression": 14
+    },
+    "javascript": {
+      "passed": 24
+    },
+    "source": "passed before completion",
+    "skillMetadata": "11 valid; not behavior evaluation",
+    "palette": "20 reference role pairs; reused PRS reference colours",
+    "publicPipeline": "passed; contains public documentation, no generated inspector page",
+    "site": "21 guide documents passed",
+    "readme": "text and graphic parity passed before completion",
+    "sourcePackage": "2 tests pass; deterministic checksum/inclusion/privacy boundaries",
+    "wheel": "built and installed into isolated venv; command run from /tmp, not source checkout",
+    "installedFixture": {
+      "path": "/tmp/prs-inspector-views-installed-final/index.html",
+      "audience": "owner-local",
+      "publishable": false,
+      "exitCode": 3,
+      "coverage": {
+        "declared": 9,
+        "contentRead": 9,
+        "problems": 1,
+        "unselected": "not-inspected",
+        "repositoryCoverage": "not-assessed"
+      }
+    }
+  },
+  "hashes": {
+    "src/project_record/inspector.py": "cd6adfb1391dd672d7ea69a8c77e9938aba03f544cee3b30204f310d93a60897",
+    "src/project_record/inspector_views.py": "4c6409240d4f9c4ceae8029a6caa044232659829077954ca7e3f4230ed1feaad",
+    "src/project_record/__main__.py": "1b7915402b6d1b21eb5844fdbcb75a035f6064fbfdb9d3e76558735e87f2784b",
+    "web/inspector.mjs": "ce5d6ba089f6660a1401515fa8f16c1e3348cf93b214e00e96b4f2793a160751",
+    "web/inspector.css": "a42c78e88d27bf0d34f43a6e63ce498804c398e554ff4e6e241aaad5ab7925f1",
+    "tests/test_inspector.py": "408654977e3c434b47c04b131f851b065bdd280f692063135fa2b322d4369788",
+    "tests/inspector.test.mjs": "965e7ed89563892ca1364496b37ff327ca64c103cee0b30c7182b15284934c7a",
+    "tests/test_packaging.py": "080ae2c714da2e214bac089a1e388fbec7c8aebea3e0745e6627b59fb8ddda7a",
+    "standards/RECORD-INSPECTOR.md": "b18b9394f9dd48d896af657932aa1dea522efc63bdda1d1551c12f5f732d7384",
+    "tools/package_standard.py": "76012885f7e9d540275df4f95995a50ea3c18fd91181f9f7f49fbca10e61c328",
+    "pyproject.toml": "32d328bf7acf7ce71b443db5b7d1001e4e9414a6afe3b5f623b15d9cc3703d4e",
+    "MANIFEST.in": "112c64fbf31cb84c0507fcb7ab35ab46f1dc3ad845ee407260f419a0482ed41b",
+    "progress/inspector-views-plan.md": "911d0ffdd26578df6bf6b3ffe033d342504ded602cfd933636e927f2669e752c"
+  },
+  "limits": [
+    "Cloud browser denied file protocol; no browser workaround attempted.",
+    "No actual rendered desktop/mobile/reflow/zoom/keyboard/Back/reload/screen-reader observation. DOM checks do not establish browser or assistive-technology behavior.",
+    "Single-file HTML inspected using static source joins and locked DOM environment with file URL and scripts enabled/disabled.",
+    "#19 owns public projection/privacy and integrated-profile proof. No generated inspector page published.",
+    "Native #34 sessions owner-deferred. No release, model effectiveness, runtime activation or milestone acceptance."
+  ],
+  "failuresRetained": [
+    "Initial absent implementation:7 failing tests",
+    "Resource/key rendering and structured history regressions failed before fixes",
+    "Missing dependency link/combined fixture regressions failed before fixes",
+    "Output-size regression failed before guard",
+    "Installed all-views smoke found missing standalone evidence renderer note; reproduced in integration test and fixed",
+    "One wheel harness retry ran build from /tmp without an explicit source path; corrected command, not product defect",
+    "Cloud browser file:// protocol denied; native visual tests not-tested",
+    "Fresh review held completion for six material findings; all regressions RED to GREEN, no source credit before fix"
+  ],
+  "review": {
+    "source": "review.json",
+    "reviewedBeforeFix": "d6bb1b9",
+    "finalDispositionRevision": "169038e51000db2f4954b80524b353ff8c8d8dbd",
+    "disposition": "Six material findings and two related shape/mapping details fixed. All six regressions observed failing before fix, now pass with 257 Python/24 JS suite and final installed-wheel smoke. Fresh reviewer did not re-review final fixes; author performed final disposition against exact file hashes.",
+    "producer": "Codex /root final disposition using GPT-6 Astra fresh review",
+    "result": "passed",
+    "nativeBrowser": "not-tested; policy blocked file protocol"
+  }
+}
