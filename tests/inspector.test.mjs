@@ -30,9 +30,32 @@ print(render_inspector(public_model(r,_load_selection(r/'selection.json'),_load(
   doc.documentElement.dataset.appearance='light';
   assert.equal(dom.window.getComputedStyle(doc.documentElement).getPropertyValue('--paper').trim(),'#fffdf6');
   assert.equal(dom.window.getComputedStyle(doc.documentElement).colorScheme,'light');
+  const resolve=color=>color.startsWith('var(')?dom.window.getComputedStyle(doc.documentElement).getPropertyValue(color.slice(4,-1)).trim():color;
+  const luminance=color=>{
+    color=resolve(color);
+    const rgb=color.startsWith('#')?[1,3,5].map(i=>parseInt(color.slice(i,i+2),16)):(color.match(/[\d.]+/g)||[]).slice(0,3).map(Number);
+    assert.equal(rgb.length,3);
+    return rgb.map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((n,v,i)=>n+v*[.2126,.7152,.0722][i],0);
+  };
+  const controlContrast=()=>{
+    const element=doc.querySelector('input');
+    element.style.cssText='';
+    // JSDOM needs explicit variable substitution before CSS color computation.
+    for(const sheet of doc.styleSheets)for(const rule of sheet.cssRules){
+      if(rule.type===1 && element.matches(rule.selectorText)){
+        element.style.cssText+=rule.style.cssText.replace(/var\((--[\w-]+)\)/g,(_,name)=>dom.window.getComputedStyle(doc.documentElement).getPropertyValue(name).trim());
+      }
+    }
+    const control=dom.window.getComputedStyle(element);
+    assert(!control.borderTopColor.includes('rgba(0, 0, 0, 0)'),'Control border must resolve to an opaque color');
+    const [low,high]=[luminance(control.borderTopColor),luminance(control.backgroundColor)].sort((a,b)=>a-b);
+    return (high+.05)/(low+.05);
+  };
+  assert(controlContrast()>=3,'Light search boundary must have3:1 contrast');
   doc.documentElement.dataset.appearance='dark';
   assert.equal(dom.window.getComputedStyle(doc.documentElement).getPropertyValue('--paper').trim(),'#171a24');
   assert.equal(dom.window.getComputedStyle(doc.documentElement).colorScheme,'dark');
+  assert(controlContrast()>=3,'Dark search boundary must have3:1 contrast');
   dom.window.close();
 });
 

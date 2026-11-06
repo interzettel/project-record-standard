@@ -1,0 +1,30 @@
+✖ explicit host appearance selects brand and native-control tokens (192.489866ms)
+✔ generated file filters only index, retaining focus, source targets and a mounted announcement (68.99999ms)
+✔ all source joins target unique rendered fields without external resources or data execution (53.231411ms)
+✔ static content and deep source fragment remain available with scripts disabled (50.657335ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 3
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 725.220136
+
+✖ failing tests:
+
+test at tests/inspector.test.mjs:19:1
+✖ explicit host appearance selects brand and native-control tokens (192.489866ms)
+  AssertionError [ERR_ASSERTION]: Light search boundary must have3:1 contrast
+      at TestContext.<anonymous> (file:///workspace/scratch/49137836191f/prs-alignment/tests/inspector.test.mjs:54:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

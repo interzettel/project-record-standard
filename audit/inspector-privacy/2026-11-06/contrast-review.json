@@ -1,0 +1,14 @@
+{
+  "producer": "GPT-6 Astra /root/inspector_privacy_review",
+  "scope": "One-line semantic input-boundary contrast correction and test helper",
+  "result": "CSS safe, within19criterion; no new private/data/write path",
+  "browserDefect": {
+    "light": 1.83,
+    "dark": 2.94,
+    "required": 3.0
+  },
+  "fix": "Use strong semantic muted/text token for input border; expected default6.31/9.60 and branded15.33/15.35",
+  "testHarness": "Initial JSDOM transparent-variable result was not defect proof. Corrected helper resolves authored CSS variables through CSSOM; original CSS now demonstrably RED, corrected CSS GREEN. Real Edge defect measurements remain primary.",
+  "criterionDisposition": "Original19does not expressly require successful native zoom, private file opening or speech; bounded closure may follow actual deployed post-fix contrast, regression pass and explicit revision/limits disposition.",
+  "remaining": "Retest exact deployed contrast before Done; native CTRL+ no effect/notpassed; private file and speech nottested"
+}

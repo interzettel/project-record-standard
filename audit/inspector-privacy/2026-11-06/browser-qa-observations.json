@@ -1,0 +1,60 @@
+{
+  "revision": "cd147a2577bfdbfa3e019f26edd3cbe6e38e3da3",
+  "deploymentRun": "https://github.com/interzettel/project-record-standard/actions/runs/42304969166",
+  "initialAuthored": {
+    "viewport": 320,
+    "appearance": "light",
+    "content": 305,
+    "scroll": 305,
+    "smallControls": 0,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "observedAt": "2026-11-06T22:29:54.646Z"
+  },
+  "measurements": [
+    {
+      "requested": {
+        "width": "320",
+        "stress": "double",
+        "mode": "dark"
+      },
+      "result": "Viewport 320 CSS px; content 305px; scroll width 305px; 0 controls below 24px. These observations require inspection of all interactive states.",
+      "identity": "{\n  \"page\": \"https://interzettel.github.io/project-record-standard/qa/inspector/index.html\",\n  \"stress\": \"double\",\n  \"appearance\": \"dark\",\n  \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0\",\n  \"observedAt\": \"2026-11-06T22:30:22.096Z\"\n}"
+    },
+    {
+      "requested": {
+        "width": "390",
+        "stress": "double",
+        "mode": "light"
+      },
+      "result": "Viewport 390 CSS px; content 375px; scroll width 375px; 0 controls below 24px. These observations require inspection of all interactive states.",
+      "identity": "{\n  \"page\": \"https://interzettel.github.io/project-record-standard/qa/inspector/index.html\",\n  \"stress\": \"double\",\n  \"appearance\": \"light\",\n  \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0\",\n  \"observedAt\": \"2026-11-06T22:30:30.042Z\"\n}"
+    },
+    {
+      "requested": {
+        "width": "320",
+        "stress": "spacing",
+        "mode": "light"
+      },
+      "result": "Viewport 320 CSS px; content 305px; scroll width 305px; 0 controls below 24px. These observations require inspection of all interactive states.",
+      "identity": "{\n  \"page\": \"https://interzettel.github.io/project-record-standard/qa/inspector/index.html\",\n  \"stress\": \"spacing\",\n  \"appearance\": \"light\",\n  \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0\",\n  \"observedAt\": \"2026-11-06T22:30:38.458Z\"\n}"
+    }
+  ],
+  "contrastFinding": {
+    "light": {
+      "border": "#B7BECD",
+      "background": "#FFFDF6",
+      "ratio": 1.83
+    },
+    "dark": {
+      "border": "#58657B",
+      "background": "#171A24",
+      "ratio": 2.94
+    },
+    "disposition": "Reproduced DOM-style contrast failure; strong semantic border token fix pending deployed retest"
+  },
+  "limits": [
+    "Computed doubled text is not native zoom",
+    "Private file opening and screen-reader speech not tested",
+    "These are public synthetic host/shared-renderer observations, not real consumer adoption"
+  ]
+}
