@@ -2,15 +2,15 @@
   "leaf": "PRS-INSPECT-03",
   "issue": 19,
   "milestone": "M6",
-  "implementationLocalRevision": "9b8a712f1019bb7e143a1816449d989f28fad5e7",
+  "implementationLocalRevision": "febe4871a2a2a17bcf345c3aa18ded08d4100505",
   "baseMain": "84404559c3360708e548b60d201a18742bf7239a",
   "environment": {
     "python": "3.12.14",
     "node": "v24.22.1"
   },
   "checks": {
-    "python": 273,
-    "focusedPrivacy": 16,
+    "python": 274,
+    "focusedPrivacy": 17,
     "javascript": 24,
     "source": "pass",
     "metadata": "11 valid; not skill effectiveness",
@@ -18,7 +18,7 @@
     "publicPipeline": "pass",
     "site": "21 guide documents and reviewed synthetic public QA route",
     "readme": "text/SVG parity pass",
-    "wheel": "Loader-fixed wheel rebuilt and installed in isolated venv; public command ran from /tmp, produced reviewed synthetic output",
+    "wheel": "Earlier loader-fixed installed smoke passed; explicit decoder-independent guard additionally covered by local274suite and pending hosted run.",
     "installedPublic": {
       "changed": true,
       "written": true,
@@ -40,16 +40,16 @@
   },
   "hashes": {
     "src/project_record/inspector_privacy.py": "4994161ed5a49d11b352750b182cc91cc755b5e9685972acc338c388052f1549",
-    "src/project_record/inspector_profile.py": "559554ebe4a58d62b6615d1cb388101a2fddb2e3080b2e04359a1bee66ff5f3f",
+    "src/project_record/inspector_profile.py": "4978d258ed3696b4b9c46b940d2730277cfcde3949c99fcf1b5fa4c5ea5293cb",
     "src/project_record/inspector_views.py": "c3c70ba6157b073ffc6167098b0e6b09143417a631467136f959c2f84f12f323",
     "src/project_record/inspector.py": "b9c7f66a5ccdcd5a71a9485962d75a268b96e50dd193be9eed80426f160e6a6c",
     "src/project_record/__main__.py": "0a1cf4d41ab54da4b05393c8e7fccd0e368322d19297e8c3c5dce7cbbc865016",
     "tools/build_site.py": "5d818bfb7565dd6e8f5eba3ee68057d39cbc896cf5352f45220167cfb770d683",
     "tools/package_standard.py": "552409acc92b0d142f7789bcb43723c20fb22b93a0dd27eae3285876dafb6cec",
-    "tests/test_inspector_privacy.py": "c042c30c34822eebdc15fa779d7614f224d99d05112e7c577e602e9a76863e06",
+    "tests/test_inspector_privacy.py": "a9252e212f0c1f37b2c84d6af0b2ae385f40342490add1a56e95bcc6f247bdec",
     "tests/test_site.py": "960f6bf0ee4c50a9cb7aab503a4e84491c8d68cb32ca796c1819996f4ae95b59",
     "tests/test_packaging.py": "adef9832f479c4bdabee54ce169c31bada8de32562167259b78a3d2cb070b2b2",
-    "standards/RECORD-INSPECTOR.md": "54a5bbd7e776530a56b778ca3600681f3476bbaa0ad599aecf6424cb16eab5d0",
+    "standards/RECORD-INSPECTOR.md": "c5400b316163e1c4a02332dee451ae30ecd759d0881d7f53826ea84fa986922a",
     "tests/fixtures/inspector-public/record.json": "16dce56cb22e6a39ae31004ef32977855d5ca0c07ae00092910c73e2b030f0a3",
     "tests/fixtures/inspector-public/review.json": "70e368b50c77c66df09bbc4e537c296d45d18d4615825500e075eca7c1eb993f",
     "tests/fixtures/inspector-public/brand.json": "cd50a16224152d857d4a99ff460aa166405429aa3d57cc3b2f6c1b995d97ade5",
@@ -60,7 +60,8 @@
     "Different process hash seeds produced unequal public output; sorted structural fields now pass",
     "Initial README-only fixture test used wrong id/required denominator; corrected to actual readme-only identity and2required/3retained; not a product defect",
     "Missing pinned Markdown caused3environment test errors; restored exact requirement and full273suite passes",
-    "Fresh review loader/FIFO/deep JSON/ownership cases reproduced before fixes; current review-red retained"
+    "Fresh review loader/FIFO/deep JSON/ownership cases reproduced before fixes; current review-red retained",
+    "First hosted verify failed: decoder recursion differed across runtimes; explicit depth/node/text guard added and local full274suite passes. See ci-regression.json."
   ],
   "sourceAccounting": {
     "required": "33/42",

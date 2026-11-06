@@ -180,6 +180,11 @@ class InspectorPrivacyTests(unittest.TestCase):
         with self.assertRaises(RecordError):_load(deep)
         self.assertFalse(self.out.exists())
 
+    def test_profile_depth_bound_is_explicit_not_decoder_recursion_dependent(self):
+        from project_record.inspector_profile import _load
+        nested=self.root/'nested.json';nested.write_text('{"nested":'*80+'0'+'}'*80)
+        with self.assertRaises(RecordError):_load(nested)
+
     def test_corrupted_ownership_receipt_types_cannot_authorize_writes(self):
         self.run_profile(audience='owner',profile='private-offline',write=True)
         path=self.out/'inspector-output.json';original=path.read_bytes()

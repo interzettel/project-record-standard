@@ -1,0 +1,14 @@
+.........F.......
+======================================================================
+FAIL: test_profile_depth_bound_is_explicit_not_decoder_recursion_dependent (test_inspector_privacy.InspectorPrivacyTests.test_profile_depth_bound_is_explicit_not_decoder_recursion_dependent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_privacy.py", line 186, in test_profile_depth_bound_is_explicit_not_decoder_recursion_dependent
+    with self.assertRaises(RecordError):_load(nested)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RecordError not raised
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.106s
+
+FAILED (failures=1)

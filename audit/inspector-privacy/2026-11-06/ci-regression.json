@@ -1,0 +1,10 @@
+{
+  "candidate": "3561f7caf3222ec36288fdbb95bb47244a38bd5b",
+  "run": "https://github.com/interzettel/project-record-standard/actions/runs/42303241747",
+  "job": 128186066316,
+  "result": "verify failed",
+  "test": "test_deep_review_is_controlled_refusal_and_does_not_create_output",
+  "observed": "CI decoder accepted the deeply nested JSON; expected RecordError was not raised. Local decoder raised recursion instead. This summary records the retrieved job log, not reconstructed stdout.",
+  "fix": "Explicit object/depth/node/text budget independent of decoder recursion; new80-level object regression failed locally before guard and now passes.",
+  "fixedLocalRevision": "febe4871a2a2a17bcf345c3aa18ded08d4100505"
+}

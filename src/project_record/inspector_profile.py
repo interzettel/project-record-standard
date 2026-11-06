@@ -10,7 +10,7 @@ import tempfile
 from .core import RecordError
 from .inspector import _decode, _load_selection, inspector_model, MAX_SELECTION_BYTES
 from .inspector_privacy import public_model
-from .inspector_views import render_inspector
+from .inspector_views import render_inspector, within_render_budget
 from .reconcile import _path, _relative
 
 NAMES = {'index.html','inspector-output.json'}
@@ -25,9 +25,12 @@ def _load(path):
     if len(data) > MAX_SELECTION_BYTES:
         raise RecordError('Profile/review input exceeds 128KiB')
     try:
-        return _decode(data)
+        value = _decode(data)
     except (ValueError,UnicodeError,RecursionError) as error:
         raise RecordError('Profile/review must be bounded strict UTF-8 JSON') from error
+    if not isinstance(value,dict) or not within_render_budget(value):
+        raise RecordError('Profile/review needs an object within the explicit depth/node/text budget')
+    return value
 
 
 def _brand(value):
