@@ -1,0 +1,97 @@
+{
+  "page": "https://interzettel.github.io/project-record-standard/qa/inspector/index.html",
+  "implementationRevision": "2dc71fc4737b76e8f124cbcf56989950a1697b5a",
+  "implementationTree": "d011a21f47d0f4f0ac072a202ffc8071b170d800",
+  "deploymentRun": "https://github.com/interzettel/project-record-standard/actions/runs/42303702983",
+  "browser": "Connected Edge; exact version not exposed by read-only page scope",
+  "initial": {
+    "width": 2552,
+    "height": 1434,
+    "devicePixelRatio": 1,
+    "client": 2537,
+    "scroll": 2537,
+    "font": "Georgia, serif",
+    "background": "rgb(23, 26, 36)"
+  },
+  "keyboard": [
+    {
+      "action": "native Tab",
+      "actual": "Skip to records focused"
+    },
+    {
+      "action": "native Enter on skip",
+      "actual": "MAIN#main focused"
+    },
+    {
+      "action": "native Tab",
+      "actual": "INPUT#find focused"
+    },
+    {
+      "action": "search not-a-match",
+      "actual": "0 matching declared files; active find; source record remained present"
+    },
+    {
+      "action": "search PUBLIC",
+      "actual": "1 matching declared file; active find"
+    }
+  ],
+  "navigation": [
+    {
+      "action": "select artifact link",
+      "actual": "artifact-PUBLIC-DEMO target at y16.296875"
+    },
+    {
+      "action": "select Basis /items/0/state",
+      "actual": "exact source paragraph /items/0/state with JSON string active; target at y16.34375"
+    },
+    {
+      "action": "Back",
+      "actual": "#artifact-PUBLIC-DEMO restored"
+    },
+    {
+      "action": "Forward and reload",
+      "actual": "exact source field target and text preserved"
+    }
+  ],
+  "responsive": [
+    {
+      "viewport": 390,
+      "height": 844,
+      "client": 375,
+      "scroll": 375,
+      "minimumTargetHeight": 25.59375
+    },
+    {
+      "viewport": 320,
+      "height": 844,
+      "client": 305,
+      "scroll": 305,
+      "minimumTargetHeight": 25.59375
+    }
+  ],
+  "zoom": {
+    "action": "native CTRL + attempt after viewport reset",
+    "before": {
+      "width": 2552,
+      "devicePixelRatio": 1
+    },
+    "after": {
+      "width": 2552,
+      "devicePixelRatio": 1
+    },
+    "result": "No measurable zoom change; not a passed native zoom test"
+  },
+  "contrastSamples": {
+    "bodyText": "rgb(238, 241, 248)",
+    "bodyBackground": "rgb(23, 26, 36)",
+    "link": "rgb(171, 192, 255)",
+    "sourcePanel": "rgb(32, 39, 53)",
+    "sourceCodeText": "rgb(238, 241, 248)"
+  },
+  "limits": [
+    "Private file-opening not-tested; earlier protocol refusal not bypassed",
+    "No actual screen-reader speech",
+    "Light theme and computed text stress pending",
+    "These observations are public synthetic shared-renderer checks, not a consumer adoption or WCAG conformance claim"
+  ]
+}

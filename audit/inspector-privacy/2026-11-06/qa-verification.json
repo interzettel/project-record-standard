@@ -1,0 +1,21 @@
+{
+  "localRevision": "3b32964236cb9c24f5377b86e4eaec563569e466",
+  "scope": "Public QA appearance/text-stress integration, no additional completion credit",
+  "checks": {
+    "python": 274,
+    "javascript": 25,
+    "publicPipeline": "pass",
+    "site": "21guides and safe reviewed public toy route",
+    "readme": "text/SVG parity pass"
+  },
+  "hashes": {
+    "web/inspector.css": "835f2d1df4e9e2987562b5e3dc064d85d63bb8aaa511c50104bbc087b36843f1",
+    "src/project_record/inspector_views.py": "eddeaf2de660b806f7290e53db6bbe6b1e1dee985226b38d5a81fe0b8e6a4e57",
+    "tools/accessibility_review.html": "2d38f9995d9699170fb121f0f5e982538a8922e683c2f9175f782041971cf1d5",
+    "tests/inspector.test.mjs": "8b5997c483e409a3454340a09592e8793e116d83a0ad08edf37ade0c6cbf8695",
+    "tests/test_site.py": "12d4046b82601463d8984ffeb1eed38bfb38d2b91f1e82c0320765fda6fd68e4",
+    "standards/RECORD-INSPECTOR.md": "fd12e1cf25b7c2eb4a52f9ef1b6337a5731cf726b2c700cb362da976684a00b7"
+  },
+  "review": "qa-review.json; same-family fresh review found no blocking path; precise DOM wording and native-control tokens addressed",
+  "remaining": "Actual deployed light/dark/doubled-text observations; native zoom failed to change viewport in original browser attempt; private file opening/screen-reader speech not-tested"
+}

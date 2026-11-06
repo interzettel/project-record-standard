@@ -1,0 +1,9 @@
+{
+  "producer": "GPT-6 Astra /root/inspector_privacy_review",
+  "scope": "Five-file public QA/theme delta after PR68; no private source path",
+  "result": "No blocker; fixed appearance names and validated tokens introduce no private-data, source-write or network path",
+  "checks": "Independently ran4inspector DOM tests",
+  "wordingDisposition": "Renamed DOM test to explicit host appearance; no untested OS-mode claim",
+  "nativeControlDisposition": "Added colour-scheme tokens after failing regression, to match native controls with forced palette",
+  "limits": "Computed text stress is not native browser zoom; exact deployed browser observations remain required"
+}

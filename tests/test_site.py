@@ -42,6 +42,7 @@ class SiteTests(unittest.TestCase):
             self.assertIn('Workshop reference',public_demo)
             self.assertIn('reviewed public projection',public_demo)
             self.assertFalse((site/'qa/private-inspector').exists())
+            self.assertIn('Reviewed public inspector',(site/'qa/accessibility.html').read_text())
 
     def test_modified_input_and_private_manifest_fail_before_any_site_write(self):
         for private in [False, True]:
