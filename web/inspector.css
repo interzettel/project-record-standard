@@ -4,3 +4,4 @@
 
 :root[data-appearance="light"]{color-scheme:light;--paper:#F5F6FA;--ink:#202331;--muted:#515B70;--line:#B7BECD;--link:#28439C;--panel:#FFFFFF}
 :root[data-appearance="dark"]{color-scheme:dark;--paper:#131721;--ink:#EEF1F8;--muted:#B5BED1;--line:#58657B;--link:#ABC0FF;--panel:#202735}
+input{border-color:var(--muted)}

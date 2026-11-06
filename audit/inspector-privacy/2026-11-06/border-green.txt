@@ -1,0 +1,12 @@
+✔ explicit host appearance selects brand and native-control tokens (185.314397ms)
+✔ generated file filters only index, retaining focus, source targets and a mounted announcement (65.063545ms)
+✔ all source joins target unique rendered fields without external resources or data execution (54.751138ms)
+✔ static content and deep source fragment remain available with scripts disabled (43.269415ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 715.262898
