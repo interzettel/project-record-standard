@@ -250,3 +250,9 @@ def build_inspector(root: Path, selection_file: Path, output: Path, *, observed_
         raise
     return dict(path=str(output/'index.html'), audience='owner-local', publishable=False,
                 exitCode=model['exitCode'], coverage=model['coverage'])
+
+
+def inspector_profile(root, selection_file, output, **options):
+    """Routes managed profile operations through their explicit output owner."""
+    from .inspector_profile import sync_profile
+    return sync_profile(root,selection_file,output,**options)

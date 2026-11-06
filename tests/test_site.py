@@ -38,6 +38,10 @@ class SiteTests(unittest.TestCase):
             self.assertFalse((site/'unlisted-private.txt').exists())
             self.assertIn('Prehnite', (site/'prehnite/progress.html').read_text())
             self.assertIn('Standard website', (site/'index.html').read_text())
+            public_demo=(site/'qa/inspector/index.html').read_text()
+            self.assertIn('Workshop reference',public_demo)
+            self.assertIn('reviewed public projection',public_demo)
+            self.assertFalse((site/'qa/private-inspector').exists())
 
     def test_modified_input_and_private_manifest_fail_before_any_site_write(self):
         for private in [False, True]:

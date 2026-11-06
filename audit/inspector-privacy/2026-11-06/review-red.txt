@@ -1,0 +1,87 @@
+.FFE..........FF..
+======================================================================
+ERROR: test_deep_review_is_controlled_refusal_and_does_not_create_output (test_inspector_privacy.InspectorPrivacyTests.test_deep_review_is_controlled_refusal_and_does_not_create_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_privacy.py", line 180, in test_deep_review_is_controlled_refusal_and_does_not_create_output
+    with self.assertRaises(RecordError):_load(deep)
+                                        ^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector_profile.py", line 25, in _load
+    return _decode(data)
+           ^^^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector.py", line 38, in _decode
+    value = json.loads(data.decode('utf-8'), object_pairs_hook=_json_object)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py", line 354, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while decoding a JSON array from a unicode string
+
+======================================================================
+FAIL: test_corrupted_ownership_receipt_types_cannot_authorize_writes (test_inspector_privacy.InspectorPrivacyTests.test_corrupted_ownership_receipt_types_cannot_authorize_writes) (change={'inspectorOutputVersion': True})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_privacy.py", line 189, in test_corrupted_ownership_receipt_types_cannot_authorize_writes
+    with self.subTest(change=change),self.assertRaises(RecordError):self.run_profile(audience='owner',profile='private-offline',write=True)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RecordError not raised
+
+======================================================================
+FAIL: test_corrupted_ownership_receipt_types_cannot_authorize_writes (test_inspector_privacy.InspectorPrivacyTests.test_corrupted_ownership_receipt_types_cannot_authorize_writes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_privacy.py", line 190, in test_corrupted_ownership_receipt_types_cannot_authorize_writes
+    self.assertEqual(before,{p.name:p.read_bytes() for p in self.out.iterdir()})
+AssertionError: {'ins[19 chars]: b'{"audience": "owner", "files": {"index.htm[29895 chars]ml>'} != {'ins[19 chars]: b'{\n  "audience": "owner",\n  "files": {\n [29928 chars]ml>'}
+Diff is 41640 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_review_brand_loader_refuses_nonregular_inputs_before_open (test_inspector_privacy.InspectorPrivacyTests.test_review_brand_loader_refuses_nonregular_inputs_before_open) (path='directory.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_privacy.py", line 175, in test_review_brand_loader_refuses_nonregular_inputs_before_open
+    with self.assertRaises(RecordError):_load(path)
+                                        ^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector_profile.py", line 21, in _load
+    with path.open('rb') as stream:
+         ^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: nonregular input opened
+
+======================================================================
+FAIL: test_review_brand_loader_refuses_nonregular_inputs_before_open (test_inspector_privacy.InspectorPrivacyTests.test_review_brand_loader_refuses_nonregular_inputs_before_open) (path='fifo.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_inspector_privacy.py", line 175, in test_review_brand_loader_refuses_nonregular_inputs_before_open
+    with self.assertRaises(RecordError):_load(path)
+                                        ^^^^^^^^^^^
+  File "/workspace/scratch/49137836191f/prs-alignment/src/project_record/inspector_profile.py", line 21, in _load
+    with path.open('rb') as stream:
+         ^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: nonregular input opened
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.131s
+
+FAILED (failures=4, errors=1)

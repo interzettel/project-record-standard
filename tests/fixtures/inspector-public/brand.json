@@ -1,0 +1,15 @@
+{
+  "brandVersion": 1,
+  "name": "Workshop reference / synthetic public test",
+  "font": "serif",
+  "light": {
+    "background": "#fffdf6",
+    "text": "#202331",
+    "link": "#28439c"
+  },
+  "dark": {
+    "background": "#171a24",
+    "text": "#eef1f8",
+    "link": "#abc0ff"
+  }
+}

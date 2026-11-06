@@ -1,0 +1,61 @@
+{
+  "contractVersion": "0.2.0",
+  "project": {
+    "id": "synthetic-reconcile",
+    "name": "Workshop reference (synthetic)",
+    "visibility": "public"
+  },
+  "source": {
+    "kind": "file-snapshot",
+    "path": "ledger.json",
+    "commit": null,
+    "observedOn": "2026-10-30",
+    "authority": "Synthetic fixture author only; not a consumer observation",
+    "sha256": "585a2450d71d28610ffd0e8743389c979e693dc044dc9a818f6cc07c065bd99d"
+  },
+  "groups": [
+    {
+      "id": "G",
+      "title": "Synthetic work",
+      "panel": "Now"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M",
+      "title": "Synthetic outcome",
+      "goal": "Keep work completion separate from acceptance",
+      "horizon": "Now",
+      "groupIds": [
+        "G"
+      ],
+      "gateItemIds": [
+        "WORK-1"
+      ],
+      "acceptanceRule": "source-state",
+      "sourceAccepted": false,
+      "nextAction": "Owner reviews the outcome; no acceptance receipt exists.",
+      "unscopedWork": []
+    }
+  ],
+  "items": [
+    {
+      "id": "WORK-1",
+      "title": "Inspect a source-backed work item",
+      "groupId": "G",
+      "milestoneId": "M",
+      "state": "active",
+      "sourceState": "synthetic-active",
+      "required": true,
+      "blocked": false,
+      "dependsOn": [],
+      "unmappedDependencies": [],
+      "evidence": [],
+      "completionBasis": "Not complete",
+      "kind": "implementation",
+      "criterion": "Public synthetic UI example only; no adoption or acceptance claimed.",
+      "owner": "Synthetic fixture author",
+      "implementationRevision": null
+    }
+  ]
+}

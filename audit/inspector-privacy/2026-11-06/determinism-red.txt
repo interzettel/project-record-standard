@@ -1,0 +1,1 @@
+Earlier negative run was observed in this conversation; transient full log is no longer available. This file is a limitation note, not reconstructed command output. See verification.json for the observed result summary.

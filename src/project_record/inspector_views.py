@@ -272,11 +272,26 @@ def _view(row, view):
     return str(body)
 
 
-def render_inspector(model):
+def render_inspector(model, *, brand=None):
     """Returns a portable page; selected data never becomes executable markup or URLs."""
     css, script = _asset('web/inspector.css'), _asset('web/inspector.mjs')
+    if brand is not None:
+        from .inspector_profile import _brand
+        brand = _brand(brand)
+        for mode in ['light','dark']:
+            colors=brand[mode]
+            rule=':root{--paper:'+colors['background']+';--ink:'+colors['text']+';--muted:'+colors['text']+';--link:'+colors['link']+'}'
+            css += rule if mode=='light' else '@media(prefers-color-scheme:dark){'+rule+'}'
+        font={'system':'system-ui,sans-serif','serif':'Georgia,serif','mono':'ui-monospace,monospace'}[brand['font']]
+        css += 'body{font-family:'+font+'}'
     head = '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; script-src \'unsafe-inline\'; img-src \'none\'; connect-src \'none\'; base-uri \'none\'; form-action \'none\'"><title>PRS · Offline record inspector</title><style>' + css + '</style><body><a class="skip" href="#main">Skip to records</a>'
     body = _Html(head + '<header><p class="eyebrow">Project Record Standard · owner-local</p><h1>Offline record inspector</h1><p>Trace a claim to the selected source.</p><p class="notice">Contains selected raw contents, including private context. Not a public export. No permission or acceptance is granted.</p><p>Inspection time: ' + escape(model['inspectedAt']) + '. Source timestamps below are separate supplied observations.</p></header>')
+    if model.get('audience') == 'public':
+        # Header literals are trusted renderer text; no input content is replaced.
+        header=str(body).replace('Project Record Standard · owner-local','Project Record Standard · reviewed public projection').replace('Contains selected raw contents, including private context. Not a public export. No permission or acceptance is granted.','Only explicitly reviewed normalized work/source/evidence fields are included. Other channels and extensions are omitted. Review attribution is host-supplied; no work acceptance or runtime permission is granted.')
+        body=_Html(header)
+    if brand is not None:
+        body += '<p class="host-brand">Host: '+escape(brand['name'])+'</p>'
     body += '<nav aria-label="Inspector sections"><a href="#index">Declared files</a> <a href="#coverage">Coverage and limits</a></nav><main id="main" tabindex="-1"><section id="index"><h2>Declared files</h2><label for="find">Find a declared file</label><input id="find" type="search"><p id="results" role="status" aria-live="polite"></p><ul id="artifact-index">'
     for row in model['artifacts']:
         body += '<li><a href="#artifact-' + escape(row['id'], quote=True) + '">' + escape(row['id'] + ' · ' + row['path'] + ' · ' + row['status']) + '</a></li>'

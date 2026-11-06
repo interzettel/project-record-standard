@@ -213,6 +213,12 @@
           "observedOn": "2026-11-06",
           "path": "sources/standard/changes/CH-INSPECTOR-VIEWS.json",
           "visibility": "public"
+        },
+        {
+          "path": "sources/standard/changes/CH-INSPECTOR-PRIVACY.json",
+          "visibility": "public",
+          "authority": "Authored PRS-INSPECT-03 privacy and managed output profiles",
+          "observedOn": "2026-11-06"
         }
       ],
       "presentation": {
