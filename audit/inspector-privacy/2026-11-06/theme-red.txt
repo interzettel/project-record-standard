@@ -1,0 +1,61 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> node --test tests/*.test.mjs
+
+✔ filter updates preserve one mounted result announcement node (146.91999ms)
+✔ closing an item hidden by filters restores a visible logical control (33.926755ms)
+✔ readable-list items expose the same selected state as work-map items (36.405934ms)
+✔ search retains its input and keyboard focus while updating results (12.634957ms)
+✔ ordinary inspector close returns focus to the matching work control (16.534306ms)
+✔ unbranded component state colours provide readable text contrast (45.045489ms)
+✔ committing a search edit does not replace its input or lose focus (22.320946ms)
+✔ dense same-day history retains every mark and exact row without repeated axis/value labels (91.827377ms)
+✔ observation selection preserves keyboard focus and exposes fraction, date and percentage (70.554108ms)
+✔ unmeasured observations leave a real path gap and remain in the table (23.972988ms)
+✔ single zero-percent snapshot is measured and uses one observation tick (13.961857ms)
+✔ narrow layout reduces ticks instead of scaling a fixed desktop drawing; cleanup disconnects (28.801957ms)
+✔ measure switch changes all displayed values and retains observation selection without source mutation (22.48527ms)
+✔ empty or all-unknown history never draws a zero-progress series (17.810187ms)
+✖ host appearance override selects actual brand tokens in either system mode (187.88625ms)
+✔ generated file filters only index, retaining focus, source targets and a mounted announcement (101.397256ms)
+✔ all source joins target unique rendered fields without external resources or data execution (57.421198ms)
+✔ static content and deep source fragment remain available with scripts disabled (69.326806ms)
+✔ prehnite browser percentages agree with offline calculation (1.194964ms)
+✔ prehnite search, scope and workflow filters select the real records (1.296885ms)
+✔ standard browser percentages agree with offline calculation (0.176312ms)
+✔ standard search, scope and workflow filters select the real records (0.131936ms)
+✔ deferred work needs an explicit ledger denominator (0.108141ms)
+✔ all-required evidence cannot be satisfied by one matching kind (0.164174ms)
+✔ half-tenth leaf percentage uses the shared upward tie rule (0.142291ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 24
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 896.361121
+
+✖ failing tests:
+
+test at tests/inspector.test.mjs:19:1
+✖ host appearance override selects actual brand tokens in either system mode (187.88625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+
+  + '#fffdf6'
+  - '#171a24'
+
+      at TestContext.<anonymous> (file:///workspace/scratch/49137836191f/prs-alignment/tests/inspector.test.mjs:33:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '#fffdf6',
+    expected: '#171a24',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
