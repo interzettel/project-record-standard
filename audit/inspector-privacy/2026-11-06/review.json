@@ -1,0 +1,28 @@
+{
+  "producer": "GPT-6 Astra /root/inspector_privacy_review",
+  "reviewedRevision": "8c6fbf100f8f1b90c6ca480f6fae65ef41ab1331",
+  "modelScope": "Fresh same-family model review; no independent-provider effectiveness claim",
+  "findings": [
+    {
+      "effect": "FIFO/nonregular review/brand may block loader",
+      "disposition": "is_file preflight before open; directory/FIFO no-open regression RED to GREEN"
+    },
+    {
+      "effect": "Deep JSON raises uncontrolled RecursionError",
+      "disposition": "Bounded decode errors normalized to RecordError; regression RED to GREEN"
+    },
+    {
+      "effect": "Boolean ownership version accepted and file map/digest shape unchecked",
+      "disposition": "Exact int version/map/digest validation; corrupted receipt regressions RED to GREEN"
+    }
+  ],
+  "positiveFindings": [
+    "No identified leak through known allowlist or arbitrary selection metadata",
+    "Source joins retain array indices; strings/URLs remain inert",
+    "Private modes repaired; output comparisons bounded",
+    "Public synthetic fixture safe for separately reviewed publishing after fixes"
+  ],
+  "remaining": "Actual browser observations and scope disposition required before19Done; source33/42 retained33/52 accepted4/13 unchanged",
+  "authorDispositionRevision": "9b8a712f1019bb7e143a1816449d989f28fad5e7",
+  "authorDisposition": "All reported loader/receipt cases have RED to GREEN regressions and full suite passes; fresh reviewer has not re-reviewed fixes"
+}

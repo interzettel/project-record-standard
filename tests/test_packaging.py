@@ -39,6 +39,8 @@ class DistributionTests(unittest.TestCase):
                 self.assertIn(root + 'tests/test_readme_profile.py', names)
                 self.assertIn(root + 'tests/test_inspector_inventory.py', names)
                 self.assertIn(root + 'tests/test_inspector.py', names)
+                self.assertIn(root + 'tests/test_inspector_privacy.py', names)
+                self.assertIn(root + 'tests/fixtures/inspector-public/review.json', names)
                 self.assertIn(root + 'tests/inspector.test.mjs', names)
                 self.assertIn(root + 'web/inspector.mjs', names)
                 self.assertIn(root + 'web/inspector.css', names)

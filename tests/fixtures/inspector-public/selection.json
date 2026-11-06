@@ -1,0 +1,12 @@
+{
+  "selectionVersion": 1,
+  "records": [
+    {
+      "id": "PUBLIC-DEMO",
+      "path": "record.json",
+      "kind": "project-record",
+      "visibility": "public",
+      "synthetic": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "CH-INSPECTOR-PRIVACY",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Add digest-and-field-reviewed public normalized work projections, strict owned-output preview/write/check profiles and synthetic profile verification without publishing owner-local contents.",
+  "workItemIds": [
+    "PRS-INSPECT-03"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased public field projection and inspectorOutputVersion1 managed profiles; original inspector and metadata-only diagnostic remain separate. Host review is supplied policy, not authenticated actor identity or automatic declassification. Actual browser integration evidence remains required; no version, release or milestone acceptance change."
+}

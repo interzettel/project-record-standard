@@ -17,6 +17,10 @@ from urllib.parse import urlsplit
 import markdown
 
 from project_record.core import RecordError, export_record
+from project_record.inspector import _load_selection
+from project_record.inspector_privacy import public_model
+from project_record.inspector_profile import _load
+from project_record.inspector_views import render_inspector
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = 'https://github.com/interzettel/project-record-standard'
@@ -180,6 +184,9 @@ def build_site(records: Path, output: Path) -> dict:
             selected[relative] = content
     if not {'standard', 'prehnite'}.issubset(projects):
         raise RecordError('The canonical website requires both public references')
+    fixture = ROOT / 'tests/fixtures/inspector-public'
+    public_demo = render_inspector(public_model(fixture, _load_selection(fixture/'selection.json'),
+        _load(fixture/'review.json'), observed_at='2026-11-06T10:00:00+01:00'), brand=_load(fixture/'brand.json'))
     for relative, content in selected.items():
         target = output / relative
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -202,6 +209,8 @@ def build_site(records: Path, output: Path) -> dict:
     review = output / 'qa'
     review.mkdir()
     (review / 'accessibility.html').write_bytes((ROOT / 'tools/accessibility_review.html').read_bytes())
+    (review / 'inspector').mkdir()
+    (review / 'inspector/index.html').write_text(public_demo, encoding='utf-8')
     identity = {
         'projects': projects,
         'sourceCommit': os.environ.get('GITHUB_SHA'),

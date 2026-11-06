@@ -1,0 +1,52 @@
+{
+  "publicReviewVersion": 1,
+  "reviewer": "PRS synthetic fixture author",
+  "decisionSource": "Maintainer reviewed these authored toy fields for #19 browser testing; no consumer/private records",
+  "records": [
+    {
+      "id": "PUBLIC-DEMO",
+      "sha256": "16dce56cb22e6a39ae31004ef32977855d5ca0c07ae00092910c73e2b030f0a3",
+      "pointers": [
+        "/contractVersion",
+        "/project/id",
+        "/project/name",
+        "/project/visibility",
+        "/source/kind",
+        "/source/path",
+        "/source/commit",
+        "/source/observedOn",
+        "/source/authority",
+        "/source/sha256",
+        "/groups/0/id",
+        "/groups/0/title",
+        "/groups/0/panel",
+        "/milestones/0/id",
+        "/milestones/0/title",
+        "/milestones/0/goal",
+        "/milestones/0/horizon",
+        "/milestones/0/groupIds/0",
+        "/milestones/0/gateItemIds/0",
+        "/milestones/0/acceptanceRule",
+        "/milestones/0/sourceAccepted",
+        "/milestones/0/nextAction",
+        "/milestones/0/unscopedWork",
+        "/items/0/id",
+        "/items/0/title",
+        "/items/0/groupId",
+        "/items/0/milestoneId",
+        "/items/0/state",
+        "/items/0/sourceState",
+        "/items/0/required",
+        "/items/0/blocked",
+        "/items/0/dependsOn",
+        "/items/0/unmappedDependencies",
+        "/items/0/evidence",
+        "/items/0/completionBasis",
+        "/items/0/kind",
+        "/items/0/criterion",
+        "/items/0/owner",
+        "/items/0/implementationRevision"
+      ]
+    }
+  ]
+}

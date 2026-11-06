@@ -89,8 +89,26 @@ def main(argv: list[str] | None = None) -> int:
     command.add_argument("--observed-at", required=True)
     command.add_argument("--output", type=Path, required=True, help="New dedicated owner-local output directory")
     command.add_argument("--owner-local", action="store_true", required=True, help="Includes selected raw/private contents; never a public export")
+    command = subs.add_parser("inspector-profile")
+    command.add_argument("--root", type=Path, required=True)
+    command.add_argument("--selection", type=Path, required=True)
+    command.add_argument("--output", type=Path, required=True)
+    command.add_argument("--observed-at", required=True)
+    command.add_argument("--profile", choices=['private-offline','host-branded'], required=True)
+    command.add_argument("--audience", choices=['owner','public'], required=True)
+    command.add_argument("--review", type=Path)
+    command.add_argument("--brand", type=Path)
+    modes=command.add_mutually_exclusive_group()
+    modes.add_argument("--write", action="store_true")
+    modes.add_argument("--check", action="store_true")
     args = parser.parse_args(argv)
     try:
+        if args.command == "inspector-profile":
+            from .inspector import inspector_profile
+            result=inspector_profile(args.root,args.selection,args.output,observed_at=args.observed_at,
+                audience=args.audience,profile=args.profile,review=args.review,brand=args.brand,write=args.write,check=args.check)
+            print(json.dumps(result,indent=2))
+            return result['exitCode']
         if args.command == "inspector":
             from .inspector import build_inspector
             result = build_inspector(args.root, args.selection, args.output, observed_at=args.observed_at)

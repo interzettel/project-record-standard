@@ -13,3 +13,6 @@ include standards/inspector-inventory.json
 
 include tests/test_inspector.py tests/inspector.test.mjs
 recursive-include tests/fixtures/inspector-views *.json *.md
+
+include tests/test_inspector_privacy.py
+recursive-include tests/fixtures/inspector-public *.json *.md

@@ -93,3 +93,43 @@ Both tools retain 128 declarations and 2MiB/file. The HTML builder additionally 
 Exit0 means a nonempty selected set was rendered with its stated validation limits; exit3 means partial/unsupported/empty coverage. Exit1 is a command or output failure. None establishes owner acceptance, schema authentication, publication, freshness or complete repository coverage. `tests/fixtures/inspector-views/` supplies synthetic shape-only assessments and copied pinned released samples for all view roles; these are test inputs, not real adoption receipts or a public inspector export.
 
 Verification records distinguish static/DOM checks from actual browser, reflow, native zoom and screen-reader observations. The historical reference-view accessibility results do not transfer to this new page. Native tests blocked or not performed remain not-tested, and #19 must prove the actual integrated profiles.
+
+## Managed profiles and reviewed public fields · unreleased main
+
+`inspector-profile` adds preview, explicit `--write`, and read-only `--check` around two fixed generated files: `index.html` and `inspector-output.json`. The older `inspector --owner-local` command still requires a new directory and includes parsed private contents; it has no public mode.
+
+```sh
+PYTHONPATH=/reviewed/prs/src python3 -m project_record inspector-profile --root /host/records --selection /host/selection.json --output /host/private-view --observed-at 2026-11-06T10:00:00+01:00 --profile private-offline --audience owner --check
+```
+
+Without `--write` or `--check`, the command previews whether output would change. A missing output is stale. Check returns1 for stale bytes and never writes. Reuse the same explicit observation clock to compare the same build; rebuilding never refreshes source dates. Exit3 retains partial owner-local input coverage. An explicit write regenerates only these owned outputs, refusing unrelated neighbors, symlinks, mismatched ownership/profile and source/config/review/brand collisions. The ownership receipt declares a generated namespace; it is not actor authentication. POSIX output is0700/0600; host ACLs and cooperating local-owner behavior remain host responsibilities. Per-file atomic replacements plus parity detection make interrupted regeneration detectable and recoverable; no multi-file atomic transaction is claimed.
+
+### Public review boundary
+
+Public output is initially limited to **normalized project-record**. Other families stay owner-local; there is no public uninterpreted fallback. A public declaration alone is insufficient. Private declarations and unmapped kinds are refused before content reads. Existing public export validation also refuses private project/inputVisibility values. A structural allowlist then retains only contract/project/source/work/group/milestone fields and typed evidence metadata. It removes extra memory, notes in unsupported extensions, cached metrics, governance, history, delivery, operations and other unimplemented channels. Public view coverage explicitly names these omissions. Work IDs, criteria, prerequisites and source acceptance rules keep their existing meanings; the shared core recalculates metrics.
+
+A separate host-adopted review must bind each selected artifact ID, the exact raw SHA-256, and every published primitive or empty-container JSON Pointer. Missing/stale/mismatched reviews fail before output writes. Wildcards, whole-subtree shortcuts, extra unknown pointers and omitted published fields are refused. Raw path and arbitrary render/producer metadata from the selection are not copied; public artifact locators use their reviewed ID. Source locators inside the normalized record remain explicitly reviewed data. Unsupported extensions are stripped even if they appear in the original file; changing any input bytes still invalidates the digest review.
+
+```json
+{"publicReviewVersion":1,"reviewer":"Host-designated reviewer","decisionSource":"Actual host decision/evidence location","records":[{"id":"REC","sha256":"exact lowercase SHA-256 of reviewed input","pointers":["/contractVersion","/project/id","all other explicitly approved published leaf pointers"]}]}
+```
+
+This abbreviated example is not a valid approval. The synthetic complete test review is in `tests/fixtures/inspector-public/review.json`. `public_field_pointers` can enumerate the structurally projected field set; enumeration is not review, permission or an automated secret audit. Reviewer/decision attribution is host-supplied and not authenticated by PRS. The host must adopt the review independently of untrusted input content. Do not generate approvals from record prose or treat a forged attribution as a real owner decision. A private source needs a separately authored/reviewed public source; this command does not declassify private inputs.
+
+```sh
+PYTHONPATH=/reviewed/prs/src python3 -m project_record inspector-profile --root /host/public-records --selection /host/public-selection.json --review /host/adopted-public-review.json --brand /host/brand.json --output /host/owned-inspector-route --observed-at 2026-11-06T10:00:00+01:00 --profile host-branded --audience public --write
+```
+
+`publishable:true` means the selected reviewed projection passed this bounded contract. It is not publication, full privacy certification, outcome acceptance, native-runtime activation or permission to deploy to a new destination. Text remains escaped, URLs remain inert source strings, and schema/manifest references are never followed. The page has no network, model, browser storage or source-write path. Public source field pointers describe the parsed projection; the input digest identifies the reviewed original bytes, including omitted fields. Parsing/Unicode/size limits from the owner-local reader remain explicit.
+
+### Three integration profiles
+
+| Profile | Supported integration and verification boundary |
+| --- | --- |
+| README-only | Reuse `readme-profile` and `presentation.renderer: readme`. Preserve authored text/brand/source identities and check README/SVG parity without producing HTML or configuring Pages. The inspector does not override that choice. |
+| Host-branded | An explicitly owned sidecar route can inherit a strict host brand token file. Local system/serif/mono stacks and six-digit palette values prevent arbitrary CSS or remote fonts. The host keeps its existing shell, navigation and deployment writer. This profile does not inject a compulsory dashboard into the host or claim arbitrary inline integration support. |
+| Private-offline | Owner-local managed HTML retains full bounded views and error states. It requires no Pages, server, login or model. Its file and receipt remain private; it is never an input to the public site builder. |
+
+Brand tokens use `brandVersion:1`, a short escaped `name`, `font` (`system`, `serif`, `mono`) and `light`/`dark` objects containing `background`, `text`, `link` as explicit six-digit hex values. Tokens do not themselves certify contrast; test the rendered cascade. The synthetic public fixture's brand differs from the PRS shell without modifying its navigation or application version.
+
+The canonical website's isolated `qa/inspector/index.html` route is generated only from the checked-in authored toy record and its exact review; it never reads a user's owner-local output or a supplied review directory. Private/offline fixtures are excluded from this site path. This public integration surface is distinct from the earlier blocked local file inspection, with no private context made public. Whole #19 completion still requires named browser observations and a reviewed disposition of their actual limits. A passing DOM test or this public test page cannot invent private file-opening, native zoom or screen-reader evidence.
