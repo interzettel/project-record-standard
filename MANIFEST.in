@@ -19,3 +19,5 @@ recursive-include tests/fixtures/inspector-public *.json *.md
 
 include tests/test_upgrades.py
 recursive-include tests/fixtures/upgrades *.md *.json
+
+include tests/test_upgrade_apply.py

@@ -1,0 +1,34 @@
+test_all_apply_and_rollback_write_boundaries_survive_process_death (test_upgrade_apply.UpgradeApplyTests.test_all_apply_and_rollback_write_boundaries_survive_process_death) ... ok
+test_ambiguous_mapping_and_unsafe_path_are_rejected (test_upgrade_apply.UpgradeApplyTests.test_ambiguous_mapping_and_unsafe_path_are_rejected) ... ok
+test_apply_repeat_rollback_preserve_records_and_unrelated_work (test_upgrade_apply.UpgradeApplyTests.test_apply_repeat_rollback_preserve_records_and_unrelated_work) ... ok
+test_boolean_and_number_are_distinct_guarded_source_facts (test_upgrade_apply.UpgradeApplyTests.test_boolean_and_number_are_distinct_guarded_source_facts) ... FAIL
+test_changed_guard_or_archive_blocks_without_writes (test_upgrade_apply.UpgradeApplyTests.test_changed_guard_or_archive_blocks_without_writes) ... ok
+test_cli_preview_does_not_apply (test_upgrade_apply.UpgradeApplyTests.test_cli_preview_does_not_apply) ... ok
+test_cli_requires_explicit_mode_for_application (test_upgrade_apply.UpgradeApplyTests.test_cli_requires_explicit_mode_for_application) ... ok
+test_corrupted_journal_backup_never_overwrites_host (test_upgrade_apply.UpgradeApplyTests.test_corrupted_journal_backup_never_overwrites_host) ... ok
+test_duplicate_json_keys_are_not_silently_canonicalized (test_upgrade_apply.UpgradeApplyTests.test_duplicate_json_keys_are_not_silently_canonicalized) ... ok
+test_edited_owned_or_stale_preimage_refuses_before_any_mutation (test_upgrade_apply.UpgradeApplyTests.test_edited_owned_or_stale_preimage_refuses_before_any_mutation) ... ok
+test_guarded_source_replacement_cannot_change_authoritative_facts (test_upgrade_apply.UpgradeApplyTests.test_guarded_source_replacement_cannot_change_authoritative_facts) ... ok
+test_installer_receipt_and_rules_are_generated_by_existing_installer (test_upgrade_apply.UpgradeApplyTests.test_installer_receipt_and_rules_are_generated_by_existing_installer) ... ok
+test_journal_unknown_neighbor_or_corrupt_backup_is_refused (test_upgrade_apply.UpgradeApplyTests.test_journal_unknown_neighbor_or_corrupt_backup_is_refused) ... ok
+test_new_file_collision_is_not_overwritten_and_new_files_rollback (test_upgrade_apply.UpgradeApplyTests.test_new_file_collision_is_not_overwritten_and_new_files_rollback) ... ok
+test_new_toolkit_path_cannot_overwrite_unowned_collision (test_upgrade_apply.UpgradeApplyTests.test_new_toolkit_path_cannot_overwrite_unowned_collision) ... ok
+test_phase_interruptions_and_partial_rollback_are_recoverable (test_upgrade_apply.UpgradeApplyTests.test_phase_interruptions_and_partial_rollback_are_recoverable) ... ok
+test_plan_tamper_and_synthetic_grant_refuse (test_upgrade_apply.UpgradeApplyTests.test_plan_tamper_and_synthetic_grant_refuse) ... ok
+test_post_upgrade_owned_edit_blocks_rollback_without_losing_any_bytes (test_upgrade_apply.UpgradeApplyTests.test_post_upgrade_owned_edit_blocks_rollback_without_losing_any_bytes) ... ok
+test_preview_changes_no_host_bytes_and_requires_separate_grant (test_upgrade_apply.UpgradeApplyTests.test_preview_changes_no_host_bytes_and_requires_separate_grant) ... ok
+test_unchanged_installation_input_edit_is_caught_on_resume (test_upgrade_apply.UpgradeApplyTests.test_unchanged_installation_input_edit_is_caught_on_resume) ... ok
+
+======================================================================
+FAIL: test_boolean_and_number_are_distinct_guarded_source_facts (test_upgrade_apply.UpgradeApplyTests.test_boolean_and_number_are_distinct_guarded_source_facts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_upgrade_apply.py", line 163, in test_boolean_and_number_are_distinct_guarded_source_facts
+    with self.assertRaises(RecordError):preview_upgrade(self.request,[t],self.guards,'e'*40)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RecordError not raised
+
+----------------------------------------------------------------------
+Ran 20 tests in 2.620s
+
+FAILED (failures=1)

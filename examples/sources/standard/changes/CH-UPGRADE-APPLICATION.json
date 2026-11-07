@@ -1,0 +1,11 @@
+{
+  "id": "CH-UPGRADE-APPLICATION",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Add explicit reviewed upgrade preview/apply/rollback with private per-file recovery, complete selected input guards and source-preserving JSON transformations.",
+  "workItemIds": [
+    "PRS-UPGRADE-02"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased upgradePlanVersion1/upgradeReceiptVersion1; optional exact historical/current instruction-writer selection leaves installer defaults unchanged. No generic semantic migration, permission expansion, distributed skill, acceptance or release inferred."
+}

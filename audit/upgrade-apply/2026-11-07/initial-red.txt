@@ -1,0 +1,21 @@
+test_upgrade_apply (unittest.loader._FailedTest.test_upgrade_apply) ... ERROR
+
+======================================================================
+ERROR: test_upgrade_apply (unittest.loader._FailedTest.test_upgrade_apply)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_upgrade_apply
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_upgrade_apply.py", line 13, in <module>
+    from project_record.upgrades import preview_upgrade, apply_upgrade
+ImportError: cannot import name 'preview_upgrade' from 'project_record.upgrades' (/workspace/scratch/49137836191f/prs-alignment/src/project_record/upgrades.py)
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

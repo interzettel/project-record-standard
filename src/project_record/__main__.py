@@ -28,6 +28,13 @@ def main(argv: list[str] | None = None) -> int:
         if name in {"build", "pipeline", "export"}:
             command.add_argument("--output", type=Path, required=True)
             command.add_argument("--audience", choices=["owner", "public"], default="owner")
+    command = subs.add_parser("upgrade-preview")
+    command.add_argument("--request", type=Path, required=True)
+    command = subs.add_parser("upgrade-apply")
+    command.add_argument("--plan", type=Path, required=True)
+    command.add_argument("--grant", type=Path, required=True)
+    command.add_argument("--journal", type=Path, required=True)
+    command.add_argument("--mode", choices=['apply', 'rollback'], required=True)
     command = subs.add_parser("upgrade-assess")
     command.add_argument("--request", type=Path, required=True, help="Explicit owner-local read-only upgradeVersion1 request")
     command = subs.add_parser("validate")
@@ -105,6 +112,15 @@ def main(argv: list[str] | None = None) -> int:
     modes.add_argument("--check", action="store_true")
     args = parser.parse_args(argv)
     try:
+        if args.command in {"upgrade-preview", "upgrade-apply"}:
+            from .upgrades import _read, preview_upgrade, apply_upgrade
+            if args.command == "upgrade-preview":
+                value = json.loads(_read(args.request, 64 * 1024 * 1024))
+                result = preview_upgrade(value['request'], value['transformations'], value['guards'], value['producerRevision'])
+            else:
+                result = apply_upgrade(json.loads(_read(args.plan, 64 * 1024 * 1024)), json.loads(_read(args.grant, 1024 * 1024)), args.journal, mode=args.mode)
+            print(json.dumps(result, indent=2))
+            return 0
         if args.command == "upgrade-assess":
             from .upgrades import assess_file
             result = assess_file(args.request)
@@ -195,7 +211,7 @@ def main(argv: list[str] | None = None) -> int:
                 return 1
         print(json.dumps(result, indent=2))
         return 0
-    except (RecordError, OSError, KeyError, TypeError, ValueError) as error:
+    except (RecordError, OSError, KeyError, TypeError, ValueError, RecursionError) as error:
         print(str(error), file=sys.stderr)
         return 1
 

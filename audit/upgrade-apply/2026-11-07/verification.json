@@ -1,0 +1,40 @@
+{
+  "localCodeRevision": "fa0afdab8e3027469aae3989cebfbc3aa3759b17",
+  "testRevision": "884028a2aa8fc89c9b5cca6c482418fc6d482b08",
+  "observedOn": "2026-11-07",
+  "python": 325,
+  "applyTests": 29,
+  "javascript": 25,
+  "checks": {
+    "sourceValidation": "pass",
+    "skillMetadata": 11,
+    "palettePairs": 20,
+    "sourceKit": "full suite covers distribution/checksums",
+    "publicPipeline": "pass",
+    "siteDocuments": 21,
+    "readme": "text/graphic parity pass",
+    "installedWheel": "Outside checkout preview/apply/rollback against actual v0.4.1 disposable installation pass",
+    "trustedBasePolicy": {
+      "overall": "pass",
+      "exitCode": 0,
+      "hostDecisions": []
+    }
+  },
+  "runtimes": {
+    "python": "3.12.14",
+    "node": "v24.22.1"
+  },
+  "hashes": {
+    "src/project_record/upgrade_apply.py": "1a78eb8f72ffb1bc16181507784bad1cb8eaff370936fad03cba0fcb86c92420",
+    "src/project_record/upgrades.py": "f2a387cbfc4ee185e294dfc0b2dad9627a5572c986e676fc33e65098ff24414d",
+    "src/project_record/agents.py": "f7989088514b12ce5b54e1291a3ab4c5cb8affee13bb4e0eb5ca9906518eae58",
+    "src/project_record/__main__.py": "0c5b76c7c34f3cd186293a7c91acb6018095e16240d0e2cea0af5301bf9ed190",
+    "tests/test_upgrade_apply.py": "9dc382e84455daa9d7526b1c7dfadd3feff92c52cc64120cdc7dc48296dc004a",
+    "tools/package_standard.py": "31514dd51462bd5bea9759185319e857ceabab99e35fc28e9d4a1dd7a25defb8",
+    "standards/UPGRADING.md": "cb243bfc4a88b4bbbd343ae6f33c8806fceb47957abedcddd703f2dcb99da323",
+    "MANIFEST.in": "ed41d379c90dd589e82cbb1810e46891575ff2ae4acd0cc729533dcf47973c8d"
+  },
+  "actualScope": "Real immutable v0.4.1 same-release format-only apply/repeat/rollback, not new release or existing consumer migration; see real-installation.json",
+  "syntheticScope": "Actual disposable synthetic old/new installations; changed skill payload + guarded source facts, per-file crash/recovery, namespace/alias/approval/conflict tests; synthetic permission explicit",
+  "limits": "Per-file transaction only; undeclared sources/semantic migrations/native Windows/power loss/hostile processes not certified; owner acceptance/release separate"
+}

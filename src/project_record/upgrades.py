@@ -302,3 +302,15 @@ def assess_file(path: Path) -> dict:
         return assess_upgrade(json.loads(_read(path, 1024 * 1024)))
     except RecursionError as error:
         raise RecordError('Upgrade request nesting exceeds supported decoding depth') from error
+
+
+def preview_upgrade(request: dict, transformations: list, guards: list[str], producer_revision: str) -> dict:
+    """Previews the separate reviewed application layer without host writes."""
+    from .upgrade_apply import preview_upgrade as preview
+    return preview(request, transformations, guards, producer_revision)
+
+
+def apply_upgrade(plan: dict, grant: dict, journal: Path, *, mode: str = 'apply', _checkpoint=None) -> dict:
+    """Runs a plan-bound apply/rollback with a private recovery journal."""
+    from .upgrade_apply import apply_upgrade as apply
+    return apply(plan, grant, journal, mode=mode, _checkpoint=_checkpoint)
