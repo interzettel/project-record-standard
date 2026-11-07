@@ -237,6 +237,12 @@
           "observedOn": "2026-11-07",
           "path": "sources/standard/changes/CH-UPGRADE-GUIDANCE.json",
           "visibility": "public"
+        },
+        {
+          "authority": "Authored offline release observer and private recovery feature; no scheduler activation or publication",
+          "observedOn": "2026-11-07",
+          "path": "sources/standard/changes/CH-RELEASE-MONITORING.json",
+          "visibility": "public"
         }
       ],
       "presentation": {

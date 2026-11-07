@@ -1,0 +1,11 @@
+{
+  "id": "CH-RELEASE-MONITORING",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Retain quiet sourced release attention, private deduplicated state, bounded retry/freshness recovery and a manual host-runner template.",
+  "workItemIds": [
+    "PRS-OPS-01"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased opt-in toolkit/suite0.6.0-alpha.0; wheel0.6.0a0; contract0.2.0 and published0.4.1 unchanged. Supplied observations only: no collector, activated scheduler, automatic consumer upgrade or native runtime proof."
+}

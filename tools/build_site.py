@@ -45,6 +45,7 @@ DOCUMENTS = [
     ('PRESENTATION', 'Brand and interaction'),
     ('ACCESSIBILITY', 'Accessibility evidence'),
     ('UPGRADING', 'Upgrades and recovery'),
+    ('OPERATIONS', 'Quiet release observations'),
     ('DELIVERY', 'Repository and delivery evidence'),
 ]
 

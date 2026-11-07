@@ -1,0 +1,15 @@
+{
+  "policyCIResultVersion": 1,
+  "exitCode": 0,
+  "overall": "pass",
+  "hostEnforcement": "not-assessed",
+  "written": false,
+  "inputs": {
+    "beforeSourceSha256": "acf5d38002ab662bc39c67d18081b1abe787329715090992dca1962874ecbc16",
+    "afterSourceSha256": "acf5d38002ab662bc39c67d18081b1abe787329715090992dca1962874ecbc16",
+    "beforeCanonicalSha256": "3233e726d48ad8b07b1994c5c15f7ae6f3d551197a3a99d349e6b2e3c57c286d",
+    "afterCanonicalSha256": "4e2856e36acc7fc4ca48e97c9f27a173cd317b0164075cc67a16567822ae8625"
+  },
+  "hostDecisions": [],
+  "reason": "Verdict covers selected data predicates and separately adopted exact-input authority decisions only"
+}

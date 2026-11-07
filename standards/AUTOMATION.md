@@ -127,3 +127,7 @@ The #33 native verification is recorded in [the dated report](../audit/ci-enforc
 ## Experimental runtime transport
 
 The unreleased [runtime adapter pilot](RUNTIME-ADAPTERS.md) delivers a private host-prepared event through this same writer. Hook configuration, source pins, duplicate recovery and explicit manual retries are implemented preparation; actual Codex/Claude lifecycle sessions remain #34 acceptance evidence. No model session, native support or unattended operation is inferred from the synthetic tests.
+
+## Release observation operations
+
+Use [quiet release observations](OPERATIONS.md) for the main-only `release-watch` reducer, private state writer and opt-in host template. It consumes supplied observations and rechecks actual selected installation bytes; it activates no scheduler or network collector. Existing runtime and unattended-adoption gates still apply.

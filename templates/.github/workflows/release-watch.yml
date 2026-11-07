@@ -1,0 +1,47 @@
+# Reviewed example only: no schedule is enabled. Reuse the host's existing scheduler.
+# Requires a trusted Linux runner with a pinned vendored toolkit, supplied collection
+# request and persistent private external state. It does not fetch releases itself.
+name: Observe pinned release drift
+on:
+  workflow_dispatch:
+    inputs:
+      request_path:
+        description: Reviewed local watchVersion1 request on trusted runner
+        required: true
+        type: string
+      state_path:
+        description: Persistent private directory outside the host checkout
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: prs-release-watch
+  cancel-in-progress: false
+jobs:
+  observe:
+    runs-on: [self-hosted, prs-observer]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Retain bounded supplied observation
+        env:
+          REQUEST_PATH: ${{ inputs.request_path }}
+          STATE_PATH: ${{ inputs.state_path }}
+        shell: bash
+        run: |
+          set -u
+          umask 077
+          # Host must separately verify its vendored toolkit pin and collection policy.
+          set +e
+          PYTHONPATH=tools/prs/src python3 -m project_record release-watch \
+            --request "$REQUEST_PATH" --state "$STATE_PATH" \
+            --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" --write \
+            > "$RUNNER_TEMP/prs-watch-result.json"
+          result=$?
+          set -e
+          case "$result" in
+            0|3) echo 'Observation retained; inspect the private runner result for freshness.' ;;
+            *) exit "$result" ;;
+          esac

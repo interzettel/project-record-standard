@@ -1,0 +1,35 @@
+{
+  "codeRevision": "81a1cd8cf0bfd14f5cbf03fff13be3e2b8cbd4a6",
+  "pythonTests": 350,
+  "collectionTests": 20,
+  "javascriptTests": 25,
+  "skills": 12,
+  "palettePairs": 20,
+  "siteGuides": 22,
+  "sourceValidation": "passed",
+  "pipeline": "passed;public prehnite/standard only",
+  "readmeParity": "passed",
+  "trustedBasePolicy": "pass;local data predicates, not host settings or bypass proof",
+  "toolkitSuite": "0.6.0-alpha.0",
+  "wheelVersion": "0.6.0a0",
+  "recordContract": "0.2.0",
+  "published": "0.4.1",
+  "sourceKit": {
+    "files": 329,
+    "sha256": "a0b5e54eb5cc4e62107050940bcb1cbec1b9b57551dc4f2564a9f1eff9c9ef4d",
+    "published": false
+  },
+  "wheelSha256": "799d3ecd3ed7ffcd09a2e200e91c1d0c17faf15dbcd2277cf224bfb5e6c6d37d",
+  "files": {
+    "src/project_record/collection.py": "d0bee677d7ba4b85fcc852dfc4b540f361170e25985e94d01e168a75849d9387",
+    "src/project_record/__main__.py": "9b4a71733349ec820d8349b2175b1cc45aea87c1bb364f9ec54ef0ddb9c0eb5f",
+    "tests/test_collection.py": "3f3f47536cb2a1d36823d9cdbf332b0f56837184f95325481f1f1687a939621b",
+    "tools/package_standard.py": "9f7411f2b1199208dc7ad1086a47b03b7c87dde341a579bae1a456a147c7887a",
+    "tools/build_site.py": "57e48ab77aa30c9dc6ea301307fffdc19519f0b0243c07d71a0b3fd657d75a5d",
+    "standards/OPERATIONS.md": "34ba514c371e87d4c1a977b885d29f34bbe699cfacef26bcff653f2f648cd9a7",
+    "standards/inspector-inventory.json": "54d0b64096644c69499d35a3eb59928f38905457597940f822897fc7d0933184",
+    "templates/.github/workflows/release-watch.yml": "009d036ffc6c38f62c82a47928eb5475a0a466e463a3efaca5ae4bec4474ecf4"
+  },
+  "initialCheckLimit": "First full-suite and catalogue run failed because Markdown dependency was absent; catalogue test also used nonexistent GUIDES instead of DOCUMENTS. Both corrected before350-test green. catalogue-red.txt is setup failure evidence, not behavioral red. review-red.txt contains two actual reproduced P2 failures plus that setup error.",
+  "runtimeLimit": "Synthetic sourced metadata and actual disposable installation/file/CLI bytes; no activated scheduler, collection transport, consumer migration or live #34 session"
+}

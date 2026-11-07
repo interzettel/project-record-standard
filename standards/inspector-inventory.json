@@ -483,6 +483,59 @@
       "plannedView": "Unsupported placeholder/coverage limit until actual producer and schema are proven",
       "selectorKind": null,
       "inspectorViewImplemented": false
+    },
+    {
+      "id": "M-WATCH-REQUEST",
+      "kind": "watchVersion1 release observation request",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "{explicit watcher request}.json"
+      ],
+      "producer": "Host collector supplies; collection.py validates",
+      "ownership": "Operations observation and attention only; never work completion, source freshness or upgrade authority",
+      "sensitivity": "Owner-private local host/release metadata; not a public projection",
+      "schemaStatus": "Code contract in collection.py; no standalone inspector selector/schema",
+      "plannedView": "Uninterpreted fallback; no semantic inspector support claimed",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "M-WATCH-STATE",
+      "kind": "watchStateVersion1 private observation state",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "{external owned state directory}/state.json"
+      ],
+      "producer": "collection.py:watch_files under explicit write",
+      "ownership": "Operations observation and attention only; never work completion, source freshness or upgrade authority",
+      "sensitivity": "Owner-private local host/release metadata; not a public projection",
+      "schemaStatus": "Code contract in collection.py; no standalone inspector selector/schema",
+      "plannedView": "Uninterpreted fallback; no semantic inspector support claimed",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    },
+    {
+      "id": "M-WATCH-RESULT",
+      "kind": "watchResultVersion1 local attention result",
+      "availability": "main-unreleased",
+      "pathPatterns": [
+        "{release-watch stdout capture}.json"
+      ],
+      "producer": "collection.py:observe_releases; CLI release-watch",
+      "ownership": "Operations observation and attention only; never work completion, source freshness or upgrade authority",
+      "sensitivity": "Owner-private local host/release metadata; not a public projection",
+      "schemaStatus": "Code contract in collection.py; no standalone inspector selector/schema",
+      "plannedView": "Uninterpreted fallback; no semantic inspector support claimed",
+      "selectorKind": null,
+      "inspectorViewImplemented": false
+    }
+  ],
+  "extensions": [
+    {
+      "observedOn": "2026-11-07",
+      "workItemId": "PRS-OPS-01",
+      "source": "src/project_record/collection.py",
+      "effect": "Adds three actual local observation families to the dated29-family baseline; future MCP/hosting/native-session proof remains unsupported"
     }
   ]
 }

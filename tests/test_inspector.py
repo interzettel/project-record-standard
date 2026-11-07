@@ -104,7 +104,7 @@ class InspectorTests(unittest.TestCase):
 
     def test_all_catalogue_families_have_explicit_view_or_fallback_mapping(self):
         model = self.model()
-        self.assertEqual(len(model['coverageTable']), 29)
+        self.assertEqual(len(model['coverageTable']), 32)
         self.assertTrue(all(r['view'] and r['familyId'] for r in model['coverageTable']))
         self.assertEqual(next(r for r in model['coverageTable'] if r['familyId'] == 'F-RECEIPTS')['view'], 'uninterpreted')
 
