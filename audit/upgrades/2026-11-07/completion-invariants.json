@@ -1,0 +1,52 @@
+{
+  "implementationRevision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+  "implementationTree": "83884774f134cf5eaf55dfad352c25acbfc5b31c",
+  "localReviewedCode": "9f173c047afcea55efd6d059e662b0a7cfb15768; code hashes unchanged in remote implementation revision",
+  "changedItems": {
+    "PRS-UPGRADE-01": [
+      "evidence",
+      "implementationRevision",
+      "sourceState",
+      "completionBasis",
+      "state"
+    ]
+  },
+  "exactPreviousRawPreserved": true,
+  "criteriaDependenciesScopeAcceptanceVersionsUnchanged": true,
+  "metrics": {
+    "work": {
+      "done": 35,
+      "total": 42,
+      "percent": 83.3,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 35,
+      "total": 52,
+      "percent": 67.3,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  }
+}

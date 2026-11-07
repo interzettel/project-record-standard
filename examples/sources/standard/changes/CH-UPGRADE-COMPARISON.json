@@ -1,0 +1,11 @@
+{
+  "id": "CH-UPGRADE-COMPARISON",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Add read-only archive-bound release delta and byte-bound host applicability comparison without consumer writes or permission expansion.",
+  "workItemIds": [
+    "PRS-UPGRADE-01"
+  ],
+  "pr": null,
+  "compatibility": "Unreleased upgradeVersion1 request/upgradeAssessmentVersion1 report, independent of record0.2.0 and suite/package0.4.1. Synthetic targets remain simulations. Reviewed application and distributed upgrade skill remain #21/#22."
+}

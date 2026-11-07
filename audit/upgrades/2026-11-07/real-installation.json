@@ -1,0 +1,72 @@
+{
+  "observedOn": "2026-11-07",
+  "scope": "Disposable installation using actual immutable v0.4.1 archive and that release own installer; not an existing consumer migration",
+  "installerReturnCode": 0,
+  "archiveSha256": "a46cdcea938eb987b936497a22db8eab07106aad7dd12a8cfe10b4ad41f74607",
+  "selectedToolkitFiles": 135,
+  "ownedSuiteFiles": 26,
+  "beforeAfterBytesIdentical": true,
+  "repeatIdentical": true,
+  "result": {
+    "upgradeAssessmentVersion": 1,
+    "overall": "assessment-ready",
+    "exitCode": 0,
+    "requestSha256": "812236e1ae9089cb82a3ab7e23c343a208146f4ede2761c0552f53fe510fd38b",
+    "dimensions": {
+      "hostVersion": "1.2.3",
+      "hostRecordContract": "0.2.0",
+      "profile": "readme-only",
+      "fromSuite": "0.4.1",
+      "toSuite": "0.4.1",
+      "fromContract": "0.2.0",
+      "toContract": "0.2.0"
+    },
+    "installation": {
+      "bytes": "selected-bytes-match",
+      "conflicts": [],
+      "missing": [],
+      "provenance": "matches-declared-evidence",
+      "publisherAuthenticated": false,
+      "runtime": {},
+      "adapters": {},
+      "recordContract": "readable",
+      "policy": "not-pinned",
+      "coverage": "Only explicitly pinned toolkit files and the complete selected suite; no unselected toolkit file claim",
+      "receiptWriter": ".project-record/agent-installation.json",
+      "written": false,
+      "upgradeApplied": false
+    },
+    "releases": [
+      {
+        "identity": {
+          "version": "0.4.1",
+          "sourceCommit": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+          "archiveSha256": "a46cdcea938eb987b936497a22db8eab07106aad7dd12a8cfe10b4ad41f74607"
+        },
+        "kind": "published",
+        "gaps": [],
+        "source": "https://github.com/interzettel/project-record-standard/releases/tag/v0.4.1",
+        "review": {
+          "reviewer": "Codex task session",
+          "source": "Same-release anchor; no intervening delta. GitHub release/tag read-back and actual hash-verified ZIP."
+        }
+      }
+    ],
+    "coverage": {
+      "complete": true,
+      "source": "GitHub releases first page contains only v0.4.1; same-release selection has no intervening releases"
+    },
+    "transitions": [],
+    "matrix": [],
+    "conflicts": [],
+    "unknown": [],
+    "publisherAuthenticated": false,
+    "semanticJudgmentsAuthenticated": false,
+    "coverageLimit": "Selected toolkit files, complete selected suite and cited delta members only; supplied enumeration and semantic judgments are not independently authenticated",
+    "written": false,
+    "upgradeApplied": false,
+    "applicationAuthorized": false,
+    "scopeDelta": 0,
+    "completionCredit": 0
+  }
+}

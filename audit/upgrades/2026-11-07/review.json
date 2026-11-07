@@ -1,0 +1,23 @@
+{
+  "producer": "Fresh reviewer /root/upgrade_comparison_review",
+  "initialRevision": "611d4cb5b56e90683a6b304e432fcad0b6d96bdc",
+  "initialResult": "Hold; four P2 findings",
+  "findings": [
+    "Contract metadata not bound / unsupported installed contract ignored",
+    "Incomplete selected archive skill inventory",
+    "Overlapping toolkit/suite table could mask divergent digest",
+    "Shared verifier had unbounded host reads"
+  ],
+  "authorRegression": "review-red.txt: four failures plus malformed runtime; corrected stale-decision test harness before final pass",
+  "finalRevision": "9f173c047afcea55efd6d059e662b0a7cfb15768",
+  "finalResult": "Original reproducers now conflict;22 tests pass; no remaining material blocker within read-only20 scope",
+  "declinedToJudge": {
+    "applyMigrationRecoveryRollback": "#21",
+    "distributedSkill": "#22",
+    "publisherReviewAuthenticationSemanticTruth": "Explicit interface limits",
+    "newerActualReleaseOrRealConsumerMigration": "No such evidence or claim",
+    "hostVersionDiscovery": "Caller declaration",
+    "hostileConcurrentFilesystemReplacement": "Point-in-time limit"
+  },
+  "authorDisposition": "Agree; all four P2s reproduced and fixed, no criterion amendment. Remaining full checks pass; no owner outcome acceptance or release inferred."
+}

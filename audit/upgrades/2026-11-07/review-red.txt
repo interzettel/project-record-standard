@@ -1,0 +1,69 @@
+test_already_satisfied_custom_readme_host_no_rewrite_or_extra_credit (test_upgrades.UpgradeTests.test_already_satisfied_custom_readme_host_no_rewrite_or_extra_credit) ... ok
+test_archive_native_version_cannot_be_blessed_by_wrong_pin_metadata (test_upgrades.UpgradeTests.test_archive_native_version_cannot_be_blessed_by_wrong_pin_metadata) ... ok
+test_archive_suite_omission_and_table_overlap_cannot_certify (test_upgrades.UpgradeTests.test_archive_suite_omission_and_table_overlap_cannot_certify) ... FAIL
+test_catalogue_changes_are_bound_to_request_digest (test_upgrades.UpgradeTests.test_catalogue_changes_are_bound_to_request_digest) ... ok
+test_cli_readonly_and_unknown_exit (test_upgrades.UpgradeTests.test_cli_readonly_and_unknown_exit) ... ok
+test_contract_axes_cannot_disagree_or_hide_unsupported_anchor (test_upgrades.UpgradeTests.test_contract_axes_cannot_disagree_or_hide_unsupported_anchor) ... FAIL
+test_duplicate_change_or_stale_decision_is_invalid (test_upgrades.UpgradeTests.test_duplicate_change_or_stale_decision_is_invalid) ... ok
+test_edited_owned_suite_and_partial_install_do_not_certify (test_upgrades.UpgradeTests.test_edited_owned_suite_and_partial_install_do_not_certify) ... ok
+test_fifo_source_never_opened (test_upgrades.UpgradeTests.test_fifo_source_never_opened) ... ok
+test_host_and_release_symlinks_and_traversal_are_refused (test_upgrades.UpgradeTests.test_host_and_release_symlinks_and_traversal_are_refused) ... ok
+test_major_security_patch_prerelease_and_ordinary_patch (test_upgrades.UpgradeTests.test_major_security_patch_prerelease_and_ordinary_patch) ... ok
+test_mandatory_and_optional_need_explicit_bound_judgment (test_upgrades.UpgradeTests.test_mandatory_and_optional_need_explicit_bound_judgment) ... ok
+test_minor_assessment_no_guess_from_rule_prose (test_upgrades.UpgradeTests.test_minor_assessment_no_guess_from_rule_prose) ... ok
+test_missing_history_catalogue_review_or_archive_is_unknown (test_upgrades.UpgradeTests.test_missing_history_catalogue_review_or_archive_is_unknown) ... ok
+test_moved_archive_and_wrong_source_digest_conflict (test_upgrades.UpgradeTests.test_moved_archive_and_wrong_source_digest_conflict) ... ok
+test_profile_not_applicable_keeps_host_choice (test_upgrades.UpgradeTests.test_profile_not_applicable_keeps_host_choice) ... ok
+test_runtime_shape_and_deep_request_rejected_cleanly (test_upgrades.UpgradeTests.test_runtime_shape_and_deep_request_rejected_cleanly) ... FAIL
+test_same_release_and_published_synthetic_chain_remain_honest (test_upgrades.UpgradeTests.test_same_release_and_published_synthetic_chain_remain_honest) ... ok
+test_shared_verifier_all_selected_reads_are_bounded (test_upgrades.UpgradeTests.test_shared_verifier_all_selected_reads_are_bounded) ... FAIL
+test_stale_review_or_ambiguous_mapping_requires_resolution (test_upgrades.UpgradeTests.test_stale_review_or_ambiguous_mapping_requires_resolution) ... ok
+test_target_runtime_support_is_assessed_separately (test_upgrades.UpgradeTests.test_target_runtime_support_is_assessed_separately) ... ok
+test_unsupported_host_contract_and_runtime_conflict (test_upgrades.UpgradeTests.test_unsupported_host_contract_and_runtime_conflict) ... ok
+
+======================================================================
+FAIL: test_archive_suite_omission_and_table_overlap_cannot_certify (test_upgrades.UpgradeTests.test_archive_suite_omission_and_table_overlap_cannot_certify)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_upgrades.py", line 192, in test_archive_suite_omission_and_table_overlap_cannot_certify
+    self.assertEqual(assess_upgrade(self.request)['overall'],'conflicted')
+AssertionError: 'simulation-only' != 'conflicted'
+- simulation-only
++ conflicted
+
+
+======================================================================
+FAIL: test_contract_axes_cannot_disagree_or_hide_unsupported_anchor (test_upgrades.UpgradeTests.test_contract_axes_cannot_disagree_or_hide_unsupported_anchor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_upgrades.py", line 183, in test_contract_axes_cannot_disagree_or_hide_unsupported_anchor
+    self.assertEqual(assess_upgrade(self.request)['overall'],'conflicted')
+AssertionError: 'simulation-only' != 'conflicted'
+- simulation-only
++ conflicted
+
+
+======================================================================
+FAIL: test_runtime_shape_and_deep_request_rejected_cleanly (test_upgrades.UpgradeTests.test_runtime_shape_and_deep_request_rejected_cleanly)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_upgrades.py", line 207, in test_runtime_shape_and_deep_request_rejected_cleanly
+    with self.assertRaises(RecordError):assess_upgrade(self.request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RecordError not raised
+
+======================================================================
+FAIL: test_shared_verifier_all_selected_reads_are_bounded (test_upgrades.UpgradeTests.test_shared_verifier_all_selected_reads_are_bounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_upgrades.py", line 203, in test_shared_verifier_all_selected_reads_are_bounded
+    self.assertEqual(assess_upgrade(self.request)['overall'],'conflicted')
+AssertionError: 'blocked-unknown' != 'conflicted'
+- blocked-unknown
++ conflicted
+
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.555s
+
+FAILED (failures=4)

@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-UPGRADE-01:27c36157c338dab0de82ad9d5d99be7e375e11d8",
+  "projectId": "standard",
+  "workItemId": "PRS-UPGRADE-01",
+  "sourceSha256": "6d2ba7556beb433e6554e8d1f3b2aabe0eaaaed8f3de4755cf31e13c521c36be",
+  "manifestSha256": "862ee6056645e4335814af8cc70405c94d0dd3c2de9675bb4cb7d9ca04e8cb29",
+  "artifactRevision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/72",
+  "observedOn": "2026-11-07",
+  "summary": "Read-only immutable archive/delta and actual-host applicability assessment;296 Python/25 JavaScript tests,22 upgrade cases, actual v0.4.1 disposable installation and installed-wheel smoke. Four fresh review findings reproduced/fixed/retested. No apply, permission expansion, real consumer migration, future release or milestone acceptance.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-UPGRADE-01",
+      "revision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+      "result": "passed",
+      "source": "src/project_record/upgrades.py; standards/UPGRADING.md",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-UPGRADE-01",
+      "revision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+      "result": "passed",
+      "source": "audit/upgrades/2026-11-07/verification.json; real-installation.json; installed-wheel.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-UPGRADE-01",
+      "revision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+      "result": "passed",
+      "source": "audit/upgrades/2026-11-07/review.json; review-red.txt",
+      "producer": "Codex /root disposition using fresh /root/upgrade_comparison_review retest",
+      "observedOn": "2026-11-07"
+    }
+  ],
+  "discoveries": []
+}

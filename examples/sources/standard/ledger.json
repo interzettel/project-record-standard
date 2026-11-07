@@ -1402,13 +1402,54 @@
     },
     {
       "blocked": false,
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "completionBasis": "Read-only immutable archive/delta and actual-host applicability assessment;296 Python/25 JavaScript tests,22 upgrade cases, actual v0.4.1 disposable installation and installed-wheel smoke. Four fresh review findings reproduced/fixed/retested. No apply, permission expansion, real consumer migration, future release or milestone acceptance.",
       "criterion": "Mixed/partial installs and missing release evidence remain unknown/conflicted. Major/minor trigger assessment; security patch escalates without automatic apply. README-only/custom layout and already-satisfied hosts receive no forced rewrite or extra completion.",
       "deferReason": null,
       "dependsOn": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+          "source": "src/project_record/upgrades.py; standards/UPGRADING.md",
+          "subject": "PRS-UPGRADE-01"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+          "source": "audit/upgrades/2026-11-07/verification.json; real-installation.json; installed-wheel.json",
+          "subject": "PRS-UPGRADE-01"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-07",
+          "producer": "Codex /root disposition using fresh /root/upgrade_comparison_review retest",
+          "result": "passed",
+          "revision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+          "source": "audit/upgrades/2026-11-07/review.json; review-red.txt",
+          "subject": "PRS-UPGRADE-01"
+        },
+        {
+          "eventId": "prs:PRS-UPGRADE-01:27c36157c338dab0de82ad9d5d99be7e375e11d8",
+          "kind": "work-result",
+          "observedOn": "2026-11-07",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+          "source": "https://github.com/interzettel/project-record-standard/pull/72",
+          "subject": "PRS-UPGRADE-01",
+          "summary": "Read-only immutable archive/delta and actual-host applicability assessment;296 Python/25 JavaScript tests,22 upgrade cases, actual v0.4.1 disposable installation and installed-wheel smoke. Four fresh review findings reproduced/fixed/retested. No apply, permission expansion, real consumer migration, future release or milestone acceptance."
+        }
+      ],
       "groupId": "G7",
       "id": "PRS-UPGRADE-01",
+      "implementationRevision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/20",
       "kind": "implementation",
       "milestoneId": "M7",
@@ -1416,8 +1457,8 @@
       "owner": "Implementing agent; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "selected-not-started",
-      "state": "ready",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Compare immutable releases against real host installations",
       "unmappedDependencies": []
     },
