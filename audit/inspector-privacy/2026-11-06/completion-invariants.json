@@ -1,0 +1,51 @@
+{
+  "changedItems": {
+    "PRS-INSPECT-03": [
+      "state",
+      "evidence",
+      "sourceState",
+      "completionBasis",
+      "implementationRevision"
+    ]
+  },
+  "exactPreviousRawPreserved": true,
+  "criteriaDependenciesScopeAcceptanceVersionsUnchanged": true,
+  "metrics": {
+    "work": {
+      "done": 34,
+      "total": 42,
+      "percent": 81.0,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 34,
+      "total": 52,
+      "percent": 65.4,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  },
+  "recordedOn": "2026-11-07",
+  "browserObservationDate": "2026-11-06"
+}

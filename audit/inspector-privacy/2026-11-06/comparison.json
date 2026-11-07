@@ -1,0 +1,156 @@
+{
+  "added": [],
+  "removed": [],
+  "stateChanges": [
+    {
+      "id": "PRS-INSPECT-03",
+      "from": "backlog",
+      "to": "done"
+    }
+  ],
+  "scopeChanges": [],
+  "before": {
+    "work": {
+      "done": 33,
+      "total": 42,
+      "percent": 78.6,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 33,
+      "total": 52,
+      "percent": 63.5,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  },
+  "after": {
+    "work": {
+      "done": 34,
+      "total": 42,
+      "percent": 81.0,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 34,
+      "total": 52,
+      "percent": 65.4,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  },
+  "bridges": {
+    "work": {
+      "before": {
+        "done": 33,
+        "total": 42,
+        "percent": 78.6,
+        "active": 0,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 10,
+        "method": "completed-leaves / required-leaves"
+      },
+      "afterStateChanges": {
+        "done": 34,
+        "total": 42
+      },
+      "after": {
+        "done": 34,
+        "total": 42,
+        "percent": 81.0,
+        "active": 0,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 10,
+        "method": "completed-leaves / required-leaves"
+      },
+      "stateEffectPP": 2.381,
+      "scopeEffectPP": 0.0,
+      "totalChangePP": 2.381,
+      "method": "Apply retained-item state changes on the previous denominator; then change membership. Removed items keep their earlier state in the intermediate step. This is an accounting explanation, not earned value."
+    },
+    "ledger": {
+      "before": {
+        "done": 33,
+        "total": 52,
+        "percent": 63.5,
+        "active": 0,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / retained-ledger-leaves"
+      },
+      "afterStateChanges": {
+        "done": 34,
+        "total": 52
+      },
+      "after": {
+        "done": 34,
+        "total": 52,
+        "percent": 65.4,
+        "active": 0,
+        "review": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "excluded": 0,
+        "method": "completed-leaves / retained-ledger-leaves"
+      },
+      "stateEffectPP": 1.9231,
+      "scopeEffectPP": 0.0,
+      "totalChangePP": 1.9231,
+      "method": "Apply retained-item state changes on the previous denominator; then change membership. Removed items keep their earlier state in the intermediate step. This is an accounting explanation, not earned value."
+    }
+  },
+  "moved": [],
+  "regressions": [],
+  "sourceRevisions": {
+    "before": "8f39477df4a2bc30c3a6f9dceafc8b5e200574a458b76426c5536a526091b4ab",
+    "after": "6d2ba7556beb433e6554e8d1f3b2aabe0eaaaed8f3de4755cf31e13c521c36be"
+  }
+}

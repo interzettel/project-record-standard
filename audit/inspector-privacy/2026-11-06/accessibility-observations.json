@@ -1,0 +1,651 @@
+{
+  "standard": "WCAG 2.2",
+  "target": "AA (including A)",
+  "normativeSource": "https://www.w3.org/TR/WCAG22/",
+  "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+  "observedAt": "2026-11-06T22:42:30.367Z",
+  "pages": [
+    "https://interzettel.github.io/project-record-standard/qa/inspector/index.html",
+    "https://interzettel.github.io/project-record-standard/qa/accessibility.html"
+  ],
+  "states": [
+    "public toy fixture:authored,computed doubled text,text spacing,light/dark,filtered/no-results,source target",
+    "320/390/1280CSSpx frames;390full viewport"
+  ],
+  "environments": [
+    "Connected Edge UA156.0.0.0,Windows10; exact build unavailable"
+  ],
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.2.1",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.2.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.2.3",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.2.4",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.2.5",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.3.1",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Semantic DOM and native controls",
+      "expected": null,
+      "actual": "Named main/nav/headings,dl source pairs,labelled search and table caption observed.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "1.3.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.3.3",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.3.4",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.3.5",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.4.1",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Observed public toy scope",
+      "expected": null,
+      "actual": "Artifact states,counts and source meanings use text; colour alone does not carry the inspected claims.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "1.4.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.4.3",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Computed role colours and WCAG luminance",
+      "expected": null,
+      "actual": "Observed branded body/link text pairs15.33/8.69light and15.35/9.68dark; scoped role check, not all pixels/hosts.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "1.4.4",
+      "result": "not-tested",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Native CTRL+attempt",
+      "expected": null,
+      "actual": "DPR1/width2552 unchanged; no native zoom pass. Computed doubled-text results retained separately.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "1.4.5",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "1.4.10",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Actual Edge viewport/frame observations",
+      "expected": null,
+      "actual": "320:305/305;390:375/375;1280:1265/1265 content/scroll. Doubled text and spacing cases retained.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "1.4.11",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Actual computed input border/focus roles",
+      "expected": null,
+      "actual": "Initial1.83light/2.94dark failure preserved. Fixed1px border15.33/15.35 verified at7f; no blanket UI/host claim.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "1.4.12",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "QA authored text-spacing stress",
+      "expected": null,
+      "actual": "320light spacing:305/305; source/navigation remain present. Exact test CSS in tools/accessibility_review.html.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "1.4.13",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.1.1",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Native page keyboard and locator Enter",
+      "expected": null,
+      "actual": "Skip/main/search navigation, filtering and Enter source jump exercised at7f; scope excludes browser chrome/OS controls.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "2.1.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.1.4",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.2.1",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.2.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.3.1",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.4.1",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Native Tab/Enter",
+      "expected": null,
+      "actual": "Skip to records reached MAIN#main; next Tab reached INPUT#find.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "2.4.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.4.3",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.4.4",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.4.5",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.4.6",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.4.7",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Visible focus/target inspection",
+      "expected": null,
+      "actual": "Skip/search and outlined fragment target observed in scoped public test states.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "2.4.11",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.5.1",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.5.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.5.3",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.5.4",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.5.7",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "2.5.8",
+      "result": "passed",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "DOM geometry and QA form control measures",
+      "expected": null,
+      "actual": "390/320direct page minimum link/input height25.59375; QA form controls0below24. Not a universal host measurement.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "3.1.1",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.1.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.2.1",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.2.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.2.3",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.2.4",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.2.6",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.3.1",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.3.2",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.3.3",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.3.4",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.3.7",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "3.3.8",
+      "result": "not-tested",
+      "scope": [],
+      "method": null,
+      "expected": null,
+      "actual": null,
+      "evidence": [],
+      "reason": "Not part of this targeted implementation observation; no result inferred from older reference audits."
+    },
+    {
+      "id": "4.1.2",
+      "result": "not-tested",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "DOM/native scope only",
+      "expected": null,
+      "actual": "Names/roles available in browser DOM; actual screen-reader speech/version unavailable.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    },
+    {
+      "id": "4.1.3",
+      "result": "not-tested",
+      "scope": [
+        "public synthetic inspector only"
+      ],
+      "method": "Mounted live-region DOM",
+      "expected": null,
+      "actual": "Result node persists and text updates0/1; spoken announcement not observed.",
+      "evidence": [
+        "browser-final-observations.json",
+        "browser-observations.json"
+      ],
+      "reason": "Scoped result; native/private/speech and other host coverage remain explicit."
+    }
+  ],
+  "findings": [],
+  "assistiveTechnology": {
+    "result": "not-tested",
+    "browserVersion": null,
+    "screenReaderVersion": null,
+    "observedOutput": null
+  },
+  "acceptance": null,
+  "conformanceClaim": false,
+  "limits": [
+    "No full WCAG conformance certification",
+    "Private file opening not-tested; blocked protocol not bypassed",
+    "Native zoom notpassed; computed text stress distinct",
+    "Screen-reader speech not-tested",
+    "README/private profiles have automated artifact/source/parity proof, not native browser adoption observations"
+  ]
+}

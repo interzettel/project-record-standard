@@ -1,0 +1,23 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-privacy-completion-journal-20261107",
+  "output": "/tmp/prs-privacy-completion-output-20261107",
+  "audience": "public",
+  "authority": {
+    "source": "Owner continue working on19; existing authorized implementation, reviewed integration and routine reconciliation. Live34sessions deferred; no outcome acceptance or release authority.",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-INSPECT-03": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}
