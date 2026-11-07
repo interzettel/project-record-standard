@@ -1,0 +1,27 @@
+{
+  "implementationRevision": "27c36157c338dab0de82ad9d5d99be7e375e11d8",
+  "reviewedLocalCode": "9f173c047afcea55efd6d059e662b0a7cfb15768",
+  "codeHashes": "All verification.json hashes unchanged; completion changes only tracking/evidence",
+  "checks": {
+    "python": 296,
+    "javascript": 25,
+    "publicPipeline": "pass",
+    "siteDocuments": 21,
+    "readme": "text and graphic parity pass",
+    "trustedBasePolicy": {
+      "overall": "pass",
+      "exitCode": 0,
+      "hostDecisions": []
+    }
+  },
+  "before": "Saved metadata and normalized observation deeply equal immediate pre-event state after fragment registration; exact raw prior snapshot preserved",
+  "changedLeaf": "PRS-UPGRADE-01 only",
+  "metrics": {
+    "required": "35/42 (83.3%)",
+    "retained": "35/52 (67.3%)",
+    "newRequired": "17/24",
+    "accepted": "4/13"
+  },
+  "replay": "duplicate",
+  "limits": "No source/criterion/dependency/acceptance/version change; actual same-release disposable host only; synthetic future deltas; #21 apply/recovery and #22 skill remain pending; live34owner-deferred"
+}

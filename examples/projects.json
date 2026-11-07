@@ -239,11 +239,11 @@
         "authority": "Canonical ledger: preserved historical claims and reviewed bounded delivery completion; new milestone outcomes remain unaccepted.",
         "commit": null,
         "kind": "file-snapshot",
-        "observedOn": "2026-11-06",
+        "observedOn": "2026-11-07",
         "path": "examples/sources/standard/ledger.json",
-        "updatedOn": "2026-11-06"
+        "updatedOn": "2026-11-07"
       },
-      "previousSourceFile": "sources/standard/reconciliation-history/8f39477df4a2bc30c3a6f9dceafc8b5e200574a458b76426c5536a526091b4ab.json",
+      "previousSourceFile": "sources/standard/reconciliation-history/6d2ba7556beb433e6554e8d1f3b2aabe0eaaaed8f3de4755cf31e13c521c36be.json",
       "project": {
         "id": "standard",
         "name": "Project record standard",
@@ -536,6 +536,17 @@
             "updatedOn": "2026-11-05"
           },
           "sourceFile": "sources/standard/reconciliation-history/8e5714a5fb688d2d49e9642612c93125c873204b6474500f69fefa2b270700be.json"
+        },
+        {
+          "source": {
+            "authority": "Canonical ledger: preserved historical claims and reviewed bounded delivery completion; new milestone outcomes remain unaccepted.",
+            "commit": null,
+            "kind": "file-snapshot",
+            "observedOn": "2026-11-06",
+            "path": "examples/sources/standard/ledger.json",
+            "updatedOn": "2026-11-06"
+          },
+          "sourceFile": "sources/standard/reconciliation-history/8f39477df4a2bc30c3a6f9dceafc8b5e200574a458b76426c5536a526091b4ab.json"
         }
       ],
       "source": {
