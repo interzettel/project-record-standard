@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-UPGRADE-02:b7967c547467a05da4bbbcf42827d36b9488333c",
+  "projectId": "standard",
+  "workItemId": "PRS-UPGRADE-02",
+  "sourceSha256": "0a368bc344aa2574bf33b5cef1f2e22b95e64bb86453859cc6f86ce9bd38007a",
+  "manifestSha256": "01c784c2303d95552028037a62799c80e9ee0da7424d750936a70cb7b1845582",
+  "artifactRevision": "b7967c547467a05da4bbbcf42827d36b9488333c",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/73",
+  "observedOn": "2026-11-07",
+  "summary": "Reviewed per-file local apply/repeat/rollback;325 Python/25 JavaScript tests,29 application cases with real process deaths and lock contention. Exact source JSON facts and later authored work preserved or safely refused. Actual v0.4.1 same-release disposable proof; fresh review findings fixed/retested. No actual newer-release consumer migration, new permission, acceptance or release.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-UPGRADE-02",
+      "revision": "b7967c547467a05da4bbbcf42827d36b9488333c",
+      "result": "passed",
+      "source": "src/project_record/upgrade_apply.py; src/project_record/agents.py; standards/UPGRADING.md",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-UPGRADE-02",
+      "revision": "b7967c547467a05da4bbbcf42827d36b9488333c",
+      "result": "passed",
+      "source": "audit/upgrade-apply/2026-11-07/verification.json; real-installation.json; installed-wheel.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-UPGRADE-02",
+      "revision": "b7967c547467a05da4bbbcf42827d36b9488333c",
+      "result": "passed",
+      "source": "audit/upgrade-apply/2026-11-07/review.json; review-red.txt",
+      "producer": "Codex /root disposition using fresh /root/upgrade_apply_review retest",
+      "observedOn": "2026-11-07"
+    }
+  ],
+  "discoveries": []
+}

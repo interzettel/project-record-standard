@@ -1464,15 +1464,56 @@
     },
     {
       "blocked": false,
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "completionBasis": "Reviewed per-file local apply/repeat/rollback;325 Python/25 JavaScript tests,29 application cases with real process deaths and lock contention. Exact source JSON facts and later authored work preserved or safely refused. Actual v0.4.1 same-release disposable proof; fresh review findings fixed/retested. No actual newer-release consumer migration, new permission, acceptance or release.",
       "criterion": "Edited owned files or ambiguous mappings fail closed without overwrite. Replay/interruption/rollback preserves IDs, dependencies, accepted criteria, history and denominators. No permission, GitHub write, merge or deployment is inferred from upstream capabilities or release arrival.",
       "deferReason": null,
       "dependsOn": [
         "PRS-UPGRADE-01"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "b7967c547467a05da4bbbcf42827d36b9488333c",
+          "source": "src/project_record/upgrade_apply.py; src/project_record/agents.py; standards/UPGRADING.md",
+          "subject": "PRS-UPGRADE-02"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "b7967c547467a05da4bbbcf42827d36b9488333c",
+          "source": "audit/upgrade-apply/2026-11-07/verification.json; real-installation.json; installed-wheel.json",
+          "subject": "PRS-UPGRADE-02"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-07",
+          "producer": "Codex /root disposition using fresh /root/upgrade_apply_review retest",
+          "result": "passed",
+          "revision": "b7967c547467a05da4bbbcf42827d36b9488333c",
+          "source": "audit/upgrade-apply/2026-11-07/review.json; review-red.txt",
+          "subject": "PRS-UPGRADE-02"
+        },
+        {
+          "eventId": "prs:PRS-UPGRADE-02:b7967c547467a05da4bbbcf42827d36b9488333c",
+          "kind": "work-result",
+          "observedOn": "2026-11-07",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "b7967c547467a05da4bbbcf42827d36b9488333c",
+          "source": "https://github.com/interzettel/project-record-standard/pull/73",
+          "subject": "PRS-UPGRADE-02",
+          "summary": "Reviewed per-file local apply/repeat/rollback;325 Python/25 JavaScript tests,29 application cases with real process deaths and lock contention. Exact source JSON facts and later authored work preserved or safely refused. Actual v0.4.1 same-release disposable proof; fresh review findings fixed/retested. No actual newer-release consumer migration, new permission, acceptance or release."
+        }
+      ],
       "groupId": "G7",
       "id": "PRS-UPGRADE-02",
+      "implementationRevision": "b7967c547467a05da4bbbcf42827d36b9488333c",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/21",
       "kind": "implementation",
       "milestoneId": "M7",
@@ -1480,8 +1521,8 @@
       "owner": "Implementing agent; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "selected-not-started",
-      "state": "backlog",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Implement reviewed upgrade receipts and recoverable application",
       "unmappedDependencies": []
     },

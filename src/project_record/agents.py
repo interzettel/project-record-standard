@@ -75,13 +75,14 @@ def _suite_payload(toolkit: Path) -> tuple[dict, dict, dict, str]:
 
 
 def install_skills(toolkit: Path, target: Path, apply: bool = False,
-                   upgrade: bool = False) -> dict:
+                   upgrade: bool = False, *, rules_sha256: str | None = None) -> dict:
     """Previews or applies an additive, resumable agent-skill installation.
 
     Args:
         toolkit: The source toolkit containing a skill manifest and folders.
         target: The project directory whose instructions remain authoritative.
         apply: If true, writes the preflighted plan; if false, previews it.
+        rules_sha256: Optional exact supported instruction-writer digest; defaults stay current.
         upgrade: If true, replaces unchanged owned files from an older suite.
             If false, requires an explicit upgrade for differing owned files.
 
@@ -97,6 +98,12 @@ def install_skills(toolkit: Path, target: Path, apply: bool = False,
     manifest, files, digests, suite_digest = _suite_payload(toolkit)
     names = manifest['skills']
     section = _rules(names, suite_digest)
+    if rules_sha256 is not None:
+        variants = [_rules(names, suite_digest, execution=mode) for mode in [False, True]]
+        selected = [v for v in variants if _digest(v) == rules_sha256]
+        if len(selected) != 1:
+            raise RecordError('Expected instruction digest has no supported writer')
+        section = selected[0]
     receipt_path = _safe_path(target, RECEIPT)
     previous = json.loads(receipt_path.read_text()) if receipt_path.exists() else None
     if previous is not None and (not isinstance(previous, dict) or previous.get('schemaVersion') != 1 or not isinstance(previous.get('files'), dict)):

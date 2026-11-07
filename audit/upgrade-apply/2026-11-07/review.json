@@ -1,0 +1,37 @@
+{
+  "producer": "Fresh independent context /root/upgrade_apply_review",
+  "initialRevision": "64299e6a620579d8c414089b4194a832e983343b",
+  "findings": [
+    {
+      "severity": "P1",
+      "finding": "New target suite namespace could overwrite unowned host skill file",
+      "disposition": "Refuse existing new namespaces and stage old+target suite paths; RED to GREEN and reviewer retest"
+    },
+    {
+      "severity": "P2",
+      "finding": "Lexical host/journal roots bypass cooperating lock and external journal containment",
+      "disposition": "Refuse dotdot/symlinks, normalize to resolved absolute roots, preserve equivalent plan identity; dotdot and double-leading-slash repros fixed/retested"
+    },
+    {
+      "severity": "P2",
+      "finding": "Later separately authorized rollback could not use original journal",
+      "disposition": "Preserve original grant plus validated operation grant history; later same-plan rollback succeeds"
+    }
+  ],
+  "negativeEvidence": [
+    "review-red.txt",
+    "review-alias-red.txt"
+  ],
+  "finalCodeRevision": "fa0afdab8e3027469aae3989cebfbc3aa3759b17",
+  "finalReviewerResult": "All28 then-current apply tests pass; independent alias lock/containment, namespace and later-grant repros closed; no remaining material blocker in bounded scope",
+  "subsequentDelta": "884028a adds one passing positive changed-skill-payload/rollback test only; no code change",
+  "authorDisposition": "Agree; no criterion amendment. Explicit owner functional acceptance, publication, native Windows, hostile races, power loss and universal semantic adapters remain separate.",
+  "declinedToJudge": [
+    "Unavailable actual future release migration",
+    "Native Windows",
+    "Hostile races/power loss",
+    "Universal semantic adapters",
+    "Actor authentication",
+    "Functional owner acceptance/publication"
+  ]
+}
