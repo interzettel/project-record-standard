@@ -4,6 +4,8 @@ Know what works, what remains, what changed and what to do next. PRS connects a 
 
 The goal is a reviewed installation followed by automatic routine tracking after an agent works, with clear exceptions and scope-growth history. **That automation is planned.** The available v0.4.1 toolkit provides offline validation, progress/history/delivery projections, eleven guidance skills and an additive installer.
 
+Current `main` is the unreleased **0.6.0-alpha.0** development toolkit/suite, with twelve skills including [release-aware upgrade guidance](skills/upgrade-project-records/SKILL.md). This opt-in identity does not publish a release or establish unattended runtime support.
+
 [Start here](standards/START-HERE.md) · [Public guide](https://interzettel.github.io/project-record-standard/) · [Interactive tracker](https://interzettel.github.io/project-record-standard/standard/progress.html) · [Install v0.4.1](INSTALL.md)
 
 ## Availability
@@ -74,10 +76,10 @@ The historical release remains 18/18 complete. The expanded plan separates newly
 
 | Measure | Completion | Meaning |
 | --- | ---: | --- |
-| Required work | 36/42 · 85.7% | Completed leaf items in the named required scope. |
+| Required work | 37/42 · 88.1% | Completed leaf items in the named required scope. |
 | Accepted milestones | 4/13 · 30.8% | Milestones whose declared outcome gates passed. |
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/standard/progress.html) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-11-07 against `c9536f58`.
+Observed 2026-11-07 against `acf5d380`.
 <!-- project-record:end -->

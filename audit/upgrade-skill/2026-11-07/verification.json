@@ -1,0 +1,30 @@
+{
+  "implementationLocalRevision": "5e87df9b48e180e75ff63a4a37b5e60a138013b6",
+  "python": 330,
+  "javascript": 25,
+  "checks": {
+    "skills": 12,
+    "suite": "0.6.0-alpha.0",
+    "contract": "0.2.0",
+    "publicPipeline": "pass",
+    "siteDocuments": 21,
+    "readme": "text/graphic parity pass",
+    "palettePairs": 20,
+    "wheel": "wheel-normalization.json",
+    "distribution": "Five new tests: full12 install/repeat/conflict; actual synthetic11\u219212 apply/interruption/resume/repeat/rollback; eight consumer/SemVer matrix",
+    "policy": "pass"
+  },
+  "hashes": {
+    "skills/upgrade-project-records/SKILL.md": "229010078fc3125744bf39909c85a4d818b8428dc03750ca8b6598c609f4d0cd",
+    "skills/upgrade-project-records/agents/openai.yaml": "9db87fc1b370482e9536d961736a08ad365331180f2098b698570974392fda40",
+    "skills/use-project-records/SKILL.md": "a8e9f454da59c0494073c1ed5f642ef3e8f3fe994bd90b31b9954d519f1b83ac",
+    "skills/operate-project-tracking/SKILL.md": "91855dc3cd4c37d94810852878b04592f8b2b85c603d7d0c847535c812af683f",
+    "skills/manifest.json": "d5cfc677cd7a2f6359c0d316232f0507604388631f833b6fc422af393e48ad74",
+    "pyproject.toml": "321ebe97e7e0bf08661e677af6e24cca299faf14660dfea0b6d6d97379012a19",
+    "tests/test_upgrade_workflow.py": "2966746f22ebb51a7686620441862f7ad1aae07c232324c5c49b51c7dd1f879b"
+  },
+  "evaluation": "Five controls plus five explicitly invoked installed-guidance applications; all preserve expected bounded decisions. Baseline already safe. No causal/model-diversity claim. Optional challenges not-run.",
+  "producer": "Same-session spawned contexts; exact backend model identity unexposed; no paid model dispatch",
+  "sourceArtifactLimit": "Transient raw bundle ZIPs no longer available after session reset; response request/archive hashes retain original observations. Offline tests regenerate equivalent synthetic cases, not original ZIP bytes.",
+  "recordkeeping": "Application4/5 recordkeeping turns reported capacity failure; their complete written raw files were present and read back on resume. Those capacity failures are not additional test passes."
+}

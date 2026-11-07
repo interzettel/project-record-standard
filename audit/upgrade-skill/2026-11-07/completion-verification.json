@@ -1,0 +1,22 @@
+{
+  "implementationRevision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
+  "implementationTree": "21386f20bfbabe1a8ee403c770e637d6c0974838",
+  "codeGuidanceHashes": "All verification.json hashes match unchanged evaluated bodies",
+  "python": 330,
+  "javascript": 25,
+  "publicPipeline": "pass",
+  "siteDocuments": 21,
+  "readme": "text/graphic parity pass",
+  "trustedBasePolicy": {
+    "overall": "pass",
+    "exitCode": 0,
+    "hostDecisions": []
+  },
+  "scopeEffect": "Only PRS-UPGRADE-03 Done;37/42 required,37/52 retained,19/24 newly required,4/13accepted",
+  "developmentVersion": "0.6.0-alpha.0",
+  "wheelAlias": "0.6.0a0",
+  "published": "0.4.1 unchanged",
+  "contract": "0.2.0 unchanged",
+  "replay": "duplicate",
+  "limits": "EVALUATION.md; no causal/model-diversity, real future-release consumer migration, owner acceptance or publication"
+}

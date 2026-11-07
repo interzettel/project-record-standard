@@ -26,3 +26,7 @@ Keep a single toolkit/cooperating-skill suite version while those components shi
 Within 0.x, use a new minor line for a deliberately selected interface/capability boundary and patches for compatible corrections under PRS's stated policy. Record breaking changes explicitly even before 1.0. Use prerelease identifiers for opt-in unstable candidates. After 1.0, apply normal SemVer major/minor/patch rules to the declared public interface.
 
 Consider 1.0 when that interface, support/deprecation policy, tested compatibility and migration/recovery commitments are fit for reliance. Neither finishing all optional features nor accumulating a large number of changes is sufficient by itself. Minor/major discovery triggers a consumer applicability assessment; actual upgrades follow the adopted authority/conflict/recovery policy.
+
+## Main development identity after upgrade guidance
+
+#22 assigns the current experimental toolkit/twelve-skill suite0.6.0-alpha.0 as an unreleased opt-in development identity. This follows the preview line above; it does not accept a release scope or bypass #38's explicit publication/minimum-runtime/evaluation gates. Python packaging normalizes that source spelling to0.6.0a0. Foundation0.5.0 remains a possible separately scoped release, not a promise that a development checkout is its artifact. No old tag/archive or consumer pin is rewritten.

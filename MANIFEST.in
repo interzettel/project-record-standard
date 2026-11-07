@@ -21,3 +21,6 @@ include tests/test_upgrades.py
 recursive-include tests/fixtures/upgrades *.md *.json
 
 include tests/test_upgrade_apply.py
+
+include tests/test_upgrade_workflow.py
+recursive-include tests/fixtures/upgrade-workflow *.md *.json
