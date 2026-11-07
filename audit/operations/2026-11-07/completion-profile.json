@@ -1,0 +1,23 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-ops-completion-journal",
+  "output": "/tmp/prs-ops-completion-output",
+  "audience": "public",
+  "authority": {
+    "source": "Owner continued authorized PRS package execution and reviewed integration; routine source recording for #39 only. No milestone acceptance, publication or recurring scheduler activation; #34 actual sessions remain deferred.",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-OPS-01": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}

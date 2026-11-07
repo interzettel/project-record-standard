@@ -28,6 +28,11 @@ def main(argv: list[str] | None = None) -> int:
         if name in {"build", "pipeline", "export"}:
             command.add_argument("--output", type=Path, required=True)
             command.add_argument("--audience", choices=["owner", "public"], default="owner")
+    command = subs.add_parser("release-watch")
+    command.add_argument("--request",type=Path,required=True)
+    command.add_argument("--state",type=Path,required=True)
+    command.add_argument("--as-of",required=True)
+    command.add_argument("--write",action="store_true")
     command = subs.add_parser("upgrade-preview")
     command.add_argument("--request", type=Path, required=True)
     command = subs.add_parser("upgrade-apply")
@@ -112,6 +117,11 @@ def main(argv: list[str] | None = None) -> int:
     modes.add_argument("--check", action="store_true")
     args = parser.parse_args(argv)
     try:
+        if args.command == "release-watch":
+            from .collection import watch_files
+            result=watch_files(args.request,args.state,args.as_of,write=args.write)
+            print(json.dumps(result,indent=2))
+            return 0 if result["health"]=="current" else 3
         if args.command in {"upgrade-preview", "upgrade-apply"}:
             from .upgrades import _read, preview_upgrade, apply_upgrade
             if args.command == "upgrade-preview":

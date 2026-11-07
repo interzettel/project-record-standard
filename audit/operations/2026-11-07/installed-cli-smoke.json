@@ -1,0 +1,13 @@
+{
+  "fixture": "Synthetic release metadata and disposable installed host; real CLI/file bytes",
+  "moduleOrigin": "/tmp/prs-ops-installed/project_record/collection.py",
+  "previewNoState": true,
+  "writeNotices": 1,
+  "repeatNotices": 0,
+  "repeatWrites": false,
+  "hostBytesUnchanged": true,
+  "health": "current",
+  "consumerMigration": false,
+  "liveScheduler": false,
+  "networkCollector": false
+}

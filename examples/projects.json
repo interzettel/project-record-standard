@@ -237,6 +237,12 @@
           "observedOn": "2026-11-07",
           "path": "sources/standard/changes/CH-UPGRADE-GUIDANCE.json",
           "visibility": "public"
+        },
+        {
+          "authority": "Authored offline release observer and private recovery feature; no scheduler activation or publication",
+          "observedOn": "2026-11-07",
+          "path": "sources/standard/changes/CH-RELEASE-MONITORING.json",
+          "visibility": "public"
         }
       ],
       "presentation": {
@@ -255,7 +261,7 @@
         "path": "examples/sources/standard/ledger.json",
         "updatedOn": "2026-11-07"
       },
-      "previousSourceFile": "sources/standard/reconciliation-history/c9536f5894f79e24c107711b1458ca9a3a1516b7f4a89c8ff3dd38fd27e90409.json",
+      "previousSourceFile": "sources/standard/reconciliation-history/acf5d38002ab662bc39c67d18081b1abe787329715090992dca1962874ecbc16.json",
       "project": {
         "id": "standard",
         "name": "Project record standard",
@@ -581,6 +587,17 @@
             "updatedOn": "2026-11-07"
           },
           "sourceFile": "sources/standard/reconciliation-history/0a368bc344aa2574bf33b5cef1f2e22b95e64bb86453859cc6f86ce9bd38007a.json"
+        },
+        {
+          "source": {
+            "authority": "Canonical ledger: preserved historical claims and reviewed bounded delivery completion; new milestone outcomes remain unaccepted.",
+            "commit": null,
+            "kind": "file-snapshot",
+            "observedOn": "2026-11-07",
+            "path": "examples/sources/standard/ledger.json",
+            "updatedOn": "2026-11-07"
+          },
+          "sourceFile": "sources/standard/reconciliation-history/c9536f5894f79e24c107711b1458ca9a3a1516b7f4a89c8ff3dd38fd27e90409.json"
         }
       ],
       "source": {

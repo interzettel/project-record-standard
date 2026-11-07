@@ -1,0 +1,56 @@
+test_changed_immutable_identity_is_conflicted_and_sticky (test_collection.CollectionTests.test_changed_immutable_identity_is_conflicted_and_sticky) ... ok
+test_conflicting_same_attempt_and_regression_are_rejected (test_collection.CollectionTests.test_conflicting_same_attempt_and_regression_are_rejected) ... ok
+test_current_empty_complete_collection_is_distinct_from_failed_zero (test_collection.CollectionTests.test_current_empty_complete_collection_is_distinct_from_failed_zero) ... ok
+test_duplicate_releases_bad_times_and_security_without_source_refuse (test_collection.CollectionTests.test_duplicate_releases_bad_times_and_security_without_source_refuse) ... ok
+test_existing_empty_state_refuses_without_resetting_history (test_collection.CollectionTests.test_existing_empty_state_refuses_without_resetting_history) ... FAIL
+test_historical_releases_do_not_prompt_downgrades (test_collection.CollectionTests.test_historical_releases_do_not_prompt_downgrades) ... ok
+test_major_patch_prerelease_and_unverified_target (test_collection.CollectionTests.test_major_patch_prerelease_and_unverified_target) ... ok
+test_minor_assessment_has_sources_no_application_and_one_durable_pair (test_collection.CollectionTests.test_minor_assessment_has_sources_no_application_and_one_durable_pair) ... ok
+test_missing_identity_stays_unknown_and_restoring_anchor_recovers (test_collection.CollectionTests.test_missing_identity_stays_unknown_and_restoring_anchor_recovers) ... FAIL
+test_new_json_families_and_operations_guide_are_declared (test_collection.CollectionTests.test_new_json_families_and_operations_guide_are_declared) ... ERROR
+test_new_security_bypasses_ordinary_deferral_and_reuses_pair (test_collection.CollectionTests.test_new_security_bypasses_ordinary_deferral_and_reuses_pair) ... ok
+test_owned_writer_preview_repeat_and_atomic_interruption (test_collection.CollectionTests.test_owned_writer_preview_repeat_and_atomic_interruption) ... ok
+test_partial_failed_and_unknown_pages_preserve_last_success_counts (test_collection.CollectionTests.test_partial_failed_and_unknown_pages_preserve_last_success_counts) ... ok
+test_real_owned_drift_keeps_assessment_unknown (test_collection.CollectionTests.test_real_owned_drift_keeps_assessment_unknown) ... ok
+test_replay_is_quiet_and_does_not_refresh_observation (test_collection.CollectionTests.test_replay_is_quiet_and_does_not_refresh_observation) ... ok
+test_security_attention_is_not_silently_cleared_by_ordinary_metadata (test_collection.CollectionTests.test_security_attention_is_not_silently_cleared_by_ordinary_metadata) ... ok
+test_stale_dropped_and_delayed_schedules_are_visible (test_collection.CollectionTests.test_stale_dropped_and_delayed_schedules_are_visible) ... ok
+test_unknown_identity_is_anchored_when_first_observed (test_collection.CollectionTests.test_unknown_identity_is_anchored_when_first_observed) ... ok
+test_unknown_neighbors_host_collision_and_corrupt_state_refuse (test_collection.CollectionTests.test_unknown_neighbors_host_collision_and_corrupt_state_refuse) ... ok
+test_unrelated_deferral_does_not_repeat_notice (test_collection.CollectionTests.test_unrelated_deferral_does_not_repeat_notice) ... ok
+
+======================================================================
+ERROR: test_new_json_families_and_operations_guide_are_declared (test_collection.CollectionTests.test_new_json_families_and_operations_guide_are_declared)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_collection.py", line 139, in test_new_json_families_and_operations_guide_are_declared
+    from tools.build_site import DOCUMENTS
+  File "/workspace/scratch/49137836191f/prs-alignment/tools/build_site.py", line 17, in <module>
+    import markdown
+ModuleNotFoundError: No module named 'markdown'
+
+======================================================================
+FAIL: test_existing_empty_state_refuses_without_resetting_history (test_collection.CollectionTests.test_existing_empty_state_refuses_without_resetting_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_collection.py", line 149, in test_existing_empty_state_refuses_without_resetting_history
+    with self.assertRaises(RecordError):watch_files(request,directory,self.now,write=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RecordError not raised
+
+======================================================================
+FAIL: test_missing_identity_stays_unknown_and_restoring_anchor_recovers (test_collection.CollectionTests.test_missing_identity_stays_unknown_and_restoring_anchor_recovers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_collection.py", line 155, in test_missing_identity_stays_unknown_and_restoring_anchor_recovers
+    self.assertEqual(entry['status'],'blocked-unknown');self.assertFalse(entry['identityConflict'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'conflicted' != 'blocked-unknown'
+- conflicted
++ blocked-unknown
+
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.173s
+
+FAILED (failures=2, errors=1)

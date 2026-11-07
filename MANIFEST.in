@@ -24,3 +24,6 @@ include tests/test_upgrade_apply.py
 
 include tests/test_upgrade_workflow.py
 recursive-include tests/fixtures/upgrade-workflow *.md *.json
+
+include tests/test_collection.py
+recursive-include templates/.github/workflows *.yml

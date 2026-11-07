@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-OPS-01:0bf247582c77f427c67313b4039897eca8e718c8",
+  "projectId": "standard",
+  "workItemId": "PRS-OPS-01",
+  "sourceSha256": "acf5d38002ab662bc39c67d18081b1abe787329715090992dca1962874ecbc16",
+  "manifestSha256": "6fb165c56a4eb6eeb6deb16a02e71c6928cd1dcc619cf06d892967c03c793ccc",
+  "artifactRevision": "0bf247582c77f427c67313b4039897eca8e718c8",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/75",
+  "observedOn": "2026-11-07",
+  "summary": "Quiet offline sourced release attention with selected-byte recheck, private one-pair state, retained last-success counts, bounded retry/freshness recovery and opt-in manual host template.350 Python/25 JS tests,20 collection regressions, fresh exact-code review, sourcekit/wheel/installedCLI/public22-guide site/README/trusted-base checks pass. No active scheduler, collection transport, migration, owner acceptance or release; #34 deferred.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-OPS-01",
+      "revision": "0bf247582c77f427c67313b4039897eca8e718c8",
+      "result": "passed",
+      "source": "src/project_record/collection.py; standards/OPERATIONS.md; remote tree eec6fd8de9ab157db5ceef962cfba7bcd72674b1 matches tested local a11b162",
+      "producer": "Codex task session; fresh ops_review exact-code review where applicable",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-OPS-01",
+      "revision": "0bf247582c77f427c67313b4039897eca8e718c8",
+      "result": "passed",
+      "source": "audit/operations/2026-11-07/verification.json; installed-cli-smoke.json; tests/test_collection.py",
+      "producer": "Codex task session; fresh ops_review exact-code review where applicable",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-OPS-01",
+      "revision": "0bf247582c77f427c67313b4039897eca8e718c8",
+      "result": "passed",
+      "source": "audit/operations/2026-11-07/review.json; reviewed code81a1cd8 unchanged in implementation tree",
+      "producer": "Codex task session; fresh ops_review exact-code review where applicable",
+      "observedOn": "2026-11-07"
+    }
+  ],
+  "discoveries": []
+}
