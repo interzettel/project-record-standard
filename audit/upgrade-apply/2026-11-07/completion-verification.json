@@ -1,0 +1,28 @@
+{
+  "implementationRevision": "b7967c547467a05da4bbbcf42827d36b9488333c",
+  "implementationTree": "cb8be09dc3d2a2b40f89d72af3f0e57c7a18fca8",
+  "checks": {
+    "python": 325,
+    "javascript": 25,
+    "publicPipeline": "pass",
+    "siteDocuments": 21,
+    "readme": "text and graphic parity pass",
+    "trustedBasePolicy": {
+      "overall": "pass",
+      "exitCode": 0,
+      "hostDecisions": []
+    }
+  },
+  "codeHashes": "All verification.json hashes unchanged during completion",
+  "before": "Saved source metadata and normalized observation deeply match immediate pre-event state after fragment registration; exact raw bytes preserved by writer",
+  "changedLeaf": "PRS-UPGRADE-02 only",
+  "metrics": {
+    "required": "36/42 (85.7%)",
+    "retained": "36/52 (69.2%)",
+    "newRequired": "18/24",
+    "accepted": "4/13"
+  },
+  "replay": "duplicate",
+  "authorityAttribution": "authority-correction.json amends retained template leaf-number description; correct21event/policy and actual explicit authorization unchanged",
+  "remaining": "#22 skill; #39 monitoring; #34 sessions deferred. No owner outcome acceptance, release or actual future-release consumer migration."
+}

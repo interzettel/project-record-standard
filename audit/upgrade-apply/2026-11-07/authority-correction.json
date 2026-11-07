@@ -1,0 +1,8 @@
+{
+  "kind": "Completion transaction attribution correction",
+  "originalProfile": "completion-profile.json",
+  "originalText": "Owner continue #20",
+  "correction": "Owner explicitly selected #21 reviewed upgrade application, receipts and recovery and requested completion plus per-PR retrospective/next work. Existing reviewed integration and routine recording authorization applies.",
+  "effect": "Template description retained prior leaf number20; actual policy workPolicies and event subject are PRS-UPGRADE-02/#21. No change to grant, criteria, scope, acceptance or result.",
+  "preservation": "Original applied profile and journal identity retained byte-for-byte so the duplicate replay remains reproducible; this amendment corrects its descriptive attribution."
+}
