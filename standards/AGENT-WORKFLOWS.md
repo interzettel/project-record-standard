@@ -10,7 +10,7 @@ A goal-based cycle can select a bounded outcome, inspect the actual result, and 
 
 ## Start or reestablish a project
 
-Use `establish-project-tracking` when tracking authority has not been established, even if the repository already has a README and website. Use `adapt-project-tracking` when plans, IDs, claims or generated tracking already exist. An interrupted installation resumes from its recorded state. Damaged generated output uses `operate-project-tracking`; it does not justify resetting the ledger.
+Use `establish-project-tracking` when tracking authority has not been established, even if the repository already has a README and website. Use `adapt-project-tracking` when plans, IDs, claims or generated tracking already exist. An interrupted installation resumes from its recorded state. Damaged generated output uses `operate-project-tracking`; it does not justify resetting the ledger. Release-to-release assessment, migration and interrupted upgrade recovery use `upgrade-project-records`.
 
 Both setup paths include an [L0–L5 readiness assessment](READINESS.md) before planning autonomous operation. Inspect current evidence first, then ask about unresolved target level, task-risk R0–R4 delegation, environments and acceptance decisions. The installed router carries the portable assessment contract and empty JSON record. Detailed assessments stay in the configured central store; overview/adoption link their current/target level, date/revision, authority limits, blockers and next review. Selected readiness gaps become bounded work; readiness never substitutes for completion percentages or actual authority.
 
@@ -93,6 +93,7 @@ Reprioritization follows the project’s authority model. Use the approval alrea
 | `connect-github-tracking` | Prepare or apply authorized issue/label/Project mappings and bounded reconciliation. |
 | `prepare-project-delivery` | Prepare changes, candidate gates and separately observed publication/deployment. |
 | `present-project-tracking` | Use the selected README-only or website profile with project-owned branding and source parity. |
+| `upgrade-project-records` | Assess pinned releases, prepare reviewed migration and resume its journal/rollback. |
 | `operate-project-tracking` | Recover generated output, verify CI, manage collection health and upgrade safely. |
 | `verify-project-accessibility` | Audit WCAG 2.2 A/AA criteria, remediate tracker interactions and preserve actual test/acceptance limits. |
 
@@ -132,3 +133,9 @@ The skills are authored with the [Superpowers writing-skills process](https://gi
 Owner acceptance and actual screen-reader output require their own evidence. A successful skill test, local suite or hosted CI run establishes only its tested boundary.
 
 The 0.4.0 suite adds the accessibility skill and its 55-criterion report template. Its source-only forward applications and live audit are recorded separately from the original ten-skill evaluation. `npm ci --ignore-scripts` installs locked DOM test dependencies for development checks; the tracking runtime and published pages keep no runtime dependency on those packages.
+
+## Upgrade guidance development suite
+
+Main deliberately identifies the cooperating toolkit and twelve-skill suite as0.6.0-alpha.0, an unreleased opt-in development identity. The new upgrade-project-records workflow separates release-aware migration from first-time adaptation and operations repair. It consumes the shared comparison/plan/grant/journal APIs; it adds no second migrator, watcher or credentials. Record contract0.2.0 and host application versions remain independent. Python distribution metadata normalizes the native SemVer spelling to0.6.0a0; exact commits/archive hashes remain necessary pins. Publishedv0.4.1 still contains11skills and remains immutable. #38 retains release scope, supported minimum, acceptance and publication gates.
+
+Baseline/application and deterministic distribution evidence is recorded under audit/upgrade-skill/2026-11-07/. Five baseline preparations already preserve safety/authority well; routing/discovery is the selected new capability. Same-runtime preparation evidence and helper tests establish their stated scope, not causal/cross-model effectiveness or actual consumer migration.

@@ -1,6 +1,6 @@
 ---
 name: operate-project-tracking
-description: Use when tracking automation, CI, observation freshness, failed collection, operational telemetry, generated-output corruption, interrupted installation, replay, rollback or toolkit upgrades need attention.
+description: Use when tracking automation, CI, observation freshness, failed collection, operational telemetry, generated-output corruption, interrupted installation or operational replay need attention.
 ---
 
 # Operate project tracking
@@ -28,6 +28,8 @@ PYTHONPATH=src python3 -m project_record status --config /path/to/project/progre
 This command validates supplied observations and performs no network collection. A rebuild or successful attempt receipt does not refresh the source file's observation. Unknown deployment health stays unknown. Continuing operations remain separate from bounded project progress.
 
 Reuse accepted CI and generated-file policy. Exercise the same offline action entry point locally and in hosted CI; use relevant project checks for changed application paths. Tracker-only changes do not launch inference or unrelated costly suites. Record quota/capacity failures and a bounded retry/handoff; they are failed/unknown checks, not passes.
+
+Use **upgrade-project-records** for release-to-release assessment, reviewed migration and its journal/rollback. Repairing damaged output or restoring an environment stays here; first-time authority reconstruction uses **adapt-project-tracking**.
 
 Resume an interrupted install from `.project-record/agent-installation.json`, actual hashes and remote IDs, not cold init. Preview `install-skills`; it preserves existing AGENTS/outside files and rejects local conflicts. For upgrades, compare old/new outputs, review schema/adapter changes, then use `--upgrade --apply` on unchanged owned files. Preserve a verified previous version/artifact and avoid duplicate writers/jobs.
 

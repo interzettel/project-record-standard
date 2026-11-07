@@ -21,7 +21,8 @@ Read the matching skill body:
 | Issues/labels/Projects | connect-github-tracking |
 | Changes/releases/delivery | prepare-project-delivery |
 | README/site/interaction | present-project-tracking |
-| CI/telemetry/repair/upgrade | operate-project-tracking |
+| CI/telemetry/output or environment repair | operate-project-tracking |
+| Release-impact assessment / pinned upgrade / interrupted migration or rollback | upgrade-project-records |
 | Accessibility/WCAG/interaction audit | verify-project-accessibility |
 
 Example: “Resume setup” with a manifest and partial issue uses adaptation, ownership receipts and remote-ID reconciliation. Derived corruption uses operations recovery. A README/site alone can use staged cold setup.

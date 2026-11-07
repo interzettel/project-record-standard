@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "project-record-standard"
-version = "0.4.1"
+version = "0.6.0-alpha.0"
 description = "Shared progress semantics with project-owned branding and presentation"
 license = {file = "LICENSE"}
 requires-python = ">=3.10"

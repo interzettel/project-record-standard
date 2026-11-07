@@ -1,0 +1,11 @@
+{
+  "id": "CH-UPGRADE-GUIDANCE",
+  "component": "standard",
+  "type": "feature",
+  "summary": "Add evaluated release-aware upgrade guidance, separate routing from repair/adaptation, and distribute the twelve-skill opt-in development suite.",
+  "workItemIds": [
+    "PRS-UPGRADE-03"
+  ],
+  "pr": null,
+  "compatibility": "Toolkit/cooperating suite development identity0.6.0-alpha.0; Python distribution normalization0.6.0a0; record contract0.2.0 unchanged. Published0.4.1 assets/pins unchanged. No publication, personal installation, scheduler or native-runtime support inferred."
+}

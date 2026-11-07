@@ -20,7 +20,7 @@ The goal is routine after-work reconciliation with less tracking overhead. Read 
 
 `examples/projects.json` declares inputs. `examples/sources/standard/ledger.json` alone owns completion, scope, dependency and acceptance facts; its supplements own change/delivery observations. The execution plan explains order and package interfaces. GitHub owns issue discussion and assignment. README, SVG and Pages are derived views. Context/discovery/adoption documents never become a second completion ledger. Prehnite remains a pinned reference, not a migration target.
 
-The router selects `govern-project-scope` for decomposition, `connect-github-tracking` for native mapping, `update-project-progress` for evidence/source changes, `prepare-project-delivery` for release work, and `present-project-tracking` for views. Use `operate-project-tracking` for recovery and `verify-project-accessibility` for interaction/WCAG work. Read only the relevant skill and its required references.
+The router selects `govern-project-scope` for decomposition, `connect-github-tracking` for native mapping, `update-project-progress` for evidence/source changes, `prepare-project-delivery` for release work, and `present-project-tracking` for views. Use `upgrade-project-records` for pinned release assessment, reviewed migration and its journal/rollback. Use `operate-project-tracking` for output/environment recovery and `verify-project-accessibility` for interaction/WCAG work. Read only the relevant skill and its required references.
 
 ## Implement and reconcile
 

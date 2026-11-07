@@ -67,3 +67,5 @@ Serve `record-site` with a local HTTP server to inspect the example. Adapting a 
 ## Development tree and future support
 
 The instructions above describe the immutable v0.4.1 kit. Current main also contains unreleased planning/tooling changes. Its development checks use the pinned `.python-version` and `.node-version`; Python3.10 is now end-of-life, so choose a supported Python for new installations. A future minimum-version change belongs to the next declared release, with its compatibility notes. Do not replace the v0.4.1 checksum with a development archive. See [compatibility](standards/COMPATIBILITY.md).
+
+Current main toolkit/suite0.6.0-alpha.0 is unreleased opt-in development with12skills; the verified0.4.1 download instructions above still refer to its immutable11-skill archive. Python wheel metadata normalizes the development spelling to0.6.0a0. Use an exact reviewed source/artifact pin for development trials; #38 publication/runtime-floor gates remain pending.
