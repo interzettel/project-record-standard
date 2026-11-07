@@ -1,0 +1,23 @@
+{
+  "reconcileVersion": 1,
+  "projectId": "standard",
+  "manifest": "/workspace/scratch/49137836191f/prs-alignment/examples/projects.json",
+  "journal": "/tmp/prs-skill-completion-journal",
+  "output": "/tmp/prs-skill-completion-output",
+  "audience": "public",
+  "authority": {
+    "source": "Owner explicitly requested #22 and continued execution; existing reviewed integration and routine source recording authority. No milestone acceptance/publication; #34 deferred.",
+    "routineRecording": true
+  },
+  "workPolicies": {
+    "PRS-UPGRADE-03": {
+      "allOf": [
+        "implementation",
+        "test",
+        "review"
+      ]
+    }
+  },
+  "scopeAdmission": {},
+  "readme": "/workspace/scratch/49137836191f/prs-alignment/README.md"
+}

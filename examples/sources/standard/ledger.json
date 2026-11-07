@@ -1528,7 +1528,7 @@
     },
     {
       "blocked": false,
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "completionBasis": "Twelve-skill development distribution with release-aware routing;330 Python/25 JS tests, five controls and five source-only installed-guidance applications with explicit limits. Independent exact-code review passes. Toolkit/suite0.6.0-alpha.0 deliberately unreleased; contract0.2.0 and published0.4.1 unchanged. No causal/multimodel effectiveness, actual consumer migration, acceptance or publication.",
       "criterion": "Eight minimum consumer cases and SemVer trigger cases have sourced results and limits. Distribution, owned-file conflicts, repeated install and rollback are verified; no historical v0.4.1 bytes change. Exact-head independent review and a resumable migration receipt support the future upgrade gate; publication remains separate.",
       "deferReason": null,
       "dependsOn": [
@@ -1536,9 +1536,50 @@
         "PRS-AGENT-EXECUTION",
         "PRS-TAILOR-README"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session with fresh upgrade_skill_final_review where applicable",
+          "result": "passed",
+          "revision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
+          "source": "skills/upgrade-project-records/SKILL.md; skills/manifest.json; pyproject.toml",
+          "subject": "PRS-UPGRADE-03"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session with fresh upgrade_skill_final_review where applicable",
+          "result": "passed",
+          "revision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
+          "source": "audit/upgrade-skill/2026-11-07/verification.json; EVALUATION.md; tests/test_upgrade_workflow.py",
+          "subject": "PRS-UPGRADE-03"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session with fresh upgrade_skill_final_review where applicable",
+          "result": "passed",
+          "revision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
+          "source": "audit/upgrade-skill/2026-11-07/review.json; final exact-code disposition2e16c3e",
+          "subject": "PRS-UPGRADE-03"
+        },
+        {
+          "eventId": "prs:PRS-UPGRADE-03:c2b524c607837b38dc7b4f252a89dd0d047452cb",
+          "kind": "work-result",
+          "observedOn": "2026-11-07",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
+          "source": "https://github.com/interzettel/project-record-standard/pull/74",
+          "subject": "PRS-UPGRADE-03",
+          "summary": "Twelve-skill development distribution with release-aware routing;330 Python/25 JS tests, five controls and five source-only installed-guidance applications with explicit limits. Independent exact-code review passes. Toolkit/suite0.6.0-alpha.0 deliberately unreleased; contract0.2.0 and published0.4.1 unchanged. No causal/multimodel effectiveness, actual consumer migration, acceptance or publication."
+        }
+      ],
       "groupId": "G7",
       "id": "PRS-UPGRADE-03",
+      "implementationRevision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/22",
       "kind": "implementation",
       "milestoneId": "M7",
@@ -1546,8 +1587,8 @@
       "owner": "Implementing agent; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "selected-not-started",
-      "state": "backlog",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Distribute and evaluate the semantic upgrade workflow",
       "unmappedDependencies": []
     },

@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-UPGRADE-03:c2b524c607837b38dc7b4f252a89dd0d047452cb",
+  "projectId": "standard",
+  "workItemId": "PRS-UPGRADE-03",
+  "sourceSha256": "c9536f5894f79e24c107711b1458ca9a3a1516b7f4a89c8ff3dd38fd27e90409",
+  "manifestSha256": "43e8458802f93be6b9ced5f7bd6bae0622d3ae19424e623f55267c6651d123fa",
+  "artifactRevision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/pull/74",
+  "observedOn": "2026-11-07",
+  "summary": "Twelve-skill development distribution with release-aware routing;330 Python/25 JS tests, five controls and five source-only installed-guidance applications with explicit limits. Independent exact-code review passes. Toolkit/suite0.6.0-alpha.0 deliberately unreleased; contract0.2.0 and published0.4.1 unchanged. No causal/multimodel effectiveness, actual consumer migration, acceptance or publication.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-UPGRADE-03",
+      "revision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
+      "result": "passed",
+      "source": "skills/upgrade-project-records/SKILL.md; skills/manifest.json; pyproject.toml",
+      "producer": "Codex task session with fresh upgrade_skill_final_review where applicable",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-UPGRADE-03",
+      "revision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
+      "result": "passed",
+      "source": "audit/upgrade-skill/2026-11-07/verification.json; EVALUATION.md; tests/test_upgrade_workflow.py",
+      "producer": "Codex task session with fresh upgrade_skill_final_review where applicable",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-UPGRADE-03",
+      "revision": "c2b524c607837b38dc7b4f252a89dd0d047452cb",
+      "result": "passed",
+      "source": "audit/upgrade-skill/2026-11-07/review.json; final exact-code disposition2e16c3e",
+      "producer": "Codex task session with fresh upgrade_skill_final_review where applicable",
+      "observedOn": "2026-11-07"
+    }
+  ],
+  "discoveries": []
+}
