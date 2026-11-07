@@ -1,0 +1,43 @@
+{
+  "observedOn": "2026-11-07",
+  "source": "https://api.github.com/repos/interzettel/project-record-standard/releases?per_page=100",
+  "coverage": "One-page response contains only v0.4.1; no future release inferred",
+  "releases": [
+    {
+      "tag": "v0.4.1",
+      "sourceCommit": "ebc6afb0b977ff3d7605893c73ac63021775c4d3",
+      "publishedAt": "2026-10-23T18:28:27Z",
+      "prerelease": false,
+      "draft": false,
+      "assets": [
+        {
+          "name": "CHANGELOG.md",
+          "digest": "sha256:77d825940ae6c9e4e8585a5ee5640d2595eac29926ae893e979051e4a89fa682",
+          "url": "https://github.com/interzettel/project-record-standard/releases/download/v0.4.1/CHANGELOG.md"
+        },
+        {
+          "name": "INSTALL.md",
+          "digest": "sha256:7a7b4ad596324e19473ec66b73aabb73c22c3c4bb5f4a8da820f505c6040e9b6",
+          "url": "https://github.com/interzettel/project-record-standard/releases/download/v0.4.1/INSTALL.md"
+        },
+        {
+          "name": "project-record-standard-0.4.1.zip",
+          "digest": "sha256:a46cdcea938eb987b936497a22db8eab07106aad7dd12a8cfe10b4ad41f74607",
+          "url": "https://github.com/interzettel/project-record-standard/releases/download/v0.4.1/project-record-standard-0.4.1.zip"
+        },
+        {
+          "name": "SHA256SUMS",
+          "digest": "sha256:b444a94ac013df79b05d18d7947fc95d6a002c5aca298aa3e9e7de718328fd2b",
+          "url": "https://github.com/interzettel/project-record-standard/releases/download/v0.4.1/SHA256SUMS"
+        }
+      ]
+    }
+  ],
+  "tagReadback": {
+    "ref": "refs/tags/v0.4.1",
+    "type": "commit",
+    "sha": "ebc6afb0b977ff3d7605893c73ac63021775c4d3"
+  },
+  "semverSource": "https://semver.org/spec/v2.0.0.html",
+  "semanticLimit": "PRS policy requires major/minor assessment, not immediate application; 0.x stability is not inferred"
+}

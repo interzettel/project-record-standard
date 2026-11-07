@@ -28,6 +28,8 @@ def main(argv: list[str] | None = None) -> int:
         if name in {"build", "pipeline", "export"}:
             command.add_argument("--output", type=Path, required=True)
             command.add_argument("--audience", choices=["owner", "public"], default="owner")
+    command = subs.add_parser("upgrade-assess")
+    command.add_argument("--request", type=Path, required=True, help="Explicit owner-local read-only upgradeVersion1 request")
     command = subs.add_parser("validate")
     command.add_argument("record", type=Path)
     command = subs.add_parser("compare")
@@ -103,6 +105,11 @@ def main(argv: list[str] | None = None) -> int:
     modes.add_argument("--check", action="store_true")
     args = parser.parse_args(argv)
     try:
+        if args.command == "upgrade-assess":
+            from .upgrades import assess_file
+            result = assess_file(args.request)
+            print(json.dumps(result, indent=2))
+            return result["exitCode"]
         if args.command == "inspector-profile":
             from .inspector import inspector_profile
             result=inspector_profile(args.root,args.selection,args.output,observed_at=args.observed_at,

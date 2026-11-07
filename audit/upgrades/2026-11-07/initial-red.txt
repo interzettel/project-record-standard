@@ -1,0 +1,21 @@
+test_upgrades (unittest.loader._FailedTest.test_upgrades) ... ERROR
+
+======================================================================
+ERROR: test_upgrades (unittest.loader._FailedTest.test_upgrades)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_upgrades
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/workspace/scratch/49137836191f/prs-alignment/tests/test_upgrades.py", line 15, in <module>
+    from project_record.upgrades import assess_upgrade
+ModuleNotFoundError: No module named 'project_record.upgrades'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

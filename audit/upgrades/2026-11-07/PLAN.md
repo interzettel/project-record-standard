@@ -1,0 +1,11 @@
+# PRS-UPGRADE-01 · bounded comparison
+
+Existing issue #20/M7 and parent #10 define the authorized design: a read-only, host-specific comparison over immutable releases. Codex is responsible for this delivery. #34 is owner-deferred; #20 has no execution prerequisites. #21 owns application/recovery and #22 owns the future distributed skill. No installed skill or version is changed here.
+
+Build on pins.verify_installation and pins.assess_update rather than a second installer. A reviewed local request selects the host, expected pin, ordered release archives, explicit delta catalogue and digest-bound host judgments. Verify selected archive members against pins and source references; inspect actual host bytes; retain runtime/contract/suite/host identities separately. Missing coverage stays unknown, mixed bytes conflict, synthetic targets stay synthetic. The helper cannot authenticate supplied publishers/reviewers or infer semantic compatibility from prose. Reports are owner-local diagnostics.
+
+1. Add tests and synthetic archives for mandatory/optional/already-satisfied/custom/no-Pages, preservation, edited/mixed/missing/history/contract, repeat and authority cases. Observe the absent-helper failure.
+2. Implement upgrades.assess_upgrade(request), CLI upgrade-assess --request, source-kit inclusion and guide. Test digest/chain/review/path failures and exact SemVer triggers through the existing helper. No apply mode, network, generated site or source mutation.
+3. Verify the actual v0.4.1 GitHub archive and tag; create a disposable real installation using its own installer, compare it to the same release and a clearly synthetic target. This is real installation evidence, not adoption/migration of a consumer. Run applicable full checks, fresh review, fix reproduced findings, then reconcile only #20 through the shared writer if its unchanged criterion passes. Preserve acceptance and published v0.4.1.
+
+Review focus: forged/moved target, omitted intervening metadata, stale host judgment, symlink/special-file reads, and mixed synthetic/published chains. Tests cover each. Application replay/rollback remains #21; repeated read-only comparison must be deterministic and change no file bytes. Missing newer real releases prevents a real release-to-release migration claim, not the synthetic assessment tests.

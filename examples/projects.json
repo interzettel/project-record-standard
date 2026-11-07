@@ -219,6 +219,12 @@
           "observedOn": "2026-11-06",
           "path": "sources/standard/changes/CH-INSPECTOR-PRIVACY.json",
           "visibility": "public"
+        },
+        {
+          "authority": "Authored read-only upgrade comparison change; no consumer migration or release",
+          "observedOn": "2026-11-07",
+          "path": "sources/standard/changes/CH-UPGRADE-COMPARISON.json",
+          "visibility": "public"
         }
       ],
       "presentation": {

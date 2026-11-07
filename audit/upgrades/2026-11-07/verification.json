@@ -1,0 +1,41 @@
+{
+  "localImplementationRevision": "9f173c047afcea55efd6d059e662b0a7cfb15768",
+  "observedOn": "2026-11-07",
+  "python": {
+    "count": 296,
+    "result": "pass",
+    "runtime": "3.12.14"
+  },
+  "javascript": {
+    "count": 25,
+    "result": "pass",
+    "runtime": "v24.22.1"
+  },
+  "checks": {
+    "selectedSources": "pass",
+    "skillMetadata": 11,
+    "palettePairs": 20,
+    "publicPipeline": "pass",
+    "siteDocuments": 21,
+    "readme": "text and graphic parity pass",
+    "sourceKit": "full Python suite includes distribution checks",
+    "installedWheel": "Ran outside checkout; result assessment-ready and matches source comparison",
+    "trustedBasePolicy": {
+      "overall": "pass",
+      "exitCode": 0,
+      "hostDecisions": []
+    }
+  },
+  "hashes": {
+    "src/project_record/upgrades.py": "468cfa180976262d204fa384b3fdbc09638fe596b5d50fa06f73d8d9965485e1",
+    "src/project_record/__main__.py": "cab7adb17e934bc6d68dd1cadccf0decf053382e45bf12a8b6ad2c5da7755bf0",
+    "tests/test_upgrades.py": "19dfcc9ffab8caa968cc35e4398af6ea14748a70078c97d3d2d6d76d866016fe",
+    "tools/package_standard.py": "994df1d772d674ee8aae3f7c781b4010948a65def108210301ed0dfd84c6aeb3",
+    "standards/UPGRADING.md": "b6c663d3b6a232f736174ae7868bded32273af617846815c206f9dd317c3f2cc",
+    "MANIFEST.in": "7cf7bae477840ce63c5781e2c4bb07d2140e6ee305edd1ed21ff590843d1d63b"
+  },
+  "actualRelease": "real-installation.json and release-observation.json; actual hash-verified v0.4.1 archive, disposable installation using its own installer; no new published release",
+  "synthetic": "22 tests generate synthetic immutable archives and real disposable host files; future versions are not published claims",
+  "limits": "Caller-declared host/record/runtime/provenance/reviewer/coverage evidence; no authentication, atomic snapshot, real consumer migration, apply/recovery, skill effectiveness, milestone acceptance or release",
+  "before": "Saved normalized and metadata observation captured after fragment registration; no completion event yet"
+}
