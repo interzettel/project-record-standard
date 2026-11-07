@@ -1,0 +1,66 @@
+{
+  "sourceWriter": "shared reconcile CLI preview/apply/replay",
+  "implementationRevision": "0bf247582c77f427c67313b4039897eca8e718c8",
+  "implementationTree": "eec6fd8de9ab157db5ceef962cfba7bcd72674b1",
+  "equivalentTestedLocalCommit": "a11b162c144c523405518c2f7e1a0b8dd57229cf",
+  "reviewedCode": "81a1cd8cf0bfd14f5cbf03fff13be3e2b8cbd4a6",
+  "previousRawSha256": "acf5d38002ab662bc39c67d18081b1abe787329715090992dca1962874ecbc16",
+  "beforeNormalizedMetricsMatchWriter": true,
+  "applicationStatus": "applied",
+  "replayStatus": "duplicate",
+  "sourceChanges": "PRS-OPS-01 five completion fields only; all other raw facts unchanged",
+  "metrics": {
+    "work": {
+      "done": 38,
+      "total": 42,
+      "percent": 90.5,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 38,
+      "total": 52,
+      "percent": 73.1,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  },
+  "publicPipeline": "pass;prehnite/standard only",
+  "site": "pass;22 guides; OPERATIONS included",
+  "readmeGraphicParity": "pass",
+  "trustedBasePolicy": {
+    "overall": "pass",
+    "exitCode": 0,
+    "hostEnforcement": "not-assessed",
+    "inputs": {
+      "beforeSourceSha256": "acf5d38002ab662bc39c67d18081b1abe787329715090992dca1962874ecbc16",
+      "afterSourceSha256": "5597ed926dceb8374db26611876213a64efa4ab8abac0fd593879e21d34b4dd4",
+      "beforeCanonicalSha256": "3233e726d48ad8b07b1994c5c15f7ae6f3d551197a3a99d349e6b2e3c57c286d",
+      "afterCanonicalSha256": "b3d1c7afec0c6417cf3ebfcc680537733502842545a1d146dbf7e4294c83110c"
+    }
+  },
+  "deployment": "not yet observed in this local receipt",
+  "scopeChange": false,
+  "acceptanceChange": false,
+  "versionChange": false
+}

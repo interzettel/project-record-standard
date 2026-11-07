@@ -2307,15 +2307,56 @@
     },
     {
       "blocked": false,
-      "completionBasis": "Not complete; planning/research guidance exists but the full criterion and acceptance evidence remain pending.",
+      "completionBasis": "Quiet offline sourced release attention with selected-byte recheck, private one-pair state, retained last-success counts, bounded retry/freshness recovery and opt-in manual host template.350 Python/25 JS tests,20 collection regressions, fresh exact-code review, sourcekit/wheel/installedCLI/public22-guide site/README/trusted-base checks pass. No active scheduler, collection transport, migration, owner acceptance or release; #34 deferred.",
       "criterion": "Minor/major and security-patch triggers produce a sourced assessment without automatic install or new permissions. Ordinary fixes can be deferred with a reason. Partial pagination, dropped/delayed schedules and changed release metadata preserve prior counts and expose freshness gaps. Repeat discovery is quiet and idempotent; meaningful new security changes bypass an earlier ordinary deferral.",
       "dependsOn": [
         "PRS-PIN-01",
         "PRS-UPGRADE-01"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session; fresh ops_review exact-code review where applicable",
+          "result": "passed",
+          "revision": "0bf247582c77f427c67313b4039897eca8e718c8",
+          "source": "src/project_record/collection.py; standards/OPERATIONS.md; remote tree eec6fd8de9ab157db5ceef962cfba7bcd72674b1 matches tested local a11b162",
+          "subject": "PRS-OPS-01"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session; fresh ops_review exact-code review where applicable",
+          "result": "passed",
+          "revision": "0bf247582c77f427c67313b4039897eca8e718c8",
+          "source": "audit/operations/2026-11-07/verification.json; installed-cli-smoke.json; tests/test_collection.py",
+          "subject": "PRS-OPS-01"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session; fresh ops_review exact-code review where applicable",
+          "result": "passed",
+          "revision": "0bf247582c77f427c67313b4039897eca8e718c8",
+          "source": "audit/operations/2026-11-07/review.json; reviewed code81a1cd8 unchanged in implementation tree",
+          "subject": "PRS-OPS-01"
+        },
+        {
+          "eventId": "prs:PRS-OPS-01:0bf247582c77f427c67313b4039897eca8e718c8",
+          "kind": "work-result",
+          "observedOn": "2026-11-07",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "0bf247582c77f427c67313b4039897eca8e718c8",
+          "source": "https://github.com/interzettel/project-record-standard/pull/75",
+          "subject": "PRS-OPS-01",
+          "summary": "Quiet offline sourced release attention with selected-byte recheck, private one-pair state, retained last-success counts, bounded retry/freshness recovery and opt-in manual host template.350 Python/25 JS tests,20 collection regressions, fresh exact-code review, sourcekit/wheel/installedCLI/public22-guide site/README/trusted-base checks pass. No active scheduler, collection transport, migration, owner acceptance or release; #34 deferred."
+        }
+      ],
       "groupId": "G11",
       "id": "PRS-OPS-01",
+      "implementationRevision": "0bf247582c77f427c67313b4039897eca8e718c8",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/39",
       "kind": "implementation",
       "milestoneId": "M11",
@@ -2323,8 +2364,8 @@
       "owner": "Selected contributor; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "planned-not-implemented",
-      "state": "backlog",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Implement quiet release-drift monitoring with freshness recovery",
       "unmappedDependencies": []
     },

@@ -1,0 +1,56 @@
+{
+  "changedItems": {
+    "PRS-OPS-01": [
+      "completionBasis",
+      "evidence",
+      "implementationRevision",
+      "sourceState",
+      "state"
+    ]
+  },
+  "previousRawExact": true,
+  "priorMetadataPreserved": true,
+  "criteriaDependenciesScopeAcceptanceUnchanged": true,
+  "replayStatus": "duplicate",
+  "metrics": {
+    "work": {
+      "done": 38,
+      "total": 42,
+      "percent": 90.5,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 10,
+      "method": "completed-leaves / required-leaves"
+    },
+    "ledger": {
+      "done": 38,
+      "total": 52,
+      "percent": 73.1,
+      "active": 0,
+      "review": 0,
+      "blocked": 0,
+      "unknown": 0,
+      "excluded": 0,
+      "method": "completed-leaves / retained-ledger-leaves"
+    },
+    "milestones": {
+      "done": 4,
+      "total": 13,
+      "known": 13,
+      "percent": 30.8,
+      "method": "accepted-milestones / declared-milestones"
+    },
+    "roadmapMean": {
+      "percent": null,
+      "method": "arithmetic-mean-of-required-work-percentages-per-milestone",
+      "milestoneCount": 13
+    }
+  },
+  "newlyRequiredDone": 20,
+  "newlyRequiredTotal": 24,
+  "developmentToolkitSuite": "0.6.0-alpha.0",
+  "contract": "0.2.0",
+  "published": "0.4.1"
+}

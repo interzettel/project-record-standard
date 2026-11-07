@@ -76,10 +76,10 @@ The historical release remains 18/18 complete. The expanded plan separates newly
 
 | Measure | Completion | Meaning |
 | --- | ---: | --- |
-| Required work | 37/42 · 88.1% | Completed leaf items in the named required scope. |
+| Required work | 38/42 · 90.5% | Completed leaf items in the named required scope. |
 | Accepted milestones | 4/13 · 30.8% | Milestones whose declared outcome gates passed. |
 
 [Interactive roadmap](https://interzettel.github.io/project-record-standard/standard/progress.html) · Source file: `examples/sources/standard/ledger.json` (content-addressed file snapshot).
 
-Observed 2026-11-07 against `acf5d380`.
+Observed 2026-11-07 against `5597ed92`.
 <!-- project-record:end -->
