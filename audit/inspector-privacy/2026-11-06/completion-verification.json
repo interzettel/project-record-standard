@@ -1,0 +1,46 @@
+{
+  "implementationRevision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+  "implementationTree": "34e9ccf6dcbe642c525c4031a9c09c6dfcfd1cbd",
+  "recordedOn": "2026-11-07",
+  "codeHashes": "All final-verification.json hashes match; completion changes no code/test files",
+  "checks": {
+    "python": {
+      "count": 274,
+      "result": "pass",
+      "tail": [
+        "----------------------------------------------------------------------",
+        "Ran 274 tests in 12.784s",
+        "",
+        "OK"
+      ]
+    },
+    "javascript": {
+      "count": 25,
+      "result": "pass"
+    },
+    "site": {
+      "documents": 21,
+      "result": "pass"
+    },
+    "publicPipeline": "pass",
+    "readme": "text and graphic parity pass",
+    "skills": 11,
+    "palettePairs": 20,
+    "trustedBasePolicy": {
+      "baseTree": "34e9ccf6dcbe642c525c4031a9c09c6dfcfd1cbd",
+      "exitCode": 0,
+      "overall": "pass",
+      "hostDecisions": [],
+      "hostEnforcement": "not-assessed"
+    }
+  },
+  "reconciliation": "Only PRS-INSPECT-03; previous raw bytes and source metadata preserved; replay duplicate",
+  "metrics": {
+    "required": "34/42 (81.0%)",
+    "retained": "34/52 (65.4%)",
+    "newRequired": "16/24",
+    "accepted": "4/13 (30.8%)"
+  },
+  "environmentRecovery": "Initial completion check lacked pinned Markdown3.11.2: two import errors and site module import failure (273 loaded tests). Restored exact requirements-site.txt hash-pinned wheel, reran all274 tests and site successfully. No source fix required. Two initial pre-apply harness metadata-key mistakes made no writes; corrected to project.id before writer preview/apply.",
+  "remaining": "Native zoom no effect; private file/speech not-tested; live34owner-deferred; owner outcome acceptance/release pending; next20/M7"
+}

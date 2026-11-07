@@ -1,0 +1,44 @@
+{
+  "eventVersion": 1,
+  "eventId": "prs:PRS-INSPECT-03:7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+  "projectId": "standard",
+  "workItemId": "PRS-INSPECT-03",
+  "sourceSha256": "8f39477df4a2bc30c3a6f9dceafc8b5e200574a458b76426c5536a526091b4ab",
+  "manifestSha256": "293090543198ec43f20315c58855421139757b71ad8836881c630e15f14f5a11",
+  "artifactRevision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+  "result": "completed",
+  "producer": "Codex task session",
+  "source": "https://github.com/interzettel/project-record-standard/issues/19",
+  "observedOn": "2026-11-07",
+  "summary": "Bounded public review projection, managed private/host-branded profiles and README-only integration verified. 274 Python/25 JavaScript tests; installed wheel and actual deployed Edge checks at this revision. Native zoom attempt had no effect; private file opening and screen-reader speech not tested. No milestone acceptance, full conformance, consumer adoption or release claim.",
+  "receipts": [
+    {
+      "kind": "implementation",
+      "subject": "PRS-INSPECT-03",
+      "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+      "result": "passed",
+      "source": "src/project_record/inspector_privacy.py; src/project_record/inspector_profile.py; audit/inspector-privacy/2026-11-06/REPORT.md",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "test",
+      "subject": "PRS-INSPECT-03",
+      "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+      "result": "passed",
+      "source": "audit/inspector-privacy/2026-11-06/final-verification.json; browser-final-observations.json; installed-final.json",
+      "producer": "Codex task session",
+      "observedOn": "2026-11-07"
+    },
+    {
+      "kind": "review",
+      "subject": "PRS-INSPECT-03",
+      "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+      "result": "passed",
+      "source": "audit/inspector-privacy/2026-11-06/completion-disposition.json; review.json; contrast-review.json",
+      "producer": "Codex /root final disposition using GPT-6 Astra fresh review and RED to GREEN regressions",
+      "observedOn": "2026-11-07"
+    }
+  ],
+  "discoveries": []
+}

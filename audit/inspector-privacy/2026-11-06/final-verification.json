@@ -1,0 +1,22 @@
+{
+  "implementationRevision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+  "implementationTree": "34e9ccf6dcbe642c525c4031a9c09c6dfcfd1cbd",
+  "python": 274,
+  "javascript": 25,
+  "hashes": {
+    "src/project_record/inspector_privacy.py": "4994161ed5a49d11b352750b182cc91cc755b5e9685972acc338c388052f1549",
+    "src/project_record/inspector_profile.py": "4978d258ed3696b4b9c46b940d2730277cfcde3949c99fcf1b5fa4c5ea5293cb",
+    "src/project_record/inspector_views.py": "eddeaf2de660b806f7290e53db6bbe6b1e1dee985226b38d5a81fe0b8e6a4e57",
+    "src/project_record/inspector.py": "b9c7f66a5ccdcd5a71a9485962d75a268b96e50dd193be9eed80426f160e6a6c",
+    "src/project_record/__main__.py": "0a1cf4d41ab54da4b05393c8e7fccd0e368322d19297e8c3c5dce7cbbc865016",
+    "web/inspector.css": "ea8db982c6f351ac5231defff39e7bb11b0af7ef87ad7470ff99c8d2262f5f09",
+    "web/inspector.mjs": "ce5d6ba089f6660a1401515fa8f16c1e3348cf93b214e00e96b4f2793a160751",
+    "tools/accessibility_review.html": "2d38f9995d9699170fb121f0f5e982538a8922e683c2f9175f782041971cf1d5",
+    "tests/test_inspector_privacy.py": "a9252e212f0c1f37b2c84d6af0b2ae385f40342490add1a56e95bcc6f247bdec",
+    "tests/inspector.test.mjs": "388af5c410afc9e53fa6edeb1ef3ffbe020d956295e6d8a54c13a9437cb045c7"
+  },
+  "installed": "installed-final.json; built from exact final code and run outside checkout",
+  "browser": "browser-final-observations.json; actual public Edge156 checks, no native zoom/speech/private-file pass",
+  "review": "completion-disposition.json; same-family review/evidence judgment, not model effectiveness",
+  "precompletion": "Saved normalized/metadata observation deeply equals current before event after fragment registration; raw prior preserved by shared writer"
+}

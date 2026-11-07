@@ -1337,16 +1337,57 @@
     },
     {
       "blocked": false,
-      "completionBasis": "Not complete; planned delivery with no implementation or acceptance receipt.",
+      "completionBasis": "Bounded public review projection, managed private/host-branded profiles and README-only integration verified. 274 Python/25 JavaScript tests; installed wheel and actual deployed Edge checks at this revision. Native zoom attempt had no effect; private file opening and screen-reader speech not tested. No milestone acceptance, full conformance, consumer adoption or release claim.",
       "criterion": "Public builds reject unreviewed sensitive input and resist hostile HTML/JS/URLs; no source mutation. Repeated builds are deterministic, owned-output-only, and stale generated output fails the parity check. Three profiles keep source identity, branding and no-Pages choice; browser checks and independent review name exact revision and limits.",
       "deferReason": null,
       "dependsOn": [
         "PRS-INSPECT-02",
         "PRS-TAILOR-README"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "implementation",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+          "source": "src/project_record/inspector_privacy.py; src/project_record/inspector_profile.py; audit/inspector-privacy/2026-11-06/REPORT.md",
+          "subject": "PRS-INSPECT-03"
+        },
+        {
+          "kind": "test",
+          "observedOn": "2026-11-07",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+          "source": "audit/inspector-privacy/2026-11-06/final-verification.json; browser-final-observations.json; installed-final.json",
+          "subject": "PRS-INSPECT-03"
+        },
+        {
+          "kind": "review",
+          "observedOn": "2026-11-07",
+          "producer": "Codex /root final disposition using GPT-6 Astra fresh review and RED to GREEN regressions",
+          "result": "passed",
+          "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+          "source": "audit/inspector-privacy/2026-11-06/completion-disposition.json; review.json; contrast-review.json",
+          "subject": "PRS-INSPECT-03"
+        },
+        {
+          "eventId": "prs:PRS-INSPECT-03:7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+          "kind": "work-result",
+          "observedOn": "2026-11-07",
+          "outcome": "completed",
+          "producer": "Codex task session",
+          "result": "passed",
+          "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+          "source": "https://github.com/interzettel/project-record-standard/issues/19",
+          "subject": "PRS-INSPECT-03",
+          "summary": "Bounded public review projection, managed private/host-branded profiles and README-only integration verified. 274 Python/25 JavaScript tests; installed wheel and actual deployed Edge checks at this revision. Native zoom attempt had no effect; private file opening and screen-reader speech not tested. No milestone acceptance, full conformance, consumer adoption or release claim."
+        }
+      ],
       "groupId": "G6",
       "id": "PRS-INSPECT-03",
+      "implementationRevision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
       "issueUrl": "https://github.com/interzettel/project-record-standard/issues/19",
       "kind": "implementation",
       "milestoneId": "M6",
@@ -1354,8 +1395,8 @@
       "owner": "Implementing agent; repository maintainer reviews",
       "priority": "P1",
       "required": true,
-      "sourceState": "selected-not-started",
-      "state": "backlog",
+      "sourceState": "after-work-completed",
+      "state": "done",
       "title": "Enforce inspector privacy and verify integration profiles",
       "unmappedDependencies": []
     },

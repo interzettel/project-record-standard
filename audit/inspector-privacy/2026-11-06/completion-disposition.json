@@ -1,0 +1,25 @@
+{
+  "producer": "GPT-6 Astra /root/inspector_privacy_review",
+  "scope": "Final evidence/unchanged-criterion disposition; not an additional browser run",
+  "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+  "result": "Bounded19completion supported after exact deployed contrast retest and passing regression suite",
+  "basis": [
+    "Reviewed privacy/hostile-content/refusal/no-source-mutation boundary",
+    "Deterministic owned output and parity checks",
+    "Three automated profiles preserve source identities/brand/no-Pages",
+    "Actual Edge public-browser checks and corrected contrast at exact deployed7f",
+    "Earlier2dc navigation observations retain their own identity;7f keyboard/navigation also rechecked"
+  ],
+  "limits": [
+    "Native zoom attempted/notpassed",
+    "Private file opening and screen-reader speech nottested",
+    "Reduced Edge UA identifies156; exact build unexposed",
+    "No full WCAG conformance, real consumer adoption, milestone acceptance or release"
+  ],
+  "accounting": {
+    "required": "34/42",
+    "retained": "34/52",
+    "accepted": "4/13",
+    "criterionAmendment": "none"
+  }
+}

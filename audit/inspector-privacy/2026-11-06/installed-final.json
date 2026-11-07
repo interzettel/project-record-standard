@@ -1,0 +1,58 @@
+{
+  "moduleOrigin": "/tmp/prs-privacy-venv/lib/python3.12/site-packages/project_record/__init__.py",
+  "publicWrite": {
+    "changed": true,
+    "written": true,
+    "exitCode": 0,
+    "publishable": true,
+    "profile": "host-branded",
+    "audience": "public",
+    "files": {
+      "index.html": "e1aee5c10db3a938deb3a29a6c09eb8f07d1c70867e742f70ccceb39df8f8592"
+    },
+    "coverage": {
+      "declared": 1,
+      "contentRead": 1,
+      "problems": 0,
+      "unselected": "not-inspected",
+      "repositoryCoverage": "not-assessed"
+    }
+  },
+  "publicCheck": {
+    "changed": false,
+    "written": false,
+    "exitCode": 0,
+    "publishable": true,
+    "profile": "host-branded",
+    "audience": "public",
+    "files": {
+      "index.html": "e1aee5c10db3a938deb3a29a6c09eb8f07d1c70867e742f70ccceb39df8f8592"
+    },
+    "coverage": {
+      "declared": 1,
+      "contentRead": 1,
+      "problems": 0,
+      "unselected": "not-inspected",
+      "repositoryCoverage": "not-assessed"
+    }
+  },
+  "privateWrite": {
+    "changed": true,
+    "written": true,
+    "exitCode": 3,
+    "publishable": false,
+    "profile": "private-offline",
+    "audience": "owner",
+    "files": {
+      "index.html": "06e523660404146f0ea654f466d62c897dfd6ed45d0af89225b2ac686762233b"
+    },
+    "coverage": {
+      "declared": 9,
+      "contentRead": 9,
+      "problems": 1,
+      "unselected": "not-inspected",
+      "repositoryCoverage": "not-assessed"
+    }
+  },
+  "limits": "Private fixture intentionally has unsupported kind and exit3; installed smoke establishes command/assets/output contract, not browser file opening or native support"
+}

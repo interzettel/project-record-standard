@@ -1,0 +1,96 @@
+{
+  "revision": "7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+  "tree": "34e9ccf6dcbe642c525c4031a9c09c6dfcfd1cbd",
+  "deploymentRun": "https://github.com/interzettel/project-record-standard/actions/runs/42305995883",
+  "actualStylePresence": "input{border-color:var(--muted)} observed in deployed document",
+  "lightAuthored": {
+    "viewport": 320,
+    "appearance": "light",
+    "border": "rgb(32, 35, 49)",
+    "background": "rgb(255, 253, 246)",
+    "borderWidth": "1px",
+    "contrastRatio": 15.33,
+    "observedAt": "2026-11-06T22:41:00.257Z"
+  },
+  "darkDirect": {
+    "url": "https://interzettel.github.io/project-record-standard/qa/inspector/index.html?prs-build=7f12a4b1185bf97f1d4310bbec9c7d370adee736",
+    "border": "rgb(238, 241, 248)",
+    "background": "rgb(23, 26, 36)",
+    "borderWidth": "1px",
+    "contrastRatio": 15.35
+  },
+  "measurements": [
+    {
+      "requested": {
+        "width": "320",
+        "stress": "double",
+        "mode": "dark"
+      },
+      "result": "Viewport 320 CSS px; content 305px; scroll width 305px; 0 controls below 24px. These observations require inspection of all interactive states.",
+      "identity": "{\n  \"page\": \"https://interzettel.github.io/project-record-standard/qa/inspector/index.html\",\n  \"stress\": \"double\",\n  \"appearance\": \"dark\",\n  \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0\",\n  \"observedAt\": \"2026-11-06T22:41:29.408Z\"\n}",
+      "control": {
+        "background": "rgb(23, 26, 36)",
+        "border": "rgb(238, 241, 248)"
+      }
+    },
+    {
+      "requested": {
+        "width": "390",
+        "stress": "double",
+        "mode": "light"
+      },
+      "result": "Viewport 390 CSS px; content 375px; scroll width 375px; 0 controls below 24px. These observations require inspection of all interactive states.",
+      "identity": "{\n  \"page\": \"https://interzettel.github.io/project-record-standard/qa/inspector/index.html\",\n  \"stress\": \"double\",\n  \"appearance\": \"light\",\n  \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0\",\n  \"observedAt\": \"2026-11-06T22:41:38.360Z\"\n}",
+      "control": {
+        "background": "rgb(255, 253, 246)",
+        "border": "rgb(32, 35, 49)"
+      }
+    },
+    {
+      "requested": {
+        "width": "320",
+        "stress": "spacing",
+        "mode": "light"
+      },
+      "result": "Viewport 320 CSS px; content 305px; scroll width 305px; 0 controls below 24px. These observations require inspection of all interactive states.",
+      "identity": "{\n  \"page\": \"https://interzettel.github.io/project-record-standard/qa/inspector/index.html\",\n  \"stress\": \"spacing\",\n  \"appearance\": \"light\",\n  \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0\",\n  \"observedAt\": \"2026-11-06T22:41:46.841Z\"\n}",
+      "control": {
+        "background": "rgb(255, 253, 246)",
+        "border": "rgb(32, 35, 49)"
+      }
+    },
+    {
+      "requested": {
+        "width": "1280",
+        "stress": "none",
+        "mode": "dark"
+      },
+      "result": "Viewport 1280 CSS px; content 1265px; scroll width 1265px; 0 controls below 24px. These observations require inspection of all interactive states.",
+      "identity": "{\n  \"page\": \"https://interzettel.github.io/project-record-standard/qa/inspector/index.html\",\n  \"stress\": \"none\",\n  \"appearance\": \"dark\",\n  \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0\",\n  \"observedAt\": \"2026-11-06T22:42:30.367Z\"\n}"
+    }
+  ],
+  "keyboardAtThisRevision": [
+    "Tab focused Skip to records",
+    "Enter focused MAIN#main",
+    "Tab reached INPUT#find",
+    "Unmatched search returned0 while record stayed present and focus stayedfind",
+    "PUBLIC search returned1 with focus retained",
+    "Enter on Basis /items/0/state reached exact active source field",
+    "Back restored#main;Forward/reload preserved exact source target and value"
+  ],
+  "screenshot": {
+    "path": "public-inspector-final-390.png",
+    "viewport": 390,
+    "client": 375,
+    "scroll": 375,
+    "headerTop": 0
+  },
+  "browser": "Connected Edge; rendered QA UA Edg/156.0.0.0 on Windows10 (reduced UA; exact build not exposed)",
+  "cacheObservation": "Initial base iframe retained prior cached stylesheet after deployment. Its retest was not counted. Fixed stylesheet was observed explicitly before the final measurements; a public build-query URL was used only to inspect fresh public toy content. No private file-protocol denial was bypassed.",
+  "limits": [
+    "Doubled computed text is not native zoom",
+    "Native CTRL+ attempt at2dc had no measurable effect/notpassed",
+    "Private file opening and screen-reader speech nottested",
+    "No full WCAG conformance, real consumer adoption, milestone acceptance or release claim"
+  ]
+}
